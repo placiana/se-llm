@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>D3 Tree Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+    svg {
+      width: 100%;
+      height: 100vh;
+      
+    }
+    .link {
+      fill: none;
+      stroke: #999;
+      stroke-opacity: 0.6;
+      stroke-width: 1.5px;
+    }
+    .node circle {
+      fill: #69b3a2;
+      stroke: #333;
+      stroke-width: 1.5px;
+    }
+    .node text {
+      font-size: 12px;
+      font-family: sans-serif;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <svg></svg>
+
+  <!-- D3 v7 desde CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script>
+    const svg = d3.select("svg"),
+          width = window.innerWidth,
+          height = window.innerHeight;
+
+    const g = svg.append("g")
+                 .attr("transform", "translate(80,20)");
+
+    // layout del árbol
+    const treeLayout = d3.tree().size([height - 80, 80]); //width /3 - 80]);
+
+    fetch("/data")
+      .then(resp => resp.json())
+      .then(data => {
+        // en ECharts usábamos array, en D3 queremos un único root
+        const root = d3.hierarchy(data[0]);
+
+        // calcula posiciones
+        treeLayout(root);
+
+        // dibuja aristas
+        g.selectAll(".link")
+          .data(root.links())
+          .enter()
+          .append("path")
+          .attr("class", "link")
+          .attr("d", d3.linkHorizontal()
+            .x(d => d.y)
+            .y(d => d.x));
+
+        // dibuja nodos
+        const node = g.selectAll(".node")
+          .data(root.descendants())
+          .enter()
+          .append("g")
+          .attr("class", "node")
+          .attr("transform", d => `translate(${d.y},${d.x})`);
+
+        node.append("circle")
+            .attr("r", 5);
+
+        node.append("text")
+            .attr("dy", 3)
+            .attr("x", d => d.children ? -10 : 10)
+            .style("text-anchor", d => d.children ? "end" : "start")
+            .text(d => d.data.title || d.data.name);
+      })
+      .catch(err => {
+        console.error("Error loading tree data:", err);
+      });
+
+    // redimensiona el SVG si cambia la ventana
+    window.addEventListener("resize", () => {
+      svg.attr("width", window.innerWidth)
+         .attr("height", window.innerHeight);
+    });
+  </script>
+</body>
+</html>

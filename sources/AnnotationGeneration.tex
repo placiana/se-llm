@@ -1,0 +1,81 @@
+\documentclass[border=0.2cm,10pt]{standalone}
+
+\input{drawshead2}
+
+\begin{document}
+ 
+\begin{tikzpicture}[tasktree]
+ 
+\node [draw,celesteA] {\textbf{Annotation\phantom{j}Generation}}
+    child [missing] {}
+        child [celesteA] {node {Generation criteria \phantom{j}}
+            child [celesteA] {node [darkgray] {Syntactic: \testing{KernelGPT}{5}}}
+            child [celesteA] {node [darkgray] {Natural: \testingU{TOGLL}, \progverU{ChatInv}, \testing{PBT-GPT}{1}, \progverU{AutoSpec}}
+                child [celesteA] {node [darkgray] {Demonstration similarity: \testing{PropertyGPT}{1}, \testing{PropertyGPT}{2}, }}
+                child [white,draw opacity=0] {node [darkgray] {\phantom{Demonstration similarity:} \testing{PropertyGPT}{4}, \testingU{CEDAR}}}
+            edge from parent}
+            child [missing] {}
+            child [missing] {}
+            child [celesteA] {node [darkgray] {Natural \& Verifiable: \progver{SpecGen}{1}}}
+            child [celesteA] {node [darkgray] {Proof-enabling: \progver{Loopy}{1}, \progver{Clover}{5}, \nprogverU{Lam4Inv}, \progver{Lemur}{1}, }}
+            child [white,draw opacity=0] {node [darkgray, draw opacity=1] {\phantom{Proof-enabling:} \progver{RustProof}{2}}}
+        edge from parent}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [celesteA] {node {Nature of entity \phantom{j}}
+            child [celesteA] {node [darkgray] {Precondition: \testing{PropertyGPT}{2}, \progver{SpecGen}{1}, \progver{Clover}{5}, \progverU{AutoSpec}}}         
+            child [celesteA] {node [darkgray] {Postcondition: \testing{PropertyGPT}{2}, \progver{SpecGen}{1}, \progver{Clover}{5}, \progverU{AutoSpec}}}
+            child [celesteA] {node [darkgray] {Loop invariant: \progver{Loopy}{1}, \nprogverU{ESBMCibmc}, \progverU{AutoSpec}, \nprogverU{Lam4Inv}, }}
+            child [white,draw opacity=0] {node [darkgray, draw opacity=1] {\phantom{Loop invariant:} \progver{RustProof}{2}}}
+            child [celesteA] {node [darkgray] {Assumption: \progver{Lemur}{1}}}
+            child [celesteA] {node [darkgray] {Type state: \testing{KernelGPT}{5}}}
+            child [celesteA] {node [darkgray] {Assertion: \testingU{TOGLL}, \testing{PropertyGPT}{1}, \testingU{CEDAR}}}
+        edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [celesteA] {node {In-filling context}
+        child [celesteA] {node [darkgray] {Masked assertion: \progverU{ChatInv}}}
+        child [celesteA] {node [darkgray] {Annotated code: \progver{Loopy}{1}, \progver{SpecGen}{1}, \testingU{CEDAR}, \progver{Clover}{5}, }}
+         child [white] {node [darkgray] {\phantom{Annotated code:} \progverU{AutoSpec}, \progver{Lemur}{1}, \progver{RustProof}{2}}}
+        child [celesteA] {node [darkgray] {Unit test:  \testingU{TOGLL}, \testingU{CEDAR}}}
+    edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [celesteA] {node {Corrective mode \phantom{j}}
+        child [celesteA] {node [darkgray] {Feedback based \phantom{j}}
+             child [celesteA] {node [darkgray] {Compiler failure: \testing{PropertyGPT}{3}, \nprogverU{ESBMCibmc}}}
+           child [celesteA] {node [darkgray] {Verification failure: \progver{SpecGen}{2}, \nprogverU{ESBMCibmc}, \nprogverU{Lam4Inv}, }
+               child [white,draw opacity=0] {node [darkgray, draw opacity=1] {\phantom{Inductivenesssi:}   \progver{Lemur}{2}, \progver{RustProof}{3}}}
+                child [celesteA] {node [darkgray] {Inductiveness: \progver{Loopy}{2}}}
+            edge from parent}
+            child [missing] {}
+            child [missing] {}
+            child [celesteA] {node [darkgray] {Validity checker: \testing{PropertyGPT}{4}, \testing{KernelGPT}{5}}}
+        edge from parent}
+    edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [celesteA] {node {Rationalization \phantom{j}}
+        child [celesteA] {node [darkgray] {Invariant explanation: \progver{RustProof}{2}}}
+        child [celesteA] {node [darkgray] {Proof explanation: \progver{RustProof}{2}}}
+    edge from parent};
+
+\end{tikzpicture}
+ 
+\end{document}

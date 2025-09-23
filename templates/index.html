@@ -1,61 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CSS TreeView Example</title>
-<link rel="stylesheet" href="/static/tree.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TreeView Example</title>
+    <link rel="stylesheet" href="/static/tree.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/bitmaks/cm-web-fonts@latest/fonts.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+ 
+    <style>
+     
+      body {
+        font-family: "Computer Modern Sans", sans-serif;
+        margin: 20px;
+      }
 
-</head>
-<body>
-<h2>TreeView CSS</h2>
-<div class="tree" id="treeview">
-  <!-- Se llena con JS -->
-</div>
+      .tree {
+        /*max-width: 600px; */
+        margin: auto;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h2>TreeView CSS</h2>
+    <div class="tree" id="treeview">
+      <!-- Se llena con JS -->
+    </div>
 
 <script>
-async function fetchTree() {
-  const resp = await fetch('/data');
+async function fetchTree(endpoint_url) {
+  const resp = await fetch(endpoint_url);
   const data = await resp.json();
-  return data[0]; // ECharts-style array
+  return data; 
 }
 
-function createNode(node) {
-  const li = document.createElement('li');
-  
-  if (node.children && node.children.length > 0) {
-    // input checkbox para expand/collapse
-    const input = document.createElement('input');
-    input.type = 'checkbox';
-    input.id = 'node-' + Math.random().toString(36).substr(2, 9);
+async function renderTree(endpoint_url = '/api/tree', container_id = 'treeview') {
+  const treeData = await fetchTree(endpoint_url);
+  const container = document.getElementById(container_id);
 
-    const label = document.createElement('label');
-    label.setAttribute('for', input.id);
-    label.textContent = node.title || node.name;
-
-    li.appendChild(input);
-    li.appendChild(label);
-
-    const ul = document.createElement('ul');
-    node.children.forEach(child => {
-      ul.appendChild(createNode(child));
-    });
-    li.appendChild(ul);
-  } else {
-    li.textContent = node.title || node.name;
+  function createTree(data) {
+    if (!data) return '';
+    let html = '<ul class="tree">';
+    for (const node of data) {
+      if (node.children && node.children.length > 0) {
+        html += `<li>
+          <details open>
+            <summary>${node.name}</summary>
+            ${createTree(node.children)}
+          </details>
+        </li>`;
+      } else {
+        html += `<li>${node.name}</li>`;
+      }
+    }
+    html += '</ul>';
+    return html;
   }
 
-  return li;
+  container.innerHTML = createTree(treeData);
 }
 
-async function renderTree() {
-  const data = await fetchTree();
-  const ul = document.createElement('ul');
-  ul.appendChild(createNode(data));
-  document.getElementById('treeview').appendChild(ul);
-}
-
-renderTree();
+renderTree('/data/categories', 'categories-container');
 </script>
 
 
@@ -86,6 +92,11 @@ renderTree();
     </details>
   </li>
 </ul>
+
+<h2>Categories</h2>
+<div id="categories-container">
+  <!-- Se llena con JS -->
+</div>
 
 </body>
 </html>

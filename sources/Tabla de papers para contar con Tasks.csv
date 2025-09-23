@@ -1,0 +1,284 @@
+,SE-Area,SE-Prob,Task Id,Task Name,,Multi-class? def: Binary,Openness of labels set,Multi-label? def: Single-label,Soft (probability)? def: Hard,Granularity,Explained?,Type of question wrt Vuls,Mult/Openness VulSet,Few-Shot,ReAct,CoT,ToT,RAG,Infiller,FeedbackLoop,Self-Validation,LLM-Downstream Task Class,LLM-Task Category
+268,5 - Program Verification,29 - Program Verification,Clover_1,\gen{VerifierAware-AnnotationCorresponding-Code-InFilling},#NAME?,,,,,,,,,,,,,,,,,01 - General-Code Generation,1 - Generative
+269,5 - Program Verification,29 - Program Verification,Clover_2,\gen{VerifierAware-AnnotationCorresponding-Code-InFilling},#NAME?,,,,,,,,,,,,,,,,,01 - General-Code Generation,1 - Generative
+270,5 - Program Verification,29 - Program Verification,Clover_3,\gen{IntentCorresponding-Code-InFilling},#NAME?,,,,,,,,,,,,,,,,,01 - General-Code Generation,1 - Generative
+223,3 - Vulnerability/Misuse/Fault Detection,21 - Vulnerability Detection for Smart Contracts,LLM4Vuln_3(patch),\tgen{patch},#NAME?,,,,,,,,,,,,,,,,,01 - General-Code Generation,1 - Generative
+154,2 - Debugging,17 - Fault Localization,AutoSD_3,\gen{DebuggingAware-Code-Generation},#NAME?,,,,,,,,,,,,,,,,,01 - General-Code Generation,1 - Generative
+141,1 - Testing,14 - Oracle Problem,ALGO,\gen{BruteForce-IntentCorresponding-Code-Generation},#NAME?,,,,,,,,,,,,,,,,,01 - General-Code Generation,1 - Generative
+22,1 - Testing,02 - Failure-Inducing Test Generation,DiffPrompt_2,\gen{IntentCorresponding-Code-Generation},#NAME?,,,,,,,,,,,,,,,,,01 - General-Code Generation,1 - Generative
+48,1 - Testing,05 - DataSet/Mutant Generation,FormAI,\gen{IntentCorresponding-Code-Generation},#NAME?,,,,,,,,,,,,,,,,,01 - General-Code Generation,1 - Generative
+76,1 - Testing,10 - DL-Libraries Fuzzing,TitanFuzz_1,\gen{IntentCorresponding-Code-Generation},#NAME?,,,,,,,,,,,,,,,,,01 - General-Code Generation,1 - Generative
+129,1 - Testing,14 - Oracle Problem,ClarifyGPT_1,\gen{IntentCorresponding-Code-Generation},#NAME?,,,,,,,,,,,,,,,,,01 - General-Code Generation,1 - Generative
+64,1 - Testing,08 - Compiler/Simulator Fuzzing,SearchGEM5_1,\gen{ParameterizedVersion-Code-Generation},#NAME?,,,,,,,,,1,,,,,,,,01 - General-Code Generation,1 - Generative
+267,5 - Program Verification,29 - Program Verification,Dafny-Synth_5,\gen{Intent\&SignatureCorresponding-Provable-AnnotatedCode-Generation},#NAME?,,,,,,,,,1,,,,1,,,,01 - General-Code Generation,1 - Generative
+263,5 - Program Verification,29 - Program Verification,Dafny-Synth_2,\gen{Intent\&TestsCorresponding-AnnotatedCode-Generation},#NAME?,,,,,,,,,,,,,,,,,01 - General-Code Generation,1 - Generative
+262,5 - Program Verification,29 - Program Verification,Dafny-Synth_1,\gen{IntentCorresponding-AnnotatedCode-Generation},#NAME?,,,,,,,,,,,,,,,,,01 - General-Code Generation,1 - Generative
+49,1 - Testing,05 - DataSet/Mutant Generation,LLMorpheus,\gen{DifferentBehavior-Mutation-Generation},#NAME?,,,,,,,,,,,,,,,,,01 - General-Code Generation,1 - Generative
+155,2 - Debugging,17 - Fault Localization,LLM4CBI,\gen{MutationSpecified-Code-Mutation},#NAME?,,,,,,,,,,,,,,,,,01 - General-Code Generation,1 - Generative
+44,1 - Testing,05 - DataSet/Mutant Generation,BugFarm ,\gen{BugInjecting-Code-Mutation},#NAME?,,,,,,,,,,,,,,,,,01 - General-Code Generation,1 - Generative
+40,1 - Testing,05 - DataSet/Mutant Generation,FSML_DS/MG,\gen{Line-Mutation},#NAME?,,,,,,,,,1,,,,,,,,01 - General-Code Generation,1 - Generative
+24,1 - Testing,02 - Failure-Inducing Test Generation,AID_1,\gen{IntentCorresponding-Code-Correction},#NAME?,,,,,,,,,,,,,,,,,01 - General-Code Generation,1 - Generative
+254,5 - Program Verification,29 - Program Verification,AlloyRepair_1,\gen{FeedbackGuided-Specification-Correction},#NAME?,,,,,,,,,,,,,,,,,01 - General-Code Generation,1 - Generative
+255,5 - Program Verification,29 - Program Verification,AlloyRepair_2,\gen{SuggestionGuided-Specification-Correction},#NAME?,,,,,,,,,,,,,,,,,01 - General-Code Generation,1 - Generative
+46,1 - Testing,05 - DataSet/Mutant Generation,CHEMFUZZ_1,\gen{Valid\&Diversified-Code-Completion},#NAME?,,,,,,,,,,,,,,,,,01 - General-Code Generation,1 - Generative
+45,1 - Testing,05 - DataSet/Mutant Generation,µBERT,\gen{Code-Completion},#NAME?,,,,,,,,,,,,,,1,,,01 - General-Code Generation,1 - Generative
+77,1 - Testing,10 - DL-Libraries Fuzzing,TitanFuzz_2,\gen{Code-Completion},#NAME?,,,,,,,,,,,,,,1,,,01 - General-Code Generation,1 - Generative
+196,3 - Vulnerability/Misuse/Fault Detection,20 - Line-level Fault/API Misuse Prediction,FLAG,\gen{ContextConsistent-Line-Completion},#NAME?,,,,,,,,,,,,,,,,,01 - General-Code Generation,1 - Generative
+79,1 - Testing,10 - DL-Libraries Fuzzing,FuzzGPT_2,\gen{ModificationSpecified-Code-Edition},#NAME?,,,,,,,,,,,,,,,,,01 - General-Code Generation,1 - Generative
+204,3 - Vulnerability/Misuse/Fault Detection,20 - Line-level Fault/API Misuse Prediction,WitheredLeaf_3(CoT),\tgen{fix},#NAME?,,,,,,,,,,,,,,,,,01 - General-Code Generation,1 - Generative
+50,1 - Testing,06 - General Fuzzing,OSS-Fuzz_1,\gen{DriverCode-Generation},#NAME?,,,,,,,,,,,,,,,,,02 - Domain-Specific-Code Generation,1 - Generative
+57,1 - Testing,06 - General Fuzzing,UGCTX_1,\gen{DriverCode-Generation},#NAME?,,,,,,,,,,,,,,,,,02 - Domain-Specific-Code Generation,1 - Generative
+264,5 - Program Verification,29 - Program Verification,Dafny-Synth_3,\gen{IntentCorresponding-Signature-Generation},#NAME?,,,,,,,,,,,,,,,,,02 - Domain-Specific-Code Generation,1 - Generative
+95,1 - Testing,12 - Functional Testing,ScenarioNL_4,\gen{ProbabilisticProgram-Generation},#NAME?,,,,,,,,,1,,,,1,,,,02 - Domain-Specific-Code Generation,1 - Generative
+124,1 - Testing,14 - Oracle Problem,Eywa,\gen{ProtocolModelImplementation-Generation},#NAME?,,,,,,,,,,,,,,,,,02 - Domain-Specific-Code Generation,1 - Generative
+25,1 - Testing,02 - Failure-Inducing Test Generation,AID_2,\gen{ConstraintSatisfying-InputGenerator-Generation},#NAME?,,,,,,,,,,,,,,,,,02 - Domain-Specific-Code Generation,1 - Generative
+32,1 - Testing,03 - Input Generation,InputBlaster_4,\gen{InputGenerator-Generation},#NAME?,,,,,,,,,1,,,,,,,,02 - Domain-Specific-Code Generation,1 - Generative
+34,1 - Testing,03 - Input Generation,PBT-GPT_2,\gen{InputGenerator-Generation},#NAME?,,,,,,,,,,,,,,,,,02 - Domain-Specific-Code Generation,1 - Generative
+137,1 - Testing,14 - Oracle Problem,EMR_3,\gen{RequirementsDerivable-ExecutionMethamorpicRelations-Generation},#NAME?,,,,,,,,,1,,,,,,,,02 - Domain-Specific-Code Generation,1 - Generative
+245,4 - Static Analysis,25 - Data-Flow Analysis,LLMDFA_5,\gen{PathConditionEncoding-Code-Correction},#NAME?,,,,,,,,,,,,,,,,,02 - Domain-Specific-Code Generation,1 - Generative
+242,4 - Static Analysis,25 - Data-Flow Analysis,LLMDFA_2,\gen{Source/Sink-ElementIdentificationCode-Correction},#NAME?,,,,,,,,,,,,,,,,,02 - Domain-Specific-Code Generation,1 - Generative
+51,1 - Testing,06 - General Fuzzing,OSS-Fuzz_2,\gen{ErrorAware-DriverCode-Correction},#NAME?,,,,,,,,,,,,,,,,,02 - Domain-Specific-Code Generation,1 - Generative
+58,1 - Testing,06 - General Fuzzing,UGCTX_2,\gen{ErrorAware-DriverCode-Correction},#NAME?,,,,,,,,,,,,,,,,,02 - Domain-Specific-Code Generation,1 - Generative
+244,4 - Static Analysis,25 - Data-Flow Analysis,LLMDFA_4,\gen{PathConditionEncoding-Code-Completion},#NAME?,,,,,,,,,,,,,,,,,02 - Domain-Specific-Code Generation,1 - Generative
+241,4 - Static Analysis,25 - Data-Flow Analysis,LLMDFA_1,\gen{Source/Sink-ElementIdentificationCode-Completion},#NAME?,,,,,,,,,1,,,,,,,,02 - Domain-Specific-Code Generation,1 - Generative
+1,1 - Testing,01 - Unit Test Generation,TestGen-LLM,\gen{CoverageAugmenting-Test-Extension},#NAME?,,,,,,,,,,,,,,,,,03 - Test Generation,1 - Generative
+4,1 - Testing,01 - Unit Test Generation,ChatGPTTests_2,\gen{CoverageAugmenting-Test-Extension},#NAME?,,,,,,,,,,,,,,,,,03 - Test Generation,1 - Generative
+80,1 - Testing,10 - DL-Libraries Fuzzing,FuzzGPT_3,\gen{BugTriggering-Code-Generation},#NAME?,,,,,,,,,1,,1,,,,,,03 - Test Generation,1 - Generative
+8,1 - Testing,01 - Unit Test Generation,CodeCoT,\gen{Basic\&Edge-TestCase-Generation},#NAME?,,,,,,,,,,,,,,,,,03 - Test Generation,1 - Generative
+9,1 - Testing,01 - Unit Test Generation,AgentCoder,\gen{Basic\&Edge-TestCase-Generation},#NAME?,,,,,,,,,,,,,,,,,03 - Test Generation,1 - Generative
+10,1 - Testing,01 - Unit Test Generation,CodaMOSA ,\gen{Targeted-Test-Generation},#NAME?,,,,,,,,,,,,,,,,,03 - Test Generation,1 - Generative
+15,1 - Testing,01 - Unit Test Generation,TestPilot,\gen{BuildablePassable-Test-Generation},#NAME?,,,,,,,,,,,,,,,,,03 - Test Generation,1 - Generative
+146,2 - Debugging,15 - Bug Reproduction,LIBRO,\gen{BugReproducing-Test-Generation},#NAME?,,,,,,,,,1,,,,,,,,03 - Test Generation,1 - Generative
+5,1 - Testing,01 - Unit Test Generation,CodeT,\gen{IntentCorresponding-Test-Generation},#NAME?,,,,,,,,,,,,,,,,,03 - Test Generation,1 - Generative
+19,1 - Testing,01 - Unit Test Generation,ChatTESTER_2,\gen{IntentCorresponding-Test-Generation},#NAME?,,,,,,,,,,,,,,,,,03 - Test Generation,1 - Generative
+26,1 - Testing,02 - Failure-Inducing Test Generation,secTests,\gen{Mimicking-Test-Generation},#NAME?,,,,,,,,,,,,,,,,,03 - Test Generation,1 - Generative
+13,1 - Testing,01 - Unit Test Generation,CoverUp_1,\gen{CoverageAugmenting-Test-Generation},#NAME?,,,,,,,,,,,,,,,,,03 - Test Generation,1 - Generative
+17,1 - Testing,01 - Unit Test Generation,TELPA,\gen{CoverageAugmenting-Test-Generation},#NAME?,,,,,,,,,,,,,,,,,03 - Test Generation,1 - Generative
+43,1 - Testing,05 - DataSet/Mutant Generation,MuTAP_3,\gen{AssertionObservable-Differential-Test-Generation},#NAME?,,,,,,,,,,,,,,,,,03 - Test Generation,1 - Generative
+2,1 - Testing,01 - Unit Test Generation,FSML_UTG,\gen{Test-Generation},#NAME?,,,,,,,,,1,,,,,,,,03 - Test Generation,1 - Generative
+3,1 - Testing,01 - Unit Test Generation,ChatGPTTests_1,\gen{Test-Generation},#NAME?,,,,,,,,,,,,,,,,,03 - Test Generation,1 - Generative
+6,1 - Testing,01 - Unit Test Generation,ChatUniTest_1,\gen{Test-Generation},#NAME?,,,,,,,,,,,,,,,,,03 - Test Generation,1 - Generative
+16,1 - Testing,01 - Unit Test Generation,EASEeval,\gen{Test-Generation},#NAME?,,,,,,,,,,,,,,,,,03 - Test Generation,1 - Generative
+23,1 - Testing,02 - Failure-Inducing Test Generation,DiffPrompt_3,\gen{Test-Generation},#NAME?,,,,,,,,,,,,,,,,,03 - Test Generation,1 - Generative
+41,1 - Testing,05 - DataSet/Mutant Generation,MuTAP_1,\gen{Test-Generation},#NAME?,,,,,,,,,1,,,,,,,,03 - Test Generation,1 - Generative
+36,1 - Testing,03 - Input Generation,PBT-GPT_4,\gen{PropertyBasedTest-Generation},#NAME?,,,,,,,,,,,,,,,,,03 - Test Generation,1 - Generative
+35,1 - Testing,03 - Input Generation,PBT-GPT_3,\gen{ParametrizedTest-Generation},#NAME?,,,,,,,,,,,,,,,,,03 - Test Generation,1 - Generative
+7,1 - Testing,01 - Unit Test Generation,ChatUniTest_2,\gen{ErrorAware-Test-Correction},#NAME?,,,,,,,,,,,,,,,,,03 - Test Generation,1 - Generative
+20,1 - Testing,01 - Unit Test Generation,ChatTESTER_3,\gen{ErrorAware-Test-Correction},#NAME?,,,,,,,,,,,,,,,,,03 - Test Generation,1 - Generative
+42,1 - Testing,05 - DataSet/Mutant Generation,MuTAP_2,\gen{ErrorAware-Test-Correction},#NAME?,,,,,,,,,1,,,,,,,,03 - Test Generation,1 - Generative
+14,1 - Testing,01 - Unit Test Generation,CoverUp_2,\gen{CoverageAugmenting-Test-Correction},#NAME?,,,,,,,,,,,,,,,,,03 - Test Generation,1 - Generative
+81,1 - Testing,10 - DL-Libraries Fuzzing,FuzzGPT_4,\gen{BugRevealing-Code-Completion},#NAME?,,,,,,,,,,,,,,,,,03 - Test Generation,1 - Generative
+277,5 - Program Verification,29 - Program Verification,Lemur_1,\gen{Invariant-Lemma-Generation},#NAME?,,,,,,,,,,,,,,,,,04 - Annotation Generation,1 - Generative
+281,5 - Program Verification,29 - Program Verification,RustProof_2,\gen{Invariant-Lemma-Generation},#NAME?,,,,,,,,,1,,1,,,,,,04 - Annotation Generation,1 - Generative
+260,5 - Program Verification,29 - Program Verification,SpecGen_1,\gen{CodeCorresponding-Specification-Generation},#NAME?,,,,,,,,,1,,,,,,,,04 - Annotation Generation,1 - Generative
+276,5 - Program Verification,29 - Program Verification,AutoSpec,\gen{Annotation-Generation},#NAME?,,,,,,,,,1,,,,,,,,04 - Annotation Generation,1 - Generative
+33,1 - Testing,03 - Input Generation,PBT-GPT_1,\gen{Postcondition-Assertion-Generation},#NAME?,,,,,,,,,,,,,,,,,04 - Annotation Generation,1 - Generative
+125,1 - Testing,14 - Oracle Problem,PropertyGPT_1,\gen{Similar-Assertion-Generation},#NAME?,,,,,,,,,,,,,1,,,,04 - Annotation Generation,1 - Generative
+126,1 - Testing,14 - Oracle Problem,PropertyGPT_2,\gen{Similar-Assertion-Generation},#NAME?,,,,,,,,,,,,,1,,,,04 - Annotation Generation,1 - Generative
+258,5 - Program Verification,29 - Program Verification,Loopy_1,\gen{Inductive\&SufficientLoopInvariant-Assertion-Generation},#NAME?,,,,,,,,,,,,,,,,,04 - Annotation Generation,1 - Generative
+123,1 - Testing,14 - Oracle Problem,TOGLL ,\gen{Assertion-Generation},#NAME?,,,,,,,,,,,,,,,,,04 - Annotation Generation,1 - Generative
+133,1 - Testing,14 - Oracle Problem,CEDAR,\gen{Assertion-Generation},#NAME?,,,,,,,,,1,,,,1,,,,04 - Annotation Generation,1 - Generative
+283,5 - Program Verification,29 - Program Verification,RustProof_3,\gen{ErrorAware-Lemma-Correction},#NAME?,,,,,,,,,,,1,,,,,,04 - Annotation Generation,1 - Generative
+278,5 - Program Verification,29 - Program Verification,Lemur_2,\gen{Invariant-Lemma-Correction} ,#NAME?,,,,,,,,,,,,,,,,,04 - Annotation Generation,1 - Generative
+63,1 - Testing,07 - Kernel Fuzzing,KernelGPT_5,\gen{ErrorAware-Specification-Correction},#NAME?,,,,,,,,,1,,,,,,,,04 - Annotation Generation,1 - Generative
+261,5 - Program Verification,29 - Program Verification,SpecGen_2,\gen{ErrorAware-Specification-Correction},#NAME?,,,,,,,,,1,,,,,,,,04 - Annotation Generation,1 - Generative
+127,1 - Testing,14 - Oracle Problem,PropertyGPT_3,\gen{ErrorAware-Assertion-Correction},#NAME?,,,,,,,,,,,,,,,,,04 - Annotation Generation,1 - Generative
+259,5 - Program Verification,29 - Program Verification,Loopy_2,\gen{SyntaxInductivenessSufficiencyAware-Assertion-Correction},#NAME?,,,,,,,,,,,,,,,,,04 - Annotation Generation,1 - Generative
+128,1 - Testing,14 - Oracle Problem,PropertyGPT_4,\gen{MissingFunction-Assertion-Correction},#NAME?,,,,,,,,,,,,,,,,,04 - Annotation Generation,1 - Generative
+272,5 - Program Verification,29 - Program Verification,Clover_5,\gen{HoareValid-Annotation-Completion},#NAME?,,,,,,,,,,,,,,,,,04 - Annotation Generation,1 - Generative
+257,5 - Program Verification,29 - Program Verification,ChatInv,\gen{Assertion-Completion},#NAME?,,,,,,,,,,,,,,1,,,04 - Annotation Generation,1 - Generative
+83,1 - Testing,11 - GUI Testing,QTypist_2,\gen{Input-InFilling},#NAME?,,,,,,,,,,,,,,,,,05 - Data Generation,1 - Generative
+37,1 - Testing,03 - Input Generation,mrDetector_1,\gen{LikelyRecalling-Data-Generation},#NAME?,,,,,,,,,1,,1,,,,,,05 - Data Generation,1 - Generative
+71,1 - Testing,09 - Protocol/Parser Fuzzing,FuzzingParsers_4,\gen{ErrorTriggering-Data-Variation-Generation},#NAME?,,,,,,,,,,,,,,,,,05 - Data Generation,1 - Generative
+52,1 - Testing,06 - General Fuzzing,ChatFuzz,\gen{File-Variation-Generation},#NAME?,,,,,,,,,,,,,,1,,,05 - Data Generation,1 - Generative
+56,1 - Testing,06 - General Fuzzing,Fuzz4All_4,\gen{Input-Variation-Generation},#NAME?,,,,,,,,,,,,,,,,,05 - Data Generation,1 - Generative
+115,1 - Testing,14 - Oracle Problem,SELF-DEBUGGING_OP2,\gen{QueryConsistent-TableResult-Generation} ,#NAME?,,,,,,,,,1,,,,,,,,05 - Data Generation,1 - Generative
+96,1 - Testing,12 - Functional Testing,LLMeDiff,\gen{Pass+Fail+N/A-Test-Generation},#NAME?,,,,,,,,,,,,,,,,,05 - Data Generation,1 - Generative
+65,1 - Testing,08 - Compiler/Simulator Fuzzing,SearchGEM5_2,\gen{Valid-Input-Generation},#NAME?,,,,,,,,,1,,,,,,,,05 - Data Generation,1 - Generative
+54,1 - Testing,06 - General Fuzzing,Fuzz4All_2,\gen{UsageSastifying-Input-Generation},#NAME?,,,,,,,,,,,,,,,,,05 - Data Generation,1 - Generative
+28,1 - Testing,03 - Input Generation,RESTGPT_2,\gen{ConstraintSatisfying-Input-Generation},#NAME?,,,,,,,,,1,,,,,,,,05 - Data Generation,1 - Generative
+39,1 - Testing,04 - Regression Testing,SymPrompt,\gen{ConstraintSatisfying-Input-Generation},#NAME?,,,,,,,,,,,,,,,,,05 - Data Generation,1 - Generative
+67,1 - Testing,08 - Compiler/Simulator Fuzzing,WhiteFox_2,\gen{ConstraintSatisfying-Input-Generation},#NAME?,,,,,,,,,1,,,,,,1,,05 - Data Generation,1 - Generative
+30,1 - Testing,03 - Input Generation,InputBlaster_2,\gen{Valid-GUIInput-Generation},#NAME?,,,,,,,,,1,,,,,,,,05 - Data Generation,1 - Generative
+11,1 - Testing,01 - Unit Test Generation,TestChain_1,\gen{Basic\&Edge-TestInput-Generation},#NAME?,,,,,,,,,1,,,,,,,,05 - Data Generation,1 - Generative
+130,1 - Testing,14 - Oracle Problem,ClarifyGPT_2,\gen{Basic\&Edge-TestInput-Generation},#NAME?,,,,,,,,,1,,,,,,,,05 - Data Generation,1 - Generative
+55,1 - Testing,06 - General Fuzzing,Fuzz4All_3,\gen{SpecificationAware-Input-Mutation},#NAME?,,,,,,,,,,,,,,,,,05 - Data Generation,1 - Generative
+75,1 - Testing,09 - Protocol/Parser Fuzzing,ChatAFL_3,\gen{Message-Completion},#NAME?,,,,,,,,,,,,,,,,,05 - Data Generation,1 - Generative
+82,1 - Testing,11 - GUI Testing,QTypist_1,\gen{Input-Completion},#NAME?,,,,,,,,,,,,,,,,,05 - Data Generation,1 - Generative
+74,1 - Testing,09 - Protocol/Parser Fuzzing,ChatAFL_2,\gen{ModificationSpecified-MS-Edition},#NAME?,,,,,,,,,,,,,,,,,05 - Data Generation,1 - Generative
+111,1 - Testing,13 - Penetration Testing,pwn’d_3,\eval{Rationalized-VulnerabilityProneness-CommandExecution-MultiLabel-Classification},#NAME?,TRUE,OpenEnded,Verdadero,,Command-level,Explained,VulsDescrip,NotSpecified,,,,,,,,,06 - Behavior Analysis,2 - Evaluative
+138,1 - Testing,14 - Oracle Problem,GameBugDescriptions_1,\eval{Scenario-AccordingToPerspective-Anomaly-Detection},#NAME?,FALSE,,,,,NotExplained,,,,,,,,,,,06 - Behavior Analysis,2 - Evaluative
+47,1 - Testing,05 - DataSet/Mutant Generation,CHEMFUZZ_2,\eval{Behavior-Anomaly-Detection} ,#NAME?,FALSE,,,,,NotExplained,,,,,,,,,,,06 - Behavior Analysis,2 - Evaluative
+162,2 - Debugging,18 - Root Cause Analysis,x-lifecycle_2,\eval{SimilarityGuided-RootCause-Analysis},#NAME?,FALSE,,,,,NotExplained,,,,,,,,,,,06 - Behavior Analysis,2 - Evaluative
+148,2 - Debugging,17 - Fault Localization,SELF-DEBUGGING_FL,\eval{Differences-RootCause-Analysis},#NAME?,FALSE,,,,,NotExplained,,,1,1,,,,,,,06 - Behavior Analysis,2 - Evaluative
+150,2 - Debugging,17 - Fault Localization,AutoFL_1,\eval{RootCause-Analysis} ,#NAME?,FALSE,,,,,NotExplained,,,,1,,,,,,,06 - Behavior Analysis,2 - Evaluative
+152,2 - Debugging,17 - Fault Localization,AutoSD_1,\eval{RootCause-Analysis},#NAME?,FALSE,,,,,NotExplained,,,,,,,,,,,06 - Behavior Analysis,2 - Evaluative
+163,2 - Debugging,18 - Root Cause Analysis,RCAAgents_1,\eval{RootCause-Analysis},#NAME?,FALSE,,,,,NotExplained,,,,1,,,,,,,06 - Behavior Analysis,2 - Evaluative
+170,2 - Debugging,18 - Root Cause Analysis,inContextRCA_2,\eval{RootCause-Analysis},#NAME?,FALSE,,,,,NotExplained,,,1,,,,,,,,06 - Behavior Analysis,2 - Evaluative
+103,1 - Testing,13 - Penetration Testing,PentestGPT_3,\eval{Validity-Transition-Analysis},#NAME?,FALSE,,,,,NotExplained,,,,,,,,,,,06 - Behavior Analysis,2 - Evaluative
+87,1 - Testing,11 - GUI Testing,AXNav_3,\eval{PlannedAction-Successfullness-Assessment},#NAME?,FALSE,,,,,NotExplained,,,,,1,,,,,,06 - Behavior Analysis,2 - Evaluative
+247,4 - Static Analysis,26 - Taint Analysis,E&V_2,\eval{Behavior-Correctness-Assessment},#NAME?,FALSE,,,,,NotExplained,,,,,,,,,,,06 - Behavior Analysis,2 - Evaluative
+173,3 - Vulnerability/Misuse/Fault Detection,19 - Vulnerability Detection,ChatGPT4vul_3,\eval{ListTargeted-CWEVulnerabilityProneness-Code-MultiLabel-Classification},#NAME?,TRUE,CloseEnded,Verdadero,,Snippet-level,NotExplained,Presence (vul(s)),ListOfVulnIds,,,,,,,,,07 - Direct Code-Classification,2 - Evaluative
+208,3 - Vulnerability/Misuse/Fault Detection,20 - Line-level Fault/API Misuse Prediction,LLMAPIDet_3,\eval{GivenAPIMisuseRulesCompliance-Code-OneClass-Classification},#NAME?,FALSE,CloseEnded,,,Snippet-level,NotExplained,Misuse,ListOfMisuses,,,,,1,,,,07 - Direct Code-Classification,2 - Evaluative
+177,3 - Vulnerability/Misuse/Fault Detection,19 - Vulnerability Detection,NLBSE24_2,\eval{GivenIntentionCorrespondence-Code-OneClass-Classification},#NAME?,FALSE,CloseEnded,,,Snippet-level,NotExplained,Matches Functionality,Intent,,,,,,,,,07 - Direct Code-Classification,2 - Evaluative
+226,3 - Vulnerability/Misuse/Fault Detection,21 - Vulnerability Detection for Smart Contracts,GPTScan_2,\eval{GivenBehaviorCorrespondence-Code-OneClass-Classification},#NAME?,FALSE,CloseEnded,,,Contract-level,NotExplained,MatchesBehavior,Description,,,1,,,,,,07 - Direct Code-Classification,2 - Evaluative
+225,3 - Vulnerability/Misuse/Fault Detection,21 - Vulnerability Detection for Smart Contracts,GPTScan_1,\eval{GivenCharacteristicsCorrespondence-Code-OneClass-Classification},#NAME?,FALSE,CloseEnded,,,Contract-level,NotExplained,MatchesCharacteristics,Description,,,1,,,,,,07 - Direct Code-Classification,2 - Evaluative
+120,1 - Testing,14 - Oracle Problem,SELF-DEBUGGING_OP7,\eval{Intent\&AssertionCorresponding-Code-OneClass-Classification},#NAME?,,,,,,,,,1,,1,,,,,,07 - Direct Code-Classification,2 - Evaluative
+194,3 - Vulnerability/Misuse/Fault Detection,19 - Vulnerability Detection,PromptEnhanced_2,\eval{(APICalls)/(DataFlow)Enhanced-VulnerabilityProneness-Code-OneClass-Classification},#NAME?,FALSE,CloseEnded,,,Snippet-level,NotExplained,VulProneness (yes/no),DataFlowSeq,,,,,,,,,07 - Direct Code-Classification,2 - Evaluative
+182,3 - Vulnerability/Misuse/Fault Detection,19 - Vulnerability Detection,GRACE,\eval{CPGEnhanced-VulnerabilityProneness-Code-OneClass-Classification},#NAME?,FALSE,CloseEnded,Verdadero,,Snippet-level,NotExplained,VulProneness (yes/no),,1,,,,,,,,07 - Direct Code-Classification,2 - Evaluative
+195,3 - Vulnerability/Misuse/Fault Detection,19 - Vulnerability Detection,ChatGPT(Plus),\eval{(CWE+GivenVulnDescr)VulnerabilityProneness-Code-OneClass-Classification} ,#NAME?,FALSE,CloseEnded,,,Snippet-level,NotExplained,VulProneness (yes/no),ListOfVulnIds,1,,,,1,,,,07 - Direct Code-Classification,2 - Evaluative
+171,3 - Vulnerability/Misuse/Fault Detection,19 - Vulnerability Detection,ChatGPT4vul_1,\eval{VulnerabilityProneness-Code-OneClass-Classification} ,#NAME?,FALSE,CloseEnded,,,Snippet-level,NotExplained,VulProneness (yes/no),NotSpecified,,,,,,,,,07 - Direct Code-Classification,2 - Evaluative
+176,3 - Vulnerability/Misuse/Fault Detection,19 - Vulnerability Detection,NLBSE24_1,\eval{VulnerabilityProneness-Code-OneClass-Classification} ,#NAME?,FALSE,CloseEnded,,,Snippet-level,NotExplained,VulProneness (yes/no),NotSpecified,,,,,,,,,07 - Direct Code-Classification,2 - Evaluative
+189,3 - Vulnerability/Misuse/Fault Detection,19 - Vulnerability Detection,MultiTask_1,\eval{VulnerabilityProneness-Code-OneClass-Classification} ,#NAME?,FALSE,CloseEnded,,,Snippet-level,NotExplained,VulProneness (yes/no),NotSpecified,,,,,,,,,07 - Direct Code-Classification,2 - Evaluative
+211,3 - Vulnerability/Misuse/Fault Detection,21 - Vulnerability Detection for Smart Contracts,SmartAudit_1,\eval{ListTargeted-CWEVulnerabilityProneness-Code-OneClass-Classification} ,#NAME?,FALSE,CloseEnded,,,Contract-level,NotExplained,VulProneness (yes/no),ListOfVulnIds,,,,,,,,,07 - Direct Code-Classification,2 - Evaluative
+191,3 - Vulnerability/Misuse/Fault Detection,19 - Vulnerability Detection,MultiTask_3,\eval{VulnerabilityProneness-CodeLine-OneClass-Classification} ,#NAME?,FALSE,CloseEnded,,,Line-level,NotExplained,VulProneness (yes/no),NotSpecified,,,,,,,,,07 - Direct Code-Classification,2 - Evaluative
+78,1 - Testing,10 - DL-Libraries Fuzzing,FuzzGPT_1,\eval{APIUsed-Code-MultiClass-Classification} ,#NAME?,TRUE,OpenEnded,,,Snippet-level,NotExplained,APIUsed,NotSpecified,1,,,,,,,,07 - Direct Code-Classification,2 - Evaluative
+185,3 - Vulnerability/Misuse/Fault Detection,19 - Vulnerability Detection,AIagent,\eval{ListTargeted-CWEVulnerabilityProneness-CodeLine-MultiClass-Classification},#NAME?,TRUE,CloseEnded,,,Line-level,NotExplained,Presence (vul(s)),ListOfVulnIds,,,,,,,,,07 - Direct Code-Classification,2 - Evaluative
+205,3 - Vulnerability/Misuse/Fault Detection,20 - Line-level Fault/API Misuse Prediction,WitheredLeaf_4,\eval{ListSemiTargeted-BugCategory-BugExplanation-MultiClass-Classification} ,#NAME?,TRUE,SemiCloseEnded,,,BugExplanation,NotExplained,BugCategory,CWE-like,,,,,,,,,07 - Direct Code-Classification,2 - Evaluative
+219,3 - Vulnerability/Misuse/Fault Detection,21 - Vulnerability Detection for Smart Contracts,LLM4Vuln_3,\eval{InfoRequesting-Rationalized-GivenVulnDescrProneness-Code-MultiLabel-Classification},#NAME?,TRUE,OpenEnded,Verdadero,,Contract-level,Explained,Presence (vul(s)),ListOfVulnDescrip,,1,1,,1,,,,08 - Rationalized Code-Classification,2 - Evaluative
+220,3 - Vulnerability/Misuse/Fault Detection,21 - Vulnerability Detection for Smart Contracts,LLM4Vuln_3wPreCoT,\eval{InfoRequesting-Rationalized-GivenVulnDescrProneness-Code-MultiLabel-Classification},#NAME?,TRUE,OpenEnded,Verdadero,,Contract-level,Explained,Presence (vul(s)),ListOfVulnDescrip,,1,1,,1,,,,08 - Rationalized Code-Classification,2 - Evaluative
+221,3 - Vulnerability/Misuse/Fault Detection,21 - Vulnerability Detection for Smart Contracts,LLM4Vuln_3wPostCoT,\eval{InfoRequesting-Rationalized-GivenVulnDescrProneness-Code-MultiLabel-Classification},#NAME?,TRUE,OpenEnded,Verdadero,,Contract-level,Explained,Presence (vul(s)),ListOfVulnDescrip,,1,1,,1,,,,08 - Rationalized Code-Classification,2 - Evaluative
+212,3 - Vulnerability/Misuse/Fault Detection,21 - Vulnerability Detection for Smart Contracts,SmartAudit_2,\eval{Rationalized-VulnerabilityProneness-Code-MultiLabel-Classification} ,#NAME?,TRUE,OpenEnded,Verdadero,,Contract-level,Explained,VulsDescrip,NotSpecified,,,,,,,,,08 - Rationalized Code-Classification,2 - Evaluative
+213,3 - Vulnerability/Misuse/Fault Detection,21 - Vulnerability Detection for Smart Contracts,SmartAudit_3,\eval{Rationalized-VulnerabilityProneness-Code-MultiLabel-Classification} ,#NAME?,TRUE,OpenEnded,Verdadero,,Contract-level,Explained,VulsDescrip,NotSpecified,,,1,,,,,,08 - Rationalized Code-Classification,2 - Evaluative
+215,3 - Vulnerability/Misuse/Fault Detection,21 - Vulnerability Detection for Smart Contracts,GPTLens_1,\eval{Rationalized-VulnerabilityProneness-Code-MultiLabel-Classification},#NAME?,TRUE,OpenEnded,Verdadero,,Contract-level,Explained,Presence (vul(s)) + Location,NotSpecified,,,,,,,,,08 - Rationalized Code-Classification,2 - Evaluative
+251,4 - Static Analysis,26 - Taint Analysis,LATTE_4,\eval{Rationalized-TaintFlowAnalysisEnhanced-CWEVulnerabilityProneness-Code-MultiLabel-Classification},#NAME?,TRUE,CloseEnded,Verdadero,,Snippet-level,Explained,TaintVulnerable,DataFlowSeq,,,,,,,,,08 - Rationalized Code-Classification,2 - Evaluative
+175,3 - Vulnerability/Misuse/Fault Detection,19 - Vulnerability Detection,VulBench,\eval{Rationalized-ListTargeted-CWEVulnerabilityProneness-Code-MultiLabel-Classification},#NAME?,TRUE,CloseEnded,Verdadero,,Snippet-level,Explained,Presence (vul(s)),ListOfVulnIds,1,,1,,,,,,08 - Rationalized Code-Classification,2 - Evaluative
+179,3 - Vulnerability/Misuse/Fault Detection,19 - Vulnerability Detection,VulDetect_2,\eval{Rationalized-ListTargeted-CWEVulnerabilityProneness-Code-MultiLabel-Classification},#NAME?,TRUE,CloseEnded,Verdadero,,Snippet-level,Explained,Presence (vul(s)),ListOfVulnIds,,,,,,,,,08 - Rationalized Code-Classification,2 - Evaluative
+209,3 - Vulnerability/Misuse/Fault Detection,21 - Vulnerability Detection for Smart Contracts,ChatGPTSCV_1,\eval{Rationalized-ListTargeted-CWEVulnerabilityProneness-Code-MultiLabel-Classification},#NAME?,TRUE,CloseEnded,Verdadero,,Contract-level,Explained,Presence (vul(s)) + Location,ListOfVulnIds,,,1,,,,,,08 - Rationalized Code-Classification,2 - Evaluative
+180,3 - Vulnerability/Misuse/Fault Detection,19 - Vulnerability Detection,VulDetect_3,\eval{Rationalized-DataFlowTargeted-CWEVulnerabilityProneness-Code-MultiLabel-Classification} ,#NAME?,TRUE,CloseEnded,Verdadero,,Snippet-level,Explained,Presence (vul(s)),CWE-DF,,,,,,,,,08 - Rationalized Code-Classification,2 - Evaluative
+178,3 - Vulnerability/Misuse/Fault Detection,19 - Vulnerability Detection,VulDetect_1,\eval{Rationalized-CWEVulnerabilityProneness-Code-MultiLabel-Classification},#NAME?,TRUE,CloseEnded,Verdadero,,Snippet-level,Explained,Presence (vul(s)),CWE,,,,,,,,,08 - Rationalized Code-Classification,2 - Evaluative
+183,3 - Vulnerability/Misuse/Fault Detection,19 - Vulnerability Detection,VSP_1,\eval{Rationalized-CWEVulnerabilityProneness-Code-MultiLabel-Classification},#NAME?,TRUE,CloseEnded,Verdadero,,Snippet-level,Explained,Presence (vul(s)),CWE,1,,1,,,,,,08 - Rationalized Code-Classification,2 - Evaluative
+237,4 - Static Analysis,24 - Resource Leak,SkipAnalyzer_1,\eval{Rationalized-NullDerreferencePresence-Code-OneClass-Classification} ,#NAME?,FALSE,CloseEnded,,,Snippet-level,Explained,NullDerreference,NotSpecified,1,,1,,,,,,08 - Rationalized Code-Classification,2 - Evaluative
+238,4 - Static Analysis,24 - Resource Leak,SkipAnalyzer_2,\eval{Rationalized-ResourceLeakPresence-Code-OneClass-Classification} ,#NAME?,FALSE,CloseEnded,,,Snippet-level,Explained,ResourceLeak,NotSpecified,1,,1,,,,,,08 - Rationalized Code-Classification,2 - Evaluative
+199,3 - Vulnerability/Misuse/Fault Detection,20 - Line-level Fault/API Misuse Prediction,EditTime_3,\eval{Rationalized-VulnerabilityProneness-Code-OneClass-Classification} ,#NAME?,FALSE,CloseEnded,,,Snippet-level,Explained,VulProneness (yes/no),NotSpecified,,,,,,,,,08 - Rationalized Code-Classification,2 - Evaluative
+200,3 - Vulnerability/Misuse/Fault Detection,20 - Line-level Fault/API Misuse Prediction,EditTime_4,\eval{Rationalized-VulnerabilityProneness-Code-OneClass-Classification} ,#NAME?,FALSE,CloseEnded,,,Snippet-level,Explained,VulProneness (yes/no),NotSpecified,1,,,,,,,,08 - Rationalized Code-Classification,2 - Evaluative
+184,3 - Vulnerability/Misuse/Fault Detection,19 - Vulnerability Detection,VSP_2,\eval{Rationalized-IdTargeted-CWEVulnerabilityProneness-Code-OneClass-Classification} ,#NAME?,FALSE,CloseEnded,,,Snippet-level,Explained,VulProneness (yes/no),SingleVulnId,1,,1,,,,,,08 - Rationalized Code-Classification,2 - Evaluative
+201,3 - Vulnerability/Misuse/Fault Detection,20 - Line-level Fault/API Misuse Prediction,WitheredLeaf_1,\eval{Rationalized-SemanticBugPresence-CodeLine-OneClass-Classification} ,#NAME?,FALSE,CloseEnded,,,Line-level,Explained,SemanticBug Presence (yes/no),NotSpecified,,,,,,,,,08 - Rationalized Code-Classification,2 - Evaluative
+203,3 - Vulnerability/Misuse/Fault Detection,20 - Line-level Fault/API Misuse Prediction,WitheredLeaf_3,\eval{Rationalized-BugFixabilityByNameChange-CodeLine-OneClass-Classification} ,#NAME?,FALSE,CloseEnded,,,Line-level,Explained,BugFixableByNameChange,NotSpecified,,,1,,,,,,08 - Rationalized Code-Classification,2 - Evaluative
+188,3 - Vulnerability/Misuse/Fault Detection,19 - Vulnerability Detection,DLAP_3,\eval{Rationalized-ReviewStepsEnhanced-IdTargeted-CWEVulnerabilityProneness-Code-OneClass-Soft-Classification},#NAME?,FALSE,CloseEnded,,Verdadero,Snippet-level,Explained,VulProneness (yes/no),SingleVulnId,,,1,,,,,,08 - Rationalized Code-Classification,2 - Evaluative
+174,3 - Vulnerability/Misuse/Fault Detection,19 - Vulnerability Detection,ChatGPT4vul_4,\eval{CVSS-Scoring},#NAME?,FALSE,,,,,NotExplained,,,,,,,,,,,09 - Code Scaling,2 - Evaluative
+190,3 - Vulnerability/Misuse/Fault Detection,19 - Vulnerability Detection,MultiTask_2,\eval{CVSS-Scoring},#NAME?,FALSE,,,,,NotExplained,,,,,,,,,,,09 - Code Scaling,2 - Evaluative
+186,3 - Vulnerability/Misuse/Fault Detection,19 - Vulnerability Detection,DLAP_1,\eval{GivenExamples-VulnerabilityProneness-Code-MultiLabel-Soft-Classification},#NAME?,TRUE,CloseEnded,,Verdadero,Snippet-level,NotExplained,VulId+Prob + Prob,Examples Label+Prob ,,,,,,,,,09 - Code Scaling,2 - Evaluative
+156,2 - Debugging,17 - Fault Localization,ChatGPT-4(Log)_1,\eval{FaultProneness-CodeLines-Ranking},#NAME?,TRUE,,,Verdadero,Line-level,Explained,,,,,1,,,,,,10 - Line Code-Ranking,2 - Evaluative
+172,3 - Vulnerability/Misuse/Fault Detection,19 - Vulnerability Detection,ChatGPT4vul_2,\eval{VulnerabilityProneness-CodeLines-Ranking} ,#NAME?,FALSE,,,,,NotExplained,,,,,,,,,,,10 - Line Code-Ranking,2 - Evaluative
+158,2 - Debugging,17 - Fault Localization,ChatGPT-4(Log)_2,\eval{TestResultAware-FaultProneness-CodeLines-ReRanking},#NAME?,FALSE,,,,,NotExplained,,,,,1,,,,,,10 - Line Code-Ranking,2 - Evaluative
+202,3 - Vulnerability/Misuse/Fault Detection,20 - Line-level Fault/API Misuse Prediction,WitheredLeaf_2,\eval{Warnings-Irrelevance-Filtering},#NAME?,FALSE,CloseEnded,,,Line-level,NotExplained,Warning Relevance,,,,,,,,,,11 - Task-Solution Analysis,2 - Evaluative
+234,4 - Static Analysis,23 - Use Before Initialize,LLift_2(SelfValid),\teval{Self-Validation},#NAME?,FALSE,,,,,NotExplained,,,,,,,,,,,11 - Task-Solution Analysis,2 - Evaluative
+236,4 - Static Analysis,23 - Use Before Initialize,LLift_3(SelfValid),\teval{Self-Validation},#NAME?,FALSE,,,,,NotExplained,,,,,,,,,,,11 - Task-Solution Analysis,2 - Evaluative
+38,1 - Testing,03 - Input Generation,mrDetector_2,\eval{Answer-Quality(Reasonability)-Judgment},#NAME?,FALSE,,,,,NotExplained,,,1,,,,,,,,11 - Task-Solution Analysis,2 - Evaluative
+167,2 - Debugging,18 - Root Cause Analysis,LM-PACE_3,"\eval{Answer-Qlty(Truth, Ground, Informative)-Assessment}",#NAME?,FALSE,,,,,NotExplained,,,,,,,,,,,11 - Task-Solution Analysis,2 - Evaluative
+253,4 - Static Analysis,28 - Fix Acceptance Check,CORE,"\eval{Patch-Qlty(Fixes, LeastImpact)-Assessment}",#NAME?,FALSE,,,,,NotExplained,,,,,,,,,,,11 - Task-Solution Analysis,2 - Evaluative
+216,3 - Vulnerability/Misuse/Fault Detection,21 - Vulnerability Detection for Smart Contracts,GPTLens_2,"\eval{Audits-Qlty(Correctness, Severity, Profitability)-Assessment}",#NAME?,FALSE,,,,,NotExplained,,,,,,,,,,,11 - Task-Solution Analysis,2 - Evaluative
+239,4 - Static Analysis,24 - Resource Leak,SkipAnalyzer_3,\eval{Warning-FalsePositiveProneness-Assessment},#NAME?,FALSE,,,,,NotExplained,,,1,,1,,,,,,11 - Task-Solution Analysis,2 - Evaluative
+181,3 - Vulnerability/Misuse/Fault Detection,19 - Vulnerability Detection,VulDetect_4,\eval{Answer-Quality-Assessment},#NAME?,FALSE,,,,,NotExplained,,,,,,,,,,,11 - Task-Solution Analysis,2 - Evaluative
+119,1 - Testing,14 - Oracle Problem,SELF-DEBUGGING_OP6,\eval{Docstrings-Equivalence-Checking},#NAME?,,,,,,,,,1,,,,,,,,12 - Text Analysis,2 - Evaluative
+275,5 - Program Verification,29 - Program Verification,Clover_8,\eval{Docstrings-Equivalence-Checking},#NAME?,FALSE,,,,,NotExplained,,,,,,,,,,,12 - Text Analysis,2 - Evaluative
+94,1 - Testing,12 - Functional Testing,ScenarioNL_3,\eval{ExpertSolvedUncertainty-TextDependent-QuestionAnswering},#NAME?,FALSE,,,,,NotExplained,,,,,,1,,,,,12 - Text Analysis,2 - Evaluative
+164,2 - Debugging,18 - Root Cause Analysis,RCAAgents_2,\eval{TextDependent-QuestionAnswering},#NAME?,FALSE,,,,,NotExplained,,,,,,,,,,,12 - Text Analysis,2 - Evaluative
+93,1 - Testing,12 - Functional Testing,ScenarioNL_2,\eval{Ambiguity-Analysis},#NAME?,FALSE,,,,,NotExplained,,,,,,,,,,,12 - Text Analysis,2 - Evaluative
+132,1 - Testing,14 - Oracle Problem,ClarifyGPT_4,\eval{Ambiguity-Analysis},#NAME?,FALSE,,,,,NotExplained,,,1,,,,,,,,12 - Text Analysis,2 - Evaluative
+153,2 - Debugging,17 - Fault Localization,AutoSD_2,\eval{EvidenceSupport-Judgment} ,#NAME?,FALSE,,,,,NotExplained,,,,,,,,,,,12 - Text Analysis,2 - Evaluative
+165,2 - Debugging,18 - Root Cause Analysis,LM-PACE_1,\eval{SufficiencyToInferAnswer-Assessment},#NAME?,FALSE,,,,,NotExplained,,,,,,,,,,,12 - Text Analysis,2 - Evaluative
+252,4 - Static Analysis,27 - Static Slicing,SimulinkSlicer,\extr{Model-Slicing},#NAME?,,,,,,,,,1,,1,,,,,,13 - Code-Elements Identification,3 - Extractive
+249,4 - Static Analysis,26 - Taint Analysis,LATTE_2,extr{ExternalInputSource-Identification},#NAME?,,,,,,,,,,,,,,,,,13 - Code-Elements Identification,3 - Extractive
+61,1 - Testing,07 - Kernel Fuzzing,KernelGPT_3,\extr{InfoRequesting-Type-Identification},#NAME?,,,,,,,,,1,1*,,,,,,,13 - Code-Elements Identification,3 - Extractive
+248,4 - Static Analysis,26 - Taint Analysis,LATTE_1,\extr{Sink-Identification},#NAME?,,,,,,,,,,,,,,,,,13 - Code-Elements Identification,3 - Extractive
+232,4 - Static Analysis,23 - Use Before Initialize,LLift_1,\extr{InfoRequesting-Initializator-Identification},#NAME?,,,,,,,,,,1,,,,,,,13 - Code-Elements Identification,3 - Extractive
+227,3 - Vulnerability/Misuse/Fault Detection,21 - Vulnerability Detection for Smart Contracts,GPTScan_3,\extr{RoleBased-CodeElements-Identification},#NAME?,,,,,,,,,,,1,,,,,,13 - Code-Elements Identification,3 - Extractive
+240,4 - Static Analysis,24 - Resource Leak,InferROI,\extr{ResourceLeakRelated-CodeElements-Identification},#NAME?,,,,,,,,,,,,,,,,,13 - Code-Elements Identification,3 - Extractive
+60,1 - Testing,07 - Kernel Fuzzing,KernelGPT_2,\extr{InfoRequesting-CodeElements-Identification},#NAME?,,,,,,,,,1,1*,,,,,,,13 - Code-Elements Identification,3 - Extractive
+59,1 - Testing,07 - Kernel Fuzzing,KernelGPT_1,\extr{CodeElements-Identification},#NAME?,,,,,,,,,1,,,,,,,,13 - Code-Elements Identification,3 - Extractive
+229,4 - Static Analysis,22 - Call-Graph/CFG Construction,CFG-Chain_2,\extr{BlockCorresponding-Code-Extraction} ,#NAME?,,,,,,,,,1,,,,,,,,13 - Code-Elements Identification,3 - Extractive
+62,1 - Testing,07 - Kernel Fuzzing,KernelGPT_4,\extr{InfoRequesting-Definition-Extraction},#NAME?,,,,,,,,,,1*,,,,,,,13 - Code-Elements Identification,3 - Extractive
+228,4 - Static Analysis,22 - Call-Graph/CFG Construction,CFG-Chain_1,\extr{CodeBlocks-Extraction} ,#NAME?,,,,,,,,,1,,,,,,,,13 - Code-Elements Identification,3 - Extractive
+135,1 - Testing,14 - Oracle Problem,EMR_1,\extr{IORelated-Sentences-Identification},#NAME?,,,,,,,,,,,,,,,,,14 - Text-Elements Extraction,3 - Extractive
+140,1 - Testing,14 - Oracle Problem,MetaMorph,\extr{VariableNames-Identification},#NAME?,,,,,,,,,1,,,,,,,,14 - Text-Elements Extraction,3 - Extractive
+142,2 - Debugging,15 - Bug Reproduction,AdbGPT_1,\extr{StepsToReproduce-Extraction},#NAME?,,,,,,,,,1,,1,,,,,,14 - Text-Elements Extraction,3 - Extractive
+97,1 - Testing,12 - Functional Testing,SysKG-UTF_1,\extr{StructureCompliant-Information-Extraction},#NAME?,,,,,,,,,1,,,,,,,,14 - Text-Elements Extraction,3 - Extractive
+147,2 - Debugging,16 - Duplicate Bug Report Detection,Cupid,\extr{AimedAtDuplicateDetection-Keywords-Extraction},#NAME?,,,,,,,,,,,,,,,,,14 - Text-Elements Extraction,3 - Extractive
+134,1 - Testing,14 - Oracle Problem,PROSPER,\extr{FSM-Elements-Extraction},#NAME?,,,,,,,,,1,,,,,,,,14 - Text-Elements Extraction,3 - Extractive
+160,2 - Debugging,18 - Root Cause Analysis,RCACopilot_2,\extr{Common-RootCause-Selection},#NAME?,,,,,,,,,,,1,,,,,,14 - Text-Elements Extraction,3 - Extractive
+222,3 - Vulnerability/Misuse/Fault Detection,21 - Vulnerability Detection for Smart Contracts,LLM4Vuln_3(PreCoT),\tabstr{funct summ},#NAME?,,,,,,,,,,,,,,,,,15 - SW-Entity Verbalization,4 - Abstractive
+280,5 - Program Verification,29 - Program Verification,RustProof_1(CoT),\tabstr{code intent + precond explan},#NAME?,,,,,,,,,,,,,,,,,15 - SW-Entity Verbalization,4 - Abstractive
+282,5 - Program Verification,29 - Program Verification,RustProof_2(CoT),\tabstr{precond explan + postcond explan},#NAME?,,,,,,,,,,,,,,,,,15 - SW-Entity Verbalization,4 - Abstractive
+114,1 - Testing,14 - Oracle Problem,SELF-DEBUGGING_OP1,\abstr{SQL-CodeCorresponding-Explanation-Generation},#NAME?,,,,,,,,,1,,,,,,,,15 - SW-Entity Verbalization,4 - Abstractive
+116,1 - Testing,14 - Oracle Problem,SELF-DEBUGGING_OP3,\abstr{SQL-Code\&ExecutionCorresponding-Explanation-Generation},#NAME?,,,,,,,,,1,,,,,,,,15 - SW-Entity Verbalization,4 - Abstractive
+206,3 - Vulnerability/Misuse/Fault Detection,20 - Line-level Fault/API Misuse Prediction,LLMAPIDet_1,\abstr{RootCauseOriented-ChangeAction-Verbalization},#NAME?,,,,,,,,,1,,,,,,,,15 - SW-Entity Verbalization,4 - Abstractive
+131,1 - Testing,14 - Oracle Problem,ClarifyGPT_3,\abstr{CodeDifferences-Verbalization},#NAME?,,,,,,,,,1,,,,,,,,15 - SW-Entity Verbalization,4 - Abstractive
+18,1 - Testing,01 - Unit Test Generation,ChatTESTER_1,\abstr{CodeCorresponding-Intent-Verbalization},#NAME?,,,,,,,,,,,,,,,,,15 - SW-Entity Verbalization,4 - Abstractive
+21,1 - Testing,02 - Failure-Inducing Test Generation,DiffPrompt_1,\abstr{CodeCorresponding-Intent-Verbalization},#NAME?,,,,,,,,,,,,,,,,,15 - SW-Entity Verbalization,4 - Abstractive
+193,3 - Vulnerability/Misuse/Fault Detection,19 - Vulnerability Detection,PromptEnhanced_1,\abstr{CodeCorresponding-Intent-Verbalization},#NAME?,,,,,,,,,,,,,,,,,15 - SW-Entity Verbalization,4 - Abstractive
+207,3 - Vulnerability/Misuse/Fault Detection,20 - Line-level Fault/API Misuse Prediction,LLMAPIDet_2,\abstr{CodeCorresponding-Intent-Verbalization},#NAME?,,,,,,,,,,,,,,,,,15 - SW-Entity Verbalization,4 - Abstractive
+217,3 - Vulnerability/Misuse/Fault Detection,21 - Vulnerability Detection for Smart Contracts,LLM4Vuln_1,\abstr{CodeCorresponding-Intent-Verbalization},#NAME?,,,,,,,,,,,,,,,,,15 - SW-Entity Verbalization,4 - Abstractive
+271,5 - Program Verification,29 - Program Verification,Clover_4,\abstr{CodeCorresponding-Intent-Verbalization},#NAME?,,,,,,,,,,,,,,,,,15 - SW-Entity Verbalization,4 - Abstractive
+274,5 - Program Verification,29 - Program Verification,Clover_7,\abstr{AnnotationCorresponding-Intent-Verbalization},#NAME?,,,,,,,,,,,,,,,,,15 - SW-Entity Verbalization,4 - Abstractive
+53,1 - Testing,06 - General Fuzzing,Fuzz4All_1,\abstr{Usage-Summarization},#NAME?,,,,,,,,,,,,,,,,,15 - SW-Entity Verbalization,4 - Abstractive
+108,1 - Testing,13 - Penetration Testing,PentestGPT_8,\abstr{Summarization},#NAME?,,,,,,,,,,,,,,,,,15 - SW-Entity Verbalization,4 - Abstractive
+113,1 - Testing,14 - Oracle Problem,FSML_OP(CoT),\tabstr{code intent},#NAME?,,,,,,,,,,,,,,,,,15 - SW-Entity Verbalization,4 - Abstractive
+214,3 - Vulnerability/Misuse/Fault Detection,21 - Vulnerability Detection for Smart Contracts,SmartAudit_3(CoT),\tabstr{code intent},#NAME?,,,,,,,,,,,,,,,,,15 - SW-Entity Verbalization,4 - Abstractive
+157,2 - Debugging,17 - Fault Localization,ChatGPT-4(Log)_1(CoT),\tabstr{funct intent},#NAME?,,,,,,,,,,,,,,,,,15 - SW-Entity Verbalization,4 - Abstractive
+122,1 - Testing,14 - Oracle Problem,nl2postcondition,\abstr{PostCondition-Formalization},#NAME?,,,,,,,,,,,,,,,,,16 - Formalization,4 - Abstractive
+279,5 - Program Verification,29 - Program Verification,RustProof_1,\abstr{PostCondition-Formalization},#NAME?,,,,,,,,,,,1,,,,,,16 - Formalization,4 - Abstractive
+273,5 - Program Verification,29 - Program Verification,Clover_6,\abstr{IntentCorresponding-PrePost-Formalization},#NAME?,,,,,,,,,,,,,,,,,16 - Formalization,4 - Abstractive
+266,5 - Program Verification,29 - Program Verification,Dafny-Synth_4b,\tabstr{pre/post},#NAME?,,,,,,,,,,,,,,,,,16 - Formalization,4 - Abstractive
+243,4 - Static Analysis,25 - Data-Flow Analysis,LLMDFA_3,\abstr{VariablesSameValue-Identification},#NAME?,,,,,,,,,1,,1,,,,,,17 - SW-Entity Property Identification & Characterization,4 - Abstractive
+118,1 - Testing,14 - Oracle Problem,SELF-DEBUGGING_OP5,\abstr{Rationalized-NLQuery-NumberOfColumns-Identification},#NAME?,,,,,,,,,1,,1,,,,,,17 - SW-Entity Property Identification & Characterization,4 - Abstractive
+233,4 - Static Analysis,23 - Use Before Initialize,LLift_2,\abstr{PostConstraint-Identification},#NAME?,,,,,,,,,,,,,,,,1,17 - SW-Entity Property Identification & Characterization,4 - Abstractive
+230,4 - Static Analysis,22 - Call-Graph/CFG Construction,CFG-Chain_3,\abstr{ControlFlow-Identification} ,#NAME?,,,,,,,,,1,,,,,,,,17 - SW-Entity Property Identification & Characterization,4 - Abstractive
+250,4 - Static Analysis,26 - Taint Analysis,LATTE_3,\abstr{TaintFlow-Identification},#NAME?,,,,,,,,,,,,,,,,,17 - SW-Entity Property Identification & Characterization,4 - Abstractive
+265,5 - Program Verification,29 - Program Verification,Dafny-Synth_4a,\abstr{NL-Specification-Distillation},#NAME?,,,,,,,,,,,,,,,,,17 - SW-Entity Property Identification & Characterization,4 - Abstractive
+31,1 - Testing,03 - Input Generation,InputBlaster_3,\abstr{Effective\&Diversified-MutationRule-Characterization},#NAME?,,,,,,,,,1,,,,,,,,17 - SW-Entity Property Identification & Characterization,4 - Abstractive
+136,1 - Testing,14 - Oracle Problem,EMR_2,\abstr{SentenceDerivable-MethamorpicRelation-Characterization},#NAME?,,,,,,,,,,,,,,,,,17 - SW-Entity Property Identification & Characterization,4 - Abstractive
+235,4 - Static Analysis,23 - Use Before Initialize,LLift_3,\abstr{InfoRequesting-QualifiedPostCondition-Characterization},#NAME?,,,,,,,,,1,1,1,,,,,1,17 - SW-Entity Property Identification & Characterization,4 - Abstractive
+112,1 - Testing,14 - Oracle Problem,FSML_OP,\abstr{MetamorphicAssertion-Characterization},#NAME?,,,,,,,,,1,,1,,,,,,17 - SW-Entity Property Identification & Characterization,4 - Abstractive
+27,1 - Testing,03 - Input Generation,RESTGPT_1,abstr{DescriptionCorresponding-Liberal-Constraint-Characterization},#NAME?,,,,,,,,,1,,,,,,,,17 - SW-Entity Property Identification & Characterization,4 - Abstractive
+29,1 - Testing,03 - Input Generation,InputBlaster_1,\abstr{GUIInputCorresponding-ValidityConstraint-Characterization},#NAME?,,,,,,,,,1,,,,,,,,17 - SW-Entity Property Identification & Characterization,4 - Abstractive
+66,1 - Testing,08 - Compiler/Simulator Fuzzing,WhiteFox_1,\abstr{CodeReachability-Input-Characterization},#NAME?,,,,,,,,,1,,,,,,,,17 - SW-Entity Property Identification & Characterization,4 - Abstractive
+168,2 - Debugging,18 - Root Cause Analysis,LM-PACE_4,\abstr{Assessment-Scaled-Summarization},#NAME?,,,,,,,,,,,,,,,,,18 - Focused-Abstractive Summarization,4 - Abstractive
+92,1 - Testing,12 - Functional Testing,ScenarioNL_1,\abstr{Focused-Summarization},#NAME?,,,,,,,,,,,,1,,,,,18 - Focused-Abstractive Summarization,4 - Abstractive
+139,1 - Testing,14 - Oracle Problem,GameBugDescriptions_2,\abstr{Answer-FailureOriented-Summarization} ,#NAME?,,,,,,,,,,,,,,,,,18 - Focused-Abstractive Summarization,4 - Abstractive
+159,2 - Debugging,18 - Root Cause Analysis,RCACopilot_1,\abstr{RootCauseOriented-Summarization},#NAME?,,,,,,,,,,,,,,,,,18 - Focused-Abstractive Summarization,4 - Abstractive
+161,2 - Debugging,18 - Root Cause Analysis,x-lifecycle_1,\abstr{RootCauseOriented-Summarization},#NAME?,,,,,,,,,,,,,,,,,18 - Focused-Abstractive Summarization,4 - Abstractive
+169,2 - Debugging,18 - Root Cause Analysis,inContextRCA_1,\abstr{RootCauseOriented-Summarization},#NAME?,,,,,,,,,,,,,,,,,18 - Focused-Abstractive Summarization,4 - Abstractive
+151,2 - Debugging,17 - Fault Localization,AutoFL_2,\abstr{Answer-FaultOriented-Summarization} ,#NAME?,,,,,,,,,,,,,,,,,18 - Focused-Abstractive Summarization,4 - Abstractive
+117,1 - Testing,14 - Oracle Problem,SELF-DEBUGGING_OP4,\abstr{ColumnOriented-Explanation-Summarization},#NAME?,,,,,,,,,1,,,,,,,,18 - Focused-Abstractive Summarization,4 - Abstractive
+218,3 - Vulnerability/Misuse/Fault Detection,21 - Vulnerability Detection for Smart Contracts,LLM4Vuln_2,\abstr{Vulnerability-MechanismExplanation-Summarization},#NAME?,,,,,,,,,,,,,,,,,18 - Focused-Abstractive Summarization,4 - Abstractive
+166,2 - Debugging,18 - Root Cause Analysis,LM-PACE_2,\abstr{Assessment-Yes/No-Summarization},#NAME?,,,,,,,,,,,,,,,,,18 - Focused-Abstractive Summarization,4 - Abstractive
+210,3 - Vulnerability/Misuse/Fault Detection,21 - Vulnerability Detection for Smart Contracts,ChatGPTSCV_2,\abstr{AssessmentBased-Vulnerability-MultiClass-Summarization},#NAME?,,,,,,,,,,,1,,,,,,18 - Focused-Abstractive Summarization,4 - Abstractive
+99,1 - Testing,12 - Functional Testing,SysKG-UTF_3,\exec{FeasibilityRedundancyAware-StepsToReproduce-Fusing(edition)},#NAME?,,,,,,,,,1,,1,,,,,,19 - Plan Generation,5 - Executive
+106,1 - Testing,13 - Penetration Testing,PentestGPT_6,\exec{ToolsConstrained-Plan-Generation},#NAME?,,,,,,,,,,,1,,,,,,19 - Plan Generation,5 - Executive
+85,1 - Testing,11 - GUI Testing,AXNav_1,\exec{TestGoalCorresponding-Plan-Generation},#NAME?,,,,,,,,,,,1,,,,,,19 - Plan Generation,5 - Executive
+109,1 - Testing,13 - Penetration Testing,pwn’d_1,\exec{ScenarioCorresponding-Plan-Generation},#NAME?,,,,,,,,,,1,,,,,,,19 - Plan Generation,5 - Executive
+101,1 - Testing,13 - Penetration Testing,PentestGPT_1,\exec{IntentCorresponding-Plan-Generation},#NAME?,,,,,,,,,,1,,,,,,,19 - Plan Generation,5 - Executive
+256,5 - Program Verification,29 - Program Verification,AlloyRepair_3,\exec{Suggestion-Generation},#NAME?,,,,,,,,,,,,,,,,,19 - Plan Generation,5 - Executive
+89,1 - Testing,12 - Functional Testing,TARGET_1,\exec{DSLValid\&TryToUseGivenElements-RuleConsistent-Scenario-Generation},#NAME?,,,,,,,,,1,,,,,,,,19 - Plan Generation,5 - Executive
+88,1 - Testing,11 - GUI Testing,AXNav_4,\exec{StepOutcomeCorresponding-Plan-Correction},#NAME?,,,,,,,,,,,,,,,,,19 - Plan Generation,5 - Executive
+90,1 - Testing,12 - Functional Testing,TARGET_2,\exec{RuleInconsistencies-Scenario-Correction},#NAME?,,,,,,,,,,,,,,,,,19 - Plan Generation,5 - Executive
+224,3 - Vulnerability/Misuse/Fault Detection,21 - Vulnerability Detection for Smart Contracts,LLM4Vuln_3(exploit),\texec{Proof of Concept exploit},#NAME?,,,,,,,,,,,,,,,,,19 - Plan Generation,5 - Executive
+100,1 - Testing,12 - Functional Testing,SysKG-UTF_4,\exec{FeasibilityAware-StepsToReproduce-Refinement},#NAME?,,,,,,,,,1,,1,,,,,,19 - Plan Generation,5 - Executive
+98,1 - Testing,12 - Functional Testing,SysKG-UTF_2,\exec{StepsToReproduce-Refinement},#NAME?,,,,,,,,,1,,,,,,,,19 - Plan Generation,5 - Executive
+86,1 - Testing,11 - GUI Testing,AXNav_2,\exec{Plan-Refinement},#NAME?,,,,,,,,,,,1,,,,,,19 - Plan Generation,5 - Executive
+107,1 - Testing,13 - Penetration Testing,PentestGPT_7,\exec{Plan-Refinement},#NAME?,,,,,,,,,,,1,,,,,,19 - Plan Generation,5 - Executive
+143,2 - Debugging,15 - Bug Reproduction,AdbGPT_2,\exec{Plan-Refinement},#NAME?,,,,,,,,,1,,1,,,,,,19 - Plan Generation,5 - Executive
+187,3 - Vulnerability/Misuse/Fault Detection,19 - Vulnerability Detection,DLAP_2,\exec{Plan-Refinement},#NAME?,,,,,,,,,,,,,,,,,19 - Plan Generation,5 - Executive
+110,1 - Testing,13 - Penetration Testing,pwn’d_2,\exec{ReachabilityOriented-NextAction-Generation},#NAME?,,,,,,,,,,,,,,,,,20 - What-to-do-Next Generation,5 - Executive
+144,2 - Debugging,15 - Bug Reproduction,CrashTranslator_1,\exec{ReachabilityOriented-NextNode-Selection},#NAME?,,,,,,,,,,,,,,,,,20 - What-to-do-Next Generation,5 - Executive
+105,1 - Testing,13 - Penetration Testing,PentestGPT_5,\exec{MostPromising-NextTask-Selection},#NAME?,,,,,,,,,,,,,,,,,20 - What-to-do-Next Generation,5 - Executive
+84,1 - Testing,11 - GUI Testing,GPTDroid,\exec{FunctionCoverageOriented-NextAction-Selection},#NAME?,,,,,,,,,1,,,,,,,,20 - What-to-do-Next Generation,5 - Executive
+145,2 - Debugging,15 - Bug Reproduction,CrashTranslator_2,\exec{ReachabilityOrientedWithSuggestedNextNode-NextAction-Selection} ,#NAME?,,,,,,,,,,,,,,,,,20 - What-to-do-Next Generation,5 - Executive
+12,1 - Testing,01 - Unit Test Generation,TestChain_2,\gen{IntentionCorresponding-Result-Generation},#NAME?,,,,,,,,,,1,1,,,,,,21 - Execution,5 - Executive
+246,4 - Static Analysis,26 - Taint Analysis,E&V_1,\exec{Step-Computation},#NAME?,,,,,,,,,,,,,,,,,21 - Execution,5 - Executive
+149,2 - Debugging,17 - Fault Localization,SELF-DEBUGGING_FL(CoT),\texec{trace execution},#NAME?,FALSE,,,,,NotExplained,,,,,,,,,,,21 - Execution,5 - Executive
+121,1 - Testing,14 - Oracle Problem,SELF-DEBUGGING_OP7(CoT),\texec{assertion execution},#NAME?,,,,,,,,,,,,,,,,,21 - Execution,5 - Executive
+102,1 - Testing,13 - Penetration Testing,PentestGPT_2,\exec{Elements-Update},#NAME?,,,,,,,,,,,,,,,,,22 - Textual Data Manipulation,5 - Executive
+72,1 - Testing,09 - Protocol/Parser Fuzzing,FuzzingParsers_5,\exec{Data-Fusing},#NAME?,,,,,,,,,,,,,,,,,22 - Textual Data Manipulation,5 - Executive
+231,4 - Static Analysis,22 - Call-Graph/CFG Construction,CFG-Chain_4,\exec{CFG-Fusion} ,#NAME?,,,,,,,,,1,,,,,,,,22 - Textual Data Manipulation,5 - Executive
+104,1 - Testing,13 - Penetration Testing,PentestGPT_4,\exec{RulesSatisfying-Information-Extraction},#NAME?,,,,,,,,,,,,,,,,,22 - Textual Data Manipulation,5 - Executive
+91,1 - Testing,12 - Functional Testing,TARGET_3,\exec{InListCloseMeaning-Elements-Replacement},#NAME?,,,,,,,,,,,,,,,,,22 - Textual Data Manipulation,5 - Executive
+198,3 - Vulnerability/Misuse/Fault Detection,20 - Line-level Fault/API Misuse Prediction,EditTime_2,\cons{Example-Recall},#NAME?,,,,,,,,,,,,,,,,,23 - Knowledge Distillation,6 - Consultative
+69,1 - Testing,09 - Protocol/Parser Fuzzing,FuzzingParsers_2,\cons{New-ExampleOfThing-Recall},#NAME?,,,,,,,,,,,,,,,,,23 - Knowledge Distillation,6 - Consultative
+197,3 - Vulnerability/Misuse/Fault Detection,20 - Line-level Fault/API Misuse Prediction,EditTime_1,\cons{Definition-Recall},#NAME?,,,,,,,,,,,,,,,,,23 - Knowledge Distillation,6 - Consultative
+192,3 - Vulnerability/Misuse/Fault Detection,19 - Vulnerability Detection,MultiTask_4,\cons{AssociatedVulnerability-Description-Recall},#NAME?,,,,,,,,,,,,,,,,,23 - Knowledge Distillation,6 - Consultative
+73,1 - Testing,09 - Protocol/Parser Fuzzing,ChatAFL_1,\cons{ProtocolGrammar-Recall},#NAME?,,,,,,,,,1,,,,,,,,23 - Knowledge Distillation,6 - Consultative
+70,1 - Testing,09 - Protocol/Parser Fuzzing,FuzzingParsers_3,\cons{ParsingErrors-Recall},#NAME?,,,,,,,,,,,,,,,,,23 - Knowledge Distillation,6 - Consultative
+68,1 - Testing,09 - Protocol/Parser Fuzzing,FuzzingParsers_1,\cons{StructureOfObject-Recall},#NAME?,,,,,,,,,,,,,,,,,23 - Knowledge Distillation,6 - Consultative

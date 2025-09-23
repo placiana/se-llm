@@ -9,6 +9,7 @@
   display: block;
   position: relative;
   padding-left: calc(2 * var(--spacing) - var(--radius) - 2px);
+  margin: 5px 0px;
 }
 
 .tree ul {
@@ -18,7 +19,7 @@
 
 .tree ul li {
   border-left: 2px solid #ddd;
-  margin: 5px 0px;
+
 }
 
 .tree ul li:last-child {

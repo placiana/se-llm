@@ -2,6 +2,7 @@ import os
 import json
 from flask import render_template
 from flask import Flask
+import pandas as pd
 
 from parsing import bib_to_obj
 
@@ -35,6 +36,19 @@ def data():
     # ECharts `tree` series expects an *array* of root nodes
     return json.dumps([payload])
 
+
+@app.route('/data/categories')
+def data_categories():
+    df = pd.read_csv('sources/Tabla de papers para contar con Tasks.csv')
+    category_column = 'LLM-Task Category'
+    task_column = 'Task Id'
+
+    # return a nested object with categories as top-level nodes then tasks as children
+    categories = []
+    for category, group in df.groupby(category_column):
+        tasks = [{"name": task_id} for task_id in group[task_column].unique()]
+        categories.append({"name": category, "children": tasks})
+    return json.dumps(categories)
 
 
 if __name__ == '__main__':

@@ -8,6 +8,9 @@ with open("sources/AnnotationGeneration.tex", "r", encoding="utf-8") as f:
 walker = LatexWalker(latex_code)
 nodelist, pos, len_ = walker.get_latex_nodes()
 
+
+categories = {}
+
 def walk_nodes(nodes, indent=0):
     """Recorrer nodos recursivamente y mostrarlos con sangría."""
 
@@ -27,10 +30,6 @@ def walk_nodes(nodes, indent=0):
                     if arg is not None:
                         res =  walk_nodes(arg.nodelist, indent+1)
                         output += res
-            #print('macro',node.macroname, output)
-            if node.macroname == 'phantom':
-                print('fantomas', res)
-            
 
         elif isinstance(node, LatexEnvironmentNode):
             #print(f"{prefix}Entorno: {node.envname}")
@@ -41,15 +40,26 @@ def walk_nodes(nodes, indent=0):
                 continue
             if all([x not in node.chars for x in["\n", "node"] ]):
                 #print(f"{indent} {prefix}Texto: {node.chars!r}")
+                #if indent in [4, 5,6]:
+                #    print(indent, prefix, node.chars)
                 if indent >= 4:
                     output.append( node.chars)
         elif isinstance(node, LatexGroupNode):
             #print('GroupNode:')
             res = walk_nodes(node.nodelist, indent+1)
             output += res
-            if res and indent == 4:
-                
-                print(indent, 'group: ', res)
+            if res and indent in [3]:
+                if len(res) == 1:
+                    category = res[0].split(':')[0].strip()
+                    categories[category] = {}
+                if len(res) > 1:
+                    subcat = res[0].split(':')[0].strip()
+                    if subcat in categories[category]:
+                        categories[category][subcat].extend(res[1:])
+                    else:
+                        categories[category][subcat] = res[1:]
+
+                print(indent, prefix, res)
 
         else:
             print(f"{prefix}{node!r}")
@@ -57,3 +67,5 @@ def walk_nodes(nodes, indent=0):
 
 # Recorremos el árbol
 walk_nodes(nodelist)
+import pprint
+pprint.pp(categories)

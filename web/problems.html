@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS TreeView Example</title>
+  <link rel="stylesheet" href="/static/tree.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/bitmaks/cm-web-fonts@latest/fonts.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+  <!-- Bootstrap CSS desde CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      font-family: "Computer Modern Sans", sans-serif;
+    }
+
+    .navbar {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-custom {
+      border-radius: 50px;
+      padding: 0.75rem 1.5rem;
+      font-size: 1.1rem;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn-custom:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    main {
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">Tasks People Prompt</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Index</a></li>
+          <li class="nav-item"><a class="nav-link" href="problems.html">Problems</a></li>
+          <li class="nav-item"><a class="nav-link" href="tasks.html">Tasks</a></li>
+          <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <h2>Problems</h2>
+  <div id="problems-container">
+    <!-- Se llena con JS -->
+  </div>
+  
+
+
+
+  <script>
+
+    async function renderTree(file_url = 'tree.json', container_id = 'treeview') {
+      const response = await fetch(file_url);
+      const treeData = await response.json();
+
+      const container = document.getElementById(container_id);
+
+      function createTree(data) {
+        if (data === null || data === undefined) {
+          return '';
+        }
+
+        // caso primitivo (string, número, booleano)
+        if (typeof data !== 'object') {
+          return `<li>${data}</li>`;
+        }
+
+        let html = '<ul class="tree">';
+
+        if (Array.isArray(data)) {
+          // ordenar array (si los elementos son primitivos)
+          const sortedArray = [...data].sort((a, b) => {
+            if (typeof a === 'object' || typeof b === 'object') return 0; // no ordenar objetos
+            return String(a).localeCompare(String(b));
+          });
+
+          for (const item of sortedArray) {
+            html += createTree(item);
+          }
+        } else {
+          // es diccionario → ordenar claves
+          const keys = Object.keys(data).sort((a, b) => a.localeCompare(b));
+
+          for (const key of keys) {
+            const value = data[key];
+            if (typeof value === 'object' && value !== null) {
+              html += `<li>
+          <details>
+            <summary>${key}</summary>
+            ${createTree(value)}
+          </details>
+        </li>`;
+            } else {
+              html += `<li>${key}: ${value}</li>`;
+            }
+          }
+        }
+
+        html += '</ul>';
+        return html;
+      }
+
+
+      container.innerHTML = createTree(treeData);
+    }
+
+    renderTree('/data/problems.json', 'problems-container');
+  </script>
+
+</body>
+
+</html>

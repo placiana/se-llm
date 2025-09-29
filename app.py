@@ -51,5 +51,39 @@ def data_categories():
     return json.dumps(categories)
 
 
+
+def get_tasks_from_csv(csv_filename):
+    df = pd.read_csv(csv_filename)
+    df['Name'] = df['Task Name'].str.split('{').str[1].str.removesuffix('}')
+    # Remove columns
+    df = df.drop(['Unnamed: 0', 'Unnamed: 5', 'Multi-class? def: Binary', 'Openness of labels set','Multi-label? def: Single-label', 'Soft (probability)? def: Hard', 'Granularity', 'Explained?', 'Type of question wrt Vuls'], axis=1)
+
+    # Boolean columns
+    bool_cols = ['Few-Shot', 'ReAct',  'CoT', 'ToT', 'RAG', 'Infiller', 'FeedbackLoop', 'Self-Validation', 'Mult/Openness VulSet']
+    for col in bool_cols:
+        df[col] = df[col].notna()
+    
+    return df.to_dict(orient='records')
+
+
+def get_problems_from_tasks(task_data):
+
+    problems = {}
+    for record in task_data:
+        if record['SE-Area'] not in problems:
+            problems[record['SE-Area']] = {}
+
+        if record['SE-Prob'] not in problems[record['SE-Area']]:
+            problems[record['SE-Area']][record['SE-Prob']] = []
+        problems[record['SE-Area']][record['SE-Prob']].append(record['Task Id'])
+
+    return problems
+        
+
+def write_data_files():
+    data = get_tasks_from_csv('sources/Tabla de papers para contar con Tasks.csv')
+    with open('data/tasks.json', 'w') as file:
+        json.dump(data, file, indent=2)
+
 if __name__ == '__main__':
     app.run(debug=True)

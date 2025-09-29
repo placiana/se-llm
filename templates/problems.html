@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TreeView Example</title>
+    <link rel="stylesheet" href="/static/tree.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/bitmaks/cm-web-fonts@latest/fonts.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+ 
+    <style>
+     
+      body {
+        font-family: "Computer Modern Sans", sans-serif;
+        margin: 20px;
+      }
+
+      .tree {
+        /*max-width: 600px; */
+        margin: auto;
+      }
+    </style>
+
+  </head>
+  <body>
+
+
+
+  <h2>Problems</h2>
+  <div id="problems-container">
+    <!-- Se llena con JS -->
+  </div>
+
+
+
+
+<script>
+
+async function renderTree(file_url = 'tree.json', container_id = 'treeview') {
+  const response = await fetch(file_url);
+  const treeData = await response.json();
+
+  const container = document.getElementById(container_id);
+
+function createTree(data) {
+  if (data === null || data === undefined) {
+    return '';
+  }
+
+  // caso primitivo (string, número, booleano)
+  if (typeof data !== 'object') {
+    return `<li>${data}</li>`;
+  }
+
+  let html = '<ul class="tree">';
+
+  if (Array.isArray(data)) {
+    // ordenar array (si los elementos son primitivos)
+    const sortedArray = [...data].sort((a, b) => {
+      if (typeof a === 'object' || typeof b === 'object') return 0; // no ordenar objetos
+      return String(a).localeCompare(String(b));
+    });
+
+    for (const item of sortedArray) {
+      html += createTree(item);
+    }
+  } else {
+    // es diccionario → ordenar claves
+    const keys = Object.keys(data).sort((a, b) => a.localeCompare(b));
+
+    for (const key of keys) {
+      const value = data[key];
+      if (typeof value === 'object' && value !== null) {
+        html += `<li>
+          <details>
+            <summary>${key}</summary>
+            ${createTree(value)}
+          </details>
+        </li>`;
+      } else {
+        html += `<li>${key}: ${value}</li>`;
+      }
+    }
+  }
+
+  html += '</ul>';
+  return html;
+}
+
+
+  container.innerHTML = createTree(treeData);
+}
+
+renderTree('/data/problems.json', 'problems-container');
+</script>
+
+</body>
+</html>

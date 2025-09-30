@@ -1,0 +1,881 @@
+[
+  {
+    "name": "1 - Generative",
+    "children": [
+      {
+        "name": "Clover_1"
+      },
+      {
+        "name": "Clover_2"
+      },
+      {
+        "name": "Clover_3"
+      },
+      {
+        "name": "LLM4Vuln_3(patch)"
+      },
+      {
+        "name": "AutoSD_3"
+      },
+      {
+        "name": "ALGO"
+      },
+      {
+        "name": "DiffPrompt_2"
+      },
+      {
+        "name": "FormAI"
+      },
+      {
+        "name": "TitanFuzz_1"
+      },
+      {
+        "name": "ClarifyGPT_1"
+      },
+      {
+        "name": "SearchGEM5_1"
+      },
+      {
+        "name": "Dafny-Synth_5"
+      },
+      {
+        "name": "Dafny-Synth_2"
+      },
+      {
+        "name": "Dafny-Synth_1"
+      },
+      {
+        "name": "LLMorpheus"
+      },
+      {
+        "name": "LLM4CBI"
+      },
+      {
+        "name": "BugFarm "
+      },
+      {
+        "name": "FSML_DS/MG"
+      },
+      {
+        "name": "AID_1"
+      },
+      {
+        "name": "AlloyRepair_1"
+      },
+      {
+        "name": "AlloyRepair_2"
+      },
+      {
+        "name": "CHEMFUZZ_1"
+      },
+      {
+        "name": "\u00b5BERT"
+      },
+      {
+        "name": "TitanFuzz_2"
+      },
+      {
+        "name": "FLAG"
+      },
+      {
+        "name": "FuzzGPT_2"
+      },
+      {
+        "name": "WitheredLeaf_3(CoT)"
+      },
+      {
+        "name": "OSS-Fuzz_1"
+      },
+      {
+        "name": "UGCTX_1"
+      },
+      {
+        "name": "Dafny-Synth_3"
+      },
+      {
+        "name": "ScenarioNL_4"
+      },
+      {
+        "name": "Eywa"
+      },
+      {
+        "name": "AID_2"
+      },
+      {
+        "name": "InputBlaster_4"
+      },
+      {
+        "name": "PBT-GPT_2"
+      },
+      {
+        "name": "EMR_3"
+      },
+      {
+        "name": "LLMDFA_5"
+      },
+      {
+        "name": "LLMDFA_2"
+      },
+      {
+        "name": "OSS-Fuzz_2"
+      },
+      {
+        "name": "UGCTX_2"
+      },
+      {
+        "name": "LLMDFA_4"
+      },
+      {
+        "name": "LLMDFA_1"
+      },
+      {
+        "name": "TestGen-LLM"
+      },
+      {
+        "name": "ChatGPTTests_2"
+      },
+      {
+        "name": "FuzzGPT_3"
+      },
+      {
+        "name": "CodeCoT"
+      },
+      {
+        "name": "AgentCoder"
+      },
+      {
+        "name": "CodaMOSA "
+      },
+      {
+        "name": "TestPilot"
+      },
+      {
+        "name": "LIBRO"
+      },
+      {
+        "name": "CodeT"
+      },
+      {
+        "name": "ChatTESTER_2"
+      },
+      {
+        "name": "secTests"
+      },
+      {
+        "name": "CoverUp_1"
+      },
+      {
+        "name": "TELPA"
+      },
+      {
+        "name": "MuTAP_3"
+      },
+      {
+        "name": "FSML_UTG"
+      },
+      {
+        "name": "ChatGPTTests_1"
+      },
+      {
+        "name": "ChatUniTest_1"
+      },
+      {
+        "name": "EASEeval"
+      },
+      {
+        "name": "DiffPrompt_3"
+      },
+      {
+        "name": "MuTAP_1"
+      },
+      {
+        "name": "PBT-GPT_4"
+      },
+      {
+        "name": "PBT-GPT_3"
+      },
+      {
+        "name": "ChatUniTest_2"
+      },
+      {
+        "name": "ChatTESTER_3"
+      },
+      {
+        "name": "MuTAP_2"
+      },
+      {
+        "name": "CoverUp_2"
+      },
+      {
+        "name": "FuzzGPT_4"
+      },
+      {
+        "name": "Lemur_1"
+      },
+      {
+        "name": "RustProof_2"
+      },
+      {
+        "name": "SpecGen_1"
+      },
+      {
+        "name": "AutoSpec"
+      },
+      {
+        "name": "PBT-GPT_1"
+      },
+      {
+        "name": "PropertyGPT_1"
+      },
+      {
+        "name": "PropertyGPT_2"
+      },
+      {
+        "name": "Loopy_1"
+      },
+      {
+        "name": "TOGLL "
+      },
+      {
+        "name": "CEDAR"
+      },
+      {
+        "name": "RustProof_3"
+      },
+      {
+        "name": "Lemur_2"
+      },
+      {
+        "name": "KernelGPT_5"
+      },
+      {
+        "name": "SpecGen_2"
+      },
+      {
+        "name": "PropertyGPT_3"
+      },
+      {
+        "name": "Loopy_2"
+      },
+      {
+        "name": "PropertyGPT_4"
+      },
+      {
+        "name": "Clover_5"
+      },
+      {
+        "name": "ChatInv"
+      },
+      {
+        "name": "QTypist_2"
+      },
+      {
+        "name": "mrDetector_1"
+      },
+      {
+        "name": "FuzzingParsers_4"
+      },
+      {
+        "name": "ChatFuzz"
+      },
+      {
+        "name": "Fuzz4All_4"
+      },
+      {
+        "name": "SELF-DEBUGGING_OP2"
+      },
+      {
+        "name": "LLMeDiff"
+      },
+      {
+        "name": "SearchGEM5_2"
+      },
+      {
+        "name": "Fuzz4All_2"
+      },
+      {
+        "name": "RESTGPT_2"
+      },
+      {
+        "name": "SymPrompt"
+      },
+      {
+        "name": "WhiteFox_2"
+      },
+      {
+        "name": "InputBlaster_2"
+      },
+      {
+        "name": "TestChain_1"
+      },
+      {
+        "name": "ClarifyGPT_2"
+      },
+      {
+        "name": "Fuzz4All_3"
+      },
+      {
+        "name": "ChatAFL_3"
+      },
+      {
+        "name": "QTypist_1"
+      },
+      {
+        "name": "ChatAFL_2"
+      }
+    ]
+  },
+  {
+    "name": "2 - Evaluative",
+    "children": [
+      {
+        "name": "pwn\u2019d_3"
+      },
+      {
+        "name": "GameBugDescriptions_1"
+      },
+      {
+        "name": "CHEMFUZZ_2"
+      },
+      {
+        "name": "x-lifecycle_2"
+      },
+      {
+        "name": "SELF-DEBUGGING_FL"
+      },
+      {
+        "name": "AutoFL_1"
+      },
+      {
+        "name": "AutoSD_1"
+      },
+      {
+        "name": "RCAAgents_1"
+      },
+      {
+        "name": "inContextRCA_2"
+      },
+      {
+        "name": "PentestGPT_3"
+      },
+      {
+        "name": "AXNav_3"
+      },
+      {
+        "name": "E&V_2"
+      },
+      {
+        "name": "ChatGPT4vul_3"
+      },
+      {
+        "name": "LLMAPIDet_3"
+      },
+      {
+        "name": "NLBSE24_2"
+      },
+      {
+        "name": "GPTScan_2"
+      },
+      {
+        "name": "GPTScan_1"
+      },
+      {
+        "name": "SELF-DEBUGGING_OP7"
+      },
+      {
+        "name": "PromptEnhanced_2"
+      },
+      {
+        "name": "GRACE"
+      },
+      {
+        "name": "ChatGPT(Plus)"
+      },
+      {
+        "name": "ChatGPT4vul_1"
+      },
+      {
+        "name": "NLBSE24_1"
+      },
+      {
+        "name": "MultiTask_1"
+      },
+      {
+        "name": "SmartAudit_1"
+      },
+      {
+        "name": "MultiTask_3"
+      },
+      {
+        "name": "FuzzGPT_1"
+      },
+      {
+        "name": "AIagent"
+      },
+      {
+        "name": "WitheredLeaf_4"
+      },
+      {
+        "name": "LLM4Vuln_3"
+      },
+      {
+        "name": "LLM4Vuln_3wPreCoT"
+      },
+      {
+        "name": "LLM4Vuln_3wPostCoT"
+      },
+      {
+        "name": "SmartAudit_2"
+      },
+      {
+        "name": "SmartAudit_3"
+      },
+      {
+        "name": "GPTLens_1"
+      },
+      {
+        "name": "LATTE_4"
+      },
+      {
+        "name": "VulBench"
+      },
+      {
+        "name": "VulDetect_2"
+      },
+      {
+        "name": "ChatGPTSCV_1"
+      },
+      {
+        "name": "VulDetect_3"
+      },
+      {
+        "name": "VulDetect_1"
+      },
+      {
+        "name": "VSP_1"
+      },
+      {
+        "name": "SkipAnalyzer_1"
+      },
+      {
+        "name": "SkipAnalyzer_2"
+      },
+      {
+        "name": "EditTime_3"
+      },
+      {
+        "name": "EditTime_4"
+      },
+      {
+        "name": "VSP_2"
+      },
+      {
+        "name": "WitheredLeaf_1"
+      },
+      {
+        "name": "WitheredLeaf_3"
+      },
+      {
+        "name": "DLAP_3"
+      },
+      {
+        "name": "ChatGPT4vul_4"
+      },
+      {
+        "name": "MultiTask_2"
+      },
+      {
+        "name": "DLAP_1"
+      },
+      {
+        "name": "ChatGPT-4(Log)_1"
+      },
+      {
+        "name": "ChatGPT4vul_2"
+      },
+      {
+        "name": "ChatGPT-4(Log)_2"
+      },
+      {
+        "name": "WitheredLeaf_2"
+      },
+      {
+        "name": "LLift_2(SelfValid)"
+      },
+      {
+        "name": "LLift_3(SelfValid)"
+      },
+      {
+        "name": "mrDetector_2"
+      },
+      {
+        "name": "LM-PACE_3"
+      },
+      {
+        "name": "CORE"
+      },
+      {
+        "name": "GPTLens_2"
+      },
+      {
+        "name": "SkipAnalyzer_3"
+      },
+      {
+        "name": "VulDetect_4"
+      },
+      {
+        "name": "SELF-DEBUGGING_OP6"
+      },
+      {
+        "name": "Clover_8"
+      },
+      {
+        "name": "ScenarioNL_3"
+      },
+      {
+        "name": "RCAAgents_2"
+      },
+      {
+        "name": "ScenarioNL_2"
+      },
+      {
+        "name": "ClarifyGPT_4"
+      },
+      {
+        "name": "AutoSD_2"
+      },
+      {
+        "name": "LM-PACE_1"
+      }
+    ]
+  },
+  {
+    "name": "3 - Extractive",
+    "children": [
+      {
+        "name": "SimulinkSlicer"
+      },
+      {
+        "name": "LATTE_2"
+      },
+      {
+        "name": "KernelGPT_3"
+      },
+      {
+        "name": "LATTE_1"
+      },
+      {
+        "name": "LLift_1"
+      },
+      {
+        "name": "GPTScan_3"
+      },
+      {
+        "name": "InferROI"
+      },
+      {
+        "name": "KernelGPT_2"
+      },
+      {
+        "name": "KernelGPT_1"
+      },
+      {
+        "name": "CFG-Chain_2"
+      },
+      {
+        "name": "KernelGPT_4"
+      },
+      {
+        "name": "CFG-Chain_1"
+      },
+      {
+        "name": "EMR_1"
+      },
+      {
+        "name": "MetaMorph"
+      },
+      {
+        "name": "AdbGPT_1"
+      },
+      {
+        "name": "SysKG-UTF_1"
+      },
+      {
+        "name": "Cupid"
+      },
+      {
+        "name": "PROSPER"
+      },
+      {
+        "name": "RCACopilot_2"
+      }
+    ]
+  },
+  {
+    "name": "4 - Abstractive",
+    "children": [
+      {
+        "name": "LLM4Vuln_3(PreCoT)"
+      },
+      {
+        "name": "RustProof_1(CoT)"
+      },
+      {
+        "name": "RustProof_2(CoT)"
+      },
+      {
+        "name": "SELF-DEBUGGING_OP1"
+      },
+      {
+        "name": "SELF-DEBUGGING_OP3"
+      },
+      {
+        "name": "LLMAPIDet_1"
+      },
+      {
+        "name": "ClarifyGPT_3"
+      },
+      {
+        "name": "ChatTESTER_1"
+      },
+      {
+        "name": "DiffPrompt_1"
+      },
+      {
+        "name": "PromptEnhanced_1"
+      },
+      {
+        "name": "LLMAPIDet_2"
+      },
+      {
+        "name": "LLM4Vuln_1"
+      },
+      {
+        "name": "Clover_4"
+      },
+      {
+        "name": "Clover_7"
+      },
+      {
+        "name": "Fuzz4All_1"
+      },
+      {
+        "name": "PentestGPT_8"
+      },
+      {
+        "name": "FSML_OP(CoT)"
+      },
+      {
+        "name": "SmartAudit_3(CoT)"
+      },
+      {
+        "name": "ChatGPT-4(Log)_1(CoT)"
+      },
+      {
+        "name": "nl2postcondition"
+      },
+      {
+        "name": "RustProof_1"
+      },
+      {
+        "name": "Clover_6"
+      },
+      {
+        "name": "Dafny-Synth_4b"
+      },
+      {
+        "name": "LLMDFA_3"
+      },
+      {
+        "name": "SELF-DEBUGGING_OP5"
+      },
+      {
+        "name": "LLift_2"
+      },
+      {
+        "name": "CFG-Chain_3"
+      },
+      {
+        "name": "LATTE_3"
+      },
+      {
+        "name": "Dafny-Synth_4a"
+      },
+      {
+        "name": "InputBlaster_3"
+      },
+      {
+        "name": "EMR_2"
+      },
+      {
+        "name": "LLift_3"
+      },
+      {
+        "name": "FSML_OP"
+      },
+      {
+        "name": "RESTGPT_1"
+      },
+      {
+        "name": "InputBlaster_1"
+      },
+      {
+        "name": "WhiteFox_1"
+      },
+      {
+        "name": "LM-PACE_4"
+      },
+      {
+        "name": "ScenarioNL_1"
+      },
+      {
+        "name": "GameBugDescriptions_2"
+      },
+      {
+        "name": "RCACopilot_1"
+      },
+      {
+        "name": "x-lifecycle_1"
+      },
+      {
+        "name": "inContextRCA_1"
+      },
+      {
+        "name": "AutoFL_2"
+      },
+      {
+        "name": "SELF-DEBUGGING_OP4"
+      },
+      {
+        "name": "LLM4Vuln_2"
+      },
+      {
+        "name": "LM-PACE_2"
+      },
+      {
+        "name": "ChatGPTSCV_2"
+      }
+    ]
+  },
+  {
+    "name": "5 - Executive",
+    "children": [
+      {
+        "name": "SysKG-UTF_3"
+      },
+      {
+        "name": "PentestGPT_6"
+      },
+      {
+        "name": "AXNav_1"
+      },
+      {
+        "name": "pwn\u2019d_1"
+      },
+      {
+        "name": "PentestGPT_1"
+      },
+      {
+        "name": "AlloyRepair_3"
+      },
+      {
+        "name": "TARGET_1"
+      },
+      {
+        "name": "AXNav_4"
+      },
+      {
+        "name": "TARGET_2"
+      },
+      {
+        "name": "LLM4Vuln_3(exploit)"
+      },
+      {
+        "name": "SysKG-UTF_4"
+      },
+      {
+        "name": "SysKG-UTF_2"
+      },
+      {
+        "name": "AXNav_2"
+      },
+      {
+        "name": "PentestGPT_7"
+      },
+      {
+        "name": "AdbGPT_2"
+      },
+      {
+        "name": "DLAP_2"
+      },
+      {
+        "name": "pwn\u2019d_2"
+      },
+      {
+        "name": "CrashTranslator_1"
+      },
+      {
+        "name": "PentestGPT_5"
+      },
+      {
+        "name": "GPTDroid"
+      },
+      {
+        "name": "CrashTranslator_2"
+      },
+      {
+        "name": "TestChain_2"
+      },
+      {
+        "name": "E&V_1"
+      },
+      {
+        "name": "SELF-DEBUGGING_FL(CoT)"
+      },
+      {
+        "name": "SELF-DEBUGGING_OP7(CoT)"
+      },
+      {
+        "name": "PentestGPT_2"
+      },
+      {
+        "name": "FuzzingParsers_5"
+      },
+      {
+        "name": "CFG-Chain_4"
+      },
+      {
+        "name": "PentestGPT_4"
+      },
+      {
+        "name": "TARGET_3"
+      }
+    ]
+  },
+  {
+    "name": "6 - Consultative",
+    "children": [
+      {
+        "name": "EditTime_2"
+      },
+      {
+        "name": "FuzzingParsers_2"
+      },
+      {
+        "name": "EditTime_1"
+      },
+      {
+        "name": "MultiTask_4"
+      },
+      {
+        "name": "ChatAFL_1"
+      },
+      {
+        "name": "FuzzingParsers_3"
+      },
+      {
+        "name": "FuzzingParsers_1"
+      }
+    ]
+  }
+]

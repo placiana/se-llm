@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Problems - Tasks People Prompt</title>
+  <title>Categories - Tasks People Prompt</title>
   <link rel="stylesheet" href="static/tree.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/bitmaks/cm-web-fonts@latest/fonts.css">
   <link rel="stylesheet" type="text/css"
@@ -34,8 +34,7 @@
     }
 
     main {
-
-      padding: 4rem 1rem;
+        padding: 4rem 1rem;
     }
   </style>
 
@@ -43,6 +42,7 @@
 
 <body>
 
+  <header>
   <!-- Barra de navegación -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
@@ -61,16 +61,17 @@
     </div>
   </nav>
 
-  
-    <main class="container">
+  </header>
 
-  <h1>Problems</h1>
-  <div id="problems-container">
+  <main class="container">
+
+  <h1>Categories</h1>
+  <div id="categories-container">
     <!-- Se llena con JS -->
   </div>
-  
-    </main>
 
+
+</main>
 
   <script>
 
@@ -81,46 +82,26 @@
       const container = document.getElementById(container_id);
 
       function createTree(data) {
-        if (data === null || data === undefined) {
-          return '';
-        }
-
-        // caso primitivo (string, número, booleano)
-        if (typeof data !== 'object') {
-          return `<li>${data}</li>`;
-        }
-
+        if (!data) return '';
         let html = '<ul class="tree">';
 
-        if (Array.isArray(data)) {
-          // ordenar array (si los elementos son primitivos)
-          const sortedArray = [...data].sort((a, b) => {
-            if (typeof a === 'object' || typeof b === 'object') return 0; // no ordenar objetos
-            return String(a).localeCompare(String(b));
-          });
+        const sortedArray = [...data].sort((a, b) => {
+          if (typeof a === 'object' || typeof b === 'object') return 0; // no ordenar objetos
+          return String(a).localeCompare(String(b));
+        });
 
-          for (const item of sortedArray) {
-            html += createTree(item);
-          }
-        } else {
-          // es diccionario → ordenar claves
-          const keys = Object.keys(data).sort((a, b) => a.localeCompare(b));
-
-          for (const key of keys) {
-            const value = data[key];
-            if (typeof value === 'object' && value !== null) {
-              html += `<li>
+        for (const node of sortedArray) {
+          if (node.children && node.children.length > 0) {
+            html += `<li>
           <details>
-            <summary>${key}</summary>
-            ${createTree(value)}
+            <summary>${node.name}</summary>
+            ${createTree(node.children)}
           </details>
         </li>`;
-            } else {
-              html += `<li>${key}: ${value}</li>`;
-            }
+          } else {
+            html += `<li>${node.name}</li>`;
           }
         }
-
         html += '</ul>';
         return html;
       }
@@ -129,7 +110,7 @@
       container.innerHTML = createTree(treeData);
     }
 
-    renderTree('data/problems.json', 'problems-container');
+    renderTree('data/categories.json', 'categories-container');
   </script>
 
 </body>

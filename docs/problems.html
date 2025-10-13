@@ -160,11 +160,8 @@
       var res = await fetch(file_url);
       bibData = await res.json();
 
-
-
-
       // load bibData (a list of objects)
-      let html = '<h2>References</h2><div class="hide" style="display:none">';
+      let html = '<div class="hide" style="display:none">';
       const sortedArray = [...bibData].sort((a, b) => {
         if (typeof a === 'object' || typeof b === 'object') return 0; // no ordenar objetos
         return String(a).localeCompare(String(b));

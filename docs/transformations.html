@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transformations</title>
+  <link rel="stylesheet" href="static/tree.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/bitmaks/cm-web-fonts@latest/fonts.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+  <!-- Bootstrap CSS desde CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="static/include.js" defer></script>
+
+
+  <script src="static/data_loaders.js"></script>  
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      font-family: "Computer Modern Sans", sans-serif;
+    }
+
+    .navbar {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-custom {
+      border-radius: 50px;
+      padding: 0.75rem 1.5rem;
+      font-size: 1.1rem;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn-custom:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    main {
+
+      padding: 4rem 1rem;
+    }
+
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main.container-fluid {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.row {
+  flex: 1;
+  display: flex;
+  height: 100%;
+}
+
+.col-scrollable {
+  height: 90%;
+  overflow: auto;
+  border: 1px solid #ccc;
+}
+</style>
+
+</head>
+
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  </nav>
+
+  
+    <main class="container-fluid">
+
+      <h1>Transformations Table</h1>
+
+      <div class="row">
+        <div class="col col-md-6"> 
+          <div id="problems-container">
+            <!-- Se llena con JS -->
+          </div>
+        </div>
+        <div class="col col-md-6 col-scrollable">
+
+          <table id="task-table" class="table table-striped table-sm" style="font-size: 0.9rem;">
+
+            <thead></thead>
+            <tbody>
+
+            </tbody>
+          </table>
+      
+      </div>
+      </div>
+  
+    </main>
+
+
+  <script>
+  function scrollToRow(rowId) {
+    const scrollDiv = document.querySelector('.col-scrollable');
+    const target = document.getElementById(rowId);
+    if (scrollDiv && target) {
+      scrollDiv.scrollTop = target.offsetTop; // - scrollDiv.offsetTop;
+    }
+  }
+
+  function scrollToRowClass(className) {
+    //scroll to the first element with that class
+    const scrollDiv = document.querySelector('.col-scrollable');
+    const target = document.querySelector(`.${className}`);
+    if (scrollDiv && target) {
+      scrollDiv.scrollTop = target.offsetTop; // - scrollDiv.offsetTop;
+    }
+  }
+  </script>
+
+  <script>
+    // on document load execute
+    document.addEventListener("DOMContentLoaded", function() {
+      renderTree('data/transformations.json', 'problems-container');
+      renderTaskTable('data/tasks.json', 'task-table');
+
+
+      // add listener so when a problem is clicked, the table is scrolled to the first row with that problem
+      document.getElementById('problems-container').addEventListener('click', function(event) {
+        if (event.target && event.target.nodeName === "SUMMARY") {
+          const problem = event.target.textContent;
+
+          scrollToRowClass(textDataToClassName(problem)); // replace spaces with dashes
+
+        } else if (event.target && event.target.nodeName === "LI") {
+          const problem = event.target.textContent;
+
+          scrollToRow(textDataToClassName(problem));
+
+        }
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>

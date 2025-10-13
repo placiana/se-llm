@@ -55,6 +55,7 @@ def data_categories():
 def get_tasks_from_csv(csv_filename):
     df = pd.read_csv(csv_filename)
     df['Name'] = df['Task Name'].str.split('{').str[1].str.removesuffix('}')
+    df['Nick'] = df['Task Id'].str.split('_').str[0]
     # Remove columns
     df = df.drop(['Unnamed: 0', 'Unnamed: 5', 'Multi-class? def: Binary', 'Openness of labels set','Multi-label? def: Single-label', 'Soft (probability)? def: Hard', 'Granularity', 'Explained?', 'Type of question wrt Vuls'], axis=1)
 
@@ -75,15 +76,64 @@ def get_problems_from_tasks(task_data):
 
         if record['SE-Prob'] not in problems[record['SE-Area']]:
             problems[record['SE-Area']][record['SE-Prob']] = []
+
+        if record['Nick'] not in problems[record['SE-Area']][record['SE-Prob']]:
+            problems[record['SE-Area']][record['SE-Prob']].append(record['Nick'])
+
+    return problems
+
+def get_problems_task_from_tasks(task_data):
+
+    problems = {}
+    for record in task_data:
+        if record['SE-Area'] not in problems:
+            problems[record['SE-Area']] = {}
+
+        if record['SE-Prob'] not in problems[record['SE-Area']]:
+            problems[record['SE-Area']][record['SE-Prob']] = []
+
         problems[record['SE-Area']][record['SE-Prob']].append(record['Task Id'])
 
     return problems
-        
 
+
+# SOURCES TO DATA
+ 
+# tasks.json
 def write_data_files():
     data = get_tasks_from_csv('sources/Tabla de papers para contar con Tasks.csv')
-    with open('data/tasks.json', 'w') as file:
+    with open('docs/data/tasks.json', 'w') as file:
         json.dump(data, file, indent=2)
+
+# bib.json
+def bibtext_to_json():
+    import bibtexparser
+
+    with open("sources/llms.bib") as bibfile:
+        bib_database = bibtexparser.load(bibfile)
+    data = bib_database.get_entry_list()
+    with open('docs/data/bib.json', 'w') as file:
+        json.dump(data, file, indent=2)
+
+
+# problems.json
+def write_problems_json():
+    with open('docs/data/tasks.json') as file:
+        task_data = json.load(file)
+    problems = get_problems_from_tasks(task_data)
+
+    with open('docs/data/problems.json', 'w') as file:
+        json.dump(problems, file, indent=2)
+    
+def write_transformations_json():
+    with open('docs/data/tasks.json') as file:
+        task_data = json.load(file)
+    problems = get_problems_task_from_tasks(task_data)
+
+    with open('docs/data/transformations.json', 'w') as file:
+        json.dump(problems, file, indent=2)
+    
+
 
 if __name__ == '__main__':
     app.run(debug=True)

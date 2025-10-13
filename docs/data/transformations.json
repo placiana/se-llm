@@ -1,0 +1,353 @@
+{
+  "5 - Program Verification": {
+    "29 - Program Verification": [
+      "Clover_1",
+      "Clover_2",
+      "Clover_3",
+      "Dafny-Synth_5",
+      "Dafny-Synth_2",
+      "Dafny-Synth_1",
+      "AlloyRepair_1",
+      "AlloyRepair_2",
+      "Dafny-Synth_3",
+      "Lemur_1",
+      "RustProof_2",
+      "SpecGen_1",
+      "AutoSpec",
+      "Loopy_1",
+      "RustProof_3",
+      "Lemur_2",
+      "SpecGen_2",
+      "Loopy_2",
+      "Clover_5",
+      "ChatInv",
+      "Clover_8",
+      "RustProof_1(CoT)",
+      "RustProof_2(CoT)",
+      "Clover_4",
+      "Clover_7",
+      "RustProof_1",
+      "Clover_6",
+      "Dafny-Synth_4b",
+      "Dafny-Synth_4a",
+      "AlloyRepair_3"
+    ]
+  },
+  "3 - Vulnerability/Misuse/Fault Detection": {
+    "21 - Vulnerability Detection for Smart Contracts": [
+      "LLM4Vuln_3(patch)",
+      "GPTScan_2",
+      "GPTScan_1",
+      "SmartAudit_1",
+      "LLM4Vuln_3",
+      "LLM4Vuln_3wPreCoT",
+      "LLM4Vuln_3wPostCoT",
+      "SmartAudit_2",
+      "SmartAudit_3",
+      "GPTLens_1",
+      "ChatGPTSCV_1",
+      "GPTLens_2",
+      "GPTScan_3",
+      "LLM4Vuln_3(PreCoT)",
+      "LLM4Vuln_1",
+      "SmartAudit_3(CoT)",
+      "LLM4Vuln_2",
+      "ChatGPTSCV_2",
+      "LLM4Vuln_3(exploit)"
+    ],
+    "20 - Line-level Fault/API Misuse Prediction": [
+      "FLAG",
+      "WitheredLeaf_3(CoT)",
+      "LLMAPIDet_3",
+      "WitheredLeaf_4",
+      "EditTime_3",
+      "EditTime_4",
+      "WitheredLeaf_1",
+      "WitheredLeaf_3",
+      "WitheredLeaf_2",
+      "LLMAPIDet_1",
+      "LLMAPIDet_2",
+      "EditTime_2",
+      "EditTime_1"
+    ],
+    "19 - Vulnerability Detection": [
+      "ChatGPT4vul_3",
+      "NLBSE24_2",
+      "PromptEnhanced_2",
+      "GRACE",
+      "ChatGPT(Plus)",
+      "ChatGPT4vul_1",
+      "NLBSE24_1",
+      "MultiTask_1",
+      "MultiTask_3",
+      "AIagent",
+      "VulBench",
+      "VulDetect_2",
+      "VulDetect_3",
+      "VulDetect_1",
+      "VSP_1",
+      "VSP_2",
+      "DLAP_3",
+      "ChatGPT4vul_4",
+      "MultiTask_2",
+      "DLAP_1",
+      "ChatGPT4vul_2",
+      "VulDetect_4",
+      "PromptEnhanced_1",
+      "DLAP_2",
+      "MultiTask_4"
+    ]
+  },
+  "2 - Debugging": {
+    "17 - Fault Localization": [
+      "AutoSD_3",
+      "LLM4CBI",
+      "SELF-DEBUGGING_FL",
+      "AutoFL_1",
+      "AutoSD_1",
+      "ChatGPT-4(Log)_1",
+      "ChatGPT-4(Log)_2",
+      "AutoSD_2",
+      "ChatGPT-4(Log)_1(CoT)",
+      "AutoFL_2",
+      "SELF-DEBUGGING_FL(CoT)"
+    ],
+    "15 - Bug Reproduction": [
+      "LIBRO",
+      "AdbGPT_1",
+      "AdbGPT_2",
+      "CrashTranslator_1",
+      "CrashTranslator_2"
+    ],
+    "18 - Root Cause Analysis": [
+      "x-lifecycle_2",
+      "RCAAgents_1",
+      "inContextRCA_2",
+      "LM-PACE_3",
+      "RCAAgents_2",
+      "LM-PACE_1",
+      "RCACopilot_2",
+      "LM-PACE_4",
+      "RCACopilot_1",
+      "x-lifecycle_1",
+      "inContextRCA_1",
+      "LM-PACE_2"
+    ],
+    "16 - Duplicate Bug Report Detection": [
+      "Cupid"
+    ]
+  },
+  "1 - Testing": {
+    "14 - Oracle Problem": [
+      "ALGO",
+      "ClarifyGPT_1",
+      "Eywa",
+      "EMR_3",
+      "PropertyGPT_1",
+      "PropertyGPT_2",
+      "TOGLL ",
+      "CEDAR",
+      "PropertyGPT_3",
+      "PropertyGPT_4",
+      "SELF-DEBUGGING_OP2",
+      "ClarifyGPT_2",
+      "GameBugDescriptions_1",
+      "SELF-DEBUGGING_OP7",
+      "SELF-DEBUGGING_OP6",
+      "ClarifyGPT_4",
+      "EMR_1",
+      "MetaMorph",
+      "PROSPER",
+      "SELF-DEBUGGING_OP1",
+      "SELF-DEBUGGING_OP3",
+      "ClarifyGPT_3",
+      "FSML_OP(CoT)",
+      "nl2postcondition",
+      "SELF-DEBUGGING_OP5",
+      "EMR_2",
+      "FSML_OP",
+      "GameBugDescriptions_2",
+      "SELF-DEBUGGING_OP4",
+      "SELF-DEBUGGING_OP7(CoT)"
+    ],
+    "02 - Failure-Inducing Test Generation": [
+      "DiffPrompt_2",
+      "AID_1",
+      "AID_2",
+      "secTests",
+      "DiffPrompt_3",
+      "DiffPrompt_1"
+    ],
+    "05 - DataSet/Mutant Generation": [
+      "FormAI",
+      "LLMorpheus",
+      "BugFarm ",
+      "FSML_DS/MG",
+      "CHEMFUZZ_1",
+      "\u00b5BERT",
+      "MuTAP_3",
+      "MuTAP_1",
+      "MuTAP_2",
+      "CHEMFUZZ_2"
+    ],
+    "10 - DL-Libraries Fuzzing": [
+      "TitanFuzz_1",
+      "TitanFuzz_2",
+      "FuzzGPT_2",
+      "FuzzGPT_3",
+      "FuzzGPT_4",
+      "FuzzGPT_1"
+    ],
+    "08 - Compiler/Simulator Fuzzing": [
+      "SearchGEM5_1",
+      "SearchGEM5_2",
+      "WhiteFox_2",
+      "WhiteFox_1"
+    ],
+    "06 - General Fuzzing": [
+      "OSS-Fuzz_1",
+      "UGCTX_1",
+      "OSS-Fuzz_2",
+      "UGCTX_2",
+      "ChatFuzz",
+      "Fuzz4All_4",
+      "Fuzz4All_2",
+      "Fuzz4All_3",
+      "Fuzz4All_1"
+    ],
+    "12 - Functional Testing": [
+      "ScenarioNL_4",
+      "LLMeDiff",
+      "ScenarioNL_3",
+      "ScenarioNL_2",
+      "SysKG-UTF_1",
+      "ScenarioNL_1",
+      "SysKG-UTF_3",
+      "TARGET_1",
+      "TARGET_2",
+      "SysKG-UTF_4",
+      "SysKG-UTF_2",
+      "TARGET_3"
+    ],
+    "03 - Input Generation": [
+      "InputBlaster_4",
+      "PBT-GPT_2",
+      "PBT-GPT_4",
+      "PBT-GPT_3",
+      "PBT-GPT_1",
+      "mrDetector_1",
+      "RESTGPT_2",
+      "InputBlaster_2",
+      "mrDetector_2",
+      "InputBlaster_3",
+      "RESTGPT_1",
+      "InputBlaster_1"
+    ],
+    "01 - Unit Test Generation": [
+      "TestGen-LLM",
+      "ChatGPTTests_2",
+      "CodeCoT",
+      "AgentCoder",
+      "CodaMOSA ",
+      "TestPilot",
+      "CodeT",
+      "ChatTESTER_2",
+      "CoverUp_1",
+      "TELPA",
+      "FSML_UTG",
+      "ChatGPTTests_1",
+      "ChatUniTest_1",
+      "EASEeval",
+      "ChatUniTest_2",
+      "ChatTESTER_3",
+      "CoverUp_2",
+      "TestChain_1",
+      "ChatTESTER_1",
+      "TestChain_2"
+    ],
+    "07 - Kernel Fuzzing": [
+      "KernelGPT_5",
+      "KernelGPT_3",
+      "KernelGPT_2",
+      "KernelGPT_1",
+      "KernelGPT_4"
+    ],
+    "11 - GUI Testing": [
+      "QTypist_2",
+      "QTypist_1",
+      "AXNav_3",
+      "AXNav_1",
+      "AXNav_4",
+      "AXNav_2",
+      "GPTDroid"
+    ],
+    "09 - Protocol/Parser Fuzzing": [
+      "FuzzingParsers_4",
+      "ChatAFL_3",
+      "ChatAFL_2",
+      "FuzzingParsers_5",
+      "FuzzingParsers_2",
+      "ChatAFL_1",
+      "FuzzingParsers_3",
+      "FuzzingParsers_1"
+    ],
+    "04 - Regression Testing": [
+      "SymPrompt"
+    ],
+    "13 - Penetration Testing": [
+      "pwn\u2019d_3",
+      "PentestGPT_3",
+      "PentestGPT_8",
+      "PentestGPT_6",
+      "pwn\u2019d_1",
+      "PentestGPT_1",
+      "PentestGPT_7",
+      "pwn\u2019d_2",
+      "PentestGPT_5",
+      "PentestGPT_2",
+      "PentestGPT_4"
+    ]
+  },
+  "4 - Static Analysis": {
+    "25 - Data-Flow Analysis": [
+      "LLMDFA_5",
+      "LLMDFA_2",
+      "LLMDFA_4",
+      "LLMDFA_1",
+      "LLMDFA_3"
+    ],
+    "26 - Taint Analysis": [
+      "E&V_2",
+      "LATTE_4",
+      "LATTE_2",
+      "LATTE_1",
+      "LATTE_3",
+      "E&V_1"
+    ],
+    "24 - Resource Leak": [
+      "SkipAnalyzer_1",
+      "SkipAnalyzer_2",
+      "SkipAnalyzer_3",
+      "InferROI"
+    ],
+    "23 - Use Before Initialize": [
+      "LLift_2(SelfValid)",
+      "LLift_3(SelfValid)",
+      "LLift_1",
+      "LLift_2",
+      "LLift_3"
+    ],
+    "28 - Fix Acceptance Check": [
+      "CORE"
+    ],
+    "27 - Static Slicing": [
+      "SimulinkSlicer"
+    ],
+    "22 - Call-Graph/CFG Construction": [
+      "CFG-Chain_2",
+      "CFG-Chain_1",
+      "CFG-Chain_3",
+      "CFG-Chain_4"
+    ]
+  }
+}

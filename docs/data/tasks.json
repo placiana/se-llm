@@ -15,7 +15,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "VerifierAware-AnnotationCorresponding-Code-InFilling"
+    "Name": "VerifierAware-AnnotationCorresponding-Code-InFilling",
+    "Nick": "Clover"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -33,7 +34,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "VerifierAware-AnnotationCorresponding-Code-InFilling"
+    "Name": "VerifierAware-AnnotationCorresponding-Code-InFilling",
+    "Nick": "Clover"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -51,7 +53,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "IntentCorresponding-Code-InFilling"
+    "Name": "IntentCorresponding-Code-InFilling",
+    "Nick": "Clover"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -69,7 +72,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "patch"
+    "Name": "patch",
+    "Nick": "LLM4Vuln"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -87,7 +91,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "DebuggingAware-Code-Generation"
+    "Name": "DebuggingAware-Code-Generation",
+    "Nick": "AutoSD"
   },
   {
     "SE-Area": "1 - Testing",
@@ -105,7 +110,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "BruteForce-IntentCorresponding-Code-Generation"
+    "Name": "BruteForce-IntentCorresponding-Code-Generation",
+    "Nick": "ALGO"
   },
   {
     "SE-Area": "1 - Testing",
@@ -123,7 +129,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "IntentCorresponding-Code-Generation"
+    "Name": "IntentCorresponding-Code-Generation",
+    "Nick": "DiffPrompt"
   },
   {
     "SE-Area": "1 - Testing",
@@ -141,7 +148,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "IntentCorresponding-Code-Generation"
+    "Name": "IntentCorresponding-Code-Generation",
+    "Nick": "FormAI"
   },
   {
     "SE-Area": "1 - Testing",
@@ -159,7 +167,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "IntentCorresponding-Code-Generation"
+    "Name": "IntentCorresponding-Code-Generation",
+    "Nick": "TitanFuzz"
   },
   {
     "SE-Area": "1 - Testing",
@@ -177,7 +186,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "IntentCorresponding-Code-Generation"
+    "Name": "IntentCorresponding-Code-Generation",
+    "Nick": "ClarifyGPT"
   },
   {
     "SE-Area": "1 - Testing",
@@ -195,7 +205,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "ParameterizedVersion-Code-Generation"
+    "Name": "ParameterizedVersion-Code-Generation",
+    "Nick": "SearchGEM5"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -213,7 +224,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Intent\\&SignatureCorresponding-Provable-AnnotatedCode-Generation"
+    "Name": "Intent\\&SignatureCorresponding-Provable-AnnotatedCode-Generation",
+    "Nick": "Dafny-Synth"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -231,7 +243,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Intent\\&TestsCorresponding-AnnotatedCode-Generation"
+    "Name": "Intent\\&TestsCorresponding-AnnotatedCode-Generation",
+    "Nick": "Dafny-Synth"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -249,7 +262,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "IntentCorresponding-AnnotatedCode-Generation"
+    "Name": "IntentCorresponding-AnnotatedCode-Generation",
+    "Nick": "Dafny-Synth"
   },
   {
     "SE-Area": "1 - Testing",
@@ -267,7 +281,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "DifferentBehavior-Mutation-Generation"
+    "Name": "DifferentBehavior-Mutation-Generation",
+    "Nick": "LLMorpheus"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -285,7 +300,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "MutationSpecified-Code-Mutation"
+    "Name": "MutationSpecified-Code-Mutation",
+    "Nick": "LLM4CBI"
   },
   {
     "SE-Area": "1 - Testing",
@@ -303,7 +319,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "BugInjecting-Code-Mutation"
+    "Name": "BugInjecting-Code-Mutation",
+    "Nick": "BugFarm "
   },
   {
     "SE-Area": "1 - Testing",
@@ -321,7 +338,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Line-Mutation"
+    "Name": "Line-Mutation",
+    "Nick": "FSML"
   },
   {
     "SE-Area": "1 - Testing",
@@ -339,7 +357,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "IntentCorresponding-Code-Correction"
+    "Name": "IntentCorresponding-Code-Correction",
+    "Nick": "AID"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -357,7 +376,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "FeedbackGuided-Specification-Correction"
+    "Name": "FeedbackGuided-Specification-Correction",
+    "Nick": "AlloyRepair"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -375,7 +395,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "SuggestionGuided-Specification-Correction"
+    "Name": "SuggestionGuided-Specification-Correction",
+    "Nick": "AlloyRepair"
   },
   {
     "SE-Area": "1 - Testing",
@@ -393,7 +414,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Valid\\&Diversified-Code-Completion"
+    "Name": "Valid\\&Diversified-Code-Completion",
+    "Nick": "CHEMFUZZ"
   },
   {
     "SE-Area": "1 - Testing",
@@ -411,7 +433,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Code-Completion"
+    "Name": "Code-Completion",
+    "Nick": "\u00b5BERT"
   },
   {
     "SE-Area": "1 - Testing",
@@ -429,7 +452,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Code-Completion"
+    "Name": "Code-Completion",
+    "Nick": "TitanFuzz"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -447,7 +471,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "ContextConsistent-Line-Completion"
+    "Name": "ContextConsistent-Line-Completion",
+    "Nick": "FLAG"
   },
   {
     "SE-Area": "1 - Testing",
@@ -465,7 +490,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "ModificationSpecified-Code-Edition"
+    "Name": "ModificationSpecified-Code-Edition",
+    "Nick": "FuzzGPT"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -483,7 +509,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "01 - General-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "fix"
+    "Name": "fix",
+    "Nick": "WitheredLeaf"
   },
   {
     "SE-Area": "1 - Testing",
@@ -501,7 +528,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "02 - Domain-Specific-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "DriverCode-Generation"
+    "Name": "DriverCode-Generation",
+    "Nick": "OSS-Fuzz"
   },
   {
     "SE-Area": "1 - Testing",
@@ -519,7 +547,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "02 - Domain-Specific-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "DriverCode-Generation"
+    "Name": "DriverCode-Generation",
+    "Nick": "UGCTX"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -537,7 +566,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "02 - Domain-Specific-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "IntentCorresponding-Signature-Generation"
+    "Name": "IntentCorresponding-Signature-Generation",
+    "Nick": "Dafny-Synth"
   },
   {
     "SE-Area": "1 - Testing",
@@ -555,7 +585,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "02 - Domain-Specific-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "ProbabilisticProgram-Generation"
+    "Name": "ProbabilisticProgram-Generation",
+    "Nick": "ScenarioNL"
   },
   {
     "SE-Area": "1 - Testing",
@@ -573,7 +604,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "02 - Domain-Specific-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "ProtocolModelImplementation-Generation"
+    "Name": "ProtocolModelImplementation-Generation",
+    "Nick": "Eywa"
   },
   {
     "SE-Area": "1 - Testing",
@@ -591,7 +623,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "02 - Domain-Specific-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "ConstraintSatisfying-InputGenerator-Generation"
+    "Name": "ConstraintSatisfying-InputGenerator-Generation",
+    "Nick": "AID"
   },
   {
     "SE-Area": "1 - Testing",
@@ -609,7 +642,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "02 - Domain-Specific-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "InputGenerator-Generation"
+    "Name": "InputGenerator-Generation",
+    "Nick": "InputBlaster"
   },
   {
     "SE-Area": "1 - Testing",
@@ -627,7 +661,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "02 - Domain-Specific-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "InputGenerator-Generation"
+    "Name": "InputGenerator-Generation",
+    "Nick": "PBT-GPT"
   },
   {
     "SE-Area": "1 - Testing",
@@ -645,7 +680,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "02 - Domain-Specific-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "RequirementsDerivable-ExecutionMethamorpicRelations-Generation"
+    "Name": "RequirementsDerivable-ExecutionMethamorpicRelations-Generation",
+    "Nick": "EMR"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -663,7 +699,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "02 - Domain-Specific-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "PathConditionEncoding-Code-Correction"
+    "Name": "PathConditionEncoding-Code-Correction",
+    "Nick": "LLMDFA"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -681,7 +718,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "02 - Domain-Specific-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Source/Sink-ElementIdentificationCode-Correction"
+    "Name": "Source/Sink-ElementIdentificationCode-Correction",
+    "Nick": "LLMDFA"
   },
   {
     "SE-Area": "1 - Testing",
@@ -699,7 +737,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "02 - Domain-Specific-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "ErrorAware-DriverCode-Correction"
+    "Name": "ErrorAware-DriverCode-Correction",
+    "Nick": "OSS-Fuzz"
   },
   {
     "SE-Area": "1 - Testing",
@@ -717,7 +756,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "02 - Domain-Specific-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "ErrorAware-DriverCode-Correction"
+    "Name": "ErrorAware-DriverCode-Correction",
+    "Nick": "UGCTX"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -735,7 +775,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "02 - Domain-Specific-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "PathConditionEncoding-Code-Completion"
+    "Name": "PathConditionEncoding-Code-Completion",
+    "Nick": "LLMDFA"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -753,7 +794,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "02 - Domain-Specific-Code Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Source/Sink-ElementIdentificationCode-Completion"
+    "Name": "Source/Sink-ElementIdentificationCode-Completion",
+    "Nick": "LLMDFA"
   },
   {
     "SE-Area": "1 - Testing",
@@ -771,7 +813,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "CoverageAugmenting-Test-Extension"
+    "Name": "CoverageAugmenting-Test-Extension",
+    "Nick": "TestGen-LLM"
   },
   {
     "SE-Area": "1 - Testing",
@@ -789,7 +832,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "CoverageAugmenting-Test-Extension"
+    "Name": "CoverageAugmenting-Test-Extension",
+    "Nick": "ChatGPTTests"
   },
   {
     "SE-Area": "1 - Testing",
@@ -807,7 +851,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "BugTriggering-Code-Generation"
+    "Name": "BugTriggering-Code-Generation",
+    "Nick": "FuzzGPT"
   },
   {
     "SE-Area": "1 - Testing",
@@ -825,7 +870,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Basic\\&Edge-TestCase-Generation"
+    "Name": "Basic\\&Edge-TestCase-Generation",
+    "Nick": "CodeCoT"
   },
   {
     "SE-Area": "1 - Testing",
@@ -843,7 +889,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Basic\\&Edge-TestCase-Generation"
+    "Name": "Basic\\&Edge-TestCase-Generation",
+    "Nick": "AgentCoder"
   },
   {
     "SE-Area": "1 - Testing",
@@ -861,7 +908,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Targeted-Test-Generation"
+    "Name": "Targeted-Test-Generation",
+    "Nick": "CodaMOSA "
   },
   {
     "SE-Area": "1 - Testing",
@@ -879,7 +927,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "BuildablePassable-Test-Generation"
+    "Name": "BuildablePassable-Test-Generation",
+    "Nick": "TestPilot"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -897,7 +946,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "BugReproducing-Test-Generation"
+    "Name": "BugReproducing-Test-Generation",
+    "Nick": "LIBRO"
   },
   {
     "SE-Area": "1 - Testing",
@@ -915,7 +965,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "IntentCorresponding-Test-Generation"
+    "Name": "IntentCorresponding-Test-Generation",
+    "Nick": "CodeT"
   },
   {
     "SE-Area": "1 - Testing",
@@ -933,7 +984,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "IntentCorresponding-Test-Generation"
+    "Name": "IntentCorresponding-Test-Generation",
+    "Nick": "ChatTESTER"
   },
   {
     "SE-Area": "1 - Testing",
@@ -951,7 +1003,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Mimicking-Test-Generation"
+    "Name": "Mimicking-Test-Generation",
+    "Nick": "secTests"
   },
   {
     "SE-Area": "1 - Testing",
@@ -969,7 +1022,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "CoverageAugmenting-Test-Generation"
+    "Name": "CoverageAugmenting-Test-Generation",
+    "Nick": "CoverUp"
   },
   {
     "SE-Area": "1 - Testing",
@@ -987,7 +1041,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "CoverageAugmenting-Test-Generation"
+    "Name": "CoverageAugmenting-Test-Generation",
+    "Nick": "TELPA"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1005,7 +1060,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "AssertionObservable-Differential-Test-Generation"
+    "Name": "AssertionObservable-Differential-Test-Generation",
+    "Nick": "MuTAP"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1023,7 +1079,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Test-Generation"
+    "Name": "Test-Generation",
+    "Nick": "FSML"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1041,7 +1098,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Test-Generation"
+    "Name": "Test-Generation",
+    "Nick": "ChatGPTTests"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1059,7 +1117,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Test-Generation"
+    "Name": "Test-Generation",
+    "Nick": "ChatUniTest"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1077,7 +1136,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Test-Generation"
+    "Name": "Test-Generation",
+    "Nick": "EASEeval"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1095,7 +1155,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Test-Generation"
+    "Name": "Test-Generation",
+    "Nick": "DiffPrompt"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1113,7 +1174,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Test-Generation"
+    "Name": "Test-Generation",
+    "Nick": "MuTAP"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1131,7 +1193,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "PropertyBasedTest-Generation"
+    "Name": "PropertyBasedTest-Generation",
+    "Nick": "PBT-GPT"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1149,7 +1212,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "ParametrizedTest-Generation"
+    "Name": "ParametrizedTest-Generation",
+    "Nick": "PBT-GPT"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1167,7 +1231,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "ErrorAware-Test-Correction"
+    "Name": "ErrorAware-Test-Correction",
+    "Nick": "ChatUniTest"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1185,7 +1250,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "ErrorAware-Test-Correction"
+    "Name": "ErrorAware-Test-Correction",
+    "Nick": "ChatTESTER"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1203,7 +1269,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "ErrorAware-Test-Correction"
+    "Name": "ErrorAware-Test-Correction",
+    "Nick": "MuTAP"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1221,7 +1288,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "CoverageAugmenting-Test-Correction"
+    "Name": "CoverageAugmenting-Test-Correction",
+    "Nick": "CoverUp"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1239,7 +1307,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "03 - Test Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "BugRevealing-Code-Completion"
+    "Name": "BugRevealing-Code-Completion",
+    "Nick": "FuzzGPT"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -1257,7 +1326,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "04 - Annotation Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Invariant-Lemma-Generation"
+    "Name": "Invariant-Lemma-Generation",
+    "Nick": "Lemur"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -1275,7 +1345,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "04 - Annotation Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Invariant-Lemma-Generation"
+    "Name": "Invariant-Lemma-Generation",
+    "Nick": "RustProof"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -1293,7 +1364,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "04 - Annotation Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "CodeCorresponding-Specification-Generation"
+    "Name": "CodeCorresponding-Specification-Generation",
+    "Nick": "SpecGen"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -1311,7 +1383,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "04 - Annotation Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Annotation-Generation"
+    "Name": "Annotation-Generation",
+    "Nick": "AutoSpec"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1329,7 +1402,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "04 - Annotation Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Postcondition-Assertion-Generation"
+    "Name": "Postcondition-Assertion-Generation",
+    "Nick": "PBT-GPT"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1347,7 +1421,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "04 - Annotation Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Similar-Assertion-Generation"
+    "Name": "Similar-Assertion-Generation",
+    "Nick": "PropertyGPT"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1365,7 +1440,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "04 - Annotation Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Similar-Assertion-Generation"
+    "Name": "Similar-Assertion-Generation",
+    "Nick": "PropertyGPT"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -1383,7 +1459,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "04 - Annotation Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Inductive\\&SufficientLoopInvariant-Assertion-Generation"
+    "Name": "Inductive\\&SufficientLoopInvariant-Assertion-Generation",
+    "Nick": "Loopy"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1401,7 +1478,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "04 - Annotation Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Assertion-Generation"
+    "Name": "Assertion-Generation",
+    "Nick": "TOGLL "
   },
   {
     "SE-Area": "1 - Testing",
@@ -1419,7 +1497,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "04 - Annotation Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Assertion-Generation"
+    "Name": "Assertion-Generation",
+    "Nick": "CEDAR"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -1437,7 +1516,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "04 - Annotation Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "ErrorAware-Lemma-Correction"
+    "Name": "ErrorAware-Lemma-Correction",
+    "Nick": "RustProof"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -1455,7 +1535,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "04 - Annotation Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Invariant-Lemma-Correction} "
+    "Name": "Invariant-Lemma-Correction} ",
+    "Nick": "Lemur"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1473,7 +1554,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "04 - Annotation Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "ErrorAware-Specification-Correction"
+    "Name": "ErrorAware-Specification-Correction",
+    "Nick": "KernelGPT"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -1491,7 +1573,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "04 - Annotation Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "ErrorAware-Specification-Correction"
+    "Name": "ErrorAware-Specification-Correction",
+    "Nick": "SpecGen"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1509,7 +1592,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "04 - Annotation Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "ErrorAware-Assertion-Correction"
+    "Name": "ErrorAware-Assertion-Correction",
+    "Nick": "PropertyGPT"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -1527,7 +1611,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "04 - Annotation Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "SyntaxInductivenessSufficiencyAware-Assertion-Correction"
+    "Name": "SyntaxInductivenessSufficiencyAware-Assertion-Correction",
+    "Nick": "Loopy"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1545,7 +1630,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "04 - Annotation Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "MissingFunction-Assertion-Correction"
+    "Name": "MissingFunction-Assertion-Correction",
+    "Nick": "PropertyGPT"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -1563,7 +1649,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "04 - Annotation Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "HoareValid-Annotation-Completion"
+    "Name": "HoareValid-Annotation-Completion",
+    "Nick": "Clover"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -1581,7 +1668,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "04 - Annotation Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Assertion-Completion"
+    "Name": "Assertion-Completion",
+    "Nick": "ChatInv"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1599,7 +1687,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "05 - Data Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Input-InFilling"
+    "Name": "Input-InFilling",
+    "Nick": "QTypist"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1617,7 +1706,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "05 - Data Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "LikelyRecalling-Data-Generation"
+    "Name": "LikelyRecalling-Data-Generation",
+    "Nick": "mrDetector"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1635,7 +1725,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "05 - Data Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "ErrorTriggering-Data-Variation-Generation"
+    "Name": "ErrorTriggering-Data-Variation-Generation",
+    "Nick": "FuzzingParsers"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1653,7 +1744,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "05 - Data Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "File-Variation-Generation"
+    "Name": "File-Variation-Generation",
+    "Nick": "ChatFuzz"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1671,7 +1763,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "05 - Data Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Input-Variation-Generation"
+    "Name": "Input-Variation-Generation",
+    "Nick": "Fuzz4All"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1689,7 +1782,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "05 - Data Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "QueryConsistent-TableResult-Generation} "
+    "Name": "QueryConsistent-TableResult-Generation} ",
+    "Nick": "SELF-DEBUGGING"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1707,7 +1801,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "05 - Data Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Pass+Fail+N/A-Test-Generation"
+    "Name": "Pass+Fail+N/A-Test-Generation",
+    "Nick": "LLMeDiff"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1725,7 +1820,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "05 - Data Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Valid-Input-Generation"
+    "Name": "Valid-Input-Generation",
+    "Nick": "SearchGEM5"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1743,7 +1839,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "05 - Data Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "UsageSastifying-Input-Generation"
+    "Name": "UsageSastifying-Input-Generation",
+    "Nick": "Fuzz4All"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1761,7 +1858,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "05 - Data Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "ConstraintSatisfying-Input-Generation"
+    "Name": "ConstraintSatisfying-Input-Generation",
+    "Nick": "RESTGPT"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1779,7 +1877,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "05 - Data Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "ConstraintSatisfying-Input-Generation"
+    "Name": "ConstraintSatisfying-Input-Generation",
+    "Nick": "SymPrompt"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1797,7 +1896,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "05 - Data Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "ConstraintSatisfying-Input-Generation"
+    "Name": "ConstraintSatisfying-Input-Generation",
+    "Nick": "WhiteFox"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1815,7 +1915,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "05 - Data Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Valid-GUIInput-Generation"
+    "Name": "Valid-GUIInput-Generation",
+    "Nick": "InputBlaster"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1833,7 +1934,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "05 - Data Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Basic\\&Edge-TestInput-Generation"
+    "Name": "Basic\\&Edge-TestInput-Generation",
+    "Nick": "TestChain"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1851,7 +1953,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "05 - Data Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Basic\\&Edge-TestInput-Generation"
+    "Name": "Basic\\&Edge-TestInput-Generation",
+    "Nick": "ClarifyGPT"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1869,7 +1972,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "05 - Data Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "SpecificationAware-Input-Mutation"
+    "Name": "SpecificationAware-Input-Mutation",
+    "Nick": "Fuzz4All"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1887,7 +1991,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "05 - Data Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Message-Completion"
+    "Name": "Message-Completion",
+    "Nick": "ChatAFL"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1905,7 +2010,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "05 - Data Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "Input-Completion"
+    "Name": "Input-Completion",
+    "Nick": "QTypist"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1923,7 +2029,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "05 - Data Generation",
     "LLM-Task Category": "1 - Generative",
-    "Name": "ModificationSpecified-MS-Edition"
+    "Name": "ModificationSpecified-MS-Edition",
+    "Nick": "ChatAFL"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1941,7 +2048,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "06 - Behavior Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Rationalized-VulnerabilityProneness-CommandExecution-MultiLabel-Classification"
+    "Name": "Rationalized-VulnerabilityProneness-CommandExecution-MultiLabel-Classification",
+    "Nick": "pwn\u2019d"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1959,7 +2067,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "06 - Behavior Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Scenario-AccordingToPerspective-Anomaly-Detection"
+    "Name": "Scenario-AccordingToPerspective-Anomaly-Detection",
+    "Nick": "GameBugDescriptions"
   },
   {
     "SE-Area": "1 - Testing",
@@ -1977,7 +2086,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "06 - Behavior Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Behavior-Anomaly-Detection} "
+    "Name": "Behavior-Anomaly-Detection} ",
+    "Nick": "CHEMFUZZ"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -1995,7 +2105,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "06 - Behavior Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "SimilarityGuided-RootCause-Analysis"
+    "Name": "SimilarityGuided-RootCause-Analysis",
+    "Nick": "x-lifecycle"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -2013,7 +2124,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "06 - Behavior Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Differences-RootCause-Analysis"
+    "Name": "Differences-RootCause-Analysis",
+    "Nick": "SELF-DEBUGGING"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -2031,7 +2143,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "06 - Behavior Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "RootCause-Analysis} "
+    "Name": "RootCause-Analysis} ",
+    "Nick": "AutoFL"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -2049,7 +2162,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "06 - Behavior Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "RootCause-Analysis"
+    "Name": "RootCause-Analysis",
+    "Nick": "AutoSD"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -2067,7 +2181,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "06 - Behavior Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "RootCause-Analysis"
+    "Name": "RootCause-Analysis",
+    "Nick": "RCAAgents"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -2085,7 +2200,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "06 - Behavior Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "RootCause-Analysis"
+    "Name": "RootCause-Analysis",
+    "Nick": "inContextRCA"
   },
   {
     "SE-Area": "1 - Testing",
@@ -2103,7 +2219,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "06 - Behavior Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Validity-Transition-Analysis"
+    "Name": "Validity-Transition-Analysis",
+    "Nick": "PentestGPT"
   },
   {
     "SE-Area": "1 - Testing",
@@ -2121,7 +2238,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "06 - Behavior Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "PlannedAction-Successfullness-Assessment"
+    "Name": "PlannedAction-Successfullness-Assessment",
+    "Nick": "AXNav"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -2139,7 +2257,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "06 - Behavior Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Behavior-Correctness-Assessment"
+    "Name": "Behavior-Correctness-Assessment",
+    "Nick": "E&V"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2157,7 +2276,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "07 - Direct Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "ListTargeted-CWEVulnerabilityProneness-Code-MultiLabel-Classification"
+    "Name": "ListTargeted-CWEVulnerabilityProneness-Code-MultiLabel-Classification",
+    "Nick": "ChatGPT4vul"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2175,7 +2295,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "07 - Direct Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "GivenAPIMisuseRulesCompliance-Code-OneClass-Classification"
+    "Name": "GivenAPIMisuseRulesCompliance-Code-OneClass-Classification",
+    "Nick": "LLMAPIDet"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2193,7 +2314,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "07 - Direct Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "GivenIntentionCorrespondence-Code-OneClass-Classification"
+    "Name": "GivenIntentionCorrespondence-Code-OneClass-Classification",
+    "Nick": "NLBSE24"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2211,7 +2333,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "07 - Direct Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "GivenBehaviorCorrespondence-Code-OneClass-Classification"
+    "Name": "GivenBehaviorCorrespondence-Code-OneClass-Classification",
+    "Nick": "GPTScan"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2229,7 +2352,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "07 - Direct Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "GivenCharacteristicsCorrespondence-Code-OneClass-Classification"
+    "Name": "GivenCharacteristicsCorrespondence-Code-OneClass-Classification",
+    "Nick": "GPTScan"
   },
   {
     "SE-Area": "1 - Testing",
@@ -2247,7 +2371,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "07 - Direct Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Intent\\&AssertionCorresponding-Code-OneClass-Classification"
+    "Name": "Intent\\&AssertionCorresponding-Code-OneClass-Classification",
+    "Nick": "SELF-DEBUGGING"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2265,7 +2390,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "07 - Direct Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "(APICalls)/(DataFlow)Enhanced-VulnerabilityProneness-Code-OneClass-Classification"
+    "Name": "(APICalls)/(DataFlow)Enhanced-VulnerabilityProneness-Code-OneClass-Classification",
+    "Nick": "PromptEnhanced"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2283,7 +2409,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "07 - Direct Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "CPGEnhanced-VulnerabilityProneness-Code-OneClass-Classification"
+    "Name": "CPGEnhanced-VulnerabilityProneness-Code-OneClass-Classification",
+    "Nick": "GRACE"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2301,7 +2428,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "07 - Direct Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "(CWE+GivenVulnDescr)VulnerabilityProneness-Code-OneClass-Classification} "
+    "Name": "(CWE+GivenVulnDescr)VulnerabilityProneness-Code-OneClass-Classification} ",
+    "Nick": "ChatGPT(Plus)"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2319,7 +2447,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "07 - Direct Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "VulnerabilityProneness-Code-OneClass-Classification} "
+    "Name": "VulnerabilityProneness-Code-OneClass-Classification} ",
+    "Nick": "ChatGPT4vul"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2337,7 +2466,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "07 - Direct Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "VulnerabilityProneness-Code-OneClass-Classification} "
+    "Name": "VulnerabilityProneness-Code-OneClass-Classification} ",
+    "Nick": "NLBSE24"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2355,7 +2485,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "07 - Direct Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "VulnerabilityProneness-Code-OneClass-Classification} "
+    "Name": "VulnerabilityProneness-Code-OneClass-Classification} ",
+    "Nick": "MultiTask"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2373,7 +2504,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "07 - Direct Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "ListTargeted-CWEVulnerabilityProneness-Code-OneClass-Classification} "
+    "Name": "ListTargeted-CWEVulnerabilityProneness-Code-OneClass-Classification} ",
+    "Nick": "SmartAudit"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2391,7 +2523,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "07 - Direct Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "VulnerabilityProneness-CodeLine-OneClass-Classification} "
+    "Name": "VulnerabilityProneness-CodeLine-OneClass-Classification} ",
+    "Nick": "MultiTask"
   },
   {
     "SE-Area": "1 - Testing",
@@ -2409,7 +2542,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "07 - Direct Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "APIUsed-Code-MultiClass-Classification} "
+    "Name": "APIUsed-Code-MultiClass-Classification} ",
+    "Nick": "FuzzGPT"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2427,7 +2561,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "07 - Direct Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "ListTargeted-CWEVulnerabilityProneness-CodeLine-MultiClass-Classification"
+    "Name": "ListTargeted-CWEVulnerabilityProneness-CodeLine-MultiClass-Classification",
+    "Nick": "AIagent"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2445,7 +2580,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "07 - Direct Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "ListSemiTargeted-BugCategory-BugExplanation-MultiClass-Classification} "
+    "Name": "ListSemiTargeted-BugCategory-BugExplanation-MultiClass-Classification} ",
+    "Nick": "WitheredLeaf"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2463,7 +2599,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "08 - Rationalized Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "InfoRequesting-Rationalized-GivenVulnDescrProneness-Code-MultiLabel-Classification"
+    "Name": "InfoRequesting-Rationalized-GivenVulnDescrProneness-Code-MultiLabel-Classification",
+    "Nick": "LLM4Vuln"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2481,7 +2618,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "08 - Rationalized Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "InfoRequesting-Rationalized-GivenVulnDescrProneness-Code-MultiLabel-Classification"
+    "Name": "InfoRequesting-Rationalized-GivenVulnDescrProneness-Code-MultiLabel-Classification",
+    "Nick": "LLM4Vuln"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2499,7 +2637,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "08 - Rationalized Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "InfoRequesting-Rationalized-GivenVulnDescrProneness-Code-MultiLabel-Classification"
+    "Name": "InfoRequesting-Rationalized-GivenVulnDescrProneness-Code-MultiLabel-Classification",
+    "Nick": "LLM4Vuln"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2517,7 +2656,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "08 - Rationalized Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Rationalized-VulnerabilityProneness-Code-MultiLabel-Classification} "
+    "Name": "Rationalized-VulnerabilityProneness-Code-MultiLabel-Classification} ",
+    "Nick": "SmartAudit"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2535,7 +2675,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "08 - Rationalized Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Rationalized-VulnerabilityProneness-Code-MultiLabel-Classification} "
+    "Name": "Rationalized-VulnerabilityProneness-Code-MultiLabel-Classification} ",
+    "Nick": "SmartAudit"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2553,7 +2694,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "08 - Rationalized Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Rationalized-VulnerabilityProneness-Code-MultiLabel-Classification"
+    "Name": "Rationalized-VulnerabilityProneness-Code-MultiLabel-Classification",
+    "Nick": "GPTLens"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -2571,7 +2713,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "08 - Rationalized Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Rationalized-TaintFlowAnalysisEnhanced-CWEVulnerabilityProneness-Code-MultiLabel-Classification"
+    "Name": "Rationalized-TaintFlowAnalysisEnhanced-CWEVulnerabilityProneness-Code-MultiLabel-Classification",
+    "Nick": "LATTE"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2589,7 +2732,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "08 - Rationalized Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Rationalized-ListTargeted-CWEVulnerabilityProneness-Code-MultiLabel-Classification"
+    "Name": "Rationalized-ListTargeted-CWEVulnerabilityProneness-Code-MultiLabel-Classification",
+    "Nick": "VulBench"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2607,7 +2751,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "08 - Rationalized Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Rationalized-ListTargeted-CWEVulnerabilityProneness-Code-MultiLabel-Classification"
+    "Name": "Rationalized-ListTargeted-CWEVulnerabilityProneness-Code-MultiLabel-Classification",
+    "Nick": "VulDetect"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2625,7 +2770,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "08 - Rationalized Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Rationalized-ListTargeted-CWEVulnerabilityProneness-Code-MultiLabel-Classification"
+    "Name": "Rationalized-ListTargeted-CWEVulnerabilityProneness-Code-MultiLabel-Classification",
+    "Nick": "ChatGPTSCV"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2643,7 +2789,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "08 - Rationalized Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Rationalized-DataFlowTargeted-CWEVulnerabilityProneness-Code-MultiLabel-Classification} "
+    "Name": "Rationalized-DataFlowTargeted-CWEVulnerabilityProneness-Code-MultiLabel-Classification} ",
+    "Nick": "VulDetect"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2661,7 +2808,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "08 - Rationalized Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Rationalized-CWEVulnerabilityProneness-Code-MultiLabel-Classification"
+    "Name": "Rationalized-CWEVulnerabilityProneness-Code-MultiLabel-Classification",
+    "Nick": "VulDetect"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2679,7 +2827,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "08 - Rationalized Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Rationalized-CWEVulnerabilityProneness-Code-MultiLabel-Classification"
+    "Name": "Rationalized-CWEVulnerabilityProneness-Code-MultiLabel-Classification",
+    "Nick": "VSP"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -2697,7 +2846,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "08 - Rationalized Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Rationalized-NullDerreferencePresence-Code-OneClass-Classification} "
+    "Name": "Rationalized-NullDerreferencePresence-Code-OneClass-Classification} ",
+    "Nick": "SkipAnalyzer"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -2715,7 +2865,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "08 - Rationalized Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Rationalized-ResourceLeakPresence-Code-OneClass-Classification} "
+    "Name": "Rationalized-ResourceLeakPresence-Code-OneClass-Classification} ",
+    "Nick": "SkipAnalyzer"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2733,7 +2884,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "08 - Rationalized Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Rationalized-VulnerabilityProneness-Code-OneClass-Classification} "
+    "Name": "Rationalized-VulnerabilityProneness-Code-OneClass-Classification} ",
+    "Nick": "EditTime"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2751,7 +2903,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "08 - Rationalized Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Rationalized-VulnerabilityProneness-Code-OneClass-Classification} "
+    "Name": "Rationalized-VulnerabilityProneness-Code-OneClass-Classification} ",
+    "Nick": "EditTime"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2769,7 +2922,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "08 - Rationalized Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Rationalized-IdTargeted-CWEVulnerabilityProneness-Code-OneClass-Classification} "
+    "Name": "Rationalized-IdTargeted-CWEVulnerabilityProneness-Code-OneClass-Classification} ",
+    "Nick": "VSP"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2787,7 +2941,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "08 - Rationalized Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Rationalized-SemanticBugPresence-CodeLine-OneClass-Classification} "
+    "Name": "Rationalized-SemanticBugPresence-CodeLine-OneClass-Classification} ",
+    "Nick": "WitheredLeaf"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2805,7 +2960,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "08 - Rationalized Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Rationalized-BugFixabilityByNameChange-CodeLine-OneClass-Classification} "
+    "Name": "Rationalized-BugFixabilityByNameChange-CodeLine-OneClass-Classification} ",
+    "Nick": "WitheredLeaf"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2823,7 +2979,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "08 - Rationalized Code-Classification",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Rationalized-ReviewStepsEnhanced-IdTargeted-CWEVulnerabilityProneness-Code-OneClass-Soft-Classification"
+    "Name": "Rationalized-ReviewStepsEnhanced-IdTargeted-CWEVulnerabilityProneness-Code-OneClass-Soft-Classification",
+    "Nick": "DLAP"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2841,7 +2998,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "09 - Code Scaling",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "CVSS-Scoring"
+    "Name": "CVSS-Scoring",
+    "Nick": "ChatGPT4vul"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2859,7 +3017,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "09 - Code Scaling",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "CVSS-Scoring"
+    "Name": "CVSS-Scoring",
+    "Nick": "MultiTask"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2877,7 +3036,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "09 - Code Scaling",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "GivenExamples-VulnerabilityProneness-Code-MultiLabel-Soft-Classification"
+    "Name": "GivenExamples-VulnerabilityProneness-Code-MultiLabel-Soft-Classification",
+    "Nick": "DLAP"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -2895,7 +3055,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "10 - Line Code-Ranking",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "FaultProneness-CodeLines-Ranking"
+    "Name": "FaultProneness-CodeLines-Ranking",
+    "Nick": "ChatGPT-4(Log)"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2913,7 +3074,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "10 - Line Code-Ranking",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "VulnerabilityProneness-CodeLines-Ranking} "
+    "Name": "VulnerabilityProneness-CodeLines-Ranking} ",
+    "Nick": "ChatGPT4vul"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -2931,7 +3093,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "10 - Line Code-Ranking",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "TestResultAware-FaultProneness-CodeLines-ReRanking"
+    "Name": "TestResultAware-FaultProneness-CodeLines-ReRanking",
+    "Nick": "ChatGPT-4(Log)"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -2949,7 +3112,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "11 - Task-Solution Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Warnings-Irrelevance-Filtering"
+    "Name": "Warnings-Irrelevance-Filtering",
+    "Nick": "WitheredLeaf"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -2967,7 +3131,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "11 - Task-Solution Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Self-Validation"
+    "Name": "Self-Validation",
+    "Nick": "LLift"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -2985,7 +3150,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "11 - Task-Solution Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Self-Validation"
+    "Name": "Self-Validation",
+    "Nick": "LLift"
   },
   {
     "SE-Area": "1 - Testing",
@@ -3003,7 +3169,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "11 - Task-Solution Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Answer-Quality(Reasonability)-Judgment"
+    "Name": "Answer-Quality(Reasonability)-Judgment",
+    "Nick": "mrDetector"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -3021,7 +3188,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "11 - Task-Solution Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Answer-Qlty(Truth, Ground, Informative)-Assessment"
+    "Name": "Answer-Qlty(Truth, Ground, Informative)-Assessment",
+    "Nick": "LM-PACE"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -3039,7 +3207,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "11 - Task-Solution Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Patch-Qlty(Fixes, LeastImpact)-Assessment"
+    "Name": "Patch-Qlty(Fixes, LeastImpact)-Assessment",
+    "Nick": "CORE"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -3057,7 +3226,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "11 - Task-Solution Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Audits-Qlty(Correctness, Severity, Profitability)-Assessment"
+    "Name": "Audits-Qlty(Correctness, Severity, Profitability)-Assessment",
+    "Nick": "GPTLens"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -3075,7 +3245,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "11 - Task-Solution Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Warning-FalsePositiveProneness-Assessment"
+    "Name": "Warning-FalsePositiveProneness-Assessment",
+    "Nick": "SkipAnalyzer"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -3093,7 +3264,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "11 - Task-Solution Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Answer-Quality-Assessment"
+    "Name": "Answer-Quality-Assessment",
+    "Nick": "VulDetect"
   },
   {
     "SE-Area": "1 - Testing",
@@ -3111,7 +3283,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "12 - Text Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Docstrings-Equivalence-Checking"
+    "Name": "Docstrings-Equivalence-Checking",
+    "Nick": "SELF-DEBUGGING"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -3129,7 +3302,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "12 - Text Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Docstrings-Equivalence-Checking"
+    "Name": "Docstrings-Equivalence-Checking",
+    "Nick": "Clover"
   },
   {
     "SE-Area": "1 - Testing",
@@ -3147,7 +3321,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "12 - Text Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "ExpertSolvedUncertainty-TextDependent-QuestionAnswering"
+    "Name": "ExpertSolvedUncertainty-TextDependent-QuestionAnswering",
+    "Nick": "ScenarioNL"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -3165,7 +3340,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "12 - Text Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "TextDependent-QuestionAnswering"
+    "Name": "TextDependent-QuestionAnswering",
+    "Nick": "RCAAgents"
   },
   {
     "SE-Area": "1 - Testing",
@@ -3183,7 +3359,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "12 - Text Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Ambiguity-Analysis"
+    "Name": "Ambiguity-Analysis",
+    "Nick": "ScenarioNL"
   },
   {
     "SE-Area": "1 - Testing",
@@ -3201,7 +3378,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "12 - Text Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "Ambiguity-Analysis"
+    "Name": "Ambiguity-Analysis",
+    "Nick": "ClarifyGPT"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -3219,7 +3397,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "12 - Text Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "EvidenceSupport-Judgment} "
+    "Name": "EvidenceSupport-Judgment} ",
+    "Nick": "AutoSD"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -3237,7 +3416,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "12 - Text Analysis",
     "LLM-Task Category": "2 - Evaluative",
-    "Name": "SufficiencyToInferAnswer-Assessment"
+    "Name": "SufficiencyToInferAnswer-Assessment",
+    "Nick": "LM-PACE"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -3255,7 +3435,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "13 - Code-Elements Identification",
     "LLM-Task Category": "3 - Extractive",
-    "Name": "Model-Slicing"
+    "Name": "Model-Slicing",
+    "Nick": "SimulinkSlicer"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -3273,7 +3454,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "13 - Code-Elements Identification",
     "LLM-Task Category": "3 - Extractive",
-    "Name": "ExternalInputSource-Identification"
+    "Name": "ExternalInputSource-Identification",
+    "Nick": "LATTE"
   },
   {
     "SE-Area": "1 - Testing",
@@ -3291,7 +3473,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "13 - Code-Elements Identification",
     "LLM-Task Category": "3 - Extractive",
-    "Name": "InfoRequesting-Type-Identification"
+    "Name": "InfoRequesting-Type-Identification",
+    "Nick": "KernelGPT"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -3309,7 +3492,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "13 - Code-Elements Identification",
     "LLM-Task Category": "3 - Extractive",
-    "Name": "Sink-Identification"
+    "Name": "Sink-Identification",
+    "Nick": "LATTE"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -3327,7 +3511,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "13 - Code-Elements Identification",
     "LLM-Task Category": "3 - Extractive",
-    "Name": "InfoRequesting-Initializator-Identification"
+    "Name": "InfoRequesting-Initializator-Identification",
+    "Nick": "LLift"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -3345,7 +3530,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "13 - Code-Elements Identification",
     "LLM-Task Category": "3 - Extractive",
-    "Name": "RoleBased-CodeElements-Identification"
+    "Name": "RoleBased-CodeElements-Identification",
+    "Nick": "GPTScan"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -3363,7 +3549,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "13 - Code-Elements Identification",
     "LLM-Task Category": "3 - Extractive",
-    "Name": "ResourceLeakRelated-CodeElements-Identification"
+    "Name": "ResourceLeakRelated-CodeElements-Identification",
+    "Nick": "InferROI"
   },
   {
     "SE-Area": "1 - Testing",
@@ -3381,7 +3568,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "13 - Code-Elements Identification",
     "LLM-Task Category": "3 - Extractive",
-    "Name": "InfoRequesting-CodeElements-Identification"
+    "Name": "InfoRequesting-CodeElements-Identification",
+    "Nick": "KernelGPT"
   },
   {
     "SE-Area": "1 - Testing",
@@ -3399,7 +3587,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "13 - Code-Elements Identification",
     "LLM-Task Category": "3 - Extractive",
-    "Name": "CodeElements-Identification"
+    "Name": "CodeElements-Identification",
+    "Nick": "KernelGPT"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -3417,7 +3606,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "13 - Code-Elements Identification",
     "LLM-Task Category": "3 - Extractive",
-    "Name": "BlockCorresponding-Code-Extraction} "
+    "Name": "BlockCorresponding-Code-Extraction} ",
+    "Nick": "CFG-Chain"
   },
   {
     "SE-Area": "1 - Testing",
@@ -3435,7 +3625,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "13 - Code-Elements Identification",
     "LLM-Task Category": "3 - Extractive",
-    "Name": "InfoRequesting-Definition-Extraction"
+    "Name": "InfoRequesting-Definition-Extraction",
+    "Nick": "KernelGPT"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -3453,7 +3644,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "13 - Code-Elements Identification",
     "LLM-Task Category": "3 - Extractive",
-    "Name": "CodeBlocks-Extraction} "
+    "Name": "CodeBlocks-Extraction} ",
+    "Nick": "CFG-Chain"
   },
   {
     "SE-Area": "1 - Testing",
@@ -3471,7 +3663,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "14 - Text-Elements Extraction",
     "LLM-Task Category": "3 - Extractive",
-    "Name": "IORelated-Sentences-Identification"
+    "Name": "IORelated-Sentences-Identification",
+    "Nick": "EMR"
   },
   {
     "SE-Area": "1 - Testing",
@@ -3489,7 +3682,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "14 - Text-Elements Extraction",
     "LLM-Task Category": "3 - Extractive",
-    "Name": "VariableNames-Identification"
+    "Name": "VariableNames-Identification",
+    "Nick": "MetaMorph"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -3507,7 +3701,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "14 - Text-Elements Extraction",
     "LLM-Task Category": "3 - Extractive",
-    "Name": "StepsToReproduce-Extraction"
+    "Name": "StepsToReproduce-Extraction",
+    "Nick": "AdbGPT"
   },
   {
     "SE-Area": "1 - Testing",
@@ -3525,7 +3720,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "14 - Text-Elements Extraction",
     "LLM-Task Category": "3 - Extractive",
-    "Name": "StructureCompliant-Information-Extraction"
+    "Name": "StructureCompliant-Information-Extraction",
+    "Nick": "SysKG-UTF"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -3543,7 +3739,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "14 - Text-Elements Extraction",
     "LLM-Task Category": "3 - Extractive",
-    "Name": "AimedAtDuplicateDetection-Keywords-Extraction"
+    "Name": "AimedAtDuplicateDetection-Keywords-Extraction",
+    "Nick": "Cupid"
   },
   {
     "SE-Area": "1 - Testing",
@@ -3561,7 +3758,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "14 - Text-Elements Extraction",
     "LLM-Task Category": "3 - Extractive",
-    "Name": "FSM-Elements-Extraction"
+    "Name": "FSM-Elements-Extraction",
+    "Nick": "PROSPER"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -3579,7 +3777,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "14 - Text-Elements Extraction",
     "LLM-Task Category": "3 - Extractive",
-    "Name": "Common-RootCause-Selection"
+    "Name": "Common-RootCause-Selection",
+    "Nick": "RCACopilot"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -3597,7 +3796,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "15 - SW-Entity Verbalization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "funct summ"
+    "Name": "funct summ",
+    "Nick": "LLM4Vuln"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -3615,7 +3815,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "15 - SW-Entity Verbalization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "code intent + precond explan"
+    "Name": "code intent + precond explan",
+    "Nick": "RustProof"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -3633,7 +3834,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "15 - SW-Entity Verbalization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "precond explan + postcond explan"
+    "Name": "precond explan + postcond explan",
+    "Nick": "RustProof"
   },
   {
     "SE-Area": "1 - Testing",
@@ -3651,7 +3853,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "15 - SW-Entity Verbalization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "SQL-CodeCorresponding-Explanation-Generation"
+    "Name": "SQL-CodeCorresponding-Explanation-Generation",
+    "Nick": "SELF-DEBUGGING"
   },
   {
     "SE-Area": "1 - Testing",
@@ -3669,7 +3872,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "15 - SW-Entity Verbalization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "SQL-Code\\&ExecutionCorresponding-Explanation-Generation"
+    "Name": "SQL-Code\\&ExecutionCorresponding-Explanation-Generation",
+    "Nick": "SELF-DEBUGGING"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -3687,7 +3891,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "15 - SW-Entity Verbalization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "RootCauseOriented-ChangeAction-Verbalization"
+    "Name": "RootCauseOriented-ChangeAction-Verbalization",
+    "Nick": "LLMAPIDet"
   },
   {
     "SE-Area": "1 - Testing",
@@ -3705,7 +3910,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "15 - SW-Entity Verbalization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "CodeDifferences-Verbalization"
+    "Name": "CodeDifferences-Verbalization",
+    "Nick": "ClarifyGPT"
   },
   {
     "SE-Area": "1 - Testing",
@@ -3723,7 +3929,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "15 - SW-Entity Verbalization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "CodeCorresponding-Intent-Verbalization"
+    "Name": "CodeCorresponding-Intent-Verbalization",
+    "Nick": "ChatTESTER"
   },
   {
     "SE-Area": "1 - Testing",
@@ -3741,7 +3948,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "15 - SW-Entity Verbalization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "CodeCorresponding-Intent-Verbalization"
+    "Name": "CodeCorresponding-Intent-Verbalization",
+    "Nick": "DiffPrompt"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -3759,7 +3967,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "15 - SW-Entity Verbalization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "CodeCorresponding-Intent-Verbalization"
+    "Name": "CodeCorresponding-Intent-Verbalization",
+    "Nick": "PromptEnhanced"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -3777,7 +3986,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "15 - SW-Entity Verbalization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "CodeCorresponding-Intent-Verbalization"
+    "Name": "CodeCorresponding-Intent-Verbalization",
+    "Nick": "LLMAPIDet"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -3795,7 +4005,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "15 - SW-Entity Verbalization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "CodeCorresponding-Intent-Verbalization"
+    "Name": "CodeCorresponding-Intent-Verbalization",
+    "Nick": "LLM4Vuln"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -3813,7 +4024,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "15 - SW-Entity Verbalization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "CodeCorresponding-Intent-Verbalization"
+    "Name": "CodeCorresponding-Intent-Verbalization",
+    "Nick": "Clover"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -3831,7 +4043,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "15 - SW-Entity Verbalization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "AnnotationCorresponding-Intent-Verbalization"
+    "Name": "AnnotationCorresponding-Intent-Verbalization",
+    "Nick": "Clover"
   },
   {
     "SE-Area": "1 - Testing",
@@ -3849,7 +4062,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "15 - SW-Entity Verbalization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "Usage-Summarization"
+    "Name": "Usage-Summarization",
+    "Nick": "Fuzz4All"
   },
   {
     "SE-Area": "1 - Testing",
@@ -3867,7 +4081,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "15 - SW-Entity Verbalization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "Summarization"
+    "Name": "Summarization",
+    "Nick": "PentestGPT"
   },
   {
     "SE-Area": "1 - Testing",
@@ -3885,7 +4100,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "15 - SW-Entity Verbalization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "code intent"
+    "Name": "code intent",
+    "Nick": "FSML"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -3903,7 +4119,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "15 - SW-Entity Verbalization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "code intent"
+    "Name": "code intent",
+    "Nick": "SmartAudit"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -3921,7 +4138,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "15 - SW-Entity Verbalization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "funct intent"
+    "Name": "funct intent",
+    "Nick": "ChatGPT-4(Log)"
   },
   {
     "SE-Area": "1 - Testing",
@@ -3939,7 +4157,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "16 - Formalization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "PostCondition-Formalization"
+    "Name": "PostCondition-Formalization",
+    "Nick": "nl2postcondition"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -3957,7 +4176,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "16 - Formalization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "PostCondition-Formalization"
+    "Name": "PostCondition-Formalization",
+    "Nick": "RustProof"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -3975,7 +4195,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "16 - Formalization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "IntentCorresponding-PrePost-Formalization"
+    "Name": "IntentCorresponding-PrePost-Formalization",
+    "Nick": "Clover"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -3993,7 +4214,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "16 - Formalization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "pre/post"
+    "Name": "pre/post",
+    "Nick": "Dafny-Synth"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -4011,7 +4233,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "17 - SW-Entity Property Identification & Characterization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "VariablesSameValue-Identification"
+    "Name": "VariablesSameValue-Identification",
+    "Nick": "LLMDFA"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4029,7 +4252,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "17 - SW-Entity Property Identification & Characterization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "Rationalized-NLQuery-NumberOfColumns-Identification"
+    "Name": "Rationalized-NLQuery-NumberOfColumns-Identification",
+    "Nick": "SELF-DEBUGGING"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -4047,7 +4271,8 @@
     "Self-Validation": true,
     "LLM-Downstream Task Class": "17 - SW-Entity Property Identification & Characterization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "PostConstraint-Identification"
+    "Name": "PostConstraint-Identification",
+    "Nick": "LLift"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -4065,7 +4290,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "17 - SW-Entity Property Identification & Characterization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "ControlFlow-Identification} "
+    "Name": "ControlFlow-Identification} ",
+    "Nick": "CFG-Chain"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -4083,7 +4309,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "17 - SW-Entity Property Identification & Characterization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "TaintFlow-Identification"
+    "Name": "TaintFlow-Identification",
+    "Nick": "LATTE"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -4101,7 +4328,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "17 - SW-Entity Property Identification & Characterization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "NL-Specification-Distillation"
+    "Name": "NL-Specification-Distillation",
+    "Nick": "Dafny-Synth"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4119,7 +4347,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "17 - SW-Entity Property Identification & Characterization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "Effective\\&Diversified-MutationRule-Characterization"
+    "Name": "Effective\\&Diversified-MutationRule-Characterization",
+    "Nick": "InputBlaster"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4137,7 +4366,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "17 - SW-Entity Property Identification & Characterization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "SentenceDerivable-MethamorpicRelation-Characterization"
+    "Name": "SentenceDerivable-MethamorpicRelation-Characterization",
+    "Nick": "EMR"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -4155,7 +4385,8 @@
     "Self-Validation": true,
     "LLM-Downstream Task Class": "17 - SW-Entity Property Identification & Characterization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "InfoRequesting-QualifiedPostCondition-Characterization"
+    "Name": "InfoRequesting-QualifiedPostCondition-Characterization",
+    "Nick": "LLift"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4173,7 +4404,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "17 - SW-Entity Property Identification & Characterization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "MetamorphicAssertion-Characterization"
+    "Name": "MetamorphicAssertion-Characterization",
+    "Nick": "FSML"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4191,7 +4423,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "17 - SW-Entity Property Identification & Characterization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "DescriptionCorresponding-Liberal-Constraint-Characterization"
+    "Name": "DescriptionCorresponding-Liberal-Constraint-Characterization",
+    "Nick": "RESTGPT"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4209,7 +4442,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "17 - SW-Entity Property Identification & Characterization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "GUIInputCorresponding-ValidityConstraint-Characterization"
+    "Name": "GUIInputCorresponding-ValidityConstraint-Characterization",
+    "Nick": "InputBlaster"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4227,7 +4461,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "17 - SW-Entity Property Identification & Characterization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "CodeReachability-Input-Characterization"
+    "Name": "CodeReachability-Input-Characterization",
+    "Nick": "WhiteFox"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -4245,7 +4480,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "18 - Focused-Abstractive Summarization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "Assessment-Scaled-Summarization"
+    "Name": "Assessment-Scaled-Summarization",
+    "Nick": "LM-PACE"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4263,7 +4499,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "18 - Focused-Abstractive Summarization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "Focused-Summarization"
+    "Name": "Focused-Summarization",
+    "Nick": "ScenarioNL"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4281,7 +4518,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "18 - Focused-Abstractive Summarization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "Answer-FailureOriented-Summarization} "
+    "Name": "Answer-FailureOriented-Summarization} ",
+    "Nick": "GameBugDescriptions"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -4299,7 +4537,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "18 - Focused-Abstractive Summarization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "RootCauseOriented-Summarization"
+    "Name": "RootCauseOriented-Summarization",
+    "Nick": "RCACopilot"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -4317,7 +4556,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "18 - Focused-Abstractive Summarization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "RootCauseOriented-Summarization"
+    "Name": "RootCauseOriented-Summarization",
+    "Nick": "x-lifecycle"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -4335,7 +4575,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "18 - Focused-Abstractive Summarization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "RootCauseOriented-Summarization"
+    "Name": "RootCauseOriented-Summarization",
+    "Nick": "inContextRCA"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -4353,7 +4594,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "18 - Focused-Abstractive Summarization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "Answer-FaultOriented-Summarization} "
+    "Name": "Answer-FaultOriented-Summarization} ",
+    "Nick": "AutoFL"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4371,7 +4613,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "18 - Focused-Abstractive Summarization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "ColumnOriented-Explanation-Summarization"
+    "Name": "ColumnOriented-Explanation-Summarization",
+    "Nick": "SELF-DEBUGGING"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -4389,7 +4632,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "18 - Focused-Abstractive Summarization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "Vulnerability-MechanismExplanation-Summarization"
+    "Name": "Vulnerability-MechanismExplanation-Summarization",
+    "Nick": "LLM4Vuln"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -4407,7 +4651,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "18 - Focused-Abstractive Summarization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "Assessment-Yes/No-Summarization"
+    "Name": "Assessment-Yes/No-Summarization",
+    "Nick": "LM-PACE"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -4425,7 +4670,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "18 - Focused-Abstractive Summarization",
     "LLM-Task Category": "4 - Abstractive",
-    "Name": "AssessmentBased-Vulnerability-MultiClass-Summarization"
+    "Name": "AssessmentBased-Vulnerability-MultiClass-Summarization",
+    "Nick": "ChatGPTSCV"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4443,7 +4689,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "19 - Plan Generation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "FeasibilityRedundancyAware-StepsToReproduce-Fusing(edition)"
+    "Name": "FeasibilityRedundancyAware-StepsToReproduce-Fusing(edition)",
+    "Nick": "SysKG-UTF"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4461,7 +4708,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "19 - Plan Generation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "ToolsConstrained-Plan-Generation"
+    "Name": "ToolsConstrained-Plan-Generation",
+    "Nick": "PentestGPT"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4479,7 +4727,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "19 - Plan Generation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "TestGoalCorresponding-Plan-Generation"
+    "Name": "TestGoalCorresponding-Plan-Generation",
+    "Nick": "AXNav"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4497,7 +4746,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "19 - Plan Generation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "ScenarioCorresponding-Plan-Generation"
+    "Name": "ScenarioCorresponding-Plan-Generation",
+    "Nick": "pwn\u2019d"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4515,7 +4765,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "19 - Plan Generation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "IntentCorresponding-Plan-Generation"
+    "Name": "IntentCorresponding-Plan-Generation",
+    "Nick": "PentestGPT"
   },
   {
     "SE-Area": "5 - Program Verification",
@@ -4533,7 +4784,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "19 - Plan Generation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "Suggestion-Generation"
+    "Name": "Suggestion-Generation",
+    "Nick": "AlloyRepair"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4551,7 +4803,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "19 - Plan Generation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "DSLValid\\&TryToUseGivenElements-RuleConsistent-Scenario-Generation"
+    "Name": "DSLValid\\&TryToUseGivenElements-RuleConsistent-Scenario-Generation",
+    "Nick": "TARGET"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4569,7 +4822,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "19 - Plan Generation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "StepOutcomeCorresponding-Plan-Correction"
+    "Name": "StepOutcomeCorresponding-Plan-Correction",
+    "Nick": "AXNav"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4587,7 +4841,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "19 - Plan Generation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "RuleInconsistencies-Scenario-Correction"
+    "Name": "RuleInconsistencies-Scenario-Correction",
+    "Nick": "TARGET"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -4605,7 +4860,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "19 - Plan Generation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "Proof of Concept exploit"
+    "Name": "Proof of Concept exploit",
+    "Nick": "LLM4Vuln"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4623,7 +4879,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "19 - Plan Generation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "FeasibilityAware-StepsToReproduce-Refinement"
+    "Name": "FeasibilityAware-StepsToReproduce-Refinement",
+    "Nick": "SysKG-UTF"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4641,7 +4898,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "19 - Plan Generation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "StepsToReproduce-Refinement"
+    "Name": "StepsToReproduce-Refinement",
+    "Nick": "SysKG-UTF"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4659,7 +4917,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "19 - Plan Generation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "Plan-Refinement"
+    "Name": "Plan-Refinement",
+    "Nick": "AXNav"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4677,7 +4936,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "19 - Plan Generation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "Plan-Refinement"
+    "Name": "Plan-Refinement",
+    "Nick": "PentestGPT"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -4695,7 +4955,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "19 - Plan Generation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "Plan-Refinement"
+    "Name": "Plan-Refinement",
+    "Nick": "AdbGPT"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -4713,7 +4974,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "19 - Plan Generation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "Plan-Refinement"
+    "Name": "Plan-Refinement",
+    "Nick": "DLAP"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4731,7 +4993,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "20 - What-to-do-Next Generation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "ReachabilityOriented-NextAction-Generation"
+    "Name": "ReachabilityOriented-NextAction-Generation",
+    "Nick": "pwn\u2019d"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -4749,7 +5012,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "20 - What-to-do-Next Generation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "ReachabilityOriented-NextNode-Selection"
+    "Name": "ReachabilityOriented-NextNode-Selection",
+    "Nick": "CrashTranslator"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4767,7 +5031,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "20 - What-to-do-Next Generation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "MostPromising-NextTask-Selection"
+    "Name": "MostPromising-NextTask-Selection",
+    "Nick": "PentestGPT"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4785,7 +5050,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "20 - What-to-do-Next Generation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "FunctionCoverageOriented-NextAction-Selection"
+    "Name": "FunctionCoverageOriented-NextAction-Selection",
+    "Nick": "GPTDroid"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -4803,7 +5069,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "20 - What-to-do-Next Generation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "ReachabilityOrientedWithSuggestedNextNode-NextAction-Selection} "
+    "Name": "ReachabilityOrientedWithSuggestedNextNode-NextAction-Selection} ",
+    "Nick": "CrashTranslator"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4821,7 +5088,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "21 - Execution",
     "LLM-Task Category": "5 - Executive",
-    "Name": "IntentionCorresponding-Result-Generation"
+    "Name": "IntentionCorresponding-Result-Generation",
+    "Nick": "TestChain"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -4839,7 +5107,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "21 - Execution",
     "LLM-Task Category": "5 - Executive",
-    "Name": "Step-Computation"
+    "Name": "Step-Computation",
+    "Nick": "E&V"
   },
   {
     "SE-Area": "2 - Debugging",
@@ -4857,7 +5126,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "21 - Execution",
     "LLM-Task Category": "5 - Executive",
-    "Name": "trace execution"
+    "Name": "trace execution",
+    "Nick": "SELF-DEBUGGING"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4875,7 +5145,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "21 - Execution",
     "LLM-Task Category": "5 - Executive",
-    "Name": "assertion execution"
+    "Name": "assertion execution",
+    "Nick": "SELF-DEBUGGING"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4893,7 +5164,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "22 - Textual Data Manipulation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "Elements-Update"
+    "Name": "Elements-Update",
+    "Nick": "PentestGPT"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4911,7 +5183,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "22 - Textual Data Manipulation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "Data-Fusing"
+    "Name": "Data-Fusing",
+    "Nick": "FuzzingParsers"
   },
   {
     "SE-Area": "4 - Static Analysis",
@@ -4929,7 +5202,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "22 - Textual Data Manipulation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "CFG-Fusion} "
+    "Name": "CFG-Fusion} ",
+    "Nick": "CFG-Chain"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4947,7 +5221,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "22 - Textual Data Manipulation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "RulesSatisfying-Information-Extraction"
+    "Name": "RulesSatisfying-Information-Extraction",
+    "Nick": "PentestGPT"
   },
   {
     "SE-Area": "1 - Testing",
@@ -4965,7 +5240,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "22 - Textual Data Manipulation",
     "LLM-Task Category": "5 - Executive",
-    "Name": "InListCloseMeaning-Elements-Replacement"
+    "Name": "InListCloseMeaning-Elements-Replacement",
+    "Nick": "TARGET"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -4983,7 +5259,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "23 - Knowledge Distillation",
     "LLM-Task Category": "6 - Consultative",
-    "Name": "Example-Recall"
+    "Name": "Example-Recall",
+    "Nick": "EditTime"
   },
   {
     "SE-Area": "1 - Testing",
@@ -5001,7 +5278,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "23 - Knowledge Distillation",
     "LLM-Task Category": "6 - Consultative",
-    "Name": "New-ExampleOfThing-Recall"
+    "Name": "New-ExampleOfThing-Recall",
+    "Nick": "FuzzingParsers"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -5019,7 +5297,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "23 - Knowledge Distillation",
     "LLM-Task Category": "6 - Consultative",
-    "Name": "Definition-Recall"
+    "Name": "Definition-Recall",
+    "Nick": "EditTime"
   },
   {
     "SE-Area": "3 - Vulnerability/Misuse/Fault Detection",
@@ -5037,7 +5316,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "23 - Knowledge Distillation",
     "LLM-Task Category": "6 - Consultative",
-    "Name": "AssociatedVulnerability-Description-Recall"
+    "Name": "AssociatedVulnerability-Description-Recall",
+    "Nick": "MultiTask"
   },
   {
     "SE-Area": "1 - Testing",
@@ -5055,7 +5335,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "23 - Knowledge Distillation",
     "LLM-Task Category": "6 - Consultative",
-    "Name": "ProtocolGrammar-Recall"
+    "Name": "ProtocolGrammar-Recall",
+    "Nick": "ChatAFL"
   },
   {
     "SE-Area": "1 - Testing",
@@ -5073,7 +5354,8 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "23 - Knowledge Distillation",
     "LLM-Task Category": "6 - Consultative",
-    "Name": "ParsingErrors-Recall"
+    "Name": "ParsingErrors-Recall",
+    "Nick": "FuzzingParsers"
   },
   {
     "SE-Area": "1 - Testing",
@@ -5091,6 +5373,7 @@
     "Self-Validation": false,
     "LLM-Downstream Task Class": "23 - Knowledge Distillation",
     "LLM-Task Category": "6 - Consultative",
-    "Name": "StructureOfObject-Recall"
+    "Name": "StructureOfObject-Recall",
+    "Nick": "FuzzingParsers"
   }
 ]

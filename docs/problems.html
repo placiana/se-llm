@@ -4,77 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Transformations</title>
+  <title>Problems</title>
   <link rel="stylesheet" href="static/tree.css">
+  <link rel="stylesheet" href="static/base.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/bitmaks/cm-web-fonts@latest/fonts.css">
   <link rel="stylesheet" type="text/css"
     href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
   <!-- Bootstrap CSS desde CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-
-  <script src="static/data_loaders.js"></script>  
-
+  <script src="static/include.js" defer></script>
   <style>
-    body {
-      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-      font-family: "Computer Modern Sans", sans-serif;
-    }
 
-    .navbar {
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .btn-custom {
-      border-radius: 50px;
-      padding: 0.75rem 1.5rem;
-      font-size: 1.1rem;
-      transition: all 0.3s ease-in-out;
-    }
-
-    .btn-custom:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-    }
-
-    main {
-
-      padding: 4rem 1rem;
-    }
-
-
-
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-main.container-fluid {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.row {
-  flex: 1;
-  display: flex;
-  height: 100%;
-}
-
-.col-scrollable {
-  height: 90%;
-  overflow: auto;
-  border: 1px solid #ccc;
-}
-</style>
+  </style>
 
 </head>
 
@@ -82,92 +24,178 @@ main.container-fluid {
 
   <!-- Barra de navegación -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="/">Tasks People Prompt</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Index</a></li>
-          <li class="nav-item"><a class="nav-link" href="problems.html">Problems</a></li>
-          <li class="nav-item"><a class="nav-link" href="tasks.html">Tasks</a></li>
-          <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
-        </ul>
-      </div>
-    </div>
+
   </nav>
 
-  
-    <main class="container-fluid">
+  <main class="container">
 
-      <h1>Transformations Table</h1>
-
-      <div class="row">
-        <div class="col col-md-6"> 
-          <div id="problems-container">
-            <!-- Se llena con JS -->
-          </div>
-        </div>
-        <div class="col col-md-6 col-scrollable">
-
-          <table id="task-table" class="table table-striped table-sm" style="font-size: 0.9rem;">
-
-            <thead></thead>
-            <tbody>
-
-            </tbody>
-          </table>
-      
+    <h1>Problem areas</h1>
+    <div class="row">
+      <div id="problems-container" class="col col-md-6">
+        <!-- Se llena con JS -->
       </div>
+      <div id="description-container" class="col col-md-6">
+        <!-- Se llena con JS -->
       </div>
-  
-    </main>
+    </div>
 
+    <!-- tooltip flotante -->
+    <div id="tooltip" class="tooltip"></div>
+    <div id="biblio">
+      <!-- Se llena con JS -->
+    </div>
+
+  </main>
 
   <script>
-  function scrollToRow(rowId) {
-    const scrollDiv = document.querySelector('.col-scrollable');
-    const target = document.getElementById(rowId);
-    if (scrollDiv && target) {
-      scrollDiv.scrollTop = target.offsetTop; // - scrollDiv.offsetTop;
-    }
-  }
 
-  function scrollToRowClass(className) {
-    //scroll to the first element with that class
-    const scrollDiv = document.querySelector('.col-scrollable');
-    const target = document.querySelector(`.${className}`);
-    if (scrollDiv && target) {
-      scrollDiv.scrollTop = target.offsetTop; // - scrollDiv.offsetTop;
-    }
-  }
-  </script>
+    function setEventHandlers() {
+      const tooltip = document.getElementById("tooltip");
+      const descriptionDiv = document.getElementById("description-container");
 
-  <script>
-    // on document load execute
-    document.addEventListener("DOMContentLoaded", function() {
-      renderTree('data/problems.json', 'problems-container');
-      renderTaskTable('data/tasks.json', 'task-table');
+      document.querySelectorAll("li.tooltipable").forEach(li => {
+        li.addEventListener("mouseenter", e => {
+          const id = li.getAttribute("data-tooltip");
+          const contentDiv = document.getElementById(id);
+          if (!contentDiv) return;
 
+          tooltip.innerHTML = contentDiv.innerHTML;
+          tooltip.classList.add("show");
+        });
 
-      // add listener so when a problem is clicked, the table is scrolled to the first row with that problem
-      document.getElementById('problems-container').addEventListener('click', function(event) {
-        if (event.target && event.target.nodeName === "SUMMARY") {
-          const problem = event.target.textContent;
+        li.addEventListener("mousemove", e => {
+          tooltip.style.left = e.pageX + 10 + "px";
+          tooltip.style.top = e.pageY + 10 + "px";
+        });
 
-          scrollToRowClass(textDataToClassName(problem)); // replace spaces with dashes
+        li.addEventListener("mouseleave", e => {
+          tooltip.classList.remove("show");
+        });
 
-        } else if (event.target && event.target.nodeName === "LI") {
-          const problem = event.target.textContent;
+        li.addEventListener("click", e => {
+          descriptionDiv.innerHTML = "";
+          const id = li.getAttribute("data-tooltip");
+          const contentDiv = document.getElementById(id);
+          if (!contentDiv) return;
+          descriptionDiv.innerHTML = descriptionDict[id.replace('nick-', '')];
+        });
 
-          scrollToRow(textDataToClassName(problem));
-
-        }
       });
-    });
+    }
+  </script>
+  <script>
+    //global const
+    const descriptionDict = {};
+    function sort_str(string_arr) {
+      return string_arr.sort((a, b) => {
+        if (typeof a === 'object' || typeof b === 'object') return 0; // no ordenar objetos
+        return String(a).localeCompare(String(b));
+      })
+    }
+
+    async function renderTree(file_url = 'tree.json', container_id = 'treeview') {
+      const response = await fetch(file_url);
+      const treeData = await response.json();
+
+      const container = document.getElementById(container_id);
+
+      tasks = sort_str(Object.keys(treeData));
+
+      function createTree(data) {
+        if (data === null || data === undefined) {
+          return '';
+        }
+
+        // caso primitivo (string, número, booleano)
+        if (typeof data !== 'object') {
+          return `<li data-tooltip="nick-${data}" class="tooltipable">${data}</li>`;
+        }
+
+        let html = '<ul class="tree">';
+
+        if (Array.isArray(data)) {
+          // ordenar array (si los elementos son primitivos)
+          const sortedArray = [...data].sort((a, b) => {
+            if (typeof a === 'object' || typeof b === 'object') return 0; // no ordenar objetos
+            return String(a).localeCompare(String(b));
+          });
+
+          for (const item of sortedArray) {
+            html += createTree(item);
+          }
+        } else {
+          // es diccionario → ordenar claves
+          const keys = Object.keys(data).sort((a, b) => a.localeCompare(b));
+
+          for (const key of keys) {
+            const value = data[key];
+            if (typeof value === 'object' && value !== null) {
+              html += `<li>
+                <details>
+                  <summary>${key}</summary>
+                  ${createTree(value)}
+                </details>
+              </li>`;
+            } else {
+              html += `<li data-tooltip="nick-${value}">${key}: ${value}</li>`;
+            }
+          }
+        }
+
+        html += '</ul>';
+        return html;
+      }
+
+
+      container.innerHTML = createTree(treeData);
+
+      setEventHandlers();
+    }
+
+    renderTree('data/problems.json', 'problems-container');
+
+    async function renderBib(file_url = 'bib.json', container_id = 'treeview') {
+
+      const container = document.getElementById(container_id);
+      var res = await fetch(file_url);
+      bibData = await res.json();
+
+
+
+
+      // load bibData (a list of objects)
+      let html = '<h2>References</h2><div class="hide" style="display:none">';
+      const sortedArray = [...bibData].sort((a, b) => {
+        if (typeof a === 'object' || typeof b === 'object') return 0; // no ordenar objetos
+        return String(a).localeCompare(String(b));
+      });
+      for (const entry of sortedArray) {
+        html += `<div id="nick-${entry.ID}">${entry.author} (${entry.year}). <i>${entry.title}</i>.
+          <br> ${entry.publisher}. <br> <a href="${entry.url}" target="_blank">[link]</a></div>`;
+
+
+        descriptionDict[entry.ID] = `<h3>${entry.title}</h3>
+        <p><strong>Authors:</strong> ${entry.author}</p>
+        <p><strong>Year:</strong> ${entry.year}</p>
+        <p><strong>Link:</strong> <a href="${entry.url}" target="_blank">${entry.url}</a></p>`;
+        // dinamically add every other entry fields
+        keys = Object.keys(entry).filter(k => !['ID', 'author', 'year', 'title', 'url'].includes(k));
+        for (const key of keys) {
+          descriptionDict[entry.ID] += `<p><strong>${key.charAt(0).toUpperCase() + key.slice(1)}:</strong> ${entry[key]}</p>`;
+        }
+
+      }
+      html += '</div>';
+      container.innerHTML = html;
+
+
+    }
+
+    renderBib('data/bib.json', 'biblio');
 
   </script>
+
+
 
 </body>
 

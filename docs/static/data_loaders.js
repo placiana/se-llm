@@ -166,3 +166,101 @@
 
     }    
     
+async function renderHTMLTaskTable(file_url = 'tasks.json', container_id = 'task-table') {
+  const response = await fetch(file_url);
+  const tableData = await response.json();
+  /*
+  table data looks like a list of:
+
+  [
+  {
+    "description": "Table 1: SE task: Testing.",
+    "rows": [
+      {
+        "SE Problem": "Unit-Test Generation",
+        "LLM Downstream Tasks": [
+          {
+            "task": "TestGen-LLM",
+            "text": "[4] : existing unit test class (UTC) + tested class id \u2192 \u27e8CoverageAugmenting-Test-Extension\u27e9 \u2192 extended UTC."
+          },
+          {
+            "task": "FSML",
+            "text": "[6] : list helper meths + meth under test \u2192 \u27e8Test-Generation\u27e9 \u2192 (test) + [Few-Shot]."
+          },
+          ...
+
+  */
+
+  tableData.forEach(table => {
+    const container = document.getElementById(container_id);
+
+    // add description
+    const p = document.createElement('p');
+    p.innerHTML = table.description;
+    container.appendChild(p);
+
+    // create table
+    const htmlTable = document.createElement('table');
+    htmlTable.classList.add('task-table');
+    container.appendChild(htmlTable);
+
+    // create header
+    const thead = document.createElement('thead');
+    htmlTable.appendChild(thead);
+    const headerRow = document.createElement('tr');
+    thead.appendChild(headerRow);
+    const headers = ["SE Problem", "LLM Downstream Tasks", "Architectural Notes"];
+    headers.forEach(headerText => {
+      const th = document.createElement('th');
+      th.textContent = headerText;
+      headerRow.appendChild(th);
+    });
+    // create body
+    const tbody = document.createElement('tbody');
+    htmlTable.appendChild(tbody);
+
+    // add rows
+    table.rows.forEach(row => {
+      const tr = document.createElement('tr');
+
+      // add class to tr, prepend underscore and replace spaces with dashes
+      tr.classList.add(textDataToClassName(row["SE Problem"]));
+      tbody.appendChild(tr);
+
+      // SE Problem cell
+      const seProblemCell = document.createElement('td');
+      seProblemCell.textContent = row["SE Problem"];
+      tr.appendChild(seProblemCell);
+
+      // LLM Downstream Tasks cell
+      const llmTasksCell = document.createElement('td');
+      if (Array.isArray(row["LLM Downstream Tasks"])) {
+        const ul = document.createElement('ul');
+        row["LLM Downstream Tasks"].forEach(task => {
+          const li = document.createElement('li');
+          li.innerHTML = `<strong>${task.task}</strong>: ${task.text}`;
+          ul.appendChild(li);
+        });
+        llmTasksCell.appendChild(ul);
+      } else {
+        llmTasksCell.textContent = row["LLM Downstream Tasks"];
+      }
+      tr.appendChild(llmTasksCell);
+
+      // Architectural Notes cell
+      const notesCell = document.createElement('td');
+      if (Array.isArray(row["Architectural Notes"])) {
+        const ul = document.createElement('ul');
+        row["Architectural Notes"].forEach(note => {
+            const li = document.createElement('li');
+            li.innerHTML = `<strong>${note.task}</strong>: ${note.text}`;
+            ul.appendChild(li);
+          });
+        notesCell.appendChild(ul);
+      } else {
+        notesCell.textContent = row["Architectural Notes"];
+      }
+      tr.appendChild(notesCell);
+    });
+  });
+}

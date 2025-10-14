@@ -1,0 +1,39 @@
+ * {margin:0; padding:0; text-indent:0; }
+ h1 { color: black; font-family:"Georgia", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 14pt; padding-top: 11pt; padding-left: 6pt; text-indent: 0pt; text-align: left;}
+ p { color: black; font-family:"Bookman Old Style", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; margin:0pt; padding-top: 5pt; padding-left: 5pt; padding-bottom: 2pt; padding-right: 5pt; text-indent: 0pt; line-height: 11pt; text-align: left; }
+ .s1 { color: black; font-family:"Bookman Old Style", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s2 { color: black; font-family:Cambria, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s3 { color: black; font-family:"Bookman Old Style", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s4 { color: black; font-family:"Lucida Sans Unicode", sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 5pt; vertical-align: 3pt; }
+ .sBold { color: black; font-family:"Georgia", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 10pt; }
+ .s6 { color: black; font-family:"Bookman Old Style", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s7 { color: black; font-family:Trebuchet MS; font-style: normal; font-weight: normal; text-decoration: none; font-size: 9pt; }
+ .s8 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s9 { color: black; font-family:"Bookman Old Style", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 5pt; vertical-align: 3pt; }
+ .s10 { color: black; font-family:Verdana, sans-serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 5pt; vertical-align: 3pt; }
+ .s11 { color: black; font-family:"Lucida Sans Unicode", sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s12 { color: black; font-family:Cambria, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s13 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s14 { color: #7F7F7F; font-family:Georgia, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s15 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s16 { color: black; font-family:Cambria, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s18 { color: black; font-family:Verdana, sans-serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s19 { color: black; font-family:Cambria, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s20 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s21 { color: black; font-family:Cambria, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s22 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s23 { color: black; font-family:Cambria, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s24 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s25 { color: black; font-family:"Bookman Old Style", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s29 { color: black; font-family:Cambria, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; vertical-align: 1pt; }
+ .s30 { color: black; font-family:Verdana, sans-serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 6pt; }
+ .s31 { color: black; font-family:"Bookman Old Style", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; vertical-align: 1pt; }
+ .s32 { color: black; font-family:"Bookman Old Style", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .a { color: black; font-family:Cambria, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ li {display: block; }
+ #l1 {padding-left: 0pt;counter-reset: c1 1; }
+ #l1> li>*:first-child:before {counter-increment: c1; content: "["counter(c1, decimal)"] "; color: black; font-family:Georgia, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ #l1> li:first-child>*:first-child:before {counter-increment: c1 0;  }
+ table { border-style: solid; border-width: 1pt; vertical-align: top; text-align: left;}
+ table, tbody {vertical-align: top; overflow: visible; }
+ table, th, td { text-align: left; vertical-align: top; border-width: 1pt; border-style: solid; }

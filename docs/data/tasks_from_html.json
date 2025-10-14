@@ -1,0 +1,1000 @@
+[
+  {
+    "description": "Table 1: SE task: Testing.",
+    "rows": [
+      {
+        "SE Problem": "Unit-Test Generation",
+        "LLM Downstream Tasks": [
+          {
+            "task": "TestGen-LLM",
+            "text": "[4] : existing unit test class (UTC) + tested class id \u2192 \u27e8CoverageAugmenting-Test-Extension\u27e9 \u2192 extended UTC."
+          },
+          {
+            "task": "FSML",
+            "text": "[6] : list helper meths + meth under test \u2192 \u27e8Test-Generation\u27e9 \u2192 (test) + [Few-Shot]."
+          },
+          {
+            "task": "ChatGPTTests",
+            "text": "[7] : prgm \u2192 \u27e8Test-Generation\u27e9 \u2192 test cases (basic);"
+          },
+          {
+            "task": "CodeT",
+            "text": "[9] : intent + sig \u2192 \u27e8IntentCorresponding-Test-Generation\u27e9 \u2192 in/out pairs."
+          },
+          {
+            "task": "ChatUniTest",
+            "text": "[14] : focal-class sig + focal meth src-code + required depend + sig meth \u2192 \u27e8Test-Generation\u27e9 \u2192 (test) 1...5 [Adaptive focal ctxt];"
+          },
+          {
+            "task": "CodeCoT",
+            "text": "[34] : funct def of unit + doc \u2192 \u27e8Basic&Edge-TestCase-Generation\u27e9 \u2192 test cases."
+          },
+          {
+            "task": "AgentCoder",
+            "text": "[35] : funct def of unit + doc \u2192 \u27e8Basic&Edge-TestCase-Generation\u27e9 \u2192 test cases."
+          },
+          {
+            "task": "CodaMOSA",
+            "text": "[50] : (portion) src-code under test + callable def + callable name \u2192 \u27e8Targeted-Test-Generation\u27e9 \u2192 test cases."
+          },
+          {
+            "task": "TestChain",
+            "text": "[52] : func def of unit + doc \u2192 \u27e8Basic&Edge-TestInput-Generation\u27e9 \u2192 inputs [One-Shot];"
+          },
+          {
+            "task": "CoverUp",
+            "text": "[69] : code excerpt + uncovered lines \u2192 \u27e8CoverageAugmenting-Test-Generation\u27e9 \u2192 tests;"
+          },
+          {
+            "task": "TestPilot",
+            "text": "[73] : meth under test sig + (doc) 0...1 + (usage examp) 0...1 + (src-code) 0...1 + (fail test + error) 0...1 \u2192 \u27e8BuildablePassable-Test-Generation\u27e9 \u2192 (test) 0...5 ."
+          },
+          {
+            "task": "EASEeval",
+            "text": "[77] : meth under test name + class code + import statements \u2192 \u27e8Test-Generation\u27e9 \u2192 unit tests."
+          },
+          {
+            "task": "TELPA",
+            "text": "[98] : MUT code + method-invocation seq + examp following m-i seq + branch-relevant meth \u2192 \u27e8CoverageAugmenting-Test-Generation\u27e9 \u2192 test."
+          },
+          {
+            "task": "ChatTESTER",
+            "text": "[104] : focal meth code \u2192 \u27e8CodeCorresponding-Intent-Verbalization\u27e9 \u2192 intent;"
+          }
+        ],
+        "Architectural Notes": [
+          {
+            "task": "TestGen-LLM",
+            "text": "[4] : Generated tests are further processed in a pipeline of filtering-analysis (e.g., buildability, non-flakiness, coverage improvement) that is part of the Assured LLM-Based Software Engineering [5] framework."
+          },
+          {
+            "task": "FSML",
+            "text": "[6] : Study on potential proficiency."
+          },
+          {
+            "task": "ChatGPTTests",
+            "text": "[7] : Study. Two alternatives: (basic) and a version that tries to improve coverage."
+          },
+          {
+            "task": "CodeT",
+            "text": "[9] : It is part of a code generation approach that includes ulterior dual execution agreement to choose the best solution."
+          },
+          {
+            "task": "ChatUniTest",
+            "text": "[14] : Prompt is adaptive to token limit and further context of dependent classes could be added based on dependency graph. CoT is mentioned but not detailed. Repair phase may also leverage an LLM."
+          },
+          {
+            "task": "CodeCoT",
+            "text": "[34] : Testing is part of a larger code generation solution."
+          },
+          {
+            "task": "AgentCoder",
+            "text": "[35] : Testing is part of a larger code generation solution."
+          },
+          {
+            "task": "CodaMOSA",
+            "text": "[50] : Use of LLMs in the context of Search-Based Software Testing. LLMs outputs require significant post-processing to be integrated into the SBST framework."
+          },
+          {
+            "task": "TestChain",
+            "text": "[52] : Designer agent and Calculator agents reported. Calculator uses Python Interpreter."
+          },
+          {
+            "task": "CoverUp",
+            "text": "[69] : Uses testing framework including coverage tool."
+          },
+          {
+            "task": "TestPilot",
+            "text": "[73] : Refiner applies strategies to include or not certain info in prompts. Adaptive nature means that LLM is (re)invoked with failing test and error message if validation fails."
+          },
+          {
+            "task": "TELPA",
+            "text": "[98] : Static preprocessing is done to identify relevant method-invocation sequences and methods relevant for branch outcomes."
+          },
+          {
+            "task": "ChatTESTER",
+            "text": "[104] : The iterative test refiner iteratively fixes the compilation errors in the tests generated by the initial test generation. This is done with parsing and analysis of components that build prompts."
+          }
+        ]
+      },
+      {
+        "SE Problem": "Failure-Inducing Test Generation",
+        "LLM Downstream Tasks": [
+          {
+            "task": "DiffPrompt",
+            "text": "[53] : snip \u2192 \u27e8CodeCorresponding-Intent-Verbalization\u27e9 \u2192 intent;"
+          },
+          {
+            "task": "AID",
+            "text": "[54] : problem description + code \u2192 \u27e8IntentCorresponding-Code-Correction\u27e9 \u2192 code;"
+          },
+          {
+            "task": "secTests",
+            "text": "[111] : funct name + client code + vul-id + vul API ids + reference test code \u2192 \u27e8Mimicking-Test-Generation\u27e9 \u2192 test code on client code."
+          }
+        ],
+        "Architectural Notes": [
+          {
+            "task": "DiffPrompt",
+            "text": "[53] : Single interaction for intent and program generation. Multiple interactions for obtaining test cases that have same result for all generated versions."
+          },
+          {
+            "task": "AID",
+            "text": "[54] : The approach includes differential testing to detect bugs."
+          },
+          {
+            "task": "secTests",
+            "text": "[111] : Study on mimicking generic vulnerability-exploiting test given on client code."
+          }
+        ]
+      },
+      {
+        "SE Problem": "Regression Testing",
+        "LLM Downstream Tasks": [
+          {
+            "task": "SymPrompt",
+            "text": "[72] : focal meth sig + type and dependency ctxt + path constr \u2192 \u27e8ConstraintSatisfying-Input-Generation\u27e9 \u2192 test."
+          }
+        ],
+        "Architectural Notes": [
+          {
+            "task": "SymPrompt",
+            "text": "[72] : Preprocessing through static analysis techniques to get paths and context."
+          }
+        ]
+      },
+      {
+        "SE Problem": "Input Generation",
+        "LLM Downstream Tasks": [
+          {
+            "task": "RESTGPT",
+            "text": "[49] : OpenAPI spec \u2192 \u27e8DescriptionCorresponding-Liberal-Constraint-Characterization\u27e9 \u2192 struct with constrs, types, format for params [Few-Shot];"
+          },
+          {
+            "task": "InputBlaster",
+            "text": "[59] : local&global ctxt + NL candidate constrs + (dynamic hint) \u2192 \u27e8GUIInputCorresponding-ValidityConstraint-Characterization\u27e9 \u2192 inferred constr [Few-Shot];"
+          },
+          {
+            "task": "PBT-GPT",
+            "text": "[88] : API doc + focus meth name \u2192 \u27e8Postcondition-Assertion-Generation\u27e9 \u2192 prop assertions;"
+          },
+          {
+            "task": "mrDetector",
+            "text": "[95] : shop name + shop type \u2192 \u27e8LikelyRecalling-Data-Generation\u27e9 \u2192 searching keywords [Few-Shot, CoT];"
+          }
+        ],
+        "Architectural Notes": [
+          {
+            "task": "RESTGPT",
+            "text": "[49] : Improves the treatment of OpenAPI spec, particularly human-readable part. Both tasks are actually performed in a single prompt."
+          },
+          {
+            "task": "InputBlaster",
+            "text": "[59] : Valid Input Generator (task 1 and 2) is iterated until it makes the APP transfer (elicited as a single prompt). Task 3 and 4 (also elicited in a single prompt) is also iterated and intermediate results are part of the feedback for effectiveness and diversity. DB is built with buggy examples from GitHUB recorded to match the style used in prompt. Also, unusual inputs that triggered crashes during execution of InputBlaster on the APP. Similarly, it is used to select examples for in-Ctxt Learning."
+          },
+          {
+            "task": "PBT-GPT",
+            "text": "[88] : Three prompting strategies to generate property-based tests: independently (gen. funct. / property assertion), consecutively (continue conversation after gen. funct.), and together (single big-bang prompt)."
+          }
+        ]
+      },
+      {
+        "SE Problem": "Data Set/ Mutant Generation",
+        "LLM Downstream Tasks": [
+          {
+            "task": "FSML",
+            "text": "[6] : line of code \u2192 \u27e8Line-Mutation\u27e9 \u2192 (mutated line) + [Few-Shot]."
+          },
+          {
+            "task": "MuTAP",
+            "text": "[16] : prgm under test \u2192 \u27e8Test-Generation\u27e9 \u2192 initial unit test (incl assert) [Zero-Shot/Few-Shot];"
+          },
+          {
+            "task": "BugFarm",
+            "text": "[38] : method signature + method body + statements to transform \u2192 \u27e8BugInjecting-Code-Mutation\u27e9 \u2192 transformed code."
+          },
+          {
+            "task": "\u00b5BERT",
+            "text": "[47] : masked-code \u2192 \u27e8Code-Completion\u27e9 \u2192 code 1...5 [InFiller]."
+          },
+          {
+            "task": "CHEMFUZZ",
+            "text": "[70] : prev conv + masked-code \u2192 \u27e8Valid&Diversified-Code-Completion\u27e9 \u2192 code;"
+          },
+          {
+            "task": "FormAI",
+            "text": "[84] : type of prgm + style \u2192 \u27e8IntentCorresponding-Code-Generation\u27e9 \u2192 prgm."
+          },
+          {
+            "task": "LLMorpheus",
+            "text": "[85] : source code fragment with placeholder + masked orig code \u2192 \u27e8DifferentBehavior-Mutation-Generation\u27e9 \u2192 (replacement + brief explanation) + ."
+          }
+        ],
+        "Architectural Notes": [
+          {
+            "task": "FSML",
+            "text": "[6] : Study on potential proficiency."
+          },
+          {
+            "task": "MuTAP",
+            "text": "[16] : LLMs are invoked in a mutant-based test generation approach."
+          },
+          {
+            "task": "BugFarm",
+            "text": "[38] : LLM is used in the last of the 3 stages that includes method extraction, an a model\u2019s attention to different parts of code to identify where to inject bugs."
+          },
+          {
+            "task": "\u00b5BERT",
+            "text": "[47] : Invoked to predict masked token. Stochasticity used to get 5 completions."
+          },
+          {
+            "task": "CHEMFUZZ",
+            "text": "[70] : LLM integrated into a fuzzing scheme."
+          },
+          {
+            "task": "FormAI",
+            "text": "[84] : Generation is the first phase for the construction of a labelled data set for vulnerability analysis."
+          }
+        ]
+      },
+      {
+        "SE Problem": "General Fuzzing",
+        "LLM Downstream Tasks": [
+          {
+            "task": "OSS-Fuzz",
+            "text": "[28] : funct to tgt + project specific info \u2192 \u27e8DriverCode-Generation\u27e9"
+          },
+          {
+            "task": "ChatFuzz",
+            "text": "[32] : (sample input) 0...1 + (format name) 0...1 \u2192 \u27e8File-Variation-Generation\u27e9 \u2192 file [(InFiller)]."
+          },
+          {
+            "task": "Fuzz4All",
+            "text": "[97] : doc + (examp) \u2217 + (specs) \u2217 \u2192 \u27e8Usage-Summarization \u27e9 \u2192 distilled usage/funct;"
+          },
+          {
+            "task": "UGCTX",
+            "text": "[105] : header file + API usage examp + funct name \u2192 \u27e8DriverCode-Generation\u27e9 \u2192 fuzz driver (UGCTX);"
+          }
+        ],
+        "Architectural Notes": [
+          {
+            "task": "OSS-Fuzz",
+            "text": "[28] : Part of a large project that includes introspection components and fuzzing ones. The description is a best effort from the on-line documentation."
+          },
+          {
+            "task": "ChatFuzz",
+            "text": "[32] : Use stochasticity to generate seeds in grey-box fuzzing workflow."
+          },
+          {
+            "task": "Fuzz4All",
+            "text": "[97] : Autoprompting distill user provided inputs. LLM-powered fuzzing loops which resort to generation, mutation and semantically equiv. variant generation."
+          }
+        ]
+      },
+      {
+        "SE Problem": "Kernel Fuzzing",
+        "LLM Downstream Tasks": [],
+        "Architectural Notes": []
+      },
+      {
+        "SE Problem": "Compiler/ Simulator Fuzzing",
+        "LLM Downstream Tasks": [
+          {
+            "task": "SearchGEM5",
+            "text": "[15] : code \u2192 \u27e8ParameterizedVersion-Code-Generation\u27e9 \u2192 param version + type of params [Few-Shot];"
+          }
+        ],
+        "Architectural Notes": [
+          {
+            "task": "SearchGEM5",
+            "text": "[15] : Generates binary inputs for testing an HW-SW architecture simulator. That is, the tool also includes compilation, fuzzing and differential testing. LLM-tasks are elicited by in-chained prompts and a last prompt that requests the parameterized version, sample input and type."
+          },
+          {
+            "task": "WhiteFox",
+            "text": "[99] : Multi-armed bandit algorithm is used to choose few shots for prompts."
+          }
+        ]
+      },
+      {
+        "SE Problem": "Protocol/Parser Fuzzing",
+        "LLM Downstream Tasks": [
+          {
+            "task": "FuzzingParsers",
+            "text": "[1] : name object \u2192 \u27e8 StructureOfObject-Recall \u27e9 \u2192 well-formed tree structure;"
+          },
+          {
+            "task": "ChatAFL",
+            "text": "[63] : protocol name \u2192 \u27e8 ProtocolGrammar-Recall \u27e9 \u2192 msg grammar [Few-Shot: expected format];"
+          }
+        ],
+        "Architectural Notes": [
+          {
+            "task": "FuzzingParsers",
+            "text": "[1] : These tasks belong to seed generation stage. Other stages include fuzzing and preprocessing."
+          }
+        ]
+      },
+      {
+        "SE Problem": "DL-Libraries Fuzzing",
+        "LLM Downstream Tasks": [
+          {
+            "task": "FuzzGPT",
+            "text": "[21] : code snip \u2192 \u27e8APIUsed-Code-MultiClass-Classification\u27e9 \u2192 API label [Few-Shot];"
+          }
+        ],
+        "Architectural Notes": [
+          {
+            "task": "TitanFuzz",
+            "text": "[20] : Invoked in an evolutionary workflow to generate seeds and complete mutants."
+          },
+          {
+            "task": "FuzzGPT",
+            "text": "[21] : Data Set (DS) preparation uses Classifier role. Then, random pick from DS and use alternative roles/strategies."
+          }
+        ]
+      },
+      {
+        "SE Problem": "GUI Testing",
+        "LLM Downstream Tasks": [
+          {
+            "task": "QTypist",
+            "text": "[57] : input widget type + local ctxt + global ctxt \u2192 \u27e8Input-Completion\u27e9 \u2192 generated input;"
+          },
+          {
+            "task": "GPTDroid",
+            "text": "[58] : prev conv + GUI ctxt + prev action fdbk + functionality-aware memory \u2192 \u27e8FunctionCoverageOriented-NextAction-Selection\u27e9 \u2192 funct being tested + status + next action [Few-Shot: to define output format]; action + new GUI ctxt + testing memory \u2192 \u27e8Testing-Status-Analysis\u27e9 \u2192 testing status summary."
+          },
+          {
+            "task": "AXNav",
+            "text": "[82] : accessibility test instruct + name of app under test + formatted UI element \u2192 \u27e8TestGoalCorresponding-Plan-Generation\u27e9 \u2192 tentative plan = (task, action descr, justification, eval criteria, status) \u2217 [CoT: justification] (planner);"
+          }
+        ],
+        "Architectural Notes": [
+          {
+            "task": "QTypist",
+            "text": "[57] : Prompts are generated by a set of rules on context information. Prompt-tuning is also in place."
+          }
+        ]
+      },
+      {
+        "SE Problem": "Functional Testing",
+        "LLM Downstream Tasks": [
+          {
+            "task": "TARGET",
+            "text": "[19] : traffic rule \u2192 \u27e8DSLValid&TryToUseGivenElements-RuleConsistent-Scenario-Generation\u27e9 \u2192 draft scenario-rep [Few-Shot] (Know.Extract.); draft scenario-rep + rules \u2192 \u27e8RuleInconsistencies-Scenario-Correction\u27e9 \u2192 scenario (Know.Val.);"
+          },
+          {
+            "task": "ScenarioNL",
+            "text": "[22] : crash incident report \u2192 \u27e8Focused-Summarization\u27e9 \u2192 relevant dynamics + static objects [ToT: experts debate];"
+          },
+          {
+            "task": "LLMeDiff",
+            "text": "[39] : rule \u2192 \u27e8Pass+Fail+N/A-Test-Generation\u27e9 \u2192 test + confidence."
+          },
+          {
+            "task": "SysKG-UTF",
+            "text": "[78] : bug reports \u2192 \u27e8 StructureCompliant-Information-Extraction \u27e9"
+          }
+        ],
+        "Architectural Notes": [
+          {
+            "task": "TARGET",
+            "text": "[19] : Takes three phases to parse a traffic rule description to an executable driving scenario in a simulator. LLM addresses first processing phase. ScenarioNL [22] : ScenarioNL allows users to specify a model and prompting technique. Scenic database is used to store and retrieve semantically similar examples. SysKG-UTF [78] : LLMs play different roles in the construction and post-processing of a knowledge graph for exploratory testing."
+          },
+          {
+            "task": "ScenarioNL",
+            "text": "[22] : ScenarioNL allows users to specify a model and prompting technique. Scenic database is used to store and retrieve semantically similar examples."
+          },
+          {
+            "task": "SysKG-UTF",
+            "text": "[78] : LLMs play different roles in the construction and post-processing of a knowledge graph for exploratory testing."
+          }
+        ]
+      },
+      {
+        "SE Problem": "Penetration Testing",
+        "LLM Downstream Tasks": [
+          {
+            "task": "PentestGPT",
+            "text": "[18] : user-intents \u2192 \u27e8IntentCorresponding-Plan-Generation \u27e9 \u2192"
+          },
+          {
+            "task": "pwn\u2019d",
+            "text": "[30] : scenario \u2192 \u27e8ScenarioCorresponding-Plan-Generation\u27e9 \u2192 pen-test plan [Agent GPT];"
+          }
+        ],
+        "Architectural Notes": [
+          {
+            "task": "PentestGPT",
+            "text": "[18] : It incorporates three core modules: the Reasoning Module (1\u20135), the Generation Module (6,7), and the Parsing Module (8) (each reserving an LLM session). Active user feedback is possible."
+          },
+          {
+            "task": "pwn\u2019d",
+            "text": "[30] : High-level task planning uses mechanisms to integrate LLMs as agents (AutoGPT). Low-level vector attack works as a step by step reactive execution of plan."
+          }
+        ]
+      },
+      {
+        "SE Problem": "Oracle Problem",
+        "LLM Downstream Tasks": [
+          {
+            "task": "FSML",
+            "text": "[6] : sig + meth-intent \u2192 \u27e8MetamorphicAssertion-Characterization \u27e9 \u2192"
+          },
+          {
+            "task": "SELF-DEBUGGING",
+            "text": "[12] : sql-query \u2192 \u27e8SQL-CodeCorresponding-Explana-"
+          },
+          {
+            "task": "nl2postcondition",
+            "text": "[23] : intent + (refer impl) 0...1 \u2192 \u27e8PostCondition-"
+          },
+          {
+            "task": "TOGLL",
+            "text": "[31] : test prefix + MUT code + MUT doc \u2192 \u27e8Assertion-Generation\u27e9"
+          },
+          {
+            "task": "Eywa",
+            "text": "[42] : funct defs + arguments + result + validity constraints \u2192 \u27e8ProtocolModelImplementation-Generation\u27e9 \u2192 model code."
+          },
+          {
+            "task": "PropertyGPT",
+            "text": "[56] : base rule code + funct code under test + contract"
+          },
+          {
+            "task": "ClarifyGPT",
+            "text": "[66] : MUT sig + doc \u2192 \u27e8IntentCorresponding-Code-Generation\u27e9 \u2192 (code) \u2217 ;"
+          },
+          {
+            "task": "CEDAR",
+            "text": "[67] : focal meth + unit-test snip \u2192 \u27e8Assertion-Generation\u27e9 \u2192 assert [Few-Shot + RAG: retrv demo (U-Test snip)]."
+          },
+          {
+            "task": "PROSPER",
+            "text": "[74] : RFC doc. \u2192 \u27e8 FSM-Elements-Extraction\u27e9 \u2192 FSM-elements [Few-Shot]."
+          },
+          {
+            "task": "EMR",
+            "text": "[76] : req doc \u2192 \u27e8 IORelated-Sentences-Identification\u27e9 \u2192 I/O sentences;"
+          },
+          {
+            "task": "GameBugDescriptions",
+            "text": "[83] : video game name + scenario + perspective"
+          },
+          {
+            "task": "MetaMorph",
+            "text": "[86] : doc snip \u2192 \u27e8 VariableNames-Identification\u27e9 \u2192 vars [Few- Shot]."
+          },
+          {
+            "task": "ALGO",
+            "text": "[108] : prob formul + in/out examp \u2192 \u27e8BruteForce-IntentCorrespond-"
+          }
+        ],
+        "Architectural Notes": [
+          {
+            "task": "FSML",
+            "text": "[6] : Study on potential profi ciency."
+          },
+          {
+            "task": "SELF-DEBUGGING",
+            "text": "[12] : For the Generation step, given the problem description, the model predicts candidate programs (not shown in this report). Explanation step, the model is prompted to process the predictions in a \u201csemantically useful way\u201d, such as explaining the prediction (and reference NL query for SQL query generation, source program for translation program) in natural language. Correctness is then predicted by different tasks depending on the code generation/translation problem. Here"
+          },
+          {
+            "task": "TOGLL",
+            "text": "[31] : Six different prompts are studied. We report one with the richest context (P6)."
+          },
+          {
+            "task": "Eywa",
+            "text": "[42] : LLM is used to generate protocol model code. Symbolic execution is further used to generate test cases.-"
+          },
+          {
+            "task": "PropertyGPT",
+            "text": "[56] : Uses Retrieval augmented generation by providing relevant specifications to be based on."
+          },
+          {
+            "task": "ClarifyGPT",
+            "text": "[66] : Intention clarification is part of this code generation approach. Generated inputs (and mutations) are used to cluster solutions. Differences analysis and clarifying questions are actually performed by a single prompt."
+          },
+          {
+            "task": "CEDAR",
+            "text": "[67] : General demonstration retrieval method illustrated in assertion generation. Neural and frequency-based techniques for retrieval."
+          },
+          {
+            "task": "EMR",
+            "text": "[76] : Initial study on generating metamorphic relations from documentation and executable metamorphic relations. Some details on prompt engineering are not provided and are conjectural."
+          },
+          {
+            "task": "ALGO",
+            "text": "[108] : This (oracle synthesis) is part of a program generation framework. Program generation may use implicit or explicit search (e.g., algorithmic ideas)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "Table 2: SE task: Debugging.",
+    "rows": [
+      {
+        "SE Problem": "Bug Reproduction",
+        "LLM Downstream Tasks": [
+          {
+            "task": "AdbGPT",
+            "text": "[24] : bug report \u2192 \u27e8 StepsToReproduce-Extraction\u27e9 \u2192 steps to reprod [Few-Shot, CoT];"
+          },
+          {
+            "task": "LIBRO",
+            "text": "[46] : bug report + (stack trace) 0...1 \u2192 \u27e8BugReproducing-Test- Generation\u27e9 \u2192 test meth [Few-Shot]."
+          }
+        ],
+        "Architectural Notes": [
+          {
+            "task": "CrashTranslator",
+            "text": "[ 37]: It leverages LLM for one of the scorer which goal is to propose exploration priority."
+          },
+          {
+            "task": "LIBRO",
+            "text": "[46] : LLM works as first component of tool chain. A set of test candidates are generated by querying the LLM multiple times."
+          }
+        ]
+      },
+      {
+        "SE Problem": "Bug Report Analysis",
+        "LLM Downstream Tasks": [
+          {
+            "task": "Cupid",
+            "text": "[109] : bug report \u2192 \u27e8 AimedAtDuplicateDetection-Keywords-Extraction \u27e9"
+          }
+        ],
+        "Architectural Notes": [
+          {
+            "task": "Cupid",
+            "text": "[109] : LLM plays a punctual role into a traditional solution for duplicate bug report."
+          }
+        ]
+      },
+      {
+        "SE Problem": "Fault Localization",
+        "LLM Downstream Tasks": [
+          {
+            "task": "AutoFL",
+            "text": "[44] : failing test info \u2192 \u27e8RootCause-Analysis\u27e9 \u2192 root cause [ReAct: funct calls for debugging];"
+          },
+          {
+            "task": "AutoSD",
+            "text": "[45] : funct meth + tests + err msg + (reports) 0...1 \u2192 \u27e8RootCause- Analysis\u27e9 \u2192 hypoth + prediction + experiment;"
+          },
+          {
+            "task": "LLM4CBI",
+            "text": "[87] : prgm + mutation instr + validity fdbk \u2192 \u27e8MutationSpecified- Code-Mutation\u27e9 \u2192 prgm."
+          },
+          {
+            "task": "ChatGPT-4(Log)",
+            "text": "[96] : focal source faulty code \u2192 \u27e8FaultProneness-Code- Lines-Ranking\u27e9 \u2192 ordered list of lines and reason [CoT: funct intent , reason per line];"
+          }
+        ],
+        "Architectural Notes": [
+          {
+            "task": "AutoFL",
+            "text": "[44] : Two stages: root cause explanation and bug location. LLM uses function calling."
+          },
+          {
+            "task": "AutoSD",
+            "text": "[45] : Chained interaction of LLMs with executing engines."
+          },
+          {
+            "task": "LLM4CBI",
+            "text": "[87] : Generation of prompts uses ad-hoc static analysis. Then they are selected, executed and modified in a RL workflow that includes some classic localization techniques."
+          },
+          {
+            "task": "ChatGPT-4(Log)",
+            "text": "[96] : Empirical study of LLMs proficiency. Code context is modified in the controlled experiment to assess impact."
+          }
+        ]
+      },
+      {
+        "SE Problem": "Root Cause Analysis",
+        "LLM Downstream Tasks": [
+          {
+            "task": "RCACopilot",
+            "text": "[13] : diagnostic info \u2192 \u27e8RootCauseOriented-Summarization \u27e9 \u2192"
+          },
+          {
+            "task": "x-lifecycle",
+            "text": "[27] : service descr \u2192 \u27e8RootCauseOriented-Summarization \u27e9 \u2192 summ svc descr;"
+          },
+          {
+            "task": "RCAAgents",
+            "text": "[71] : initial incident info \u2192 \u27e8RootCause-Analysis\u27e9 \u2192 root cause [ReAct: rqst for details, rqst for historical inc, query on retrieved inc];"
+          },
+          {
+            "task": "LM-PACE",
+            "text": "[107] : (incident, root cause) + + curr incident + (guessed root cause) \u2192 \u27e8SufficiencyToInferAnswer-Assessment\u27e9 \u2192 analysis;"
+          },
+          {
+            "task": "inContextRCA",
+            "text": "[110] : report \u2192 \u27e8RootCauseOriented-Summarization\u27e9 \u2192 incident + root cause;"
+          }
+        ],
+        "Architectural Notes": [
+          {
+            "task": "RCACopilot",
+            "text": "[13] : Diagnostic information collection stage is performed before prediction. Tasks are core part of larger solution."
+          },
+          {
+            "task": "x-lifecycle",
+            "text": "[27] : Vector data base is used for Retrieval Augmented Generation."
+          },
+          {
+            "task": "RCAAgents",
+            "text": "[71] : Vector data base to search for historical incidents."
+          },
+          {
+            "task": "LM-PACE",
+            "text": "[107] : Focus on confidence estimation and calibration. Root cause generation is a black box that can be addressed by LLMs as well. Relevant incidents came from historical-DB (semantic similarity-based retriever). Confidence of Evaluation (COE-score) and Root-Cause-Evaluation (RCE-score) are obtained from (1) and (2) resp. multiple sampling on LLMs. COE and RCE scores are the input of an optimization procedure to build a model to predict calibrated confidence score. In deployment phase, predicted root cause and calibrated confidence score is yield to on-call engineers."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "Table 3: SE task: Vulnerability/Misuse/Malware/Fault Detection.",
+    "rows": [
+      {
+        "SE Problem": "Vulnerability Detection",
+        "LLM Downstream Tasks": [
+          {
+            "task": "ChatGPT4vul",
+            "text": "[25] : src-code \u2192 \u27e8VulnerabilityProneness-Code-OneClass-"
+          },
+          {
+            "task": "VulBench",
+            "text": "[26] : snip + (vul classes) 0...1 \u2192 \u27e8Rationalized-ListTargeted-CWE-"
+          },
+          {
+            "task": "NLBSE24",
+            "text": "[41] : code snippet \u2192 \u27e8VulnerabilityProneness-Code-OneClass-"
+          },
+          {
+            "task": "VulDetect",
+            "text": "[48] : tgt code snippet \u2192 \u27e8Rationalized-CWEVulnerabilityProne-"
+          },
+          {
+            "task": "GRACE",
+            "text": "[60] : code snippet + code property graph \u2192 \u27e8CPGEnhanced-Vulner-"
+          },
+          {
+            "task": "VSP",
+            "text": "[68] : src-code \u2192 \u27e8Rationalized-CWEVulnerabilityProneness-Code-MultiL-"
+          },
+          {
+            "task": "DLAP",
+            "text": "[ 101]: code-snippet + (snippet + label + probability) + \u2192"
+          },
+          {
+            "task": "MultiTask",
+            "text": "[103] : code snippet \u2192 \u27e8VulnerabilityProneness-Code-OneClass-"
+          },
+          {
+            "task": "PromptEnhanced",
+            "text": "[106] : src-code \u2192 \u27e8CodeCorresponding-Intent-"
+          },
+          {
+            "task": "ChatGPT(Plus)",
+            "text": "[112] : project info + ext src knowl (top CWE) + src-code"
+          }
+        ],
+        "Architectural Notes": [
+          {
+            "task": "ChatGPT4vul",
+            "text": "[25] : Study of profi- ciency. It includes repair prompts (not reported here)."
+          },
+          {
+            "task": "VulBench",
+            "text": "[26] : Study including alter- native prompting strategies."
+          },
+          {
+            "task": "NLBSE24",
+            "text": "[41] : This evaluation also in- cludes tasks versions that take previous labels as inputs."
+          },
+          {
+            "task": "VulDetect",
+            "text": "[48] : Study including al ternative prompting strategies. Self-reflection is one option."
+          },
+          {
+            "task": "GRACE",
+            "text": "[60] : We report the enhanced"
+          },
+          {
+            "task": "AIagent",
+            "text": "[75] : Preliminary study. Basic prompt is augmented with caveats on each category."
+          },
+          {
+            "task": "DLAP",
+            "text": "[101] : DL models are used to generate a prediction probability that serve as reference input for LLM assessment. LHS is used to find similar code. Static analysis results are key to query to obtain customized CoT generation guidance templates."
+          },
+          {
+            "task": "PromptEnhanced",
+            "text": "[106] : Study on different prompting strategies. It actually tries unsuccessfully to generate data-flow and API calls by using LLM too (property characterization, in our terms)."
+          },
+          {
+            "task": "ChatGPT(Plus)",
+            "text": "[112] : Study of profi- ciency of GPTs vs fine-tuned version."
+          }
+        ]
+      },
+      {
+        "SE Problem": "Line-Level/Edit-Time Fault/API Misuse Prediction",
+        "LLM Downstream Tasks": [
+          {
+            "task": "FLAG",
+            "text": "[2] : prefix snippet + (suffix snippet) + (prefix of line to be guessed)"
+          },
+          {
+            "task": "WitheredLeaf",
+            "text": "[11] : code \u2192 \u27e8Rationalized-SemanticBugPresence-CodeLine-"
+          },
+          {
+            "task": "LLMAPIDet",
+            "text": "[92] : code before + code after \u2192 \u27e8RootCauseOriented-Change-"
+          }
+        ],
+        "Architectural Notes": [
+          {
+            "task": "FLAG",
+            "text": "[2] : LLM is used as line genera- tor (preprocessor). A bounded number of attempts with hints is tried to get non empty line. Feature extraction based on edit distances and Bleu. Logprobs of tokens are used when available. Classification is done based on such features."
+          },
+          {
+            "task": "EditTime",
+            "text": "[8] : Comparative study also against a fine-tuning approach. Retrieval is done to find adequate task description and examples for the few-shot learning approach."
+          },
+          {
+            "task": "WitheredLeaf",
+            "text": "[11] : Lightweight, open- source models (e.g., infilling ones) are used to identify suspicious program entities as a preprocessing step. Last tasks are implemented by same prompt."
+          },
+          {
+            "task": "LLMAPIDet",
+            "text": "[92] : Study on DL API Misuse Root Causes that feed LLM-based solution. Misuse rules populates a DB and examples for misuses detection. Potential misuse rule list by cosine similarity between the code explanation obtained in step 2 and each misuse rule in DB. Patching step is not shown in this report."
+          }
+        ]
+      },
+      {
+        "SE Problem": "Vulnerability Detection for Smart Contracts",
+        "LLM Downstream Tasks": [
+          {
+            "task": "ChatGPTSCV",
+            "text": "[10] : src smrt contrct + tgt vuls \u2192 \u27e8Rationalized-ListTar-"
+          },
+          {
+            "task": "SmartAudit",
+            "text": "[17] : contract src-code + vul type + vul descr \u2192 \u27e8ListTargeted-"
+          },
+          {
+            "task": "GPTLens",
+            "text": "[33] : src-code \u2192 \u27e8Rationalized-VulnerabilityProneness-Code-MultiL abel-Classification\u27e9 \u2192 (vul + funct name + reason) \u2217 (auditor);"
+          },
+          {
+            "task": "LLM4Vuln",
+            "text": "[80] : vul report + tgt code \u2192 \u27e8CodeCorresponding-Intent-"
+          },
+          {
+            "task": "GPTScan",
+            "text": "[ 81]: (scenario) \u2217 + contract src-code \u2192"
+          }
+        ],
+        "Architectural Notes": [
+          {
+            "task": "SmartAudit",
+            "text": "[17] : Potentiality study of LLMs to find smart contract vulnerabilities. Binary, non-binary, CoT prompts are presented. CoT version is performed by iteratively asking LLM to audit each function name, revisiting audit or linking functions to find vulnerabilities."
+          },
+          {
+            "task": "GPTLens",
+            "text": "[33] : Several auditors solv- ing detection task generate potential vulnerabilities. A critic assess them."
+          },
+          {
+            "task": "LLM4Vuln",
+            "text": "[80] : Evaluation framework that includes LLM-based Result Annotation and Analysis (not reported here)."
+          },
+          {
+            "task": "GPTScan",
+            "text": "[81] : Authors break down common logic vulnerability types into scenarios and properties. LLMs scenario and property matches and identified variables are validated by static confirmation. Saving on GPT costs by first filtering in a single prompt (1)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "Table 4: SE task: Static Analysis.",
+    "rows": [
+      {
+        "SE Problem": "Call-Graph/CFG Construction",
+        "LLM Downstream Tasks": [
+          {
+            "task": "CFG-Chain",
+            "text": "[36] : code \u2192 \u27e8 CodeBlocks-Extraction\u27e9 \u2192 nested code-blocks [Few-Shot];"
+          }
+        ],
+        "Architectural Notes": []
+      },
+      {
+        "SE Problem": "Use Before Initialize",
+        "LLM Downstream Tasks": [
+          {
+            "task": "LLift",
+            "text": "[51] : use site + (retrv code snip) \u2192 \u27e8 InfoRequesting-Initializator- Identification\u27e9 \u2192 (retrv rqst) + initializer [ReAct: funct to retrv];"
+          }
+        ],
+        "Architectural Notes": []
+      },
+      {
+        "SE Problem": "Resource Leak",
+        "LLM Downstream Tasks": [
+          {
+            "task": "SkipAnalyzer",
+            "text": "[65] : code snip \u2192 \u27e8Rationalized-NullDerreferencePresence-Code- OneClass-Classification\u27e9 \u2192 yes/no + vul descr [CoT, One-Shot, Few-Shot]; code snip \u2192 \u27e8Rationalized-ResourceLeakPresence-Code-OneClass-Classification \u27e9"
+          },
+          {
+            "task": "InferROI",
+            "text": "[91] : snip \u2192 \u27e8 ResourceLeakRelated-CodeElements-Identification \u27e9 \u2192"
+          }
+        ],
+        "Architectural Notes": [
+          {
+            "task": "InferROI",
+            "text": "[91] : LLM is used to get intentions in code, then a static resource leak detection engine is feed with this information."
+          }
+        ]
+      },
+      {
+        "SE Problem": "Data-Flow Analysis",
+        "LLM Downstream Tasks": [
+          {
+            "task": "LLMDFA",
+            "text": "[90] : AST-traversal skel + (suggested identif rules) \u2192 \u27e8Source/Sink- ElementIdentificationCode-Completion\u27e9 \u2192 source/sink extractor [Few-Shot: E spec ];"
+          }
+        ],
+        "Architectural Notes": []
+      },
+      {
+        "SE Problem": "Taint Analysis",
+        "LLM Downstream Tasks": [
+          {
+            "task": "E&V",
+            "text": "[29] : task input + static-analysis pseudo-code + relevant src-code + prev results + verif fdbk \u2192 \u27e8Step-Computation\u27e9 \u2192 round output + (retrv-rqst) 0...1 ;"
+          }
+        ],
+        "Architectural Notes": [
+          {
+            "task": "E&V",
+            "text": "[29] : General framework for conducting static analysis from pseudo-code by means of LLMs. Agent-based architecture, but hard-coded planning strategies. Augment temperature if re-analysis required."
+          },
+          {
+            "task": "LATTE",
+            "text": "[55] : LLMs are invoked to identify sources and sinks. Dangerous flows are analyzed step by step by LLMs in a prompt sequence driven by sliced code."
+          }
+        ]
+      },
+      {
+        "SE Problem": "Static Slicing",
+        "LLM Downstream Tasks": [
+          {
+            "task": "SimulinkSlicer",
+            "text": "[61] : model + requirement \u2192 \u27e8 Model-Slicing\u27e9 \u2192 model components [Few-Shot, CoT: dependence chain elicitation by demonstration]."
+          }
+        ],
+        "Architectural Notes": []
+      },
+      {
+        "SE Problem": "Fix Acceptance Check",
+        "LLM Downstream Tasks": [
+          {
+            "task": "CORE",
+            "text": "[89] : diff \u2192 \u27e8Patch-Qlty(Fixes, LeastImpact)-Assessment\u27e9 \u2192 score + reason."
+          }
+        ],
+        "Architectural Notes": [
+          {
+            "task": "CORE",
+            "text": "[89] : Proposer LLM generates potential code revisions (not shown here). Static analysis is run on those revisions. Reviewer ranks solutions for specific fix warnings."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "Table 5: SE task: Program Verification.",
+    "rows": [
+      {
+        "SE Problem": "Program Verification",
+        "LLM Downstream Tasks": [
+          {
+            "task": "AlloyRepair",
+            "text": "[3] : faulty spec + (generic-feedback) 0...1 \u2192 \u27e8FeedbackGuided-"
+          },
+          {
+            "task": "ChatInv",
+            "text": "[40] : code + loc + masked assert \u2192 \u27e8Assertion-Completion\u27e9 \u2192 assert [InFiller]."
+          },
+          {
+            "task": "Loopy",
+            "text": "[43] : annot prgm with prop to be verif \u2192"
+          },
+          {
+            "task": "SpecGen",
+            "text": "[62] : prgm \u2192 \u27e8CodeCorresponding-Specification-Generation\u27e9 \u2192 prgm"
+          },
+          {
+            "task": "Dafny-Synth",
+            "text": "[64] : intent \u2192 \u27e8IntentCorresponding-AnnotatedCode-Generation\u27e9 \u2192 annot code (contextless);"
+          },
+          {
+            "task": "Clover",
+            "text": "[79] : annot code skel + verifier fdbk \u2192 \u27e8VerifierAware-AnnotationCor-"
+          },
+          {
+            "task": "AutoSpec",
+            "text": "[93] : masked annotated-code \u2192 \u27e8Annotation-Generation\u27e9 \u2192"
+          },
+          {
+            "task": "Lemur",
+            "text": "[94] : code under analysis + place holder \u2192 \u27e8Invariant-Lemma-"
+          },
+          {
+            "task": "RustProof",
+            "text": "[102] : annot code (with precond) \u2192 \u27e8PostCondition-Generation \u27e9"
+          }
+        ],
+        "Architectural Notes": [
+          {
+            "task": "AlloyRepair",
+            "text": "[3] : Alloy analyzer is used to validate an generate a report that is either used as input for correction or processed by an LLM to generate a efined suggestion."
+          },
+          {
+            "task": "Loopy",
+            "text": "[43] : Invariants are checked by using symbolic tools. Assertions collected trough several LLM invocations."
+          },
+          {
+            "task": "SpecGen",
+            "text": "[62] : Tasks models first phase of the approach: a conversation-driven specification generation leveraging LLMs."
+          },
+          {
+            "task": "Clover",
+            "text": "[79] : Consistency checks to know (i) the code is functionally correct"
+          },
+          {
+            "task": "AutoSpec",
+            "text": "[93] : Call graph is used to identify locations and order for specification generation."
+          },
+          {
+            "task": "Lemur",
+            "text": "[94] : Integrated with verifiers, it follows a set of proof rules that invokes LLMs to act as suggesters of auxiliary assertions and repairer of those suggestions."
+          },
+          {
+            "task": "RustProof",
+            "text": "[102] : Proof helper in- tegrated with smart contract model checker. Human and static analysis tools can be integrated to improve generation."
+          }
+        ]
+      }
+    ]
+  }
+]

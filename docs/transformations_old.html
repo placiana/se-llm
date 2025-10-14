@@ -137,7 +137,7 @@ main.container-fluid {
     // on document load execute
     document.addEventListener("DOMContentLoaded", function() {
       renderTree('data/transformations.json', 'problems-container');
-      renderHTMLTaskTable('data/tasks_from_html.json', 'task-table');
+      renderTaskTable('data/tasks.json', 'task-table');
 
 
       // add listener so when a problem is clicked, the table is scrolled to the first row with that problem

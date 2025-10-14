@@ -134,6 +134,82 @@ def write_transformations_json():
         json.dump(problems, file, indent=2)
     
 
+def parse_html():
+    from bs4 import BeautifulSoup
+    import re
+
+    with open('sources/tabla4.html') as file:
+        soup = BeautifulSoup(file, 'html.parser')
+    
+    tables = soup.find_all('table')
+
+    data = []
+
+    for table in tables:
+        table_data = {}
+        # Find the closest preceding <p> that looks like "Table X:"
+        desc_p = None
+        for prev in table.find_all_previous("p"):
+            text = prev.get_text(strip=True)
+            if re.match(r"^Table\s*\d+[:.]", text, re.IGNORECASE):
+                desc_p = prev
+                break
+
+        description = desc_p.get_text(" ", strip=True) if desc_p else None
+
+        print("----")
+        print("Table description:", description)
+        table_data['description'] = description
+        table_data['rows'] = []
+
+        rows = table.find_all('tr')
+        #drop the header row
+        rows = rows[1:]
+
+        for row in rows:
+            cols = row.find_all("td")
+
+            # Define column names
+            column_names = ["SE Problem", "LLM Downstream Tasks", "Architectural Notes"]
+            result = {}
+
+            for i, td in enumerate(cols):
+                if i == 0:
+                    # First column, no special parsing
+                    text = td.get_text(" ", strip=True)
+                    if text:
+                        col_data = text
+                else:
+                    sbolds = td.find_all("span", class_="sBold")
+                    col_data = []
+                    for j, sb in enumerate(sbolds):
+                        title = sb.get_text(strip=True)
+                        content = []
+                        for sibling in sb.next_siblings:
+                            if isinstance(sibling, str):
+                                text = sibling.strip()
+                                if text:
+                                    content.append(text)
+                            elif sibling.name == "span" and "sBold" in sibling.get("class", []):
+                                break
+                            else:
+                                content.append(sibling.get_text(" ", strip=True))
+                        col_data.append({
+                            "task": title,
+                            "text": " ".join(content).strip()
+                        })
+                # Use column name as key
+                if i < len(column_names):
+                    result[column_names[i]] = col_data
+                else:
+                    result[f"Column_{i+1}"] = col_data
+            if result:
+                table_data['rows'].append(result)
+        data.append(table_data)
+
+    with open('docs/data/tasks_from_html.json', 'w') as file:
+        json.dump(data, file, indent=2)
+
 
 if __name__ == '__main__':
     app.run(debug=True)

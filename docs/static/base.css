@@ -40,3 +40,8 @@
     .tooltip.show {
         opacity: 1;
     }
+
+    li.tooltipable {
+        /* set hand cursor on tooltipable items */
+        cursor: pointer;
+    }

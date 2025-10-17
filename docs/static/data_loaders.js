@@ -1,58 +1,126 @@
-
-    async function renderTree(file_url = 'tree.json', container_id = 'treeview') {
-      const response = await fetch(file_url);
-      const treeData = await response.json();
-
-      const container = document.getElementById(container_id);
-
-      function createTree(data) {
-        if (data === null || data === undefined) {
-          return '';
-        }
-
-        // caso primitivo (string, número, booleano)
-        if (typeof data !== 'object') {
-          return `<li>${data}</li>`;
-        }
-
-        let html = '<ul class="tree">';
-
-        if (Array.isArray(data)) {
-          // ordenar array (si los elementos son primitivos)
-          const sortedArray = [...data].sort((a, b) => {
-            if (typeof a === 'object' || typeof b === 'object') return 0; // no ordenar objetos
-            return String(a).localeCompare(String(b));
-          });
-
-          for (const item of sortedArray) {
-            html += createTree(item);
-          }
-        } else {
-          // es diccionario → ordenar claves
-          const keys = Object.keys(data).sort((a, b) => a.localeCompare(b));
-
-          for (const key of keys) {
-            const value = data[key];
-            if (typeof value === 'object' && value !== null) {
-              html += `<li>
-          <details>
-            <summary>${key}</summary>
-            ${createTree(value)}
-          </details>
-        </li>`;
-            } else {
-              html += `<li>${key}: ${value}</li>`;
-            }
-          }
-        }
-
-        html += '</ul>';
-        return html;
-      }
+function sort_str(string_arr) {
+  return string_arr.sort((a, b) => {
+    if (typeof a === 'object' || typeof b === 'object') return 0; // no ordenar objetos
+    return String(a).localeCompare(String(b));
+  })
+}
 
 
-      container.innerHTML = createTree(treeData);
+async function renderTree(file_url = 'tree.json', container_id = 'treeview') {
+  const response = await fetch(file_url);
+  const treeData = await response.json();
+
+  const container = document.getElementById(container_id);
+
+  tasks = sort_str(Object.keys(treeData));
+
+  function createTree(data) {
+    if (data === null || data === undefined) {
+      return '';
     }
+
+    // caso primitivo (string, número, booleano)
+    if (typeof data !== 'object') {
+      return `<li data-tooltip="nick-${data}" class="tooltipable">${data}</li>`;
+    }
+
+    let html = '<ul class="tree">';
+
+    if (Array.isArray(data)) {
+      // ordenar array (si los elementos son primitivos)
+      const sortedArray = [...data].sort((a, b) => {
+        if (typeof a === 'object' || typeof b === 'object') return 0; // no ordenar objetos
+        return String(a).localeCompare(String(b));
+      });
+
+      for (const item of sortedArray) {
+        html += createTree(item);
+      }
+    } else {
+      // es diccionario → ordenar claves
+      const keys = Object.keys(data).sort((a, b) => a.localeCompare(b));
+
+      for (const key of keys) {
+        const value = data[key];
+        if (typeof value === 'object' && value !== null) {
+          html += `<li>
+            <details>
+              <summary>${key}</summary>
+              ${createTree(value)}
+            </details>
+          </li>`;
+        } else {
+          html += `<li data-tooltip="nick-${value}">${key}: ${value}</li>`;
+        }
+      }
+    }
+
+    html += '</ul>';
+    return html;
+  }
+
+
+  container.innerHTML = createTree(treeData);
+
+  setEventHandlers();
+}
+
+
+
+async function renderTreeAlt(file_url = 'tree.json', container_id = 'treeview') {
+  const response = await fetch(file_url);
+  const treeData = await response.json();
+
+  const container = document.getElementById(container_id);
+
+  function createTree(data) {
+    if (data === null || data === undefined) {
+      return '';
+    }
+
+    // caso primitivo (string, número, booleano)
+    if (typeof data !== 'object') {
+      return `<li>${data}</li>`;
+    }
+
+    let html = '<ul class="tree">';
+
+    if (Array.isArray(data)) {
+      // ordenar array (si los elementos son primitivos)
+      const sortedArray = [...data].sort((a, b) => {
+        if (typeof a === 'object' || typeof b === 'object') return 0; // no ordenar objetos
+        return String(a).localeCompare(String(b));
+      });
+
+      for (const item of sortedArray) {
+        html += createTree(item);
+      }
+    } else {
+      // es diccionario → ordenar claves
+      const keys = Object.keys(data).sort((a, b) => a.localeCompare(b));
+
+      for (const key of keys) {
+        const value = data[key];
+        if (typeof value === 'object' && value !== null) {
+          html += `<li>
+      <details>
+        <summary>${key}</summary>
+        ${createTree(value)}
+      </details>
+    </li>`;
+        } else {
+          html += `<li>${key}: ${value}</li>`;
+        }
+      }
+    }
+
+    html += '</ul>';
+    return html;
+  }
+
+
+  container.innerHTML = createTree(treeData);
+}
 
     function textDataToClassName(text) {
         return '_' + text.replace(/ /g, '-');

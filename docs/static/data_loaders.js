@@ -238,7 +238,20 @@ async function renderHTMLTaskTable(file_url = 'tasks.json', container_id = 'task
         const ul = document.createElement('ul');
         row["LLM Downstream Tasks"].forEach(task => {
           const li = document.createElement('li');
-          li.innerHTML = `<strong>${task.task}</strong>: ${task.text}`;
+          
+          task_text_colored = task.text;
+
+          task.color.forEach(color_tag => {
+            // task color is a 2 elment array [color, text]
+            inner_text = color_tag[1];
+            color = color_tag[0];
+            // replace inner text in task.text with span with background color
+            task_text_colored = task_text_colored.replace(inner_text, `<span style="background-color:${color}">${inner_text}</span>`);
+          });
+
+          task_text_colored = task_text_colored.replace(task.task, `<strong>${task.task}</strong>`);
+          li.innerHTML = task_text_colored;
+
           ul.appendChild(li);
         });
         llmTasksCell.appendChild(ul);

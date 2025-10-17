@@ -7,113 +7,234 @@
         "LLM Downstream Tasks": [
           {
             "task": "TestGen-LLM",
-            "text": "[4] : existing unit test class (UTC) + tested class id \u2192 \u27e8CoverageAugmenting-Test-Extension\u27e9 \u2192 extended UTC."
+            "text": "TestGen-LLM [4] : existing unit test class (UTC) + tested class id \u2192 \u27e8CoverageAugmenting-Test-Extension\u27e9 \u2192 extended UTC.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8CoverageAugmenting-Test-Extension\u27e9"
+              ]
+            ]
           },
           {
             "task": "FSML",
-            "text": "[6] : list helper meths + meth under test \u2192 \u27e8Test-Generation\u27e9 \u2192 (test) + [Few-Shot]."
+            "text": "FSML [6] : list helper meths + meth under test \u2192 \u27e8Test-Generation\u27e9 \u2192 (test) + [Few-Shot].",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8Test-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "ChatGPTTests",
-            "text": "[7] : prgm \u2192 \u27e8Test-Generation\u27e9 \u2192 test cases (basic);"
+            "text": "ChatGPTTests [7] : prgm \u2192 \u27e8Test-Generation\u27e9 \u2192 test cases (basic); prgm + unit test cases (UTC) + cvrg report \u2192 \u27e8CoverageAugmenting-Test-Extension\u27e9 \u2192 extended UTC.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8Test-Generation\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8CoverageAugmenting-Test-Extension\u27e9"
+              ]
+            ]
           },
           {
             "task": "CodeT",
-            "text": "[9] : intent + sig \u2192 \u27e8IntentCorresponding-Test-Generation\u27e9 \u2192 in/out pairs."
+            "text": "CodeT [9] : intent + sig \u2192 \u27e8IntentCorresponding-Test-Generation\u27e9 \u2192 in/out pairs.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8IntentCorresponding-Test-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "ChatUniTest",
-            "text": "[14] : focal-class sig + focal meth src-code + required depend + sig meth \u2192 \u27e8Test-Generation\u27e9 \u2192 (test) 1...5 [Adaptive focal ctxt];"
+            "text": "ChatUniTest [14] : focal-class sig + focal meth src-code + required depend + sig meth \u2192 \u27e8Test-Generation\u27e9 \u2192 (test) 1...5 [Adaptive focal ctxt]; test + error + focal meth + focal-class name + focal meth src-code \u2192 \u27e8ErrorAware-Test-Correction\u27e9 \u2192 (test) 1...5 .",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8Test-Generation\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8ErrorAware-Test-Correction\u27e9"
+              ]
+            ]
           },
           {
             "task": "CodeCoT",
-            "text": "[34] : funct def of unit + doc \u2192 \u27e8Basic&Edge-TestCase-Generation\u27e9 \u2192 test cases."
+            "text": "CodeCoT [34] : funct def of unit + doc \u2192 \u27e8Basic&Edge-TestCase-Generation\u27e9 \u2192 test cases.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8Basic&Edge-TestCase-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "AgentCoder",
-            "text": "[35] : funct def of unit + doc \u2192 \u27e8Basic&Edge-TestCase-Generation\u27e9 \u2192 test cases."
+            "text": "AgentCoder [35] : funct def of unit + doc \u2192 \u27e8Basic&Edge-TestCase-Generation\u27e9 \u2192 test cases.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8Basic&Edge-TestCase-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "CodaMOSA",
-            "text": "[50] : (portion) src-code under test + callable def + callable name \u2192 \u27e8Targeted-Test-Generation\u27e9 \u2192 test cases."
+            "text": "CodaMOSA [50] : (portion) src-code under test + callable def + callable name \u2192 \u27e8Targeted-Test-Generation\u27e9 \u2192 test cases.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8Targeted-Test-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "TestChain",
-            "text": "[52] : func def of unit + doc \u2192 \u27e8Basic&Edge-TestInput-Generation\u27e9 \u2192 inputs [One-Shot];"
+            "text": "TestChain [52] : func def of unit + doc \u2192 \u27e8Basic&Edge-TestInput-Generation\u27e9 \u2192 inputs [One-Shot]; func def + doc + input \u2192 \u27e8IntentionCorresponding-Result-Generation\u27e9 \u2192 (requested computation) \u2217 + asserted value) [CoT, ReAct: request to compute the adequate output].",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8Basic&Edge-TestInput-Generation\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8IntentionCorresponding-Result-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "CoverUp",
-            "text": "[69] : code excerpt + uncovered lines \u2192 \u27e8CoverageAugmenting-Test-Generation\u27e9 \u2192 tests;"
+            "text": "CoverUp [69] : code excerpt + uncovered lines \u2192 \u27e8CoverageAugmenting-Test-Generation\u27e9 \u2192 tests; code excerpt + test + uncovered lines + (errors) \u2192 \u27e8CoverageAugmenting-Test-Correction\u27e9 \u2192 test.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8CoverageAugmenting-Test-Generation\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8CoverageAugmenting-Test-Correction\u27e9"
+              ]
+            ]
           },
           {
             "task": "TestPilot",
-            "text": "[73] : meth under test sig + (doc) 0...1 + (usage examp) 0...1 + (src-code) 0...1 + (fail test + error) 0...1 \u2192 \u27e8BuildablePassable-Test-Generation\u27e9 \u2192 (test) 0...5 ."
+            "text": "TestPilot [73] : meth under test sig + (doc) 0...1 + (usage examp) 0...1 + (src-code) 0...1 + (fail test + error) 0...1 \u2192 \u27e8BuildablePassable-Test-Generation\u27e9 \u2192 (test) 0...5 .",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8BuildablePassable-Test-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "EASEeval",
-            "text": "[77] : meth under test name + class code + import statements \u2192 \u27e8Test-Generation\u27e9 \u2192 unit tests."
+            "text": "EASEeval [77] : meth under test name + class code + import statements \u2192 \u27e8Test-Generation\u27e9 \u2192 unit tests.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8Test-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "TELPA",
-            "text": "[98] : MUT code + method-invocation seq + examp following m-i seq + branch-relevant meth \u2192 \u27e8CoverageAugmenting-Test-Generation\u27e9 \u2192 test."
+            "text": "TELPA [98] : MUT code + method-invocation seq + examp following m-i seq + branch-relevant meth \u2192 \u27e8CoverageAugmenting-Test-Generation\u27e9 \u2192 test.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8CoverageAugmenting-Test-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "ChatTESTER",
-            "text": "[104] : focal meth code \u2192 \u27e8CodeCorresponding-Intent-Verbalization\u27e9 \u2192 intent;"
+            "text": "ChatTESTER [104] : focal meth code \u2192 \u27e8CodeCorresponding-Intent-Verbalization\u27e9 \u2192 intent; focal meth sig + intent \u2192 \u27e8IntentCorresponding-Test-Generation\u27e9 \u2192 unit tests; unit test + error msgs \u2192 \u27e8ErrorAware-Test-Correction\u27e9 \u2192 unit test.",
+            "color": [
+              [
+                "#ecb4cb;",
+                "\u27e8CodeCorresponding-Intent-Verbalization\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8IntentCorresponding-Test-Generation\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8ErrorAware-Test-Correction\u27e9"
+              ]
+            ]
           }
         ],
         "Architectural Notes": [
           {
             "task": "TestGen-LLM",
-            "text": "[4] : Generated tests are further processed in a pipeline of filtering-analysis (e.g., buildability, non-flakiness, coverage improvement) that is part of the Assured LLM-Based Software Engineering [5] framework."
+            "text": "TestGen-LLM [4] : Generated tests are further processed in a pipeline of filtering-analysis (e.g., buildability, non-flakiness, coverage improvement) that is part of the Assured LLM-Based Software Engineering [5] framework.",
+            "color": []
           },
           {
             "task": "FSML",
-            "text": "[6] : Study on potential proficiency."
+            "text": "FSML [6] : Study on potential proficiency.",
+            "color": []
           },
           {
             "task": "ChatGPTTests",
-            "text": "[7] : Study. Two alternatives: (basic) and a version that tries to improve coverage."
+            "text": "ChatGPTTests [7] : Study. Two alternatives: (basic) and a version that tries to improve coverage.",
+            "color": []
           },
           {
             "task": "CodeT",
-            "text": "[9] : It is part of a code generation approach that includes ulterior dual execution agreement to choose the best solution."
+            "text": "CodeT [9] : It is part of a code generation approach that includes ulterior dual execution agreement to choose the best solution.",
+            "color": []
           },
           {
             "task": "ChatUniTest",
-            "text": "[14] : Prompt is adaptive to token limit and further context of dependent classes could be added based on dependency graph. CoT is mentioned but not detailed. Repair phase may also leverage an LLM."
+            "text": "ChatUniTest [14] : Prompt is adaptive to token limit and further context of dependent classes could be added based on dependency graph. CoT is mentioned but not detailed. Repair phase may also leverage an LLM.",
+            "color": []
           },
           {
             "task": "CodeCoT",
-            "text": "[34] : Testing is part of a larger code generation solution."
+            "text": "CodeCoT [34] : Testing is part of a larger code generation solution.",
+            "color": []
           },
           {
             "task": "AgentCoder",
-            "text": "[35] : Testing is part of a larger code generation solution."
+            "text": "AgentCoder [35] : Testing is part of a larger code generation solution.",
+            "color": []
           },
           {
             "task": "CodaMOSA",
-            "text": "[50] : Use of LLMs in the context of Search-Based Software Testing. LLMs outputs require significant post-processing to be integrated into the SBST framework."
+            "text": "CodaMOSA [50] : Use of LLMs in the context of Search-Based Software Testing. LLMs outputs require significant post-processing to be integrated into the SBST framework.",
+            "color": []
           },
           {
             "task": "TestChain",
-            "text": "[52] : Designer agent and Calculator agents reported. Calculator uses Python Interpreter."
+            "text": "TestChain [52] : Designer agent and Calculator agents reported. Calculator uses Python Interpreter.",
+            "color": []
           },
           {
             "task": "CoverUp",
-            "text": "[69] : Uses testing framework including coverage tool."
+            "text": "CoverUp [69] : Uses testing framework including coverage tool.",
+            "color": []
           },
           {
             "task": "TestPilot",
-            "text": "[73] : Refiner applies strategies to include or not certain info in prompts. Adaptive nature means that LLM is (re)invoked with failing test and error message if validation fails."
+            "text": "TestPilot [73] : Refiner applies strategies to include or not certain info in prompts. Adaptive nature means that LLM is (re)invoked with failing test and error message if validation fails.",
+            "color": []
           },
           {
             "task": "TELPA",
-            "text": "[98] : Static preprocessing is done to identify relevant method-invocation sequences and methods relevant for branch outcomes."
+            "text": "TELPA [98] : Static preprocessing is done to identify relevant method-invocation sequences and methods relevant for branch outcomes.",
+            "color": []
           },
           {
             "task": "ChatTESTER",
-            "text": "[104] : The iterative test refiner iteratively fixes the compilation errors in the tests generated by the initial test generation. This is done with parsing and analysis of components that build prompts."
+            "text": "ChatTESTER [104] : The iterative test refiner iteratively fixes the compilation errors in the tests generated by the initial test generation. This is done with parsing and analysis of components that build prompts.",
+            "color": []
           }
         ]
       },
@@ -122,29 +243,62 @@
         "LLM Downstream Tasks": [
           {
             "task": "DiffPrompt",
-            "text": "[53] : snip \u2192 \u27e8CodeCorresponding-Intent-Verbalization\u27e9 \u2192 intent;"
+            "text": "DiffPrompt [53] : snip \u2192 \u27e8CodeCorresponding-Intent-Verbalization\u27e9 \u2192 intent; intent \u2192 \u27e8IntentCorresponding-Code-Generation\u27e9 \u2192 prgms; prgm \u2192 \u27e8Test-Generation\u27e9 \u2192 test cases.",
+            "color": [
+              [
+                "#ecb4cb;",
+                "\u27e8CodeCorresponding-Intent-Verbalization\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8IntentCorresponding-Code-Generation\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8Test-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "AID",
-            "text": "[54] : problem description + code \u2192 \u27e8IntentCorresponding-Code-Correction\u27e9 \u2192 code;"
+            "text": "AID [54] : problem description + code \u2192 \u27e8IntentCorresponding-Code-Correction\u27e9 \u2192 code; problem description \u2192 \u27e8ConstraintSatisfying-InputGenerator-Generation\u27e9 \u2192 code.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8IntentCorresponding-Code-Correction\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8ConstraintSatisfying-InputGenerator-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "secTests",
-            "text": "[111] : funct name + client code + vul-id + vul API ids + reference test code \u2192 \u27e8Mimicking-Test-Generation\u27e9 \u2192 test code on client code."
+            "text": "secTests [111] : funct name + client code + vul-id + vul API ids + reference test code \u2192 \u27e8Mimicking-Test-Generation\u27e9 \u2192 test code on client code.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8Mimicking-Test-Generation\u27e9"
+              ]
+            ]
           }
         ],
         "Architectural Notes": [
           {
             "task": "DiffPrompt",
-            "text": "[53] : Single interaction for intent and program generation. Multiple interactions for obtaining test cases that have same result for all generated versions."
+            "text": "DiffPrompt [53] : Single interaction for intent and program generation. Multiple interactions for obtaining test cases that have same result for all generated versions.",
+            "color": []
           },
           {
             "task": "AID",
-            "text": "[54] : The approach includes differential testing to detect bugs."
+            "text": "AID [54] : The approach includes differential testing to detect bugs.",
+            "color": []
           },
           {
             "task": "secTests",
-            "text": "[111] : Study on mimicking generic vulnerability-exploiting test given on client code."
+            "text": "secTests [111] : Study on mimicking generic vulnerability-exploiting test given on client code.",
+            "color": []
           }
         ]
       },
@@ -153,13 +307,20 @@
         "LLM Downstream Tasks": [
           {
             "task": "SymPrompt",
-            "text": "[72] : focal meth sig + type and dependency ctxt + path constr \u2192 \u27e8ConstraintSatisfying-Input-Generation\u27e9 \u2192 test."
+            "text": "SymPrompt [72] : focal meth sig + type and dependency ctxt + path constr \u2192 \u27e8ConstraintSatisfying-Input-Generation\u27e9 \u2192 test.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8ConstraintSatisfying-Input-Generation\u27e9"
+              ]
+            ]
           }
         ],
         "Architectural Notes": [
           {
             "task": "SymPrompt",
-            "text": "[72] : Preprocessing through static analysis techniques to get paths and context."
+            "text": "SymPrompt [72] : Preprocessing through static analysis techniques to get paths and context.",
+            "color": []
           }
         ]
       },
@@ -168,33 +329,92 @@
         "LLM Downstream Tasks": [
           {
             "task": "RESTGPT",
-            "text": "[49] : OpenAPI spec \u2192 \u27e8DescriptionCorresponding-Liberal-Constraint-Characterization\u27e9 \u2192 struct with constrs, types, format for params [Few-Shot];"
+            "text": "RESTGPT [49] : OpenAPI spec \u2192 \u27e8DescriptionCorresponding-Liberal-Constraint-Characterization\u27e9 \u2192 struct with constrs, types, format for params [Few-Shot]; OpenAPI spec + prev conv \u2192 \u27e8ConstraintSatisfying-Input-Generation\u27e9 \u2192 examp for param [Few-Shot].",
+            "color": [
+              [
+                "#ecb4cb;",
+                "\u27e8DescriptionCorresponding-Liberal-Constraint-Characterization\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8ConstraintSatisfying-Input-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "InputBlaster",
-            "text": "[59] : local&global ctxt + NL candidate constrs + (dynamic hint) \u2192 \u27e8GUIInputCorresponding-ValidityConstraint-Characterization\u27e9 \u2192 inferred constr [Few-Shot];"
+            "text": "InputBlaster [59] : local&global ctxt + NL candidate constrs + (dynamic hint) \u2192 \u27e8GUIInputCorresponding-ValidityConstraint-Characterization\u27e9 \u2192 inferred constr [Few-Shot]; prev conv + inf constr \u2192 \u27e8Valid-GUIInput-Generation\u27e9 \u2192 valid input + inferred constr [Few-Shot]; valid input + inferred constr + retrv examp of unusual bug-trigg inputs + (test-exec fdbk on mutant) \u2192 \u27e8Effective&Diversified-MutationRule-Characterization\u27e9 \u2192 mutation rule [Few-Shot]; mutation rule + (test-exec fdbk on prev generator) \u2192 \u27e8InputGenerator-Generation\u27e9 \u2192 test-input generator [Few-Shot].",
+            "color": [
+              [
+                "#ecb4cb;",
+                "\u27e8GUIInputCorresponding-ValidityConstraint-Characterization\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8Valid-GUIInput-Generation\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e8Effective&Diversified-MutationRule-Characterization\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8InputGenerator-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "PBT-GPT",
-            "text": "[88] : API doc + focus meth name \u2192 \u27e8Postcondition-Assertion-Generation\u27e9 \u2192 prop assertions;"
+            "text": "PBT-GPT [88] : API doc + focus meth name \u2192 \u27e8Postcondition-Assertion-Generation\u27e9 \u2192 prop assertions; API doc + focus meth name \u2192 \u27e8InputGenerator-Generation\u27e9 \u2192 gen funct; API doc + focus meth name + gen funct conv \u2192 \u27e8ParametrizedTest-Generation\u27e9 \u2192 prop-based test; API doc + focus meth name \u2192 \u27e8PropertyBasedTest-Generation\u27e9 \u2192 prop-based test.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8Postcondition-Assertion-Generation\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8InputGenerator-Generation\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8ParametrizedTest-Generation\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8PropertyBasedTest-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "mrDetector",
-            "text": "[95] : shop name + shop type \u2192 \u27e8LikelyRecalling-Data-Generation\u27e9 \u2192 searching keywords [Few-Shot, CoT];"
+            "text": "mrDetector [95] : shop name + shop type \u2192 \u27e8LikelyRecalling-Data-Generation\u27e9 \u2192 searching keywords [Few-Shot, CoT]; shop name + shop type + potential recalling sentence \u2192 \u27e8Answer-Quality(Reasonability)-Judgment\u27e9 \u2192 yes/no [Few-Shot].",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8LikelyRecalling-Data-Generation\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Answer-Quality(Reasonability)-Judgment\u27e9"
+              ]
+            ]
           }
         ],
         "Architectural Notes": [
           {
             "task": "RESTGPT",
-            "text": "[49] : Improves the treatment of OpenAPI spec, particularly human-readable part. Both tasks are actually performed in a single prompt."
+            "text": "RESTGPT [49] : Improves the treatment of OpenAPI spec, particularly human-readable part. Both tasks are actually performed in a single prompt.",
+            "color": []
           },
           {
             "task": "InputBlaster",
-            "text": "[59] : Valid Input Generator (task 1 and 2) is iterated until it makes the APP transfer (elicited as a single prompt). Task 3 and 4 (also elicited in a single prompt) is also iterated and intermediate results are part of the feedback for effectiveness and diversity. DB is built with buggy examples from GitHUB recorded to match the style used in prompt. Also, unusual inputs that triggered crashes during execution of InputBlaster on the APP. Similarly, it is used to select examples for in-Ctxt Learning."
+            "text": "InputBlaster [59] : Valid Input Generator (task 1 and 2) is iterated until it makes the APP transfer (elicited as a single prompt). Task 3 and 4 (also elicited in a single prompt) is also iterated and intermediate results are part of the feedback for effectiveness and diversity. DB is built with buggy examples from GitHUB recorded to match the style used in prompt. Also, unusual inputs that triggered crashes during execution of  on the APP. Similarly, it is used to select examples for in-Ctxt Learning.",
+            "color": []
           },
           {
             "task": "PBT-GPT",
-            "text": "[88] : Three prompting strategies to generate property-based tests: independently (gen. funct. / property assertion), consecutively (continue conversation after gen. funct.), and together (single big-bang prompt)."
+            "text": "PBT-GPT [88] : Three prompting strategies to generate property-based tests: independently (gen. funct. / property assertion), consecutively (continue conversation after gen. funct.), and together (single big-bang prompt).",
+            "color": []
           }
         ]
       },
@@ -203,57 +423,117 @@
         "LLM Downstream Tasks": [
           {
             "task": "FSML",
-            "text": "[6] : line of code \u2192 \u27e8Line-Mutation\u27e9 \u2192 (mutated line) + [Few-Shot]."
+            "text": "FSML [6] : line of code \u2192 \u27e8Line-Mutation\u27e9 \u2192 (mutated line) + [Few-Shot].",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8Line-Mutation\u27e9"
+              ]
+            ]
           },
           {
             "task": "MuTAP",
-            "text": "[16] : prgm under test \u2192 \u27e8Test-Generation\u27e9 \u2192 initial unit test (incl assert) [Zero-Shot/Few-Shot];"
+            "text": "MuTAP [16] : prgm under test \u2192 \u27e8Test-Generation\u27e9 \u2192 initial unit test (incl assert) [Zero-Shot/Few-Shot]; initial unit test + synt errors \u2192 \u27e8ErrorAware-Test-Correction\u27e9 \u2192 unit test [Zero-Shot/Few-Shot]; prev conv + mutated code \u2192 \u27e8AssertionObservable-Differential-Test-Generation\u27e9 \u2192 unit test.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8Test-Generation\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8ErrorAware-Test-Correction\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8AssertionObservable-Differential-Test-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "BugFarm",
-            "text": "[38] : method signature + method body + statements to transform \u2192 \u27e8BugInjecting-Code-Mutation\u27e9 \u2192 transformed code."
+            "text": "BugFarm [38] : method signature + method body + statements to transform \u2192 \u27e8BugInjecting-Code-Mutation\u27e9 \u2192 transformed code.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8BugInjecting-Code-Mutation\u27e9"
+              ]
+            ]
           },
           {
             "task": "\u00b5BERT",
-            "text": "[47] : masked-code \u2192 \u27e8Code-Completion\u27e9 \u2192 code 1...5 [InFiller]."
+            "text": "\u00b5BERT [47] : masked-code \u2192 \u27e8Code-Completion\u27e9 \u2192 code 1...5 [InFiller].",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8Code-Completion\u27e9"
+              ]
+            ]
           },
           {
             "task": "CHEMFUZZ",
-            "text": "[70] : prev conv + masked-code \u2192 \u27e8Valid&Diversified-Code-Completion\u27e9 \u2192 code;"
+            "text": "CHEMFUZZ [70] : prev conv + masked-code \u2192 \u27e8Valid&Diversified-Code-Completion\u27e9 \u2192 code; exec output \u2192 \u27e8Behavior-Anomaly-Detection\u27e9 \u2192 eval report.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8Valid&Diversified-Code-Completion\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Behavior-Anomaly-Detection\u27e9"
+              ]
+            ]
           },
           {
             "task": "FormAI",
-            "text": "[84] : type of prgm + style \u2192 \u27e8IntentCorresponding-Code-Generation\u27e9 \u2192 prgm."
+            "text": "FormAI [84] : type of prgm + style \u2192 \u27e8IntentCorresponding-Code-Generation\u27e9 \u2192 prgm.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8IntentCorresponding-Code-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "LLMorpheus",
-            "text": "[85] : source code fragment with placeholder + masked orig code \u2192 \u27e8DifferentBehavior-Mutation-Generation\u27e9 \u2192 (replacement + brief explanation) + ."
+            "text": "LLMorpheus [85] : source code fragment with placeholder + masked orig code \u2192 \u27e8DifferentBehavior-Mutation-Generation\u27e9 \u2192 (replacement + brief explanation) + .",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8DifferentBehavior-Mutation-Generation\u27e9"
+              ]
+            ]
           }
         ],
         "Architectural Notes": [
           {
             "task": "FSML",
-            "text": "[6] : Study on potential proficiency."
+            "text": "FSML [6] : Study on potential proficiency.",
+            "color": []
           },
           {
             "task": "MuTAP",
-            "text": "[16] : LLMs are invoked in a mutant-based test generation approach."
+            "text": "MuTAP [16] : LLMs are invoked in a mutant-based test generation approach.",
+            "color": []
           },
           {
             "task": "BugFarm",
-            "text": "[38] : LLM is used in the last of the 3 stages that includes method extraction, an a model\u2019s attention to different parts of code to identify where to inject bugs."
+            "text": "BugFarm [38] : LLM is used in the last of the 3 stages that includes method extraction, an a model\u2019s attention to different parts of code to identify where to inject bugs.",
+            "color": []
           },
           {
             "task": "\u00b5BERT",
-            "text": "[47] : Invoked to predict masked token. Stochasticity used to get 5 completions."
+            "text": "\u00b5BERT [47] : Invoked to predict masked token. Stochasticity used to get 5 completions.",
+            "color": []
           },
           {
             "task": "CHEMFUZZ",
-            "text": "[70] : LLM integrated into a fuzzing scheme."
+            "text": "CHEMFUZZ [70] : LLM integrated into a fuzzing scheme.",
+            "color": []
           },
           {
             "task": "FormAI",
-            "text": "[84] : Generation is the first phase for the construction of a labelled data set for vulnerability analysis."
+            "text": "FormAI [84] : Generation is the first phase for the construction of a labelled data set for vulnerability analysis.",
+            "color": []
           }
         ]
       },
@@ -262,57 +542,183 @@
         "LLM Downstream Tasks": [
           {
             "task": "OSS-Fuzz",
-            "text": "[28] : funct to tgt + project specific info \u2192 \u27e8DriverCode-Generation\u27e9"
+            "text": "OSS-Fuzz [28] : funct to tgt + project specific info \u2192 \u27e8DriverCode-Generation\u27e9 \u2192 fuzz driver; funct to tgt + project specific info + compilation errors \u2192 \u27e8ErrorAware-Driver-Code-Correction\u27e9 \u2192 fuzz driver.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8DriverCode-Generation\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8ErrorAware-Driver-Code-Correction\u27e9"
+              ]
+            ]
           },
           {
             "task": "ChatFuzz",
-            "text": "[32] : (sample input) 0...1 + (format name) 0...1 \u2192 \u27e8File-Variation-Generation\u27e9 \u2192 file [(InFiller)]."
+            "text": "ChatFuzz [32] : (sample input) 0...1 + (format name) 0...1 \u2192 \u27e8File-Variation-Generation\u27e9 \u2192 file [(InFiller)].",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8File-Variation-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "Fuzz4All",
-            "text": "[97] : doc + (examp) \u2217 + (specs) \u2217 \u2192 \u27e8Usage-Summarization \u27e9 \u2192 distilled usage/funct;"
+            "text": "Fuzz4All [97] : doc + (examp) \u2217 + (specs) \u2217 \u2192 \u27e8Usage-Summarization \u27e9 \u2192 distilled usage/funct; usage/funct \u2192 \u27e8UsageSastifying-Input-Generation\u27e9 \u2192 fuzz inputs; usage/funct + input \u2192 \u27e8SpecificationAware-Input-Mutation\u27e9 \u2192 mutated input; usage/funct + fuzz input \u2192 \u27e8Input-Variation-Generation\u27e9 \u2192 fuzz input.",
+            "color": [
+              [
+                "#ecb4cb;",
+                "\u27e8Usage-Summarization"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8UsageSastifying-Input-Generation\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8SpecificationAware-Input-Mutation\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8Input-Variation-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "UGCTX",
-            "text": "[105] : header file + API usage examp + funct name \u2192 \u27e8DriverCode-Generation\u27e9 \u2192 fuzz driver (UGCTX);"
+            "text": "UGCTX [105] : header file + API usage examp + funct name \u2192 \u27e8DriverCode-Generation\u27e9 \u2192 fuzz driver (); fuzz driver code + errors (compilation, link, run-time) + root cause API usage info \u2192 \u27e8ErrorAware-DriverCode-Correction\u27e9 \u2192 fuzz driver (EX-ITER).",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8DriverCode-Generation\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8ErrorAware-DriverCode-Correction\u27e9"
+              ]
+            ]
           }
         ],
         "Architectural Notes": [
           {
             "task": "OSS-Fuzz",
-            "text": "[28] : Part of a large project that includes introspection components and fuzzing ones. The description is a best effort from the on-line documentation."
+            "text": "OSS-Fuzz [28] : Part of a large project that includes introspection components and fuzzing ones. The description is a best effort from the on-line documentation.",
+            "color": []
           },
           {
             "task": "ChatFuzz",
-            "text": "[32] : Use stochasticity to generate seeds in grey-box fuzzing workflow."
+            "text": "ChatFuzz [32] : Use stochasticity to generate seeds in grey-box fuzzing workflow.",
+            "color": []
           },
           {
             "task": "Fuzz4All",
-            "text": "[97] : Autoprompting distill user provided inputs. LLM-powered fuzzing loops which resort to generation, mutation and semantically equiv. variant generation."
+            "text": "Fuzz4All [97] : Autoprompting distill user provided inputs. LLM-powered fuzzing loops which resort to generation, mutation and semantically equiv. variant generation. UGCTX [105] : Study of strategies. The two most sophisticated are reported.",
+            "color": []
           }
         ]
       },
       {
         "SE Problem": "Kernel Fuzzing",
-        "LLM Downstream Tasks": [],
-        "Architectural Notes": []
+        "LLM Downstream Tasks": [
+          {
+            "text": "KernelGPT [100] : operation handler code + usage op handl code \u2192 \u27e8 CodeElements-Identification\u27e9 \u2192 device name + initialization op [Few-Shot] (Driver Detection); ioctl handl funct + assoc helper funct code + (fetched funct & types + prev inferred usage info) \u2192 \u27e8 InfoRequesting-CodeElements-Identification\u27e9 \u2192 (command values) \u2217 + (further required [functs,types] + usageInfo) [Few-Shot, Iterative Prompting: functs, types] (Command Value); argument to type + prev detected relevant funct code + argument\u2019s usage + (fetched funct code) \u2192 \u27e8 InfoRequesting-Type-Identification\u27e9 \u2192 argument type + further required (functs) [Few-Shot, Iterative Prompting: functs, types] (Argument Type); type to describe + src-code structs + (fetched snip) \u2192 \u27e8 InfoRequesting-Definition-Extraction\u27e9 \u2192 type def + further required (nested type) [Iterative Prompting: nested types] (Type Definition); spec -made up identified elements- + errors \u2192 \u27e8ErrorAware-Specification-Correction\u27e9 \u2192 spec [Few-Shot] (Specification Validation and Repair).",
+            "color": [
+              [
+                "#f3d2b7;",
+                "\u27e8"
+              ],
+              [
+                "#f3d2b7;",
+                "CodeElements-Identification\u27e9"
+              ],
+              [
+                "#f3d2b7;",
+                "\u27e8"
+              ],
+              [
+                "#f3d2b7;",
+                "InfoRequesting-CodeElements-Identification\u27e9"
+              ],
+              [
+                "#f3d2b7;",
+                "\u27e8"
+              ],
+              [
+                "#f3d2b7;",
+                "InfoRequesting-Type-Identification\u27e9"
+              ],
+              [
+                "#f3d2b7;",
+                "\u27e8"
+              ],
+              [
+                "#f3d2b7;",
+                "InfoRequesting-Definition-Extraction\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8ErrorAware-Specification-Correction\u27e9"
+              ]
+            ]
+          }
+        ],
+        "Architectural Notes": [
+          {
+            "text": "KernelGPT [100] : Syscall specification generation for enhancing fuzzing. A kernel code extractor feeds the LLM with the appropriate code snippets when requested. Refine and repair with feedback provided by external specification validation tool.",
+            "color": []
+          }
+        ]
       },
       {
         "SE Problem": "Compiler/ Simulator Fuzzing",
         "LLM Downstream Tasks": [
           {
             "task": "SearchGEM5",
-            "text": "[15] : code \u2192 \u27e8ParameterizedVersion-Code-Generation\u27e9 \u2192 param version + type of params [Few-Shot];"
+            "text": "SearchGEM5 [15] : code \u2192 \u27e8ParameterizedVersion-Code-Generation\u27e9 \u2192 param version + type of params [Few-Shot]; parameterized version + types \u2192 \u27e8Valid-Input-Generation\u27e9 \u2192 input sample [Few-Shot]. WhiteFox [99] : expect input format + optimization name + src-code \u2192 \u27e8 CodeReachability-Input-Characterization \u27e9 \u2192 summ trigger input pattern [Few-Shot]; expected input format + input pattern \u2192 \u27e8ConstraintSatisfying-Input-Generation\u27e9 \u2192 summ trigger input pattern [Few-Shot with feedback loop].",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8ParameterizedVersion-Code-Generation\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8Valid-Input-Generation\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e8"
+              ],
+              [
+                "#ecb4cb;",
+                "CodeReachability-Input-Characterization"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8ConstraintSatisfying-Input-Generation\u27e9"
+              ]
+            ]
           }
         ],
         "Architectural Notes": [
           {
             "task": "SearchGEM5",
-            "text": "[15] : Generates binary inputs for testing an HW-SW architecture simulator. That is, the tool also includes compilation, fuzzing and differential testing. LLM-tasks are elicited by in-chained prompts and a last prompt that requests the parameterized version, sample input and type."
+            "text": "SearchGEM5 [15] : Generates binary inputs for testing an HW-SW architecture simulator. That is, the tool also includes compilation, fuzzing and differential testing. LLM-tasks are elicited by in-chained prompts and a last prompt that requests the parameterized version, sample input and type.",
+            "color": []
           },
           {
             "task": "WhiteFox",
-            "text": "[99] : Multi-armed bandit algorithm is used to choose few shots for prompts."
+            "text": "WhiteFox [99] : Multi-armed bandit algorithm is used to choose few shots for prompts.",
+            "color": []
           }
         ]
       },
@@ -321,17 +727,86 @@
         "LLM Downstream Tasks": [
           {
             "task": "FuzzingParsers",
-            "text": "[1] : name object \u2192 \u27e8 StructureOfObject-Recall \u27e9 \u2192 well-formed tree structure;"
+            "text": "FuzzingParsers [1] : name object \u2192 \u27e8 StructureOfObject-Recall \u27e9 \u2192 well-formed tree structure; terminal name + (prev examples) \u2192 \u27e8 New-ExampleOfThing-Recall \u27e9 \u2192 example; name of parser \u2192 \u27e8 ParsingErrors-Recall \u27e9 \u2192 described parsing errors; string + error description \u2192 \u27e8ErrorTriggering-Data-Variation-Generation\u27e9 \u2192 string; strings + type \u2192 \u27e8Fuse-Transformation-Data\u27e9 \u2192 string.",
+            "color": [
+              [
+                "#cae6e4;",
+                "\u27e8"
+              ],
+              [
+                "#cae6e4;",
+                "StructureOfObject-Recall"
+              ],
+              [
+                "#cae6e4;",
+                "\u27e9"
+              ],
+              [
+                "#cae6e4;",
+                "\u27e8"
+              ],
+              [
+                "#cae6e4;",
+                "New-ExampleOfThing-Recall"
+              ],
+              [
+                "#cae6e4;",
+                "\u27e9"
+              ],
+              [
+                "#cae6e4;",
+                "\u27e8"
+              ],
+              [
+                "#cae6e4;",
+                "ParsingErrors-Recall"
+              ],
+              [
+                "#cae6e4;",
+                "\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8ErrorTriggering-Data-Variation-Generation\u27e9"
+              ],
+              [
+                "#d3bfd7;",
+                "\u27e8Fuse-Transformation-Data\u27e9"
+              ]
+            ]
           },
           {
             "task": "ChatAFL",
-            "text": "[63] : protocol name \u2192 \u27e8 ProtocolGrammar-Recall \u27e9 \u2192 msg grammar [Few-Shot: expected format];"
+            "text": "ChatAFL [63] : protocol name \u2192 \u27e8 ProtocolGrammar-Recall \u27e9 \u2192 msg grammar [Few-Shot: expected format]; msg seq + desired additions \u2192 \u27e8ModificationSpecified-MS-Edition\u27e9 \u2192 msg seq; comm history \u2192 \u27e8Message-Completion\u27e9 \u2192 msg.",
+            "color": [
+              [
+                "#cae6e4;",
+                "\u27e8"
+              ],
+              [
+                "#cae6e4;",
+                "ProtocolGrammar-Recall"
+              ],
+              [
+                "#cae6e4;",
+                "\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8ModificationSpecified-MS-Edition\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8Message-Completion\u27e9"
+              ]
+            ]
           }
         ],
         "Architectural Notes": [
           {
             "task": "FuzzingParsers",
-            "text": "[1] : These tasks belong to seed generation stage. Other stages include fuzzing and preprocessing."
+            "text": "FuzzingParsers [1] : These tasks belong to seed generation stage. Other stages include fuzzing and preprocessing. ChatAFL [63] : Multiple conversations with the LLM and majority vote for the final grammar. Interaction with editor to generate new seed. Interaction with completer to get message that would move protocol into a new state.",
+            "color": []
           }
         ]
       },
@@ -339,18 +814,55 @@
         "SE Problem": "DL-Libraries Fuzzing",
         "LLM Downstream Tasks": [
           {
+            "text": "TitanFuzz [20] : lib name + DL-API + expec tasks/intent \u2192 \u27e8 IntentCorresponding-Code-Generation\u27e9 \u2192 code;",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8"
+              ],
+              [
+                "#9fd2ec;",
+                "IntentCorresponding-Code-Generation\u27e9"
+              ]
+            ]
+          },
+          {
             "task": "FuzzGPT",
-            "text": "[21] : code snip \u2192 \u27e8APIUsed-Code-MultiClass-Classification\u27e9 \u2192 API label [Few-Shot];"
+            "text": "FuzzGPT masked-code \u2192 \u27e8Code-Completion\u27e9 \u2192 code [Pretrained, InFiller].  [21] : code snip \u2192 \u27e8APIUsed-Code-MultiClass-Classification\u27e9 \u2192 API label [Few-Shot]; name API to be used + code snip \u2192 \u27e8ModificationSpecified-Code-Edition\u27e9 \u2192 code snip using API; API name \u2192 \u27e8BugTriggering-Code-Generation\u27e9 \u2192 code [Few-Shot: classif snips, CoT: bug descrip]; API name + prtl code snip \u2192 \u27e8BugRevealing-Code-Completion\u27e9 \u2192 code.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8Code-Completion\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8APIUsed-Code-MultiClass-Classification\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8ModificationSpecified-Code-Edition\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8BugTriggering-Code-Generation\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8BugRevealing-Code-Completion\u27e9"
+              ]
+            ]
           }
         ],
         "Architectural Notes": [
           {
             "task": "TitanFuzz",
-            "text": "[20] : Invoked in an evolutionary workflow to generate seeds and complete mutants."
+            "text": "TitanFuzz [20] : Invoked in an evolutionary workflow to generate seeds and complete mutants.",
+            "color": []
           },
           {
             "task": "FuzzGPT",
-            "text": "[21] : Data Set (DS) preparation uses Classifier role. Then, random pick from DS and use alternative roles/strategies."
+            "text": "FuzzGPT [21] : Data Set (DS) preparation uses Classifier role. Then, random pick from DS and use alternative roles/strategies.",
+            "color": []
           }
         ]
       },
@@ -359,21 +871,60 @@
         "LLM Downstream Tasks": [
           {
             "task": "QTypist",
-            "text": "[57] : input widget type + local ctxt + global ctxt \u2192 \u27e8Input-Completion\u27e9 \u2192 generated input;"
+            "text": "QTypist [57] : input widget type + local ctxt + global ctxt \u2192 \u27e8Input-Completion\u27e9 \u2192 generated input; masked input + local ctxt + global ctxt \u2192 \u27e8Input-InFilling\u27e9 \u2192 generated input.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8Input-Completion\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8Input-InFilling\u27e9"
+              ]
+            ]
           },
           {
             "task": "GPTDroid",
-            "text": "[58] : prev conv + GUI ctxt + prev action fdbk + functionality-aware memory \u2192 \u27e8FunctionCoverageOriented-NextAction-Selection\u27e9 \u2192 funct being tested + status + next action [Few-Shot: to define output format]; action + new GUI ctxt + testing memory \u2192 \u27e8Testing-Status-Analysis\u27e9 \u2192 testing status summary."
+            "text": "GPTDroid [58] : prev conv + GUI ctxt + prev action fdbk + functionality-aware memory \u2192 \u27e8FunctionCoverageOriented-NextAction-Selection\u27e9 \u2192 funct being tested + status + next action [Few-Shot: to define output format]; action + new GUI ctxt + testing memory \u2192 \u27e8Testing-Status-Analysis\u27e9 \u2192 testing status summary.",
+            "color": [
+              [
+                "#d3bfd7;",
+                "\u27e8FunctionCoverageOriented-NextAction-Selection\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Testing-Status-Analysis\u27e9"
+              ]
+            ]
           },
           {
             "task": "AXNav",
-            "text": "[82] : accessibility test instruct + name of app under test + formatted UI element \u2192 \u27e8TestGoalCorresponding-Plan-Generation\u27e9 \u2192 tentative plan = (task, action descr, justification, eval criteria, status) \u2217 [CoT: justification] (planner);"
+            "text": "AXNav [82] : accessibility test instruct + name of app under test + formatted UI element \u2192 \u27e8TestGoalCorresponding-Plan-Generation\u27e9 \u2192 tentative plan = (task, action descr, justification, eval criteria, status) \u2217 [CoT: justification] (planner); UI rep + test instruct \u2192 \u27e8Plan-Refinement\u27e9 \u2192 concrete action [CoT: though, relevant UI ids, UI relevant elements] (mapper); test goal + tentative plan + concrete action + assoc thought + UI detections before + UI detections after + eval hints \u2192 \u27e8PlannedAction-Successfullness-Assessment\u27e9 \u2192 eval criteria + result + explanation [CoT: eval criteria] (evaluator); test goal + tentative plan + current step + (field including a stop cond or eval error) \u2192 \u27e8StepOutcomeCorresponding-Plan-Correction\u27e9 \u2192 updated tentative plan (replanner).",
+            "color": [
+              [
+                "#d3bfd7;",
+                "\u27e8TestGoalCorresponding-Plan-Generation\u27e9"
+              ],
+              [
+                "#d3bfd7;",
+                "\u27e8Plan-Refinement\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8PlannedAction-Successfullness-Assessment\u27e9"
+              ],
+              [
+                "#d3bfd7;",
+                "\u27e8StepOutcomeCorresponding-Plan-Correction\u27e9"
+              ]
+            ]
           }
         ],
         "Architectural Notes": [
           {
             "task": "QTypist",
-            "text": "[57] : Prompts are generated by a set of rules on context information. Prompt-tuning is also in place."
+            "text": "QTypist [57] : Prompts are generated by a set of rules on context information. Prompt-tuning is also in place. GPTDroid [58] : Tool builds prompts following linguistic patterns instantiated with extracted APP context information. Interaction follows question and answer style, which means in this case that when function being tested and status is yielded by the LLM, another question instructs LLM to yield next action. AXNav [82] : LLM-based UI navigation system to translate from natural language test instructions into a set of concrete steps, execute steps in the plan by calling APIs that interact with a device, and feedback results to the planner when needed.",
+            "color": []
           }
         ]
       },
@@ -382,33 +933,100 @@
         "LLM Downstream Tasks": [
           {
             "task": "TARGET",
-            "text": "[19] : traffic rule \u2192 \u27e8DSLValid&TryToUseGivenElements-RuleConsistent-Scenario-Generation\u27e9 \u2192 draft scenario-rep [Few-Shot] (Know.Extract.); draft scenario-rep + rules \u2192 \u27e8RuleInconsistencies-Scenario-Correction\u27e9 \u2192 scenario (Know.Val.);"
+            "text": "TARGET [19] : traffic rule \u2192 \u27e8DSLValid&TryToUseGivenElements-RuleConsistent-Scenario-Generation\u27e9 \u2192 draft scenario-rep [Few-Shot] (Know.Extract.); draft scenario-rep + rules \u2192 \u27e8RuleInconsistencies-Scenario-Correction\u27e9 \u2192 scenario (Know.Val.); subcomponent scenario-rep + list of elements \u2192 \u27e8InListCloseMeaning-Elements-Replacement\u27e9 \u2192 scenario (Syntax Alignm.).",
+            "color": [
+              [
+                "#d3bfd7;",
+                "\u27e8DSLValid&TryToUseGivenElements-RuleConsistent-Scenario-Generation\u27e9"
+              ],
+              [
+                "#d3bfd7;",
+                "\u27e8RuleInconsistencies-Scenario-Correction\u27e9"
+              ],
+              [
+                "#d3bfd7;",
+                "\u27e8InListCloseMeaning-Elements-Replacement\u27e9"
+              ]
+            ]
           },
           {
             "task": "ScenarioNL",
-            "text": "[22] : crash incident report \u2192 \u27e8Focused-Summarization\u27e9 \u2192 relevant dynamics + static objects [ToT: experts debate];"
+            "text": "ScenarioNL [22] : crash incident report \u2192 \u27e8Focused-Summarization\u27e9 \u2192 relevant dynamics + static objects [ToT: experts debate]; crash incident report + relevant objects \u2192 \u27e8Ambiguity-Analysis\u27e9 \u2192 questions to disambiguate; crash incident report + question to disambiguate \u2192 \u27e8ExpertSolvedUncertainty-TextDependent-QuestionAnswering\u27e9 \u2192 answers [ToT: experts debate]; relevant objects + properties \u2192 \u27e8ProbabilisticProgram-Generation\u27e9 \u2192 Program (part) [Few-Shot + RAG or HyDE, Function Calling: GPL2DSL].",
+            "color": [
+              [
+                "#ecb4cb;",
+                "\u27e8Focused-Summarization\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Ambiguity-Analysis\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8ExpertSolvedUncertainty-TextDependent-QuestionAnswering\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8ProbabilisticProgram-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "LLMeDiff",
-            "text": "[39] : rule \u2192 \u27e8Pass+Fail+N/A-Test-Generation\u27e9 \u2192 test + confidence."
+            "text": "LLMeDiff [39] : rule \u2192 \u27e8Pass+Fail+N/A-Test-Generation\u27e9 \u2192 test + confidence.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8Pass+Fail+N/A-Test-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "SysKG-UTF",
-            "text": "[78] : bug reports \u2192 \u27e8 StructureCompliant-Information-Extraction \u27e9"
+            "text": "SysKG-UTF [78] : bug reports \u2192 \u27e8 StructureCompliant-Information-Extraction \u27e9 \u2192 preconds + steps to reprod (S2R) + obs behav + expect behav [Few-Shot]; S2R \u2192 \u27e8StepsToReproduce-Refinement\u27e9 \u2192 (finer grained) S2R [Few-Shot]; bug scenario pair (incl S2R) \u2192 \u27e8FeasibilityRedundancyAware-StepsToReproduce-Fusing(edition)\u27e9 \u2192 S2R [Few-Shot, CoT: pseudo-code guided interm assess]; bug scenario pair + potential (fused) S2R \u2192 \u27e8FeasibilityAware-StepsToReproduce-Refinement\u27e9 \u2192 S2R [Few-Shot, CoT: assess].",
+            "color": [
+              [
+                "#f3d2b7;",
+                "\u27e8"
+              ],
+              [
+                "#f3d2b7;",
+                "StructureCompliant-Information-Extraction"
+              ],
+              [
+                "#f3d2b7;",
+                "\u27e9"
+              ],
+              [
+                "#d3bfd7;",
+                "\u27e8StepsToReproduce-Refinement\u27e9"
+              ],
+              [
+                "#d3bfd7;",
+                "\u27e8FeasibilityRedundancyAware-StepsToReproduce-Fusing(edition)\u27e9"
+              ],
+              [
+                "#d3bfd7;",
+                "\u27e8FeasibilityAware-StepsToReproduce-Refinement\u27e9"
+              ]
+            ]
           }
         ],
         "Architectural Notes": [
           {
             "task": "TARGET",
-            "text": "[19] : Takes three phases to parse a traffic rule description to an executable driving scenario in a simulator. LLM addresses first processing phase. ScenarioNL [22] : ScenarioNL allows users to specify a model and prompting technique. Scenic database is used to store and retrieve semantically similar examples. SysKG-UTF [78] : LLMs play different roles in the construction and post-processing of a knowledge graph for exploratory testing."
+            "text": "TARGET [19] : Takes three phases to parse a traffic rule description to an executable driving scenario in a simulator. LLM addresses first processing phase. ScenarioNL [22] : ScenarioNL allows users to specify a model and prompting technique. Scenic database is used to store and retrieve semantically similar examples. SysKG-UTF [78] : LLMs play different roles in the construction and post-processing of a knowledge graph for exploratory testing.",
+            "color": []
           },
           {
             "task": "ScenarioNL",
-            "text": "[22] : ScenarioNL allows users to specify a model and prompting technique. Scenic database is used to store and retrieve semantically similar examples."
+            "text": "ScenarioNL [22] :  allows users to specify a model and prompting technique. Scenic database is used to store and retrieve semantically similar examples.",
+            "color": []
           },
           {
             "task": "SysKG-UTF",
-            "text": "[78] : LLMs play different roles in the construction and post-processing of a knowledge graph for exploratory testing."
+            "text": "SysKG-UTF [78] : LLMs play different roles in the construction and post-processing of a knowledge graph for exploratory testing.",
+            "color": []
           }
         ]
       },
@@ -417,21 +1035,83 @@
         "LLM Downstream Tasks": [
           {
             "task": "PentestGPT",
-            "text": "[18] : user-intents \u2192 \u27e8IntentCorresponding-Plan-Generation \u27e9 \u2192"
+            "text": "PentestGPT [18] : user-intents \u2192 \u27e8IntentCorresponding-Plan-Generation \u27e9 \u2192 penetration task tree (ptt) (1); testing results + ptt \u2192 \u27e8Elements-Update\u27e9 \u2192 ptt (2); ptt + updated ptt \u2192 \u27e8Validity-Transition-Analysis\u27e9 \u2192 result (3); ptt \u2192 \u27e8RulesSatisfying-Information-Extraction\u27e9 \u2192 (potential next task) + (4); ptt + tasks \u2192 \u27e8MostPromising-NextTask-Selection\u27e9 \u2192 sugg next task (5); sub-task + avail tools \u2192 \u27e8ToolsConstrained-Plan-Generation\u27e9 \u2192 seq of steps [CoT] (6); step \u2192 \u27e8Plan-Refinement\u27e9 \u2192 cmd [CoT] (7);",
+            "color": [
+              [
+                "#d3bfd7;",
+                "\u27e8IntentCorresponding-Plan-Generation"
+              ],
+              [
+                "#d3bfd7;",
+                "\u27e9"
+              ],
+              [
+                "#d3bfd7;",
+                "\u27e8Elements-Update\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Validity-Transition-Analysis\u27e9"
+              ],
+              [
+                "#d3bfd7;",
+                "\u27e8RulesSatisfying-Information-Extraction\u27e9"
+              ],
+              [
+                "#d3bfd7;",
+                "\u27e8MostPromising-NextTask-Selection\u27e9"
+              ],
+              [
+                "#d3bfd7;",
+                "\u27e8ToolsConstrained-Plan-Generation\u27e9"
+              ],
+              [
+                "#d3bfd7;",
+                "\u27e8Plan-Refinement\u27e9"
+              ]
+            ]
           },
           {
             "task": "pwn\u2019d",
-            "text": "[30] : scenario \u2192 \u27e8ScenarioCorresponding-Plan-Generation\u27e9 \u2192 pen-test plan [Agent GPT];"
+            "text": "pwn\u2019d raw user intent \u2014 test outp \u2192 \u27e8Summarization\u27e9 \u2192 condensed info (8).  [30] : scenario \u2192 \u27e8ScenarioCorresponding-Plan-Generation\u27e9 \u2192 pen-test plan [Agent GPT]; goal + prev conv + last cmd output \u2192 \u27e8ReachabilityOriented-NextAction- Generation\u27e9 \u2192 cmd; cmd + output \u2192 \u27e8Rationalized-VulnerabilityProneness-CommandExecution-Mul- tiLabel-Classification\u27e9 \u2192 potential vul.",
+            "color": [
+              [
+                "#ecb4cb;",
+                "\u27e8Summarization\u27e9"
+              ],
+              [
+                "#d3bfd7;",
+                "\u27e8ScenarioCorresponding-Plan-Generation\u27e9"
+              ],
+              [
+                "#d3bfd7;",
+                "\u27e8ReachabilityOriented-NextAction-"
+              ],
+              [
+                "#d3bfd7;",
+                "Generation\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Rationalized-VulnerabilityProneness-CommandExecution-Mul-"
+              ],
+              [
+                "#d6df8c;",
+                "tiLabel-Classification\u27e9"
+              ]
+            ]
           }
         ],
         "Architectural Notes": [
           {
             "task": "PentestGPT",
-            "text": "[18] : It incorporates three core modules: the Reasoning Module (1\u20135), the Generation Module (6,7), and the Parsing Module (8) (each reserving an LLM session). Active user feedback is possible."
+            "text": "PentestGPT [18] : It incorporates three core modules: the Reasoning Module (1\u20135), the Generation Module (6,7), and the Parsing Module (8) (each reserving an LLM session). Active user feedback is possible.",
+            "color": []
           },
           {
             "task": "pwn\u2019d",
-            "text": "[30] : High-level task planning uses mechanisms to integrate LLMs as agents (AutoGPT). Low-level vector attack works as a step by step reactive execution of plan."
+            "text": "pwn\u2019d [30] : High-level task planning uses mechanisms to integrate LLMs as agents (AutoGPT). Low-level vector attack works as a step by step reactive execution of plan.",
+            "color": []
           }
         ]
       },
@@ -440,93 +1120,308 @@
         "LLM Downstream Tasks": [
           {
             "task": "FSML",
-            "text": "[6] : sig + meth-intent \u2192 \u27e8MetamorphicAssertion-Characterization \u27e9 \u2192"
+            "text": "FSML [6] : sig + meth-intent \u2192 \u27e8MetamorphicAssertion-Characterization \u27e9 \u2192 term-equiv assertions [Few-Shot, CoT: code intent + analysis].",
+            "color": [
+              [
+                "#ecb4cb;",
+                "\u27e8MetamorphicAssertion-Characterization"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "code intent"
+              ]
+            ]
           },
           {
             "task": "SELF-DEBUGGING",
-            "text": "[12] : sql-query \u2192 \u27e8SQL-CodeCorresponding-Explana-"
+            "text": "SELF-DEBUGGING [12] : sql-query \u2192 \u27e8SQL-CodeCorresponding-Explana- tion-Generation\u27e9 \u2192 explanation [Few-Shot]; sql-query \u2192 \u27e8QueryConsistent-TableResult-Generation\u27e9 \u2192 result table [Few- Shot]; sql-query + result table \u2192 \u27e8SQL-Code&ExecutionCorresponding-Explanation- Generation\u27e9 \u2192 explanation [Few-Shot]; explanation \u2192 \u27e8ColumnOriented-Explanation-Summarization \u27e9 \u2192 column-intents [Few-Shot]; NL query \u2192 \u27e8Rationalized-NLQuery-NumberOfColumns-Identification\u27e9 \u2192 NL- query columns [Few-shot,CoT]; NL-query columns + column-intents \u2192 \u27e8Docstrings-Equivalence-Checking \u27e9 \u2192 feedback [Few-Shot] (Correctness TEXT-TO-SQL); intent + assertion + code + (external feedback) + code explanation \u2192 \u27e8 Intent&AssertionCorresponding-Code-OneClass-Classification\u27e9 \u2192 yes/no [Few- Shot, CoT: assertion execution ] (Correctness TEXT-TO-PYTHON).",
+            "color": [
+              [
+                "#ecb4cb;",
+                "\u27e8SQL-CodeCorresponding-Explana-"
+              ],
+              [
+                "#ecb4cb;",
+                "tion-Generation\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8QueryConsistent-TableResult-Generation\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e8SQL-Code&ExecutionCorresponding-Explanation-"
+              ],
+              [
+                "#ecb4cb;",
+                "Generation\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e8ColumnOriented-Explanation-Summarization"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e8Rationalized-NLQuery-NumberOfColumns-Identification\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Docstrings-Equivalence-Checking"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8"
+              ],
+              [
+                "#d6df8c;",
+                "Intent&AssertionCorresponding-Code-OneClass-Classification\u27e9"
+              ],
+              [
+                "#d3bfd7;",
+                "assertion execution"
+              ]
+            ]
           },
           {
             "task": "nl2postcondition",
-            "text": "[23] : intent + (refer impl) 0...1 \u2192 \u27e8PostCondition-"
+            "text": "nl2postcondition [23] : intent + (refer impl) 0...1 \u2192 \u27e8PostCondition- Formalization\u27e9 \u2192 assertions.",
+            "color": [
+              [
+                "#ecb4cb;",
+                "\u27e8PostCondition-"
+              ],
+              [
+                "#ecb4cb;",
+                "Formalization\u27e9"
+              ]
+            ]
           },
           {
             "task": "TOGLL",
-            "text": "[31] : test prefix + MUT code + MUT doc \u2192 \u27e8Assertion-Generation\u27e9"
+            "text": "TOGLL [31] : test prefix + MUT code + MUT doc \u2192 \u27e8Assertion-Generation\u27e9 \u2192 assertion.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8Assertion-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "Eywa",
-            "text": "[42] : funct defs + arguments + result + validity constraints \u2192 \u27e8ProtocolModelImplementation-Generation\u27e9 \u2192 model code."
+            "text": "Eywa [42] : funct defs + arguments + result + validity constraints \u2192 \u27e8ProtocolModelImplementation-Generation\u27e9 \u2192 model code.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8ProtocolModelImplementation-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "PropertyGPT",
-            "text": "[56] : base rule code + funct code under test + contract"
+            "text": "PropertyGPT [56] : base rule code + funct code under test + contract src-code \u2192 \u27e8Similar-Assertion-Generation\u27e9 \u2192 rule code [RAG: base rule code]; base pre/post + funct under test \u2192 \u27e8Similar-Assertion-Generation\u27e9 \u2192 funct- level pre/post [RAG: base pre/post]; rule code + contract src-code + error info + funct under test name \u2192 \u27e8 ErrorAware-Assertion-Correction\u27e9 \u2192 rule code; rule code + contract src-code + base rule code + missing funct under test name \u2192 \u27e8MissingFunction-Assertion-Correction\u27e9 \u2192 rule code.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8Similar-Assertion-Generation\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8Similar-Assertion-Generation\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8"
+              ],
+              [
+                "#9fd2ec;",
+                "ErrorAware-Assertion-Correction\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8MissingFunction-Assertion-Correction\u27e9"
+              ]
+            ]
           },
           {
             "task": "ClarifyGPT",
-            "text": "[66] : MUT sig + doc \u2192 \u27e8IntentCorresponding-Code-Generation\u27e9 \u2192 (code) \u2217 ;"
+            "text": "ClarifyGPT [66] : MUT sig + doc \u2192 \u27e8IntentCorresponding-Code-Generation\u27e9 \u2192 (code) \u2217 ; MUT sig + doc \u2192 \u27e8Basic&Edge-TestInput-Generation\u27e9 \u2192 (test) + [Few-Shot]; req + (code of alt sol) + \u2192 \u27e8CodeDifferences-Verbalization\u27e9 \u2192 descr and diffs [Few-Shot]; req + alt sol descr and diffs \u2192 \u27e8Ambiguity-Analysis\u27e9 \u2192 clarifying questions [Few-Shot].",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8IntentCorresponding-Code-Generation\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8Basic&Edge-TestInput-Generation\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e8CodeDifferences-Verbalization\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Ambiguity-Analysis\u27e9"
+              ]
+            ]
           },
           {
             "task": "CEDAR",
-            "text": "[67] : focal meth + unit-test snip \u2192 \u27e8Assertion-Generation\u27e9 \u2192 assert [Few-Shot + RAG: retrv demo (U-Test snip)]."
+            "text": "CEDAR [67] : focal meth + unit-test snip \u2192 \u27e8Assertion-Generation\u27e9 \u2192 assert [Few-Shot + RAG: retrv demo (U-Test snip)].",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8Assertion-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "PROSPER",
-            "text": "[74] : RFC doc. \u2192 \u27e8 FSM-Elements-Extraction\u27e9 \u2192 FSM-elements [Few-Shot]."
+            "text": "PROSPER [74] : RFC doc. \u2192 \u27e8 FSM-Elements-Extraction\u27e9 \u2192 FSM-elements [Few-Shot].",
+            "color": [
+              [
+                "#f3d2b7;",
+                "\u27e8"
+              ],
+              [
+                "#f3d2b7;",
+                "FSM-Elements-Extraction\u27e9"
+              ]
+            ]
           },
           {
             "task": "EMR",
-            "text": "[76] : req doc \u2192 \u27e8 IORelated-Sentences-Identification\u27e9 \u2192 I/O sentences;"
+            "text": "EMR [76] : req doc \u2192 \u27e8 IORelated-Sentences-Identification\u27e9 \u2192 I/O sentences; I/O sentences \u2192 \u27e8SentenceDerivable-MethamorpicRelation-Characterization\u27e9 \u2192 metamorphic relation (MR); MR + SUT API + SUT docum \u2192 \u27e8RequirementsDerivable-ExecutionMethamor- picRelations-Generation\u27e9 \u2192 executable metamorphic relations [Few-Shot: DSL].",
+            "color": [
+              [
+                "#f3d2b7;",
+                "\u27e8"
+              ],
+              [
+                "#f3d2b7;",
+                "IORelated-Sentences-Identification\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e8SentenceDerivable-MethamorpicRelation-Characterization\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8RequirementsDerivable-ExecutionMethamor-"
+              ],
+              [
+                "#9fd2ec;",
+                "picRelations-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "GameBugDescriptions",
-            "text": "[83] : video game name + scenario + perspective"
+            "text": "GameBugDescriptions [83] : video game name + scenario + perspective (e.g. game designer, player, real-world) \u2192 \u27e8Scenario-AccordingToPerspective- Anomaly-Detection\u27e9 \u2192 thought; prev conv \u2192 \u27e8Answer-FailureOriented-Summarization \u27e9 \u2192 buggy event (Answer Extraction).",
+            "color": [
+              [
+                "#d6df8c;",
+                "\u27e8Scenario-AccordingToPerspective-"
+              ],
+              [
+                "#d6df8c;",
+                "Anomaly-Detection\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e8Answer-FailureOriented-Summarization"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e9"
+              ]
+            ]
           },
           {
             "task": "MetaMorph",
-            "text": "[86] : doc snip \u2192 \u27e8 VariableNames-Identification\u27e9 \u2192 vars [Few- Shot]."
+            "text": "MetaMorph [86] : doc snip \u2192 \u27e8 VariableNames-Identification\u27e9 \u2192 vars [Few- Shot].",
+            "color": [
+              [
+                "#f3d2b7;",
+                "\u27e8"
+              ],
+              [
+                "#f3d2b7;",
+                "VariableNames-Identification\u27e9"
+              ]
+            ]
           },
           {
             "task": "ALGO",
-            "text": "[108] : prob formul + in/out examp \u2192 \u27e8BruteForce-IntentCorrespond-"
+            "text": "ALGO [108] : prob formul + in/out examp \u2192 \u27e8BruteForce-IntentCorrespond- ing-Code-Generation\u27e9 \u2192 implem.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8BruteForce-IntentCorrespond-"
+              ],
+              [
+                "#9fd2ec;",
+                "ing-Code-Generation\u27e9"
+              ]
+            ]
           }
         ],
         "Architectural Notes": [
           {
             "task": "FSML",
-            "text": "[6] : Study on potential profi ciency."
+            "text": "FSML [6] : Study on potential profi ciency.",
+            "color": []
           },
           {
             "task": "SELF-DEBUGGING",
-            "text": "[12] : For the Generation step, given the problem description, the model predicts candidate programs (not shown in this report). Explanation step, the model is prompted to process the predictions in a \u201csemantically useful way\u201d, such as explaining the prediction (and reference NL query for SQL query generation, source program for translation program) in natural language. Correctness is then predicted by different tasks depending on the code generation/translation problem. Here"
+            "text": "SELF-DEBUGGING [12] : For the Generation step, given the problem description, the model predicts candidate programs (not shown in this report). Explanation step, the model is prompted to process the predictions in a \u201csemantically useful way\u201d, such as explaining the prediction (and reference NL query for SQL query generation, source program for translation program) in natural language. Correctness is then predicted by different tasks depending on the code generation/translation problem. Here we show how this can be determined by asking the model itself to work as oracle of correctness. Generation, explanation, evaluation and repair are chained in demonstrations.",
+            "color": []
           },
           {
             "task": "TOGLL",
-            "text": "[31] : Six different prompts are studied. We report one with the richest context (P6)."
+            "text": "TOGLL [31] : Six different prompts are studied. We report one with the richest context (P6).",
+            "color": []
           },
           {
             "task": "Eywa",
-            "text": "[42] : LLM is used to generate protocol model code. Symbolic execution is further used to generate test cases.-"
+            "text": "Eywa [42] : LLM is used to generate protocol model code. Symbolic execution is further used to generate test cases.-",
+            "color": []
           },
           {
             "task": "PropertyGPT",
-            "text": "[56] : Uses Retrieval augmented generation by providing relevant specifications to be based on."
+            "text": "PropertyGPT [56] : Uses Retrieval augmented generation by providing relevant specifications to be based on.",
+            "color": []
           },
           {
             "task": "ClarifyGPT",
-            "text": "[66] : Intention clarification is part of this code generation approach. Generated inputs (and mutations) are used to cluster solutions. Differences analysis and clarifying questions are actually performed by a single prompt."
+            "text": "ClarifyGPT [66] : Intention clarification is part of this code generation approach. Generated inputs (and mutations) are used to cluster solutions. Differences analysis and clarifying questions are actually performed by a single prompt.",
+            "color": []
           },
           {
             "task": "CEDAR",
-            "text": "[67] : General demonstration retrieval method illustrated in assertion generation. Neural and frequency-based techniques for retrieval."
+            "text": "CEDAR [67] : General demonstration retrieval method illustrated in assertion generation. Neural and frequency-based techniques for retrieval.",
+            "color": []
           },
           {
             "task": "EMR",
-            "text": "[76] : Initial study on generating metamorphic relations from documentation and executable metamorphic relations. Some details on prompt engineering are not provided and are conjectural."
+            "text": "EMR [76] : Initial study on generating metamorphic relations from documentation and executable metamorphic relations. Some details on prompt engineering are not provided and are conjectural.",
+            "color": []
           },
           {
             "task": "ALGO",
-            "text": "[108] : This (oracle synthesis) is part of a program generation framework. Program generation may use implicit or explicit search (e.g., algorithmic ideas)."
+            "text": "ALGO [108] : This (oracle synthesis) is part of a program generation framework. Program generation may use implicit or explicit search (e.g., algorithmic ideas).",
+            "color": []
           }
         ]
       }
@@ -540,21 +1435,59 @@
         "LLM Downstream Tasks": [
           {
             "task": "AdbGPT",
-            "text": "[24] : bug report \u2192 \u27e8 StepsToReproduce-Extraction\u27e9 \u2192 steps to reprod [Few-Shot, CoT];"
+            "text": "AdbGPT [24] : bug report \u2192 \u27e8 StepsToReproduce-Extraction\u27e9 \u2192 steps to reprod [Few-Shot, CoT]; view hierarchy of the GUI + step \u2192 \u27e8Plan-Refinement\u27e9 \u2192 component to operate [Few-Shot, CoT]. CrashTranslator [37] : manifested page names + curr page + crash page \u2192 \u27e8 ReachabilityOriented-NextNode-Selection\u27e9 \u2192 next page [Zero-Shot, LLM fine-tuned with APPs transition relations]; manifested page names + current page + crash page + next page + interactible widgets \u2192 \u27e8ReachabilityOrientedWithSuggestedNextNode-NextAction-Selection\u27e9 \u2192 widget [Zero-Shot, LLM fine-tuned with targeted GUI page and transfer widget].",
+            "color": [
+              [
+                "#f3d2b7;",
+                "\u27e8"
+              ],
+              [
+                "#f3d2b7;",
+                "StepsToReproduce-Extraction\u27e9"
+              ],
+              [
+                "#d3bfd7;",
+                "\u27e8Plan-Refinement\u27e9"
+              ],
+              [
+                "#d3bfd7;",
+                "\u27e8"
+              ],
+              [
+                "#d3bfd7;",
+                "ReachabilityOriented-NextNode-Selection\u27e9"
+              ],
+              [
+                "#d3bfd7;",
+                "\u27e8ReachabilityOrientedWithSuggestedNextNode-NextAction-Selection\u27e9"
+              ]
+            ]
           },
           {
             "task": "LIBRO",
-            "text": "[46] : bug report + (stack trace) 0...1 \u2192 \u27e8BugReproducing-Test- Generation\u27e9 \u2192 test meth [Few-Shot]."
+            "text": "LIBRO [46] : bug report + (stack trace) 0...1 \u2192 \u27e8BugReproducing-Test- Generation\u27e9 \u2192 test meth [Few-Shot].",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8BugReproducing-Test-"
+              ],
+              [
+                "#9fd2ec;",
+                "Generation\u27e9"
+              ]
+            ]
           }
         ],
         "Architectural Notes": [
           {
             "task": "CrashTranslator",
-            "text": "[ 37]: It leverages LLM for one of the scorer which goal is to propose exploration priority."
+            "text": "CrashTranslator AdbGPT [24]: In-chained approach.  [ 37]: It leverages LLM for one of the scorer which goal is to propose exploration priority.",
+            "color": []
           },
           {
             "task": "LIBRO",
-            "text": "[46] : LLM works as first component of tool chain. A set of test candidates are generated by querying the LLM multiple times."
+            "text": "LIBRO [46] : LLM works as first component of tool chain. A set of test candidates are generated by querying the LLM multiple times.",
+            "color": []
           }
         ]
       },
@@ -563,13 +1496,28 @@
         "LLM Downstream Tasks": [
           {
             "task": "Cupid",
-            "text": "[109] : bug report \u2192 \u27e8 AimedAtDuplicateDetection-Keywords-Extraction \u27e9"
+            "text": "Cupid [109] : bug report \u2192 \u27e8 AimedAtDuplicateDetection-Keywords-Extraction \u27e9 \u2192 keywords.",
+            "color": [
+              [
+                "#f3d2b7;",
+                "\u27e8"
+              ],
+              [
+                "#f3d2b7;",
+                "AimedAtDuplicateDetection-Keywords-Extraction"
+              ],
+              [
+                "#f3d2b7;",
+                "\u27e9"
+              ]
+            ]
           }
         ],
         "Architectural Notes": [
           {
             "task": "Cupid",
-            "text": "[109] : LLM plays a punctual role into a traditional solution for duplicate bug report."
+            "text": "Cupid [109] : LLM plays a punctual role into a traditional solution for duplicate bug report.",
+            "color": []
           }
         ]
       },
@@ -577,38 +1525,123 @@
         "SE Problem": "Fault Localization",
         "LLM Downstream Tasks": [
           {
+            "text": "SELF-DEBUGGING [12] : code snippet + code snippet + input + feedback \u2192 \u27e8Differences-RootCause-Analysis\u27e9 \u2192 execution-based analysis [Few-Shot, CoT: trace execution ] (C++-TO-PYTHON).",
+            "color": [
+              [
+                "#d6df8c;",
+                "\u27e8Differences-RootCause-Analysis\u27e9"
+              ],
+              [
+                "#d3bfd7;",
+                "trace execution"
+              ]
+            ]
+          },
+          {
             "task": "AutoFL",
-            "text": "[44] : failing test info \u2192 \u27e8RootCause-Analysis\u27e9 \u2192 root cause [ReAct: funct calls for debugging];"
+            "text": "AutoFL [44] : failing test info \u2192 \u27e8RootCause-Analysis\u27e9 \u2192 root cause [ReAct: funct calls for debugging]; prev conv \u2192 \u27e8Answer-FaultOriented-Summarization\u27e9 \u2192 culprit.",
+            "color": [
+              [
+                "#d6df8c;",
+                "\u27e8RootCause-Analysis\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e8Answer-FaultOriented-Summarization\u27e9"
+              ]
+            ]
           },
           {
             "task": "AutoSD",
-            "text": "[45] : funct meth + tests + err msg + (reports) 0...1 \u2192 \u27e8RootCause- Analysis\u27e9 \u2192 hypoth + prediction + experiment;"
+            "text": "AutoSD [45] : funct meth + tests + err msg + (reports) 0...1 \u2192 \u27e8RootCause- Analysis\u27e9 \u2192 hypoth + prediction + experiment; hypoth + predict + experiment + exp observation \u2192 \u27e8EvidenceSupport- Judgment\u27e9 \u2192 conclusion; prev conv \u2192 \u27e8DebuggingAware-Code-Generation\u27e9 \u2192 fixed code.",
+            "color": [
+              [
+                "#d6df8c;",
+                "\u27e8RootCause-"
+              ],
+              [
+                "#d6df8c;",
+                "Analysis\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8EvidenceSupport-"
+              ],
+              [
+                "#d6df8c;",
+                "Judgment\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8DebuggingAware-Code-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "LLM4CBI",
-            "text": "[87] : prgm + mutation instr + validity fdbk \u2192 \u27e8MutationSpecified- Code-Mutation\u27e9 \u2192 prgm."
+            "text": "LLM4CBI [87] : prgm + mutation instr + validity fdbk \u2192 \u27e8MutationSpecified- Code-Mutation\u27e9 \u2192 prgm.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8MutationSpecified-"
+              ],
+              [
+                "#9fd2ec;",
+                "Code-Mutation\u27e9"
+              ]
+            ]
           },
           {
             "task": "ChatGPT-4(Log)",
-            "text": "[96] : focal source faulty code \u2192 \u27e8FaultProneness-Code- Lines-Ranking\u27e9 \u2192 ordered list of lines and reason [CoT: funct intent , reason per line];"
+            "text": "ChatGPT-4(Log) [96] : focal source faulty code \u2192 \u27e8FaultProneness-Code- Lines-Ranking\u27e9 \u2192 ordered list of lines and reason [CoT: funct intent , reason per line]; prev conv + test case + error \u2192 \u27e8TestResultAware-FaultProneness-CodeLines- ReRanking\u27e9 \u2192 intent + ordered list of lines and reason.",
+            "color": [
+              [
+                "#d6df8c;",
+                "\u27e8FaultProneness-Code-"
+              ],
+              [
+                "#d6df8c;",
+                "Lines-Ranking\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "funct intent"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8TestResultAware-FaultProneness-CodeLines-"
+              ],
+              [
+                "#d6df8c;",
+                "ReRanking\u27e9"
+              ]
+            ]
           }
         ],
         "Architectural Notes": [
           {
+            "text": "SELF-DEBUGGING [12] : For the Generation step, given the problem description, the model predicts candidate programs (not shown in this report). The fault detection is performed by creating an execution trace of the predicted code for a sample input.",
+            "color": []
+          },
+          {
             "task": "AutoFL",
-            "text": "[44] : Two stages: root cause explanation and bug location. LLM uses function calling."
+            "text": "AutoFL [44] : Two stages: root cause explanation and bug location. LLM uses function calling.",
+            "color": []
           },
           {
             "task": "AutoSD",
-            "text": "[45] : Chained interaction of LLMs with executing engines."
+            "text": "AutoSD [45] : Chained interaction of LLMs with executing engines.",
+            "color": []
           },
           {
             "task": "LLM4CBI",
-            "text": "[87] : Generation of prompts uses ad-hoc static analysis. Then they are selected, executed and modified in a RL workflow that includes some classic localization techniques."
+            "text": "LLM4CBI [87] : Generation of prompts uses ad-hoc static analysis. Then they are selected, executed and modified in a RL workflow that includes some classic localization techniques.",
+            "color": []
           },
           {
             "task": "ChatGPT-4(Log)",
-            "text": "[96] : Empirical study of LLMs proficiency. Code context is modified in the controlled experiment to assess impact."
+            "text": "ChatGPT-4(Log) [96] : Empirical study of LLMs proficiency. Code context is modified in the controlled experiment to assess impact.",
+            "color": []
           }
         ]
       },
@@ -617,41 +1650,123 @@
         "LLM Downstream Tasks": [
           {
             "task": "RCACopilot",
-            "text": "[13] : diagnostic info \u2192 \u27e8RootCauseOriented-Summarization \u27e9 \u2192"
+            "text": "RCACopilot [13] : diagnostic info \u2192 \u27e8RootCauseOriented-Summarization \u27e9 \u2192 summ diag (incident summarization); incident summ + list close categorized historic incidents \u2192 \u27e8 Common-Root- Cause-Selection\u27e9 \u2192 root cause + category [CoT: explanation].",
+            "color": [
+              [
+                "#ecb4cb;",
+                "\u27e8RootCauseOriented-Summarization"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e9"
+              ],
+              [
+                "#f3d2b7;",
+                "\u27e8"
+              ],
+              [
+                "#f3d2b7;",
+                "Common-Root-"
+              ],
+              [
+                "#f3d2b7;",
+                "Cause-Selection\u27e9"
+              ]
+            ]
           },
           {
             "task": "x-lifecycle",
-            "text": "[27] : service descr \u2192 \u27e8RootCauseOriented-Summarization \u27e9 \u2192 summ svc descr;"
+            "text": "x-lifecycle [27] : service descr \u2192 \u27e8RootCauseOriented-Summarization \u27e9 \u2192 summ svc descr;",
+            "color": [
+              [
+                "#ecb4cb;",
+                "\u27e8RootCauseOriented-Summarization"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e9"
+              ]
+            ]
           },
           {
             "task": "RCAAgents",
-            "text": "[71] : initial incident info \u2192 \u27e8RootCause-Analysis\u27e9 \u2192 root cause [ReAct: rqst for details, rqst for historical inc, query on retrieved inc];"
+            "text": "RCAAgents title incident + summ inc + svc dependencies + svc summ descr + similar historic inc \u2192 \u27e8SimilarityGuided-RootCause-Analysis\u27e9 \u2192 root cause + svc dep?  [71] : initial incident info \u2192 \u27e8RootCause-Analysis\u27e9 \u2192 root cause [ReAct: rqst for details, rqst for historical inc, query on retrieved inc]; retrv text + query \u2192 \u27e8TextDependent-QuestionAnswering\u27e9 \u2192 answer.",
+            "color": [
+              [
+                "#d6df8c;",
+                "\u27e8SimilarityGuided-RootCause-Analysis\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8RootCause-Analysis\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8TextDependent-QuestionAnswering\u27e9"
+              ]
+            ]
           },
           {
             "task": "LM-PACE",
-            "text": "[107] : (incident, root cause) + + curr incident + (guessed root cause) \u2192 \u27e8SufficiencyToInferAnswer-Assessment\u27e9 \u2192 analysis;"
+            "text": "LM-PACE [107] : (incident, root cause) + + curr incident + (guessed root cause) \u2192 \u27e8SufficiencyToInferAnswer-Assessment\u27e9 \u2192 analysis; prev conv \u2192 \u27e8Assessment-Yes/No-Summarization\u27e9 \u2192 yes/no (1); relevant-incids with root causes + curr incid + answ root cause \u2192 \u27e8Answer- Qlty(Truth, Ground, Informative)-Assessment\u27e9 \u2192 analysis;",
+            "color": [
+              [
+                "#d6df8c;",
+                "\u27e8SufficiencyToInferAnswer-Assessment\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e8Assessment-Yes/No-Summarization\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Answer-"
+              ],
+              [
+                "#d6df8c;",
+                "Qlty(Truth, Ground, Informative)-Assessment\u27e9"
+              ]
+            ]
           },
           {
             "task": "inContextRCA",
-            "text": "[110] : report \u2192 \u27e8RootCauseOriented-Summarization\u27e9 \u2192 incident + root cause;"
+            "text": "inContextRCA prev conv \u2192 \u27e8Assessment-Scaled-Summarization\u27e9 \u2192 score (2).  [110] : report \u2192 \u27e8RootCauseOriented-Summarization\u27e9 \u2192 incident + root cause; incident report \u2192 \u27e8RootCause-Analysis\u27e9 \u2192 root cause [Few-Shot: similar examples].",
+            "color": [
+              [
+                "#ecb4cb;",
+                "\u27e8Assessment-Scaled-Summarization\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e8RootCauseOriented-Summarization\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8RootCause-Analysis\u27e9"
+              ]
+            ]
           }
         ],
         "Architectural Notes": [
           {
             "task": "RCACopilot",
-            "text": "[13] : Diagnostic information collection stage is performed before prediction. Tasks are core part of larger solution."
+            "text": "RCACopilot [13] : Diagnostic information collection stage is performed before prediction. Tasks are core part of larger solution.",
+            "color": []
           },
           {
             "task": "x-lifecycle",
-            "text": "[27] : Vector data base is used for Retrieval Augmented Generation."
+            "text": "x-lifecycle [27] : Vector data base is used for Retrieval Augmented Generation.",
+            "color": []
           },
           {
             "task": "RCAAgents",
-            "text": "[71] : Vector data base to search for historical incidents."
+            "text": "RCAAgents [71] : Vector data base to search for historical incidents.",
+            "color": []
           },
           {
             "task": "LM-PACE",
-            "text": "[107] : Focus on confidence estimation and calibration. Root cause generation is a black box that can be addressed by LLMs as well. Relevant incidents came from historical-DB (semantic similarity-based retriever). Confidence of Evaluation (COE-score) and Root-Cause-Evaluation (RCE-score) are obtained from (1) and (2) resp. multiple sampling on LLMs. COE and RCE scores are the input of an optimization procedure to build a model to predict calibrated confidence score. In deployment phase, predicted root cause and calibrated confidence score is yield to on-call engineers."
+            "text": "LM-PACE [107] : Focus on confidence estimation and calibration. Root cause generation is a black box that can be addressed by LLMs as well. Relevant incidents came from historical-DB (semantic similarity-based retriever). Confidence of Evaluation (COE-score) and Root-Cause-Evaluation (RCE-score) are obtained from (1) and (2) resp. multiple sampling on LLMs. COE and RCE scores are the input of an optimization procedure to build a model to predict calibrated confidence score. In deployment phase, predicted root cause and calibrated confidence score is yield to on-call engineers. inContextRCA [110] : Vector data base is populated with summarized incidents and root causes.",
+            "color": []
           }
         ]
       }
@@ -665,81 +1780,306 @@
         "LLM Downstream Tasks": [
           {
             "task": "ChatGPT4vul",
-            "text": "[25] : src-code \u2192 \u27e8VulnerabilityProneness-Code-OneClass-"
+            "text": "ChatGPT4vul [25] : src-code \u2192 \u27e8VulnerabilityProneness-Code-OneClass- Classification\u27e9 \u2192 yes/no; prev conv \u2192 \u27e8VulnerabilityProneness-CodeLines-Ranking\u27e9 \u2192 list; src-code + (tgt CWD-ID) + \u2192 \u27e8ListTargeted-CWEVulnerabilityProneness-Code- MultiLabel-Classification\u27e9 \u2192 CWD-ID; src-code \u2192 \u27e8CVSS-Scoring\u27e9 \u2192 score.",
+            "color": [
+              [
+                "#d6df8c;",
+                "\u27e8VulnerabilityProneness-Code-OneClass-"
+              ],
+              [
+                "#d6df8c;",
+                "Classification\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8VulnerabilityProneness-CodeLines-Ranking\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8ListTargeted-CWEVulnerabilityProneness-Code-"
+              ],
+              [
+                "#d6df8c;",
+                "MultiLabel-Classification\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8CVSS-Scoring\u27e9"
+              ]
+            ]
           },
           {
             "task": "VulBench",
-            "text": "[26] : snip + (vul classes) 0...1 \u2192 \u27e8Rationalized-ListTargeted-CWE-"
+            "text": "VulBench [26] : snip + (vul classes) 0...1 \u2192 \u27e8Rationalized-ListTargeted-CWE- VulnerabilityProneness-Code-MultiLabel-Classification\u27e9 \u2192 vul verdict + (vul class) 0...1 + step by step explanation [Few-Shot: \u2208 project \u2014 \u2208\u0338 project, CoT].",
+            "color": [
+              [
+                "#d6df8c;",
+                "\u27e8Rationalized-ListTargeted-CWE-"
+              ],
+              [
+                "#d6df8c;",
+                "VulnerabilityProneness-Code-MultiLabel-Classification\u27e9"
+              ]
+            ]
           },
           {
             "task": "NLBSE24",
-            "text": "[41] : code snippet \u2192 \u27e8VulnerabilityProneness-Code-OneClass-"
+            "text": "NLBSE24 [41] : code snippet \u2192 \u27e8VulnerabilityProneness-Code-OneClass- Classification\u27e9 \u2192 yes/no; code snippet + intended functionality \u2192 \u27e8GivenIntentionCorrespondence-Code- OneClass-Classification\u27e9 \u2192 yes/no.",
+            "color": [
+              [
+                "#d6df8c;",
+                "\u27e8VulnerabilityProneness-Code-OneClass-"
+              ],
+              [
+                "#d6df8c;",
+                "Classification\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8GivenIntentionCorrespondence-Code-"
+              ],
+              [
+                "#d6df8c;",
+                "OneClass-Classification\u27e9"
+              ]
+            ]
           },
           {
             "task": "VulDetect",
-            "text": "[48] : tgt code snippet \u2192 \u27e8Rationalized-CWEVulnerabilityProne-"
+            "text": "VulDetect [48] : tgt code snippet \u2192 \u27e8Rationalized-CWEVulnerabilityProne- ness-Code-MultiLabel-Classification\u27e9 \u2192 yes/no + vul type + vul name + explanation; tgt code snip + tgt CWE \u2192 \u27e8Rationalized-ListTargeted-CWEVulnerabilityProne- ness-Code-MultiLabel-Classification\u27e9 \u2192 yes/no + vul type + vul name + explanation;  tgt code snip + CWE-DF \u2192 \u27e8Rationalized-DataFlowTargeted-CWEVulnerabil i- tyProneness-Code-MultiLabel-Classification\u27e9 \u2192 yes/no + vul type + vul name + data-flow explanation; query + data-flow-analysis \u2192 \u27e8Answer-Quality-Assessment\u27e9 \u2192 yes/no + ex- planation + final verdict.",
+            "color": [
+              [
+                "#d6df8c;",
+                "\u27e8Rationalized-CWEVulnerabilityProne-"
+              ],
+              [
+                "#d6df8c;",
+                "ness-Code-MultiLabel-Classification\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Rationalized-ListTargeted-CWEVulnerabilityProne-"
+              ],
+              [
+                "#d6df8c;",
+                "ness-Code-MultiLabel-Classification\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Rationalized-DataFlowTargeted-CWEVulnerabil"
+              ],
+              [
+                "#d6df8c;",
+                "tyProneness-Code-MultiLabel-Classification\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Answer-Quality-Assessment\u27e9"
+              ]
+            ]
           },
           {
             "task": "GRACE",
-            "text": "[60] : code snippet + code property graph \u2192 \u27e8CPGEnhanced-Vulner-"
+            "text": "GRACE [60] : code snippet + code property graph \u2192 \u27e8CPGEnhanced-Vulner- abilityProneness-Code-OneClass-Classification\u27e9 \u2192 yes/no [Few-Shot: retrieved demonstration].",
+            "color": [
+              [
+                "#d6df8c;",
+                "\u27e8CPGEnhanced-Vulner-"
+              ],
+              [
+                "#d6df8c;",
+                "abilityProneness-Code-OneClass-Classification\u27e9"
+              ]
+            ]
           },
           {
             "task": "VSP",
-            "text": "[68] : src-code \u2192 \u27e8Rationalized-CWEVulnerabilityProneness-Code-MultiL-"
+            "text": "VSP [68] : src-code \u2192 \u27e8Rationalized-CWEVulnerabilityProneness-Code-MultiL- abel-Classification\u27e9 \u2192 list CWEs [Few-Shot, CoT]; src-code + CWE id \u2192 \u27e8Rationalized-IdTargeted-CWEVulnerabilityProneness- Code-OneClass-Classification\u27e9 \u2192 yes/no + reason [Few-Shot, CoT]. AIagent [75]: (vul type name + caveat) + + src-code \u2192 \u27e8ListTargeted-CWE- VulnerabilityProneness-CodeLine-MultiClass-Classification\u27e9 \u2192 result (category",
+            "color": [
+              [
+                "#d6df8c;",
+                "\u27e8Rationalized-CWEVulnerabilityProneness-Code-MultiL-"
+              ],
+              [
+                "#d6df8c;",
+                "abel-Classification\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Rationalized-IdTargeted-CWEVulnerabilityProneness-"
+              ],
+              [
+                "#d6df8c;",
+                "Code-OneClass-Classification\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8ListTargeted-CWE-"
+              ],
+              [
+                "#d6df8c;",
+                "VulnerabilityProneness-CodeLine-MultiClass-Classification\u27e9"
+              ]
+            ]
           },
           {
             "task": "DLAP",
-            "text": "[ 101]: code-snippet + (snippet + label + probability) + \u2192"
+            "text": "DLAP + line).  [ 101]: code-snippet + (snippet + label + probability) + \u2192 \u27e8 GivenExamples-VulnerabilityProneness-Code-MultiLabel-Soft-Classification \u27e9 \u2192 label + prediction (Super ICL); guidance steps + code to review + potential vulnerability \u2192 \u27e8Plan-Refinement\u27e9 \u2192 specific review-steps (Bespoke CoT Guidance); code + prob prediction + specific review-steps \u2192 \u27e8Rationalized-Re- viewStepsEnhanced-IdTargeted-CWEVulnerabilityProneness-Code-OneClass- Soft-Classification\u27e9 \u2192 vulnerability+prob+reason [CoT: reason] (Final Prompt).",
+            "color": [
+              [
+                "#d6df8c;",
+                "\u27e8"
+              ],
+              [
+                "#d6df8c;",
+                "GivenExamples-VulnerabilityProneness-Code-MultiLabel-Soft-Classification"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e9"
+              ],
+              [
+                "#d3bfd7;",
+                "\u27e8Plan-Refinement\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Rationalized-Re-"
+              ],
+              [
+                "#d6df8c;",
+                "viewStepsEnhanced-IdTargeted-CWEVulnerabilityProneness-Code-OneClass-"
+              ],
+              [
+                "#d6df8c;",
+                "Soft-Classification\u27e9"
+              ]
+            ]
           },
           {
             "task": "MultiTask",
-            "text": "[103] : code snippet \u2192 \u27e8VulnerabilityProneness-Code-OneClass-"
+            "text": "MultiTask [103] : code snippet \u2192 \u27e8VulnerabilityProneness-Code-OneClass- Classification\u27e9 \u2192 yes/no (Detection); code snippet \u2192 \u27e8CVSS-Scoring\u27e9 \u2192 score (Assessment); code snippet \u2192 \u27e8VulnerabilityProneness-CodeLine-OneClass-Classification \u27e9 \u2192 lines (Location); code snippet \u2192 \u27e8CWE-VulnerabilityProneness-Code-MultiLabel-Classification \u27e9 \u2192 (CWE + description) \u2217 (Description).",
+            "color": [
+              [
+                "#d6df8c;",
+                "\u27e8VulnerabilityProneness-Code-OneClass-"
+              ],
+              [
+                "#d6df8c;",
+                "Classification\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8CVSS-Scoring\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8VulnerabilityProneness-CodeLine-OneClass-Classification"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8CWE-VulnerabilityProneness-Code-MultiLabel-Classification"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e9"
+              ]
+            ]
           },
           {
             "task": "PromptEnhanced",
-            "text": "[106] : src-code \u2192 \u27e8CodeCorresponding-Intent-"
+            "text": "PromptEnhanced [106] : src-code \u2192 \u27e8CodeCorresponding-Intent- Verbalization\u27e9 \u2192 intent; src-code + intent + (API call seq) + (data-flow descr) \u2192 \u27e8 (APICalls)/(DataFlow)Enhanced-VulnerabilityProneness-Code-OneClass- Classification\u27e9 \u2192 yes/no.",
+            "color": [
+              [
+                "#ecb4cb;",
+                "\u27e8CodeCorresponding-Intent-"
+              ],
+              [
+                "#ecb4cb;",
+                "Verbalization\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8"
+              ],
+              [
+                "#d6df8c;",
+                "(APICalls)/(DataFlow)Enhanced-VulnerabilityProneness-Code-OneClass-"
+              ],
+              [
+                "#d6df8c;",
+                "Classification\u27e9"
+              ]
+            ]
           },
           {
             "task": "ChatGPT(Plus)",
-            "text": "[112] : project info + ext src knowl (top CWE) + src-code"
+            "text": "ChatGPT(Plus) [112] : project info + ext src knowl (top CWE) + src-code to analyze \u2192 \u27e8(CWE+GivenVulnDescr)VulnerabilityPronenes s -Code-OneClass- Classification\u27e9 \u2192 yes/no [Few-Shot: K-examp either (random)/Few-Shot + AG: simil code to analyze].",
+            "color": [
+              [
+                "#d6df8c;",
+                "\u27e8(CWE+GivenVulnDescr)VulnerabilityPronenes"
+              ],
+              [
+                "#d6df8c;",
+                "-Code-OneClass-"
+              ],
+              [
+                "#d6df8c;",
+                "Classification\u27e9"
+              ]
+            ]
           }
         ],
         "Architectural Notes": [
           {
             "task": "ChatGPT4vul",
-            "text": "[25] : Study of profi- ciency. It includes repair prompts (not reported here)."
+            "text": "ChatGPT4vul [25] : Study of profi- ciency. It includes repair prompts (not reported here).",
+            "color": []
           },
           {
             "task": "VulBench",
-            "text": "[26] : Study including alter- native prompting strategies."
+            "text": "VulBench [26] : Study including alter- native prompting strategies.",
+            "color": []
           },
           {
             "task": "NLBSE24",
-            "text": "[41] : This evaluation also in- cludes tasks versions that take previous labels as inputs."
+            "text": "NLBSE24 [41] : This evaluation also in- cludes tasks versions that take previous labels as inputs.",
+            "color": []
           },
           {
             "task": "VulDetect",
-            "text": "[48] : Study including al ternative prompting strategies. Self-reflection is one option."
+            "text": "VulDetect [48] : Study including al ternative prompting strategies. Self-reflection is one option.",
+            "color": []
           },
           {
             "task": "GRACE",
-            "text": "[60] : We report the enhanced"
+            "text": "GRACE [60] : We report the enhanced vulnerability detection module. The approach also consist in a demonstration selection module and a graph structure information generation module.",
+            "color": []
           },
           {
             "task": "AIagent",
-            "text": "[75] : Preliminary study. Basic prompt is augmented with caveats on each category."
+            "text": "AIagent [75] : Preliminary study. Basic prompt is augmented with caveats on each category.",
+            "color": []
           },
           {
             "task": "DLAP",
-            "text": "[101] : DL models are used to generate a prediction probability that serve as reference input for LLM assessment. LHS is used to find similar code. Static analysis results are key to query to obtain customized CoT generation guidance templates."
+            "text": "DLAP [101] : DL models are used to generate a prediction probability that serve as reference input for LLM assessment. LHS is used to find similar code. Static analysis results are key to query to obtain customized CoT generation guidance templates.",
+            "color": []
           },
           {
             "task": "PromptEnhanced",
-            "text": "[106] : Study on different prompting strategies. It actually tries unsuccessfully to generate data-flow and API calls by using LLM too (property characterization, in our terms)."
+            "text": "PromptEnhanced [106] : Study on different prompting strategies. It actually tries unsuccessfully to generate data-flow and API calls by using LLM too (property characterization, in our terms).",
+            "color": []
           },
           {
             "task": "ChatGPT(Plus)",
-            "text": "[112] : Study of profi- ciency of GPTs vs fine-tuned version."
+            "text": "ChatGPT(Plus) [112] : Study of profi- ciency of GPTs vs fine-tuned version.",
+            "color": []
           }
         ]
       },
@@ -748,33 +2088,139 @@
         "LLM Downstream Tasks": [
           {
             "task": "FLAG",
-            "text": "[2] : prefix snippet + (suffix snippet) + (prefix of line to be guessed)"
+            "text": "FLAG [2] : prefix snippet + (suffix snippet) + (prefix of line to be guessed) \u2192 \u27e8ContextConsistent-Line-Completion\u27e9 \u2192 code line. EditTime [8]: \u2192 \u27e8 Definition-Recall \u27e9 \u2192 vul task descrip; code language + vul type \u2192 \u27e8 Example-Recall \u27e9 \u2192 examp; code snip \u2192 \u27e8Rationalized-VulnerabilityProneness-Code-OneClass-Classification \u27e9 \u2192 yes/no + explan; code snip \u2192 \u27e8Rationalized-VulnerabilityProneness-Code-OneClass-Classification \u27e9 \u2192 yes/no + explan [Few-Shot: recalled examp].",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8ContextConsistent-Line-Completion\u27e9"
+              ],
+              [
+                "#cae6e4;",
+                "\u27e8"
+              ],
+              [
+                "#cae6e4;",
+                "Definition-Recall"
+              ],
+              [
+                "#cae6e4;",
+                "\u27e9"
+              ],
+              [
+                "#cae6e4;",
+                "\u27e8"
+              ],
+              [
+                "#cae6e4;",
+                "Example-Recall"
+              ],
+              [
+                "#cae6e4;",
+                "\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Rationalized-VulnerabilityProneness-Code-OneClass-Classification"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Rationalized-VulnerabilityProneness-Code-OneClass-Classification"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e9"
+              ]
+            ]
           },
           {
             "task": "WitheredLeaf",
-            "text": "[11] : code \u2192 \u27e8Rationalized-SemanticBugPresence-CodeLine-"
+            "text": "WitheredLeaf [11] : code \u2192 \u27e8Rationalized-SemanticBugPresence-CodeLine- OneClass-Classification\u27e9 \u2192 yes/no + (line + reason) + ;  (code line + reason) + \u2192 \u27e8Warnings-Irrelevance-Filtering\u27e9 \u2192 (line + reason) + ;  code line + reason \u2192 \u27e8Rationalized-BugFixabilityByNameChange-CodeLine- OneClass-Classificatio n\u27e9 \u2192 yes/no + fixed-line [CoT: fi x];  prev conv + code line + reason \u2192 \u27e8ListSemiTargeted-BugCategory-BugExpla- nation-MultiClass-Classification\u27e9 \u2192 category.",
+            "color": [
+              [
+                "#d6df8c;",
+                "\u27e8Rationalized-SemanticBugPresence-CodeLine-"
+              ],
+              [
+                "#d6df8c;",
+                "OneClass-Classification\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Warnings-Irrelevance-Filtering\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Rationalized-BugFixabilityByNameChange-CodeLine-"
+              ],
+              [
+                "#d6df8c;",
+                "OneClass-Classificatio"
+              ],
+              [
+                "#9fd2ec;",
+                "fi"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8ListSemiTargeted-BugCategory-BugExpla-"
+              ],
+              [
+                "#d6df8c;",
+                "nation-MultiClass-Classification\u27e9"
+              ]
+            ]
           },
           {
             "task": "LLMAPIDet",
-            "text": "[92] : code before + code after \u2192 \u27e8RootCauseOriented-Change-"
+            "text": "LLMAPIDet [92] : code before + code after \u2192 \u27e8RootCauseOriented-Change- Action-Verbalization\u27e9 \u2192 rule [Few-Shot]; code snip (incl. API usage) \u2192 \u27e8CodeCorresponding-Intent-Generation\u27e9 \u2192 NL description; code snip + API usage + (potential misuses rules) \u2192 \u27e8 GivenAPIMisuseRulesCompliance-Code-OneClass-Classification\u27e9 \u2192 yes/no [RAG]. ",
+            "color": [
+              [
+                "#ecb4cb;",
+                "\u27e8RootCauseOriented-Change-"
+              ],
+              [
+                "#ecb4cb;",
+                "Action-Verbalization\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e8CodeCorresponding-Intent-Generation\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8"
+              ],
+              [
+                "#d6df8c;",
+                "GivenAPIMisuseRulesCompliance-Code-OneClass-Classification\u27e9"
+              ]
+            ]
           }
         ],
         "Architectural Notes": [
           {
             "task": "FLAG",
-            "text": "[2] : LLM is used as line genera- tor (preprocessor). A bounded number of attempts with hints is tried to get non empty line. Feature extraction based on edit distances and Bleu. Logprobs of tokens are used when available. Classification is done based on such features."
+            "text": "FLAG [2] : LLM is used as line genera- tor (preprocessor). A bounded number of attempts with hints is tried to get non empty line. Feature extraction based on edit distances and Bleu. Logprobs of tokens are used when available. Classification is done based on such features.",
+            "color": []
           },
           {
             "task": "EditTime",
-            "text": "[8] : Comparative study also against a fine-tuning approach. Retrieval is done to find adequate task description and examples for the few-shot learning approach."
+            "text": "EditTime [8] : Comparative study also against a fine-tuning approach. Retrieval is done to find adequate task description and examples for the few-shot learning approach.",
+            "color": []
           },
           {
             "task": "WitheredLeaf",
-            "text": "[11] : Lightweight, open- source models (e.g., infilling ones) are used to identify suspicious program entities as a preprocessing step. Last tasks are implemented by same prompt."
+            "text": "WitheredLeaf [11] : Lightweight, open- source models (e.g., infilling ones) are used to identify suspicious program entities as a preprocessing step. Last tasks are implemented by same prompt.",
+            "color": []
           },
           {
             "task": "LLMAPIDet",
-            "text": "[92] : Study on DL API Misuse Root Causes that feed LLM-based solution. Misuse rules populates a DB and examples for misuses detection. Potential misuse rule list by cosine similarity between the code explanation obtained in step 2 and each misuse rule in DB. Patching step is not shown in this report."
+            "text": "LLMAPIDet [92] : Study on DL API Misuse Root Causes that feed LLM-based solution. Misuse rules populates a DB and examples for misuses detection. Potential misuse rule list by cosine similarity between the code explanation obtained in step 2 and each misuse rule in DB. Patching step is not shown in this report.",
+            "color": []
           }
         ]
       },
@@ -783,41 +2229,191 @@
         "LLM Downstream Tasks": [
           {
             "task": "ChatGPTSCV",
-            "text": "[10] : src smrt contrct + tgt vuls \u2192 \u27e8Rationalized-ListTar-"
+            "text": "ChatGPTSCV [10] : src smrt contrct + tgt vuls \u2192 \u27e8Rationalized-ListTar- geted-CWEVulnerabilityProneness-Code-MultiLabel-Classification\u27e9 \u2192 assessment [CoT]; vul classes + assess \u2192 \u27e8AssessmentBased-Vulnerability-MultiClass- Summarization\u27e9 \u2192 list (vul class, DerivedBinaryVerdict) [CoT].",
+            "color": [
+              [
+                "#d6df8c;",
+                "\u27e8Rationalized-ListTar-"
+              ],
+              [
+                "#d6df8c;",
+                "geted-CWEVulnerabilityProneness-Code-MultiLabel-Classification\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e8AssessmentBased-Vulnerability-MultiClass-"
+              ],
+              [
+                "#ecb4cb;",
+                "Summarization\u27e9"
+              ]
+            ]
           },
           {
             "task": "SmartAudit",
-            "text": "[17] : contract src-code + vul type + vul descr \u2192 \u27e8ListTargeted-"
+            "text": "SmartAudit [17] : contract src-code + vul type + vul descr \u2192 \u27e8ListTargeted- CWEVulnerabilityProneness-Code-OneClass-Classification\u27e9 \u2192 yes/no; contract src-code \u2192 \u27e8Rationalized-VulnerabilityProneness-Code-MultiLabel- Classification\u27e9 \u2192 vuls descr; contract src-code + prev conv + (focal funct name) \u2192 \u27e8Rationalized-Vulner abilityProneness-Code-MultiLabel-Classification\u27e9 \u2192 vuls descr + (fix recom) [CoT: intent + thoughts].",
+            "color": [
+              [
+                "#d6df8c;",
+                "\u27e8ListTargeted-"
+              ],
+              [
+                "#d6df8c;",
+                "CWEVulnerabilityProneness-Code-OneClass-Classification\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Rationalized-VulnerabilityProneness-Code-MultiLabel-"
+              ],
+              [
+                "#d6df8c;",
+                "Classification\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Rationalized-Vulner"
+              ],
+              [
+                "#d6df8c;",
+                "abilityProneness-Code-MultiLabel-Classification\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "intent"
+              ]
+            ]
           },
           {
             "task": "GPTLens",
-            "text": "[33] : src-code \u2192 \u27e8Rationalized-VulnerabilityProneness-Code-MultiL abel-Classification\u27e9 \u2192 (vul + funct name + reason) \u2217 (auditor);"
+            "text": "GPTLens [33] : src-code \u2192 \u27e8Rationalized-VulnerabilityProneness-Code-MultiL abel-Classification\u27e9 \u2192 (vul + funct name + reason) \u2217 (auditor); src-code + vul + funct name + reason \u2192 \u27e8Audits-Qlty(Correctness, Severity, Profitability)-Assessment\u27e9 \u2192 score + explan (critic).",
+            "color": [
+              [
+                "#d6df8c;",
+                "\u27e8Rationalized-VulnerabilityProneness-Code-MultiL"
+              ],
+              [
+                "#d6df8c;",
+                "abel-Classification\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Audits-Qlty(Correctness, Severity,"
+              ],
+              [
+                "#d6df8c;",
+                "Profitability)-Assessment\u27e9"
+              ]
+            ]
           },
           {
             "task": "LLM4Vuln",
-            "text": "[80] : vul report + tgt code \u2192 \u27e8CodeCorresponding-Intent-"
+            "text": "LLM4Vuln [80] : vul report + tgt code \u2192 \u27e8CodeCorresponding-Intent- Verbalization\u27e9 \u2192 operational summary (funct.summ.); vul report \u2192 \u27e8Vulnerability-MechanismExplanation-Summarization \u27e9 \u2192 abstract vul (abs.gen.); tgt code + (DB.MatchVulReport(TC)) (Alt1) + (DB.MatchAbsVulKnow(funct.summ.(TC)) (Alt2) \u2192 \u27e8InfoRequesting- Rationalized-GivenVulnDescrProneness-Code-MultiLabel-Classification \u27e9 \u2192 yes/no + (type of vul), (reason) [Pre-CoT: functional summary + explicit errors \u2014 Post-CoT: patch or Proof of Concept exploit , ReAct: getFunc- tionDefinition, getClassInheritance, getVariableDefinition, RAG: Alt1,",
+            "color": [
+              [
+                "#ecb4cb;",
+                "\u27e8CodeCorresponding-Intent-"
+              ],
+              [
+                "#ecb4cb;",
+                "Verbalization\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e8Vulnerability-MechanismExplanation-Summarization"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8InfoRequesting-"
+              ],
+              [
+                "#d6df8c;",
+                "Rationalized-GivenVulnDescrProneness-Code-MultiLabel-Classification"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "functional summary"
+              ],
+              [
+                "#9fd2ec;",
+                "patch"
+              ],
+              [
+                "#d3bfd7;",
+                "Proof of Concept exploit"
+              ]
+            ]
           },
           {
             "task": "GPTScan",
-            "text": "[ 81]: (scenario) \u2217 + contract src-code \u2192"
+            "text": "GPTScan Alt2].  [ 81]: (scenario) \u2217 + contract src-code \u2192 \u27e8 GivenCharacteristicsCorrespondenc e -Code-OneClass-Classificatio n \u27e9 \u2192 yes/no [CoT: mimic in the background] (1); scenario + prop + contract src-code \u2192 \u27e8GivenBehaviorCorrespondence-Code- OneClass-Classification\u27e9 \u2192 yes/no [CoT: mimic in the background]; src-code \u2192 \u27e8 RoleBased-CodeElements-Identification\u27e9 \u2192 vars/statements [CoT: mimic in the background].",
+            "color": [
+              [
+                "#d6df8c;",
+                "\u27e8"
+              ],
+              [
+                "#d6df8c;",
+                "GivenCharacteristicsCorrespondenc"
+              ],
+              [
+                "#d6df8c;",
+                "-Code-OneClass-Classificatio"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8GivenBehaviorCorrespondence-Code-"
+              ],
+              [
+                "#d6df8c;",
+                "OneClass-Classification\u27e9"
+              ],
+              [
+                "#f3d2b7;",
+                "\u27e8"
+              ],
+              [
+                "#f3d2b7;",
+                "RoleBased-CodeElements-Identification\u27e9"
+              ]
+            ]
           }
         ],
         "Architectural Notes": [
           {
+            "text": "ChatGPTSCV [10]: Empirical study.",
+            "color": []
+          },
+          {
             "task": "SmartAudit",
-            "text": "[17] : Potentiality study of LLMs to find smart contract vulnerabilities. Binary, non-binary, CoT prompts are presented. CoT version is performed by iteratively asking LLM to audit each function name, revisiting audit or linking functions to find vulnerabilities."
+            "text": "SmartAudit [17] : Potentiality study of LLMs to find smart contract vulnerabilities. Binary, non-binary, CoT prompts are presented. CoT version is performed by iteratively asking LLM to audit each function name, revisiting audit or linking functions to find vulnerabilities.",
+            "color": []
           },
           {
             "task": "GPTLens",
-            "text": "[33] : Several auditors solv- ing detection task generate potential vulnerabilities. A critic assess them."
+            "text": "GPTLens [33] : Several auditors solv- ing detection task generate potential vulnerabilities. A critic assess them.",
+            "color": []
           },
           {
             "task": "LLM4Vuln",
-            "text": "[80] : Evaluation framework that includes LLM-based Result Annotation and Analysis (not reported here)."
+            "text": "LLM4Vuln [80] : Evaluation framework that includes LLM-based Result Annotation and Analysis (not reported here). Vector DB are populated using abstract-generation and functionalsummary to match in analysis time relevant summarized vulnerability knowledge (Alt2). aw version is based on a DB matching reports to vulnerable code (Alt1). LLM seeks extra context through LLM\u2019s function calling mechanism.",
+            "color": []
           },
           {
             "task": "GPTScan",
-            "text": "[81] : Authors break down common logic vulnerability types into scenarios and properties. LLMs scenario and property matches and identified variables are validated by static confirmation. Saving on GPT costs by first filtering in a single prompt (1)."
+            "text": "GPTScan [81] : Authors break down common logic vulnerability types into scenarios and properties. LLMs scenario and property matches and identified variables are validated by static confirmation. Saving on GPT costs by first filtering in a single prompt (1).",
+            "color": []
           }
         ]
       }
@@ -831,37 +2427,148 @@
         "LLM Downstream Tasks": [
           {
             "task": "CFG-Chain",
-            "text": "[36] : code \u2192 \u27e8 CodeBlocks-Extraction\u27e9 \u2192 nested code-blocks [Few-Shot];"
+            "text": "CFG-Chain [36] : code \u2192 \u27e8 CodeBlocks-Extraction\u27e9 \u2192 nested code-blocks [Few-Shot]; code + nstd code-blocks \u2192 \u27e8 BlockCorresponding-Code-Extraction\u27e9 \u2192 basic code-blocks [Few-Shot]; code-block \u2192 \u27e8ControlFlow-Identification\u27e9 \u2192 CFG [Few-Shot]; CFGs \u2192 \u27e8CFG-Fusion\u27e9 \u2192 CFG [Few-Shot].",
+            "color": [
+              [
+                "#f3d2b7;",
+                "\u27e8"
+              ],
+              [
+                "#f3d2b7;",
+                "CodeBlocks-Extraction\u27e9"
+              ],
+              [
+                "#f3d2b7;",
+                "\u27e8"
+              ],
+              [
+                "#f3d2b7;",
+                "BlockCorresponding-Code-Extraction\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e8ControlFlow-Identification\u27e9"
+              ],
+              [
+                "#d3bfd7;",
+                "\u27e8CFG-Fusion\u27e9"
+              ]
+            ]
           }
         ],
-        "Architectural Notes": []
+        "Architectural Notes": [
+          {
+            "text": "CFG-Chain [36] : LLMs are invoked in a chain of subtasks: structure hierarchy extraction (translation), nested block extraction (completer), Basic code CFG (translation) and graph fusion.",
+            "color": []
+          }
+        ]
       },
       {
         "SE Problem": "Use Before Initialize",
         "LLM Downstream Tasks": [
           {
             "task": "LLift",
-            "text": "[51] : use site + (retrv code snip) \u2192 \u27e8 InfoRequesting-Initializator- Identification\u27e9 \u2192 (retrv rqst) + initializer [ReAct: funct to retrv];"
+            "text": "LLift [51] : use site + (retrv code snip) \u2192 \u27e8 InfoRequesting-Initializator- Identification\u27e9 \u2192 (retrv rqst) + initializer [ReAct: funct to retrv]; use site + init sig \u2192 \u27e8PostConstraint-Identification\u27e9 \u2192 post-constr on init results [ Self-Validation ]; init invoc + post-constr + var focus \u2192 \u27e8InfoRequesting-QualifiedPostCondi- tion-Characterization\u27e9 \u2192 (retrv rqst) + may-must init-post [Few-Shot, CoT, ReAct, Self-Validation ].",
+            "color": [
+              [
+                "#f3d2b7;",
+                "\u27e8"
+              ],
+              [
+                "#f3d2b7;",
+                "InfoRequesting-Initializator-"
+              ],
+              [
+                "#f3d2b7;",
+                "Identification\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e8PostConstraint-Identification\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "Self-Validation"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e8InfoRequesting-QualifiedPostCondi-"
+              ],
+              [
+                "#ecb4cb;",
+                "tion-Characterization\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "Self-Validation"
+              ]
+            ]
           }
         ],
-        "Architectural Notes": []
+        "Architectural Notes": [
+          {
+            "text": "LLift [51] : Post-constraint guided path analysis to verify the path feasibility of the \u201cuse\u201d of an initialized variable. Static analyzer upstream; two conversations ((1) init detect./post-constraint generation (2) summarization): multiple iterations each. Majority voting.",
+            "color": []
+          }
+        ]
       },
       {
         "SE Problem": "Resource Leak",
         "LLM Downstream Tasks": [
           {
             "task": "SkipAnalyzer",
-            "text": "[65] : code snip \u2192 \u27e8Rationalized-NullDerreferencePresence-Code- OneClass-Classification\u27e9 \u2192 yes/no + vul descr [CoT, One-Shot, Few-Shot]; code snip \u2192 \u27e8Rationalized-ResourceLeakPresence-Code-OneClass-Classification \u27e9"
+            "text": "SkipAnalyzer [65] : code snip \u2192 \u27e8Rationalized-NullDerreferencePresence-Code- OneClass-Classification\u27e9 \u2192 yes/no + vul descr [CoT, One-Shot, Few-Shot]; code snip \u2192 \u27e8Rationalized-ResourceLeakPresence-Code-OneClass-Classification \u27e9 \u2192 yes/no + vul descr [CoT, One-Shot, Few-Shot]; code snip + warning \u2192 \u27e8Warning-FalsePositiveProneness-Assessment\u27e9 \u2192 verdict [CoT, One-Shot, Few-Shot].",
+            "color": [
+              [
+                "#d6df8c;",
+                "\u27e8Rationalized-NullDerreferencePresence-Code-"
+              ],
+              [
+                "#d6df8c;",
+                "OneClass-Classification\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Rationalized-ResourceLeakPresence-Code-OneClass-Classification"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Warning-FalsePositiveProneness-Assessment\u27e9"
+              ]
+            ]
           },
           {
             "task": "InferROI",
-            "text": "[91] : snip \u2192 \u27e8 ResourceLeakRelated-CodeElements-Identification \u27e9 \u2192"
+            "text": "InferROI [91] : snip \u2192 \u27e8 ResourceLeakRelated-CodeElements-Identification \u27e9 \u2192 leakable resources + acquisition/releasing calls + closed if-conds.",
+            "color": [
+              [
+                "#f3d2b7;",
+                "\u27e8"
+              ],
+              [
+                "#f3d2b7;",
+                "ResourceLeakRelated-CodeElements-Identification"
+              ],
+              [
+                "#f3d2b7;",
+                "\u27e9"
+              ]
+            ]
           }
         ],
         "Architectural Notes": [
           {
+            "text": "SkipAnalyzer [65] : The pipeline analyzes snippets by using LLMs and static analysis tools like Infer. LLM is also used to filter false-positive warnings. LLMs are used to fix code as well (out of scope).",
+            "color": []
+          },
+          {
             "task": "InferROI",
-            "text": "[91] : LLM is used to get intentions in code, then a static resource leak detection engine is feed with this information."
+            "text": "InferROI [91] : LLM is used to get intentions in code, then a static resource leak detection engine is feed with this information.",
+            "color": []
           }
         ]
       },
@@ -870,27 +2577,114 @@
         "LLM Downstream Tasks": [
           {
             "task": "LLMDFA",
-            "text": "[90] : AST-traversal skel + (suggested identif rules) \u2192 \u27e8Source/Sink- ElementIdentificationCode-Completion\u27e9 \u2192 source/sink extractor [Few-Shot: E spec ];"
+            "text": "LLMDFA [90] : AST-traversal skel + (suggested identif rules) \u2192 \u27e8Source/Sink- ElementIdentificationCode-Completion\u27e9 \u2192 source/sink extractor [Few-Shot: E spec ]; AST-traversal skel + suggested identif rules + E spec + prev candidate extractor script + (error msg on E spec ) + (false pos on E spec ) + (false neg on E spec ) \u2192 \u27e8Source/Sink-ElementIdentificationCode-Correction\u27e9 \u2192 candidate extractor; code snip + \u00a1var, line\u00bf + \u00a1var, line\u00bf \u2192 \u27e8VariablesSameValue-Identification\u27e9 \u2192 yes/no [CoT, Few-Shot: incl though]; script skeleton + path information \u2192 \u27e8PathConditionEncoding-Code- Completion\u27e9 \u2192 candidate script; script skeleton + path information + prev candidate script + error msgs \u2192 \u27e8 PathConditionEncoding-Code-Correction\u27e9 \u2192 candidate script.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8Source/Sink-"
+              ],
+              [
+                "#9fd2ec;",
+                "ElementIdentificationCode-Completion\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8Source/Sink-ElementIdentificationCode-Correction\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e8VariablesSameValue-Identification\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8PathConditionEncoding-Code-"
+              ],
+              [
+                "#9fd2ec;",
+                "Completion\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8"
+              ],
+              [
+                "#9fd2ec;",
+                "PathConditionEncoding-Code-Correction\u27e9"
+              ]
+            ]
           }
         ],
-        "Architectural Notes": []
+        "Architectural Notes": [
+          {
+            "text": "LLMDFA [90] : LLMs are used together with solvers, parser and ad-hoc code.",
+            "color": []
+          }
+        ]
       },
       {
         "SE Problem": "Taint Analysis",
         "LLM Downstream Tasks": [
           {
             "task": "E&V",
-            "text": "[29] : task input + static-analysis pseudo-code + relevant src-code + prev results + verif fdbk \u2192 \u27e8Step-Computation\u27e9 \u2192 round output + (retrv-rqst) 0...1 ;"
+            "text": "E&V [29] : task input + static-analysis pseudo-code + relevant src-code + prev results + verif fdbk \u2192 \u27e8Step-Computation\u27e9 \u2192 round output + (retrv-rqst) 0...1 ; exec specs + relev src-code + pesudo-code + round output \u2192 \u27e8Behavior-Cor- rectness-Assessment\u27e9 \u2192 verif fdbk. LATTE [55]: name + (code) 0...1 \u2192 \u27e8 Sink-Identification\u27e9 \u2192 sink; name + (code) 0...1 \u2192 \u27e8 ExternalInputSource-Identification\u27e9 \u2192 external input source; (prev conv) + code snip + taint srcs + taint info \u2192 \u27e8TaintFlow-Identification \u27e9 \u2192 deduced data flow [incr prompt seq]; prompt seq results \u2192 \u27e8Rationalized-TaintFlowAnalysisEnhanced-CWEVulnerabil- ityProneness-Code-MultiLabel-Classification\u27e9 \u2192 (vul) + .",
+            "color": [
+              [
+                "#d3bfd7;",
+                "\u27e8Step-Computation\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Behavior-Cor-"
+              ],
+              [
+                "#d6df8c;",
+                "rectness-Assessment\u27e9"
+              ],
+              [
+                "#f3d2b7;",
+                "\u27e8"
+              ],
+              [
+                "#f3d2b7;",
+                "Sink-Identification\u27e9"
+              ],
+              [
+                "#f3d2b7;",
+                "\u27e8"
+              ],
+              [
+                "#f3d2b7;",
+                "ExternalInputSource-Identification\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e8TaintFlow-Identification"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Rationalized-TaintFlowAnalysisEnhanced-CWEVulnerabil-"
+              ],
+              [
+                "#d6df8c;",
+                "ityProneness-Code-MultiLabel-Classification\u27e9"
+              ]
+            ]
           }
         ],
         "Architectural Notes": [
           {
             "task": "E&V",
-            "text": "[29] : General framework for conducting static analysis from pseudo-code by means of LLMs. Agent-based architecture, but hard-coded planning strategies. Augment temperature if re-analysis required."
+            "text": "E&V [29] : General framework for conducting static analysis from pseudo-code by means of LLMs. Agent-based architecture, but hard-coded planning strategies. Augment temperature if re-analysis required.",
+            "color": []
           },
           {
             "task": "LATTE",
-            "text": "[55] : LLMs are invoked to identify sources and sinks. Dangerous flows are analyzed step by step by LLMs in a prompt sequence driven by sliced code."
+            "text": "LATTE [55] : LLMs are invoked to identify sources and sinks. Dangerous flows are analyzed step by step by LLMs in a prompt sequence driven by sliced code.",
+            "color": []
           }
         ]
       },
@@ -899,23 +2693,45 @@
         "LLM Downstream Tasks": [
           {
             "task": "SimulinkSlicer",
-            "text": "[61] : model + requirement \u2192 \u27e8 Model-Slicing\u27e9 \u2192 model components [Few-Shot, CoT: dependence chain elicitation by demonstration]."
+            "text": "SimulinkSlicer [61] : model + requirement \u2192 \u27e8 Model-Slicing\u27e9 \u2192 model components [Few-Shot, CoT: dependence chain elicitation by demonstration].",
+            "color": [
+              [
+                "#f3d2b7;",
+                "\u27e8"
+              ],
+              [
+                "#f3d2b7;",
+                "Model-Slicing\u27e9"
+              ]
+            ]
           }
         ],
-        "Architectural Notes": []
+        "Architectural Notes": [
+          {
+            "text": "",
+            "color": []
+          }
+        ]
       },
       {
         "SE Problem": "Fix Acceptance Check",
         "LLM Downstream Tasks": [
           {
             "task": "CORE",
-            "text": "[89] : diff \u2192 \u27e8Patch-Qlty(Fixes, LeastImpact)-Assessment\u27e9 \u2192 score + reason."
+            "text": "CORE [89] : diff \u2192 \u27e8Patch-Qlty(Fixes, LeastImpact)-Assessment\u27e9 \u2192 score + reason.",
+            "color": [
+              [
+                "#d6df8c;",
+                "\u27e8Patch-Qlty(Fixes, LeastImpact)-Assessment\u27e9"
+              ]
+            ]
           }
         ],
         "Architectural Notes": [
           {
             "task": "CORE",
-            "text": "[89] : Proposer LLM generates potential code revisions (not shown here). Static analysis is run on those revisions. Reviewer ranks solutions for specific fix warnings."
+            "text": "CORE [89] : Proposer LLM generates potential code revisions (not shown here). Static analysis is run on those revisions. Reviewer ranks solutions for specific fix warnings.",
+            "color": []
           }
         ]
       }
@@ -929,69 +2745,270 @@
         "LLM Downstream Tasks": [
           {
             "task": "AlloyRepair",
-            "text": "[3] : faulty spec + (generic-feedback) 0...1 \u2192 \u27e8FeedbackGuided-"
+            "text": "AlloyRepair [3] : faulty spec + (generic-feedback) 0...1 \u2192 \u27e8FeedbackGuided- Specification-Correction\u27e9 \u2192 fixed spec (repair agent); faulty spec + suggestion \u2192 \u27e8SuggestionGuided-Specification-Correction\u27e9 \u2192 fixed spec (repair agent); report feedback + faulty spec \u2192 \u27e8Suggestion-Generation\u27e9 \u2192 suggestion (prompt agent).",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8FeedbackGuided-"
+              ],
+              [
+                "#9fd2ec;",
+                "Specification-Correction\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8SuggestionGuided-Specification-Correction\u27e9"
+              ],
+              [
+                "#d3bfd7;",
+                "\u27e8Suggestion-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "ChatInv",
-            "text": "[40] : code + loc + masked assert \u2192 \u27e8Assertion-Completion\u27e9 \u2192 assert [InFiller]."
+            "text": "ChatInv [40] : code + loc + masked assert \u2192 \u27e8Assertion-Completion\u27e9 \u2192 assert [InFiller].",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8Assertion-Completion\u27e9"
+              ]
+            ]
           },
           {
             "task": "Loopy",
-            "text": "[43] : annot prgm with prop to be verif \u2192"
+            "text": "Loopy [43] : annot prgm with prop to be verif \u2192 \u27e8 Inductive&SufficientLoopInvariant-Assertion-Generation\u27e9 \u2192 prgm an- not with set of loop assert; annot prgm + verif fdbk \u2192 \u27e8SyntaxInductivenessSufficiency Aw ar e -Assertion- Correction\u27e9 \u2192 annot prgm.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8"
+              ],
+              [
+                "#9fd2ec;",
+                "Inductive&SufficientLoopInvariant-Assertion-Generation\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8SyntaxInductivenessSufficiency"
+              ],
+              [
+                "#9fd2ec;",
+                "ar"
+              ],
+              [
+                "#9fd2ec;",
+                "-Assertion-"
+              ],
+              [
+                "#9fd2ec;",
+                "Correction\u27e9"
+              ]
+            ]
           },
           {
             "task": "SpecGen",
-            "text": "[62] : prgm \u2192 \u27e8CodeCorresponding-Specification-Generation\u27e9 \u2192 prgm"
+            "text": "SpecGen [62] : prgm \u2192 \u27e8CodeCorresponding-Specification-Generation\u27e9 \u2192 prgm with specs [Few-Shot]; prev conv + curated verif fdbk \u2192 \u27e8ErrorAware-Specification-Correction\u27e9 \u2192 prgm with specs [Few-Shot].",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8CodeCorresponding-Specification-Generation\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8ErrorAware-Specification-Correction\u27e9"
+              ]
+            ]
           },
           {
             "task": "Dafny-Synth",
-            "text": "[64] : intent \u2192 \u27e8IntentCorresponding-AnnotatedCode-Generation\u27e9 \u2192 annot code (contextless);"
+            "text": "Dafny-Synth [64] : intent \u2192 \u27e8IntentCorresponding-AnnotatedCode-Generation\u27e9 \u2192 annot code (contextless); intent + sig + tests \u2192 \u27e8Intent&TestsCorresponding-AnnotatedCode-Generation\u27e9 \u2192 annot code (signature); intent \u2192 \u27e8IntentCorresponding-Signature-Generation\u27e9 \u2192 sig (dynamic); intent + sig \u2192 \u27e8NL-Specification-Distillation\u27e9 \u2192 pre/post spec (dynamic); intent + sig + spec \u2192 \u27e8Intent&SignatureCorresponding-Provable-Annotated- Code-Generation\u27e9 \u2192 anno code [RAG + Few-Shot: retrieved simil] (dynamic).",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8IntentCorresponding-AnnotatedCode-Generation\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8Intent&TestsCorresponding-AnnotatedCode-Generation\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8IntentCorresponding-Signature-Generation\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e8NL-Specification-Distillation\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "pre/post"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8Intent&SignatureCorresponding-Provable-Annotated-"
+              ],
+              [
+                "#9fd2ec;",
+                "Code-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "Clover",
-            "text": "[79] : annot code skel + verifier fdbk \u2192 \u27e8VerifierAware-AnnotationCor-"
+            "text": "Clover [79] : annot code skel + verifier fdbk \u2192 \u27e8VerifierAware-AnnotationCor- responding-Code-InFilling\u27e9 \u2192 code (anno2code); annot code skel + compiler fdbk \u2192 \u27e8CompilerAware-AnnotationCorresponding- Code-InFilling\u27e9 \u2192 code (anno-complete); intent + annot code skel + compiler fdbk \u2192 \u27e8IntentCorresponding-Code- InFilling\u27e9 \u2192 code (doc2code); annot code \u2192 \u27e8CodeCorresponding-Intent-Verbalization\u27e9 \u2192 docstrings (code2doc); code \u2192 \u27e8HoareValid-Annotation-Completion\u27e9 \u2192 pre/postcond (code2anno); funct sig with docstring + comp fdbk \u2192 \u27e8IntentCorresponding-PrePost- Formalization\u27e9 \u2192 annot code with pre and post (doc2anno); annotation \u2192 \u27e8AnnotationCorresponding-Intent-Verbalization\u27e9 \u2192 docstrings (anno2doc); docstring + docstring \u2192 \u27e8Docstrings-Equivalence-Checking\u27e9 \u2192 yes/no (doc- string equiv check).",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8VerifierAware-AnnotationCor-"
+              ],
+              [
+                "#9fd2ec;",
+                "responding-Code-InFilling\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8CompilerAware-AnnotationCorresponding-"
+              ],
+              [
+                "#9fd2ec;",
+                "Code-InFilling\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8IntentCorresponding-Code-"
+              ],
+              [
+                "#9fd2ec;",
+                "InFilling\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e8CodeCorresponding-Intent-Verbalization\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8HoareValid-Annotation-Completion\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e8IntentCorresponding-PrePost-"
+              ],
+              [
+                "#ecb4cb;",
+                "Formalization\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e8AnnotationCorresponding-Intent-Verbalization\u27e9"
+              ],
+              [
+                "#d6df8c;",
+                "\u27e8Docstrings-Equivalence-Checking\u27e9"
+              ]
+            ]
           },
           {
             "task": "AutoSpec",
-            "text": "[93] : masked annotated-code \u2192 \u27e8Annotation-Generation\u27e9 \u2192"
+            "text": "AutoSpec [93] : masked annotated-code \u2192 \u27e8Annotation-Generation\u27e9 \u2192 (pre/post/inv) annotated-code [Few-Shot].",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8Annotation-Generation\u27e9"
+              ]
+            ]
           },
           {
             "task": "Lemur",
-            "text": "[94] : code under analysis + place holder \u2192 \u27e8Invariant-Lemma-"
+            "text": "Lemur [94] : code under analysis + place holder \u2192 \u27e8Invariant-Lemma- Generation\u27e9 \u2192 assert; code under analysis + place holder + assert + issue \u2192 \u27e8Invariant-Lemma- Correction\u27e9 \u2192 assert.",
+            "color": [
+              [
+                "#9fd2ec;",
+                "\u27e8Invariant-Lemma-"
+              ],
+              [
+                "#9fd2ec;",
+                "Generation\u27e9"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8Invariant-Lemma-"
+              ],
+              [
+                "#9fd2ec;",
+                "Correction\u27e9"
+              ]
+            ]
           },
           {
             "task": "RustProof",
-            "text": "[102] : annot code (with precond) \u2192 \u27e8PostCondition-Generation \u27e9"
+            "text": "RustProof [102] : annot code (with precond) \u2192 \u27e8PostCondition-Generation \u27e9 \u2192 annot code (with pre/post) [CoT: code intent + precond explan ]; annot src-code sgmnt \u2192 \u27e8Invariant-Lemma-Generation\u27e9 \u2192 sgmnt-with-proof [Few-Shot, CoT: precond explan + postcond explan + inv explan + proof explan]; annot src-code sgmnt + last answer + model checker error \u2192 \u27e8ErrorAware- Lemma-Correction\u27e9 \u2192 sgmnt-with-proof [CoT].",
+            "color": [
+              [
+                "#ecb4cb;",
+                "\u27e8PostCondition-Generation"
+              ],
+              [
+                "#ecb4cb;",
+                "\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "code intent + precond explan"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8Invariant-Lemma-Generation\u27e9"
+              ],
+              [
+                "#ecb4cb;",
+                "precond explan + postcond explan"
+              ],
+              [
+                "#9fd2ec;",
+                "\u27e8ErrorAware-"
+              ],
+              [
+                "#9fd2ec;",
+                "Lemma-Correction\u27e9"
+              ]
+            ]
           }
         ],
         "Architectural Notes": [
           {
             "task": "AlloyRepair",
-            "text": "[3] : Alloy analyzer is used to validate an generate a report that is either used as input for correction or processed by an LLM to generate a efined suggestion."
+            "text": "AlloyRepair [3] : Alloy analyzer is used to validate an generate a report that is either used as input for correction or processed by an LLM to generate a efined suggestion.",
+            "color": []
           },
           {
             "task": "Loopy",
-            "text": "[43] : Invariants are checked by using symbolic tools. Assertions collected trough several LLM invocations."
+            "text": "Loopy [43] : Invariants are checked by using symbolic tools. Assertions collected trough several LLM invocations. Then it checks (in linear time) if there exists a subset that is inductive and sufficient. Repair takes into account categorized feedback and dependence relation between assertions.",
+            "color": []
           },
           {
             "task": "SpecGen",
-            "text": "[62] : Tasks models first phase of the approach: a conversation-driven specification generation leveraging LLMs."
+            "text": "SpecGen [62] : Tasks models first phase of the approach: a conversation-driven specification generation leveraging LLMs.",
+            "color": []
           },
           {
             "task": "Clover",
-            "text": "[79] : Consistency checks to know (i) the code is functionally correct"
+            "text": "Clover [79] : Consistency checks to know (i) the code is functionally correct with respect to its annotation; (ii) the annotation captures the full functionality of the code; and (iii) the DocString also accurately reflects the functionality of the code. Deductive checker and tests are used to prove annotated programs and equivalence between reconstructed artifacts.",
+            "color": []
           },
           {
             "task": "AutoSpec",
-            "text": "[93] : Call graph is used to identify locations and order for specification generation."
+            "text": "AutoSpec [93] : Call graph is used to identify locations and order for specification generation.",
+            "color": []
           },
           {
             "task": "Lemur",
-            "text": "[94] : Integrated with verifiers, it follows a set of proof rules that invokes LLMs to act as suggesters of auxiliary assertions and repairer of those suggestions."
+            "text": "Lemur [94] : Integrated with verifiers, it follows a set of proof rules that invokes LLMs to act as suggesters of auxiliary assertions and repairer of those suggestions.",
+            "color": []
           },
           {
             "task": "RustProof",
-            "text": "[102] : Proof helper in- tegrated with smart contract model checker. Human and static analysis tools can be integrated to improve generation."
+            "text": "RustProof [102] : Proof helper in- tegrated with smart contract model checker. Human and static analysis tools can be integrated to improve generation.",
+            "color": []
           }
         ]
       }

@@ -172,37 +172,65 @@ def parse_html():
             # Define column names
             column_names = ["SE Problem", "LLM Downstream Tasks", "Architectural Notes"]
             result = {}
+            
 
             for i, td in enumerate(cols):
+                tasks = []
                 if i == 0:
                     # First column, no special parsing
                     text = td.get_text(" ", strip=True)
                     if text:
-                        col_data = text
+                        tasks = text
                 else:
-                    sbolds = td.find_all("span", class_="sBold")
-                    col_data = []
-                    for j, sb in enumerate(sbolds):
-                        title = sb.get_text(strip=True)
-                        content = []
-                        for sibling in sb.next_siblings:
-                            if isinstance(sibling, str):
-                                text = sibling.strip()
-                                if text:
-                                    content.append(text)
-                            elif sibling.name == "span" and "sBold" in sibling.get("class", []):
-                                break
+
+                    ps = td.find_all("p")
+                    current_task = {}
+                    for p in ps:
+
+                        # if there is a span with class sBold, start a new task
+                        # else, append to the current task text
+                        # in any way if there is a span with background style, add it annotated
+
+
+                        sbold_spans = p.find_all("span", class_="sBold")
+                        if sbold_spans:
+                            if current_task:
+                                tasks.append(current_task)
+                            current_task = {
+                                'task': sbold_spans[0].get_text(" ", strip=True),
+                                'text': sbold_spans[0].get_text(" ", strip=True),
+                                'color': []
+                            }
+                            # add the rest of the p text
+                            rest_text = p.get_text(" ", strip=True).replace(sbold_spans[0].get_text(" ", strip=True), "").strip()
+                            if rest_text:
+                                current_task['text'] += " " + rest_text
+                        else:
+                            if current_task:
+                                current_task['text'] += " " + p.get_text(" ", strip=True)
                             else:
-                                content.append(sibling.get_text(" ", strip=True))
-                        col_data.append({
-                            "task": title,
-                            "text": " ".join(content).strip()
-                        })
+                                current_task = {'text': p.get_text(" ", strip=True), 'color': []}
+
+                        bg_spans = p.find_all("span", style=re.compile("background-color"))
+                        for bg in bg_spans:
+                            if current_task:
+                                #current_task['text'] += bg.get_text(" ", strip=True)
+                                try:
+                                    current_task['color'].append((bg.get('style').split(':')[1].strip(), bg.get_text(strip=True)))
+
+                                except:
+                                    print("Error parsing style:", bg, current_task)
+
+
+                    if current_task:
+                        tasks.append(current_task)
+
+
                 # Use column name as key
                 if i < len(column_names):
-                    result[column_names[i]] = col_data
+                    result[column_names[i]] = tasks
                 else:
-                    result[f"Column_{i+1}"] = col_data
+                    result[f"Column_{i+1}"] = tasks
             if result:
                 table_data['rows'].append(result)
         data.append(table_data)
@@ -212,4 +240,5 @@ def parse_html():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    #app.run(debug=True)
+    parse_html()

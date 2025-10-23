@@ -1,0 +1,34 @@
+{
+    "Generative": [
+        {
+            "Code Generation": [
+                "General-Code Generation",
+                "Domain-Specific-Code Generation",
+                "Test Generation"
+            ]
+        },
+        "Annotation Generation",
+        "Data Generation"
+    ],
+    "Evaluative": [
+        {
+            "SW-Entity Analysis": [
+                "Behavior Analysis",
+                {
+                    "Code Analysis": [
+                        {
+                            "Code Classification": [
+                                "Direct Code-Classification",
+                                "Rationalized Code-Classification"
+                            ]
+                        },
+                        "Code Scaling",
+                        "Line Code-Ranking"
+                    ]
+                },
+                "Task-Solution Analysis"
+            ]
+        },
+        "Text Analysis"
+    ]
+}

@@ -132,7 +132,11 @@ def write_transformations_json():
 
     with open('docs/data/transformations.json', 'w') as file:
         json.dump(problems, file, indent=2)
-    
+
+
+# taxonomy.json
+# handmade
+
 
 def parse_html():
     from bs4 import BeautifulSoup

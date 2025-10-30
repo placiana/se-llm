@@ -38,6 +38,13 @@
   border-width: 0 0 2px 2px;
 }
 
+.tree ul.cat-Generative li::before {
+  border-color: #c1e1f3;
+}
+.tree ul.cat-Generative li::after {
+  background-color: #c1e1f3;
+}
+
 .tree summary {
   display: block;
   cursor: pointer;

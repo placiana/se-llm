@@ -14,6 +14,7 @@
   
   <script src="static/include.js" defer></script>
 
+  <script src="static/data_loaders.js"></script>  
   <style>
     body {
       background: linear-gradient(135deg, #f8f9fa, #e9ecef);
@@ -56,51 +57,101 @@
   <main class="container">
 
   <h1>Transformation Taxonomy</h1>
-  <div id="categories-container">
-    <!-- Se llena con JS -->
-  </div>
 
+  <div class="row">
+    <div class="col col-md-4" id="categories-container">
+      <!-- Se llena con JS -->
+    </div>
+    <div class="col col-md-8 col-scrollable" id="task-table">
+      <!-- Se llena con JS -->
+    </div>
+  </div>
 
 </main>
 
   <script>
+    var category_colors = {
+      "Generative": "#c1e1f3",
+      "Evaluative": "#e6ecbc",
+      "Extractive": "#f3d8c1",
+      "Abstractive": "#efc6d7",
+      "Executive": "#ceb7d4",
+      "Consultative": "#acc0b8"
+    };
 
+
+  /*
+    Data format:
+    {
+    "Generative": [
+        {
+            "Code Generation": [
+                "General-Code Generation",
+                "Domain-Specific-Code Generation",
+                "Test Generation"
+            ]
+        },
+        "Annotation Generation",
+        "Data Generation"
+    ],
+    ...
+    }
+
+    */
     async function renderTree(file_url = 'tree.json', container_id = 'treeview') {
       const response = await fetch(file_url);
       const treeData = await response.json();
 
       const container = document.getElementById(container_id);
 
-      function createTree(data) {
+      function createTree(data, category = "") {
         if (!data) return '';
-        let html = '<ul class="tree">';
 
-        const sortedArray = [...data].sort((a, b) => {
-          if (typeof a === 'object' || typeof b === 'object') return 0; // no ordenar objetos
-          return String(a).localeCompare(String(b));
-        });
+        let html = '<ul class="tree cat-' + category + '">';
+        
+        for (const key in data) {
+          // if key is in category_colors, use that color
 
-        for (const node of sortedArray) {
-          if (node.children && node.children.length > 0) {
-            html += `<li>
-          <details>
-            <summary>${node.name}</summary>
-            ${createTree(node.children)}
-          </details>
-        </li>`;
+          let cat = "";
+          if (key in category_colors) {
+            subColor = category_colors[key];
+            cat = key;
+          }
+
+
+          if (Array.isArray(data[key])) {
+            html += `<li><span class="caret">${key}</span>`;
+            html += `<ul class="nested cat-${cat}">`;
+            data[key].forEach(item => {
+              if (typeof item === 'object') {
+                html += createTree(item, cat);
+              } else {
+                html += `<li>${item}</li>`;
+              }
+            });
+            html += '</ul></li>';
+          } else if (typeof data[key] === 'object') {
+            html += `<li><span class="caret">${key}</span>`;
+
+
+            html += createTree(data[key], cat);
+            html += '</li>';
           } else {
-            html += `<li>${node.name}</li>`;
+            html += `<li>${data[key]}</li>`;
           }
         }
         html += '</ul>';
         return html;
+
+        
       }
 
 
       container.innerHTML = createTree(treeData);
     }
 
-    renderTree('data/categories.json', 'categories-container');
+    renderTree('data/taxonomy.json', 'categories-container');
+    renderHTMLTaskTable('data/tasks_from_html.json', 'task-table');
   </script>
 
 </body>

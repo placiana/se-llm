@@ -34,8 +34,7 @@
     "Extractive": [
         {
             "SW-Entity Extraction": [
-                "Code-Elements Identification & Extraction",
-
+                "Code-Elements Identification & Extraction"
             ]
         },
         "Text-Elements Identification & Extraction"

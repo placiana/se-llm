@@ -113,15 +113,22 @@
           // if key is in category_colors, use that color
 
           let cat = "";
-          if (key in category_colors) {
-            subColor = category_colors[key];
-            cat = key;
+          if (category == "") {
+            if (key in category_colors) {
+              subColor = category_colors[key];
+              cat = key;
+            }
+          } else {
+            cat = category;
           }
+          
 
 
           if (Array.isArray(data[key])) {
-            html += `<li><span class="caret">${key}</span>`;
-            html += `<ul class="nested cat-${cat}">`;
+            html += '<li>';
+            //html += `<li><span class="caret">${key}</span>`;
+            html += `<details><summary class="cat-${cat}">${key}</summary>`;
+            
             data[key].forEach(item => {
               if (typeof item === 'object') {
                 html += createTree(item, cat);
@@ -129,14 +136,16 @@
                 html += `<li>${item}</li>`;
               }
             });
-            html += '</ul></li>';
+            html += '</details></li>';
           } else if (typeof data[key] === 'object') {
             html += `<li><span class="caret">${key}</span>`;
 
 
             html += createTree(data[key], cat);
+            
             html += '</li>';
           } else {
+
             html += `<li>${data[key]}</li>`;
           }
         }

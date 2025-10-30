@@ -45,6 +45,13 @@
   background-color: #c1e1f3;
 }
 
+.tree ul.cat-Evaluative li::before {
+  border-color: #e6ecbc;
+}
+.tree ul.cat-Evaluative li::after {
+  background-color: #e6ecbc;
+}
+
 .tree summary {
   display: block;
   cursor: pointer;
@@ -80,6 +87,42 @@
   z-index: 1;
   background: #696 url('expand-collapse.svg') 0 0;
 }
+
+.tree.cat-Generative summary::before {
+  z-index: 1;
+  background: #c1e1f3 url('expand-collapse.svg') 0 0;
+}
+.tree summary.cat-Generative::before {
+  z-index: 1;
+  background: #c1e1f3 url('expand-collapse.svg') 0 0;
+}
+
+
+.tree summary.cat-Evaluative::before {
+  z-index: 1;
+  background: #e6ecbc url('expand-collapse.svg') 0 0;
+}
+
+.tree summary.cat-Extractive::before {
+  z-index: 1;
+  background: #f3d8c1 url('expand-collapse.svg') 0 0;
+}
+
+.tree summary.cat-Abstractive::before {
+  z-index: 1;
+  background: #efc6d7 url('expand-collapse.svg') 0 0;
+}
+
+.tree summary.cat-Executive::before {
+  z-index: 1;
+  background: #ceb7d4 url('expand-collapse.svg') 0 0;
+}
+
+.tree summary.cat-Consultative::before {
+  z-index: 1;
+  background: #acc0b8 url('expand-collapse.svg') 0 0;
+}
+
 
 .tree details[open] > summary::before {
   background-position: calc(-2 * var(--radius)) 0;

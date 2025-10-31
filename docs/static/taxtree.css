@@ -1,0 +1,181 @@
+/* from https://iamkate.com/code/tree-views/ */
+
+.tree {
+  --spacing: 1.5rem;
+  --radius: 10px;
+}
+
+.tree li {
+  display: block;
+  position: relative;
+  padding-left: calc(2 * var(--spacing) - var(--radius) - 2px);
+  margin: 5px 0px;
+}
+
+.tree li.subtree {
+  display: block;
+  position: relative;
+  padding-left: calc(2 * var(--spacing) - var(--radius) - 2px);
+  margin: 5px 0px;
+}
+
+.tree ul {
+  margin-left: calc(var(--radius) - var(--spacing));
+  padding-left: 0;
+}
+
+.tree ul li {
+  border-left: 2px solid #ddd;
+
+}
+
+.tree ul li:last-child {
+  border-color: transparent;
+}
+
+.tree ul li.value::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: calc(var(--spacing) / -2);
+  left: -2px;
+  width: calc(var(--spacing) + 2px);
+  height: calc(var(--spacing) + 1px);
+  border: solid #ddd;
+  border-width: 0 0 2px 2px;
+}
+
+.tree ul li.sub-tree::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: calc(var(--spacing) / -2);
+  left: -2px;
+  width: calc(var(--spacing) + 2px);
+  height: calc(var(--spacing) + 1px);
+  border: solid #ddd;
+  border-width: 0 0 2px 2px;
+}
+
+
+
+.tree summary {
+  display: block;
+  cursor: pointer;
+}
+
+.tree summary::marker,
+.tree summary::-webkit-details-marker {
+  display: none;
+}
+
+.tree summary:focus {
+  outline: none;
+}
+
+.tree summary:focus-visible {
+  outline: 1px dotted #000;
+}
+
+.tree li.value::after,
+.tree summary::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: calc(var(--spacing) / 2 - var(--radius));
+  left: calc(var(--spacing) - var(--radius) - 1px);
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
+  border-radius: 50%;
+  background: #ddd;
+}
+
+.tree summary::before {
+  z-index: 1;
+  background: #696 url('expand-collapse.svg') 0 0;
+}
+
+.tree ul.cat-Generative li::before {
+  border-color: #c1e1f3;
+}
+.tree ul.cat-Generative li::after {
+  background-color: #c1e1f3;
+}
+
+.tree ul.cat-Evaluative li::before {
+  border-color: #e6ecbc;
+}
+.tree ul.cat-Evaluative li::after {
+  background-color: #e6ecbc;
+}
+
+
+.tree ul.cat-Extractive li::after {
+  background-color: #f3d8c1;
+}
+.tree ul.cat-Extractive li::before {
+  border-color: #f3d8c1;
+}
+.tree ul.cat-Abstractive li::after {
+  background-color: #efc6d7;
+}
+.tree ul.cat-Abstractive li::before {
+  border-color: #efc6d7;
+}
+.tree ul.cat-Executive li::after {
+  background-color: #ceb7d4;
+}
+.tree ul.cat-Executive li::before {
+  border-color: #ceb7d4;
+}
+.tree ul.cat-Consultative li::after {
+  background-color: #acc0b8;
+}
+.tree ul.cat-Consultative li::before {
+  border-color: #acc0b8;
+}
+
+
+.tree.cat-Generative summary::before {
+  z-index: 1;
+  background: #c1e1f3 url('expand-collapse.svg') 0 0;
+}
+.tree summary.cat-Generative::before {
+  z-index: 1;
+  background: #c1e1f3 url('expand-collapse.svg') 0 0;
+}
+
+
+.tree summary.cat-Evaluative::before {
+  z-index: 1;
+  background: #e6ecbc url('expand-collapse.svg') 0 0;
+}
+
+.tree summary.cat-Extractive::before {
+  z-index: 1;
+  background: #f3d8c1 url('expand-collapse.svg') 0 0;
+}
+
+.tree summary.cat-Abstractive::before {
+  z-index: 1;
+  background: #efc6d7 url('expand-collapse.svg') 0 0;
+}
+
+.tree summary.cat-Executive::before {
+  z-index: 1;
+  background: #ceb7d4 url('expand-collapse.svg') 0 0;
+}
+
+.tree summary.cat-Consultative::before {
+  z-index: 1;
+  background: #acc0b8 url('expand-collapse.svg') 0 0;
+}
+
+
+.tree details[open] > summary::before {
+  background-position: calc(-2 * var(--radius)) 0;
+}
+
+.tree li.sub-tree  {
+  padding-left: calc(var(--spacing) - var(--radius) - 2px);
+}

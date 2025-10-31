@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Transformation Taxonomy - Tasks People Prompt</title>
-  <link rel="stylesheet" href="static/tree.css">
+  <link rel="stylesheet" href="static/taxtree.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/bitmaks/cm-web-fonts@latest/fonts.css">
   <link rel="stylesheet" type="text/css"
     href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
@@ -69,6 +69,53 @@
 
 </main>
 
+<script>
+
+
+function cTree(data, category="") {
+  
+  
+  
+  html = '';
+  if (typeof data === 'object') {
+    html += '<ul class="tree">'
+    for (const key in data) {
+      if (category === "" && key in category_colors) {
+        category = key;
+      }
+
+
+
+      html += `<li><details><summary class="cat-${category}">${key}</summary>`;
+
+      value = data[key];
+      if (Array.isArray(value)) {
+        html += '<ul class="tree cat-' + category + '">';
+        value.forEach(item => {
+          if (typeof item === 'object') {
+            html += '<li class="sub-tree">' + cTree(item, category) + '</li>';
+          } else {
+            html += `<li class="value">${item}</li>`;
+          }
+          
+        });
+
+        html += '</ul>';
+      }
+
+      html += '</details></li>';
+      category = "";
+    }
+    html +=  '</ul>';
+  }
+
+  return html;
+}
+
+</script>
+
+
+
   <script>
     var category_colors = {
       "Generative": "#c1e1f3",
@@ -105,58 +152,60 @@
       const container = document.getElementById(container_id);
 
       function createTree(data, category = "") {
-        if (!data) return '';
+        if (data == null) return '';
 
-        let html = '<ul class="tree cat-' + category + '">';
-        
-        for (const key in data) {
-          // if key is in category_colors, use that color
+        const classAttr = category ? ' class="tree cat-' + category + '"' : ' class="tree"';
+        let html = '<ul' + classAttr + '>';
 
-          let cat = "";
-          if (category == "") {
-            if (key in category_colors) {
-              subColor = category_colors[key];
-              cat = key;
+        // If data is an array, render each item (string or nested object)
+        if (Array.isArray(data)) {
+          data.forEach(item => {
+            if (typeof item === 'string') {
+              html += `<li>${item}</li>`;
+            } else if (typeof item === 'object') {
+              html += createTree(item, category);
             }
-          } else {
-            cat = category;
+          });
+        } else if (typeof data === 'object') {
+          for (const key in data) {
+            if (!Object.prototype.hasOwnProperty.call(data, key)) continue;
+            const value = data[key];
+
+            // Determine category for coloring: top-level keys that match category_colors become the category
+            let currentCategory = category;
+            if (!category && key in category_colors) {
+              currentCategory = key;
+            }
+
+            if (Array.isArray(value)) {
+              const summaryClass = currentCategory ? ` class="cat-${currentCategory}"` : '';
+              html += `<li><details><summary${summaryClass}>${key}</summary>`;
+              html += '<ul>';
+              value.forEach(child => {
+                if (typeof child === 'string') {
+                  html += `<li>${child}</li>`;
+                } else if (typeof child === 'object') {
+                  treeHtml= createTree(child, currentCategory);
+                  html += treeHtml;
+                }
+              });
+              html += '</ul></details></li>';
+            } else if (typeof value === 'object') {
+              html += `<li>${key}` + createTree(value, currentCategory) + '</li>';
+            } else {
+              html += `<li>${value}</li>`;
+            }
           }
-          
-
-
-          if (Array.isArray(data[key])) {
-            html += '<li>';
-            //html += `<li><span class="caret">${key}</span>`;
-            html += `<details><summary class="cat-${cat}">${key}</summary>`;
-            
-            data[key].forEach(item => {
-              if (typeof item === 'object') {
-                html += createTree(item, cat);
-              } else {
-                html += `<li>${item}</li>`;
-              }
-            });
-            html += '</details></li>';
-          } else if (typeof data[key] === 'object') {
-            html += `<li><span class="caret">${key}</span>`;
-
-
-            html += createTree(data[key], cat);
-            
-            html += '</li>';
-          } else {
-
-            html += `<li>${data[key]}</li>`;
-          }
+        } else {
+          html += `<li>${data}</li>`;
         }
+
         html += '</ul>';
         return html;
-
-        
       }
 
 
-      container.innerHTML = createTree(treeData);
+      container.innerHTML = cTree(treeData);
     }
 
     renderTree('data/taxonomy.json', 'categories-container');

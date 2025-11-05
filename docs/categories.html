@@ -19,6 +19,12 @@
     body {
       background: linear-gradient(135deg, #f8f9fa, #e9ecef);
       font-family: "Computer Modern Sans", sans-serif;
+
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+
+
     }
 
     .navbar {
@@ -40,7 +46,24 @@
     main {
         padding: 4rem 1rem;
     }
-  </style>
+
+    main.container-fluid {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    
+    .col-scrollable {
+      height: 90%;
+      overflow: auto;
+      border: 1px solid #ccc;
+    }
+
+
+
+</style>
 
 </head>
 
@@ -54,7 +77,7 @@
 
   </header>
 
-  <main class="container">
+  <main class="container-fluid">
 
   <h1>Transformation Taxonomy</h1>
 
@@ -73,9 +96,6 @@
 
 
 function cTree(data, category="") {
-  
-  
-  
   html = '';
   if (typeof data === 'object') {
     html += '<ul class="tree">'
@@ -83,8 +103,6 @@ function cTree(data, category="") {
       if (category === "" && key in category_colors) {
         category = key;
       }
-
-
 
       html += `<li><details><summary class="cat-${category}">${key}</summary>`;
 
@@ -126,25 +144,6 @@ function cTree(data, category="") {
       "Consultative": "#acc0b8"
     };
 
-
-  /*
-    Data format:
-    {
-    "Generative": [
-        {
-            "Code Generation": [
-                "General-Code Generation",
-                "Domain-Specific-Code Generation",
-                "Test Generation"
-            ]
-        },
-        "Annotation Generation",
-        "Data Generation"
-    ],
-    ...
-    }
-
-    */
     async function renderTree(file_url = 'tree.json', container_id = 'treeview') {
       const response = await fetch(file_url);
       const treeData = await response.json();
@@ -206,11 +205,83 @@ function cTree(data, category="") {
 
 
       container.innerHTML = cTree(treeData);
+
+      addEventListeners();
+
     }
 
     renderTree('data/taxonomy.json', 'categories-container');
     renderHTMLTaskTable('data/tasks_from_html.json', 'task-table');
+
+    const tasks = {};
+    async function readTaskData(filename) {
+      const response = await fetch(filename);
+      const taskData = await response.json();
+      tasks['data'] = taskData;      
+    }
+
+    readTaskData('data/tasks.json');
+
   </script>
+
+
+<script>
+
+
+  function addEventListeners() {
+    const listItems = document.querySelectorAll('li.value');
+
+    listItems.forEach(item => {
+      item.addEventListener('click', function() {
+          const taskName = event.target.textContent;
+          if (event.target.classList.contains('selected-task')) {
+            // unselect
+            event.target.style.backgroundColor = '';
+            event.target.classList.remove('selected-task');
+
+            const tableValues = document.querySelectorAll('.table-value');
+            tableValues.forEach(tv => {
+              tv.style.backgroundColor = '';
+              tv.style.display = 'block';
+            });
+
+            return;
+          } else {
+            // clean previous selection
+            const previousSelected = document.querySelectorAll('.selected-task');
+            previousSelected.forEach(ps => {
+              ps.style.backgroundColor = '';
+              ps.classList.remove('selected-task');
+            });
+
+            event.target.style.backgroundColor = 'yellow';
+            event.target.classList.add('selected-task');
+
+            taskData = tasks['data'];
+            //filter objects with LLM-Downstream Task Class-clean
+            const filteredTasks = taskData.filter(t => t['LLM-Downstream Task Class-clean'] === taskName);
+            console.log(filteredTasks);
+
+            const tableValues = document.querySelectorAll('.table-value');
+            tableValues.forEach(tv => {
+              tv.style.backgroundColor = '';
+              tv.style.display = 'none';
+              // if tv's data-name is in filteredTasks, highlight it
+              const tvName = tv.getAttribute('data-name');
+              const match = filteredTasks.find(t => t['Nick'] === tvName);
+              if (match) {
+                tv.style.backgroundColor = 'yellow';
+                tv.style.display = 'block';
+              }
+
+            });
+          }
+
+      });
+    });
+
+  }
+</script>
 
 </body>
 

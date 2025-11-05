@@ -56,6 +56,11 @@ def get_tasks_from_csv(csv_filename):
     df = pd.read_csv(csv_filename)
     df['Name'] = df['Task Name'].str.split('{').str[1].str.removesuffix('}')
     df['Nick'] = df['Task Id'].str.split('_').str[0]
+
+    # keep substring after first -
+    df['LLM-Task Category-clean'] = df['LLM-Task Category'].str.split('-').str[1:].str.join('-').str.strip()
+    df['LLM-Downstream Task Class-clean'] = df['LLM-Downstream Task Class'].str.split('-').str[1:].str.join('-').str.strip()
+
     # Remove columns
     df = df.drop(['Unnamed: 0', 'Unnamed: 5', 'Multi-class? def: Binary', 'Openness of labels set','Multi-label? def: Single-label', 'Soft (probability)? def: Hard', 'Granularity', 'Explained?', 'Type of question wrt Vuls'], axis=1)
 

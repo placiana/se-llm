@@ -237,27 +237,6 @@ async function renderTreeAlt(file_url = 'tree.json', container_id = 'treeview') 
 async function renderHTMLTaskTable(file_url = 'tasks.json', container_id = 'task-table') {
   const response = await fetch(file_url);
   const tableData = await response.json();
-  /*
-  table data looks like a list of:
-
-  [
-  {
-    "description": "Table 1: SE task: Testing.",
-    "rows": [
-      {
-        "SE Problem": "Unit-Test Generation",
-        "LLM Downstream Tasks": [
-          {
-            "task": "TestGen-LLM",
-            "text": "[4] : existing unit test class (UTC) + tested class id \u2192 \u27e8CoverageAugmenting-Test-Extension\u27e9 \u2192 extended UTC."
-          },
-          {
-            "task": "FSML",
-            "text": "[6] : list helper meths + meth under test \u2192 \u27e8Test-Generation\u27e9 \u2192 (test) + [Few-Shot]."
-          },
-          ...
-
-  */
 
   tableData.forEach(table => {
     const container = document.getElementById(container_id);
@@ -306,6 +285,10 @@ async function renderHTMLTaskTable(file_url = 'tasks.json', container_id = 'task
         const ul = document.createElement('ul');
         row["LLM Downstream Tasks"].forEach(task => {
           const li = document.createElement('li');
+
+          // add attribute data-name to li
+          li.setAttribute('data-name', task.task);
+          li.classList.add('table-value');
           
           task_text_colored = task.text;
 
@@ -334,6 +317,8 @@ async function renderHTMLTaskTable(file_url = 'tasks.json', container_id = 'task
         const ul = document.createElement('ul');
         row["Architectural Notes"].forEach(note => {
             const li = document.createElement('li');
+            li.setAttribute('data-name', note.task);
+            li.classList.add('table-value');
             li.innerHTML = `<strong>${note.task}</strong>: ${note.text}`;
             ul.appendChild(li);
           });

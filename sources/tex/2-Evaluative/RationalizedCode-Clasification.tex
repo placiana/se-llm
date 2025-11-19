@@ -1,0 +1,125 @@
+\documentclass[border=0.2cm,10pt]{standalone}
+ 
+
+\input{drawshead2}
+
+
+
+%blue, teal, cyan, green, lime, yellow, pink, white, lightgray, gray, darkgray, black, olive, brown, orange, red, purple, magenta and violet
+ 
+\begin{document}
+ 
+
+
+\begin{tikzpicture}[tasktree]
+ 
+\node [draw,limaA] {\textbf{Rationalized\phantom{j}Code-Classification}}
+    child [missing] {}
+    child [limaA] {node {Analysis criteria}
+        child [limaA] {node [darkgray] {Vulnerability proneness:  \vmf{EditTime}{3}, \vmf{EditTime}{4}, \vmf{SmartAudit}{2}, \vmf{SmartAudit}{3}, }
+            child [white] {node [darkgray] {\phantom{lerability proneness:} \vmfU{VulBench}, \vmf{GPTLens}{1},  \vmf{VulDetect}{1}, \vmf{VulDetect}{2},  }}
+            child [white] {node [darkgray] {\phantom{lerability proneness:} \static{LATTE}{4}, \vmf{VSP}{1}, \vmf{VSP}{2},  \vmf{LLM4Vuln}{3},  }}
+            child [white] {node [darkgray] {\phantom{lerability proneness:}  \vmf{LLM4Vuln}{3w/PreCoT}, \vmf{LLM4Vuln}{3w/PostCoT}, \vmf{DLAP}{3} }}
+            child [limaA] {node [darkgray] {Null-dereference: \static{SkipAnalyzer}{1}}}
+            child [limaA] {node [darkgray] {Leak presence: \static{SkipAnalyzer}{2}}}
+            child [limaA] {node [darkgray] {Data-flow CWI: \vmf{VulDetect}{3} \phantom{j}}}
+            child [limaA] {node [darkgray] {Entity inconsistency: \vmf{WitheredLeaf}{1}}}
+        edge from parent}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [limaA] {node [darkgray] {Malware proneness:  \nvmf{Sleuth}{2} }}
+        child [limaA] {node [darkgray] {Fixability analysis}
+            child [limaA] {node [darkgray] {Rename: \vmf{WitheredLeaf}{3}}} 
+        edge from parent}  
+    edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [limaA] {node {Nature of classification \phantom{j}}
+        child [limaA] {node {Multiplicity}
+            child [limaA] {node [darkgray] {OneClass (Binary): \vmf{EditTime}{3}, \vmf{EditTime}{4}, \vmf{WitheredLeaf}{1}, }}
+            child [white] {node [darkgray] {\phantom{OneClass (Binary):} \vmf{WitheredLeaf}{3}, \static{SkipAnalyzer}{1}, \static{SkipAnalyzer}{2}, }}
+            child [white] {node [darkgray] {\phantom{OneClass (Binary):} \vmf{VSP}{2}, \nvmf{Sleuth}{2}, \vmf{DLAP}{3} }}
+            child [limaA] {node [darkgray] {MultiLabel \phantom{Ag}}   
+                    child  [limaA] {node [darkgray] {Open-ended:  \vmf{SmartAudit}{2}, \vmf{SmartAudit}{3},  \vmf{GPTLens}{1},   }}
+                    child [limaA] {node [darkgray] {Close-ended: \vmf{ChatGPTSCV}{1},  \vmfU{VulBench}, \vmf{VulDetect}{1}, \vmf{VulDetect}{2}, } 
+                        child [white,draw opacity=0] {node [darkgray] {\phantom{le-endedi} \vmf{VulDetect}{3}, \static{LATTE}{4},  \vmf{VSP}{1}, }}
+                        child [limaA] {node [darkgray] {In-context defined classes: \vmf{LLM4Vuln}{3}, \vmf{LLM4Vuln}{3w/PreCoT}, }}
+                        child [white,draw opacity=0] {node [darkgray] {\phantom{In-context defined classes:} \vmf{LLM4Vuln}{3w/PostCoT} }}
+                    edge from parent}
+                edge from parent}
+        edge from parent}
+    edge from parent}   
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [limaA] {node {Analysis granularity}
+        child [limaA] {node [darkgray] {Snippet:
+\vmf{EditTime}{3}, \vmf{EditTime}{4}, \vmf{ChatGPTSCV}{1}, \vmf{SmartAudit}{2}, }}
+child [white] {node [darkgray] {\phantom{Snippet:} \vmf{SmartAudit}{3},  \vmfU{VulBench}, \vmf{GPTLens}{1}, \vmf{VulDetect}{1}, }}
+            child [white] {node [darkgray] {\phantom{Snippet:} \vmf{VulDetect}{2}, \vmf{VulDetect}{3}, \static{LATTE}{4},  \static{SkipAnalyzer}{1}, }} 
+            child [white] {node [darkgray] {\phantom{Snippet:} \static{SkipAnalyzer}{2}, \vmf{VSP}{1}, \vmf{VSP}{2}, \vmf{LLM4Vuln}{3},  }}
+            child [white] {node [darkgray] {\phantom{Snippet:} 
+ \vmf{LLM4Vuln}{3w/PreCoT}, \vmf{LLM4Vuln}{3w/PostCoT}, \vmf{DLAP}{3} }}
+        child [limaA] {node [darkgray] {Line: \vmf{WitheredLeaf}{1}, \vmf{WitheredLeaf}{3} }}  
+    edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [limaA] {node {Extra input}
+        child [limaA] {node [darkgray] {Code intent: \vmf{SmartAudit}{3}, \vmf{LLM4Vuln}{3w/PreCoT}, \nvmf{Sleuth}{2}}}
+        child [limaA] {node [darkgray] {Taint-info: \static{LATTE}{4}}}
+        child [limaA] {node [darkgray] {Review guidance: \vmf{DLAP}{3}}}
+    edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+        child [limaA] {node {Corrective mode \phantom{Ag}}
+        child [limaA] {node [darkgray] {Self-validation: \vmf{VulDetect}{3} \phantom{Ag}}}
+    edge from parent}
+    child [missing] {}
+    child [limaA] {node {Reactivity}
+        child [limaA] {node [darkgray] {Request further information: \vmf{LLM4Vuln}{3}, \vmf{LLM4Vuln}{3w/PreCoT}, }} 
+        child [white,draw opacity=0] {node [darkgray] {\phantom{Request further information:} \vmf{LLM4Vuln}{3w/PostCoT}}}
+    edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [limaA] {node {Rationalization \phantom{j}}
+        child [limaA] {node [darkgray] {Assessment/description: \vmf{ChatGPTSCV}{1}, \vmf{VulDetect}{1}, \vmf{VulDetect}{2}, }} 
+        child [white,draw opacity=0] {node [darkgray] {\phantom{Assessment/description:} \vmf{VulDetect}{3}, \static{LATTE}{4}, \static{SkipAnalyzer}{1}, }}
+        child [white,draw opacity=0] {node [darkgray] {\phantom{Assessment/description:} \static{SkipAnalyzer}{2},  \vmf{VSP}{2}}}
+        child [limaA] {node [darkgray] {Thought step by step: \vmf{ChatGPTSCV}{1}, \vmfU{VulBench},  \static{SkipAnalyzer}{1}, }}
+        child [white,draw opacity=0] {node [darkgray, draw opacity=1] {\phantom{Thought step by step:} \static{SkipAnalyzer}{2}, \vmf{VSP}{1}, \vmf{VSP}{2}, \nvmf{Sleuth}{2}}}
+        child [limaA] {node [darkgray] {Reason: \vmf{GPTLens}{1}, \vmf{VulDetect}{1}, \vmf{VulDetect}{2}, \vmf{VulDetect}{3}, }}
+        child [white,draw opacity=0] {node [darkgray] {\phantom{Reason:} \vmf{LLM4Vuln}{3}, \vmf{LLM4Vuln}{3w/PreCoT}, \vmf{LLM4Vuln}{3w/PostCoT},}} 
+        child [white,draw opacity=0] {node [darkgray] {\phantom{Reason:} \vmf{DLAP}{3} }}
+        child [limaA] {node [darkgray] {Fix: \vmf{WitheredLeaf}{3}, (\vmf{SmartAudit}{3}), \vmf{LLM4Vuln}{3w/PostCoT}}}
+        child [limaA] {node [darkgray] {Exploit: \vmf{LLM4Vuln}{3w/PostCoT}}}
+    edge from parent};
+\end{tikzpicture}
+ 
+ 
+\end{document}

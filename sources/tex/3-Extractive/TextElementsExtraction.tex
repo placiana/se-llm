@@ -1,0 +1,63 @@
+\documentclass[border=0.2cm,10pt]{standalone}
+
+\input{drawshead2}
+
+\begin{document}
+
+\begin{tikzpicture}[tasktree]
+
+ 
+\node [draw,naranjaC] {\textbf{Text-Elements\phantom{j}Identification \& 
+ Extraction}}
+    child [missing] {}
+    child [naranjaC] {node {Extraction criteria\phantom{j}}
+        child [naranjaC] {node [darkgray] {Defined role\phantom{j}}
+            child [naranjaC] {node [darkgray] {Keywords: \debugU{Cupid}}}
+            child [naranjaC] {node [darkgray] {Variable names: \testingU{MetaMorph}}}
+            child [naranjaC] {node [darkgray] {FSM-elements: \testingU{PROSPER}}}
+            child [naranjaC] {node [darkgray] {Topic related sentences}
+                child [naranjaC] {node [darkgray] {I/O: \testing{EMR}{1}}}
+            edge from parent}
+            child [missing] {}
+        edge from parent}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [naranjaC] {node [darkgray] {Best fit \phantom{j}}
+            child [naranjaC] {node [darkgray] {Defined structure: \ndebug{FAIL}{5}, \debug{AdbGPT}{1}, \testing{SysKG-UTF}{1}}}
+            child [naranjaC] {node [darkgray] {Defined option: \ndebug{FAIL}{8}}}
+            child [naranjaC] {node [darkgray] {Input property}
+                child [naranjaC] {node [darkgray] {Common root cause: \debug{RCACopilot}{2}}}
+            edge from parent}
+        edge from parent}
+    edge from parent}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [naranjaC] {node {Nature of text \phantom{Ag}}
+            child [naranjaC] {node [darkgray] {RFC: \testingU{PROSPER} \phantom{j}}}
+            child [naranjaC] {node [darkgray] {Options list: \debug{RCACopilot}{2}}}
+        edge from parent}
+        child [missing] {}
+        child [missing] {}
+        child [naranjaC] {node {Literality}
+            child [naranjaC] {node [darkgray] {Literal: \ndebug{FAIL}{5}, \testing{EMR}{1}, \testing{SysKG-UTF}{1}, \testingU{MetaMorph}, \debugU{Cupid}}}
+            child [naranjaC] {node [darkgray] {Transformative\phantom{j}}
+                child [naranjaC] {node [darkgray] {Closest meaning: \debug{AdbGPT}{1}}}
+            edge from parent}
+        edge from parent}
+    child [missing] {};
+\end{tikzpicture}
+ 
+  
+\end{document}

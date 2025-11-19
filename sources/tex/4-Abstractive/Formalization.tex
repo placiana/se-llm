@@ -1,0 +1,48 @@
+\documentclass[border=0.2cm,10pt]{standalone}
+ 
+
+\input{drawshead2}
+
+
+
+%blue, teal, cyan, green, lime, yellow, pink, white, lightgray, gray, darkgray, black, olive, brown, orange, red, purple, magenta and violet
+ 
+\begin{document}
+
+
+\begin{tikzpicture}[tasktree]
+ 
+\node [draw,fucsiaC] {\textbf{Formalization}\phantom{j}}
+    child [missing] {}
+    child [fucsiaC] {node {Abstraction criteria\phantom{j}}
+        child [fucsiaC] {node [darkgray] {Intent/Comment corresponding: \testingU{nl2postcondition}, \progver{Clover}{6}, }}  child [white] {node [darkgray] {\phantom{Intent/Comment corresponding:}  \progver{RustProof}{1}, \nprogverUD{RustC4}{RustC$^{\text{4}}$}}}
+        child [fucsiaC] {node [darkgray] {Precondition corresponding: \progver{RustProof}{1}}}
+        child [fucsiaC] {node [darkgray] {Code corresponding: \progver{RustProof}{1}}}
+    edge from parent}
+    child [missing] {} 
+    child [missing] {} 
+    child [missing] {} 
+    child [missing] {}        
+    child [fucsiaC] {node {Nature of formalization\phantom{j}}
+            child [fucsiaC] {node [darkgray] {State-predicate}
+                child [fucsiaC] {node [darkgray] {Postcondition: \testingU{nl2postcondition},  \progver{Clover}{6}, \progver{RustProof}{1}}} 
+                child [fucsiaC] {node [darkgray] {Precondition:  \progver{Clover}{6}}}
+                child [fucsiaC] {node [darkgray] {Assertion: \nprogverUD{RustC4}{RustC$^{\text{4}}$}}}
+            edge from parent}
+        edge from parent}
+        child [missing] {} 
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+    child [fucsiaC] {node {In-filling context}
+        child [fucsiaC] {node [darkgray] {Annotated code: \progver{Clover}{6}, \progver{RustProof}{1}}}
+    edge from parent}
+    child [missing] {}
+    child [fucsiaC] {node {Corrective mode\phantom{j}}
+        child [fucsiaC] {node [darkgray] {Feedback based\phantom{j}}
+            child [fucsiaC] {node [darkgray] {Compiler: \progver{Clover}{6}}}
+        edge from parent}
+    edge from parent};
+\end{tikzpicture}
+     
+\end{document}

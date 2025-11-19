@@ -1,0 +1,42 @@
+\documentclass[border=0.2cm,10pt]{standalone}
+ 
+
+\input{drawshead2}
+ 
+\begin{document}
+
+ \begin{tikzpicture}[tasktree]
+
+ 
+\node [draw,purpuraA] {\textbf{What-to-do-Next\phantom{j}Generation}}
+        child [missing] {}
+        child [purpuraA] { node {Generation criteria\phantom{j}}
+            child [purpuraA] {node [darkgray] {Most promising: \testing{PentestGPT}{5}}}
+            child [purpuraA] {node [darkgray] {Coverage oriented: \testing{GPTDroid}{1}}}
+            child [purpuraA] {node [darkgray] {Reachability oriented: \testingD{pwnd}{Pwn'd}{2}, \debug{CrashTranslator}{1}, \debug{CrashTranslator}{2}}}
+        edge from parent}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [purpuraA] { node {Domain\phantom{j}}
+            child [purpuraA] {node [darkgray] {SW-system integration: \testing{PentestGPT}{5}, \testingD{pwnd}{Pwn'd}{2}, \debug{CrashTranslator}{1}, }}
+            child [white,draw opacity=0] {node [darkgray] {\phantom{SW-system integration:} 
+            \debug{CrashTranslator}{2}, \testing{GPTDroid}{1} }}
+        edge from parent}
+        child [missing] {}     
+        child [missing] {}     
+        child [purpuraA] {node {Nature of options}
+            child [purpuraA] {node [darkgray] {Open-ended: \testingD{pwnd}{Pwn'd}{2}, \debug{CrashTranslator}{1}, \testing{GPTDroid}{1} }}
+            child [purpuraA] {node [darkgray] {Close-ended: \testing{PentestGPT}{5}, \debug{CrashTranslator}{2}}}
+        edge from parent}        
+        child [missing] {}
+        child [missing] {}
+        child [purpuraA] {node {Given context\phantom{j}}
+            child [purpuraA] {node [darkgray] {Enclosing plan: \testing{PentestGPT}{5}}}
+            child [purpuraA] {node [darkgray] {Dynamic annotation: \testing{GPTDroid}{1}}}
+            child [purpuraA] {node [darkgray] {GUI context: \debug{CrashTranslator}{1}, \debug{CrashTranslator}{2}, \testing{GPTDroid}{1}}}
+        edge from parent};
+\end{tikzpicture}
+
+\end{document}
+

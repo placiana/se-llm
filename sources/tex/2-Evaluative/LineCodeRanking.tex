@@ -1,0 +1,37 @@
+\documentclass[border=0.2cm,10pt]{standalone}
+ 
+
+\input{drawshead2}
+
+
+
+%blue, teal, cyan, green, lime, yellow, pink, white, lightgray, gray, darkgray, black, olive, brown, orange, red, purple, magenta and violet
+ 
+\begin{document}
+
+ 
+\begin{tikzpicture}[tasktree]
+
+\node [draw,limaA] {\textbf{Line Code-Ranking}}
+    child [missing] {}
+    child [limaA] {node {Analysis criteria}
+            child [limaA] {node [darkgray] {Fault proneness: \vmf{ChatGPT4vul}{2}, \debug{ChatGPT-4(Log)}{1}, \debug{ChatGPT-4(Log)}{2}}}
+    edge from parent}
+    child [missing] {}
+    child [limaA] {node {Extra input}
+            child [limaA] {node [darkgray] {Intent: \debug{ChatGPT-4(Log)}{1}, \debug{ChatGPT-4(Log)}{2}}}
+    edge from parent}
+    child [missing] {}
+    child [limaA] {node {Corrective mode}
+            child [limaA] {node [darkgray] {Test results: \debug{ChatGPT-4(Log)}{2}}}
+    edge from parent}
+    child [missing] {}
+    child [limaA] {node {Rationalization}
+            child [limaA] {node [darkgray] {Intent: \debug{ChatGPT-4(Log)}{1}, \debug{ChatGPT-4(Log)}{2}}}
+            child [limaA] {node [darkgray] {Reason: \debug{ChatGPT-4(Log)}{1}, \debug{ChatGPT-4(Log)}{2}}}
+    edge from parent};
+\end{tikzpicture}
+
+
+ 
+\end{document}

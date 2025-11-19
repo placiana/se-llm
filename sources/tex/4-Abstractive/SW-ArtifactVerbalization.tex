@@ -1,0 +1,83 @@
+\documentclass[border=0.2cm,10pt]{standalone}
+ 
+
+\input{drawshead2}
+ 
+\begin{document}
+
+
+
+\begin{tikzpicture}[tasktree]
+ 
+\node [draw,fucsiaC] {\textbf{SW-Entity\phantom{j}Verbalization}}
+    child [missing] {}
+    child [fucsiaC] {node {Abstraction criteria \phantom{Ag}}
+            child [fucsiaC] {node [darkgray] {Summary: \testing{PentestGPT}{8}, \vmf{LLM4Vuln}{1},  \ntesting{HITS}{1}\phantom{Ag}}}
+            child [fucsiaC] {node [darkgray] {Intent: \vmf{SmartAudit}{3(CoT)}, \testing{DiffPrompt}{1}, \progver{Clover}{4}, \progver{Clover}{7}, }}
+            child [white] {node [darkgray] {\phantom{Intent:} \vmf{LLM4Vuln}{1},   \vmf{LLM4Vuln}{3(PreCoT)}, \vmf{LLMAPIDet}{1}, \vmf{LLMAPIDet}{2},  \phantom{Ag}}} 
+            child [white] {node [darkgray] {\phantom{Intent:}  \debug{ChatGPT-4(Log)}{1(CoT)}, \progver{RustProof}{1(CoT)},}} 
+            child [white] {node [darkgray] {\phantom{Intent:} \testing{ChatTESTER}{1}, \vmf{PromptEnhanced}{1}  \phantom{Ag}}}
+            child [fucsiaC] {node [darkgray] {Explanation: \testing{SELF-DEBUGGING}{OP1}, \testing{SELF-DEBUGGING}{OP3}, \nvmf{Skyeye}{2}}}
+            child [white] {node [darkgray] {\phantom{Explanation:} \nvmf{Sleuth}{1}, \progver{RustProof}{1(CoT)}, \progver{RustProof}{2(CoT)} \phantom{Ag}}}
+            child [fucsiaC] {node [darkgray] {Differences: \testing{ClarifyGPT}{3}}}
+            child [fucsiaC] {node [darkgray] {Problem solving steps:  \ntesting{HITS}{3}\phantom{Ag}}}
+        edge from parent}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [fucsiaC] {node {Nature of input entity \phantom{Ag}}
+            child [fucsiaC] {node [darkgray] {Intent: \testing{PentestGPT}{8} \phantom{Ag}}}
+            %child [fucsiaC] {node [darkgray] {Usage: \testing{Fuzz4All}{1} \phantom{Ag}}}
+            child [fucsiaC] {node [darkgray] {Code: \testing{SELF-DEBUGGING}{OP1}, \testing{SELF-DEBUGGING}{OP3}, }
+            child [white] {node [darkgray] {\phantom{e:} \vmf{SmartAudit}{3(CoT)}, \testing{DiffPrompt}{1}, \testing{ClarifyGPT}{3}, \vmf{LLM4Vuln}{1}, }} 
+                child [white] {node [darkgray] {\phantom{e:}    \vmf{LLM4Vuln}{3(PreCoT)}, \ntesting{HITS}{1}, \ntesting{HITS}{3}, \nvmf{Sleuth}{1}, }}
+                child [white] {node [darkgray] {\phantom{e:} \debug{ChatGPT-4(Log)}{1(CoT)}, \testing{ChatTESTER}{1}, \vmf{PromptEnhanced}{1}  \phantom{Ag}}}
+                child [fucsiaC] {node [darkgray] {Commit: \nvmfU{VulAdvisor} }}
+                child [fucsiaC] {node [darkgray] {Annotated: \progver{Clover}{4}, \progver{RustProof}{1(CoT)}, \progver{RustProof}{2(CoT)} \phantom{Ag}}}       
+            edge from parent}
+            child [missing] {}
+            child [missing] {}
+            child [missing] {}
+            child [missing] {}
+            child [missing] {}
+            child [fucsiaC] {node [darkgray] {Call sequences: \nvmf{Skyeye}{2} \phantom{Ag}}}
+            child [fucsiaC] {node [darkgray] {Report: \vmf{LLM4Vuln}{1} \phantom{Ag}}}
+            child [fucsiaC] {node [darkgray] {Testing outputs: \testing{PentestGPT}{8}}}
+            child [fucsiaC] {node [darkgray] {Assertion: \progver{Clover}{7} \phantom{Ag}}
+                child [fucsiaC] {node [darkgray] {Precondition: \progver{RustProof}{1(CoT)}, \progver{RustProof}{2(CoT)} \phantom{Ag}}}
+                child [fucsiaC] {node [darkgray] {Postcondition: \progver{RustProof}{2(CoT)} \phantom{Ag}}}
+            edge from parent}
+            child [missing] {}
+            child [missing] {}
+            child [fucsiaC] {node [darkgray] {Change action: \vmf{LLMAPIDet}{1} \phantom{Ag}}}
+        edge from parent}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [fucsiaC] {node {Extra input\phantom{Ag}}
+            child [fucsiaC] {node [darkgray] {Execution: \testing{SELF-DEBUGGING}{OP3} \phantom{Ag}}}
+            child [fucsiaC] {node [darkgray] {Attack type: \nvmf{Skyeye}{2} \phantom{Ag}}}
+            child [fucsiaC] {node [darkgray] {Data flow: \nvmf{Sleuth}{1} \phantom{Ag}}}
+        edge from parent};
+\end{tikzpicture}
+
+  
+  
+\end{document}

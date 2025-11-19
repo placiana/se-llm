@@ -1,0 +1,65 @@
+\documentclass[border=0.2cm,10pt]{standalone}
+ 
+
+\input{drawshead2}
+
+
+
+%blue, teal, cyan, green, lime, yellow, pink, white, lightgray, gray, darkgray, black, olive, brown, orange, red, purple, magenta and violet
+ 
+\begin{document}
+
+
+\begin{tikzpicture}[tasktree]
+ 
+\node [draw,fucsiaC] {\textbf{Focused-Abstractive\phantom{j}Summarization}}
+    child [missing] {}
+    child [fucsiaC] {node {Abstraction criteria\phantom{j}}
+        child [fucsiaC] {node [darkgray] {Sign of answer: \debug{LM-PACE}{2}}}
+        child [fucsiaC] {node [darkgray] {Scaled assessment: \debug{LM-PACE}{4}}}
+        child [fucsiaC] {node [darkgray] {Concept extraction}
+            child [fucsiaC] {node [darkgray] {Usage: \testing{Fuzz4All}{1}, \ndebug{FAIL}{3}}}
+            child [fucsiaC] {node [darkgray] {Failure described: \testing{GameBugDescriptions}{2}}}
+            child [fucsiaC] {node [darkgray] {Faulty culprit: \debug{AutoFL}{2}}}
+            child [fucsiaC] {node [darkgray] {Vulnerability described: \vmf{ChatGPTSCV}{2}}}
+            child [fucsiaC] {node [darkgray] {Vulnerability mechanism/vector described: \vmf{LLM4Vuln}{2}, \nvmf{VFFinder}{1} \phantom{Ag}}}
+            child [fucsiaC] {node [darkgray] {Incident/Root-cause described: \debug{RCACopilot}{1}, \debug{x-lifecycle}{1}, \nvmf{VFFinder}{1}, }}
+            child [fucsiaC,opacity=0] {node [darkgray,opacity=1] {\phantom{Incident/Root-cause described:} \debug{inContextRCA}{1}}}
+            child [fucsiaC] {node [darkgray] {Relevant report elements: \testing{ScenarioNL}{1}, \ntestingU{SoVAR}, \ntesting{LeGEND}{1}}}      
+            child [fucsiaC] {node [darkgray] {Output characterizations: \testing{SELF-DEBUGGING}{OP4}}}  
+            child [fucsiaC] {node [darkgray] {Reason for toxicity: \nstatic{ToxicDetector}{1}}}  
+        edge from parent}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [fucsiaC] {node [darkgray] {Timeline: \ndebug{FAIL}{7}}}
+    edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [fucsiaC] {node {Rationalization\phantom{j}}
+        child [fucsiaC] {node [darkgray] {Thoughts: \vmf{ChatGPTSCV}{2}}}
+        child [fucsiaC] {node [darkgray] {Debate: \testing{ScenarioNL}{1}}} 
+    edge from parent};
+\end{tikzpicture}
+ 
+ 
+\end{document}

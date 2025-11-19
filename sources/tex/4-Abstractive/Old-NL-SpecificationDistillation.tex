@@ -1,0 +1,34 @@
+\documentclass[border=0.2cm,10pt]{standalone}
+ 
+
+\input{drawshead}
+
+
+
+%blue, teal, cyan, green, lime, yellow, pink, white, lightgray, gray, darkgray, black, olive, brown, orange, red, purple, magenta and violet
+ 
+\begin{document}
+
+\begin{tikzpicture}[tasktree]
+ 
+\node [draw,fucsiaC] {\textbf{NL-Specification\phantom{j}Distillation}}
+    child [missing] {}
+    child [fucsiaC] {node {Criteria\phantom{j}}
+        child [fucsiaC] {node [darkgray] {Intent/Signature corresponding: \progver{Dafny-Synth}{4a}}}
+    edge from parent}
+    child [missing] {}
+    child [fucsiaC] {node {Nature \phantom{j}}
+        child [fucsiaC] {node [darkgray] {Precondition: \progver{Dafny-Synth}{4a}}}
+        child [fucsiaC] {node [darkgray] {Postcondition: \progver{Dafny-Synth}{4a}}         child [white] {node {\phantom{Ag}}}
+            child [white] {node {\phantom{Ag}}}
+            child [white] {node {\phantom{Ag}}}
+            child [white] {node {\phantom{Ag}}}
+            child [white] {node {\phantom{Ag}}}
+            child [white] {node {\phantom{Ag}}}
+            child [white] {node {\phantom{Ag}}}
+            child [white] {node {\phantom{Ag}}}
+        edge from parent}
+    edge from parent};
+\end{tikzpicture}
+
+\end{document}

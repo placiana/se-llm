@@ -1,0 +1,38 @@
+\documentclass[border=0.2cm,10pt]{standalone}
+
+\input{drawshead2}
+
+\begin{document}
+
+\begin{tikzpicture}[tasktree]
+ 
+\node [draw,purpuraA] {\textbf{Textual\phantom{j}Data Manipulation}}
+    child [missing] {}
+    child [purpuraA] {node {Operation criteria}
+        child [purpuraA] {node [darkgray] {Information projection: \testing{PentestGPT}{4}}}
+        child [purpuraA] {node [darkgray] {Update: \testing{PentestGPT}{2}}}
+        child [purpuraA] {node [darkgray] {Replacement}
+                child [purpuraA] {node [darkgray] {Closest meaning: \testing{TARGET}{3}}}
+        edge from parent}
+        child [missing] {}
+        child [purpuraA] {node [darkgray] {Fusion\phantom{j}}
+            child [purpuraA] {node [darkgray] {Control flow graph: \static{CFG-Chain}{4}}}
+            child [purpuraA] {node [darkgray] {Structure: \testing{FuzzingParsers}{5}}}
+        edge from parent}
+    edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [purpuraA] {node {Nature of structure \phantom{Ag}}
+        child [purpuraA] {node [darkgray] {Plan: \testing{PentestGPT}{2}, \testing{PentestGPT}{4} \phantom{Ag}}}
+        child [purpuraA] {node [darkgray] {Scenario: \testing{TARGET}{3} \phantom{Ag}}}
+        child [purpuraA] {node [darkgray] {Graph: \static{CFG-Chain}{4} \phantom{Ag}}}
+        child [purpuraA] {node [darkgray] {String: \testing{FuzzingParsers}{5} \phantom{Ag}}}
+    edge from parent};
+\end{tikzpicture}
+
+\end{document}

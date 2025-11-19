@@ -1,0 +1,25 @@
+\documentclass[border=0.2cm,10pt]{standalone}
+ 
+
+\input{drawshead2}
+
+
+
+%blue, teal, cyan, green, lime, yellow, pink, white, lightgray, gray, darkgray, black, olive, brown, orange, red, purple, magenta and violet
+ 
+\begin{document}
+
+\begin{tikzpicture}[tasktree]
+
+\node [draw,limaA] {\textbf{Code-Scaling}}
+    child [missing] {}
+    child [limaA] {node {Scale}
+            child [limaA] {node [darkgray] {CVSS: \vmf{ChatGPT4vul}{4}, \vmf{MultiTask}{2}}}
+            child [limaA] {node [darkgray] {Vulnerability probability: \vmf{DLAP}{1}}
+            edge from parent}
+    edge from parent};
+\end{tikzpicture}
+
+
+ 
+\end{document}

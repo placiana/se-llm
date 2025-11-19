@@ -1,0 +1,53 @@
+\documentclass[border=0.2cm,10pt]{standalone}
+ 
+
+\input{drawshead}
+
+
+
+%blue, teal, cyan, green, lime, yellow, pink, white, lightgray, gray, darkgray, black, olive, brown, orange, red, purple, magenta and violet
+ 
+\begin{document}
+
+\begin{tikzpicture}[tasktree]
+ 
+\node [draw,fucsiaC] {\textbf{Property Identification}}
+    child [missing] {}
+    child [fucsiaC] {node {Nature}
+            child [fucsiaC] {node [darkgray] {Metamorphic relation}
+                child [fucsiaC] {node [gray] {SW-Entity}
+                    child [fucsiaC] {node [darkgray] {Term equivalence: \testing{FSML}{OP}}}
+                edge from parent}
+                child [missing] {}
+                child [fucsiaC] {node [gray] {NL}
+                    child [fucsiaC] {node [darkgray] {\testing{EMR}{2}}}
+                edge from parent}
+            edge from parent}
+            child [missing] {}
+            child [missing] {}
+            child [missing] {}
+            child [missing] {}
+            child [fucsiaC] {node [darkgray] {Mutation rule: \testing{InputBlaster}{3}}}
+    edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [fucsiaC] {node {Correctness criteria}
+        child [fucsiaC] {node [darkgray] {Valid likely becomes bug-revealing when mutated: \testing{InputBlaster}{3}}}
+    edge from parent}
+    child [missing] {}
+    child [fucsiaC] {node {Rationalization}
+            child [fucsiaC] {node [darkgray] {Analysis: \testing{FSML}{OP}}}
+    edge from parent}
+    child [missing] {}
+    child [fucsiaC] {node {Corrective mode}
+        child [fucsiaC] {node [darkgray] {Feedback based}
+            child [fucsiaC] {node [darkgray] {Test results: \testing{InputBlaster}{3}}}
+        edge from parent}
+    edge from parent};
+\end{tikzpicture}
+ 
+\end{document}

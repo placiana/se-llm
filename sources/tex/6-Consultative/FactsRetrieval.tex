@@ -1,0 +1,41 @@
+\documentclass[border=0.2cm,10pt]{standalone}
+
+\input{drawshead2}
+
+\begin{document}
+
+
+\begin{tikzpicture}[tasktree]
+ 
+\node [draw,aguaA] {\textbf{Knowledge Distillation}}
+    child [missing] {}
+    child [aguaA] {node {Domain\phantom{j}}
+        child [aguaA] {node [darkgray] {Vulnerability detection: \vmf{EditTime}{1}, \vmf{EditTime}{2}}}
+        child [aguaA] {node [darkgray] {Protocol parsing: \testing{ChatAFL}{1}}}
+        child [aguaA] {node [darkgray] {Language parsing: \testing{FuzzingParsers}{1}, \testing{FuzzingParsers}{2}, \testing{FuzzingParsers}{3}}}
+        child [aguaA] {node [darkgray] {Toxicity: \nstatic{ToxicDetector}{2}}}
+    edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [aguaA] {node {Nature of knowledge}
+        child [aguaA] {node [darkgray] {Definitions: \vmf{EditTime}{1}}
+            child [aguaA] {node [darkgray] {Grammar/Structure: \testing{FuzzingParsers}{1}, \testing{ChatAFL}{1}}}
+        edge from parent}
+        child [missing] {}
+        child [aguaA] {node [darkgray] {Examples: \testing{FuzzingParsers}{2}, \vmf{EditTime}{2}}
+            child [aguaA] {node [darkgray] {Conceptual: \nstatic{ToxicDetector}{2}}}
+        edge from parent}
+        child [missing] {}
+        child [aguaA] {node [darkgray] {Set of items:  \testing{FuzzingParsers}{3}}}
+    edge from parent};
+
+\end{tikzpicture}
+
+
+
+
+
+ 
+\end{document}

@@ -1,0 +1,140 @@
+\documentclass[border=0.2cm,10pt]{standalone}
+ 
+
+\input{drawshead}
+
+
+
+%blue, teal, cyan, green, lime, yellow, pink, white, lightgray, gray, darkgray, black, olive, brown, orange, red, purple, magenta and violet
+ 
+\begin{document}
+\begin{tikzpicture}[tasktree]
+ 
+\node [draw,fucsiaC] {\textbf{Property Characterization}}
+    child [missing] {}
+    child [fucsiaC] {node {Type of characterization \phantom{Ag}}
+            child [fucsiaC] {node [darkgray] {Value constraints \phantom{Ag}}
+                child [fucsiaC] {node {Correctness criteria \phantom{Ag}}
+                    child [fucsiaC] {node [darkgray] {Valid input \phantom{Ag}}
+                        child [fucsiaC] {node [darkgray] {Design-time descriptions compliant: \testing{RESTGPT}{1} \phantom{Ag}} }
+                        child [fucsiaC] {node [darkgray] {Run-time context compliant: \testing{InputBlaster}{1} \phantom{Ag}}}
+                    edge from parent}
+                    child [missing] {}
+                    child [missing] {}
+                    child [fucsiaC] {node [darkgray] {Exec-reaches code \phantom{Ag}}
+                        child [fucsiaC] {node [darkgray] {Qualified post-constraint: \static{LLift}{2} \phantom{Ag}}}
+                        child [fucsiaC] {node [darkgray] {Triggers optimization: \testing{WhiteFox}{1} \phantom{Ag}}}
+                    edge from parent}
+                edge from parent}
+                child [missing] {}
+                child [missing] {}
+                child [missing] {}
+                child [missing] {}
+                child [missing] {}
+                child [missing] {}
+                child [fucsiaC] {node {Corrective mode \phantom{Ag}}
+                    child [fucsiaC] {node [darkgray] {Self-validation: \static{LLift}{2} \phantom{Ag}}}
+                edge from parent}
+            edge from parent}
+            child [missing] {}
+            child [missing] {}
+            child [missing] {}
+            child [missing] {}
+            child [missing] {}
+            child [missing] {}
+            child [missing] {}
+            child [missing] {}
+            child [missing] {}                    
+            child [fucsiaC] {node [darkgray] {Abstract behavior \phantom{Ag}}
+                child [fucsiaC] {node {Nature \phantom{Ag}}
+                    child [fucsiaC] {node [darkgray] {Code facts}
+                            child [fucsiaC] {node [darkgray] {Taint-flow: \static{LATTE}{3} \phantom{Ag}}}
+                            child [fucsiaC] {node [darkgray] {Same-value: \static{LLMDFA}{3} \phantom{Ag}}}
+                    edge from parent}
+                    child [missing] {}
+                    child [missing] {}
+                    child [fucsiaC] {node [darkgray] {Control-flow: \static{CFG-Chain}{3} \phantom{Ag}}}        
+                    child [fucsiaC] {node [darkgray] {May-must summary: \static{LLift}{3} \phantom{Ag}}}  
+                edge from parent}
+                child [missing] {}
+                child [missing] {}
+                child [missing] {}
+                child [missing] {}
+                child [missing] {}
+    child [fucsiaC] {node {Extra output \phantom{Ag}}
+        child [fucsiaC] {node [darkgray] {Assessment: \static{LLMDFA}{3} \phantom{Ag}}}
+    edge from parent}
+    child [missing] {}
+    child [fucsiaC] {node {Extra input \phantom{Ag}}
+        child [fucsiaC] {node [darkgray] {Taint-flow: \static{LATTE}{3} \phantom{Ag}}}
+    edge from parent}
+    child [missing] {}
+                child [fucsiaC] {node {Reactivity \phantom{Ag}}
+                    child [fucsiaC] {node [darkgray] {Requests further info: \static{LLift}{3} \phantom{Ag}}}        
+                edge from parent}
+                child [missing] {}
+                child [fucsiaC] {node {Corrective mode \phantom{Ag}}
+                    child [fucsiaC] {node [darkgray] {Self-validation: \static{LLift}{3} \phantom{Ag}}} 
+                edge from parent}   
+                child [missing] {}
+                child [fucsiaC] {node {Rationalization \phantom{Ag}}
+                    child [fucsiaC] {node [darkgray] {Thought: \static{LLMDFA}{3} \phantom{Ag}}}
+                edge from parent}    
+            edge from parent}
+    edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [fucsiaC] {node {Accessibility \phantom{Ag}}
+        child [fucsiaC] {node [darkgray] {Black-box: \testing{RESTGPT}{1}, \testing{InputBlaster}{1} \phantom{Ag}}}
+        child [fucsiaC] {node [darkgray] {White-box: \static{LLift}{2}, \static{LLift}{3},  \testing{WhiteFox}{1}, \static{CFG-Chain}{3}, \static{LATTE}{3}, \static{LLMDFA}{3} \phantom{Ag}}}
+    edge from parent};
+\end{tikzpicture}
+
+
+\end{document}
+
+
+\node [draw,RoyalBlue] {\textbf{Code-Facts Inference \phantom{Ag}}}
+    child [missing] {}
+    child [fucsiaC] {node [darkgray] {Property}
+            child [fucsiaC] {node [darkgray] {Taint-flow: \static{LATTE}{3} \phantom{Ag}}}
+            child [fucsiaC] {node [darkgray] {Same-value: \static{LLMDFA}{3} \phantom{Ag}}}
+    edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [fucsiaC] {node [darkgray] {Extra output \phantom{Ag}}
+        child [fucsiaC] {node [darkgray] {Assessment: \static{LLMDFA}{3} \phantom{Ag}}}
+    edge from parent}
+    child [missing] {}
+    child [fucsiaC] {node [darkgray] {Extra input \phantom{Ag}}
+        child [fucsiaC] {node [darkgray] {Taint-flow: \static{LATTE}{3} \phantom{Ag}}}
+    edge from parent}
+    child [missing] {}
+    child [fucsiaC] {node [darkgray] {Rationalization \phantom{Ag}}
+            child [fucsiaC] {node [darkgray] {Thought: \static{LLMDFA}{3} \phantom{Ag}}}
+    edge from parent};

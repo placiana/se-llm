@@ -1,0 +1,43 @@
+\documentclass[border=0.2cm,10pt]{standalone}
+ 
+
+\input{drawshead2}
+
+\begin{document}
+
+ 
+ \begin{tikzpicture}[tasktree]
+ 
+\node [draw,purpuraA] {\textbf{Execution}\phantom{j}}
+    child [missing] {}
+    child [purpuraA]  {node {Domain\phantom{Ag}}    
+         child [purpuraA] {node [darkgray] {General code: \debug{SELF-DEBUGGING}{FL(CoT)}}}        
+         child [purpuraA] {node [darkgray] {Pseudocode: \staticD{EV}{E\&V}{1}}}
+         child [purpuraA] {node [darkgray] {Intent: \testing{TestChain}{2}}}  
+         child [purpuraA] {node [darkgray] {Assertions: \testing{SELF-DEBUGGING}{OP7(CoT)}}}  
+    edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [purpuraA]  {node {Granularity}
+        child [purpuraA]  {node [darkgray] {Single step: \testing{SELF-DEBUGGING}{OP7(CoT)}, \staticD{EV}{E\&V}{1}}}
+        child [purpuraA]  {node [darkgray] {Multiple steps: \debug{SELF-DEBUGGING}{FL(CoT)}, \testing{TestChain}{2}}}
+    edge from parent} 
+    child [missing] {}
+    child [missing] {}
+    child [purpuraA]  {node {Corrective mode \phantom{Ag}}
+        child [purpuraA]  {node [darkgray] {Feedback based \phantom{Ag}}
+            child [purpuraA]  {node [darkgray]  {Verification results: \staticD{EV}{E\&V}{1} \phantom{Ag}}}
+            edge from parent}
+    edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [purpuraA]  {node {Reactivity}
+        child [purpuraA]  {node [darkgray]  {Request further information: \staticD{EV}{E\&V}{1}}}
+        child [purpuraA]  {node [darkgray]  {Request external tool: \staticD{EV}{E\&V}{1}, \testing{TestChain}{2}}
+        edge from parent}
+    edge from parent};
+\end{tikzpicture}
+
+\end{document}

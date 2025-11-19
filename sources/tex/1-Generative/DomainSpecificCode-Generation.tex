@@ -1,0 +1,111 @@
+\documentclass[border=0.2cm,10pt]{standalone}
+ 
+
+\input{drawshead2}
+
+
+\begin{document}
+
+ \begin{tikzpicture}[tasktree]
+ 
+\node [draw,celesteA] {\textbf{Domain-Specific-Code\phantom{j}Generation}}
+    child [missing] {}
+        child [celesteA] {node {Generation criteria}
+        child [celesteA] {node [darkgray] {Problem-description corresponding}
+            child [celesteA] {node [darkgray] {DSL-function description: \testingU{Eywa}}}
+            child [celesteA] {node [darkgray] {Function intent: \progver{Dafny-Synth}{3}}}
+            child [celesteA] {node [darkgray] {Object description: \static{LLMDFA}{4}, \static{LLMDFA}{5}}}
+            child [celesteA] {node [darkgray] {Scenario: \testing{ScenarioNL}{4}, \ntesting{LeGEND}{2}}}
+            child [celesteA] {node [darkgray] {Constraint: \testing{AID}{2}}}
+            child [celesteA] {node [darkgray] {Property: \testing{EMR}{3}}}
+            child [celesteA] {node [darkgray] {Rule: \testing{InputBlaster}{4}}}
+        edge from parent}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [celesteA] {node [darkgray] {Ability to execute code: \testing{OSS-Fuzz}{1}, \testing{OSS-Fuzz}{2}, \testing{PBT-GPT}{2}, }
+        child [white] {node [darkgray] {\phantom{ity to execute code:} \testing{UGCTX}{1}, \testing{UGCTX}{2}}}
+        child [celesteA] {node [darkgray] {Ability to trigger vulnerability: \ntesting{AdvSCanner}{1}}}}
+        child [missing] {}
+        child [missing] {}
+        child [celesteA] {node [darkgray] {High precision \& recall: \static{LLMDFA}{1}, \static{LLMDFA}{2}}}
+    edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [celesteA] {node {Nature of domain/entity}
+        child [celesteA] {node [darkgray] {Scripting for SW analysis}
+            child [celesteA] {node [darkgray] {Source/Sink identification: \static{LLMDFA}{1}, \static{LLMDFA}{2}}}
+        edge from parent}
+        child [missing] {}
+        child [celesteA] {node [darkgray] {Metamorphic relation: \testing{EMR}{3}}}
+        child [celesteA] {node [darkgray] {Encoders \phantom{j}}
+            child [celesteA] {node [darkgray] {Path condition: \static{LLMDFA}{4}, \static{LLMDFA}{5}}}
+        edge from parent}
+        child [missing] {}
+        child [celesteA] {node [darkgray] {Test drivers \phantom{j}}
+            child [celesteA] {node [darkgray] {Fuzzing:  \testing{OSS-Fuzz}{1}, \testing{OSS-Fuzz}{2}, \testing{UGCTX}{1}, \testing{UGCTX}{2}}}
+            child [celesteA] {node [darkgray] {Input generators: \testing{AID}{2}, \testing{InputBlaster}{4}, \testing{PBT-GPT}{2}}}
+        edge from parent}
+        child [missing] {}
+        child [missing] {}
+        child [celesteA] {node [darkgray] {Protocol-related code: \testingU{Eywa}}}
+        child [celesteA] {node [darkgray] {Word model: \testing{ScenarioNL}{4}, \ntesting{LeGEND}{2}}}
+        child [celesteA] {node [darkgray] {Signatures: \progver{Dafny-Synth}{3}}}
+        child [celesteA] {node [darkgray] {Adversarial SmartContract: \ntesting{AdvSCanner}{1}}}
+    edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [celesteA] {node {In-filling context}
+        child [celesteA] {node [darkgray] {Hint code: \static{LLMDFA}{1}, \static{LLMDFA}{2}}}
+        child [celesteA] {node [darkgray] {Constrained decoding: \testing{ScenarioNL}{4}}}
+    edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [celesteA] {node {Corrective mode \phantom{j}}
+        child [celesteA] {node [darkgray] {Feedback based \phantom{j}}
+            child [celesteA] {node [darkgray] {Compiler: \testing{OSS-Fuzz}{2}, \static{LLMDFA}{2}, \static{LLMDFA}{5}, \testing{UGCTX}{2}}}
+            child [celesteA] {node [darkgray] {Execution \phantom{j}} 
+                child [celesteA] {node [darkgray] {Number of positive/negative: \static{LLMDFA}{2}}}
+                child [celesteA] {node [darkgray] {Results: \testing{OSS-Fuzz}{2}, \testing{InputBlaster}{4}, \testing{UGCTX}{2} }}
+            edge from parent}
+            child [missing] {}
+            child [missing] {} 
+            child [celesteA] {node [darkgray] {Rationalized failure: \ntesting{AdvSCanner}{1}}}
+        edge from parent}
+    edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [celesteA] {node {Reactivity}
+        child [celesteA] {node [darkgray] {Function calling: \testing{ScenarioNL}{4}}}
+    edge from parent};
+\end{tikzpicture} 
+
+\end{document}

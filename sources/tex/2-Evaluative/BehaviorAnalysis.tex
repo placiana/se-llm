@@ -1,0 +1,82 @@
+\documentclass[border=0.2cm,10pt]{standalone}
+ 
+
+\input{drawshead2}
+
+
+
+%blue, teal, cyan, green, lime, yellow, pink, white, lightgray, gray, darkgray, black, olive, brown, orange, red, purple, magenta and violet
+ 
+\begin{document}
+ 
+\begin{tikzpicture}[tasktree]
+ 
+\node [draw,limaA] {\textbf{Behavior Analysis}}
+    child [missing] {}
+    child [limaA] {node {Analysis criteria}
+        child [limaA] {node [darkgray] {Anomaly detection}
+            child [limaA] {node [darkgray] {Open-ended: \testing{CHEMFUZZ}{2}}
+                child [limaA] {node [darkgray] {Attack: \nvmf{Skyeye}{1}, \nvmf{Skyeye}{3} }}
+                child [limaA] {node [darkgray] {Vulnerability: \testingD{pwnd}{Pwn'd}{3}}}
+                child [limaA] {node [darkgray] {View-point conformance: \testing{GameBugDescriptions}{1}}}
+                child [limaA] {node [darkgray] {Self-justified: \testing{AXNav}{3}}}
+            edge from parent}
+            child [missing] {}     
+            child [missing] {}     
+            child [missing] {}     
+            child [missing] {}     
+            child [limaA] {node [darkgray] {Sanity check: \testing{PentestGPT}{3}}
+               child [limaA] {node [darkgray] {Execution specification conformance: \staticD{EV}{E\&V}{2}}}
+            edge from parent}
+        edge from parent}  
+        child [missing] {}     
+        child [missing] {}     
+        child [missing] {}     
+        child [missing] {}     
+        child [missing] {}     
+        child [missing] {}     
+        child [missing] {}     
+        child [limaA] {node [darkgray] {Root-cause: \debug{x-lifecycle}{2}, \debug{AutoFL}{1}, \debug{AutoSD}{1}, \debug{RCAAgents}{1}, }
+            child [white] {node [darkgray] {\phantom{t-cause:} \debug{inContextRCA}{2}}}
+            child [limaA] {node [darkgray] {Differences: \debug{SELF-DEBUGGING}{FL}}}
+        edge from parent}
+        child [missing] {}     
+        child [missing] {}
+        child [limaA] {node [darkgray] {State: \testing{GPTDroid}{2}\phantom{j} }}
+    edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}     
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [limaA] {node {Extra input}
+        child [limaA] {node [darkgray] {Architecture: \debug{x-lifecycle}{2}}}
+        child [limaA] {node [darkgray] {Code: \debug{SELF-DEBUGGING}{FL}, \debug{AutoFL}{1}, \debug{AutoSD}{1}}}
+        child [limaA] {node [darkgray] {Historic incidents: \debug{RCAAgents}{1}, \debug{inContextRCA}{2}}}
+        child [limaA] {node [darkgray] {(hidden) Verbalized call sequence: \nvmf{Skyeye}{3}}}
+    edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [limaA] {node {Reactivity}
+        child [limaA] {node [darkgray] {Function calls: \debug{AutoFL}{1}, \debug{RCAAgents}{1}}}
+        child [limaA] {node [darkgray] {Questions: \debug{RCAAgents}{1}}}
+    edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [limaA] {node {Rationalization \phantom{j}}
+        child [limaA] {node [darkgray] {Applied evaluation criteria: \testing{AXNav}{3}}}
+        child [limaA] {node [darkgray] {Execution: \debug{SELF-DEBUGGING}{FL}}}
+    edge from parent}
+    child [missing] {};
+\end{tikzpicture}
+  
+\end{document}

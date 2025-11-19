@@ -1,0 +1,90 @@
+\documentclass[border=0.2cm,10pt]{standalone}
+ 
+
+\input{drawshead2}
+
+
+
+%blue, teal, cyan, green, lime, yellow, pink, white, lightgray, gray, darkgray, black, olive, brown, orange, red, purple, magenta and violet
+ 
+\begin{document}
+
+\begin{tikzpicture}[tasktree]
+ 
+\node [draw,fucsiaC] {\textbf{SW-Entity Property Identification \& Characterization}}
+    child [missing] {}
+    child [fucsiaC] {node {Criteria of characterization \phantom{Ag}}
+        child [fucsiaC] {node [darkgray] {Descriptions \& domain corresponding: \testing{FSML}{OP}, \testing{SELF-DEBUGGING}{OP5}, \phantom{Ag}}}
+        child [white] {node [darkgray] {\phantom{Descriptions \& domain corresponding:} \testing{RESTGPT}{1}, \progver{Dafny-Synth}{4a}, \testing{EMR}{2} \phantom{Ag}} }
+        child [fucsiaC] {node [darkgray] {Code corresponding: \static{CFG-Chain}{3}, \static{LLift}{2}, \static{LLift}{3}, \static{LATTE}{3}, \phantom{Ag}}}
+        child [white] {node [darkgray] {\phantom{Code corresponding:} \static{LLMDFA}{3},  \testing{WhiteFox}{1} \phantom{Ag}}}
+        child [fucsiaC] {node [darkgray] {Run-time context corresponding: \testing{InputBlaster}{1}, \testing{InputBlaster}{3} \phantom{Ag}}}
+    edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}                    
+    child [fucsiaC] {node {Nature of property \phantom{Ag}}
+        child [fucsiaC] {node [darkgray] {Input-validity constraint: \testing{RESTGPT}{1}, \testing{InputBlaster}{1} \phantom{Ag}}} 
+        child [fucsiaC] {node [darkgray] {NL-precondition: \progver{Dafny-Synth}{4a} \phantom{Ag}}}
+         child [fucsiaC] {node [darkgray] {Precondition constraint to reach code: \testing{WhiteFox}{1} \phantom{Ag}}}
+        child [fucsiaC] {node [darkgray] {NL-postcondition: \progver{Dafny-Synth}{4a} \phantom{Ag}}
+            child [fucsiaC] {node [darkgray] {Columns of query: \testing{SELF-DEBUGGING}{OP5} \phantom{Ag}}}
+        edge from parent}
+        child [missing] {}                    
+        child [fucsiaC] {node [darkgray] {Qualified post-constraint: \static{LLift}{2} \phantom{Ag}}}          
+        child [fucsiaC] {node [darkgray] {Code facts \phantom{Ag}}
+            child [fucsiaC] {node [darkgray] {Taint-flow: \static{LATTE}{3} \phantom{Ag}}}
+            child [fucsiaC] {node [darkgray] {Same-value: \static{LLMDFA}{3} \phantom{Ag}}}
+            child [fucsiaC] {node [darkgray] {Control-flow: \static{CFG-Chain}{3} \phantom{Ag}}}
+        edge from parent}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}  
+        child [fucsiaC] {node [darkgray] {Summary}
+            child [fucsiaC] {node [darkgray] {May-must: \static{LLift}{3} \phantom{Ag}}} 
+        edge from parent}
+        child [missing] {}
+        child [fucsiaC] {node [darkgray] {Metamorphic \phantom{Ag}}
+            child [fucsiaC] {node [darkgray] {Term equivalence: \testing{FSML}{OP} \phantom{Ag}}}
+            child [fucsiaC] {node [darkgray] {NL-relation: \testing{EMR}{2} \phantom{Ag}}}
+            child [fucsiaC] {node [darkgray] {Bug-revealing mutation: \testing{InputBlaster}{3} \phantom{Ag}}}
+        edge from parent}
+    edge from parent}
+    child [missing] {}
+    child [missing] {}                   
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [fucsiaC] {node {Corrective mode \phantom{Ag}}
+        child [fucsiaC] {node [darkgray] {Self-validation: \static{LLift}{2}, \static{LLift}{3} \phantom{Ag}}}
+        child [fucsiaC] {node [darkgray] {Feedback based \phantom{Ag}}
+            child [fucsiaC] {node [darkgray] {Test results: \testing{InputBlaster}{3}}}
+        edge from parent}
+    edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [fucsiaC] {node {Reactivity \phantom{Ag}}
+        child [fucsiaC] {node [darkgray] {Requests further info: \static{LLift}{3} \phantom{Ag}}}        
+    edge from parent}
+    child [missing] {}
+    child [fucsiaC] {node {Rationalization \phantom{Ag}}
+        child [fucsiaC] {node [darkgray] {Analysis: \testing{FSML}{OP}, \testing{SELF-DEBUGGING}{OP5}}}
+        child [fucsiaC] {node [darkgray] {Thought \& assessment: \static{LLMDFA}{3} \phantom{Ag}}}
+    edge from parent};
+\end{tikzpicture}
+ 
+\end{document}

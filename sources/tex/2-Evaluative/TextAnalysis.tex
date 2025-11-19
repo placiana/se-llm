@@ -1,0 +1,80 @@
+\documentclass[border=0.2cm,10pt]{standalone}
+ 
+
+\input{drawshead2}
+ 
+\begin{document}
+
+ 
+\begin{tikzpicture}[tasktree]
+
+\node [draw,limaA] {\textbf{Text Analysis}}
+        child [missing] {}
+        child [limaA] {node {Analysis type}
+            child [limaA] {node [darkgray] {Comparative analysis}
+                child [limaA] {node [darkgray] {Functional equivalence: \testing{SELF-DEBUGGING}{OP6}, \progver{Clover}{8}}}
+                child [limaA] {node [darkgray] {Similarity analysis: \ndebug{FAIL}{4} }}
+                child [limaA] {node [darkgray] {Generalized consensus: \nvmf{Skyeye}{4} }}
+            edge from parent}
+            child [missing] {}
+            child [missing] {}
+            child [missing] {}
+            child [limaA] {node [darkgray] {Ambiguity analysis: \testing{ScenarioNL}{2}, \testing{ClarifyGPT}{4}}}
+            child [limaA] {node [darkgray] {Support analysis}
+                child [limaA] {node [darkgray] {To conclude: \debug{AutoSD}{2}, \ndebug{FAIL}{9}}}
+                child [limaA] {node [darkgray] {To perform: \debug{LM-PACE}{1}}}
+                child [limaA] {node [darkgray] {To analyze: \ndebug{FAIL}{2}}}
+            edge from parent}
+            child [missing] {}
+            child [missing] {}
+            child [missing] {}
+            child [limaA] {node [darkgray] {Closed analysis}
+                child [limaA] {node [darkgray] {Q\&A: \ndebug{LasRCA}{1}}}
+            edge from parent}
+            child [missing] {}
+            child [limaA] {node [darkgray] {Open analysis}
+                child [limaA] {node [darkgray] {Q\&A: \debug{RCAAgents}{2}}
+                    child [limaA] {node [darkgray] {Expert completed: \testing{ScenarioNL}{3} \phantom{j}}}
+                edge from parent}        
+            edge from parent}
+            child [missing] {}
+            child [missing] {}
+            child [limaA] {node [darkgray] {Classification \phantom{j}}
+                child [limaA] {node [darkgray] {Binary: \ndebug{FAIL}{4}}
+                    child [limaA] {node [darkgray] {In-context defined class: \ndebug{SemSlicer}{3} \phantom{j}}}
+                edge from parent} 
+                child [missing] {}
+                child [limaA] {node [darkgray] {Multilabel \phantom{j}}
+                    child [limaA] {node [darkgray] {Close ended: \ndebug{LasRCA}{2}, \ndebug{LasRCA}{3} \phantom{j}}}
+                    child [limaA] {node [darkgray] {Open ended: \nvmf{Skyeye}{4} \phantom{j}}}
+                edge from parent}        
+            edge from parent}
+        edge from parent}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [missing] {}
+        child [limaA] {node {Rationalization \phantom{j}}
+            child [limaA] {node [darkgray] {Debate: \testing{ScenarioNL}{3}}}
+            child [limaA] {node [darkgray] {Thought step by step: \ndebug{LasRCA}{2}}}
+            child [limaA] {node [darkgray] {Reasons: \ndebug{LasRCA}{3}}}
+        edge from parent};
+\end{tikzpicture}
+  
+\end{document}

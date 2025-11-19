@@ -1,0 +1,51 @@
+\documentclass[border=0.2cm,10pt]{standalone}
+ 
+
+\input{drawshead2}
+ 
+\begin{document}
+
+\begin{tikzpicture}[tasktree]
+
+\node [draw,limaA] {\textbf{Task-Solution Analysis}}
+    child [missing] {}
+    child [limaA] {node {Analysis criteria}
+        child [limaA] {node [darkgray] {Correctness of analysis: \vmf{VulDetect}{4}, \static{LLift}{2(SelfValid)}, \static{LLift}{3(SelfValid)}}
+            child [limaA] {node [darkgray] {False-positive warning filtering: \vmf{WitheredLeaf}{2}, \static{SkipAnalyzer}{3} }}
+        edge from parent}
+        child [missing] {}
+        child [limaA] {node [darkgray] {Quality assessment: \testing{mrDetector}{2}, \debug{LM-PACE}{3}}
+            child [limaA] {node [darkgray] {Scored: \vmf{GPTLens}{2}, \staticU{CORE}}}
+        edge from parent}
+        child [missing] {}
+        child [limaA] {node [darkgray] {Reason of failure: \ntesting{AdvSCanner}{2}}}
+    edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [limaA] {node {Domain\phantom{j}}
+        child [limaA] {node [darkgray] {Vulnerability analysis: \vmf{WitheredLeaf}{2}, \vmf{GPTLens}{2}}}
+        child [limaA] {node [darkgray] {Root cause analysis: \debug{LM-PACE}{3}}}
+        child [limaA] {node [darkgray] {Program analysis: \vmf{VulDetect}{4}, \static{LLift}{2(SelfValid)}, \static{LLift}{3(SelfValid)}, }}
+        child [limaA, draw opacity=0] {node [darkgray, draw opacity=1] {\phantom{Program analysis:} \static{SkipAnalyzer}{3}}}
+        child [limaA] {node [darkgray] {Program repair: \staticU{CORE}}}
+        child [limaA] {node [darkgray] {Information retrieval: \testing{mrDetector}{2}}}
+        child [limaA] {node [darkgray] {Exploit generation: \ntesting{AdvSCanner}{2}}}
+    edge from parent}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [limaA] {node {Rationalization\phantom{j}}
+        child [limaA] {node [darkgray] {Justification: \vmf{VulDetect}{4}}}
+    edge from parent}
+    child [missing] {};
+\end{tikzpicture}
+  
+\end{document}
+

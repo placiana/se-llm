@@ -283,7 +283,8 @@ function cTree(data, category="") {
           let html = '<h2>' + texKey + '</h2>';
           
           // just print texData as text inside taskTable
-          html += '<pre>' + JSON.stringify(texData, null, 2) + '</pre>';
+          //html += '<pre>' + JSON.stringify(texData, null, 2) + '</pre>';
+          html += texDataToHtml(texData);
           taskTable.innerHTML = html;
           
 
@@ -293,7 +294,49 @@ function cTree(data, category="") {
 
   };
 
-  
+  function texDataToHtml(data) {
+    //data is a dictionary
+    let html = '<ul class="tree">';
+    for (const key in data) {
+      if (!Object.prototype.hasOwnProperty.call(data, key)) continue;
+      const value = data[key];
+
+      html += `<li><details open><summary>${key}</summary>`;
+
+      if (Array.isArray(value)) {
+        html += '<ul>';
+        value.forEach(item => {
+          if (Array.isArray(item)) {
+            if (item.length >= 3) {
+              html += `<li class="value ${item[0]}">` + item[1]  + `<sub>${item[2]}</sub></li>`;
+            } else {
+              // join item and display in single li
+              html += `<li class="value ">!!` + item.join(' ') + `</li>`;
+            }
+
+          } 
+          else if (typeof item === 'object') {
+            html += '<li class="sub-tree">' + texDataToHtml(item) + '</li>';
+          } else {
+            html += `<li class="value">${item}</li>`;
+          }
+          
+        });
+
+        html += '</ul>';
+      } else if (typeof value === 'object') {
+        html += texDataToHtml(value);
+      } else {
+        html += `<li>${value}</li>`;
+      }
+
+      html += '</details></li>';
+
+    }
+    html +=  '</ul>';
+    return html;
+
+  }
 </script>
 
 </body>

@@ -133,22 +133,22 @@ class CategoriesWalker():
                     result.append({
                         sec[0].split(':')[0].strip(): self.parse_nodelist(sec[1:])
                     })
-                
+                else:
 
-                # Split list in many lists if there are commas
-                categories = []
-                current_cat = []
-                for item in sec:
-                    if item == ', ':
-                        if current_cat:
-                            categories.append(current_cat)
-                            current_cat = []
-                    else:
-                        current_cat.append(item)
-                if current_cat:
-                    categories.append(current_cat)
-                print("Parsed categories:", categories)
-                result.extend(categories)
+                    # Split list in many lists if there are commas
+                    categories = []
+                    current_cat = []
+                    for item in sec:
+                        if item == ', ':
+                            if current_cat:
+                                categories.append(current_cat)
+                                current_cat = []
+                        else:
+                            current_cat.append(item)
+                    if current_cat:
+                        categories.append(current_cat)
+                    print("Parsed categories:", categories)
+                    result.extend(categories)
 
             
         return result
@@ -190,6 +190,12 @@ if __name__ == "__main__":
         # extact last directory name as topic
         import os
         topic = os.path.basename(os.path.dirname(tex_file))
+        print(topic)
+        if '-' in topic:
+            # keep string after first '-'
+            topic = topic.split('-', 1)[1]
+
+            
 
         #extract filename without extension
         filename = os.path.splitext(os.path.basename(tex_file))[0]
@@ -207,4 +213,4 @@ if __name__ == "__main__":
 
     # Print the final result
     print("Final result:")
-    pprint.pp(result)
+    #pprint.pp(result)

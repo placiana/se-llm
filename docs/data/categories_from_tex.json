@@ -31,19 +31,7 @@
               " "
             ]
           ]
-        },
-        [
-          "False-positive warning filtering: ",
-          "\\vmf",
-          "WitheredLeaf",
-          "2"
-        ],
-        [
-          "\\static",
-          "SkipAnalyzer",
-          "3",
-          " "
-        ]
+        }
       ],
       "Quality assessment": [
         [
@@ -68,17 +56,7 @@
               "CORE"
             ]
           ]
-        },
-        [
-          "Scored: ",
-          "\\vmf",
-          "GPTLens",
-          "2"
-        ],
-        [
-          "\\staticU",
-          "CORE"
-        ]
+        }
       ],
       "Reason of failure": [
         [
@@ -226,12 +204,7 @@
               "GRACE"
             ]
           ]
-        },
-        [
-          "Similar to demonstrations: ",
-          "\\vmfU",
-          "GRACE"
-        ]
+        }
       ],
       "Malware proneness": [
         [
@@ -336,46 +309,6 @@
             ]
           ]
         },
-        [
-          "OneClass (Binary): ",
-          "\\vmf",
-          "SmartAudit",
-          "1",
-          ",  ",
-          "\\vmf",
-          "ChatGPT4vul",
-          "1"
-        ],
-        [
-          "\\nvmf",
-          "SpiderScan",
-          "1",
-          ",  ",
-          "  ",
-          "\\vmf",
-          "NLBSE24",
-          "1"
-        ],
-        [
-          "\\vmfU",
-          "GRACE"
-        ],
-        [
-          "\\vmf",
-          "MultiTask",
-          "1",
-          ",  ",
-          " ",
-          "\\vmf",
-          "MultiTask",
-          "3"
-        ],
-        [
-          "\\vmf",
-          "PromptEnhanced",
-          "2",
-          " "
-        ],
         {
           "In-context defined class": [
             [
@@ -415,42 +348,6 @@
             ]
           ]
         },
-        [
-          "In-context defined class: ",
-          "\\testing",
-          "SELF-DEBUGGING",
-          "OP7"
-        ],
-        [
-          "\\vmf",
-          "NLBSE24",
-          "2"
-        ],
-        [
-          " ",
-          "\\vmf",
-          "GPTScan",
-          "1"
-        ],
-        [
-          "\\vmf",
-          "GPTScan",
-          "2"
-        ],
-        [
-          " ",
-          "\\vmf",
-          "LLMAPIDet",
-          "3"
-        ],
-        [
-          "\\vmfU",
-          "ChatGPT(Plus)",
-          "MultiClass/MultiLabel",
-          "\\testing",
-          "FuzzGPT",
-          "1"
-        ],
         {
           "Close-ended": [
             [
@@ -475,27 +372,6 @@
             ]
           ]
         },
-        [
-          "Close-ended: ",
-          "\\vmf",
-          "ChatGPT4vul",
-          "3"
-        ],
-        [
-          "\\nvmf",
-          "SpiderScan",
-          "2"
-        ],
-        [
-          "\\vmfU",
-          "AIagent"
-        ],
-        [
-          "  ",
-          "\\vmf",
-          "MultiTask",
-          "4"
-        ],
         {
           "Semi-close-ended": [
             [
@@ -504,13 +380,7 @@
               "4"
             ]
           ]
-        },
-        [
-          "Semi-close-ended: ",
-          "\\vmf",
-          "WitheredLeaf",
-          "4"
-        ]
+        }
       ]
     },
     "Analysis granularity": {
@@ -688,7 +558,7 @@
       ]
     }
   },
-  "Evaluative/RationalizedCode-Classification": {
+  "Evaluative/RationalizedCode-Clasification": {
     "Analysis criteria": {
       "Vulnerability proneness": [
         [
@@ -774,12 +644,6 @@
             ]
           ]
         },
-        [
-          "Null-dereference: ",
-          "\\static",
-          "SkipAnalyzer",
-          "1"
-        ],
         {
           "Leak presence": [
             [
@@ -789,12 +653,6 @@
             ]
           ]
         },
-        [
-          "Leak presence: ",
-          "\\static",
-          "SkipAnalyzer",
-          "2"
-        ],
         {
           "Data-flow CWI": [
             [
@@ -805,13 +663,6 @@
             ]
           ]
         },
-        [
-          "Data-flow CWI: ",
-          "\\vmf",
-          "VulDetect",
-          "3",
-          " "
-        ],
         {
           "Entity inconsistency": [
             [
@@ -820,13 +671,7 @@
               "1"
             ]
           ]
-        },
-        [
-          "Entity inconsistency: ",
-          "\\vmf",
-          "WitheredLeaf",
-          "1"
-        ]
+        }
       ],
       "Malware proneness": [
         [
@@ -845,13 +690,7 @@
               "3"
             ]
           ]
-        },
-        [
-          "Rename: ",
-          "\\vmf",
-          "WitheredLeaf",
-          "3"
-        ]
+        }
       ]
     },
     "Nature of classification": {
@@ -909,56 +748,6 @@
             ]
           ]
         },
-        [
-          "OneClass (Binary): ",
-          "\\vmf",
-          "EditTime",
-          "3"
-        ],
-        [
-          "\\vmf",
-          "EditTime",
-          "4"
-        ],
-        [
-          "\\vmf",
-          "WitheredLeaf",
-          "1"
-        ],
-        [
-          " ",
-          "\\vmf",
-          "WitheredLeaf",
-          "3"
-        ],
-        [
-          "\\static",
-          "SkipAnalyzer",
-          "1"
-        ],
-        [
-          "\\static",
-          "SkipAnalyzer",
-          "2"
-        ],
-        [
-          " ",
-          "\\vmf",
-          "VSP",
-          "2"
-        ],
-        [
-          "\\nvmf",
-          "Sleuth",
-          "2"
-        ],
-        [
-          "\\vmf",
-          "DLAP",
-          "3",
-          " ",
-          "MultiLabel "
-        ],
         {
           "Open-ended": [
             [
@@ -978,22 +767,6 @@
             ]
           ]
         },
-        [
-          "Open-ended:  ",
-          "\\vmf",
-          "SmartAudit",
-          "2"
-        ],
-        [
-          "\\vmf",
-          "SmartAudit",
-          "3",
-          ",  ",
-          "\\vmf",
-          "GPTLens",
-          "1",
-          ",   "
-        ],
         {
           "Close-ended": [
             [
@@ -1031,40 +804,6 @@
             ]
           ]
         },
-        [
-          "Close-ended: ",
-          "\\vmf",
-          "ChatGPTSCV",
-          "1",
-          ",  ",
-          "\\vmfU",
-          "VulBench"
-        ],
-        [
-          "\\vmf",
-          "VulDetect",
-          "1"
-        ],
-        [
-          "\\vmf",
-          "VulDetect",
-          "2"
-        ],
-        [
-          " ",
-          "\\vmf",
-          "VulDetect",
-          "3"
-        ],
-        [
-          "\\static",
-          "LATTE",
-          "4",
-          ",  ",
-          "\\vmf",
-          "VSP",
-          "1"
-        ],
         {
           "In-context defined classes": [
             [
@@ -1085,25 +824,7 @@
               " "
             ]
           ]
-        },
-        [
-          "In-context defined classes: ",
-          "\\vmf",
-          "LLM4Vuln",
-          "3"
-        ],
-        [
-          "\\vmf",
-          "LLM4Vuln",
-          "3w/PreCoT"
-        ],
-        [
-          " ",
-          "\\vmf",
-          "LLM4Vuln",
-          "3w/PostCoT",
-          " "
-        ]
+        }
       ]
     },
     "Analysis granularity": {
@@ -1403,7 +1124,7 @@
       ]
     }
   },
-  "Evaluative/LineCode-Ranking": {
+  "Evaluative/LineCodeRanking": {
     "Analysis criteria": {
       "Fault proneness": [
         [
@@ -1485,12 +1206,6 @@
             ]
           ]
         },
-        [
-          "Open-ended: ",
-          "\\testing",
-          "CHEMFUZZ",
-          "2"
-        ],
         {
           "Attack": [
             [
@@ -1506,18 +1221,6 @@
             ]
           ]
         },
-        [
-          "Attack: ",
-          "\\nvmf",
-          "Skyeye",
-          "1"
-        ],
-        [
-          "\\nvmf",
-          "Skyeye",
-          "3",
-          " "
-        ],
         {
           "Vulnerability": [
             [
@@ -1528,13 +1231,6 @@
             ]
           ]
         },
-        [
-          "Vulnerability: ",
-          "\\testingD",
-          "pwnd",
-          "Pwn'd",
-          "3"
-        ],
         {
           "View-point conformance": [
             [
@@ -1544,12 +1240,6 @@
             ]
           ]
         },
-        [
-          "View-point conformance: ",
-          "\\testing",
-          "GameBugDescriptions",
-          "1"
-        ],
         {
           "Self-justified": [
             [
@@ -1559,12 +1249,6 @@
             ]
           ]
         },
-        [
-          "Self-justified: ",
-          "\\testing",
-          "AXNav",
-          "3"
-        ],
         {
           "Sanity check": [
             [
@@ -1574,12 +1258,6 @@
             ]
           ]
         },
-        [
-          "Sanity check: ",
-          "\\testing",
-          "PentestGPT",
-          "3"
-        ],
         {
           "Execution specification conformance": [
             [
@@ -1591,16 +1269,7 @@
               "2"
             ]
           ]
-        },
-        [
-          "Execution specification conformance: ",
-          "\\staticD",
-          "EV",
-          "E",
-          "\\&",
-          "V",
-          "2"
-        ]
+        }
       ],
       "Root-cause": [
         [
@@ -1637,13 +1306,7 @@
               "FL"
             ]
           ]
-        },
-        [
-          "Differences: ",
-          "\\debug",
-          "SELF-DEBUGGING",
-          "FL"
-        ]
+        }
       ],
       "State": [
         [
@@ -1754,17 +1417,6 @@
             ]
           ]
         },
-        [
-          "Functional equivalence: ",
-          "\\testing",
-          "SELF-DEBUGGING",
-          "OP6"
-        ],
-        [
-          "\\progver",
-          "Clover",
-          "8"
-        ],
         {
           "Similarity analysis": [
             [
@@ -1775,13 +1427,6 @@
             ]
           ]
         },
-        [
-          "Similarity analysis: ",
-          "\\ndebug",
-          "FAIL",
-          "4",
-          " "
-        ],
         {
           "Generalized consensus": [
             [
@@ -1791,14 +1436,7 @@
               " "
             ]
           ]
-        },
-        [
-          "Generalized consensus: ",
-          "\\nvmf",
-          "Skyeye",
-          "4",
-          " "
-        ]
+        }
       ],
       "Ambiguity analysis": [
         [
@@ -1827,17 +1465,6 @@
             ]
           ]
         },
-        [
-          "To conclude: ",
-          "\\debug",
-          "AutoSD",
-          "2"
-        ],
-        [
-          "\\ndebug",
-          "FAIL",
-          "9"
-        ],
         {
           "To perform": [
             [
@@ -1847,12 +1474,6 @@
             ]
           ]
         },
-        [
-          "To perform: ",
-          "\\debug",
-          "LM-PACE",
-          "1"
-        ],
         {
           "To analyze": [
             [
@@ -1861,13 +1482,7 @@
               "2"
             ]
           ]
-        },
-        [
-          "To analyze: ",
-          "\\ndebug",
-          "FAIL",
-          "2"
-        ]
+        }
       ],
       "Closed analysis": [
         [
@@ -1882,13 +1497,7 @@
               "1"
             ]
           ]
-        },
-        [
-          "A: ",
-          "\\ndebug",
-          "LasRCA",
-          "1"
-        ]
+        }
       ],
       "Open analysis": [
         [
@@ -1904,12 +1513,6 @@
             ]
           ]
         },
-        [
-          "A: ",
-          "\\debug",
-          "RCAAgents",
-          "2"
-        ],
         {
           "Expert completed": [
             [
@@ -1919,14 +1522,7 @@
               " "
             ]
           ]
-        },
-        [
-          "Expert completed: ",
-          "\\testing",
-          "ScenarioNL",
-          "3",
-          " "
-        ]
+        }
       ],
       "Classification": [
         {
@@ -1938,12 +1534,6 @@
             ]
           ]
         },
-        [
-          "Binary: ",
-          "\\ndebug",
-          "FAIL",
-          "4"
-        ],
         {
           "In-context defined class": [
             [
@@ -1955,14 +1545,6 @@
             ]
           ]
         },
-        [
-          "In-context defined class: ",
-          "\\ndebug",
-          "SemSlicer",
-          "3",
-          " ",
-          "Multilabel "
-        ],
         {
           "Close ended": [
             [
@@ -1978,18 +1560,6 @@
             ]
           ]
         },
-        [
-          "Close ended: ",
-          "\\ndebug",
-          "LasRCA",
-          "2"
-        ],
-        [
-          "\\ndebug",
-          "LasRCA",
-          "3",
-          " "
-        ],
         {
           "Open ended": [
             [
@@ -1999,14 +1569,7 @@
               " "
             ]
           ]
-        },
-        [
-          "Open ended: ",
-          "\\nvmf",
-          "Skyeye",
-          "4",
-          " "
-        ]
+        }
       ]
     },
     "Rationalization": {
@@ -2033,7 +1596,7 @@
       ]
     }
   },
-  "Consultative/KnowledgeDistillation": {
+  "Consultative/FactsRetrieval": {
     "Domain": {
       "Vulnerability detection": [
         [
@@ -2099,18 +1662,7 @@
               "1"
             ]
           ]
-        },
-        [
-          "Grammar/Structure: ",
-          "\\testing",
-          "FuzzingParsers",
-          "1"
-        ],
-        [
-          "\\testing",
-          "ChatAFL",
-          "1"
-        ]
+        }
       ],
       "Examples": [
         [
@@ -2131,13 +1683,7 @@
               "2"
             ]
           ]
-        },
-        [
-          "Conceptual: ",
-          "\\nstatic",
-          "ToxicDetector",
-          "2"
-        ]
+        }
       ],
       "Set of items": [
         [
@@ -2166,14 +1712,6 @@
             ]
           ]
         },
-        [
-          "Design-time descriptions compliant: ",
-          "\\testing",
-          "RESTGPT",
-          "1",
-          " ",
-          " "
-        ],
         {
           "Run-time context compliant": [
             [
@@ -2185,14 +1723,6 @@
             ]
           ]
         },
-        [
-          "Run-time context compliant: ",
-          "\\testing",
-          "InputBlaster",
-          "1",
-          " ",
-          "Exec-reaches code "
-        ],
         {
           "Qualified post-constraint": [
             [
@@ -2203,13 +1733,6 @@
             ]
           ]
         },
-        [
-          "Qualified post-constraint: ",
-          "\\static",
-          "LLift",
-          "2",
-          " "
-        ],
         {
           "Triggers optimization": [
             [
@@ -2221,14 +1744,6 @@
             ]
           ]
         },
-        [
-          "Triggers optimization: ",
-          "\\testing",
-          "WhiteFox",
-          "1",
-          " ",
-          "Corrective mode "
-        ],
         {
           "Self-validation": [
             [
@@ -2238,14 +1753,7 @@
               " "
             ]
           ]
-        },
-        [
-          "Self-validation: ",
-          "\\static",
-          "LLift",
-          "2",
-          " "
-        ]
+        }
       ],
       "Abstract behavior": [
         [
@@ -2262,13 +1770,6 @@
             ]
           ]
         },
-        [
-          "Taint-flow: ",
-          "\\static",
-          "LATTE",
-          "3",
-          " "
-        ],
         {
           "Same-value": [
             [
@@ -2279,13 +1780,6 @@
             ]
           ]
         },
-        [
-          "Same-value: ",
-          "\\static",
-          "LLMDFA",
-          "3",
-          " "
-        ],
         {
           "Control-flow": [
             [
@@ -2296,13 +1790,6 @@
             ]
           ]
         },
-        [
-          "Control-flow: ",
-          "\\static",
-          "CFG-Chain",
-          "3",
-          " "
-        ],
         {
           "May-must summary": [
             [
@@ -2314,14 +1801,6 @@
             ]
           ]
         },
-        [
-          "May-must summary: ",
-          "\\static",
-          "LLift",
-          "3",
-          " ",
-          "Extra output "
-        ],
         {
           "Assessment": [
             [
@@ -2333,14 +1812,6 @@
             ]
           ]
         },
-        [
-          "Assessment: ",
-          "\\static",
-          "LLMDFA",
-          "3",
-          " ",
-          "Extra input "
-        ],
         {
           "Taint-flow": [
             [
@@ -2352,14 +1823,6 @@
             ]
           ]
         },
-        [
-          "Taint-flow: ",
-          "\\static",
-          "LATTE",
-          "3",
-          " ",
-          "Reactivity "
-        ],
         {
           "Requests further info": [
             [
@@ -2371,14 +1834,6 @@
             ]
           ]
         },
-        [
-          "Requests further info: ",
-          "\\static",
-          "LLift",
-          "3",
-          " ",
-          "Corrective mode "
-        ],
         {
           "Self-validation": [
             [
@@ -2390,14 +1845,6 @@
             ]
           ]
         },
-        [
-          "Self-validation: ",
-          "\\static",
-          "LLift",
-          "3",
-          " ",
-          "Rationalization "
-        ],
         {
           "Thought": [
             [
@@ -2407,14 +1854,7 @@
               " "
             ]
           ]
-        },
-        [
-          "Thought: ",
-          "\\static",
-          "LLMDFA",
-          "3",
-          " "
-        ]
+        }
       ]
     },
     "Accessibility": {
@@ -2469,7 +1909,7 @@
     "Ag": {},
     "LLMDFA": {}
   },
-  "Abstractive/SW-Entity-PropertyIdentifcation&Characterization": {
+  "Abstractive/PropertyCharacterization": {
     "Criteria of characterization": {
       "Descriptions": [
         [
@@ -2488,18 +1928,7 @@
               "OP5"
             ]
           ]
-        },
-        [
-          " domain corresponding: ",
-          "\\testing",
-          "FSML",
-          "OP"
-        ],
-        [
-          "\\testing",
-          "SELF-DEBUGGING",
-          "OP5"
-        ]
+        }
       ],
       "\\&": [
         {
@@ -2523,26 +1952,7 @@
               " "
             ]
           ]
-        },
-        [
-          " domain corresponding:",
-          " ",
-          "\\testing",
-          "RESTGPT",
-          "1"
-        ],
-        [
-          "\\progver",
-          "Dafny-Synth",
-          "4a"
-        ],
-        [
-          "\\testing",
-          "EMR",
-          "2",
-          " ",
-          " "
-        ]
+        }
       ],
       "Code corresponding": [
         [
@@ -2638,14 +2048,7 @@
               " "
             ]
           ]
-        },
-        [
-          "Columns of query: ",
-          "\\testing",
-          "SELF-DEBUGGING",
-          "OP5",
-          " "
-        ]
+        }
       ],
       "Qualified post-constraint": [
         [
@@ -2666,13 +2069,6 @@
             ]
           ]
         },
-        [
-          "Taint-flow: ",
-          "\\static",
-          "LATTE",
-          "3",
-          " "
-        ],
         {
           "Same-value": [
             [
@@ -2683,13 +2079,6 @@
             ]
           ]
         },
-        [
-          "Same-value: ",
-          "\\static",
-          "LLMDFA",
-          "3",
-          " "
-        ],
         {
           "Control-flow": [
             [
@@ -2699,14 +2088,7 @@
               " "
             ]
           ]
-        },
-        [
-          "Control-flow: ",
-          "\\static",
-          "CFG-Chain",
-          "3",
-          " "
-        ]
+        }
       ],
       "Summary": [
         {
@@ -2718,14 +2100,7 @@
               " "
             ]
           ]
-        },
-        [
-          "May-must: ",
-          "\\static",
-          "LLift",
-          "3",
-          " "
-        ]
+        }
       ],
       "Metamorphic": [
         {
@@ -2738,13 +2113,6 @@
             ]
           ]
         },
-        [
-          "Term equivalence: ",
-          "\\testing",
-          "FSML",
-          "OP",
-          " "
-        ],
         {
           "NL-relation": [
             [
@@ -2755,13 +2123,6 @@
             ]
           ]
         },
-        [
-          "NL-relation: ",
-          "\\testing",
-          "EMR",
-          "2",
-          " "
-        ],
         {
           "Bug-revealing mutation": [
             [
@@ -2771,14 +2132,7 @@
               " "
             ]
           ]
-        },
-        [
-          "Bug-revealing mutation: ",
-          "\\testing",
-          "InputBlaster",
-          "3",
-          " "
-        ]
+        }
       ]
     },
     "Corrective mode": {
@@ -2804,13 +2158,7 @@
               "3"
             ]
           ]
-        },
-        [
-          "Test results: ",
-          "\\testing",
-          "InputBlaster",
-          "3"
-        ]
+        }
       ]
     },
     "Reactivity": {
@@ -2849,18 +2197,11 @@
               " "
             ]
           ]
-        },
-        [
-          " assessment: ",
-          "\\static",
-          "LLMDFA",
-          "3",
-          " "
-        ]
+        }
       ]
     }
   },
-  "Abstractive/SW-EntityVerbalization": {
+  "Abstractive/SW-ArtifactVerbalization": {
     "Abstraction criteria": {
       "Summary": [
         [
@@ -3070,12 +2411,6 @@
             ]
           ]
         },
-        [
-          "Commit: ",
-          "\\nvmfU",
-          "VulAdvisor",
-          " "
-        ],
         {
           "Annotated": [
             [
@@ -3095,24 +2430,7 @@
               " "
             ]
           ]
-        },
-        [
-          "Annotated: ",
-          "\\progver",
-          "Clover",
-          "4"
-        ],
-        [
-          "\\progver",
-          "RustProof",
-          "1(CoT)"
-        ],
-        [
-          "\\progver",
-          "RustProof",
-          "2(CoT)",
-          " "
-        ]
+        }
       ],
       "Call sequences": [
         [
@@ -3159,18 +2477,6 @@
             ]
           ]
         },
-        [
-          "Precondition: ",
-          "\\progver",
-          "RustProof",
-          "1(CoT)"
-        ],
-        [
-          "\\progver",
-          "RustProof",
-          "2(CoT)",
-          " "
-        ],
         {
           "Postcondition": [
             [
@@ -3180,14 +2486,7 @@
               " "
             ]
           ]
-        },
-        [
-          "Postcondition: ",
-          "\\progver",
-          "RustProof",
-          "2(CoT)",
-          " "
-        ]
+        }
       ],
       "Change action": [
         [
@@ -3271,17 +2570,7 @@
               "2"
             ]
           ]
-        },
-        [
-          "Term equivalence: ",
-          "\\testing",
-          "FSML",
-          "OP",
-          "NL",
-          "\\testing",
-          "EMR",
-          "2"
-        ]
+        }
       ],
       "Mutation rule": [
         [
@@ -3319,13 +2608,7 @@
               "3"
             ]
           ]
-        },
-        [
-          "Test results: ",
-          "\\testing",
-          "InputBlaster",
-          "3"
-        ]
+        }
       ]
     }
   },
@@ -3360,17 +2643,6 @@
             ]
           ]
         },
-        [
-          "Usage: ",
-          "\\testing",
-          "Fuzz4All",
-          "1"
-        ],
-        [
-          "\\ndebug",
-          "FAIL",
-          "3"
-        ],
         {
           "Failure described": [
             [
@@ -3380,12 +2652,6 @@
             ]
           ]
         },
-        [
-          "Failure described: ",
-          "\\testing",
-          "GameBugDescriptions",
-          "2"
-        ],
         {
           "Faulty culprit": [
             [
@@ -3395,12 +2661,6 @@
             ]
           ]
         },
-        [
-          "Faulty culprit: ",
-          "\\debug",
-          "AutoFL",
-          "2"
-        ],
         {
           "Vulnerability described": [
             [
@@ -3410,12 +2670,6 @@
             ]
           ]
         },
-        [
-          "Vulnerability described: ",
-          "\\vmf",
-          "ChatGPTSCV",
-          "2"
-        ],
         {
           "Vulnerability mechanism/vector described": [
             [
@@ -3431,18 +2685,6 @@
             ]
           ]
         },
-        [
-          "Vulnerability mechanism/vector described: ",
-          "\\vmf",
-          "LLM4Vuln",
-          "2"
-        ],
-        [
-          "\\nvmf",
-          "VFFinder",
-          "1",
-          " "
-        ],
         {
           "Incident/Root-cause described": [
             [
@@ -3468,28 +2710,6 @@
             ]
           ]
         },
-        [
-          "Incident/Root-cause described: ",
-          "\\debug",
-          "RCACopilot",
-          "1"
-        ],
-        [
-          "\\debug",
-          "x-lifecycle",
-          "1"
-        ],
-        [
-          "\\nvmf",
-          "VFFinder",
-          "1"
-        ],
-        [
-          " ",
-          "\\debug",
-          "inContextRCA",
-          "1"
-        ],
         {
           "Relevant report elements": [
             [
@@ -3508,21 +2728,6 @@
             ]
           ]
         },
-        [
-          "Relevant report elements: ",
-          "\\testing",
-          "ScenarioNL",
-          "1"
-        ],
-        [
-          "\\ntestingU",
-          "SoVAR"
-        ],
-        [
-          "\\ntesting",
-          "LeGEND",
-          "1"
-        ],
         {
           "Output characterizations": [
             [
@@ -3532,12 +2737,6 @@
             ]
           ]
         },
-        [
-          "Output characterizations: ",
-          "\\testing",
-          "SELF-DEBUGGING",
-          "OP4"
-        ],
         {
           "Reason for toxicity": [
             [
@@ -3546,13 +2745,7 @@
               "1"
             ]
           ]
-        },
-        [
-          "Reason for toxicity: ",
-          "\\nstatic",
-          "ToxicDetector",
-          "1"
-        ]
+        }
       ],
       "Timeline": [
         [
@@ -3639,20 +2832,6 @@
             ]
           ]
         },
-        [
-          "Postcondition: ",
-          "\\testingU",
-          "nl2postcondition",
-          ",  ",
-          "\\progver",
-          "Clover",
-          "6"
-        ],
-        [
-          "\\progver",
-          "RustProof",
-          "1"
-        ],
         {
           "Precondition": [
             [
@@ -3662,12 +2841,6 @@
             ]
           ]
         },
-        [
-          "Precondition:  ",
-          "\\progver",
-          "Clover",
-          "6"
-        ],
         {
           "Assertion": [
             [
@@ -3676,13 +2849,7 @@
               "RustC"
             ]
           ]
-        },
-        [
-          "Assertion: ",
-          "\\nprogverUD",
-          "RustC4",
-          "RustC"
-        ]
+        }
       ]
     },
     "In-filling context": {
@@ -3709,17 +2876,11 @@
               "6"
             ]
           ]
-        },
-        [
-          "Compiler: ",
-          "\\progver",
-          "Clover",
-          "6"
-        ]
+        }
       ]
     }
   },
-  "Extractive/Code-ElementsIdentification&Extraction": {
+  "Extractive/CodeElementsIdentification": {
     "Identification criteria": {
       "Role based": [
         [
@@ -3735,13 +2896,6 @@
             ]
           ]
         },
-        [
-          "Command values: ",
-          "\\testing",
-          "KernelGPT",
-          "2",
-          "Definition"
-        ],
         {
           "Type": [
             [
@@ -3751,12 +2905,6 @@
             ]
           ]
         },
-        [
-          "Type: ",
-          "\\testing",
-          "KernelGPT",
-          "4"
-        ],
         {
           "Type": [
             [
@@ -3766,12 +2914,6 @@
             ]
           ]
         },
-        [
-          "Type: ",
-          "\\testing",
-          "KernelGPT",
-          "3"
-        ],
         {
           "Initializator": [
             [
@@ -3786,17 +2928,6 @@
             ]
           ]
         },
-        [
-          "Initializator: ",
-          "\\static",
-          "LLift",
-          "1"
-        ],
-        [
-          "\\testing",
-          "KernelGPT",
-          "1"
-        ],
         {
           "Leakable parameter": [
             [
@@ -3808,14 +2939,6 @@
             ]
           ]
         },
-        [
-          "Leakable parameter: ",
-          "\\static",
-          "LATTE",
-          "1",
-          "Resource",
-          "\\_"
-        ],
         {
           "leak-related": [
             [
@@ -3824,11 +2947,6 @@
             ]
           ]
         },
-        [
-          "leak-related: ",
-          "\\staticU",
-          "InferROI"
-        ],
         {
           "External input": [
             [
@@ -3838,12 +2956,6 @@
             ]
           ]
         },
-        [
-          "External input: ",
-          "\\static",
-          "LATTE",
-          "2"
-        ],
         {
           "Device name": [
             [
@@ -3853,12 +2965,6 @@
             ]
           ]
         },
-        [
-          "Device name: ",
-          "\\testing",
-          "KernelGPT",
-          "1"
-        ],
         {
           "Settings to run": [
             [
@@ -3872,16 +2978,6 @@
             ]
           ]
         },
-        [
-          "Settings to run: ",
-          "\\ntesting",
-          "HITS",
-          "2",
-          "Problem",
-          "\\_",
-          "solution",
-          "\\_"
-        ],
         {
           "steps-related": [
             [
@@ -3893,14 +2989,6 @@
             ]
           ]
         },
-        [
-          "steps-related: ",
-          "\\ntesting",
-          "HITS",
-          "4",
-          "Used variables ",
-          "\\&"
-        ],
         {
           "methods": [
             [
@@ -3910,12 +2998,6 @@
             ]
           ]
         },
-        [
-          " methods: ",
-          "\\ntesting",
-          "HITS",
-          "5"
-        ],
         {
           "Used conditions": [
             [
@@ -3925,12 +3007,6 @@
             ]
           ]
         },
-        [
-          "Used conditions: ",
-          "\\ntesting",
-          "HITS",
-          "5"
-        ],
         {
           "Scenario defined": [
             [
@@ -3939,13 +3015,7 @@
               "3"
             ]
           ]
-        },
-        [
-          "Scenario defined: ",
-          "\\vmf",
-          "GPTScan",
-          "3"
-        ]
+        }
       ],
       "Relevance based": [
         [
@@ -3963,12 +3033,6 @@
             ]
           ]
         },
-        [
-          "Blocks of code: ",
-          "\\static",
-          "CFG-Chain",
-          "1"
-        ],
         {
           "Code of blocks": [
             [
@@ -3977,13 +3041,7 @@
               "2"
             ]
           ]
-        },
-        [
-          "Code of blocks: ",
-          "\\static",
-          "CFG-Chain",
-          "2"
-        ]
+        }
       ]
     },
     "Reactivity": {
@@ -4028,7 +3086,7 @@
       ]
     }
   },
-  "Extractive/Text-ElementsIdentification&Extraction": {
+  "Extractive/TextElementsExtraction": {
     "Extraction criteria": {
       "Defined role": [
         {
@@ -4039,11 +3097,6 @@
             ]
           ]
         },
-        [
-          "Keywords: ",
-          "\\debugU",
-          "Cupid"
-        ],
         {
           "Variable names": [
             [
@@ -4052,11 +3105,6 @@
             ]
           ]
         },
-        [
-          "Variable names: ",
-          "\\testingU",
-          "MetaMorph"
-        ],
         {
           "FSM-elements": [
             [
@@ -4066,12 +3114,6 @@
             ]
           ]
         },
-        [
-          "FSM-elements: ",
-          "\\testingU",
-          "PROSPER",
-          "Topic related sentences"
-        ],
         {
           "I/O": [
             [
@@ -4080,13 +3122,7 @@
               "1"
             ]
           ]
-        },
-        [
-          "I/O: ",
-          "\\testing",
-          "EMR",
-          "1"
-        ]
+        }
       ],
       "Best fit": [
         {
@@ -4108,22 +3144,6 @@
             ]
           ]
         },
-        [
-          "Defined structure: ",
-          "\\ndebug",
-          "FAIL",
-          "5"
-        ],
-        [
-          "\\debug",
-          "AdbGPT",
-          "1"
-        ],
-        [
-          "\\testing",
-          "SysKG-UTF",
-          "1"
-        ],
         {
           "Defined option": [
             [
@@ -4134,13 +3154,6 @@
             ]
           ]
         },
-        [
-          "Defined option: ",
-          "\\ndebug",
-          "FAIL",
-          "8",
-          "Input property"
-        ],
         {
           "Common root cause": [
             [
@@ -4149,13 +3162,7 @@
               "2"
             ]
           ]
-        },
-        [
-          "Common root cause: ",
-          "\\debug",
-          "RCACopilot",
-          "2"
-        ]
+        }
       ]
     },
     "Nature of text": {
@@ -4209,17 +3216,11 @@
               "1"
             ]
           ]
-        },
-        [
-          "Closest meaning: ",
-          "\\debug",
-          "AdbGPT",
-          "1"
-        ]
+        }
       ]
     }
   },
-  "Generative/Domain-Specific-CodeGeneration": {
+  "Generative/DomainSpecificCode-Generation": {
     "Generation criteria": {
       "Problem-description corresponding": [
         {
@@ -4230,11 +3231,6 @@
             ]
           ]
         },
-        [
-          "DSL-function description: ",
-          "\\testingU",
-          "Eywa"
-        ],
         {
           "Function intent": [
             [
@@ -4244,12 +3240,6 @@
             ]
           ]
         },
-        [
-          "Function intent: ",
-          "\\progver",
-          "Dafny-Synth",
-          "3"
-        ],
         {
           "Object description": [
             [
@@ -4264,17 +3254,6 @@
             ]
           ]
         },
-        [
-          "Object description: ",
-          "\\static",
-          "LLMDFA",
-          "4"
-        ],
-        [
-          "\\static",
-          "LLMDFA",
-          "5"
-        ],
         {
           "Scenario": [
             [
@@ -4289,17 +3268,6 @@
             ]
           ]
         },
-        [
-          "Scenario: ",
-          "\\testing",
-          "ScenarioNL",
-          "4"
-        ],
-        [
-          "\\ntesting",
-          "LeGEND",
-          "2"
-        ],
         {
           "Constraint": [
             [
@@ -4309,12 +3277,6 @@
             ]
           ]
         },
-        [
-          "Constraint: ",
-          "\\testing",
-          "AID",
-          "2"
-        ],
         {
           "Property": [
             [
@@ -4324,12 +3286,6 @@
             ]
           ]
         },
-        [
-          "Property: ",
-          "\\testing",
-          "EMR",
-          "3"
-        ],
         {
           "Rule": [
             [
@@ -4338,13 +3294,7 @@
               "4"
             ]
           ]
-        },
-        [
-          "Rule: ",
-          "\\testing",
-          "InputBlaster",
-          "4"
-        ]
+        }
       ],
       "Ability to execute code": [
         [
@@ -4381,13 +3331,7 @@
               "1"
             ]
           ]
-        },
-        [
-          "Ability to trigger vulnerability: ",
-          "\\ntesting",
-          "AdvSCanner",
-          "1"
-        ]
+        }
       ],
       "High precision": [
         [
@@ -4406,18 +3350,7 @@
               "2"
             ]
           ]
-        },
-        [
-          " recall: ",
-          "\\static",
-          "LLMDFA",
-          "1"
-        ],
-        [
-          "\\static",
-          "LLMDFA",
-          "2"
-        ]
+        }
       ]
     },
     "Nature of domain/entity": {
@@ -4435,18 +3368,7 @@
               "2"
             ]
           ]
-        },
-        [
-          "Source/Sink identification: ",
-          "\\static",
-          "LLMDFA",
-          "1"
-        ],
-        [
-          "\\static",
-          "LLMDFA",
-          "2"
-        ]
+        }
       ],
       "Metamorphic relation": [
         [
@@ -4469,18 +3391,7 @@
               "5"
             ]
           ]
-        },
-        [
-          "Path condition: ",
-          "\\static",
-          "LLMDFA",
-          "4"
-        ],
-        [
-          "\\static",
-          "LLMDFA",
-          "5"
-        ]
+        }
       ],
       "Test drivers": [
         {
@@ -4507,27 +3418,6 @@
             ]
           ]
         },
-        [
-          "Fuzzing:  ",
-          "\\testing",
-          "OSS-Fuzz",
-          "1"
-        ],
-        [
-          "\\testing",
-          "OSS-Fuzz",
-          "2"
-        ],
-        [
-          "\\testing",
-          "UGCTX",
-          "1"
-        ],
-        [
-          "\\testing",
-          "UGCTX",
-          "2"
-        ],
         {
           "Input generators": [
             [
@@ -4546,23 +3436,7 @@
               "2"
             ]
           ]
-        },
-        [
-          "Input generators: ",
-          "\\testing",
-          "AID",
-          "2"
-        ],
-        [
-          "\\testing",
-          "InputBlaster",
-          "4"
-        ],
-        [
-          "\\testing",
-          "PBT-GPT",
-          "2"
-        ]
+        }
       ],
       "Protocol-related code": [
         [
@@ -4645,28 +3519,6 @@
             ]
           ]
         },
-        [
-          "Compiler: ",
-          "\\testing",
-          "OSS-Fuzz",
-          "2"
-        ],
-        [
-          "\\static",
-          "LLMDFA",
-          "2"
-        ],
-        [
-          "\\static",
-          "LLMDFA",
-          "5"
-        ],
-        [
-          "\\testing",
-          "UGCTX",
-          "2",
-          "Execution "
-        ],
         {
           "Number of positive/negative": [
             [
@@ -4676,12 +3528,6 @@
             ]
           ]
         },
-        [
-          "Number of positive/negative: ",
-          "\\static",
-          "LLMDFA",
-          "2"
-        ],
         {
           "Results": [
             [
@@ -4702,23 +3548,6 @@
             ]
           ]
         },
-        [
-          "Results: ",
-          "\\testing",
-          "OSS-Fuzz",
-          "2"
-        ],
-        [
-          "\\testing",
-          "InputBlaster",
-          "4"
-        ],
-        [
-          "\\testing",
-          "UGCTX",
-          "2",
-          " "
-        ],
         {
           "Rationalized failure": [
             [
@@ -4727,13 +3556,7 @@
               "1"
             ]
           ]
-        },
-        [
-          "Rationalized failure: ",
-          "\\ntesting",
-          "AdvSCanner",
-          "1"
-        ]
+        }
       ]
     },
     "Reactivity": {
@@ -4797,27 +3620,6 @@
             ]
           ]
         },
-        [
-          "Demonstration similarity: ",
-          "\\testing",
-          "PropertyGPT",
-          "1"
-        ],
-        [
-          "\\testing",
-          "PropertyGPT",
-          "2"
-        ],
-        [
-          " ",
-          "\\testing",
-          "PropertyGPT",
-          "4"
-        ],
-        [
-          "\\testingU",
-          "CEDAR"
-        ],
         "\\&",
         " Verifiable: ",
         "\\progver",
@@ -5022,16 +3824,6 @@
             ]
           ]
         },
-        [
-          "Compiler failure: ",
-          "\\testing",
-          "PropertyGPT",
-          "3"
-        ],
-        [
-          "\\nprogverU",
-          "ESBMCibmc"
-        ],
         {
           "Verification failure": [
             [
@@ -5060,31 +3852,6 @@
             ]
           ]
         },
-        [
-          "Verification failure: ",
-          "\\progver",
-          "SpecGen",
-          "2"
-        ],
-        [
-          "\\nprogverU",
-          "ESBMCibmc"
-        ],
-        [
-          "\\nprogverU",
-          "Lam4Inv"
-        ],
-        [
-          "   ",
-          "\\progver",
-          "Lemur",
-          "2"
-        ],
-        [
-          "\\progver",
-          "RustProof",
-          "3"
-        ],
         {
           "Inductiveness": [
             [
@@ -5094,12 +3861,6 @@
             ]
           ]
         },
-        [
-          "Inductiveness: ",
-          "\\progver",
-          "Loopy",
-          "2"
-        ],
         {
           "Validity checker": [
             [
@@ -5113,18 +3874,7 @@
               "5"
             ]
           ]
-        },
-        [
-          "Validity checker: ",
-          "\\testing",
-          "PropertyGPT",
-          "4"
-        ],
-        [
-          "\\testing",
-          "KernelGPT",
-          "5"
-        ]
+        }
       ]
     },
     "Rationalization": {
@@ -5202,14 +3952,7 @@
               " "
             ]
           ]
-        },
-        [
-          "Bug revealing: ",
-          "\\testing",
-          "FuzzGPT",
-          "4",
-          " "
-        ]
+        }
       ],
       "Coverage improving": [
         [
@@ -5336,32 +4079,6 @@
             ]
           ]
         },
-        [
-          "Compilation errors: ",
-          "\\testing",
-          "ChatUniTest",
-          "2"
-        ],
-        [
-          "\\testing",
-          "MuTAP",
-          "2"
-        ],
-        [
-          "\\testing",
-          "CoverUp",
-          "2"
-        ],
-        [
-          "\\testingU",
-          "TestPilot"
-        ],
-        [
-          " ",
-          "\\testing",
-          "ChatTESTER",
-          "3"
-        ],
         {
           "Assertion failure": [
             [
@@ -5380,21 +4097,6 @@
             ]
           ]
         },
-        [
-          "Assertion failure: ",
-          "\\testing",
-          "ChatUniTest",
-          "2"
-        ],
-        [
-          "\\testingU",
-          "TestPilot"
-        ],
-        [
-          "\\testing",
-          "ChatTESTER",
-          "3"
-        ],
         {
           "Examples to augment": [
             [
@@ -5403,11 +4105,6 @@
             ]
           ]
         },
-        [
-          "Examples to augment: ",
-          "\\testingU",
-          "TELPA"
-        ],
         {
           "Coverage info": [
             [
@@ -5421,18 +4118,7 @@
               "2"
             ]
           ]
-        },
-        [
-          "Coverage info: ",
-          "\\testing",
-          "CoverUp",
-          "1"
-        ],
-        [
-          "\\testing",
-          "CoverUp",
-          "2"
-        ]
+        }
       ]
     },
     "Rationalization": {
@@ -5457,12 +4143,6 @@
             ]
           ]
         },
-        [
-          "Description: ",
-          "\\testing",
-          "RESTGPT",
-          "2"
-        ],
         {
           "Usage": [
             [
@@ -5472,12 +4152,6 @@
             ]
           ]
         },
-        [
-          "Usage: ",
-          "\\testing",
-          "Fuzz4All",
-          "2"
-        ],
         {
           "GUI context": [
             [
@@ -5497,22 +4171,6 @@
             ]
           ]
         },
-        [
-          "GUI context: ",
-          "\\testing",
-          "QTypist",
-          "1"
-        ],
-        [
-          "\\testing",
-          "QTypist",
-          "2"
-        ],
-        [
-          "\\testing",
-          "InputBlaster",
-          "2"
-        ],
         {
           "Code + arguments": [
             [
@@ -5521,13 +4179,7 @@
               "2"
             ]
           ]
-        },
-        [
-          "Code + arguments: ",
-          "\\testing",
-          "SearchGEM5",
-          "2"
-        ]
+        }
       ],
       "Constraints based": [
         {
@@ -5553,26 +4205,6 @@
             ]
           ]
         },
-        [
-          ": ",
-          "\\testing",
-          "RESTGPT",
-          "2"
-        ],
-        [
-          "\\testing",
-          "InputBlaster",
-          "2"
-        ],
-        [
-          "\\testingU",
-          "SymPrompt"
-        ],
-        [
-          "\\testing",
-          "WhiteFox",
-          "2"
-        ],
         {
           "code reachability": [
             [
@@ -5591,21 +4223,6 @@
             ]
           ]
         },
-        [
-          " code reachability: ",
-          "\\ntestingU",
-          "DirInput"
-        ],
-        [
-          "\\ntesting",
-          "HITS",
-          "6"
-        ],
-        [
-          "\\ntestingU",
-          "Magneto",
-          " "
-        ],
         {
           "": [
             [
@@ -5616,13 +4233,6 @@
             ]
           ]
         },
-        [
-          ": ",
-          "\\testing",
-          "SELF-DEBUGGING",
-          "OP2",
-          " "
-        ],
         {
           "": [
             [
@@ -5632,12 +4242,6 @@
             ]
           ]
         },
-        [
-          ": ",
-          "\\testing",
-          "mrDetector",
-          "1"
-        ],
         {
           "": [
             [
@@ -5647,12 +4251,6 @@
             ]
           ]
         },
-        [
-          ": ",
-          "\\ndebug",
-          "SemSlicer",
-          "4"
-        ],
         {
           "": [
             [
@@ -5668,18 +4266,6 @@
             ]
           ]
         },
-        [
-          ": ",
-          "\\ndebug",
-          "SemSlicer",
-          "1"
-        ],
-        [
-          "\\ndebug",
-          "SemSlicer",
-          "2",
-          " exercises "
-        ],
         {
           "": [
             [
@@ -5690,13 +4276,6 @@
             ]
           ]
         },
-        [
-          ": ",
-          "\\testingU",
-          "LLMeDiff",
-          " exercises ",
-          " exercises "
-        ],
         {
           "": [
             [
@@ -5710,18 +4289,7 @@
               "2"
             ]
           ]
-        },
-        [
-          ": ",
-          "\\testing",
-          "TestChain",
-          "1"
-        ],
-        [
-          "\\testing",
-          "ClarifyGPT",
-          "2"
-        ]
+        }
       ],
       "Exemplars compliant": [
         {
@@ -5738,17 +4306,6 @@
             ]
           ]
         },
-        [
-          "Spec-aware edition:  ",
-          "\\testing",
-          "ChatAFL",
-          "2"
-        ],
-        [
-          "\\testing",
-          "Fuzz4All",
-          "3"
-        ],
         {
           "Variation": [
             [
@@ -5762,16 +4319,6 @@
             ]
           ]
         },
-        [
-          "Variation: ",
-          "\\testingU",
-          "ChatFuzz"
-        ],
-        [
-          "\\testing",
-          "Fuzz4All",
-          "4"
-        ],
         {
           "Error triggering": [
             [
@@ -5781,12 +4328,6 @@
             ]
           ]
         },
-        [
-          "Error triggering: ",
-          "\\testing",
-          "FuzzingParsers",
-          "4"
-        ],
         {
           "Natural completion": [
             [
@@ -5796,14 +4337,7 @@
               "edge from parent"
             ]
           ]
-        },
-        [
-          "Natural completion: ",
-          "\\testing",
-          "ChatAFL",
-          "3",
-          "edge from parent"
-        ]
+        }
       ]
     },
     "In-filling context": {
@@ -5837,11 +4371,6 @@
             ]
           ]
         },
-        [
-          "Execution output: ",
-          "\\ntestingU",
-          "DirInput"
-        ],
         {
           "Self-refine alternative": [
             [
@@ -5850,17 +4379,11 @@
               "2"
             ]
           ]
-        },
-        [
-          "Self-refine alternative: ",
-          "\\ndebug",
-          "SemSlicer",
-          "2"
-        ]
+        }
       ]
     }
   },
-  "Generative/General-CodeGeneration": {
+  "Generative/GeneralCode-Generation": {
     "Generation criteria": {
       "Intent corresponding": [
         [
@@ -5907,12 +4430,6 @@
             ]
           ]
         },
-        [
-          "Test provided: ",
-          "\\progver",
-          "Dafny-Synth",
-          "2"
-        ],
         {
           "Signature provided": [
             [
@@ -5927,17 +4444,6 @@
             ]
           ]
         },
-        [
-          "Signature provided: ",
-          "\\progver",
-          "Dafny-Synth",
-          "2"
-        ],
-        [
-          "\\progver",
-          "Dafny-Synth",
-          "5"
-        ],
         {
           "Specification provided": [
             [
@@ -5947,12 +4453,6 @@
             ]
           ]
         },
-        [
-          "Specification provided: ",
-          "\\progver",
-          "Dafny-Synth",
-          "5"
-        ],
         {
           "Verifiable": [
             [
@@ -5963,13 +4463,6 @@
             ]
           ]
         },
-        [
-          "Verifiable: ",
-          "\\progver",
-          "Dafny-Synth",
-          "5",
-          "Non-functional requirements satisfying"
-        ],
         {
           "Complexity": [
             [
@@ -5978,11 +4471,6 @@
             ]
           ]
         },
-        [
-          "Complexity: ",
-          "\\testingU",
-          "ALGO"
-        ],
         {
           "Style": [
             [
@@ -5995,17 +4483,7 @@
               "FormAI"
             ]
           ]
-        },
-        [
-          "Style: ",
-          "\\testing",
-          "AID",
-          "1"
-        ],
-        [
-          "\\testingU",
-          "FormAI"
-        ]
+        }
       ],
       "Annotation corresponding": [
         [
@@ -6039,22 +4517,6 @@
             ]
           ]
         },
-        [
-          "Defect-description repairing:  ",
-          "\\vmf",
-          "WitheredLeaf",
-          "3(CoT)"
-        ],
-        [
-          "\\debug",
-          "AutoSD",
-          "3"
-        ],
-        [
-          "\\vmf",
-          "LLM4Vuln",
-          "3(patch)"
-        ],
         {
           "Error-feedback repairing": [
             [
@@ -6064,12 +4526,6 @@
             ]
           ]
         },
-        [
-          "Error-feedback repairing:   ",
-          "\\progver",
-          "AlloyRepair",
-          "1"
-        ],
         {
           "Suggestion-based repairing": [
             [
@@ -6078,13 +4534,7 @@
               "2"
             ]
           ]
-        },
-        [
-          "Suggestion-based repairing:   ",
-          "\\progver",
-          "AlloyRepair",
-          "2"
-        ]
+        }
       ],
       "Examples based": [
         [
@@ -6099,12 +4549,6 @@
             ]
           ]
         },
-        [
-          "API: ",
-          "\\testing",
-          "FuzzGPT",
-          "2"
-        ],
         {
           "Parametrization": [
             [
@@ -6114,12 +4558,6 @@
             ]
           ]
         },
-        [
-          "Parametrization: ",
-          "\\testing",
-          "SearchGEM5",
-          "1"
-        ],
         {
           "Mutation": [
             [
@@ -6133,16 +4571,6 @@
             ]
           ]
         },
-        [
-          "Mutation: ",
-          "\\testing",
-          "FSML",
-          "DS/MG"
-        ],
-        [
-          "\\debugU",
-          "LLM4CBI"
-        ],
         {
           "Bug injecting": [
             [
@@ -6151,11 +4579,6 @@
             ]
           ]
         },
-        [
-          "Bug injecting: ",
-          "\\testingU",
-          "BugFarm"
-        ],
         {
           "Different behavior": [
             [
@@ -6164,11 +4587,6 @@
             ]
           ]
         },
-        [
-          "Different behavior: ",
-          "\\testingU",
-          "LLMorpheus"
-        ],
         {
           "Repair": [
             [
@@ -6206,40 +4624,6 @@
             ]
           ]
         },
-        [
-          "Repair: ",
-          "\\progver",
-          "AlloyRepair",
-          "1"
-        ],
-        [
-          "\\progver",
-          "AlloyRepair",
-          "2"
-        ],
-        [
-          "\\vmf",
-          "WitheredLeaf",
-          "3(CoT)"
-        ],
-        [
-          "\\debug",
-          "AutoSD",
-          "3"
-        ],
-        [
-          " ",
-          "\\testing",
-          "AID",
-          "1"
-        ],
-        [
-          "\\vmf",
-          "LLM4Vuln",
-          "3(patch)",
-          " ",
-          "Completion"
-        ],
         {
           "Natural": [
             [
@@ -6262,27 +4646,7 @@
               "1"
             ]
           ]
-        },
-        [
-          "Natural: ",
-          "\\vmfU",
-          "FLAG"
-        ],
-        [
-          "\\testing",
-          "TitanFuzz",
-          "2"
-        ],
-        [
-          "\\testingUD",
-          "MuBert",
-          "BERT"
-        ],
-        [
-          "\\testing",
-          "CHEMFUZZ",
-          "1"
-        ]
+        }
       ]
     },
     "Nature of primary generated entity": {
@@ -6421,17 +4785,6 @@
             ]
           ]
         },
-        [
-          "Pre/Postcondition: ",
-          "\\progver",
-          "Dafny-Synth",
-          "1"
-        ],
-        [
-          "\\progver",
-          "Dafny-Synth",
-          "2"
-        ],
         {
           "Loop invariant / Verification annotations": [
             [
@@ -6440,13 +4793,7 @@
               "5"
             ]
           ]
-        },
-        [
-          "Loop invariant / Verification annotations: ",
-          "\\progver",
-          "Dafny-Synth",
-          "5"
-        ]
+        }
       ]
     },
     "In-filling context": {
@@ -6512,17 +4859,6 @@
             ]
           ]
         },
-        [
-          "Compiler: ",
-          "\\progver",
-          "Clover",
-          "2"
-        ],
-        [
-          "\\progver",
-          "Clover",
-          "3"
-        ],
         {
           "Verifier": [
             [
@@ -6532,12 +4868,6 @@
             ]
           ]
         },
-        [
-          "Verifier: ",
-          "\\progver",
-          "Clover",
-          "1"
-        ],
         {
           "Validity": [
             [
@@ -6556,21 +4886,6 @@
             ]
           ]
         },
-        [
-          "Validity: ",
-          "\\progver",
-          "AlloyRepair",
-          "1"
-        ],
-        [
-          "\\testing",
-          "CHEMFUZZ",
-          "1"
-        ],
-        [
-          "\\debugU",
-          "LLM4CBI"
-        ],
         {
           "Suggested corrections": [
             [
@@ -6579,13 +4894,7 @@
               "2"
             ]
           ]
-        },
-        [
-          "Suggested corrections: ",
-          "\\progver",
-          "AlloyRepair",
-          "2"
-        ]
+        }
       ]
     },
     "Rationalization": {
@@ -6622,13 +4931,7 @@
               "3"
             ]
           ]
-        },
-        [
-          "Closest meaning: ",
-          "\\testing",
-          "TARGET",
-          "3"
-        ]
+        }
       ],
       "Fusion": [
         {
@@ -6640,12 +4943,6 @@
             ]
           ]
         },
-        [
-          "Control flow graph: ",
-          "\\static",
-          "CFG-Chain",
-          "4"
-        ],
         {
           "Structure": [
             [
@@ -6654,13 +4951,7 @@
               "5"
             ]
           ]
-        },
-        [
-          "Structure: ",
-          "\\testing",
-          "FuzzingParsers",
-          "5"
-        ]
+        }
       ]
     },
     "Nature of structure": {
@@ -6703,7 +4994,7 @@
       ]
     }
   },
-  "Executive/Execution": {
+  "Executive/PseudocodeExecution": {
     "j": {},
     "Domain": {
       "General code": [
@@ -6781,17 +5072,7 @@
               " "
             ]
           ]
-        },
-        [
-          "Verification results: ",
-          "\\staticD",
-          "EV",
-          "E",
-          "\\&",
-          "V",
-          "1",
-          " "
-        ]
+        }
       ]
     },
     "Reactivity": {
@@ -7009,13 +5290,7 @@
               "6"
             ]
           ]
-        },
-        [
-          "Available tools: ",
-          "\\testing",
-          "PentestGPT",
-          "6"
-        ]
+        }
       ],
       "Fusing": [
         [
@@ -7250,18 +5525,7 @@
               "4"
             ]
           ]
-        },
-        [
-          "Outcomes: ",
-          "\\testing",
-          "PentestGPT",
-          "1"
-        ],
-        [
-          "\\testing",
-          "AXNav",
-          "4"
-        ]
+        }
       ],
       "Rule based": [
         [

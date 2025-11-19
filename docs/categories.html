@@ -113,7 +113,7 @@ function cTree(data, category="") {
           if (typeof item === 'object') {
             html += '<li class="sub-tree">' + cTree(item, category) + '</li>';
           } else {
-            html += `<li class="value">${item}</li>`;
+            html += `<li class="value" data-cat="${category}">${item}</li>`;
           }
           
         });
@@ -211,7 +211,7 @@ function cTree(data, category="") {
     }
 
     renderTree('data/taxonomy.json', 'categories-container');
-    renderHTMLTaskTable('data/tasks_from_html.json', 'task-table');
+    //renderHTMLTaskTable('data/tasks_from_html.json', 'task-table');
 
     const tasks = {};
     async function readTaskData(filename) {
@@ -227,6 +227,15 @@ function cTree(data, category="") {
 
 <script>
 
+  // load data/categories_from_tex.json as a object
+  const tex_categories = {};
+  async function readTexCategories(filename) {
+    const response = await fetch(filename);
+    const categoryData = await response.json();
+    Object.assign(tex_categories, categoryData);      
+  }
+  readTexCategories('data/categories_from_tex.json');
+
 
   function addEventListeners() {
     const listItems = document.querySelectorAll('li.value');
@@ -234,6 +243,12 @@ function cTree(data, category="") {
     listItems.forEach(item => {
       item.addEventListener('click', function() {
           const taskName = event.target.textContent;
+          const catName = event.target.getAttribute('data-cat');
+
+          //remove spaces from taskName
+          const texKey = catName + '/' + taskName.replace(/\s+/g, '');
+
+
           if (event.target.classList.contains('selected-task')) {
             // unselect
             event.target.style.backgroundColor = '';
@@ -257,30 +272,28 @@ function cTree(data, category="") {
             event.target.style.backgroundColor = 'yellow';
             event.target.classList.add('selected-task');
 
-            taskData = tasks['data'];
-            //filter objects with LLM-Downstream Task Class-clean
-            const filteredTasks = taskData.filter(t => t['LLM-Downstream Task Class-clean'] === taskName);
-            console.log(filteredTasks);
-
-            const tableValues = document.querySelectorAll('.table-value');
-            tableValues.forEach(tv => {
-              tv.style.backgroundColor = '';
-              tv.style.display = 'none';
-              // if tv's data-name is in filteredTasks, highlight it
-              const tvName = tv.getAttribute('data-name');
-              const match = filteredTasks.find(t => t['Nick'] === tvName);
-              if (match) {
-                tv.style.backgroundColor = 'yellow';
-                tv.style.display = 'block';
-              }
-
-            });
+            
           }
+          //alert(texKey);
+          
+          // insert dictionary inside task-table
+          const taskTable = document.getElementById('task-table');
 
+          const texData = tex_categories[texKey];
+          let html = '<h2>' + texKey + '</h2>';
+          
+          // just print texData as text inside taskTable
+          html += '<pre>' + JSON.stringify(texData, null, 2) + '</pre>';
+          taskTable.innerHTML = html;
+          
+
+
+        });
       });
-    });
 
-  }
+  };
+
+  
 </script>
 
 </body>

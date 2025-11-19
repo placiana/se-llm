@@ -122,32 +122,33 @@ class CategoriesWalker():
         if section:
             sections.append(section)
 
-        #print("Sections:", sections)
+        print("Sections:", sections)
         result = []
         for sec in sections:
-            print("Parsing section:", sec)
-            #result.extend(self.parse_nodelist(sec))
-            if ':' in sec[0]:
-                print('Se pico:', sec)
-                result.append({
-                    sec[0].split(':')[0].strip(): self.parse_nodelist(sec[1:])
-                })
-            
+            if sec:
+                print("Parsing section:", sec)
+                #result.extend(self.parse_nodelist(sec))
+                if ':' in sec[0]:
+                    print('Se pico:', sec)
+                    result.append({
+                        sec[0].split(':')[0].strip(): self.parse_nodelist(sec[1:])
+                    })
+                
 
-            # Split list in many lists if there are commas
-            categories = []
-            current_cat = []
-            for item in sec:
-                if item == ', ':
-                    if current_cat:
-                        categories.append(current_cat)
-                        current_cat = []
-                else:
-                    current_cat.append(item)
-            if current_cat:
-                categories.append(current_cat)
-            print("Parsed categories:", categories)
-            result.extend(categories)
+                # Split list in many lists if there are commas
+                categories = []
+                current_cat = []
+                for item in sec:
+                    if item == ', ':
+                        if current_cat:
+                            categories.append(current_cat)
+                            current_cat = []
+                    else:
+                        current_cat.append(item)
+                if current_cat:
+                    categories.append(current_cat)
+                print("Parsed categories:", categories)
+                result.extend(categories)
 
             
         return result
@@ -180,7 +181,7 @@ if __name__ == "__main__":
     result = {}
 
     walker = CategoriesWalker()
-    for tex_file in glob.glob("sources/test/**/*.tex", recursive=True):
+    for tex_file in glob.glob("sources/tex/**/*.tex", recursive=True):
         print("Processing file:", tex_file)
         walker.walk(tex_file)
         categories = walker.get_categories()

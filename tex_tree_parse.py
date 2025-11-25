@@ -260,7 +260,7 @@ if __name__ == "__main__":
     # Save result to JSON
     import json
     import pprint
-    with open('docs/data/categories_from_tex.json', 'w') as file:
+    with open('docs/data/categories_from_tex.json-draft', 'w') as file:
         json.dump(result, file, indent=2)
 
 

@@ -218,45 +218,42 @@
               "2"
             ]
           ]
-        },
-        [
-          "Closed analysis",
-          "Q",
-          "\\&"
-        ],
-        {
-          "A": [
-            [
-              "\\ndebug",
-              "LasRCA",
-              "1"
-            ]
-          ]
-        },
-        [
-          "Open analysis",
-          "Q",
-          "\\&"
-        ],
-        {
-          "A": [
-            [
-              "\\debug",
-              "RCAAgents",
-              "2"
-            ]
-          ]
-        },
-        {
-          "Expert completed": [
-            [
-              "\\testing",
-              "ScenarioNL",
-              "3"
-            ]
-          ]
         }
       ],
+      "Closed analysis":
+        [
+          {
+            "Q & A": [
+              [
+                "\\ndebug",
+                "LasRCA",
+                "1"
+              ]
+            ]
+          }
+        ],
+      "Open analysis":
+        [
+          {
+            "Q & A": [
+              [
+                "\\debug",
+                "RCAAgents",
+                "2"
+              ],
+              {
+                "Expert completed": [
+                  [
+                    "\\testing",
+                    "ScenarioNL",
+                    "3"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+
       "Classification ": [
         {
           "Binary": [
@@ -264,40 +261,45 @@
               "\\ndebug",
               "FAIL",
               "4"
-            ]
-          ]
-        },
-        {
-          "In-context defined class": [
-            [
-              "\\ndebug",
-              "SemSlicer",
-              "3",
-              "Multilabel "
-            ]
-          ]
-        },
-        {
-          "Close ended": [
-            [
-              "\\ndebug",
-              "LasRCA",
-              "2"
             ],
-            [
-              "\\ndebug",
-              "LasRCA",
-              "3"
-            ]
+            {
+              "In-context defined class": [
+                [
+                  "\\ndebug",
+                  "SemSlicer",
+                  "3",
+                  "Multilabel "
+                ]
+              ]
+            }
           ]
         },
         {
-          "Open ended": [
-            [
-              "\\nvmf",
-              "Skyeye",
-              "4"
-            ]
+          "Multilabel": [
+            {
+              "Close ended": [
+                [
+                  "\\ndebug",
+                  "LasRCA",
+                  "2"
+                ],
+                [
+                  "\\ndebug",
+                  "LasRCA",
+                  "3"
+                ]
+              ]
+            },
+            {
+              "Open ended": [
+                [
+                  "\\nvmf",
+                  "Skyeye",
+                  "4"
+                ]
+              ]
+            }
+
           ]
         }
       ]
@@ -326,7 +328,7 @@
       ]
     }
   },
-  "Evaluative/RationalizedCode-Clasification": {
+  "Evaluative/RationalizedCode-Classification": {
     "Analysis criteria": {
       "Vulnerability proneness": [
         [
@@ -356,8 +358,9 @@
         [
           "\\vmf",
           "GPTLens",
-          "1",
-          ",  ",
+          "1"
+        ],
+        [
           "\\vmf",
           "VulDetect",
           "1"
@@ -365,8 +368,9 @@
         [
           "\\vmf",
           "VulDetect",
-          "2",
-          ",  ",
+          "2"
+        ],
+        [
           "\\static",
           "LATTE",
           "4"
@@ -379,13 +383,14 @@
         [
           "\\vmf",
           "VSP",
-          "2",
-          ",  ",
+          "2"
+        ],
+        [
           "\\vmf",
           "LLM4Vuln",
-          "3",
-          ",  ",
-          "  ",
+          "3"
+        ],
+        [
           "\\vmf",
           "LLM4Vuln",
           "3w/PreCoT"
@@ -518,12 +523,12 @@
             [
               "\\vmf",
               "SmartAudit",
-              "3",
-              ",  ",
+              "3"
+            ],
+            [
               "\\vmf",
               "GPTLens",
-              "1",
-              ",   "
+              "1"
             ]
           ]
         },
@@ -532,8 +537,9 @@
             [
               "\\vmf",
               "ChatGPTSCV",
-              "1",
-              ",  ",
+              "1"
+            ],
+            [
               "\\vmfU",
               "VulBench"
             ],
@@ -555,8 +561,9 @@
             [
               "\\static",
               "LATTE",
-              "4",
-              ",  ",
+              "4"
+            ],
+            [
               "\\vmf",
               "VSP",
               "1"
@@ -609,8 +616,9 @@
         [
           "\\vmf",
           "SmartAudit",
-          "3",
-          ",  ",
+          "3"
+        ],
+        [
           "\\vmfU",
           "VulBench"
         ],
@@ -637,8 +645,9 @@
         [
           "\\static",
           "LATTE",
-          "4",
-          ",  ",
+          "4"
+        ],
+        [
           "\\static",
           "SkipAnalyzer",
           "1"
@@ -661,8 +670,7 @@
         [
           "\\vmf",
           "LLM4Vuln",
-          "3",
-          ",  "
+          "3"
         ],
         [
           "\\vmf",
@@ -789,8 +797,9 @@
         [
           "\\static",
           "SkipAnalyzer",
-          "2",
-          ",  ",
+          "2"
+        ],
+        [
           "\\vmf",
           "VSP",
           "2"
@@ -804,8 +813,9 @@
         ],
         [
           "\\vmfU",
-          "VulBench",
-          ",  ",
+          "VulBench"
+        ],
+        [
           "\\static",
           "SkipAnalyzer",
           "1"
@@ -878,12 +888,14 @@
         [
           "\\vmf",
           "WitheredLeaf",
-          "3",
-          ", (",
+          "3"
+        ],
+        [
           "\\vmf",
           "SmartAudit",
-          "3",
-          "), ",
+          "3"
+        ],
+        [
           "\\vmf",
           "LLM4Vuln",
           "3w/PostCoT"
@@ -898,7 +910,7 @@
       ]
     }
   },
-  "Evaluative/LineCodeRanking": {
+  "Evaluative/LineCode-Ranking": {
     "Analysis criteria": {
       "Fault proneness": [
         [
@@ -1007,8 +1019,9 @@
         [
           "\\vmf",
           "ChatGPT4vul",
-          "3",
-          ",  ",
+          "3"
+        ],
+        [
           "\\vmf",
           "NLBSE24",
           "1"
@@ -1019,14 +1032,14 @@
         ],
         [
           "\\vmfU",
-          "AIagent",
-          ",  ",
+          "AIagent"
+        ],
+        [
           "\\vmf",
           "MultiTask",
           "1"
         ],
         [
-          "  ",
           "\\vmf",
           "MultiTask",
           "3"
@@ -1042,7 +1055,6 @@
           "2"
         ],
         [
-          "  ",
           "\\vmfU",
           "ChatGPT(Plus)"
         ],
@@ -1120,8 +1132,9 @@
             [
               "\\vmf",
               "SmartAudit",
-              "1",
-              ",  ",
+              "1"
+            ],
+            [
               "\\vmf",
               "ChatGPT4vul",
               "1"
@@ -1129,9 +1142,9 @@
             [
               "\\nvmf",
               "SpiderScan",
-              "1",
-              ",  ",
-              "  ",
+              "1"
+            ],
+            [
               "\\vmf",
               "NLBSE24",
               "1"
@@ -1143,8 +1156,9 @@
             [
               "\\vmf",
               "MultiTask",
-              "1",
-              ",  ",
+              "1"
+            ],
+            [
               "\\vmf",
               "MultiTask",
               "3"
@@ -1153,85 +1167,90 @@
               "\\vmf",
               "PromptEnhanced",
               "2"
-            ]
+            ],
+            {
+              "In-context defined class": [
+                [
+                  "\\testing",
+                  "SELF-DEBUGGING",
+                  "OP7"
+                ],
+                [
+                  "\\vmf",
+                  "NLBSE24",
+                  "2"
+                ],
+                [
+                  "\\vmf",
+                  "GPTScan",
+                  "1"
+                ],
+                [
+                  "\\vmf",
+                  "GPTScan",
+                  "2"
+                ],
+                [
+                  "\\vmf",
+                  "LLMAPIDet",
+                  "3"
+                ],
+                [
+                  "\\vmfU",
+                  "ChatGPT(Plus)"
+                  
+                ]
+              ]
+            }
           ]
         },
         {
-          "In-context defined class": [
-            [
-              "\\testing",
-              "SELF-DEBUGGING",
-              "OP7"
-            ],
-            [
-              "\\vmf",
-              "NLBSE24",
-              "2"
-            ],
-            [
-              "\\vmf",
-              "GPTScan",
-              "1"
-            ],
-            [
-              "\\vmf",
-              "GPTScan",
-              "2"
-            ],
-            [
-              "\\vmf",
-              "LLMAPIDet",
-              "3"
-            ],
-            [
-              "\\vmfU",
-              "ChatGPT(Plus)",
-              "MultiClass/MultiLabel"
-            ]
-          ]
-        },
-        {
-          "Open-ended": [
-            [
-              "\\testing",
-              "FuzzGPT",
-              "1"
-            ]
-          ]
-        },
-        {
-          "Close-ended": [
-            [
-              "\\vmf",
-              "ChatGPT4vul",
-              "3"
-            ],
-            [
-              "\\nvmf",
-              "SpiderScan",
-              "2"
-            ],
-            [
-              "\\vmfU",
-              "AIagent"
-            ],
-            [
-              "  ",
-              "\\vmf",
-              "MultiTask",
-              "4"
-            ]
-          ]
-        },
-        {
-          "Semi-close-ended": [
-            [
-              "\\vmf",
-              "WitheredLeaf",
-              "4"
-            ]
+          "MultiClass/MultiLabel": [
+            {
+              "Open-ended": [
+                [
+                  "\\testing",
+                  "FuzzGPT",
+                  "1"
+                ]
+              ]
+            },
+            {
+              "Close-ended": [
+                [
+                  "\\vmf",
+                  "ChatGPT4vul",
+                  "3"
+                ],
+                [
+                  "\\nvmf",
+                  "SpiderScan",
+                  "2"
+                ],
+                [
+                  "\\vmfU",
+                  "AIagent"
+                ],
+                [
+                  "\\vmf",
+                  "MultiTask",
+                  "4"
+                ]
+              ]
+            }
+            ,
+            {
+              "Semi-close-ended": [
+                [
+                  "\\vmf",
+                  "WitheredLeaf",
+                  "4"
+                ]
+              ]
+            }
           ]
         }
+
       ]
     },
     "Analysis granularity": {
@@ -1249,11 +1268,9 @@
         [
           "\\testing",
           "FuzzGPT",
-          "1",
-          ","
+          "1"         
         ],
         [
-          "    ",
           "\\vmf",
           "ChatGPT4vul",
           "1"
@@ -1271,8 +1288,7 @@
         [
           "\\vmf",
           "NLBSE24",
-          "1",
-          ",  "
+          "1"
         ],
         [
           "\\vmf",
@@ -1291,8 +1307,7 @@
         [
           "\\vmf",
           "GPTScan",
-          "2",
-          ",   "
+          "2"
         ],
         [
           "\\vmf",
@@ -1310,7 +1325,6 @@
           "2"
         ],
         [
-          "  ",
           "\\vmfU",
           "ChatGPT(Plus)"
         ]
@@ -1427,7 +1441,6 @@
           "Vulnerability": [
             [
               "\\testingD",
-              "pwnd",
               "Pwn'd",
               "3"
             ]
@@ -1464,10 +1477,7 @@
           "Execution specification conformance": [
             [
               "\\staticD",
-              "EV",
-              "E",
-              "\\&",
-              "V",
+              "E&V",
               "2"
             ]
           ]
@@ -1696,7 +1706,6 @@
       "Scenario corresponding": [
         [
           "\\testingD",
-          "pwnd",
           "Pwn'd",
           "1"
         ]
@@ -1725,16 +1734,20 @@
         [
           "\\testing",
           "AXNav",
-          "1",
-          "Constrained"
+          "1"
+          
         ],
         {
-          "Available tools": [
-            [
-              "\\testing",
-              "PentestGPT",
-              "6"
-            ]
+          "Constrained" : [
+            {
+              "Available tools": [
+                [
+                  "\\testing",
+                  "PentestGPT",
+                  "6"
+                ]
+              ]
+            }
           ]
         }
       ],
@@ -1759,8 +1772,7 @@
         [
           "\\testing",
           "SysKG-UTF",
-          "2",
-          ","
+          "2"
         ],
         [
           "\\testing",
@@ -1810,15 +1822,13 @@
         ],
         [
           "\\testingD",
-          "pwnd",
           "Pwn'd",
           "1"
         ],
         [
           "\\testing",
           "SysKG-UTF",
-          "2",
-          ",  "
+          "2"
         ],
         [
           "\\testing",
@@ -1891,12 +1901,10 @@
         [
           "\\testing",
           "TARGET",
-          "2",
-          ","
+          "2"
         ],
         [
           "\\testingD",
-          "pwnd",
           "Pwn'd",
           "1"
         ],
@@ -1908,8 +1916,7 @@
         [
           "\\testing",
           "SysKG-UTF",
-          "3",
-          ",  "
+          "3"
         ],
         [
           "\\testing",
@@ -1996,7 +2003,6 @@
         ],
         [
           "\\testingD",
-          "pwnd",
           "Pwn'd",
           "1"
         ]
@@ -2046,7 +2052,7 @@
       ]
     }
   },
-  "Executive/PseudocodeExecution": {
+  "Executive/Execution": {
     "Domain": {
       "General code": [
         [
@@ -2058,10 +2064,7 @@
       "Pseudocode": [
         [
           "\\staticD",
-          "EV",
-          "E",
-          "\\&",
-          "V",
+          "E&V",
           "1"
         ]
       ],
@@ -2089,10 +2092,7 @@
         ],
         [
           "\\staticD",
-          "EV",
-          "E",
-          "\\&",
-          "V",
+          "E&V",
           "1"
         ]
       ],
@@ -2115,10 +2115,7 @@
           "Verification results": [
             [
               "\\staticD",
-              "EV",
-              "E",
-              "\\&",
-              "V",
+              "E&V",
               "1"
             ]
           ]
@@ -2129,20 +2126,14 @@
       "Request further information": [
         [
           "\\staticD",
-          "EV",
-          "E",
-          "\\&",
-          "V",
+          "E&V",
           "1"
         ]
       ],
       "Request external tool": [
         [
           "\\staticD",
-          "EV",
-          "E",
-          "\\&",
-          "V",
+          "E&V",
           "1"
         ],
         [
@@ -2172,7 +2163,6 @@
       "Reachability oriented": [
         [
           "\\testingD",
-          "pwnd",
           "Pwn'd",
           "2"
         ],
@@ -2197,7 +2187,6 @@
         ],
         [
           "\\testingD",
-          "pwnd",
           "Pwn'd",
           "2"
         ],
@@ -2222,7 +2211,6 @@
       "Open-ended": [
         [
           "\\testingD",
-          "pwnd",
           "Pwn'd",
           "2"
         ],
@@ -2284,7 +2272,7 @@
       ]
     }
   },
-  "Consultative/FactsRetrieval": {
+  "Consultative/KnowledgeDistillation": {
     "Domain": {
       "Vulnerability detection": [
         [
@@ -2382,33 +2370,31 @@
       ]
     }
   },
-  "Extractive/CodeElementsIdentification": {
+  "Extractive/Code-ElementsIdentification&Extraction": {
     "Identification criteria": {
-      "undefined": [
-        [
-          "Role based ",
-          "Specialized "
-        ],
-        {
-          "Command values": [
-            [
-              "\\testing",
-              "KernelGPT",
-              "2",
-              "Definition"
+      "Role based": [{
+        "Specialized": [
+          {
+            "Command values": [
+              [
+                "\\testing",
+                "KernelGPT",
+                "2"
+              ]
             ]
-          ]
-        },
-        {
-          "Type": [
-            [
-              "\\testing",
-              "KernelGPT",
-              "4"
-            ]
-          ]
-        },
-        {
+          },
+          {
+            "Definition" : {
+              "Type": [
+                [
+                  "\\testing",
+                  "KernelGPT",
+                  "4"
+                ]
+              ]
+            }
+          },
+          {
           "Type": [
             [
               "\\testing",
@@ -2473,27 +2459,21 @@
             [
               "\\ntesting",
               "HITS",
-              "2",
-              "Problem",
-              "\\_",
-              "solution",
-              "\\_"
+              "2"
             ]
           ]
         },
         {
-          "steps-related": [
+          "Problem_solution_steps-related": [
             [
               "\\ntesting",
               "HITS",
-              "4",
-              "Used variables ",
-              "\\&"
+              "4"
             ]
           ]
         },
         {
-          "methods": [
+          "Used variables & methods": [
             [
               "\\ntesting",
               "HITS",
@@ -2509,16 +2489,18 @@
               "5"
             ]
           ]
-        },
-        {
-          "Scenario defined": [
-            [
-              "\\vmf",
-              "GPTScan",
-              "3"
-            ]
-          ]
         }
+      ]
+      },
+      {
+        "Scenario defined": [
+          [
+            "\\vmf",
+            "GPTScan",
+            "3"
+          ]
+        ]
+      }
       ],
       "Relevance based": [
         [
@@ -2560,7 +2542,6 @@
           "2"
         ],
         [
-          "  ",
           "\\testing",
           "KernelGPT",
           "3"
@@ -2588,7 +2569,7 @@
       ]
     }
   },
-  "Extractive/TextElementsExtraction": {
+  "Extractive/Text-ElementsIdentification&Extraction": {
     "Extraction criteria": {
       "Defined role": [
         {
@@ -2651,20 +2632,26 @@
             [
               "\\ndebug",
               "FAIL",
-              "8",
-              "Input property"
+              "8"
+              
             ]
           ]
         },
         {
-          "Common root cause": [
+          "Input property":
             [
-              "\\debug",
-              "RCACopilot",
-              "2"
+              {
+                "Common root cause": [
+                  [
+                    "\\debug",
+                    "RCACopilot",
+                    "2"
+                  ]
+                ]
+              }
             ]
-          ]
         }
+        
       ]
     },
     "Nature of text": {
@@ -2721,7 +2708,7 @@
       ]
     }
   },
-  "Generative/DomainSpecificCode-Generation": {
+  "Generative/Domain-Specific-CodeGeneration": {
     "Generation criteria": {
       "Problem-description corresponding": [
         {
@@ -2832,12 +2819,8 @@
             ]
           ]
         },
-        [
-          "High precision ",
-          "\\&"
-        ],
         {
-          "recall": [
+          "High precision & recall": [
             [
               "\\static",
               "LLMDFA",
@@ -3119,7 +3102,7 @@
       ],
       "Constraints based": [
         {
-          "": [
+          "x|P(x)": [
             [
               "\\testing",
               "RESTGPT",
@@ -3159,7 +3142,7 @@
           ]
         },
         {
-          "": [
+          "x | ∃i : x = F(i)": [
             [
               "\\testing",
               "SELF-DEBUGGING",
@@ -3168,50 +3151,51 @@
           ]
         },
         {
-          "": [
+          "x | i = F(x)": [
             [
               "\\testing",
               "mrDetector",
               "1"
-            ]
-          ]
-        },
-        {
-          "": [
-            [
-              "\\ndebug",
-              "SemSlicer",
-              "4"
-            ]
-          ]
-        },
-        {
-          "": [
-            [
-              "\\ndebug",
-              "SemSlicer",
-              "1"
             ],
-            [
-              "\\ndebug",
-              "SemSlicer",
-              "2",
-              " exercises "
-            ]
+            {
+              "x | i = F(x, j)": [
+                [
+                  "\\ndebug",
+                  "SemSlicer",
+                  "4"
+                ]
+              ]
+            },
+            {
+              "x | ∀y g(i, y)  f(x, y)": [
+                [
+                  "\\ndebug",
+                  "SemSlicer",
+                  "1"
+                ],
+                [
+                  "\\ndebug",
+                  "SemSlicer",
+                  "2",
+                  " exercises "
+                ]
+              ]
+            }
           ]
+          
         },
+        
+        
         {
-          "": [
+          "x | exercises (A(x) ⇒ C(x)):": [
             [
               "\\testingU",
-              "LLMeDiff",
-              " exercises ",
-              " exercises "
+              "LLMeDiff"
             ]
           ]
         },
         {
-          "": [
+          "x | exercises (Pre(x)& exercises Post(x, R)):": [
             [
               "\\testing",
               "TestChain",
@@ -3250,25 +3234,25 @@
               "\\testing",
               "Fuzz4All",
               "4"
-            ]
+            ],
+            {
+              "Error triggering": [
+                [
+                  "\\testing",
+                  "FuzzingParsers",
+                  "4"
+                ]
+              ]
+            }
           ]
         },
-        {
-          "Error triggering": [
-            [
-              "\\testing",
-              "FuzzingParsers",
-              "4"
-            ]
-          ]
-        },
+
         {
           "Natural completion": [
             [
               "\\testing",
               "ChatAFL",
-              "3",
-              "edge from parent"
+              "3"
             ]
           ]
         }
@@ -3367,12 +3351,8 @@
             ]
           ]
         },
-        [
-          "Natural ",
-          "\\&"
-        ],
         {
-          "Verifiable": [
+          "Natural & Verifiable": [
             [
               "\\progver",
               "SpecGen",
@@ -3589,7 +3569,6 @@
               "Lam4Inv"
             ],
             [
-              "   ",
               "\\progver",
               "Lemur",
               "2"
@@ -3643,7 +3622,7 @@
       ]
     }
   },
-  "Generative/GeneralCode-Generation": {
+  "Generative/General-CodeGeneration": {
     "Generation criteria": {
       "Intent corresponding": [
         [
@@ -3659,8 +3638,9 @@
         [
           "\\testing",
           "DiffPrompt",
-          "2",
-          ",   ",
+          "2"
+        ],
+        [
           "\\progver",
           "Dafny-Synth",
           "1"
@@ -3875,34 +3855,40 @@
             [
               "\\vmf",
               "LLM4Vuln",
-              "3(patch)",
-              "Completion"
+              "3(patch)"
             ]
           ]
         },
         {
-          "Natural": [
-            [
-              "\\vmfU",
-              "FLAG"
-            ],
-            [
-              "\\testing",
-              "TitanFuzz",
-              "2"
-            ],
-            [
-              "\\testingUD",
-              "MuBert",
-              "BERT"
-            ],
-            [
-              "\\testing",
-              "CHEMFUZZ",
-              "1"
-            ]
+          "Completion": [
+            {
+              "Natural": [
+                [
+                  "\\vmfU",
+                  "FLAG"
+                ],
+                [
+                  "\\testing",
+                  "TitanFuzz",
+                  "2"
+                ],
+                [
+                  "\\testingUD",
+                  "MuBert",
+                  "BERT"
+                ],
+                [
+                  "\\testing",
+                  "CHEMFUZZ",
+                  "1"
+                ]
+              ]
+            }
+
           ]
+
         }
+        
       ]
     },
     "Nature of primary generated entity": {
@@ -3948,8 +3934,9 @@
         [
           "\\debug",
           "AutoSD",
-          "3",
-          ",   ",
+          "3"
+        ],
+        [
           "\\testingUD",
           "MuBert",
           "BERT"
@@ -3957,12 +3944,13 @@
         [
           "\\testing",
           "DiffPrompt",
-          "2",
-          ",  ",
+          "2"
+        ],
+        [
           "\\testing",
           "AID",
-          "1",
-          ",  "
+          "1"
+         
         ],
         [
           "\\progver",
@@ -3977,12 +3965,12 @@
         [
           "\\progver",
           "Dafny-Synth",
-          "5",
-          ",    ",
+          "5"
+        ],
+        [
           "\\testing",
           "ClarifyGPT",
-          "1",
-          ",   "
+          "1"
         ],
         [
           "\\testing",
@@ -4002,8 +3990,7 @@
         [
           "\\progver",
           "Clover",
-          "3",
-          ",  "
+          "3"
         ],
         [
           "\\vmf",
@@ -4012,8 +3999,9 @@
         ],
         [
           "\\testingU",
-          "FormAI",
-          ",  ",
+          "FormAI"
+        ],
+        [
           "\\testingU",
           "LLMorpheus"
         ],
@@ -4102,8 +4090,7 @@
         [
           "\\testing",
           "CHEMFUZZ",
-          "1",
-          ",  "
+          "1"
         ],
         [
           "\\testingU",
@@ -4239,8 +4226,9 @@
         [
           "\\testing",
           "ChatGPTTests",
-          "2",
-          ",  ",
+          "2"
+        ],
+        [
           "\\testing",
           "CoverUp",
           "1"
@@ -4507,7 +4495,6 @@
           "6"
         ],
         [
-          "  ",
           "\\progver",
           "RustProof",
           "1"
@@ -4539,8 +4526,9 @@
           "Postcondition": [
             [
               "\\testingU",
-              "nl2postcondition",
-              ",  ",
+              "nl2postcondition"
+            ],
+            [
               "\\progver",
               "Clover",
               "6"
@@ -4600,48 +4588,34 @@
       ]
     }
   },
-  "Abstractive/PropertyCharacterization": {
+  "Abstractive/SW-Entity-PropertyIdentifcation&Characterization": {
     "Criteria of characterization": {
-      "undefined": [
+      "Descriptions & domain corresponding": [
         [
-          "Descriptions ",
-          "\\&"
+          "\\testing",
+          "FSML",
+          "OP"
         ],
-        {
-          "domain corresponding": [
-            [
-              "\\testing",
-              "FSML",
-              "OP"
-            ],
-            [
-              "\\testing",
-              "SELF-DEBUGGING",
-              "OP5"
-            ]
-          ]
-        }
-      ],
-      "\\&": [
-        {
-          "domain corresponding": [
-            [
-              "\\testing",
-              "RESTGPT",
-              "1"
-            ],
-            [
-              "\\progver",
-              "Dafny-Synth",
-              "4a"
-            ],
-            [
-              "\\testing",
-              "EMR",
-              "2"
-            ]
-          ]
-        }
+        [
+          "\\testing",
+          "SELF-DEBUGGING",
+          "OP5"
+        ],
+        [
+          "\\testing",
+          "RESTGPT",
+          "1"
+        ],
+        [
+          "\\progver",
+          "Dafny-Synth",
+          "4a"
+        ],
+        [
+          "\\testing",
+          "EMR",
+          "2"
+        ]        
       ],
       "Code corresponding": [
         [
@@ -4667,8 +4641,9 @@
         [
           "\\static",
           "LLMDFA",
-          "3",
-          ",  ",
+          "3"
+        ],
+        [
           "\\testing",
           "WhiteFox",
           "1"
@@ -4852,21 +4827,15 @@
           "\\testing",
           "SELF-DEBUGGING",
           "OP5"
-        ],
+        ]
+      ],
+      "Thought & assessment": [
         [
-          "Thought ",
-          "\\&"
-        ],
-        {
-          "assessment": [
-            [
-              "\\static",
-              "LLMDFA",
-              "3"
-            ]
-          ]
-        }
-      ]
+          "\\static",
+          "LLMDFA",
+          "3"
+        ]
+      ] 
     }
   },
   "Abstractive/Focused-AbstractiveSummarization": {
@@ -5145,8 +5114,9 @@
         [
           "\\static",
           "LLift",
-          "3",
-          ",  ",
+          "3"
+        ],
+        [
           "\\testing",
           "WhiteFox",
           "1"
@@ -5173,7 +5143,7 @@
     "Ag": {},
     "LLMDFA": {}
   },
-  "Abstractive/SW-ArtifactVerbalization": {
+  "Abstractive/SW-EntityVerbalization": {
     "Abstraction criteria": {
       "Summary": [
         [
@@ -5184,8 +5154,9 @@
         [
           "\\vmf",
           "LLM4Vuln",
-          "1",
-          ",  ",
+          "1"
+        ],
+        [
           "\\ntesting",
           "HITS",
           "1"
@@ -5215,8 +5186,9 @@
         [
           "\\vmf",
           "LLM4Vuln",
-          "1",
-          ",   ",
+          "1"
+        ],
+        [
           "\\vmf",
           "LLM4Vuln",
           "3(PreCoT)"
@@ -5229,11 +5201,9 @@
         [
           "\\vmf",
           "LLMAPIDet",
-          "2",
-          ",  "
+          "2"
         ],
         [
-          "  ",
           "\\debug",
           "ChatGPT-4(Log)",
           "1(CoT)"
@@ -5252,8 +5222,7 @@
         [
           "\\vmf",
           "PromptEnhanced",
-          "1",
-          "  "
+          "1"
         ]
       ],
       "Explanation": [
@@ -5343,7 +5312,6 @@
           "1"
         ],
         [
-          "    ",
           "\\vmf",
           "LLM4Vuln",
           "3(PreCoT)"
@@ -5376,8 +5344,7 @@
         [
           "\\vmf",
           "PromptEnhanced",
-          "1",
-          "  "
+          "1"
         ],
         {
           "Commit": [

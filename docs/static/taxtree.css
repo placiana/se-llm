@@ -184,3 +184,107 @@
 li.value {
   cursor: pointer;
 }
+
+
+/* Azul {RGB}{100,147,197} */
+.\\testing span{
+  background-color: rgba(100, 147, 197, 0.5);
+}
+
+.\\testingD span{
+  background-color:  rgba(100, 147, 197, 0.5);
+}
+
+.\\testingU span{
+  background-color:  rgba(100, 147, 197, 0.5);
+}
+
+.\\mtesting span{
+  background-color: rgba(100, 147, 197, 0.5);
+}
+
+
+/* Rosa */
+.\\progver span {
+  background-color: rgba(224, 159, 158, 0.5);
+}
+
+.\\progverU span {
+  background-color: rgba(224, 159, 158, 0.5);
+}
+
+
+
+/* naranja 233,206,164} */
+.naranja span {
+  background-color: rgba(233, 206, 164, 0.5);
+}
+
+/* amarillo {RGB}{234,237,191} */
+.amarillo span {
+  background-color: rgba(234, 237, 191, 0.5);
+}
+ 
+/* {verdeP}{RGB}{206,225,193} */
+.verdeP span {
+  background-color: rgba(206, 225, 193, 0.5);
+}
+
+.\\vmf span {
+  background-color: rgba(206, 225, 193, 0.5);
+}
+
+.\\nvmf span {
+  background-color: rgba(206, 225, 193, 0.5);
+}
+
+.\\nvmfU span {
+  background-color: rgba(206, 225, 193, 0.5);
+}
+
+
+
+/* turquesaP}{RGB}{144,186,185} */
+.turquesaP span {
+  background-color: rgba(144, 186, 185, 0.5);
+}
+
+.\\debug span {
+  background-color: rgba(144, 186, 185, 0.5);
+}
+
+.\\debugD span {
+  background-color: rgba(144, 186, 185, 0.5);
+}
+
+.\\debugU span {
+  background-color: rgba(144, 186, 185, 0.5);
+}
+
+
+
+
+/* {violetaP}{RGB}{172,118,151} */
+.violetaP span {
+  background-color: rgba(172, 118, 151, 0.5);
+}
+
+.\\static span {
+  background-color: rgba(172, 118, 151, 0.5);
+}
+
+.\\staticU span {
+  background-color: rgba(172, 118, 151, 0.5);
+}
+
+.\\nstatic span {
+  background-color: rgba(172, 118, 151, 0.5);
+}
+
+.\\nstaticU span {
+  background-color: rgba(172, 118, 151, 0.5);
+}
+
+.\\nstaticD span {
+  background-color: rgba(172, 118, 151, 0.5);
+}

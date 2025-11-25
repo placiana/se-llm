@@ -309,6 +309,8 @@ function cTree(data, category="") {
           if (Array.isArray(item)) {
             if (item.length >= 3) {
               html += `<li class="value ${item[0]}">` + item[1]  + `<sub>${item[2]}</sub></li>`;
+            } else if (item.length === 2) {
+              html += `<li class="value ${item[0]}">` + item[1] + `</li>`;
             } else {
               // join item and display in single li
               html += `<li class="value ">!!` + item.join(' ') + `</li>`;

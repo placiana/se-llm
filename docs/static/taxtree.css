@@ -179,3 +179,8 @@
 .tree li.sub-tree  {
   padding-left: calc(var(--spacing) - var(--radius) - 2px);
 }
+
+
+li.value {
+  cursor: pointer;
+}

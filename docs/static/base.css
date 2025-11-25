@@ -45,3 +45,8 @@
         /* set hand cursor on tooltipable items */
         cursor: pointer;
     }
+
+    li.value {
+        
+        cursor: pointer;
+    }

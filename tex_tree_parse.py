@@ -29,7 +29,10 @@ class CategoriesWalker():
         """Recorrer nodos recursivamente y mostrarlos con sangría."""
 
         output = []
+        subcat = ''
+        self.current_cats = []
         for node in nodes:
+            #print(indent, "Node type:", type(node), node)
             prefix = "  " * indent
             if isinstance(node, LatexMacroNode):
                 #continue
@@ -55,48 +58,71 @@ class CategoriesWalker():
 
             elif isinstance(node, LatexCharsNode):
                 #print(indent, "Chars node:", node.chars)
-                #if node.chars == 'j' or node.chars == 'Ag':
-                #    continue
+                if node.chars == 'j': #or node.chars == 'Ag':
+                    continue
                 if all([x not in node.chars for x in["\n", "node"] ]):
                     #print(f"{indent} {prefix}Texto: {node.chars!r}")
                     #if indent in [4, 5,6]:
                     #    print(indent, prefix, node.chars)
                     if indent >= 4:
                         #print(indent, "dddddd ategoría:", node.chars)
-                        output.append( node.chars)
+                        output.append(node.chars)
                         
                     else:
                         print(indent, "Texto ignorado:", node.chars)
+                else:
+                    #print(indent, "Texto con salto o node ignorado:", node.chars)
+                    pass
                 #print(indent, node.chars)
             elif isinstance(node, LatexGroupNode):
-                #print(indent, "GroupNode:")
+                #print(indent, "GroupNode:", node.nodelist)
                 #for n in node.nodelist:
                 #    print(indent, " Group child node:", n)
                 res = self.walk_nodes(node.nodelist, indent+1)
-                #print(indent, 'Grupo res:', res)
+                print(indent, 'Grupo res:', res)
                 res = self.parse_phantom(res)
+               
                 output += res
                 if res and indent in [3]:
+                    #print(indent, 'Grupo post-phantom res:', res)
                     #print("Indent 3 res:", res )
                     if len(res) == 1: #if ':' not in res[0]: #
-                        #print("Categoría encontrada:", res)
+                        print("Categoría encontrada:", res)
                         category = res[0].split(':')[0].strip()
                         self.categories[category] = {}
+                        self.subcat = ''
                         
                     if len(res) > 1: #else: #
-                        
-                        subcat = res[0].split(':')[0].strip()
-                        #print("Subcategorías encontradas:", res, subcat)
-                        #category = res[0].split(':')[0].strip()
-                        #print('Posta:', res[1:])
-                        if subcat in self.categories[category]:
-                            print('A')
-                            self.categories[category][subcat].extend(res[1:])
+                        print('Handle:', self.handle_nodegroup(res))
+                        if ':' in res[0]:
+                            self.subcat = res[0].split(':')[0].strip()
+                            
+                            #category = res[0].split(':')[0].strip()
+                            #print('Posta:', res[1:])
+                            if self.subcat in self.categories[category]:
+                                parsed = self.parse_nodelist(res[1:])
+                                print('A', category, subcat, parsed)
+                                self.categories[category][self.subcat].extend(parsed)
+                            else:
+                                parsed = self.parse_nodelist(res[1:])
+                                self.categories[category][self.subcat] = parsed
+                                print('B', category, self.subcat, parsed)
                         else:
-                            #print('B')
-                            self.categories[category][subcat] = self.parse_nodelist(res[1:])
+                            parsed = self.parse_nodelist(res)
+                            
+                            if len(parsed) > 1 and len(parsed[0]) == 1:
+                                self.subcat = parsed[0][0]
+                                parsed = parsed[1:]
+                                self.categories[category][self.subcat] = []
+                                print('D', category, self.subcat, parsed)
+                            print('C', category, self.subcat, parsed)
+                            if self.subcat:
+                                self.categories[category][self.subcat].extend( parsed )
+                            else:
+                                print('E', category, self.subcat, parsed)
+                                self.categories[category]['undefined'] = parsed
 
-                        output.append(self.categories[category][subcat])
+                        #output.append(self.categories[category][self.subcat])
 
                     #print(indent, prefix, res)
 
@@ -106,6 +132,32 @@ class CategoriesWalker():
         return output
         #return categories
 
+    def handle_nodegroup(self, res):
+        print('handle:', res)
+        if ':' in res[0]:
+            # define una nueva subcategoría
+            subcat = res[0].split(':')[0].strip()
+            self.current_cats.append(subcat)
+            
+            #category = res[0].split(':')[0].strip()
+            #print('Posta:', res[1:])
+            if subcat :
+                parsed = self.parse_nodelist(res[1:])
+                return {subcat: parsed}
+            else:
+                parsed = self.parse_nodelist(res[1:])
+                return [parsed]
+        else:
+            parsed = self.parse_nodelist(res)
+            
+            if len(parsed) > 1 and len(parsed[0]) == 1:
+                subcat = parsed[0][0]
+                parsed = parsed[1:]
+                return {subcat: parsed}
+            return [parsed]
+        return None
+
+        output.append(self.categories[category][self.subcat])
     def parse_nodelist(self, nodelist):
         #print("Parsing nodelist:", nodelist)
         """Parsea una lista de nodos para extraer categorías."""
@@ -114,7 +166,6 @@ class CategoriesWalker():
         section = []
         for item in nodelist:
             if ':' in item:
-                
                 sections.append(section)
                 section = [item]
             else:
@@ -122,14 +173,14 @@ class CategoriesWalker():
         if section:
             sections.append(section)
 
-        print("Sections:", sections)
+        #print("Sections:", sections)
         result = []
         for sec in sections:
             if sec:
-                print("Parsing section:", sec)
+                #print("Parsing section:", sec)
                 #result.extend(self.parse_nodelist(sec))
                 if ':' in sec[0]:
-                    print('Se pico:', sec)
+                    #print('Se pico:', sec)
                     result.append({
                         sec[0].split(':')[0].strip(): self.parse_nodelist(sec[1:])
                     })
@@ -147,7 +198,7 @@ class CategoriesWalker():
                             current_cat.append(item)
                     if current_cat:
                         categories.append(current_cat)
-                    print("Parsed categories:", categories)
+                    #print("Parsed categories:", categories)
                     result.extend(categories)
 
             
@@ -162,9 +213,12 @@ class CategoriesWalker():
         for i, item in enumerate(nodelist):
             if skip_next:
                 skip_next = False
+                #print("Not Adding item:", item)
                 continue
             if item == '\\phantom':
                 skip_next = True
+                continue
+            if item == ' ':
                 continue
             output.append(item)
         return output

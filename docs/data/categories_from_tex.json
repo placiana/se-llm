@@ -27,8 +27,7 @@
             [
               "\\static",
               "SkipAnalyzer",
-              "3",
-              " "
+              "3"
             ]
           ]
         }
@@ -101,9 +100,7 @@
           "\\static",
           "LLift",
           "3(SelfValid)"
-        ]
-      ],
-      "": [
+        ],
         [
           "\\static",
           "SkipAnalyzer",
@@ -141,6 +138,859 @@
       ]
     }
   },
+  "Evaluative/TextAnalysis": {
+    "Analysis type": {
+      "Comparative analysis": [
+        {
+          "Functional equivalence": [
+            [
+              "\\testing",
+              "SELF-DEBUGGING",
+              "OP6"
+            ],
+            [
+              "\\progver",
+              "Clover",
+              "8"
+            ]
+          ]
+        },
+        {
+          "Similarity analysis": [
+            [
+              "\\ndebug",
+              "FAIL",
+              "4"
+            ]
+          ]
+        },
+        {
+          "Generalized consensus": [
+            [
+              "\\nvmf",
+              "Skyeye",
+              "4"
+            ]
+          ]
+        }
+      ],
+      "Ambiguity analysis": [
+        [
+          "\\testing",
+          "ScenarioNL",
+          "2"
+        ],
+        [
+          "\\testing",
+          "ClarifyGPT",
+          "4"
+        ]
+      ],
+      "Support analysis": [
+        {
+          "To conclude": [
+            [
+              "\\debug",
+              "AutoSD",
+              "2"
+            ],
+            [
+              "\\ndebug",
+              "FAIL",
+              "9"
+            ]
+          ]
+        },
+        {
+          "To perform": [
+            [
+              "\\debug",
+              "LM-PACE",
+              "1"
+            ]
+          ]
+        },
+        {
+          "To analyze": [
+            [
+              "\\ndebug",
+              "FAIL",
+              "2"
+            ]
+          ]
+        },
+        [
+          "Closed analysis",
+          "Q",
+          "\\&"
+        ],
+        {
+          "A": [
+            [
+              "\\ndebug",
+              "LasRCA",
+              "1"
+            ]
+          ]
+        },
+        [
+          "Open analysis",
+          "Q",
+          "\\&"
+        ],
+        {
+          "A": [
+            [
+              "\\debug",
+              "RCAAgents",
+              "2"
+            ]
+          ]
+        },
+        {
+          "Expert completed": [
+            [
+              "\\testing",
+              "ScenarioNL",
+              "3"
+            ]
+          ]
+        }
+      ],
+      "Classification ": [
+        {
+          "Binary": [
+            [
+              "\\ndebug",
+              "FAIL",
+              "4"
+            ]
+          ]
+        },
+        {
+          "In-context defined class": [
+            [
+              "\\ndebug",
+              "SemSlicer",
+              "3",
+              "Multilabel "
+            ]
+          ]
+        },
+        {
+          "Close ended": [
+            [
+              "\\ndebug",
+              "LasRCA",
+              "2"
+            ],
+            [
+              "\\ndebug",
+              "LasRCA",
+              "3"
+            ]
+          ]
+        },
+        {
+          "Open ended": [
+            [
+              "\\nvmf",
+              "Skyeye",
+              "4"
+            ]
+          ]
+        }
+      ]
+    },
+    "Rationalization": {
+      "Debate": [
+        [
+          "\\testing",
+          "ScenarioNL",
+          "3"
+        ]
+      ],
+      "Thought step by step": [
+        [
+          "\\ndebug",
+          "LasRCA",
+          "2"
+        ]
+      ],
+      "Reasons": [
+        [
+          "\\ndebug",
+          "LasRCA",
+          "3"
+        ]
+      ]
+    }
+  },
+  "Evaluative/RationalizedCode-Clasification": {
+    "Analysis criteria": {
+      "Vulnerability proneness": [
+        [
+          "\\vmf",
+          "EditTime",
+          "3"
+        ],
+        [
+          "\\vmf",
+          "EditTime",
+          "4"
+        ],
+        [
+          "\\vmf",
+          "SmartAudit",
+          "2"
+        ],
+        [
+          "\\vmf",
+          "SmartAudit",
+          "3"
+        ],
+        [
+          "\\vmfU",
+          "VulBench"
+        ],
+        [
+          "\\vmf",
+          "GPTLens",
+          "1",
+          ",  ",
+          "\\vmf",
+          "VulDetect",
+          "1"
+        ],
+        [
+          "\\vmf",
+          "VulDetect",
+          "2",
+          ",  ",
+          "\\static",
+          "LATTE",
+          "4"
+        ],
+        [
+          "\\vmf",
+          "VSP",
+          "1"
+        ],
+        [
+          "\\vmf",
+          "VSP",
+          "2",
+          ",  ",
+          "\\vmf",
+          "LLM4Vuln",
+          "3",
+          ",  ",
+          "  ",
+          "\\vmf",
+          "LLM4Vuln",
+          "3w/PreCoT"
+        ],
+        [
+          "\\vmf",
+          "LLM4Vuln",
+          "3w/PostCoT"
+        ],
+        [
+          "\\vmf",
+          "DLAP",
+          "3"
+        ],
+        {
+          "Null-dereference": [
+            [
+              "\\static",
+              "SkipAnalyzer",
+              "1"
+            ]
+          ]
+        },
+        {
+          "Leak presence": [
+            [
+              "\\static",
+              "SkipAnalyzer",
+              "2"
+            ]
+          ]
+        },
+        {
+          "Data-flow CWI": [
+            [
+              "\\vmf",
+              "VulDetect",
+              "3"
+            ]
+          ]
+        },
+        {
+          "Entity inconsistency": [
+            [
+              "\\vmf",
+              "WitheredLeaf",
+              "1"
+            ]
+          ]
+        }
+      ],
+      "Malware proneness": [
+        [
+          "\\nvmf",
+          "Sleuth",
+          "2"
+        ]
+      ],
+      "Fixability analysis": [
+        {
+          "Rename": [
+            [
+              "\\vmf",
+              "WitheredLeaf",
+              "3"
+            ]
+          ]
+        }
+      ]
+    },
+    "Nature of classification": {
+      "Multiplicity": [
+        {
+          "OneClass (Binary)": [
+            [
+              "\\vmf",
+              "EditTime",
+              "3"
+            ],
+            [
+              "\\vmf",
+              "EditTime",
+              "4"
+            ],
+            [
+              "\\vmf",
+              "WitheredLeaf",
+              "1"
+            ],
+            [
+              "\\vmf",
+              "WitheredLeaf",
+              "3"
+            ],
+            [
+              "\\static",
+              "SkipAnalyzer",
+              "1"
+            ],
+            [
+              "\\static",
+              "SkipAnalyzer",
+              "2"
+            ],
+            [
+              "\\vmf",
+              "VSP",
+              "2"
+            ],
+            [
+              "\\nvmf",
+              "Sleuth",
+              "2"
+            ],
+            [
+              "\\vmf",
+              "DLAP",
+              "3",
+              "MultiLabel "
+            ]
+          ]
+        },
+        {
+          "Open-ended": [
+            [
+              "\\vmf",
+              "SmartAudit",
+              "2"
+            ],
+            [
+              "\\vmf",
+              "SmartAudit",
+              "3",
+              ",  ",
+              "\\vmf",
+              "GPTLens",
+              "1",
+              ",   "
+            ]
+          ]
+        },
+        {
+          "Close-ended": [
+            [
+              "\\vmf",
+              "ChatGPTSCV",
+              "1",
+              ",  ",
+              "\\vmfU",
+              "VulBench"
+            ],
+            [
+              "\\vmf",
+              "VulDetect",
+              "1"
+            ],
+            [
+              "\\vmf",
+              "VulDetect",
+              "2"
+            ],
+            [
+              "\\vmf",
+              "VulDetect",
+              "3"
+            ],
+            [
+              "\\static",
+              "LATTE",
+              "4",
+              ",  ",
+              "\\vmf",
+              "VSP",
+              "1"
+            ]
+          ]
+        },
+        {
+          "In-context defined classes": [
+            [
+              "\\vmf",
+              "LLM4Vuln",
+              "3"
+            ],
+            [
+              "\\vmf",
+              "LLM4Vuln",
+              "3w/PreCoT"
+            ],
+            [
+              "\\vmf",
+              "LLM4Vuln",
+              "3w/PostCoT"
+            ]
+          ]
+        }
+      ]
+    },
+    "Analysis granularity": {
+      "Snippet": [
+        [
+          "\\vmf",
+          "EditTime",
+          "3"
+        ],
+        [
+          "\\vmf",
+          "EditTime",
+          "4"
+        ],
+        [
+          "\\vmf",
+          "ChatGPTSCV",
+          "1"
+        ],
+        [
+          "\\vmf",
+          "SmartAudit",
+          "2"
+        ],
+        [
+          "\\vmf",
+          "SmartAudit",
+          "3",
+          ",  ",
+          "\\vmfU",
+          "VulBench"
+        ],
+        [
+          "\\vmf",
+          "GPTLens",
+          "1"
+        ],
+        [
+          "\\vmf",
+          "VulDetect",
+          "1"
+        ],
+        [
+          "\\vmf",
+          "VulDetect",
+          "2"
+        ],
+        [
+          "\\vmf",
+          "VulDetect",
+          "3"
+        ],
+        [
+          "\\static",
+          "LATTE",
+          "4",
+          ",  ",
+          "\\static",
+          "SkipAnalyzer",
+          "1"
+        ],
+        [
+          "\\static",
+          "SkipAnalyzer",
+          "2"
+        ],
+        [
+          "\\vmf",
+          "VSP",
+          "1"
+        ],
+        [
+          "\\vmf",
+          "VSP",
+          "2"
+        ],
+        [
+          "\\vmf",
+          "LLM4Vuln",
+          "3",
+          ",  "
+        ],
+        [
+          "\\vmf",
+          "LLM4Vuln",
+          "3w/PreCoT"
+        ],
+        [
+          "\\vmf",
+          "LLM4Vuln",
+          "3w/PostCoT"
+        ],
+        [
+          "\\vmf",
+          "DLAP",
+          "3"
+        ]
+      ],
+      "Line": [
+        [
+          "\\vmf",
+          "WitheredLeaf",
+          "1"
+        ],
+        [
+          "\\vmf",
+          "WitheredLeaf",
+          "3"
+        ]
+      ]
+    },
+    "Extra input": {
+      "Code intent": [
+        [
+          "\\vmf",
+          "SmartAudit",
+          "3"
+        ],
+        [
+          "\\vmf",
+          "LLM4Vuln",
+          "3w/PreCoT"
+        ],
+        [
+          "\\nvmf",
+          "Sleuth",
+          "2"
+        ]
+      ],
+      "Taint-info": [
+        [
+          "\\static",
+          "LATTE",
+          "4"
+        ]
+      ],
+      "Review guidance": [
+        [
+          "\\vmf",
+          "DLAP",
+          "3"
+        ]
+      ]
+    },
+    "Corrective mode": {
+      "Self-validation": [
+        [
+          "\\vmf",
+          "VulDetect",
+          "3"
+        ]
+      ]
+    },
+    "Reactivity": {
+      "Request further information": [
+        [
+          "\\vmf",
+          "LLM4Vuln",
+          "3"
+        ],
+        [
+          "\\vmf",
+          "LLM4Vuln",
+          "3w/PreCoT"
+        ],
+        [
+          "\\vmf",
+          "LLM4Vuln",
+          "3w/PostCoT"
+        ]
+      ]
+    },
+    "Rationalization": {
+      "Assessment/description": [
+        [
+          "\\vmf",
+          "ChatGPTSCV",
+          "1"
+        ],
+        [
+          "\\vmf",
+          "VulDetect",
+          "1"
+        ],
+        [
+          "\\vmf",
+          "VulDetect",
+          "2"
+        ],
+        [
+          "\\vmf",
+          "VulDetect",
+          "3"
+        ],
+        [
+          "\\static",
+          "LATTE",
+          "4"
+        ],
+        [
+          "\\static",
+          "SkipAnalyzer",
+          "1"
+        ],
+        [
+          "\\static",
+          "SkipAnalyzer",
+          "2",
+          ",  ",
+          "\\vmf",
+          "VSP",
+          "2"
+        ]
+      ],
+      "Thought step by step": [
+        [
+          "\\vmf",
+          "ChatGPTSCV",
+          "1"
+        ],
+        [
+          "\\vmfU",
+          "VulBench",
+          ",  ",
+          "\\static",
+          "SkipAnalyzer",
+          "1"
+        ],
+        [
+          "\\static",
+          "SkipAnalyzer",
+          "2"
+        ],
+        [
+          "\\vmf",
+          "VSP",
+          "1"
+        ],
+        [
+          "\\vmf",
+          "VSP",
+          "2"
+        ],
+        [
+          "\\nvmf",
+          "Sleuth",
+          "2"
+        ]
+      ],
+      "Reason": [
+        [
+          "\\vmf",
+          "GPTLens",
+          "1"
+        ],
+        [
+          "\\vmf",
+          "VulDetect",
+          "1"
+        ],
+        [
+          "\\vmf",
+          "VulDetect",
+          "2"
+        ],
+        [
+          "\\vmf",
+          "VulDetect",
+          "3"
+        ],
+        [
+          "\\vmf",
+          "LLM4Vuln",
+          "3"
+        ],
+        [
+          "\\vmf",
+          "LLM4Vuln",
+          "3w/PreCoT"
+        ],
+        [
+          "\\vmf",
+          "LLM4Vuln",
+          "3w/PostCoT",
+          ","
+        ],
+        [
+          "\\vmf",
+          "DLAP",
+          "3"
+        ]
+      ],
+      "Fix": [
+        [
+          "\\vmf",
+          "WitheredLeaf",
+          "3",
+          ", (",
+          "\\vmf",
+          "SmartAudit",
+          "3",
+          "), ",
+          "\\vmf",
+          "LLM4Vuln",
+          "3w/PostCoT"
+        ]
+      ],
+      "Exploit": [
+        [
+          "\\vmf",
+          "LLM4Vuln",
+          "3w/PostCoT"
+        ]
+      ]
+    }
+  },
+  "Evaluative/LineCodeRanking": {
+    "Analysis criteria": {
+      "Fault proneness": [
+        [
+          "\\vmf",
+          "ChatGPT4vul",
+          "2"
+        ],
+        [
+          "\\debug",
+          "ChatGPT-4(Log)",
+          "1"
+        ],
+        [
+          "\\debug",
+          "ChatGPT-4(Log)",
+          "2"
+        ]
+      ]
+    },
+    "Extra input": {
+      "Intent": [
+        [
+          "\\debug",
+          "ChatGPT-4(Log)",
+          "1"
+        ],
+        [
+          "\\debug",
+          "ChatGPT-4(Log)",
+          "2"
+        ]
+      ]
+    },
+    "Corrective mode": {
+      "Test results": [
+        [
+          "\\debug",
+          "ChatGPT-4(Log)",
+          "2"
+        ]
+      ]
+    },
+    "Rationalization": {
+      "Intent": [
+        [
+          "\\debug",
+          "ChatGPT-4(Log)",
+          "1"
+        ],
+        [
+          "\\debug",
+          "ChatGPT-4(Log)",
+          "2"
+        ]
+      ],
+      "Reason": [
+        [
+          "\\debug",
+          "ChatGPT-4(Log)",
+          "1"
+        ],
+        [
+          "\\debug",
+          "ChatGPT-4(Log)",
+          "2"
+        ]
+      ]
+    }
+  },
+  "Evaluative/CodeScaling": {
+    "Scale": {
+      "CVSS": [
+        [
+          "\\vmf",
+          "ChatGPT4vul",
+          "4"
+        ],
+        [
+          "\\vmf",
+          "MultiTask",
+          "2"
+        ]
+      ],
+      "Vulnerability probability": [
+        [
+          "\\vmf",
+          "DLAP",
+          "1"
+        ]
+      ]
+    }
+  },
   "Evaluative/DirectCode-Classification": {
     "Analysis criteria": {
       "Vulnerability proneness": [
@@ -159,7 +1009,6 @@
           "ChatGPT4vul",
           "3",
           ",  ",
-          " ",
           "\\vmf",
           "NLBSE24",
           "1"
@@ -296,7 +1145,6 @@
               "MultiTask",
               "1",
               ",  ",
-              " ",
               "\\vmf",
               "MultiTask",
               "3"
@@ -304,8 +1152,7 @@
             [
               "\\vmf",
               "PromptEnhanced",
-              "2",
-              " "
+              "2"
             ]
           ]
         },
@@ -322,7 +1169,6 @@
               "2"
             ],
             [
-              " ",
               "\\vmf",
               "GPTScan",
               "1"
@@ -333,7 +1179,6 @@
               "2"
             ],
             [
-              " ",
               "\\vmf",
               "LLMAPIDet",
               "3"
@@ -341,7 +1186,13 @@
             [
               "\\vmfU",
               "ChatGPT(Plus)",
-              "MultiClass/MultiLabel",
+              "MultiClass/MultiLabel"
+            ]
+          ]
+        },
+        {
+          "Open-ended": [
+            [
               "\\testing",
               "FuzzGPT",
               "1"
@@ -384,8 +1235,9 @@
       ]
     },
     "Analysis granularity": {
-      "\\testing": [
+      "Snippet": [
         [
+          "\\testing",
           "SELF-DEBUGGING",
           "OP7"
         ],
@@ -399,10 +1251,9 @@
           "FuzzGPT",
           "1",
           ","
-        ]
-      ],
-      "": [
+        ],
         [
+          "    ",
           "\\vmf",
           "ChatGPT4vul",
           "1"
@@ -423,35 +1274,46 @@
           "1",
           ",  "
         ],
-        "\\vmf",
-        "NLBSE24",
-        "2",
-        ", ",
-        "\\vmfU",
-        "GRACE",
-        ", ",
-        "\\vmf",
-        "GPTScan",
-        "1",
-        ", ",
-        "\\vmf",
-        "GPTScan",
-        "2",
-        ",   ",
-        "\\vmf",
-        "LLMAPIDet",
-        "3",
-        ", ",
-        "\\vmf",
-        "MultiTask",
-        "1",
-        ", ",
-        "\\vmf",
-        "PromptEnhanced",
-        "2",
-        ", ",
-        "\\vmfU",
-        "ChatGPT(Plus)"
+        [
+          "\\vmf",
+          "NLBSE24",
+          "2"
+        ],
+        [
+          "\\vmfU",
+          "GRACE"
+        ],
+        [
+          "\\vmf",
+          "GPTScan",
+          "1"
+        ],
+        [
+          "\\vmf",
+          "GPTScan",
+          "2",
+          ",   "
+        ],
+        [
+          "\\vmf",
+          "LLMAPIDet",
+          "3"
+        ],
+        [
+          "\\vmf",
+          "MultiTask",
+          "1"
+        ],
+        [
+          "\\vmf",
+          "PromptEnhanced",
+          "2"
+        ],
+        [
+          "  ",
+          "\\vmfU",
+          "ChatGPT(Plus)"
+        ]
       ],
       "Line": [
         [
@@ -535,665 +1397,6 @@
       ]
     }
   },
-  "Evaluative/CodeScaling": {
-    "Scale": {
-      "CVSS": [
-        [
-          "\\vmf",
-          "ChatGPT4vul",
-          "4"
-        ],
-        [
-          "\\vmf",
-          "MultiTask",
-          "2"
-        ]
-      ],
-      "Vulnerability probability": [
-        [
-          "\\vmf",
-          "DLAP",
-          "1"
-        ]
-      ]
-    }
-  },
-  "Evaluative/RationalizedCode-Clasification": {
-    "Analysis criteria": {
-      "Vulnerability proneness": [
-        [
-          "\\vmf",
-          "EditTime",
-          "3"
-        ],
-        [
-          "\\vmf",
-          "EditTime",
-          "4"
-        ],
-        [
-          "\\vmf",
-          "SmartAudit",
-          "2"
-        ],
-        [
-          "\\vmf",
-          "SmartAudit",
-          "3"
-        ],
-        [
-          " ",
-          "\\vmfU",
-          "VulBench"
-        ],
-        [
-          "\\vmf",
-          "GPTLens",
-          "1",
-          ",  ",
-          "\\vmf",
-          "VulDetect",
-          "1"
-        ],
-        [
-          "\\vmf",
-          "VulDetect",
-          "2",
-          ",  ",
-          " ",
-          "\\static",
-          "LATTE",
-          "4"
-        ],
-        [
-          "\\vmf",
-          "VSP",
-          "1"
-        ],
-        [
-          "\\vmf",
-          "VSP",
-          "2",
-          ",  ",
-          "\\vmf",
-          "LLM4Vuln",
-          "3",
-          ",  ",
-          "  ",
-          "\\vmf",
-          "LLM4Vuln",
-          "3w/PreCoT"
-        ],
-        [
-          "\\vmf",
-          "LLM4Vuln",
-          "3w/PostCoT"
-        ],
-        [
-          "\\vmf",
-          "DLAP",
-          "3",
-          " "
-        ],
-        {
-          "Null-dereference": [
-            [
-              "\\static",
-              "SkipAnalyzer",
-              "1"
-            ]
-          ]
-        },
-        {
-          "Leak presence": [
-            [
-              "\\static",
-              "SkipAnalyzer",
-              "2"
-            ]
-          ]
-        },
-        {
-          "Data-flow CWI": [
-            [
-              "\\vmf",
-              "VulDetect",
-              "3",
-              " "
-            ]
-          ]
-        },
-        {
-          "Entity inconsistency": [
-            [
-              "\\vmf",
-              "WitheredLeaf",
-              "1"
-            ]
-          ]
-        }
-      ],
-      "Malware proneness": [
-        [
-          "\\nvmf",
-          "Sleuth",
-          "2",
-          " "
-        ]
-      ],
-      "Fixability analysis": [
-        {
-          "Rename": [
-            [
-              "\\vmf",
-              "WitheredLeaf",
-              "3"
-            ]
-          ]
-        }
-      ]
-    },
-    "Nature of classification": {
-      "Multiplicity": [
-        {
-          "OneClass (Binary)": [
-            [
-              "\\vmf",
-              "EditTime",
-              "3"
-            ],
-            [
-              "\\vmf",
-              "EditTime",
-              "4"
-            ],
-            [
-              "\\vmf",
-              "WitheredLeaf",
-              "1"
-            ],
-            [
-              " ",
-              "\\vmf",
-              "WitheredLeaf",
-              "3"
-            ],
-            [
-              "\\static",
-              "SkipAnalyzer",
-              "1"
-            ],
-            [
-              "\\static",
-              "SkipAnalyzer",
-              "2"
-            ],
-            [
-              " ",
-              "\\vmf",
-              "VSP",
-              "2"
-            ],
-            [
-              "\\nvmf",
-              "Sleuth",
-              "2"
-            ],
-            [
-              "\\vmf",
-              "DLAP",
-              "3",
-              " ",
-              "MultiLabel "
-            ]
-          ]
-        },
-        {
-          "Open-ended": [
-            [
-              "\\vmf",
-              "SmartAudit",
-              "2"
-            ],
-            [
-              "\\vmf",
-              "SmartAudit",
-              "3",
-              ",  ",
-              "\\vmf",
-              "GPTLens",
-              "1",
-              ",   "
-            ]
-          ]
-        },
-        {
-          "Close-ended": [
-            [
-              "\\vmf",
-              "ChatGPTSCV",
-              "1",
-              ",  ",
-              "\\vmfU",
-              "VulBench"
-            ],
-            [
-              "\\vmf",
-              "VulDetect",
-              "1"
-            ],
-            [
-              "\\vmf",
-              "VulDetect",
-              "2"
-            ],
-            [
-              " ",
-              "\\vmf",
-              "VulDetect",
-              "3"
-            ],
-            [
-              "\\static",
-              "LATTE",
-              "4",
-              ",  ",
-              "\\vmf",
-              "VSP",
-              "1"
-            ]
-          ]
-        },
-        {
-          "In-context defined classes": [
-            [
-              "\\vmf",
-              "LLM4Vuln",
-              "3"
-            ],
-            [
-              "\\vmf",
-              "LLM4Vuln",
-              "3w/PreCoT"
-            ],
-            [
-              " ",
-              "\\vmf",
-              "LLM4Vuln",
-              "3w/PostCoT",
-              " "
-            ]
-          ]
-        }
-      ]
-    },
-    "Analysis granularity": {
-      "\\vmf": [
-        [
-          "EditTime",
-          "3"
-        ],
-        [
-          "\\vmf",
-          "EditTime",
-          "4"
-        ],
-        [
-          "\\vmf",
-          "ChatGPTSCV",
-          "1"
-        ],
-        [
-          "\\vmf",
-          "SmartAudit",
-          "2"
-        ],
-        "LLM4Vuln",
-        "3w/PreCoT",
-        ", ",
-        "\\vmf",
-        "LLM4Vuln",
-        "3w/PostCoT",
-        ", ",
-        "\\vmf",
-        "DLAP",
-        "3",
-        " "
-      ],
-      "": [
-        [
-          "\\vmf",
-          "SmartAudit",
-          "3",
-          ",  ",
-          "\\vmfU",
-          "VulBench"
-        ],
-        [
-          "\\vmf",
-          "GPTLens",
-          "1"
-        ],
-        [
-          "\\vmf",
-          "VulDetect",
-          "1"
-        ],
-        "\\vmf",
-        "VulDetect",
-        "2",
-        ", ",
-        "\\vmf",
-        "VulDetect",
-        "3",
-        ", ",
-        "\\static",
-        "LATTE",
-        "4",
-        ",  ",
-        "\\static",
-        "SkipAnalyzer",
-        "1",
-        ", ",
-        "\\static",
-        "SkipAnalyzer",
-        "2",
-        ", ",
-        "\\vmf",
-        "VSP",
-        "1",
-        ", ",
-        "\\vmf",
-        "VSP",
-        "2",
-        ", ",
-        "\\vmf",
-        "LLM4Vuln",
-        "3",
-        ",  "
-      ],
-      "Line": [
-        [
-          "\\vmf",
-          "WitheredLeaf",
-          "1"
-        ],
-        [
-          "\\vmf",
-          "WitheredLeaf",
-          "3",
-          " "
-        ]
-      ]
-    },
-    "Extra input": {
-      "Code intent": [
-        [
-          "\\vmf",
-          "SmartAudit",
-          "3"
-        ],
-        [
-          "\\vmf",
-          "LLM4Vuln",
-          "3w/PreCoT"
-        ],
-        [
-          "\\nvmf",
-          "Sleuth",
-          "2"
-        ]
-      ],
-      "Taint-info": [
-        [
-          "\\static",
-          "LATTE",
-          "4"
-        ]
-      ],
-      "Review guidance": [
-        [
-          "\\vmf",
-          "DLAP",
-          "3"
-        ]
-      ]
-    },
-    "Corrective mode": {
-      "Self-validation": [
-        [
-          "\\vmf",
-          "VulDetect",
-          "3",
-          " "
-        ]
-      ]
-    },
-    "Reactivity": {
-      "Request further information": [
-        [
-          "\\vmf",
-          "LLM4Vuln",
-          "3"
-        ],
-        [
-          "\\vmf",
-          "LLM4Vuln",
-          "3w/PreCoT"
-        ]
-      ],
-      "": [
-        [
-          "\\vmf",
-          "LLM4Vuln",
-          "3w/PostCoT"
-        ]
-      ]
-    },
-    "Rationalization": {
-      "Assessment/description": [
-        [
-          "\\vmf",
-          "ChatGPTSCV",
-          "1"
-        ],
-        [
-          "\\vmf",
-          "VulDetect",
-          "1"
-        ],
-        [
-          "\\vmf",
-          "VulDetect",
-          "2"
-        ]
-      ],
-      "": [
-        [
-          "\\vmf",
-          "VulDetect",
-          "3"
-        ],
-        [
-          "\\static",
-          "LATTE",
-          "4"
-        ],
-        [
-          "\\static",
-          "SkipAnalyzer",
-          "1"
-        ],
-        "\\static",
-        "SkipAnalyzer",
-        "2",
-        ",  ",
-        "\\vmf",
-        "VSP",
-        "2",
-        "\\static",
-        "SkipAnalyzer",
-        "2",
-        ", ",
-        "\\vmf",
-        "VSP",
-        "1",
-        ", ",
-        "\\vmf",
-        "VSP",
-        "2",
-        ", ",
-        "\\nvmf",
-        "Sleuth",
-        "2",
-        "\\vmf",
-        "LLM4Vuln",
-        "3",
-        ", ",
-        "\\vmf",
-        "LLM4Vuln",
-        "3w/PreCoT",
-        ", ",
-        "\\vmf",
-        "LLM4Vuln",
-        "3w/PostCoT",
-        ",",
-        "\\vmf",
-        "DLAP",
-        "3",
-        " "
-      ],
-      "Thought step by step": [
-        [
-          "\\vmf",
-          "ChatGPTSCV",
-          "1"
-        ],
-        [
-          "\\vmfU",
-          "VulBench",
-          ",  ",
-          "\\static",
-          "SkipAnalyzer",
-          "1"
-        ]
-      ],
-      "Reason": [
-        [
-          "\\vmf",
-          "GPTLens",
-          "1"
-        ],
-        [
-          "\\vmf",
-          "VulDetect",
-          "1"
-        ],
-        [
-          "\\vmf",
-          "VulDetect",
-          "2"
-        ],
-        [
-          "\\vmf",
-          "VulDetect",
-          "3"
-        ]
-      ],
-      "Fix": [
-        [
-          "\\vmf",
-          "WitheredLeaf",
-          "3",
-          ", (",
-          "\\vmf",
-          "SmartAudit",
-          "3",
-          "), ",
-          "\\vmf",
-          "LLM4Vuln",
-          "3w/PostCoT"
-        ]
-      ],
-      "Exploit": [
-        [
-          "\\vmf",
-          "LLM4Vuln",
-          "3w/PostCoT"
-        ]
-      ]
-    }
-  },
-  "Evaluative/LineCodeRanking": {
-    "Analysis criteria": {
-      "Fault proneness": [
-        [
-          "\\vmf",
-          "ChatGPT4vul",
-          "2"
-        ],
-        [
-          "\\debug",
-          "ChatGPT-4(Log)",
-          "1"
-        ],
-        [
-          "\\debug",
-          "ChatGPT-4(Log)",
-          "2"
-        ]
-      ]
-    },
-    "Extra input": {
-      "Intent": [
-        [
-          "\\debug",
-          "ChatGPT-4(Log)",
-          "1"
-        ],
-        [
-          "\\debug",
-          "ChatGPT-4(Log)",
-          "2"
-        ]
-      ]
-    },
-    "Corrective mode": {
-      "Test results": [
-        [
-          "\\debug",
-          "ChatGPT-4(Log)",
-          "2"
-        ]
-      ]
-    },
-    "Rationalization": {
-      "Intent": [
-        [
-          "\\debug",
-          "ChatGPT-4(Log)",
-          "1"
-        ],
-        [
-          "\\debug",
-          "ChatGPT-4(Log)",
-          "2"
-        ]
-      ],
-      "Reason": [
-        [
-          "\\debug",
-          "ChatGPT-4(Log)",
-          "1"
-        ],
-        [
-          "\\debug",
-          "ChatGPT-4(Log)",
-          "2"
-        ]
-      ]
-    }
-  },
   "Evaluative/BehaviorAnalysis": {
     "Analysis criteria": {
       "Anomaly detection": [
@@ -1216,8 +1419,7 @@
             [
               "\\nvmf",
               "Skyeye",
-              "3",
-              " "
+              "3"
             ]
           ]
         },
@@ -1293,7 +1495,6 @@
           "1"
         ],
         [
-          " ",
           "\\debug",
           "inContextRCA",
           "2"
@@ -1312,8 +1513,7 @@
         [
           "\\testing",
           "GPTDroid",
-          "2",
-          " "
+          "2"
         ]
       ]
     },
@@ -1400,198 +1600,686 @@
       ]
     }
   },
-  "Evaluative/TextAnalysis": {
-    "Analysis type": {
-      "Comparative analysis": [
-        {
-          "Functional equivalence": [
-            [
-              "\\testing",
-              "SELF-DEBUGGING",
-              "OP6"
-            ],
-            [
-              "\\progver",
-              "Clover",
-              "8"
-            ]
-          ]
-        },
-        {
-          "Similarity analysis": [
-            [
-              "\\ndebug",
-              "FAIL",
-              "4",
-              " "
-            ]
-          ]
-        },
-        {
-          "Generalized consensus": [
-            [
-              "\\nvmf",
-              "Skyeye",
-              "4",
-              " "
-            ]
-          ]
-        }
-      ],
-      "Ambiguity analysis": [
+  "Executive/TextualDataManipulation": {
+    "Operation criteria": {
+      "Information projection": [
         [
           "\\testing",
-          "ScenarioNL",
-          "2"
-        ],
-        [
-          "\\testing",
-          "ClarifyGPT",
+          "PentestGPT",
           "4"
         ]
       ],
-      "Support analysis": [
-        {
-          "To conclude": [
-            [
-              "\\debug",
-              "AutoSD",
-              "2"
-            ],
-            [
-              "\\ndebug",
-              "FAIL",
-              "9"
-            ]
-          ]
-        },
-        {
-          "To perform": [
-            [
-              "\\debug",
-              "LM-PACE",
-              "1"
-            ]
-          ]
-        },
-        {
-          "To analyze": [
-            [
-              "\\ndebug",
-              "FAIL",
-              "2"
-            ]
-          ]
-        }
-      ],
-      "Closed analysis": [
+      "Update": [
         [
-          "Q",
-          "\\&"
-        ],
-        {
-          "A": [
-            [
-              "\\ndebug",
-              "LasRCA",
-              "1"
-            ]
-          ]
-        }
+          "\\testing",
+          "PentestGPT",
+          "2"
+        ]
       ],
-      "Open analysis": [
-        [
-          "Q",
-          "\\&"
-        ],
+      "Replacement": [
         {
-          "A": [
-            [
-              "\\debug",
-              "RCAAgents",
-              "2"
-            ]
-          ]
-        },
-        {
-          "Expert completed": [
+          "Closest meaning": [
             [
               "\\testing",
-              "ScenarioNL",
-              "3",
-              " "
+              "TARGET",
+              "3"
             ]
           ]
         }
       ],
-      "Classification": [
+      "Fusion": [
         {
-          "Binary": [
+          "Control flow graph": [
             [
-              "\\ndebug",
-              "FAIL",
+              "\\static",
+              "CFG-Chain",
               "4"
             ]
           ]
         },
         {
-          "In-context defined class": [
+          "Structure": [
             [
-              "\\ndebug",
-              "SemSlicer",
-              "3",
-              " ",
-              "Multilabel "
-            ]
-          ]
-        },
-        {
-          "Close ended": [
-            [
-              "\\ndebug",
-              "LasRCA",
-              "2"
-            ],
-            [
-              "\\ndebug",
-              "LasRCA",
-              "3",
-              " "
-            ]
-          ]
-        },
-        {
-          "Open ended": [
-            [
-              "\\nvmf",
-              "Skyeye",
-              "4",
-              " "
+              "\\testing",
+              "FuzzingParsers",
+              "5"
             ]
           ]
         }
       ]
     },
-    "Rationalization": {
-      "Debate": [
+    "Nature of structure": {
+      "Plan": [
         [
           "\\testing",
-          "ScenarioNL",
+          "PentestGPT",
+          "2"
+        ],
+        [
+          "\\testing",
+          "PentestGPT",
+          "4"
+        ]
+      ],
+      "Scenario": [
+        [
+          "\\testing",
+          "TARGET",
           "3"
         ]
       ],
-      "Thought step by step": [
+      "Graph": [
         [
-          "\\ndebug",
-          "LasRCA",
+          "\\static",
+          "CFG-Chain",
+          "4"
+        ]
+      ],
+      "String": [
+        [
+          "\\testing",
+          "FuzzingParsers",
+          "5"
+        ]
+      ]
+    }
+  },
+  "Executive/PlanGeneration": {
+    "Generation criteria": {
+      "Intent corresponding": [
+        [
+          "\\testing",
+          "PentestGPT",
+          "1"
+        ]
+      ],
+      "Scenario corresponding": [
+        [
+          "\\testingD",
+          "pwnd",
+          "Pwn'd",
+          "1"
+        ]
+      ],
+      "Achieve goal": [
+        [
+          "\\progver",
+          "AlloyRepair",
+          "3"
+        ],
+        [
+          "\\testing",
+          "TARGET",
+          "1"
+        ],
+        [
+          "\\testing",
+          "TARGET",
+          "2"
+        ],
+        [
+          "\\vmf",
+          "LLM4Vuln",
+          "3(exploit)"
+        ],
+        [
+          "\\testing",
+          "AXNav",
+          "1",
+          "Constrained"
+        ],
+        {
+          "Available tools": [
+            [
+              "\\testing",
+              "PentestGPT",
+              "6"
+            ]
+          ]
+        }
+      ],
+      "Fusing": [
+        [
+          "\\testing",
+          "SysKG-UTF",
+          "3"
+        ]
+      ],
+      "Refinement/Concretization": [
+        [
+          "\\testing",
+          "PentestGPT",
+          "7"
+        ],
+        [
+          "\\debug",
+          "AdbGPT",
+          "2"
+        ],
+        [
+          "\\testing",
+          "SysKG-UTF",
+          "2",
+          ","
+        ],
+        [
+          "\\testing",
+          "SysKG-UTF",
+          "4"
+        ],
+        [
+          "\\testing",
+          "AXNav",
+          "2"
+        ],
+        [
+          "\\vmf",
+          "DLAP",
+          "2"
+        ]
+      ]
+    },
+    "Domain": {
+      "SW review": [
+        [
+          "\\vmf",
+          "DLAP",
           "2"
         ]
       ],
-      "Reasons": [
+      "SW-system integration": [
         [
-          "\\ndebug",
-          "LasRCA",
+          "\\testing",
+          "PentestGPT",
+          "1"
+        ],
+        [
+          "\\testing",
+          "PentestGPT",
+          "6"
+        ],
+        [
+          "\\testing",
+          "PentestGPT",
+          "7"
+        ],
+        [
+          "\\debug",
+          "AdbGPT",
+          "2"
+        ],
+        [
+          "\\testingD",
+          "pwnd",
+          "Pwn'd",
+          "1"
+        ],
+        [
+          "\\testing",
+          "SysKG-UTF",
+          "2",
+          ",  "
+        ],
+        [
+          "\\testing",
+          "SysKG-UTF",
           "3"
+        ],
+        [
+          "\\testing",
+          "SysKG-UTF",
+          "4"
+        ],
+        [
+          "\\vmf",
+          "LLM4Vuln",
+          "3(exploit)"
+        ],
+        [
+          "\\testing",
+          "AXNav",
+          "1"
+        ],
+        [
+          "\\testing",
+          "AXNav",
+          "2"
+        ],
+        [
+          "\\testing",
+          "AXNav",
+          "4"
+        ]
+      ],
+      "Repair": [
+        [
+          "\\progver",
+          "AlloyRepair",
+          "3"
+        ]
+      ],
+      "Physical": [
+        [
+          "\\testing",
+          "TARGET",
+          "1"
+        ],
+        [
+          "\\testing",
+          "TARGET",
+          "2"
+        ]
+      ]
+    },
+    "Nature of output": {
+      "Step-by-step plan": [
+        [
+          "\\progver",
+          "AlloyRepair",
+          "3"
+        ],
+        [
+          "\\testing",
+          "PentestGPT",
+          "6"
+        ],
+        [
+          "\\testing",
+          "TARGET",
+          "1"
+        ],
+        [
+          "\\testing",
+          "TARGET",
+          "2",
+          ","
+        ],
+        [
+          "\\testingD",
+          "pwnd",
+          "Pwn'd",
+          "1"
+        ],
+        [
+          "\\testing",
+          "SysKG-UTF",
+          "2"
+        ],
+        [
+          "\\testing",
+          "SysKG-UTF",
+          "3",
+          ",  "
+        ],
+        [
+          "\\testing",
+          "SysKG-UTF",
+          "4"
+        ],
+        [
+          "\\vmf",
+          "LLM4Vuln",
+          "3(exploit)"
+        ],
+        [
+          "\\testing",
+          "AXNav",
+          "1"
+        ],
+        [
+          "\\testing",
+          "AXNav",
+          "4"
+        ],
+        [
+          "\\vmf",
+          "DLAP",
+          "2"
+        ]
+      ],
+      "Hierarchical plan": [
+        [
+          "\\testing",
+          "PentestGPT",
+          "1"
+        ]
+      ],
+      "Command/Action": [
+        [
+          "\\testing",
+          "PentestGPT",
+          "7"
+        ],
+        [
+          "\\debug",
+          "AdbGPT",
+          "2"
+        ],
+        [
+          "\\testing",
+          "AXNav",
+          "2"
+        ]
+      ]
+    },
+    "Corrective mode": {
+      "Feedback based": [
+        {
+          "Outcomes": [
+            [
+              "\\testing",
+              "PentestGPT",
+              "1"
+            ],
+            [
+              "\\testing",
+              "AXNav",
+              "4"
+            ]
+          ]
+        }
+      ],
+      "Rule based": [
+        [
+          "\\testing",
+          "TARGET",
+          "2"
+        ]
+      ]
+    },
+    "Reactivity": {
+      "Tool invocation": [
+        [
+          "\\testing",
+          "PentestGPT",
+          "1"
+        ],
+        [
+          "\\testingD",
+          "pwnd",
+          "Pwn'd",
+          "1"
+        ]
+      ]
+    },
+    "Rationalization": {
+      "Thought": [
+        [
+          "\\testing",
+          "PentestGPT",
+          "1"
+        ],
+        [
+          "\\testing",
+          "PentestGPT",
+          "7"
+        ],
+        [
+          "\\debug",
+          "AdbGPT",
+          "2"
+        ],
+        [
+          "\\testing",
+          "AXNav",
+          "1"
+        ],
+        [
+          "\\testing",
+          "AXNav",
+          "2"
+        ]
+      ],
+      "Assessment": [
+        [
+          "\\testing",
+          "SysKG-UTF",
+          "4"
+        ]
+      ],
+      "Pseudo-code guided assessment": [
+        [
+          "\\testing",
+          "SysKG-UTF",
+          "3"
+        ]
+      ]
+    }
+  },
+  "Executive/PseudocodeExecution": {
+    "Domain": {
+      "General code": [
+        [
+          "\\debug",
+          "SELF-DEBUGGING",
+          "FL(CoT)"
+        ]
+      ],
+      "Pseudocode": [
+        [
+          "\\staticD",
+          "EV",
+          "E",
+          "\\&",
+          "V",
+          "1"
+        ]
+      ],
+      "Intent": [
+        [
+          "\\testing",
+          "TestChain",
+          "2"
+        ]
+      ],
+      "Assertions": [
+        [
+          "\\testing",
+          "SELF-DEBUGGING",
+          "OP7(CoT)"
+        ]
+      ]
+    },
+    "Granularity": {
+      "Single step": [
+        [
+          "\\testing",
+          "SELF-DEBUGGING",
+          "OP7(CoT)"
+        ],
+        [
+          "\\staticD",
+          "EV",
+          "E",
+          "\\&",
+          "V",
+          "1"
+        ]
+      ],
+      "Multiple steps": [
+        [
+          "\\debug",
+          "SELF-DEBUGGING",
+          "FL(CoT)"
+        ],
+        [
+          "\\testing",
+          "TestChain",
+          "2"
+        ]
+      ]
+    },
+    "Corrective mode": {
+      "Feedback based ": [
+        {
+          "Verification results": [
+            [
+              "\\staticD",
+              "EV",
+              "E",
+              "\\&",
+              "V",
+              "1"
+            ]
+          ]
+        }
+      ]
+    },
+    "Reactivity": {
+      "Request further information": [
+        [
+          "\\staticD",
+          "EV",
+          "E",
+          "\\&",
+          "V",
+          "1"
+        ]
+      ],
+      "Request external tool": [
+        [
+          "\\staticD",
+          "EV",
+          "E",
+          "\\&",
+          "V",
+          "1"
+        ],
+        [
+          "\\testing",
+          "TestChain",
+          "2"
+        ]
+      ]
+    }
+  },
+  "Executive/What-to-do-NextGeneration": {
+    "Generation criteria": {
+      "Most promising": [
+        [
+          "\\testing",
+          "PentestGPT",
+          "5"
+        ]
+      ],
+      "Coverage oriented": [
+        [
+          "\\testing",
+          "GPTDroid",
+          "1"
+        ]
+      ],
+      "Reachability oriented": [
+        [
+          "\\testingD",
+          "pwnd",
+          "Pwn'd",
+          "2"
+        ],
+        [
+          "\\debug",
+          "CrashTranslator",
+          "1"
+        ],
+        [
+          "\\debug",
+          "CrashTranslator",
+          "2"
+        ]
+      ]
+    },
+    "Domain": {
+      "SW-system integration": [
+        [
+          "\\testing",
+          "PentestGPT",
+          "5"
+        ],
+        [
+          "\\testingD",
+          "pwnd",
+          "Pwn'd",
+          "2"
+        ],
+        [
+          "\\debug",
+          "CrashTranslator",
+          "1"
+        ],
+        [
+          "\\debug",
+          "CrashTranslator",
+          "2"
+        ],
+        [
+          "\\testing",
+          "GPTDroid",
+          "1"
+        ]
+      ]
+    },
+    "Nature of options": {
+      "Open-ended": [
+        [
+          "\\testingD",
+          "pwnd",
+          "Pwn'd",
+          "2"
+        ],
+        [
+          "\\debug",
+          "CrashTranslator",
+          "1"
+        ],
+        [
+          "\\testing",
+          "GPTDroid",
+          "1"
+        ]
+      ],
+      "Close-ended": [
+        [
+          "\\testing",
+          "PentestGPT",
+          "5"
+        ],
+        [
+          "\\debug",
+          "CrashTranslator",
+          "2"
+        ]
+      ]
+    },
+    "Given context": {
+      "Enclosing plan": [
+        [
+          "\\testing",
+          "PentestGPT",
+          "5"
+        ]
+      ],
+      "Dynamic annotation": [
+        [
+          "\\testing",
+          "GPTDroid",
+          "1"
+        ]
+      ],
+      "GUI context": [
+        [
+          "\\debug",
+          "CrashTranslator",
+          "1"
+        ],
+        [
+          "\\debug",
+          "CrashTranslator",
+          "2"
+        ],
+        [
+          "\\testing",
+          "GPTDroid",
+          "1"
         ]
       ]
     }
@@ -1694,1196 +2382,11 @@
       ]
     }
   },
-  "Abstractive/Old-PropertyChar": {
-    "Type of characterization": {
-      "Value constraints": [
-        [
-          "Correctness criteria ",
-          "Valid input "
-        ],
-        {
-          "Design-time descriptions compliant": [
-            [
-              "\\testing",
-              "RESTGPT",
-              "1",
-              " ",
-              " "
-            ]
-          ]
-        },
-        {
-          "Run-time context compliant": [
-            [
-              "\\testing",
-              "InputBlaster",
-              "1",
-              " ",
-              "Exec-reaches code "
-            ]
-          ]
-        },
-        {
-          "Qualified post-constraint": [
-            [
-              "\\static",
-              "LLift",
-              "2",
-              " "
-            ]
-          ]
-        },
-        {
-          "Triggers optimization": [
-            [
-              "\\testing",
-              "WhiteFox",
-              "1",
-              " ",
-              "Corrective mode "
-            ]
-          ]
-        },
-        {
-          "Self-validation": [
-            [
-              "\\static",
-              "LLift",
-              "2",
-              " "
-            ]
-          ]
-        }
-      ],
-      "Abstract behavior": [
-        [
-          "Nature ",
-          "Code facts"
-        ],
-        {
-          "Taint-flow": [
-            [
-              "\\static",
-              "LATTE",
-              "3",
-              " "
-            ]
-          ]
-        },
-        {
-          "Same-value": [
-            [
-              "\\static",
-              "LLMDFA",
-              "3",
-              " "
-            ]
-          ]
-        },
-        {
-          "Control-flow": [
-            [
-              "\\static",
-              "CFG-Chain",
-              "3",
-              " "
-            ]
-          ]
-        },
-        {
-          "May-must summary": [
-            [
-              "\\static",
-              "LLift",
-              "3",
-              " ",
-              "Extra output "
-            ]
-          ]
-        },
-        {
-          "Assessment": [
-            [
-              "\\static",
-              "LLMDFA",
-              "3",
-              " ",
-              "Extra input "
-            ]
-          ]
-        },
-        {
-          "Taint-flow": [
-            [
-              "\\static",
-              "LATTE",
-              "3",
-              " ",
-              "Reactivity "
-            ]
-          ]
-        },
-        {
-          "Requests further info": [
-            [
-              "\\static",
-              "LLift",
-              "3",
-              " ",
-              "Corrective mode "
-            ]
-          ]
-        },
-        {
-          "Self-validation": [
-            [
-              "\\static",
-              "LLift",
-              "3",
-              " ",
-              "Rationalization "
-            ]
-          ]
-        },
-        {
-          "Thought": [
-            [
-              "\\static",
-              "LLMDFA",
-              "3",
-              " "
-            ]
-          ]
-        }
-      ]
-    },
-    "Accessibility": {
-      "Black-box": [
-        [
-          "\\testing",
-          "RESTGPT",
-          "1"
-        ],
-        [
-          "\\testing",
-          "InputBlaster",
-          "1",
-          " "
-        ]
-      ],
-      "White-box": [
-        [
-          "\\static",
-          "LLift",
-          "2"
-        ],
-        [
-          "\\static",
-          "LLift",
-          "3",
-          ",  ",
-          "\\testing",
-          "WhiteFox",
-          "1"
-        ],
-        [
-          "\\static",
-          "CFG-Chain",
-          "3"
-        ],
-        [
-          "\\static",
-          "LATTE",
-          "3"
-        ],
-        [
-          "\\static",
-          "LLMDFA",
-          "3",
-          " "
-        ]
-      ]
-    },
-    "LATTE": {},
-    "3": {},
-    "Ag": {},
-    "LLMDFA": {}
-  },
-  "Abstractive/PropertyCharacterization": {
-    "Criteria of characterization": {
-      "Descriptions": [
-        [
-          "\\&"
-        ],
-        {
-          "domain corresponding": [
-            [
-              "\\testing",
-              "FSML",
-              "OP"
-            ],
-            [
-              "\\testing",
-              "SELF-DEBUGGING",
-              "OP5"
-            ]
-          ]
-        }
-      ],
-      "\\&": [
-        {
-          "domain corresponding": [
-            [
-              " ",
-              "\\testing",
-              "RESTGPT",
-              "1"
-            ],
-            [
-              "\\progver",
-              "Dafny-Synth",
-              "4a"
-            ],
-            [
-              "\\testing",
-              "EMR",
-              "2",
-              " ",
-              " "
-            ]
-          ]
-        }
-      ],
-      "Code corresponding": [
-        [
-          "\\static",
-          "CFG-Chain",
-          "3"
-        ],
-        [
-          "\\static",
-          "LLift",
-          "2"
-        ],
-        [
-          "\\static",
-          "LLift",
-          "3"
-        ],
-        [
-          "\\static",
-          "LATTE",
-          "3"
-        ]
-      ],
-      "": [
-        [
-          "\\static",
-          "LLMDFA",
-          "3",
-          ",  ",
-          "\\testing",
-          "WhiteFox",
-          "1",
-          " "
-        ]
-      ],
-      "Run-time context corresponding": [
-        [
-          "\\testing",
-          "InputBlaster",
-          "1"
-        ],
-        [
-          "\\testing",
-          "InputBlaster",
-          "3",
-          " "
-        ]
-      ]
-    },
-    "Nature of property": {
-      "Input-validity constraint": [
-        [
-          "\\testing",
-          "RESTGPT",
-          "1"
-        ],
-        [
-          "\\testing",
-          "InputBlaster",
-          "1",
-          " "
-        ]
-      ],
-      "NL-precondition": [
-        [
-          "\\progver",
-          "Dafny-Synth",
-          "4a",
-          " "
-        ]
-      ],
-      "Precondition constraint to reach code": [
-        [
-          "\\testing",
-          "WhiteFox",
-          "1",
-          " "
-        ]
-      ],
-      "NL-postcondition": [
-        [
-          "\\progver",
-          "Dafny-Synth",
-          "4a",
-          " "
-        ],
-        {
-          "Columns of query": [
-            [
-              "\\testing",
-              "SELF-DEBUGGING",
-              "OP5",
-              " "
-            ]
-          ]
-        }
-      ],
-      "Qualified post-constraint": [
-        [
-          "\\static",
-          "LLift",
-          "2",
-          " "
-        ]
-      ],
-      "Code facts": [
-        {
-          "Taint-flow": [
-            [
-              "\\static",
-              "LATTE",
-              "3",
-              " "
-            ]
-          ]
-        },
-        {
-          "Same-value": [
-            [
-              "\\static",
-              "LLMDFA",
-              "3",
-              " "
-            ]
-          ]
-        },
-        {
-          "Control-flow": [
-            [
-              "\\static",
-              "CFG-Chain",
-              "3",
-              " "
-            ]
-          ]
-        }
-      ],
-      "Summary": [
-        {
-          "May-must": [
-            [
-              "\\static",
-              "LLift",
-              "3",
-              " "
-            ]
-          ]
-        }
-      ],
-      "Metamorphic": [
-        {
-          "Term equivalence": [
-            [
-              "\\testing",
-              "FSML",
-              "OP",
-              " "
-            ]
-          ]
-        },
-        {
-          "NL-relation": [
-            [
-              "\\testing",
-              "EMR",
-              "2",
-              " "
-            ]
-          ]
-        },
-        {
-          "Bug-revealing mutation": [
-            [
-              "\\testing",
-              "InputBlaster",
-              "3",
-              " "
-            ]
-          ]
-        }
-      ]
-    },
-    "Corrective mode": {
-      "Self-validation": [
-        [
-          "\\static",
-          "LLift",
-          "2"
-        ],
-        [
-          "\\static",
-          "LLift",
-          "3",
-          " "
-        ]
-      ],
-      "Feedback based": [
-        {
-          "Test results": [
-            [
-              "\\testing",
-              "InputBlaster",
-              "3"
-            ]
-          ]
-        }
-      ]
-    },
-    "Reactivity": {
-      "Requests further info": [
-        [
-          "\\static",
-          "LLift",
-          "3",
-          " "
-        ]
-      ]
-    },
-    "Rationalization": {
-      "Analysis": [
-        [
-          "\\testing",
-          "FSML",
-          "OP"
-        ],
-        [
-          "\\testing",
-          "SELF-DEBUGGING",
-          "OP5"
-        ]
-      ],
-      "Thought": [
-        [
-          "\\&"
-        ],
-        {
-          "assessment": [
-            [
-              "\\static",
-              "LLMDFA",
-              "3",
-              " "
-            ]
-          ]
-        }
-      ]
-    }
-  },
-  "Abstractive/SW-ArtifactVerbalization": {
-    "Abstraction criteria": {
-      "Summary": [
-        [
-          "\\testing",
-          "PentestGPT",
-          "8"
-        ],
-        [
-          "\\vmf",
-          "LLM4Vuln",
-          "1",
-          ",  ",
-          "\\ntesting",
-          "HITS",
-          "1"
-        ]
-      ],
-      "Intent": [
-        [
-          "\\vmf",
-          "SmartAudit",
-          "3(CoT)"
-        ],
-        [
-          "\\testing",
-          "DiffPrompt",
-          "1"
-        ],
-        [
-          "\\progver",
-          "Clover",
-          "4"
-        ],
-        [
-          "\\progver",
-          "Clover",
-          "7"
-        ]
-      ],
-      "": [
-        [
-          "\\vmf",
-          "LLM4Vuln",
-          "1",
-          ",   ",
-          "\\vmf",
-          "LLM4Vuln",
-          "3(PreCoT)"
-        ],
-        [
-          "\\vmf",
-          "LLMAPIDet",
-          "1"
-        ],
-        [
-          "\\vmf",
-          "LLMAPIDet",
-          "2",
-          ",  "
-        ],
-        "\\debug",
-        "ChatGPT-4(Log)",
-        "1(CoT)",
-        ", ",
-        "\\progver",
-        "RustProof",
-        "1(CoT)",
-        ",",
-        "\\testing",
-        "ChatTESTER",
-        "1",
-        ", ",
-        "\\vmf",
-        "PromptEnhanced",
-        "1",
-        "  ",
-        "\\nvmf",
-        "Sleuth",
-        "1",
-        ", ",
-        "\\progver",
-        "RustProof",
-        "1(CoT)",
-        ", ",
-        "\\progver",
-        "RustProof",
-        "2(CoT)",
-        " "
-      ],
-      "Explanation": [
-        [
-          "\\testing",
-          "SELF-DEBUGGING",
-          "OP1"
-        ],
-        [
-          "\\testing",
-          "SELF-DEBUGGING",
-          "OP3"
-        ],
-        [
-          "\\nvmf",
-          "Skyeye",
-          "2"
-        ]
-      ],
-      "Differences": [
-        [
-          "\\testing",
-          "ClarifyGPT",
-          "3"
-        ]
-      ],
-      "Problem solving steps": [
-        [
-          "\\ntesting",
-          "HITS",
-          "3"
-        ]
-      ]
-    },
-    "Nature of input entity": {
-      "Intent": [
-        [
-          "\\testing",
-          "PentestGPT",
-          "8",
-          " "
-        ]
-      ],
-      "Code": [
-        [
-          "\\testing",
-          "SELF-DEBUGGING",
-          "OP1"
-        ],
-        [
-          "\\testing",
-          "SELF-DEBUGGING",
-          "OP3"
-        ],
-        [
-          " ",
-          "\\vmf",
-          "SmartAudit",
-          "3(CoT)"
-        ],
-        [
-          "\\testing",
-          "DiffPrompt",
-          "1"
-        ],
-        [
-          "\\testing",
-          "ClarifyGPT",
-          "3"
-        ],
-        [
-          "\\vmf",
-          "LLM4Vuln",
-          "1"
-        ],
-        [
-          "    ",
-          "\\vmf",
-          "LLM4Vuln",
-          "3(PreCoT)"
-        ],
-        [
-          "\\ntesting",
-          "HITS",
-          "1"
-        ],
-        [
-          "\\ntesting",
-          "HITS",
-          "3"
-        ],
-        [
-          "\\nvmf",
-          "Sleuth",
-          "1"
-        ],
-        [
-          " ",
-          "\\debug",
-          "ChatGPT-4(Log)",
-          "1(CoT)"
-        ],
-        [
-          "\\testing",
-          "ChatTESTER",
-          "1"
-        ],
-        [
-          "\\vmf",
-          "PromptEnhanced",
-          "1",
-          "  "
-        ],
-        {
-          "Commit": [
-            [
-              "\\nvmfU",
-              "VulAdvisor",
-              " "
-            ]
-          ]
-        },
-        {
-          "Annotated": [
-            [
-              "\\progver",
-              "Clover",
-              "4"
-            ],
-            [
-              "\\progver",
-              "RustProof",
-              "1(CoT)"
-            ],
-            [
-              "\\progver",
-              "RustProof",
-              "2(CoT)",
-              " "
-            ]
-          ]
-        }
-      ],
-      "Call sequences": [
-        [
-          "\\nvmf",
-          "Skyeye",
-          "2",
-          " "
-        ]
-      ],
-      "Report": [
-        [
-          "\\vmf",
-          "LLM4Vuln",
-          "1",
-          " "
-        ]
-      ],
-      "Testing outputs": [
-        [
-          "\\testing",
-          "PentestGPT",
-          "8"
-        ]
-      ],
-      "Assertion": [
-        [
-          "\\progver",
-          "Clover",
-          "7",
-          " "
-        ],
-        {
-          "Precondition": [
-            [
-              "\\progver",
-              "RustProof",
-              "1(CoT)"
-            ],
-            [
-              "\\progver",
-              "RustProof",
-              "2(CoT)",
-              " "
-            ]
-          ]
-        },
-        {
-          "Postcondition": [
-            [
-              "\\progver",
-              "RustProof",
-              "2(CoT)",
-              " "
-            ]
-          ]
-        }
-      ],
-      "Change action": [
-        [
-          "\\vmf",
-          "LLMAPIDet",
-          "1",
-          " "
-        ]
-      ]
-    },
-    "Extra input": {
-      "Execution": [
-        [
-          "\\testing",
-          "SELF-DEBUGGING",
-          "OP3",
-          " "
-        ]
-      ],
-      "Attack type": [
-        [
-          "\\nvmf",
-          "Skyeye",
-          "2",
-          " "
-        ]
-      ],
-      "Data flow": [
-        [
-          "\\nvmf",
-          "Sleuth",
-          "1",
-          " "
-        ]
-      ]
-    }
-  },
-  "Abstractive/Old-NL-SpecificationDistillation": {
-    "Criteria": {
-      "Intent/Signature corresponding": [
-        [
-          "\\progver",
-          "Dafny-Synth",
-          "4a"
-        ]
-      ]
-    },
-    "Nature": {
-      "Precondition": [
-        [
-          "\\progver",
-          "Dafny-Synth",
-          "4a"
-        ]
-      ],
-      "Postcondition": [
-        [
-          "\\progver",
-          "Dafny-Synth",
-          "4a",
-          "         child [white] "
-        ]
-      ]
-    }
-  },
-  "Abstractive/Old-PropertyIdentification": {
-    "Nature": {
-      "Metamorphic relation": [
-        [
-          "SW-Entity"
-        ],
-        {
-          "Term equivalence": [
-            [
-              "\\testing",
-              "FSML",
-              "OP",
-              "NL",
-              "\\testing",
-              "EMR",
-              "2"
-            ]
-          ]
-        }
-      ],
-      "Mutation rule": [
-        [
-          "\\testing",
-          "InputBlaster",
-          "3"
-        ]
-      ]
-    },
-    "Correctness criteria": {
-      "Valid likely becomes bug-revealing when mutated": [
-        [
-          "\\testing",
-          "InputBlaster",
-          "3"
-        ]
-      ]
-    },
-    "Rationalization": {
-      "Analysis": [
-        [
-          "\\testing",
-          "FSML",
-          "OP"
-        ]
-      ]
-    },
-    "Corrective mode": {
-      "Feedback based": [
-        {
-          "Test results": [
-            [
-              "\\testing",
-              "InputBlaster",
-              "3"
-            ]
-          ]
-        }
-      ]
-    }
-  },
-  "Abstractive/Focused-AbstractiveSummarization": {
-    "Abstraction criteria": {
-      "Sign of answer": [
-        [
-          "\\debug",
-          "LM-PACE",
-          "2"
-        ]
-      ],
-      "Scaled assessment": [
-        [
-          "\\debug",
-          "LM-PACE",
-          "4"
-        ]
-      ],
-      "Concept extraction": [
-        {
-          "Usage": [
-            [
-              "\\testing",
-              "Fuzz4All",
-              "1"
-            ],
-            [
-              "\\ndebug",
-              "FAIL",
-              "3"
-            ]
-          ]
-        },
-        {
-          "Failure described": [
-            [
-              "\\testing",
-              "GameBugDescriptions",
-              "2"
-            ]
-          ]
-        },
-        {
-          "Faulty culprit": [
-            [
-              "\\debug",
-              "AutoFL",
-              "2"
-            ]
-          ]
-        },
-        {
-          "Vulnerability described": [
-            [
-              "\\vmf",
-              "ChatGPTSCV",
-              "2"
-            ]
-          ]
-        },
-        {
-          "Vulnerability mechanism/vector described": [
-            [
-              "\\vmf",
-              "LLM4Vuln",
-              "2"
-            ],
-            [
-              "\\nvmf",
-              "VFFinder",
-              "1",
-              " "
-            ]
-          ]
-        },
-        {
-          "Incident/Root-cause described": [
-            [
-              "\\debug",
-              "RCACopilot",
-              "1"
-            ],
-            [
-              "\\debug",
-              "x-lifecycle",
-              "1"
-            ],
-            [
-              "\\nvmf",
-              "VFFinder",
-              "1"
-            ],
-            [
-              " ",
-              "\\debug",
-              "inContextRCA",
-              "1"
-            ]
-          ]
-        },
-        {
-          "Relevant report elements": [
-            [
-              "\\testing",
-              "ScenarioNL",
-              "1"
-            ],
-            [
-              "\\ntestingU",
-              "SoVAR"
-            ],
-            [
-              "\\ntesting",
-              "LeGEND",
-              "1"
-            ]
-          ]
-        },
-        {
-          "Output characterizations": [
-            [
-              "\\testing",
-              "SELF-DEBUGGING",
-              "OP4"
-            ]
-          ]
-        },
-        {
-          "Reason for toxicity": [
-            [
-              "\\nstatic",
-              "ToxicDetector",
-              "1"
-            ]
-          ]
-        }
-      ],
-      "Timeline": [
-        [
-          "\\ndebug",
-          "FAIL",
-          "7"
-        ]
-      ]
-    },
-    "Rationalization": {
-      "Thoughts": [
-        [
-          "\\vmf",
-          "ChatGPTSCV",
-          "2"
-        ]
-      ],
-      "Debate": [
-        [
-          "\\testing",
-          "ScenarioNL",
-          "1"
-        ]
-      ]
-    }
-  },
-  "Abstractive/Formalization": {
-    "j": {},
-    "Abstraction criteria": {
-      "Intent/Comment corresponding": [
-        [
-          "\\testingU",
-          "nl2postcondition"
-        ],
-        [
-          "\\progver",
-          "Clover",
-          "6"
-        ]
-      ],
-      "": [
-        [
-          "\\progver",
-          "RustProof",
-          "1"
-        ],
-        [
-          "\\nprogverUD",
-          "RustC4",
-          "RustC"
-        ]
-      ],
-      "Precondition corresponding": [
-        [
-          "\\progver",
-          "RustProof",
-          "1"
-        ]
-      ],
-      "Code corresponding": [
-        [
-          "\\progver",
-          "RustProof",
-          "1"
-        ]
-      ]
-    },
-    "Nature of formalization": {
-      "State-predicate": [
-        {
-          "Postcondition": [
-            [
-              "\\testingU",
-              "nl2postcondition",
-              ",  ",
-              "\\progver",
-              "Clover",
-              "6"
-            ],
-            [
-              "\\progver",
-              "RustProof",
-              "1"
-            ]
-          ]
-        },
-        {
-          "Precondition": [
-            [
-              "\\progver",
-              "Clover",
-              "6"
-            ]
-          ]
-        },
-        {
-          "Assertion": [
-            [
-              "\\nprogverUD",
-              "RustC4",
-              "RustC"
-            ]
-          ]
-        }
-      ]
-    },
-    "In-filling context": {
-      "Annotated code": [
-        [
-          "\\progver",
-          "Clover",
-          "6"
-        ],
-        [
-          "\\progver",
-          "RustProof",
-          "1"
-        ]
-      ]
-    },
-    "Corrective mode": {
-      "Feedback based": [
-        {
-          "Compiler": [
-            [
-              "\\progver",
-              "Clover",
-              "6"
-            ]
-          ]
-        }
-      ]
-    }
-  },
   "Extractive/CodeElementsIdentification": {
     "Identification criteria": {
-      "Role based": [
+      "undefined": [
         [
+          "Role based ",
           "Specialized "
         ],
         {
@@ -3023,7 +2526,7 @@
           "SimulinkSlicer"
         ]
       ],
-      "Structural": [
+      "Structural ": [
         {
           "Blocks of code": [
             [
@@ -3055,10 +2558,9 @@
           "\\testing",
           "KernelGPT",
           "2"
-        ]
-      ],
-      "": [
+        ],
         [
+          "  ",
           "\\testing",
           "KernelGPT",
           "3"
@@ -3124,7 +2626,7 @@
           ]
         }
       ],
-      "Best fit": [
+      "Best fit ": [
         {
           "Defined structure": [
             [
@@ -3169,8 +2671,7 @@
       "RFC": [
         [
           "\\testingU",
-          "PROSPER",
-          " "
+          "PROSPER"
         ]
       ],
       "Options list": [
@@ -3313,7 +2814,6 @@
           "2"
         ],
         [
-          " ",
           "\\testing",
           "UGCTX",
           "1"
@@ -3331,10 +2831,9 @@
               "1"
             ]
           ]
-        }
-      ],
-      "High precision": [
+        },
         [
+          "High precision ",
           "\\&"
         ],
         {
@@ -3377,7 +2876,7 @@
           "3"
         ]
       ],
-      "Encoders": [
+      "Encoders ": [
         {
           "Path condition": [
             [
@@ -3393,7 +2892,7 @@
           ]
         }
       ],
-      "Test drivers": [
+      "Test drivers ": [
         {
           "Fuzzing": [
             [
@@ -3493,7 +2992,7 @@
       ]
     },
     "Corrective mode": {
-      "Feedback based": [
+      "Feedback based ": [
         {
           "Compiler": [
             [
@@ -3543,8 +3042,7 @@
             [
               "\\testing",
               "UGCTX",
-              "2",
-              " "
+              "2"
             ]
           ]
         },
@@ -3565,568 +3063,6 @@
           "\\testing",
           "ScenarioNL",
           "4"
-        ]
-      ]
-    }
-  },
-  "Generative/AnnotationGeneration": {
-    "Generation criteria": {
-      "Syntactic": [
-        [
-          "\\testing",
-          "KernelGPT",
-          "5"
-        ]
-      ],
-      "Natural": [
-        [
-          "\\testingU",
-          "TOGLL"
-        ],
-        [
-          "\\progverU",
-          "ChatInv"
-        ],
-        [
-          "\\testing",
-          "PBT-GPT",
-          "1"
-        ],
-        [
-          "\\progverU",
-          "AutoSpec"
-        ],
-        {
-          "Demonstration similarity": [
-            [
-              "\\testing",
-              "PropertyGPT",
-              "1"
-            ],
-            [
-              "\\testing",
-              "PropertyGPT",
-              "2"
-            ],
-            [
-              " ",
-              "\\testing",
-              "PropertyGPT",
-              "4"
-            ],
-            [
-              "\\testingU",
-              "CEDAR"
-            ]
-          ]
-        },
-        "\\&",
-        " Verifiable: ",
-        "\\progver",
-        "SpecGen",
-        "1"
-      ],
-      "Proof-enabling": [
-        [
-          "\\progver",
-          "Loopy",
-          "1"
-        ],
-        [
-          "\\progver",
-          "Clover",
-          "5"
-        ],
-        [
-          "\\nprogverU",
-          "Lam4Inv"
-        ],
-        [
-          "\\progver",
-          "Lemur",
-          "1"
-        ]
-      ],
-      "": [
-        [
-          "\\progver",
-          "RustProof",
-          "2"
-        ]
-      ]
-    },
-    "Nature of entity": {
-      "Precondition": [
-        [
-          "\\testing",
-          "PropertyGPT",
-          "2"
-        ],
-        [
-          "\\progver",
-          "SpecGen",
-          "1"
-        ],
-        [
-          "\\progver",
-          "Clover",
-          "5"
-        ],
-        [
-          "\\progverU",
-          "AutoSpec"
-        ]
-      ],
-      "Postcondition": [
-        [
-          "\\testing",
-          "PropertyGPT",
-          "2"
-        ],
-        [
-          "\\progver",
-          "SpecGen",
-          "1"
-        ],
-        [
-          "\\progver",
-          "Clover",
-          "5"
-        ],
-        [
-          "\\progverU",
-          "AutoSpec"
-        ]
-      ],
-      "Loop invariant": [
-        [
-          "\\progver",
-          "Loopy",
-          "1"
-        ],
-        [
-          "\\nprogverU",
-          "ESBMCibmc"
-        ],
-        [
-          "\\progverU",
-          "AutoSpec"
-        ],
-        [
-          "\\nprogverU",
-          "Lam4Inv"
-        ]
-      ],
-      "": [
-        [
-          "\\progver",
-          "RustProof",
-          "2"
-        ]
-      ],
-      "Assumption": [
-        [
-          "\\progver",
-          "Lemur",
-          "1"
-        ]
-      ],
-      "Type state": [
-        [
-          "\\testing",
-          "KernelGPT",
-          "5"
-        ]
-      ],
-      "Assertion": [
-        [
-          "\\testingU",
-          "TOGLL"
-        ],
-        [
-          "\\testing",
-          "PropertyGPT",
-          "1"
-        ],
-        [
-          "\\testingU",
-          "CEDAR"
-        ]
-      ]
-    },
-    "In-filling context": {
-      "Masked assertion": [
-        [
-          "\\progverU",
-          "ChatInv"
-        ]
-      ],
-      "Annotated code": [
-        [
-          "\\progver",
-          "Loopy",
-          "1"
-        ],
-        [
-          "\\progver",
-          "SpecGen",
-          "1"
-        ],
-        [
-          "\\testingU",
-          "CEDAR"
-        ],
-        [
-          "\\progver",
-          "Clover",
-          "5"
-        ]
-      ],
-      "": [
-        [
-          "\\progverU",
-          "AutoSpec"
-        ],
-        [
-          "\\progver",
-          "Lemur",
-          "1"
-        ],
-        [
-          "\\progver",
-          "RustProof",
-          "2"
-        ]
-      ],
-      "Unit test": [
-        [
-          "\\testingU",
-          "TOGLL"
-        ],
-        [
-          "\\testingU",
-          "CEDAR"
-        ]
-      ]
-    },
-    "Corrective mode": {
-      "Feedback based": [
-        {
-          "Compiler failure": [
-            [
-              "\\testing",
-              "PropertyGPT",
-              "3"
-            ],
-            [
-              "\\nprogverU",
-              "ESBMCibmc"
-            ]
-          ]
-        },
-        {
-          "Verification failure": [
-            [
-              "\\progver",
-              "SpecGen",
-              "2"
-            ],
-            [
-              "\\nprogverU",
-              "ESBMCibmc"
-            ],
-            [
-              "\\nprogverU",
-              "Lam4Inv"
-            ],
-            [
-              "   ",
-              "\\progver",
-              "Lemur",
-              "2"
-            ],
-            [
-              "\\progver",
-              "RustProof",
-              "3"
-            ]
-          ]
-        },
-        {
-          "Inductiveness": [
-            [
-              "\\progver",
-              "Loopy",
-              "2"
-            ]
-          ]
-        },
-        {
-          "Validity checker": [
-            [
-              "\\testing",
-              "PropertyGPT",
-              "4"
-            ],
-            [
-              "\\testing",
-              "KernelGPT",
-              "5"
-            ]
-          ]
-        }
-      ]
-    },
-    "Rationalization": {
-      "Invariant explanation": [
-        [
-          "\\progver",
-          "RustProof",
-          "2"
-        ]
-      ],
-      "Proof explanation": [
-        [
-          "\\progver",
-          "RustProof",
-          "2"
-        ]
-      ]
-    }
-  },
-  "Generative/TestGeneration": {
-    "Generation criteria": {
-      "Differential": [
-        [
-          "\\testing",
-          "MuTAP",
-          "3"
-        ]
-      ],
-      "Natural": [
-        [
-          "\\testing",
-          "FSML",
-          "UTG"
-        ],
-        [
-          "\\testing",
-          "ChatGPTTests",
-          "1"
-        ],
-        [
-          "\\testing",
-          "ChatUniTest",
-          "1"
-        ],
-        [
-          "\\testing",
-          "MuTAP",
-          "1"
-        ],
-        [
-          " ",
-          "\\testing",
-          "DiffPrompt",
-          "3"
-        ],
-        [
-          "\\testingU",
-          "TestPilot"
-        ],
-        [
-          "\\testingU",
-          "EASEeval"
-        ],
-        [
-          "\\ntestingU",
-          "LLM-UTG",
-          " "
-        ],
-        {
-          "Bug revealing": [
-            [
-              "\\testing",
-              "FuzzGPT",
-              "4",
-              " "
-            ]
-          ]
-        }
-      ],
-      "Coverage improving": [
-        [
-          "\\testingU",
-          "TestGen-LLM"
-        ],
-        [
-          "\\testing",
-          "ChatGPTTests",
-          "2",
-          ",  ",
-          "\\testing",
-          "CoverUp",
-          "1"
-        ]
-      ],
-      "": [
-        [
-          "\\testing",
-          "CoverUp",
-          "2"
-        ],
-        [
-          "\\testingU",
-          "TELPA"
-        ]
-      ],
-      "Targeted": [
-        [
-          "\\testingU",
-          "CodaMOSA"
-        ]
-      ],
-      "Intent corresponding": [
-        [
-          "\\testingU",
-          "CodeT"
-        ],
-        [
-          "\\testingU",
-          "CodeCoT"
-        ],
-        [
-          "\\testingU",
-          "AgentCoder"
-        ],
-        [
-          "\\testing",
-          "ChatTESTER",
-          "2"
-        ]
-      ],
-      "Parameterized": [
-        [
-          "\\testing",
-          "PBT-GPT",
-          "3"
-        ]
-      ],
-      "Property based": [
-        [
-          "\\testing",
-          "PBT-GPT",
-          "4"
-        ]
-      ],
-      "Similarity inspired": [
-        [
-          "\\testing",
-          "FuzzGPT",
-          "3"
-        ]
-      ],
-      "Mimicking test": [
-        [
-          "\\testingU",
-          "secTests"
-        ]
-      ],
-      "Bug reproducing": [
-        [
-          "\\debugU",
-          "LIBRO"
-        ]
-      ]
-    },
-    "In-filling context": {
-      "Given prefix": [
-        [
-          "\\testing",
-          "FuzzGPT",
-          "4"
-        ]
-      ]
-    },
-    "Corrective mode": {
-      "Feedback based": [
-        {
-          "Compilation errors": [
-            [
-              "\\testing",
-              "ChatUniTest",
-              "2"
-            ],
-            [
-              "\\testing",
-              "MuTAP",
-              "2"
-            ],
-            [
-              "\\testing",
-              "CoverUp",
-              "2"
-            ],
-            [
-              "\\testingU",
-              "TestPilot"
-            ],
-            [
-              " ",
-              "\\testing",
-              "ChatTESTER",
-              "3"
-            ]
-          ]
-        },
-        {
-          "Assertion failure": [
-            [
-              "\\testing",
-              "ChatUniTest",
-              "2"
-            ],
-            [
-              "\\testingU",
-              "TestPilot"
-            ],
-            [
-              "\\testing",
-              "ChatTESTER",
-              "3"
-            ]
-          ]
-        },
-        {
-          "Examples to augment": [
-            [
-              "\\testingU",
-              "TELPA"
-            ]
-          ]
-        },
-        {
-          "Coverage info": [
-            [
-              "\\testing",
-              "CoverUp",
-              "1"
-            ],
-            [
-              "\\testing",
-              "CoverUp",
-              "2"
-            ]
-          ]
-        }
-      ]
-    },
-    "Rationalization": {
-      "Bug description": [
-        [
-          "\\testing",
-          "FuzzGPT",
-          "3"
         ]
       ]
     }
@@ -4218,8 +3154,7 @@
             ],
             [
               "\\ntestingU",
-              "Magneto",
-              " "
+              "Magneto"
             ]
           ]
         },
@@ -4228,8 +3163,7 @@
             [
               "\\testing",
               "SELF-DEBUGGING",
-              "OP2",
-              " "
+              "OP2"
             ]
           ]
         },
@@ -4362,7 +3296,7 @@
       ]
     },
     "Corrective mode": {
-      "Feedback based": [
+      "Feedback based ": [
         {
           "Execution output": [
             [
@@ -4380,6 +3314,332 @@
             ]
           ]
         }
+      ]
+    }
+  },
+  "Generative/AnnotationGeneration": {
+    "Generation criteria": {
+      "Syntactic": [
+        [
+          "\\testing",
+          "KernelGPT",
+          "5"
+        ]
+      ],
+      "Natural": [
+        [
+          "\\testingU",
+          "TOGLL"
+        ],
+        [
+          "\\progverU",
+          "ChatInv"
+        ],
+        [
+          "\\testing",
+          "PBT-GPT",
+          "1"
+        ],
+        [
+          "\\progverU",
+          "AutoSpec"
+        ],
+        {
+          "Demonstration similarity": [
+            [
+              "\\testing",
+              "PropertyGPT",
+              "1"
+            ],
+            [
+              "\\testing",
+              "PropertyGPT",
+              "2"
+            ],
+            [
+              "\\testing",
+              "PropertyGPT",
+              "4"
+            ],
+            [
+              "\\testingU",
+              "CEDAR"
+            ]
+          ]
+        },
+        [
+          "Natural ",
+          "\\&"
+        ],
+        {
+          "Verifiable": [
+            [
+              "\\progver",
+              "SpecGen",
+              "1"
+            ]
+          ]
+        }
+      ],
+      "Proof-enabling": [
+        [
+          "\\progver",
+          "Loopy",
+          "1"
+        ],
+        [
+          "\\progver",
+          "Clover",
+          "5"
+        ],
+        [
+          "\\nprogverU",
+          "Lam4Inv"
+        ],
+        [
+          "\\progver",
+          "Lemur",
+          "1"
+        ],
+        [
+          "\\progver",
+          "RustProof",
+          "2"
+        ]
+      ]
+    },
+    "Nature of entity": {
+      "Precondition": [
+        [
+          "\\testing",
+          "PropertyGPT",
+          "2"
+        ],
+        [
+          "\\progver",
+          "SpecGen",
+          "1"
+        ],
+        [
+          "\\progver",
+          "Clover",
+          "5"
+        ],
+        [
+          "\\progverU",
+          "AutoSpec"
+        ]
+      ],
+      "Postcondition": [
+        [
+          "\\testing",
+          "PropertyGPT",
+          "2"
+        ],
+        [
+          "\\progver",
+          "SpecGen",
+          "1"
+        ],
+        [
+          "\\progver",
+          "Clover",
+          "5"
+        ],
+        [
+          "\\progverU",
+          "AutoSpec"
+        ]
+      ],
+      "Loop invariant": [
+        [
+          "\\progver",
+          "Loopy",
+          "1"
+        ],
+        [
+          "\\nprogverU",
+          "ESBMCibmc"
+        ],
+        [
+          "\\progverU",
+          "AutoSpec"
+        ],
+        [
+          "\\nprogverU",
+          "Lam4Inv"
+        ],
+        [
+          "\\progver",
+          "RustProof",
+          "2"
+        ]
+      ],
+      "Assumption": [
+        [
+          "\\progver",
+          "Lemur",
+          "1"
+        ]
+      ],
+      "Type state": [
+        [
+          "\\testing",
+          "KernelGPT",
+          "5"
+        ]
+      ],
+      "Assertion": [
+        [
+          "\\testingU",
+          "TOGLL"
+        ],
+        [
+          "\\testing",
+          "PropertyGPT",
+          "1"
+        ],
+        [
+          "\\testingU",
+          "CEDAR"
+        ]
+      ]
+    },
+    "In-filling context": {
+      "Masked assertion": [
+        [
+          "\\progverU",
+          "ChatInv"
+        ]
+      ],
+      "Annotated code": [
+        [
+          "\\progver",
+          "Loopy",
+          "1"
+        ],
+        [
+          "\\progver",
+          "SpecGen",
+          "1"
+        ],
+        [
+          "\\testingU",
+          "CEDAR"
+        ],
+        [
+          "\\progver",
+          "Clover",
+          "5"
+        ],
+        [
+          "\\progverU",
+          "AutoSpec"
+        ],
+        [
+          "\\progver",
+          "Lemur",
+          "1"
+        ],
+        [
+          "\\progver",
+          "RustProof",
+          "2"
+        ]
+      ],
+      "Unit test": [
+        [
+          "\\testingU",
+          "TOGLL"
+        ],
+        [
+          "\\testingU",
+          "CEDAR"
+        ]
+      ]
+    },
+    "Corrective mode": {
+      "Feedback based ": [
+        {
+          "Compiler failure": [
+            [
+              "\\testing",
+              "PropertyGPT",
+              "3"
+            ],
+            [
+              "\\nprogverU",
+              "ESBMCibmc"
+            ]
+          ]
+        },
+        {
+          "Verification failure": [
+            [
+              "\\progver",
+              "SpecGen",
+              "2"
+            ],
+            [
+              "\\nprogverU",
+              "ESBMCibmc"
+            ],
+            [
+              "\\nprogverU",
+              "Lam4Inv"
+            ],
+            [
+              "   ",
+              "\\progver",
+              "Lemur",
+              "2"
+            ],
+            [
+              "\\progver",
+              "RustProof",
+              "3"
+            ]
+          ]
+        },
+        {
+          "Inductiveness": [
+            [
+              "\\progver",
+              "Loopy",
+              "2"
+            ]
+          ]
+        },
+        {
+          "Validity checker": [
+            [
+              "\\testing",
+              "PropertyGPT",
+              "4"
+            ],
+            [
+              "\\testing",
+              "KernelGPT",
+              "5"
+            ]
+          ]
+        }
+      ]
+    },
+    "Rationalization": {
+      "Invariant explanation": [
+        [
+          "\\progver",
+          "RustProof",
+          "2"
+        ]
+      ],
+      "Proof explanation": [
+        [
+          "\\progver",
+          "RustProof",
+          "2"
+        ]
       ]
     }
   },
@@ -4406,7 +3666,6 @@
           "1"
         ],
         [
-          " ",
           "\\testing",
           "ClarifyGPT",
           "1"
@@ -4534,10 +3793,9 @@
               "2"
             ]
           ]
-        }
-      ],
-      "Examples based": [
+        },
         [
+          "Examples based",
           "Translation "
         ],
         {
@@ -4610,7 +3868,6 @@
               "3"
             ],
             [
-              " ",
               "\\testing",
               "AID",
               "1"
@@ -4619,7 +3876,6 @@
               "\\vmf",
               "LLM4Vuln",
               "3(patch)",
-              " ",
               "Completion"
             ]
           ]
@@ -4669,9 +3925,7 @@
           "\\testing",
           "SearchGEM5",
           "1"
-        ]
-      ],
-      "": [
+        ],
         [
           "\\testing",
           "TitanFuzz",
@@ -4691,70 +3945,86 @@
           "\\testingU",
           "BugFarm"
         ],
-        "\\debug",
-        "AutoSD",
-        "3",
-        ",   ",
-        "\\testingUD",
-        "MuBert",
-        "BERT",
-        ", ",
-        "\\testing",
-        "DiffPrompt",
-        "2",
-        ",  ",
-        "\\testing",
-        "AID",
-        "1",
-        ",  ",
-        "\\progver",
-        "Dafny-Synth",
-        "1",
-        ", ",
-        "\\progver",
-        "Dafny-Synth",
-        "2",
-        ", ",
-        "\\progver",
-        "Dafny-Synth",
-        "5",
-        ",    ",
-        "\\testing",
-        "ClarifyGPT",
-        "1",
-        ",   ",
-        "\\testing",
-        "CHEMFUZZ",
-        "1",
-        ", ",
-        "\\progver",
-        "Clover",
-        "1",
-        ", ",
-        "\\progver",
-        "Clover",
-        "2",
-        ", ",
-        "\\progver",
-        "Clover",
-        "3",
-        ",  ",
-        "\\vmf",
-        "LLM4Vuln",
-        "3(patch)",
-        ", ",
-        "\\testingU",
-        "FormAI",
-        ",  ",
-        "\\testingU",
-        "LLMorpheus",
-        ", ",
-        "\\debugU",
-        "LLM4CBI",
-        ", ",
-        "\\testingU",
-        "ALGO",
-        " "
+        [
+          "\\debug",
+          "AutoSD",
+          "3",
+          ",   ",
+          "\\testingUD",
+          "MuBert",
+          "BERT"
+        ],
+        [
+          "\\testing",
+          "DiffPrompt",
+          "2",
+          ",  ",
+          "\\testing",
+          "AID",
+          "1",
+          ",  "
+        ],
+        [
+          "\\progver",
+          "Dafny-Synth",
+          "1"
+        ],
+        [
+          "\\progver",
+          "Dafny-Synth",
+          "2"
+        ],
+        [
+          "\\progver",
+          "Dafny-Synth",
+          "5",
+          ",    ",
+          "\\testing",
+          "ClarifyGPT",
+          "1",
+          ",   "
+        ],
+        [
+          "\\testing",
+          "CHEMFUZZ",
+          "1"
+        ],
+        [
+          "\\progver",
+          "Clover",
+          "1"
+        ],
+        [
+          "\\progver",
+          "Clover",
+          "2"
+        ],
+        [
+          "\\progver",
+          "Clover",
+          "3",
+          ",  "
+        ],
+        [
+          "\\vmf",
+          "LLM4Vuln",
+          "3(patch)"
+        ],
+        [
+          "\\testingU",
+          "FormAI",
+          ",  ",
+          "\\testingU",
+          "LLMorpheus"
+        ],
+        [
+          "\\debugU",
+          "LLM4CBI"
+        ],
+        [
+          "\\testingU",
+          "ALGO"
+        ]
       ],
       "Model": [
         [
@@ -4834,9 +4104,7 @@
           "CHEMFUZZ",
           "1",
           ",  "
-        ]
-      ],
-      "": [
+        ],
         [
           "\\testingU",
           "LLMorpheus"
@@ -4844,7 +4112,7 @@
       ]
     },
     "Corrective mode": {
-      "Feedback based": [
+      "Feedback based ": [
         {
           "Compiler": [
             [
@@ -4906,692 +4174,1318 @@
       ]
     }
   },
-  "Executive/TextualDataManipulation": {
-    "Operation criteria": {
-      "Information projection": [
+  "Generative/TestGeneration": {
+    "Generation criteria": {
+      "Differential": [
         [
           "\\testing",
-          "PentestGPT",
-          "4"
+          "MuTAP",
+          "3"
         ]
       ],
-      "Update": [
+      "Natural": [
         [
           "\\testing",
-          "PentestGPT",
+          "FSML",
+          "UTG"
+        ],
+        [
+          "\\testing",
+          "ChatGPTTests",
+          "1"
+        ],
+        [
+          "\\testing",
+          "ChatUniTest",
+          "1"
+        ],
+        [
+          "\\testing",
+          "MuTAP",
+          "1"
+        ],
+        [
+          "\\testing",
+          "DiffPrompt",
+          "3"
+        ],
+        [
+          "\\testingU",
+          "TestPilot"
+        ],
+        [
+          "\\testingU",
+          "EASEeval"
+        ],
+        [
+          "\\ntestingU",
+          "LLM-UTG"
+        ],
+        {
+          "Bug revealing": [
+            [
+              "\\testing",
+              "FuzzGPT",
+              "4"
+            ]
+          ]
+        }
+      ],
+      "Coverage improving": [
+        [
+          "\\testingU",
+          "TestGen-LLM"
+        ],
+        [
+          "\\testing",
+          "ChatGPTTests",
+          "2",
+          ",  ",
+          "\\testing",
+          "CoverUp",
+          "1"
+        ],
+        [
+          "\\testing",
+          "CoverUp",
+          "2"
+        ],
+        [
+          "\\testingU",
+          "TELPA"
+        ]
+      ],
+      "Targeted": [
+        [
+          "\\testingU",
+          "CodaMOSA"
+        ]
+      ],
+      "Intent corresponding": [
+        [
+          "\\testingU",
+          "CodeT"
+        ],
+        [
+          "\\testingU",
+          "CodeCoT"
+        ],
+        [
+          "\\testingU",
+          "AgentCoder"
+        ],
+        [
+          "\\testing",
+          "ChatTESTER",
           "2"
         ]
       ],
-      "Replacement": [
+      "Parameterized": [
+        [
+          "\\testing",
+          "PBT-GPT",
+          "3"
+        ]
+      ],
+      "Property based": [
+        [
+          "\\testing",
+          "PBT-GPT",
+          "4"
+        ]
+      ],
+      "Similarity inspired": [
+        [
+          "\\testing",
+          "FuzzGPT",
+          "3"
+        ]
+      ],
+      "Mimicking test": [
+        [
+          "\\testingU",
+          "secTests"
+        ]
+      ],
+      "Bug reproducing": [
+        [
+          "\\debugU",
+          "LIBRO"
+        ]
+      ]
+    },
+    "In-filling context": {
+      "Given prefix": [
+        [
+          "\\testing",
+          "FuzzGPT",
+          "4"
+        ]
+      ]
+    },
+    "Corrective mode": {
+      "Feedback based": [
         {
-          "Closest meaning": [
+          "Compilation errors": [
             [
               "\\testing",
-              "TARGET",
+              "ChatUniTest",
+              "2"
+            ],
+            [
+              "\\testing",
+              "MuTAP",
+              "2"
+            ],
+            [
+              "\\testing",
+              "CoverUp",
+              "2"
+            ],
+            [
+              "\\testingU",
+              "TestPilot"
+            ],
+            [
+              "\\testing",
+              "ChatTESTER",
+              "3"
+            ]
+          ]
+        },
+        {
+          "Assertion failure": [
+            [
+              "\\testing",
+              "ChatUniTest",
+              "2"
+            ],
+            [
+              "\\testingU",
+              "TestPilot"
+            ],
+            [
+              "\\testing",
+              "ChatTESTER",
+              "3"
+            ]
+          ]
+        },
+        {
+          "Examples to augment": [
+            [
+              "\\testingU",
+              "TELPA"
+            ]
+          ]
+        },
+        {
+          "Coverage info": [
+            [
+              "\\testing",
+              "CoverUp",
+              "1"
+            ],
+            [
+              "\\testing",
+              "CoverUp",
+              "2"
+            ]
+          ]
+        }
+      ]
+    },
+    "Rationalization": {
+      "Bug description": [
+        [
+          "\\testing",
+          "FuzzGPT",
+          "3"
+        ]
+      ]
+    }
+  },
+  "Abstractive/Old-NL-SpecificationDistillation": {
+    "Criteria": {
+      "Intent/Signature corresponding": [
+        [
+          "\\progver",
+          "Dafny-Synth",
+          "4a"
+        ]
+      ]
+    },
+    "Nature": {
+      "Precondition": [
+        [
+          "\\progver",
+          "Dafny-Synth",
+          "4a"
+        ]
+      ],
+      "Postcondition": [
+        [
+          "\\progver",
+          "Dafny-Synth",
+          "4a",
+          "         child [white] "
+        ]
+      ]
+    }
+  },
+  "Abstractive/Old-PropertyIdentification": {
+    "Nature": {
+      "undefined": [
+        [
+          "Metamorphic relation",
+          "SW-Entity"
+        ],
+        {
+          "Term equivalence": [
+            [
+              "\\testing",
+              "FSML",
+              "OP",
+              "NL",
+              "\\testing",
+              "EMR",
+              "2"
+            ]
+          ]
+        }
+      ],
+      "Mutation rule": [
+        [
+          "\\testing",
+          "InputBlaster",
+          "3"
+        ]
+      ]
+    },
+    "Correctness criteria": {
+      "Valid likely becomes bug-revealing when mutated": [
+        [
+          "\\testing",
+          "InputBlaster",
+          "3"
+        ]
+      ]
+    },
+    "Rationalization": {
+      "Analysis": [
+        [
+          "\\testing",
+          "FSML",
+          "OP"
+        ]
+      ]
+    },
+    "Corrective mode": {
+      "Feedback based": [
+        {
+          "Test results": [
+            [
+              "\\testing",
+              "InputBlaster",
+              "3"
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "Abstractive/Formalization": {
+    "Abstraction criteria": {
+      "Intent/Comment corresponding": [
+        [
+          "\\testingU",
+          "nl2postcondition"
+        ],
+        [
+          "\\progver",
+          "Clover",
+          "6"
+        ],
+        [
+          "  ",
+          "\\progver",
+          "RustProof",
+          "1"
+        ],
+        [
+          "\\nprogverUD",
+          "RustC4",
+          "RustC"
+        ]
+      ],
+      "Precondition corresponding": [
+        [
+          "\\progver",
+          "RustProof",
+          "1"
+        ]
+      ],
+      "Code corresponding": [
+        [
+          "\\progver",
+          "RustProof",
+          "1"
+        ]
+      ]
+    },
+    "Nature of formalization": {
+      "State-predicate": [
+        {
+          "Postcondition": [
+            [
+              "\\testingU",
+              "nl2postcondition",
+              ",  ",
+              "\\progver",
+              "Clover",
+              "6"
+            ],
+            [
+              "\\progver",
+              "RustProof",
+              "1"
+            ]
+          ]
+        },
+        {
+          "Precondition": [
+            [
+              "\\progver",
+              "Clover",
+              "6"
+            ]
+          ]
+        },
+        {
+          "Assertion": [
+            [
+              "\\nprogverUD",
+              "RustC4",
+              "RustC"
+            ]
+          ]
+        }
+      ]
+    },
+    "In-filling context": {
+      "Annotated code": [
+        [
+          "\\progver",
+          "Clover",
+          "6"
+        ],
+        [
+          "\\progver",
+          "RustProof",
+          "1"
+        ]
+      ]
+    },
+    "Corrective mode": {
+      "Feedback based": [
+        {
+          "Compiler": [
+            [
+              "\\progver",
+              "Clover",
+              "6"
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "Abstractive/PropertyCharacterization": {
+    "Criteria of characterization": {
+      "undefined": [
+        [
+          "Descriptions ",
+          "\\&"
+        ],
+        {
+          "domain corresponding": [
+            [
+              "\\testing",
+              "FSML",
+              "OP"
+            ],
+            [
+              "\\testing",
+              "SELF-DEBUGGING",
+              "OP5"
+            ]
+          ]
+        }
+      ],
+      "\\&": [
+        {
+          "domain corresponding": [
+            [
+              "\\testing",
+              "RESTGPT",
+              "1"
+            ],
+            [
+              "\\progver",
+              "Dafny-Synth",
+              "4a"
+            ],
+            [
+              "\\testing",
+              "EMR",
+              "2"
+            ]
+          ]
+        }
+      ],
+      "Code corresponding": [
+        [
+          "\\static",
+          "CFG-Chain",
+          "3"
+        ],
+        [
+          "\\static",
+          "LLift",
+          "2"
+        ],
+        [
+          "\\static",
+          "LLift",
+          "3"
+        ],
+        [
+          "\\static",
+          "LATTE",
+          "3"
+        ],
+        [
+          "\\static",
+          "LLMDFA",
+          "3",
+          ",  ",
+          "\\testing",
+          "WhiteFox",
+          "1"
+        ]
+      ],
+      "Run-time context corresponding": [
+        [
+          "\\testing",
+          "InputBlaster",
+          "1"
+        ],
+        [
+          "\\testing",
+          "InputBlaster",
+          "3"
+        ]
+      ]
+    },
+    "Nature of property": {
+      "Input-validity constraint": [
+        [
+          "\\testing",
+          "RESTGPT",
+          "1"
+        ],
+        [
+          "\\testing",
+          "InputBlaster",
+          "1"
+        ]
+      ],
+      "NL-precondition": [
+        [
+          "\\progver",
+          "Dafny-Synth",
+          "4a"
+        ]
+      ],
+      "Precondition constraint to reach code": [
+        [
+          "\\testing",
+          "WhiteFox",
+          "1"
+        ]
+      ],
+      "NL-postcondition": [
+        [
+          "\\progver",
+          "Dafny-Synth",
+          "4a"
+        ],
+        {
+          "Columns of query": [
+            [
+              "\\testing",
+              "SELF-DEBUGGING",
+              "OP5"
+            ]
+          ]
+        }
+      ],
+      "Qualified post-constraint": [
+        [
+          "\\static",
+          "LLift",
+          "2"
+        ]
+      ],
+      "Code facts ": [
+        {
+          "Taint-flow": [
+            [
+              "\\static",
+              "LATTE",
+              "3"
+            ]
+          ]
+        },
+        {
+          "Same-value": [
+            [
+              "\\static",
+              "LLMDFA",
+              "3"
+            ]
+          ]
+        },
+        {
+          "Control-flow": [
+            [
+              "\\static",
+              "CFG-Chain",
               "3"
             ]
           ]
         }
       ],
-      "Fusion": [
+      "Summary": [
         {
-          "Control flow graph": [
+          "May-must": [
             [
               "\\static",
-              "CFG-Chain",
-              "4"
+              "LLift",
+              "3"
+            ]
+          ]
+        }
+      ],
+      "Metamorphic ": [
+        {
+          "Term equivalence": [
+            [
+              "\\testing",
+              "FSML",
+              "OP"
             ]
           ]
         },
         {
-          "Structure": [
+          "NL-relation": [
             [
               "\\testing",
-              "FuzzingParsers",
-              "5"
+              "EMR",
+              "2"
+            ]
+          ]
+        },
+        {
+          "Bug-revealing mutation": [
+            [
+              "\\testing",
+              "InputBlaster",
+              "3"
             ]
           ]
         }
       ]
     },
-    "Nature of structure": {
-      "Plan": [
+    "Corrective mode": {
+      "Self-validation": [
         [
-          "\\testing",
-          "PentestGPT",
+          "\\static",
+          "LLift",
           "2"
         ],
         [
-          "\\testing",
-          "PentestGPT",
-          "4",
-          " "
+          "\\static",
+          "LLift",
+          "3"
         ]
       ],
-      "Scenario": [
-        [
-          "\\testing",
-          "TARGET",
-          "3",
-          " "
-        ]
-      ],
-      "Graph": [
+      "Feedback based ": [
+        {
+          "Test results": [
+            [
+              "\\testing",
+              "InputBlaster",
+              "3"
+            ]
+          ]
+        }
+      ]
+    },
+    "Reactivity": {
+      "Requests further info": [
         [
           "\\static",
-          "CFG-Chain",
-          "4",
-          " "
+          "LLift",
+          "3"
         ]
-      ],
-      "String": [
+      ]
+    },
+    "Rationalization": {
+      "Analysis": [
         [
           "\\testing",
-          "FuzzingParsers",
-          "5",
-          " "
+          "FSML",
+          "OP"
+        ],
+        [
+          "\\testing",
+          "SELF-DEBUGGING",
+          "OP5"
+        ],
+        [
+          "Thought ",
+          "\\&"
+        ],
+        {
+          "assessment": [
+            [
+              "\\static",
+              "LLMDFA",
+              "3"
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "Abstractive/Focused-AbstractiveSummarization": {
+    "Abstraction criteria": {
+      "Sign of answer": [
+        [
+          "\\debug",
+          "LM-PACE",
+          "2"
+        ]
+      ],
+      "Scaled assessment": [
+        [
+          "\\debug",
+          "LM-PACE",
+          "4"
+        ]
+      ],
+      "Concept extraction": [
+        {
+          "Usage": [
+            [
+              "\\testing",
+              "Fuzz4All",
+              "1"
+            ],
+            [
+              "\\ndebug",
+              "FAIL",
+              "3"
+            ]
+          ]
+        },
+        {
+          "Failure described": [
+            [
+              "\\testing",
+              "GameBugDescriptions",
+              "2"
+            ]
+          ]
+        },
+        {
+          "Faulty culprit": [
+            [
+              "\\debug",
+              "AutoFL",
+              "2"
+            ]
+          ]
+        },
+        {
+          "Vulnerability described": [
+            [
+              "\\vmf",
+              "ChatGPTSCV",
+              "2"
+            ]
+          ]
+        },
+        {
+          "Vulnerability mechanism/vector described": [
+            [
+              "\\vmf",
+              "LLM4Vuln",
+              "2"
+            ],
+            [
+              "\\nvmf",
+              "VFFinder",
+              "1"
+            ]
+          ]
+        },
+        {
+          "Incident/Root-cause described": [
+            [
+              "\\debug",
+              "RCACopilot",
+              "1"
+            ],
+            [
+              "\\debug",
+              "x-lifecycle",
+              "1"
+            ],
+            [
+              "\\nvmf",
+              "VFFinder",
+              "1"
+            ],
+            [
+              "\\debug",
+              "inContextRCA",
+              "1"
+            ]
+          ]
+        },
+        {
+          "Relevant report elements": [
+            [
+              "\\testing",
+              "ScenarioNL",
+              "1"
+            ],
+            [
+              "\\ntestingU",
+              "SoVAR"
+            ],
+            [
+              "\\ntesting",
+              "LeGEND",
+              "1"
+            ]
+          ]
+        },
+        {
+          "Output characterizations": [
+            [
+              "\\testing",
+              "SELF-DEBUGGING",
+              "OP4"
+            ]
+          ]
+        },
+        {
+          "Reason for toxicity": [
+            [
+              "\\nstatic",
+              "ToxicDetector",
+              "1"
+            ]
+          ]
+        }
+      ],
+      "Timeline": [
+        [
+          "\\ndebug",
+          "FAIL",
+          "7"
+        ]
+      ]
+    },
+    "Rationalization": {
+      "Thoughts": [
+        [
+          "\\vmf",
+          "ChatGPTSCV",
+          "2"
+        ]
+      ],
+      "Debate": [
+        [
+          "\\testing",
+          "ScenarioNL",
+          "1"
         ]
       ]
     }
   },
-  "Executive/PseudocodeExecution": {
-    "j": {},
-    "Domain": {
-      "General code": [
+  "Abstractive/Old-PropertyChar": {
+    "Type of characterization": {
+      "undefined": [
         [
-          "\\debug",
-          "SELF-DEBUGGING",
-          "FL(CoT)"
+          "Abstract behavior ",
+          "Nature ",
+          "Code facts"
+        ],
+        {
+          "Taint-flow": [
+            [
+              "\\static",
+              "LATTE",
+              "3"
+            ]
+          ]
+        },
+        {
+          "Same-value": [
+            [
+              "\\static",
+              "LLMDFA",
+              "3"
+            ]
+          ]
+        },
+        {
+          "Control-flow": [
+            [
+              "\\static",
+              "CFG-Chain",
+              "3"
+            ]
+          ]
+        },
+        {
+          "May-must summary": [
+            [
+              "\\static",
+              "LLift",
+              "3",
+              "Extra output "
+            ]
+          ]
+        },
+        {
+          "Assessment": [
+            [
+              "\\static",
+              "LLMDFA",
+              "3",
+              "Extra input "
+            ]
+          ]
+        },
+        {
+          "Taint-flow": [
+            [
+              "\\static",
+              "LATTE",
+              "3",
+              "Reactivity "
+            ]
+          ]
+        },
+        {
+          "Requests further info": [
+            [
+              "\\static",
+              "LLift",
+              "3",
+              "Corrective mode "
+            ]
+          ]
+        },
+        {
+          "Self-validation": [
+            [
+              "\\static",
+              "LLift",
+              "3",
+              "Rationalization "
+            ]
+          ]
+        },
+        {
+          "Thought": [
+            [
+              "\\static",
+              "LLMDFA",
+              "3"
+            ]
+          ]
+        }
+      ]
+    },
+    "Accessibility": {
+      "Black-box": [
+        [
+          "\\testing",
+          "RESTGPT",
+          "1"
+        ],
+        [
+          "\\testing",
+          "InputBlaster",
+          "1"
         ]
       ],
-      "Pseudocode": [
+      "White-box": [
         [
-          "\\staticD",
-          "EV",
-          "E",
-          "\\&",
-          "V",
+          "\\static",
+          "LLift",
+          "2"
+        ],
+        [
+          "\\static",
+          "LLift",
+          "3",
+          ",  ",
+          "\\testing",
+          "WhiteFox",
+          "1"
+        ],
+        [
+          "\\static",
+          "CFG-Chain",
+          "3"
+        ],
+        [
+          "\\static",
+          "LATTE",
+          "3"
+        ],
+        [
+          "\\static",
+          "LLMDFA",
+          "3"
+        ]
+      ]
+    },
+    "LATTE": {},
+    "3": {},
+    "Ag": {},
+    "LLMDFA": {}
+  },
+  "Abstractive/SW-ArtifactVerbalization": {
+    "Abstraction criteria": {
+      "Summary": [
+        [
+          "\\testing",
+          "PentestGPT",
+          "8"
+        ],
+        [
+          "\\vmf",
+          "LLM4Vuln",
+          "1",
+          ",  ",
+          "\\ntesting",
+          "HITS",
           "1"
         ]
       ],
       "Intent": [
         [
-          "\\testing",
-          "TestChain",
-          "2"
-        ]
-      ],
-      "Assertions": [
-        [
-          "\\testing",
-          "SELF-DEBUGGING",
-          "OP7(CoT)"
-        ]
-      ]
-    },
-    "Granularity": {
-      "Single step": [
-        [
-          "\\testing",
-          "SELF-DEBUGGING",
-          "OP7(CoT)"
-        ],
-        [
-          "\\staticD",
-          "EV",
-          "E",
-          "\\&",
-          "V",
-          "1"
-        ]
-      ],
-      "Multiple steps": [
-        [
-          "\\debug",
-          "SELF-DEBUGGING",
-          "FL(CoT)"
+          "\\vmf",
+          "SmartAudit",
+          "3(CoT)"
         ],
         [
           "\\testing",
-          "TestChain",
-          "2"
-        ]
-      ]
-    },
-    "Corrective mode": {
-      "Feedback based": [
-        {
-          "Verification results": [
-            [
-              "\\staticD",
-              "EV",
-              "E",
-              "\\&",
-              "V",
-              "1",
-              " "
-            ]
-          ]
-        }
-      ]
-    },
-    "Reactivity": {
-      "Request further information": [
-        [
-          "\\staticD",
-          "EV",
-          "E",
-          "\\&",
-          "V",
-          "1"
-        ]
-      ],
-      "Request external tool": [
-        [
-          "\\staticD",
-          "EV",
-          "E",
-          "\\&",
-          "V",
+          "DiffPrompt",
           "1"
         ],
-        [
-          "\\testing",
-          "TestChain",
-          "2"
-        ]
-      ]
-    }
-  },
-  "Executive/What-to-do-NextGeneration": {
-    "Generation criteria": {
-      "Most promising": [
-        [
-          "\\testing",
-          "PentestGPT",
-          "5"
-        ]
-      ],
-      "Coverage oriented": [
-        [
-          "\\testing",
-          "GPTDroid",
-          "1"
-        ]
-      ],
-      "Reachability oriented": [
-        [
-          "\\testingD",
-          "pwnd",
-          "Pwn'd",
-          "2"
-        ],
-        [
-          "\\debug",
-          "CrashTranslator",
-          "1"
-        ],
-        [
-          "\\debug",
-          "CrashTranslator",
-          "2"
-        ]
-      ]
-    },
-    "Domain": {
-      "SW-system integration": [
-        [
-          "\\testing",
-          "PentestGPT",
-          "5"
-        ],
-        [
-          "\\testingD",
-          "pwnd",
-          "Pwn'd",
-          "2"
-        ],
-        [
-          "\\debug",
-          "CrashTranslator",
-          "1"
-        ]
-      ],
-      "\\debug": [
-        [
-          "CrashTranslator",
-          "2"
-        ],
-        [
-          "\\testing",
-          "GPTDroid",
-          "1",
-          " "
-        ]
-      ]
-    },
-    "Nature of options": {
-      "Open-ended": [
-        [
-          "\\testingD",
-          "pwnd",
-          "Pwn'd",
-          "2"
-        ],
-        [
-          "\\debug",
-          "CrashTranslator",
-          "1"
-        ],
-        [
-          "\\testing",
-          "GPTDroid",
-          "1",
-          " "
-        ]
-      ],
-      "Close-ended": [
-        [
-          "\\testing",
-          "PentestGPT",
-          "5"
-        ],
-        [
-          "\\debug",
-          "CrashTranslator",
-          "2"
-        ]
-      ]
-    },
-    "Given context": {
-      "Enclosing plan": [
-        [
-          "\\testing",
-          "PentestGPT",
-          "5"
-        ]
-      ],
-      "Dynamic annotation": [
-        [
-          "\\testing",
-          "GPTDroid",
-          "1"
-        ]
-      ],
-      "GUI context": [
-        [
-          "\\debug",
-          "CrashTranslator",
-          "1"
-        ],
-        [
-          "\\debug",
-          "CrashTranslator",
-          "2"
-        ],
-        [
-          "\\testing",
-          "GPTDroid",
-          "1"
-        ]
-      ]
-    }
-  },
-  "Executive/PlanGeneration": {
-    "Generation criteria": {
-      "Intent corresponding": [
-        [
-          "\\testing",
-          "PentestGPT",
-          "1"
-        ]
-      ],
-      "Scenario corresponding": [
-        [
-          "\\testingD",
-          "pwnd",
-          "Pwn'd",
-          "1"
-        ]
-      ],
-      "Achieve goal": [
         [
           "\\progver",
-          "AlloyRepair",
-          "3"
+          "Clover",
+          "4"
         ],
         [
-          "\\testing",
-          "TARGET",
-          "1"
-        ],
-        [
-          "\\testing",
-          "TARGET",
-          "2"
+          "\\progver",
+          "Clover",
+          "7"
         ],
         [
           "\\vmf",
           "LLM4Vuln",
-          "3(exploit)"
+          "1",
+          ",   ",
+          "\\vmf",
+          "LLM4Vuln",
+          "3(PreCoT)"
         ],
         [
-          " ",
+          "\\vmf",
+          "LLMAPIDet",
+          "1"
+        ],
+        [
+          "\\vmf",
+          "LLMAPIDet",
+          "2",
+          ",  "
+        ],
+        [
+          "  ",
+          "\\debug",
+          "ChatGPT-4(Log)",
+          "1(CoT)"
+        ],
+        [
+          "\\progver",
+          "RustProof",
+          "1(CoT)",
+          ","
+        ],
+        [
           "\\testing",
-          "AXNav",
+          "ChatTESTER",
+          "1"
+        ],
+        [
+          "\\vmf",
+          "PromptEnhanced",
           "1",
-          "Constrained"
+          "  "
+        ]
+      ],
+      "Explanation": [
+        [
+          "\\testing",
+          "SELF-DEBUGGING",
+          "OP1"
+        ],
+        [
+          "\\testing",
+          "SELF-DEBUGGING",
+          "OP3"
+        ],
+        [
+          "\\nvmf",
+          "Skyeye",
+          "2"
+        ],
+        [
+          "\\nvmf",
+          "Sleuth",
+          "1"
+        ],
+        [
+          "\\progver",
+          "RustProof",
+          "1(CoT)"
+        ],
+        [
+          "\\progver",
+          "RustProof",
+          "2(CoT)"
+        ]
+      ],
+      "Differences": [
+        [
+          "\\testing",
+          "ClarifyGPT",
+          "3"
+        ]
+      ],
+      "Problem solving steps": [
+        [
+          "\\ntesting",
+          "HITS",
+          "3"
+        ]
+      ]
+    },
+    "Nature of input entity": {
+      "Intent": [
+        [
+          "\\testing",
+          "PentestGPT",
+          "8"
+        ]
+      ],
+      "Code": [
+        [
+          "\\testing",
+          "SELF-DEBUGGING",
+          "OP1"
+        ],
+        [
+          "\\testing",
+          "SELF-DEBUGGING",
+          "OP3"
+        ],
+        [
+          "\\vmf",
+          "SmartAudit",
+          "3(CoT)"
+        ],
+        [
+          "\\testing",
+          "DiffPrompt",
+          "1"
+        ],
+        [
+          "\\testing",
+          "ClarifyGPT",
+          "3"
+        ],
+        [
+          "\\vmf",
+          "LLM4Vuln",
+          "1"
+        ],
+        [
+          "    ",
+          "\\vmf",
+          "LLM4Vuln",
+          "3(PreCoT)"
+        ],
+        [
+          "\\ntesting",
+          "HITS",
+          "1"
+        ],
+        [
+          "\\ntesting",
+          "HITS",
+          "3"
+        ],
+        [
+          "\\nvmf",
+          "Sleuth",
+          "1"
+        ],
+        [
+          "\\debug",
+          "ChatGPT-4(Log)",
+          "1(CoT)"
+        ],
+        [
+          "\\testing",
+          "ChatTESTER",
+          "1"
+        ],
+        [
+          "\\vmf",
+          "PromptEnhanced",
+          "1",
+          "  "
         ],
         {
-          "Available tools": [
+          "Commit": [
             [
-              "\\testing",
-              "PentestGPT",
-              "6"
+              "\\nvmfU",
+              "VulAdvisor"
             ]
           ]
-        }
-      ],
-      "Fusing": [
-        [
-          "\\testing",
-          "SysKG-UTF",
-          "3"
-        ]
-      ],
-      "Refinement/Concretization": [
-        [
-          "\\testing",
-          "PentestGPT",
-          "7"
-        ],
-        [
-          "\\debug",
-          "AdbGPT",
-          "2"
-        ],
-        [
-          "\\testing",
-          "SysKG-UTF",
-          "2",
-          ","
-        ]
-      ],
-      "": [
-        [
-          "\\testing",
-          "SysKG-UTF",
-          "4"
-        ],
-        [
-          "\\testing",
-          "AXNav",
-          "2"
-        ],
-        [
-          "\\vmf",
-          "DLAP",
-          "2"
-        ]
-      ]
-    },
-    "Domain": {
-      "SW review": [
-        [
-          "\\vmf",
-          "DLAP",
-          "2"
-        ]
-      ],
-      "SW-system integration": [
-        [
-          "\\testing",
-          "PentestGPT",
-          "1"
-        ],
-        [
-          "\\testing",
-          "PentestGPT",
-          "6"
-        ],
-        [
-          "\\testing",
-          "PentestGPT",
-          "7"
-        ]
-      ],
-      "": [
-        [
-          "\\debug",
-          "AdbGPT",
-          "2"
-        ],
-        [
-          "\\testingD",
-          "pwnd",
-          "Pwn'd",
-          "1"
-        ],
-        [
-          "\\testing",
-          "SysKG-UTF",
-          "2",
-          ",  "
-        ],
-        "\\testing",
-        "SysKG-UTF",
-        "3",
-        ", ",
-        "\\testing",
-        "SysKG-UTF",
-        "4",
-        ", ",
-        "\\vmf",
-        "LLM4Vuln",
-        "3(exploit)",
-        ", ",
-        "\\testing",
-        "AXNav",
-        "1",
-        ", ",
-        "\\testing",
-        "AXNav",
-        "2",
-        ", ",
-        "\\testing",
-        "AXNav",
-        "4"
-      ],
-      "Repair": [
-        [
-          "\\progver",
-          "AlloyRepair",
-          "3"
-        ]
-      ],
-      "Physical": [
-        [
-          "\\testing",
-          "TARGET",
-          "1"
-        ],
-        [
-          "\\testing",
-          "TARGET",
-          "2"
-        ]
-      ]
-    },
-    "Nature of output": {
-      "Step-by-step plan": [
-        [
-          "\\progver",
-          "AlloyRepair",
-          "3"
-        ],
-        [
-          "\\testing",
-          "PentestGPT",
-          "6"
-        ],
-        [
-          "\\testing",
-          "TARGET",
-          "1"
-        ],
-        [
-          "\\testing",
-          "TARGET",
-          "2",
-          ","
-        ]
-      ],
-      "": [
-        [
-          "\\testingD",
-          "pwnd",
-          "Pwn'd",
-          "1"
-        ],
-        [
-          "\\testing",
-          "SysKG-UTF",
-          "2"
-        ],
-        [
-          "\\testing",
-          "SysKG-UTF",
-          "3",
-          ",  "
-        ],
-        "\\testing",
-        "SysKG-UTF",
-        "4",
-        ", ",
-        "\\vmf",
-        "LLM4Vuln",
-        "3(exploit)",
-        ", ",
-        "\\testing",
-        "AXNav",
-        "1",
-        ", ",
-        "\\testing",
-        "AXNav",
-        "4",
-        ", ",
-        "\\vmf",
-        "DLAP",
-        "2",
-        " "
-      ],
-      "Hierarchical plan": [
-        [
-          "\\testing",
-          "PentestGPT",
-          "1"
-        ]
-      ],
-      "Command/Action": [
-        [
-          "\\testing",
-          "PentestGPT",
-          "7"
-        ],
-        [
-          "\\debug",
-          "AdbGPT",
-          "2"
-        ],
-        [
-          "\\testing",
-          "AXNav",
-          "2"
-        ]
-      ]
-    },
-    "Corrective mode": {
-      "Feedback based": [
+        },
         {
-          "Outcomes": [
+          "Annotated": [
             [
-              "\\testing",
-              "PentestGPT",
-              "1"
+              "\\progver",
+              "Clover",
+              "4"
             ],
             [
-              "\\testing",
-              "AXNav",
-              "4"
+              "\\progver",
+              "RustProof",
+              "1(CoT)"
+            ],
+            [
+              "\\progver",
+              "RustProof",
+              "2(CoT)"
             ]
           ]
         }
       ],
-      "Rule based": [
+      "Call sequences": [
         [
-          "\\testing",
-          "TARGET",
+          "\\nvmf",
+          "Skyeye",
           "2"
         ]
-      ]
-    },
-    "Reactivity": {
-      "Tool invocation": [
+      ],
+      "Report": [
         [
-          "\\testing",
-          "PentestGPT",
-          "1"
-        ],
-        [
-          "\\testingD",
-          "pwnd",
-          "Pwn'd",
+          "\\vmf",
+          "LLM4Vuln",
           "1"
         ]
-      ]
-    },
-    "Rationalization": {
-      "Thought": [
+      ],
+      "Testing outputs": [
         [
           "\\testing",
           "PentestGPT",
-          "1"
-        ],
+          "8"
+        ]
+      ],
+      "Assertion": [
         [
-          "\\testing",
-          "PentestGPT",
+          "\\progver",
+          "Clover",
           "7"
         ],
+        {
+          "Precondition": [
+            [
+              "\\progver",
+              "RustProof",
+              "1(CoT)"
+            ],
+            [
+              "\\progver",
+              "RustProof",
+              "2(CoT)"
+            ]
+          ]
+        },
+        {
+          "Postcondition": [
+            [
+              "\\progver",
+              "RustProof",
+              "2(CoT)"
+            ]
+          ]
+        }
+      ],
+      "Change action": [
         [
-          "\\debug",
-          "AdbGPT",
-          "2"
-        ],
-        [
-          "\\testing",
-          "AXNav",
+          "\\vmf",
+          "LLMAPIDet",
           "1"
         ]
-      ],
-      "": [
+      ]
+    },
+    "Extra input": {
+      "Execution": [
         [
           "\\testing",
-          "AXNav",
+          "SELF-DEBUGGING",
+          "OP3"
+        ]
+      ],
+      "Attack type": [
+        [
+          "\\nvmf",
+          "Skyeye",
           "2"
         ]
       ],
-      "Assessment": [
+      "Data flow": [
         [
-          "\\testing",
-          "SysKG-UTF",
-          "4"
-        ]
-      ],
-      "Pseudo-code guided assessment": [
-        [
-          "\\testing",
-          "SysKG-UTF",
-          "3"
+          "\\nvmf",
+          "Sleuth",
+          "1"
         ]
       ]
     }

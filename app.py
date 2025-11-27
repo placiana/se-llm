@@ -3,6 +3,7 @@ import json
 from flask import render_template
 from flask import Flask
 import pandas as pd
+import re
 
 from parsing import bib_to_obj
 
@@ -246,6 +247,57 @@ def parse_html():
 
     with open('docs/data/tasks_from_html.json', 'w') as file:
         json.dump(data, file, indent=2)
+
+
+
+
+
+def parse_bibliography(text):
+    # separar entradas \bibitem{...} ... (hasta próxima \bibitem o fin)
+    entries = re.split(r'\\bibitem\{([^}]+)\}', text)[1:] 
+    # regex split devuelve [key1, content1, key2, content2, ...]
+    
+    parsed = {}
+    for i in range(0, len(entries), 2):
+        key = entries[i].strip()
+        content = entries[i+1].strip()
+
+        # autores: primera línea hasta el punto
+        m_auth = re.match(r'([^\.]+)\.', content)
+        authors = m_auth.group(1).strip() if m_auth else None
+
+        # título: entre \newblock y el siguiente punto
+        m_title = re.search(r'\\newblock\s+([^\.]+)\.', content)
+        title = m_title.group(1).strip() if m_title else None
+
+        # DOI
+        m_doi = re.search(r'doi[:\s]?([0-9./]+)', content, re.IGNORECASE)
+        doi = m_doi.group(1) if m_doi else None
+
+        # arXiv
+        m_arxiv = re.search(r'arXiv[:\s]?([0-9\.]+)', content, re.IGNORECASE)
+        arxiv = m_arxiv.group(1) if m_arxiv else None
+
+        parsed[key] = ({
+            "key": key,
+            "authors": authors,
+            "title": title,
+            "doi": doi,
+            "arxiv": arxiv,
+            "raw": content
+        })
+    return parsed
+
+def parse_bib_file(filepath):
+    # ---- ejemplo ----
+    with open(filepath) as f:
+        text = f.read()
+    parsed_entries = parse_bibliography(text)
+
+    with open('docs/data/bib_parsed.json', 'w') as file:
+        json.dump(parsed_entries, file, indent=2)
+    return parsed_entries
+
 
 
 if __name__ == '__main__':

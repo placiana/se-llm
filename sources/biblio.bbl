@@ -1,0 +1,628 @@
+\begin{thebibliography}{100}
+
+\bibitem{FuzzingParsers}
+Joshua Ackerman and George Cybenko.
+\newblock Large language models for fuzzing parsers ({R}egistered report).
+\newblock In Marcel B{\"o}hme, Yannic Noller, Baishakhi Ray, and L{\'a}szl{\'o} Szekeres, editors, {\em FUZZING 2023: 2nd International Fuzzing Workshop}, pages 31--38, New York, NY, USA, 2023. {ACM},  \href{https://doi.org/10.1145/3605157.3605173}{{\ttfamily doi:10.1145/3605157.3605173}}.
+
+\bibitem{FLAG}
+Baleegh Ahmad, Benjamin Tan, Ramesh Karri, and Hammond Pearce.
+\newblock {FLAG}: Finding line anomalies (in code) with generative {AI}, 2023,  \href{http://arxiv.org/abs/2306.12643}{{\ttfamily arXiv:2306.12643}}.
+
+\bibitem{AlloyRepair}
+Mohannad Alhanahnah, Md~Rashedul Hasan, Lisong Xu, and Hamid Bagheri.
+\newblock An empirical evaluation of pre-trained large language models for repairing declarative formal specifications.
+\newblock {\em Empir. Softw. Eng.}, 30(5):149, 2025,  \href{https://doi.org/10.1007/S10664-025-10687-1}{{\ttfamily doi:10.1007/S10664-025-10687-1}}.
+
+\bibitem{TestGen-LLM}
+Nadia Alshahwan, Jubin Chheda, Anastasia Finogenova, Beliz Gokkaya, Mark Harman, Inna Harper, Alexandru Marginean, Shubho Sengupta, and Eddy Wang.
+\newblock Automated unit test improvement using large language models at {Meta}.
+\newblock In Marcelo d'Amorim, editor, {\em Companion Proceedings of the 32nd {ACM} International Conference on the Foundations of Software Engineering, {FSE} 2024, Porto de Galinhas, Brazil, July 15-19, 2024}, pages 185--196. {ACM}, 2024,  \href{https://doi.org/10.1145/3663529.3663839}{{\ttfamily doi:10.1145/3663529.3663839}}.
+
+\bibitem{FAIL}
+Dharun Anandayuvaraj, Matthew Campbell, Arav Tewari, and James~C. Davis.
+\newblock {FAIL:} analyzing software failures from the news using {LLMs}.
+\newblock In Vladimir Filkov, Baishakhi Ray, and Minghui Zhou, editors, {\em Proceedings of the 39th {IEEE/ACM} International Conference on Automated Software Engineering, {ASE} 2024, Sacramento, CA, USA, October 27 - November 1, 2024}, pages 506--518. {ACM}, 2024,  \href{https://doi.org/10.1145/3691620.3695022}{{\ttfamily doi:10.1145/3691620.3695022}}.
+
+\bibitem{FSML}
+Patrick Barei{\ss}, Beatriz Souza, Marcelo {d'Amorim}, and Michael Pradel.
+\newblock Code generation tools (almost) for free? {A} study of few-shot, pre-trained language models on code, 2022,  \href{http://arxiv.org/abs/2206.01335}{{\ttfamily arXiv:2206.01335}}.
+
+\bibitem{ChatGPTTests}
+Shreya Bhatia, Tarushi Gandhi, Dhruv Kumar, and Pankaj Jalote.
+\newblock Unit test generation using generative {AI}: A comparative performance analysis of autogeneration tools.
+\newblock In {\em LLM4Code'24, April 20, 2024, Lisbon, Portugal}, pages 38:1--38:8. {ACM}, 2024,  \href{https://doi.org/10.1145/3643795.3648396}{{\ttfamily doi:10.1145/3643795.3648396}}.
+
+\bibitem{EditTime}
+Aaron Chan, Anant Kharkar, Roshanak~Zilouchian Moghaddam, Yevhen Mohylevskyy, Alec Helyar, Eslam Kamal, Mohamed Elkamhawy, and Neel Sundaresan.
+\newblock Transformer-based vulnerability detection in code at {EditTime}: Zero-shot, few-shot, or fine-tuning?, 2023,  \href{http://arxiv.org/abs/2306.01754}{{\ttfamily arXiv:2306.01754}}.
+
+\bibitem{CodeT}
+Bei Chen, Fengji Zhang, Anh Nguyen, Daoguang Zan, Zeqi Lin, Jian{-}Guang Lou, and Weizhu Chen.
+\newblock {CodeT}: Code generation with generated tests.
+\newblock In {\em The Eleventh International Conference on Learning Representations, {ICLR} 2023, Kigali, Rwanda, May 1-5, 2023}. OpenReview.net, 2023.
+
+\bibitem{ChatGPTSCV}
+Chong Chen, Jianzhong Su, Jiachi Chen, Tingting Bi, Jianxing Yu, Yanlin Wang, Xingwei Lin, Ting Chen, and Zibin Zheng.
+\newblock When {ChatGPT} meets smart contract vulnerability detection: How far are we?
+\newblock {\em {ACM} Trans. Softw. Eng. Methodol.}, 34(4):100:1--100:30, 2025,  \href{https://doi.org/10.1145/3702973}{{\ttfamily doi:10.1145/3702973}}.
+
+\bibitem{WitheredLeaf}
+Hongbo Chen, Yifan Zhang, Xing Han, Huanyao Rong, Yuheng Zhang, Tianhao Mao, Hang Zhang, XiaoFeng Wang, Luyi Xing, and Xun Chen.
+\newblock {WitheredLeaf}: Finding entity-inconsistency bugs with {LLM}s, 2024,  \href{http://arxiv.org/abs/2405.01668}{{\ttfamily arXiv:2405.01668}}.
+
+\bibitem{SELF-DEBUGGING}
+Xinyun Chen, Maxwell Lin, Nathanael Sch{\"{a}}rli, and Denny Zhou.
+\newblock Teaching large language models to self-debug.
+\newblock In {\em The Twelfth International Conference on Learning Representations, {ICLR} 2024, Vienna, Austria, May 7-11, 2024}. OpenReview.net, 2024.
+
+\bibitem{RCACopilot}
+Yinfang Chen, Huaibing Xie, Minghua Ma, Yu~Kang, Xin Gao, Liu Shi, Yunjie Cao, Xuedong Gao, Hao Fan, Ming Wen, Jun Zeng, Supriyo Ghosh, Xuchao Zhang, Chaoyun Zhang, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang, and Tianyin Xu.
+\newblock Automatic root cause analysis via large language models for cloud incidents.
+\newblock In {\em Proceedings of the Nineteenth European Conference on Computer Systems, EuroSys 2024, Athens, Greece, April 22-25, 2024}, pages 674--688. {ACM}, 2024,  \href{https://doi.org/10.1145/3627703.3629553}{{\ttfamily doi:10.1145/3627703.3629553}}.
+
+\bibitem{ChatUniTest}
+Yinghao Chen, Zehao Hu, Chen Zhi, Junxiao Han, Shuiguang Deng, and Jianwei Yin.
+\newblock {ChatUniTest}: {A} framework for {LLM}-based test generation.
+\newblock In Marcelo d'Amorim, editor, {\em Companion Proceedings of the 32nd {ACM} International Conference on the Foundations of Software Engineering, {FSE} 2024, Porto de Galinhas, Brazil, July 15-19, 2024}, pages 572--576. {ACM}, 2024,  \href{https://doi.org/10.1145/3663529.3663801}{{\ttfamily doi:10.1145/3663529.3663801}}.
+
+\bibitem{SearchGEM5}
+Aidan Dakhama, Karine Even{-}Mendoza, William~B. Langdon, H{\'{e}}ctor~D. Men{\'{e}}ndez, and Justyna Petke.
+\newblock {SearchGEM5}: Towards reliable {Gem5} with search based software testing and large language models.
+\newblock In Paolo Arcaini, Tao Yue, and Erik~M. Fredericks, editors, {\em Search-Based Software Engineering - 15th International Symposium, {SSBSE} 2023, San Francisco, CA, USA, December 8, 2023, Proceedings}, volume 14415 of {\em Lecture Notes in Computer Science}, pages 160--166. Springer, 2023,  \href{https://doi.org/10.1007/978-3-031-48796-5\_14}{{\ttfamily doi:10.1007/978-3-031-48796-5\_14}}.
+
+\bibitem{MuTAP}
+Arghavan~Moradi Dakhel, Amin Nikanjam, Vahid Majdinasab, Foutse Khomh, and Michel~C. Desmarais.
+\newblock Effective test generation using pre-trained large language models and mutation testing.
+\newblock {\em Inf. Softw. Technol.}, 171:107468, 2024,  \href{https://doi.org/10.1016/J.INFSOF.2024.107468}{{\ttfamily doi:10.1016/J.INFSOF.2024.107468}}.
+
+\bibitem{SmartAudit}
+Isaac David, Liyi Zhou, Kaihua Qin, Dawn Song, Lorenzo Cavallaro, and Arthur Gervais.
+\newblock Do you still need a manual smart contract audit?, 2023,  \href{http://arxiv.org/abs/2306.12338}{{\ttfamily arXiv:2306.12338}}.
+
+\bibitem{PentestGPT}
+Gelei Deng, Yi~Liu, V{\'{\i}}ctor~Mayoral Vilches, Peng Liu, Yuekang Li, Yuan Xu, Martin Pinzger, Stefan Rass, Tianwei Zhang, and Yang Liu.
+\newblock {PentestGPT}: Evaluating and harnessing large language models for automated penetration testing.
+\newblock In Davide Balzarotti and Wenyuan Xu, editors, {\em 33rd {USENIX} Security Symposium, {USENIX} Security 2024, Philadelphia, PA, USA, August 14-16, 2024}. {USENIX} Association, 2024.
+
+\bibitem{TARGET}
+Yao Deng, Zhi Tu, Jiaohong Yao, Mengshi Zhang, Tianyi Zhang, and James~Xi Zheng.
+\newblock {TARGET:} traffic rule-based test generation for autonomous driving via validated {LLM}-guided knowledge extraction.
+\newblock {\em {IEEE} Trans. Software Eng.}, 51(7):1950--1968, 2025,  \href{https://doi.org/10.1109/TSE.2025.3569086}{{\ttfamily doi:10.1109/TSE.2025.3569086}}.
+
+\bibitem{TitanFuzz}
+Yinlin Deng, Chunqiu~Steven Xia, Haoran Peng, Chenyuan Yang, and Lingming Zhang.
+\newblock Large language models are zero-shot fuzzers: Fuzzing deep-learning libraries via large language models.
+\newblock In Ren{\'{e}} Just and Gordon Fraser, editors, {\em 32nd {ACM} {SIGSOFT} International Symposium on Software Testing and Analysis, {ISSTA} 2023, Seattle, WA, USA, July 17-21, 2023}, pages 423--435. {ACM}, 2023,  \href{https://doi.org/10.1145/3597926.3598067}{{\ttfamily doi:10.1145/3597926.3598067}}.
+
+\bibitem{FuzzGPT}
+Yinlin Deng, Chunqiu~Steven Xia, Chenyuan Yang, Shizhuo~Dylan Zhang, Shujing Yang, and Lingming Zhang.
+\newblock Large language models are edge-case generators: Crafting unusual programs for fuzzing deep learning libraries.
+\newblock In {\em 46th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2024, Lisbon, Portugal, April 14-20, 2024}, pages 70:1--70:13. {ACM}, 2024,  \href{https://doi.org/10.1145/3597503.3623343}{{\ttfamily doi:10.1145/3597503.3623343}}.
+
+\bibitem{ScenicNL}
+Karim Elmaaroufi, Devan Shanker, Ana Cismaru, Marcell Vazquez-Chanlatte, Alberto Sangiovanni-Vincentelli, Matei Zaharia, and Sanjit~A. Seshia.
+\newblock {ScenicNL}: Generating probabilistic scenario programs from natural language.
+\newblock In {\em First Conference on Language Modeling, {COLM} 2024, Philadelphia, Pennsylvania, United States, Oct 7, 2024}. OpenReview.net, 2024.
+
+\bibitem{nl2postcondition}
+Madeline Endres, Sarah Fakhoury, Saikat Chakraborty, and Shuvendu~K. Lahiri.
+\newblock Can large language models transform natural language intent into formal method postconditions?
+\newblock {\em Proc. {ACM} Softw. Eng.}, 1({FSE}):1889--1912, 2024,  \href{https://doi.org/10.1145/3660791}{{\ttfamily doi:10.1145/3660791}}.
+
+\bibitem{AdbGPT}
+Sidong Feng and Chunyang Chen.
+\newblock Prompting is all you need: Automated android bug replay with large language models.
+\newblock In {\em 46th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2024, Lisbon, Portugal, April 14-20, 2024}, pages 67:1--67:13. {ACM}, 2024,  \href{https://doi.org/10.1145/3597503.3608137}{{\ttfamily doi:10.1145/3597503.3608137}}.
+
+\bibitem{ChatGPT4vul}
+Michael Fu, Chakkrit~Kla Tantithamthavorn, Van Nguyen, and Trung Le.
+\newblock {ChatGPT} for vulnerability detection, classification, and repair: How far are we?
+\newblock In {\em 30th Asia-Pacific Software Engineering Conference, {APSEC} 2023, Seoul, Republic of Korea, December 4-7, 2023}, pages 632--636. {IEEE}, 2023,  \href{https://doi.org/10.1109/APSEC60848.2023.00085}{{\ttfamily doi:10.1109/APSEC60848.2023.00085}}.
+
+\bibitem{VulBench}
+Zeyu Gao, Hao Wang, Yuchen Zhou, Wenyu Zhu, and Chao Zhang.
+\newblock How far have we gone in vulnerability detection using large language models, 2023,  \href{http://arxiv.org/abs/2311.12420}{{\ttfamily arXiv:2311.12420}}.
+
+\bibitem{x-lifecycle}
+Drishti Goel, Fiza Husain, Aditya Singh, Supriyo Ghosh, Anjaly Parayil, Chetan Bansal, Xuchao Zhang, and Saravan Rajmohan.
+\newblock X-lifecycle learning for cloud incident management using {LLM}s.
+\newblock In Marcelo d'Amorim, editor, {\em Companion Proceedings of the 32nd {ACM} International Conference on the Foundations of Software Engineering, {FSE} 2024, Porto de Galinhas, Brazil, July 15-19, 2024}, pages 417--428. {ACM}, 2024,  \href{https://doi.org/10.1145/3663529.3663861}{{\ttfamily doi:10.1145/3663529.3663861}}.
+
+\bibitem{OSS-Fuzz}
+Google.
+\newblock {AI}-powered fuzzing: Breaking the bug hunting barrier, 2023.
+\newblock At security.googleblog.com [accessed April 2024].
+
+\bibitem{SoVAR}
+An~Guo, Yuan Zhou, Haoxiang Tian, Chunrong Fang, Yunjian Sun, Weisong Sun, Xinyu Gao, Anh~Tuan Luu, Yang Liu, and Zhenyu Chen.
+\newblock {SoVAR}: Build generalizable scenarios from accident reports for autonomous driving testing.
+\newblock In {\em Proceedings of the 39th {IEEE/ACM} International Conference on Automated Software Engineering, {ASE} 2024, Sacramento, CA, USA, October 27 - November 1, 2024}, pages 268--280. {ACM}, 2024,  \href{https://doi.org/10.1145/3691620.3695037}{{\ttfamily doi:10.1145/3691620.3695037}}.
+
+\bibitem{LasRCA}
+Yongqi Han, Qingfeng Du, Ying Huang, Jiaqi Wu, Fulong Tian, and Cheng He.
+\newblock The potential of one-shot failure root cause analysis: Collaboration of the large language model and small classifier.
+\newblock In Vladimir Filkov, Baishakhi Ray, and Minghui Zhou, editors, {\em Proceedings of the 39th {IEEE/ACM} International Conference on Automated Software Engineering, {ASE} 2024, Sacramento, CA, USA, October 27 - November 1, 2024}, pages 931--943. {ACM}, 2024,  \href{https://doi.org/10.1145/3691620.3695475}{{\ttfamily doi:10.1145/3691620.3695475}}.
+
+\bibitem{EV}
+Yu~Hao, Weiteng Chen, Ziqiao Zhou, and Weidong Cui.
+\newblock {E{\&}V}: Prompting large language models to perform static analysis by pseudo-code execution and verification, 2023,  \href{http://arxiv.org/abs/2312.08477}{{\ttfamily arXiv:2312.08477}}.
+
+\bibitem{pwnd}
+Andreas Happe and J{\"{u}}rgen Cito.
+\newblock Getting pwn'd by {AI}: Penetration testing with large language models.
+\newblock In Satish Chandra, Kelly Blincoe, and Paolo Tonella, editors, {\em 31st {ACM} Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering, {ESEC/FSE} 2023, San Francisco, CA, USA, December 3-9, 2023}, pages 2082--2086. {ACM}, 2023,  \href{https://doi.org/10.1145/3611643.3613083}{{\ttfamily doi:10.1145/3611643.3613083}}.
+
+\bibitem{TOGLL}
+Soneya~Binta Hossain and Matthew~B. Dwyer.
+\newblock {TOGLL:} correct and strong test oracle generation with {LLMS}.
+\newblock In {\em 47th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2025, Ottawa, ON, Canada, April 26 - May 6, 2025}, pages 1475--1487. {IEEE}, 2025,  \href{https://doi.org/10.1109/ICSE55347.2025.00098}{{\ttfamily doi:10.1109/ICSE55347.2025.00098}}.
+
+\bibitem{ChatFuzz}
+Jie Hu, Qian Zhang, and Heng Yin.
+\newblock Augmenting greybox fuzzing with generative {AI}, 2023,  \href{http://arxiv.org/abs/2306.06782}{{\ttfamily arXiv:2306.06782}}.
+
+\bibitem{GPTLens}
+Sihao Hu, Tiansheng Huang, Fatih Ilhan, Selim~Furkan Tekin, and Ling Liu.
+\newblock Large language model-powered smart contract vulnerability detection: New perspectives.
+\newblock In {\em 5th {IEEE} International Conference on Trust, Privacy and Security in Intelligent Systems and Applications, {TPS-ISA} 2023, Atlanta, GA, USA, November 1-4, 2023}, pages 297--306. {IEEE}, 2023,  \href{https://doi.org/10.1109/TPS-ISA58951.2023.00044}{{\ttfamily doi:10.1109/TPS-ISA58951.2023.00044}}.
+
+\bibitem{CodeCoT}
+Dong Huang, Qingwen Bu, Yuhao Qing, and Heming Cui.
+\newblock {CodeCoT}: Tackling code syntax errors in {CoT} reasoning for code generation, 2024,  \href{http://arxiv.org/abs/2308.08784}{{\ttfamily arXiv:2308.08784}}.
+
+\bibitem{AgentCoder}
+Dong Huang, Qingwen Bu, Jie~M. Zhang, Michael Luck, and Heming Cui.
+\newblock {AgentCoder}: Multi-agent-based code generation with iterative testing and optimisation, 2024,  \href{http://arxiv.org/abs/2312.13010}{{\ttfamily arXiv:2312.13010}}.
+
+\bibitem{CFG-Chain}
+Qing Huang, Zhou Zou, Zhenchang Xing, Zhenkang Zuo, Xiwei Xu, and Qinghua Lu.
+\newblock {AI} chain on large language model for unsupervised control flow graph generation for statically-typed partial code, 2023,  \href{http://arxiv.org/abs/2306.00757}{{\ttfamily arXiv:2306.00757}}.
+
+\bibitem{SpiderScan}
+Yiheng Huang, Ruisi Wang, Wen Zheng, Zhuotong Zhou, Susheng Wu, Shulin Ke, Bihuan Chen, Shan Gao, and Xin Peng.
+\newblock {SpiderScan}: Practical detection of malicious {NPM} packages based on graph-based behavior modeling and matching.
+\newblock In Vladimir Filkov, Baishakhi Ray, and Minghui Zhou, editors, {\em Proceedings of the 39th {IEEE/ACM} International Conference on Automated Software Engineering, {ASE} 2024, Sacramento, CA, USA, October 27 - November 1, 2024}, pages 1146--1158. {ACM}, 2024,  \href{https://doi.org/10.1145/3691620.3695492}{{\ttfamily doi:10.1145/3691620.3695492}}.
+
+\bibitem{CrashTranslator}
+Yuchao Huang, Junjie Wang, Zhe Liu, Yawen Wang, Song Wang, Chunyang Chen, Yuanzhe Hu, and Qing Wang.
+\newblock {CrashTranslator}: Automatically reproducing mobile application crashes directly from stack trace.
+\newblock In {\em 46th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2024, Lisbon, Portugal, April 14-20, 2024}, pages 18:1--18:13. {ACM}, 2024,  \href{https://doi.org/10.1145/3597503.3623298}{{\ttfamily doi:10.1145/3597503.3623298}}.
+
+\bibitem{BugFarm}
+Ali~Reza Ibrahimzada, Yang Chen, Ryan Rong, and Reyhaneh Jabbarvand.
+\newblock Automated bug generation in the era of large language models, 2023,  \href{http://arxiv.org/abs/2310.02407}{{\ttfamily arXiv:2310.02407}}.
+
+\bibitem{LLMeDiff}
+Erblin Isaku, Christoph Laaber, Hassan Sartaj, Shaukat Ali, Thomas Schwitalla, and Jan~F. Nyg{\aa}rd.
+\newblock {LLM}s in the heart of differential testing: {A} case study on a medical rule engine.
+\newblock In {\em {IEEE} Conference on Software Testing, Verification and Validation, {ICST} 2025, Napoli, Italy, March 31 - April 4, 2025}, pages 429--440. {IEEE}, 2025,  \href{https://doi.org/10.1109/ICST62969.2025.10989025}{{\ttfamily doi:10.1109/ICST62969.2025.10989025}}.
+
+\bibitem{ChatInv}
+Christian Jan{\ss}en, Cedric Richter, and Heike Wehrheim.
+\newblock Can {ChatGPT} support software verification?
+\newblock In Dirk Beyer and Ana Cavalcanti, editors, {\em Fundamental Approaches to Software Engineering - 27th International Conference, {FASE} 2024, Held as Part of the European Joint Conferences on Theory and Practice of Software, {ETAPS} 2024, Luxembourg City, Luxembourg, April 6-11, 2024, Proceedings}, volume 14573 of {\em Lecture Notes in Computer Science}, pages 266--279. Springer, 2024,  \href{https://doi.org/10.1007/978-3-031-57259-3\_13}{{\ttfamily doi:10.1007/978-3-031-57259-3\_13}}.
+
+\bibitem{NLBSE24}
+Rasmus Ingemann~Tuffveson Jensen, Vali Tawosi, and Salwa Alamir.
+\newblock Software vulnerability and functionality assessment using large language models.
+\newblock In Maliheh Izadi, Andrea~Di Sorbo, and Sebastiano Panichella, editors, {\em Proceedings of the Third {ACM/IEEE} International Workshop on NL-based Software Engineering, {NLBSE} 2024, Lisbon, Portugal, 20 April 2024}, pages 25--28. {ACM}, 2024,  \href{https://doi.org/10.1145/3643787.3648036}{{\ttfamily doi:10.1145/3643787.3648036}}.
+
+\bibitem{DirInput}
+Zongze Jiang, Ming Wen, Jialun Cao, Xuanhua Shi, and Hai Jin.
+\newblock Towards understanding the effectiveness of large language models on directed test input generation.
+\newblock In {\em Proceedings of the 39th {IEEE/ACM} International Conference on Automated Software Engineering, {ASE} 2024, Sacramento, CA, USA, October 27 - November 1, 2024}, pages 1408--1420. {ACM}, 2024,  \href{https://doi.org/10.1145/3691620.3695513}{{\ttfamily doi:10.1145/3691620.3695513}}.
+
+\bibitem{Eywa}
+Siva Kesava~Reddy Kakarla and Ryan Beckett.
+\newblock Oracle-based protocol testing with {Eywa}, 2023,  \href{http://arxiv.org/abs/2312.06875}{{\ttfamily arXiv:2312.06875}}.
+
+\bibitem{Loopy}
+Adharsh Kamath, Nausheen Mohammed, Aditya Senthilnathan, Saikat Chakraborty, Pantazis Deligiannis, Shuvendu~K. Lahiri, Akash Lal, Aseem Rastogi, Subhajit Roy, and Rahul Sharma.
+\newblock Leveraging {LLMs} for program verification.
+\newblock In Nina Narodytska and Philipp R{\"{u}}mmer, editors, {\em Formal Methods in Computer-Aided Design, {FMCAD} 2024, Prague, Czech Republic, October 15-18, 2024}, pages 107--118. {IEEE}, 2024,  \href{https://doi.org/10.34727/2024/ISBN.978-3-85448-065-5\_16}{{\ttfamily doi:10.34727/2024/ISBN.978-3-85448-065-5\_16}}.
+
+\bibitem{AutoFL}
+Sungmin Kang, Gabin An, and Shin Yoo.
+\newblock A quantitative and qualitative evaluation of {LLM}-based explainable fault localization.
+\newblock {\em Proc. {ACM} Softw. Eng.}, 1({FSE}):1424--1446, 2024,  \href{https://doi.org/10.1145/3660771}{{\ttfamily doi:10.1145/3660771}}.
+
+\bibitem{AutoSD}
+Sungmin Kang, Bei Chen, Shin Yoo, and Jian{-}Guang Lou.
+\newblock Explainable automated debugging via large language model-driven scientific debugging.
+\newblock {\em Empir. Softw. Eng.}, 30(2):45, 2025,  \href{https://doi.org/10.1007/S10664-024-10594-X}{{\ttfamily doi:10.1007/S10664-024-10594-X}}.
+
+\bibitem{LIBRO}
+Sungmin Kang, Juyeon Yoon, and Shin Yoo.
+\newblock Large language models are few-shot testers: Exploring {LLM}-based general bug reproduction.
+\newblock In {\em 45th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2023, Melbourne, Australia, May 14-20, 2023}, pages 2312--2323. {IEEE}, 2023,  \href{https://doi.org/10.1109/ICSE48619.2023.00194}{{\ttfamily doi:10.1109/ICSE48619.2023.00194}}.
+
+\bibitem{MuBert}
+Ahmed Khanfir, Renzo Degiovanni, Mike Papadakis, and Yves {Le Traon}.
+\newblock Efficient mutation testing via pre-trained language models, 2023,  \href{http://arxiv.org/abs/2301.03543}{{\ttfamily arXiv:2301.03543}}.
+
+\bibitem{VulDetect}
+Avishree Khare, Saikat Dutta, Ziyang Li, Alaia Solko{-}Breslin, Rajeev Alur, and Mayur Naik.
+\newblock Understanding the effectiveness of large language models in detecting security vulnerabilities.
+\newblock In {\em {IEEE} Conference on Software Testing, Verification and Validation, {ICST} 2025, Napoli, Italy, March 31 - April 4, 2025}, pages 103--114. {IEEE}, 2025,  \href{https://doi.org/10.1109/ICST62969.2025.10988968}{{\ttfamily doi:10.1109/ICST62969.2025.10988968}}.
+
+\bibitem{RESTGPT}
+Myeongsoo Kim, Tyler Stennett, Dhruv Shah, Saurabh Sinha, and Alessandro Orso.
+\newblock Leveraging large language models to improve {REST} {API} testing.
+\newblock In {\em Proceedings of the 2024 {ACM/IEEE} 44th International Conference on Software Engineering: New Ideas and Emerging Results, NIER@ICSE 2024, Lisbon, Portugal, April 14-20, 2024}, pages 37--41. {ACM}, 2024,  \href{https://doi.org/10.1145/3639476.3639769}{{\ttfamily doi:10.1145/3639476.3639769}}.
+
+\bibitem{CodaMOSA}
+Caroline Lemieux, Jeevana~Priya Inala, Shuvendu~K. Lahiri, and Siddhartha Sen.
+\newblock {CodaMOSA}: Escaping coverage plateaus in test generation with pre-trained large language models.
+\newblock In {\em 45th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2023, Melbourne, Australia, May 14-20, 2023}, pages 919--931. {IEEE}, 2023,  \href{https://doi.org/10.1109/ICSE48619.2023.00085}{{\ttfamily doi:10.1109/ICSE48619.2023.00085}}.
+
+\bibitem{LLift}
+Haonan Li, Yu~Hao, Yizhuo Zhai, and Zhiyun Qian.
+\newblock Enhancing static analysis for practical bug detection: An {LLM}-integrated approach.
+\newblock {\em Proc. {ACM} Program. Lang.}, 8({OOPSLA1}):474--499, 2024,  \href{https://doi.org/10.1145/3649828}{{\ttfamily doi:10.1145/3649828}}.
+
+\bibitem{TestChain}
+Kefan Li and Yuan Yuan.
+\newblock Large language models as test case generators: Performance evaluation and enhancement, 2024,  \href{http://arxiv.org/abs/2404.13340}{{\ttfamily arXiv:2404.13340}}.
+
+\bibitem{DiffPrompt}
+Tsz-On Li, Wenxi Zong, Yibo Wang, Haoye Tian, Ying Wang, Shing-Chi Cheung, and Jeff Kramer.
+\newblock Nuances are the key: Unlocking {ChatGPT} to find failure-inducing tests with differential prompting.
+\newblock In {\em 38th {IEEE/ACM} International Conference on Automated Software Engineering, {ASE} 2023, Kirchberg, Luxembourg, September 11-15, 2023}, pages 1:1--1:13. {ACM}, 2023,  \href{https://doi.org/10.1145/3551349.3560420}{{\ttfamily doi:10.1145/3551349.3560420}}.
+
+\bibitem{AID}
+Kaibo Liu, Zhenpeng Chen, Yiyang Liu, Jie~M. Zhang, Mark Harman, Yudong Han, Yun Ma, Yihong Dong, Ge~Li, and Gang Huang.
+\newblock {LLM}-powered test case generation for detecting bugs in plausible programs.
+\newblock In Wanxiang Che, Joyce Nabende, Ekaterina Shutova, and Mohammad~Taher Pilehvar, editors, {\em Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), {ACL} 2025, Vienna, Austria, July 27 - August 1, 2025}, pages 430--440. Association for Computational Linguistics, 2025.
+
+\bibitem{LATTE}
+Puzhuo Liu, Chengnian Sun, Yaowen Zheng, Xuan Feng, Chuan Qin, Yuncheng Wang, Zhenyang Xu, Zhi Li, Peng Di, Yu~Jiang, and Limin Sun.
+\newblock {LLM}-powered static binary taint analysis.
+\newblock {\em {ACM} Trans. Softw. Eng. Methodol.}, 34(3):83:1--83:36, 2025,  \href{https://doi.org/10.1145/3711816}{{\ttfamily doi:10.1145/3711816}}.
+
+\bibitem{PropertyGPT}
+Ye~Liu, Yue Xue, Daoyuan Wu, Yuqiang Sun, Yi~Li, Miaolei Shi, and Yang Liu.
+\newblock {PropertyGPT}: {LLM}-driven formal verification of smart contracts through retrieval-augmented property generation.
+\newblock In {\em 32nd Annual Network and Distributed System Security Symposium, {NDSS} 2025, San Diego, California, USA, February 24-28, 2025}. The Internet Society, 2025.
+
+\bibitem{ToxicDetector}
+Yi~Liu, Junzhe Yu, Huijia Sun, Ling Shi, Gelei Deng, Yuqi Chen, and Yang Liu.
+\newblock Efficient detection of toxic prompts in large language models.
+\newblock In Vladimir Filkov, Baishakhi Ray, and Minghui Zhou, editors, {\em Proceedings of the 39th {IEEE/ACM} International Conference on Automated Software Engineering, {ASE} 2024, Sacramento, CA, USA, October 27 - November 1, 2024}, pages 455--467. {ACM}, 2024,  \href{https://doi.org/10.1145/3691620.3695018}{{\ttfamily doi:10.1145/3691620.3695018}}.
+
+\bibitem{QTypist}
+Zhe Liu, Chunyang Chen, Junjie Wang, Xing Che, Yuekai Huang, Jun Hu, and Qing Wang.
+\newblock Fill in the blank: Context-aware automated text input generation for mobile {GUI} testing.
+\newblock In {\em 45th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2023, Melbourne, Australia, May 14-20, 2023}, pages 1355--1367. {IEEE}, 2023,  \href{https://doi.org/10.1109/ICSE48619.2023.00119}{{\ttfamily doi:10.1109/ICSE48619.2023.00119}}.
+
+\bibitem{GPTDroid}
+Zhe Liu, Chunyang Chen, Junjie Wang, Mengzhuo Chen, Boyu Wu, Xing Che, Dandan Wang, and Qing Wang.
+\newblock Make {LLM} a testing expert: Bringing human-like interaction to mobile {GUI} testing via functionality-aware decisions.
+\newblock In {\em 46th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2024, Lisbon, Portugal, April 14-20, 2024}, pages 100:1--100:13. {ACM}, 2024,  \href{https://doi.org/10.1145/3597503.3639180}{{\ttfamily doi:10.1145/3597503.3639180}}.
+
+\bibitem{InputBlaster}
+Zhe Liu, Chunyang Chen, Junjie Wang, Mengzhuo Chen, Boyu Wu, Zhilin Tian, Yuekai Huang, Jun Hu, and Qing Wang.
+\newblock Testing the limits: Unusual text inputs generation for mobile app crash detection with large language model.
+\newblock In {\em 46th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2024, Lisbon, Portugal, April 14-20, 2024}, pages 137:1--137:12. {ACM}, 2024,  \href{https://doi.org/10.1145/3597503.3639118}{{\ttfamily doi:10.1145/3597503.3639118}}.
+
+\bibitem{GRACE}
+Guilong Lu, Xiaolin Ju, Xiang Chen, Wenlong Pei, and Zhilong Cai.
+\newblock {GRACE}: Empowering {LLM}-based software vulnerability detection with graph structure and in-context learning.
+\newblock {\em J. Syst. Softw.}, 212:112031, 2024,  \href{https://doi.org/10.1016/J.JSS.2024.112031}{{\ttfamily doi:10.1016/J.JSS.2024.112031}}.
+
+\bibitem{SimulinkSlicer}
+Dipeeka Luitel, Shiva Nejati, and Mehrdad Sabetzadeh.
+\newblock Requirements-driven slicing of {Simulink} models using {LLMs}.
+\newblock In {\em 32nd {IEEE} International Requirements Engineering Conference, {RE} 2024 - Workshops, Reykjavik, Iceland, June 24-25, 2024}, pages 72--82. {IEEE}, 2024,  \href{https://doi.org/10.1109/REW61692.2024.00014}{{\ttfamily doi:10.1109/REW61692.2024.00014}}.
+
+\bibitem{SpecGen}
+Lezhi Ma, Shangqing Liu, Yi~Li, Xiaofei Xie, and Lei Bu.
+\newblock {SpecGen}: Automated generation of formal program specifications via large language models.
+\newblock In {\em 47th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2025, Ottawa, ON, Canada, April 26 - May 6, 2025}, pages 16--28. {IEEE}, 2025,  \href{https://doi.org/10.1109/ICSE55347.2025.00129}{{\ttfamily doi:10.1109/ICSE55347.2025.00129}}.
+
+\bibitem{ChatAFL}
+Ruijie Meng, Martin Mirchev, Marcel B{\"o}hme, and Abhik Roychoudhury.
+\newblock Large language model guided protocol fuzzing.
+\newblock In {\em Network and Distributed System Security (NDSS) Symposium 2024, 26 February - 1 March 2024, San Diego, CA, USA}, 2024,  \href{https://doi.org/10.14722/ndss.2024.24556}{{\ttfamily doi:10.14722/ndss.2024.24556}}.
+
+\bibitem{Dafny-Synth}
+Md~Rakib~Hossain Misu, Cristina~V. Lopes, Iris Ma, and James Noble.
+\newblock Towards {AI}-assisted synthesis of verified {Dafny} methods.
+\newblock {\em Proc. {ACM} Softw. Eng.}, 1({FSE}):812--835, 2024,  \href{https://doi.org/10.1145/3643763}{{\ttfamily doi:10.1145/3643763}}.
+
+\bibitem{SkipAnalyzer}
+Mohammad~Mahdi Mohajer, Reem Aleithan, Nima~Shiri Harzevili, Moshi Wei, Alvine~Boaye Belle, Hung~Viet Pham, and Song Wang.
+\newblock Effectiveness of {ChatGPT} for static analysis: How far are we?
+\newblock In Bram Adams, Thomas Zimmermann, Ipek Ozkaya, Dayi Lin, and Jie~M. Zhang, editors, {\em Proceedings of the 1st {ACM} International Conference on AI-Powered Software, AIware 2024, Porto de Galinhas, Brazil, July 15-16, 2024}. {ACM}, 2024,  \href{https://doi.org/10.1145/3664646.3664777}{{\ttfamily doi:10.1145/3664646.3664777}}.
+
+\bibitem{ClarifyGPT}
+Fangwen Mu, Lin Shi, Song Wang, Zhuohao Yu, Binquan Zhang, Chenxue Wang, Shichao Liu, and Qing Wang.
+\newblock {ClarifyGPT}: A framework for enhancing {LLM}-based code generation via requirements clarification.
+\newblock {\em Proc. {ACM} Softw. Eng.}, 1({FSE}):2332--2354, 2024,  \href{https://doi.org/10.1145/3660810}{{\ttfamily doi:10.1145/3660810}}.
+
+\bibitem{CEDAR}
+Noor Nashid, Mifta Sintaha, and Ali Mesbah.
+\newblock Retrieval-based prompt selection for code-related few-shot learning.
+\newblock In {\em 45th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2023, Melbourne, Australia, May 14-20, 2023}, pages 2450--2462. {IEEE}, 2023,  \href{https://doi.org/10.1109/ICSE48619.2023.00205}{{\ttfamily doi:10.1109/ICSE48619.2023.00205}}.
+
+\bibitem{VSP}
+Yu~Nong, Mohammed Aldeen, Long Cheng, Hongxin Hu, Feng Chen, and Haipeng Cai.
+\newblock Chain-of-thought prompting of large language models for discovering and fixing software vulnerabilities, 2024,  \href{http://arxiv.org/abs/2402.17230}{{\ttfamily arXiv:2402.17230}}.
+
+\bibitem{ESBMCibmc}
+Muhammad A.~A. Pirzada, Giles Reger, Ahmed Bhayat, and Lucas~C. Cordeiro.
+\newblock {LLM}-generated invariants for bounded model checking without loop unrolling.
+\newblock In Vladimir Filkov, Baishakhi Ray, and Minghui Zhou, editors, {\em Proceedings of the 39th {IEEE/ACM} International Conference on Automated Software Engineering, {ASE} 2024, Sacramento, CA, USA, October 27 - November 1, 2024}, pages 1395--1407. {ACM}, 2024,  \href{https://doi.org/10.1145/3691620.3695512}{{\ttfamily doi:10.1145/3691620.3695512}}.
+
+\bibitem{CoverUp}
+Juan~Altmayer Pizzorno and Emery~D. Berger.
+\newblock {CoverUp}: Effective high coverage test generation for python.
+\newblock {\em Proc. {ACM} Softw. Eng.}, 2({FSE}):2897--2919, 2025,  \href{https://doi.org/10.1145/3729398}{{\ttfamily doi:10.1145/3729398}}.
+
+\bibitem{CHEMFUZZ}
+Feng Qiu, Pu~Ji, Baojian Hua, and Yang Wang.
+\newblock {CHEMFUZZ:} large language models-assisted fuzzing for quantum chemistry software bug detection.
+\newblock In {\em 23rd {IEEE} International Conference on Software Quality, Reliability, and Security, {QRS} 2023 Companion, Chiang Mai, Thailand, October 22-26, 2023}, pages 103--112. {IEEE}, 2023,  \href{https://doi.org/10.1109/QRS-C60940.2023.00104}{{\ttfamily doi:10.1109/QRS-C60940.2023.00104}}.
+
+\bibitem{RCAAgents}
+Devjeet Roy, Xuchao Zhang, Rashi Bhave, Chetan Bansal, Pedro Henrique~B. Las{-}Casas, Rodrigo Fonseca, and Saravan Rajmohan.
+\newblock Exploring {LLM}-based agents for root cause analysis.
+\newblock In Marcelo d'Amorim, editor, {\em Companion Proceedings of the 32nd {ACM} International Conference on the Foundations of Software Engineering, {FSE} 2024, Porto de Galinhas, Brazil, July 15-19, 2024}, pages 208--219. {ACM}, 2024,  \href{https://doi.org/10.1145/3663529.3663841}{{\ttfamily doi:10.1145/3663529.3663841}}.
+
+\bibitem{SymPrompt}
+Gabriel Ryan, Siddhartha Jain, Mingyue Shang, Shiqi Wang, Xiaofei Ma, Murali~Krishna Ramanathan, and Baishakhi Ray.
+\newblock Code-aware prompting: A study of coverage-guided test generation in regression setting using {LLM}.
+\newblock {\em Proc. {ACM} Softw. Eng.}, 1({FSE}):951--971, 2024,  \href{https://doi.org/10.1145/3643769}{{\ttfamily doi:10.1145/3643769}}.
+
+\bibitem{TestPilot}
+Max Sch{\"a}fer, Sarah Nadi, Aryaz Eghbali, and Frank Tip.
+\newblock An empirical evaluation of using large language models for automated unit test generation.
+\newblock {\em {IEEE} Trans. Software Eng.}, 50(1):85--105, 2024,  \href{https://doi.org/10.1109/TSE.2023.3334955}{{\ttfamily doi:10.1109/TSE.2023.3334955}}.
+
+\bibitem{PROSPER}
+Prakhar Sharma and Vinod Yegneswaran.
+\newblock {PROSPER}: Extracting protocol specifications using large language models.
+\newblock In {\em Proceedings of the 22nd {ACM} Workshop on Hot Topics in Networks, HotNets 2023, Cambridge, MA, USA, November 28-29, 2023}, pages 41--47. {ACM}, 2023,  \href{https://doi.org/10.1145/3626111.3628205}{{\ttfamily doi:10.1145/3626111.3628205}}.
+
+\bibitem{AIagent}
+Kumar Shashwat, Francis Hahn, Xinming Ou, Dmitry Goldgof, Lawrence Hall, Jay Ligatti, S.~Raj Rajgopalan, and Armin~Ziaie Tabari.
+\newblock A preliminary study on using large language models in software pentesting, 2024,  \href{http://arxiv.org/abs/2401.17459}{{\ttfamily arXiv:2401.17459}}.
+
+\bibitem{EMR}
+Seung~Yeob Shin, Fabrizio Pastore, Domenico Bianculli, and Alexandra Baicoianu.
+\newblock Towards generating executable metamorphic relations using large language models.
+\newblock In Antonia Bertolino, Jo{\~{a}}o~Pascoal Faria, Patricia Lago, and Laura Semini, editors, {\em Quality of Information and Communications Technology - 17th International Conference on the Quality of Information and Communications Technology, {QUATIC} 2024, Pisa, Italy, September 11-13, 2024, Proceedings}, volume 2178 of {\em Communications in Computer and Information Science}, pages 126--141. Springer, 2024,  \href{https://doi.org/10.1007/978-3-031-70245-7\_9}{{\ttfamily doi:10.1007/978-3-031-70245-7\_9}}.
+
+\bibitem{EASEeval}
+Mohammed~Latif Siddiq, Joanna~Cecilia da~Silva~Santos, Ridwanul~Hasan Tanvir, Noshin Ulfat, Fahmid~Al Rifat, and Vinicius~Carvalho Lopes.
+\newblock Using large language models to generate {JUnit} tests: An empirical study.
+\newblock In {\em Proceedings of the 28th International Conference on Evaluation and Assessment in Software Engineering, {EASE} 2024, Salerno, Italy, June 18-21, 2024}, pages 313--322. {ACM}, 2024,  \href{https://doi.org/10.1145/3661167.3661216}{{\ttfamily doi:10.1145/3661167.3661216}}.
+
+\bibitem{SysKG-UTF}
+Yanqi Su, Dianshu Liao, Zhenchang Xing, Qing Huang, Mulong Xie, Qinghua Lu, and Xiwei Xu.
+\newblock Enhancing exploratory testing by large language model and knowledge graph.
+\newblock In {\em 46th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2024, Lisbon, Portugal, April 14-20, 2024}, pages 98:1--98:12. {ACM}, 2024,  \href{https://doi.org/10.1145/3597503.3639157}{{\ttfamily doi:10.1145/3597503.3639157}}.
+
+\bibitem{Clover}
+Chuyue Sun, Ying Sheng, Oded Padon, and Clark~W. Barrett.
+\newblock Clover: Closed-loop verifiable code generation.
+\newblock In Guy Avni, Mirco Giacobbe, Taylor~T. Johnson, Guy Katz, Anna Lukina, Nina Narodytska, and Christian Schilling, editors, {\em {AI} Verification - First International Symposium, {SAIV} 2024, Montreal, QC, Canada, July 22-23, 2024, Proceedings}, volume 14846 of {\em Lecture Notes in Computer Science}, pages 134--155. Springer, 2024,  \href{https://doi.org/10.1007/978-3-031-65112-0\_7}{{\ttfamily doi:10.1007/978-3-031-65112-0\_7}}.
+
+\bibitem{LLM4Vuln}
+Yuqiang Sun, Daoyuan Wu, Yue Xue, Han Liu, Wei Ma, Lyuye Zhang, Miaolei Shi, and Yang Liu.
+\newblock {LLM4Vuln}: A unified evaluation framework for decoupling and enhancing {LLMs}' vulnerability reasoning, 2024,  \href{http://arxiv.org/abs/2401.16185}{{\ttfamily arXiv:2401.16185}}.
+
+\bibitem{GPTScan}
+Yuqiang Sun, Daoyuan Wu, Yue Xue, Han Liu, Haijun Wang, Zhengzi Xu, Xiaofei Xie, and Yang Liu.
+\newblock {GPTScan}: Detecting logic vulnerabilities in smart contracts by combining {GPT} with program analysis.
+\newblock In {\em 46th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2024, Lisbon, Portugal, April 14-20, 2024}, pages 166:1--166:13. {ACM}, 2024,  \href{https://doi.org/10.1145/3597503.3639117}{{\ttfamily doi:10.1145/3597503.3639117}}.
+
+\bibitem{AXNav}
+Maryam Taeb, Amanda Swearngin, Eldon Schoop, Ruijia Cheng, Yue Jiang, and Jeffrey Nichols.
+\newblock {AXNav}: Replaying accessibility tests from natural language.
+\newblock In Florian~'Floyd' Mueller, Penny Kyburz, Julie~R. Williamson, Corina Sas, Max~L. Wilson, Phoebe O.~Toups Dugas, and Irina Shklovski, editors, {\em Proceedings of the {CHI} Conference on Human Factors in Computing Systems, {CHI} 2024, Honolulu, HI, USA, May 11-16, 2024}, pages 962:1--962:16. {ACM}, 2024,  \href{https://doi.org/10.1145/3613904.3642777}{{\ttfamily doi:10.1145/3613904.3642777}}.
+
+\bibitem{GameBugDescriptions}
+Mohammad~Reza Taesiri, Finlay Macklon, Yihe Wang, Hengshuo Shen, and Cor-Paul Bezemer.
+\newblock Large language models are pretty good zero-shot video game bug detectors, 2022,  \href{http://arxiv.org/abs/2210.02506}{{\ttfamily arXiv:2210.02506}}.
+
+\bibitem{LeGEND}
+Shuncheng Tang, Zhenya Zhang, Jixiang Zhou, Lei Lei, Yuan Zhou, and Yinxing Xue.
+\newblock {LeGEND}: A top-down approach to scenario generation of autonomous driving systems assisted by large language models.
+\newblock In {\em Proceedings of the 39th {IEEE/ACM} International Conference on Automated Software Engineering, {ASE} 2024, Sacramento, CA, USA, October 27 - November 1, 2024}, pages 1497--1508. {ACM}, 2024,  \href{https://doi.org/10.1145/3691620.3695520}{{\ttfamily doi:10.1145/3691620.3695520}}.
+
+\bibitem{FormAI}
+Norbert Tihanyi, Tam{\'{a}}s Bisztray, Ridhi Jain, Mohamed~Amine Ferrag, Lucas~C. Cordeiro, and Vasileios Mavroeidis.
+\newblock The {FormAI} dataset: Generative {AI} in software security through the lens of formal verification.
+\newblock In Shane McIntosh, Eunjong Choi, and Steffen Herbold, editors, {\em Proceedings of the 19th International Conference on Predictive Models and Data Analytics in Software Engineering, {PROMISE} 2023, San Francisco, CA, USA, 8 December 2023}, pages 33--43. {ACM}, 2023,  \href{https://doi.org/10.1145/3617555.3617874}{{\ttfamily doi:10.1145/3617555.3617874}}.
+
+\bibitem{LLMorpheus}
+Frank Tip, Jonathan Bell, and Max Sch{\"{a}}fer.
+\newblock {LLMorpheus}: Mutation testing using large language models.
+\newblock {\em {IEEE} Trans. Software Eng.}, 51(6):1645--1665, 2025,  \href{https://doi.org/10.1109/TSE.2025.3562025}{{\ttfamily doi:10.1109/TSE.2025.3562025}}.
+
+\bibitem{MetaMorph}
+Christos Tsigkanos, Pooja Rani, Sebastian M{\"{u}}ller, and Timo Kehrer.
+\newblock Large language models: The next frontier for variable discovery within metamorphic testing?
+\newblock In Tao Zhang, Xin Xia, and Nicole Novielli, editors, {\em {IEEE} International Conference on Software Analysis, Evolution and Reengineering, {SANER} 2023, Taipa, Macao, March 21-24, 2023}, pages 678--682. {IEEE}, 2023,  \href{https://doi.org/10.1109/SANER56733.2023.00070}{{\ttfamily doi:10.1109/SANER56733.2023.00070}}.
+
+\bibitem{LLM4CBI}
+Haoxin Tu, Zhide Zhou, He~Jiang, Imam Nur~Bani Yusuf, Yuxian Li, and Lingxiao Jiang.
+\newblock Isolating compiler bugs by generating effective witness programs with large language models.
+\newblock {\em {IEEE} Trans. Software Eng.}, 50(7):1768--1788, 2024,  \href{https://doi.org/10.1109/TSE.2024.3397822}{{\ttfamily doi:10.1109/TSE.2024.3397822}}.
+
+\bibitem{PBT-GPT}
+Vasudev Vikram, Caroline Lemieux, and Rohan Padhye.
+\newblock Can large language models write good property-based tests?, 2023,  \href{http://arxiv.org/abs/2307.04346}{{\ttfamily arXiv:2307.04346}}.
+
+\bibitem{CORE}
+Nalin Wadhwa, Jui Pradhan, Atharv Sonwane, Surya~Prakash Sahu, Nagarajan Natarajan, Aditya Kanade, Suresh Parthasarathy, and Sriram Rajamani.
+\newblock {CORE}: Resolving code quality issues using {LLM}s.
+\newblock {\em Proc. {ACM} Softw. Eng.}, 1({FSE}):789--811, 2024,  \href{https://doi.org/10.1145/3643762}{{\ttfamily doi:10.1145/3643762}}.
+
+\bibitem{LLMDFA}
+Chengpeng Wang, Wuqi Zhang, Zian Su, Xiangzhe Xu, Xiaoheng Xie, and Xiangyu Zhang.
+\newblock {LLMDFA:} analyzing dataflow in code with large language models.
+\newblock In Amir Globersons, Lester Mackey, Danielle Belgrave, Angela Fan, Ulrich Paquet, Jakub~M. Tomczak, and Cheng Zhang, editors, {\em Advances in Neural Information Processing Systems 38: Annual Conference on Neural Information Processing Systems 2024, NeurIPS 2024, Vancouver, BC, Canada, December 10 - 15, 2024}, 2024.
+
+\bibitem{InferROI}
+Chong Wang, Jianan Liu, Xin Peng, Yang Liu, and Yiling Lou.
+\newblock Boosting static resource leak detection via {LLM}-based resource-oriented intention inference.
+\newblock In {\em 47th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2025, Ottawa, ON, Canada, April 26 - May 6, 2025}, pages 2905--2917. {IEEE}, 2025,  \href{https://doi.org/10.1109/ICSE55347.2025.00131}{{\ttfamily doi:10.1109/ICSE55347.2025.00131}}.
+
+\bibitem{Skyeye}
+Haijun Wang, Yurui Hu, Hao Wu, Dijun Liu, Chenyang Peng, Yin Wu, Ming Fan, and Ting Liu.
+\newblock Skyeye: Detecting imminent attacks via analyzing adversarial smart contracts.
+\newblock In Vladimir Filkov, Baishakhi Ray, and Minghui Zhou, editors, {\em Proceedings of the 39th {IEEE/ACM} International Conference on Automated Software Engineering, {ASE} 2024, Sacramento, CA, USA, October 27 - November 1, 2024}, pages 1570--1582. {ACM}, 2024,  \href{https://doi.org/10.1145/3691620.3695526}{{\ttfamily doi:10.1145/3691620.3695526}}.
+
+\bibitem{HITS}
+Zejun Wang, Kaibo Liu, Ge~Li, and Zhi Jin.
+\newblock {HITS}: High-coverage {LLM}-based unit test generation via method slicing.
+\newblock In {\em Proceedings of the 39th {IEEE/ACM} International Conference on Automated Software Engineering, {ASE} 2024, Sacramento, CA, USA, October 27 - November 1, 2024}, pages 1258--1268. {ACM}, 2024,  \href{https://doi.org/10.1145/3691620.3695501}{{\ttfamily doi:10.1145/3691620.3695501}}.
+
+\bibitem{LLMAPIDet}
+Moshi Wei, Nima~Shiri Harzevili, Yuekai Huang, Jinqiu Yang, Junjie Wang, and Song Wang.
+\newblock Demystifying and detecting misuses of deep learning {APIs}.
+\newblock In {\em 46th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2024, Lisbon, Portugal, April 14-20, 2024}, pages 201:1--201:12. {ACM}, 2024,  \href{https://doi.org/10.1145/3597503.3639177}{{\ttfamily doi:10.1145/3597503.3639177}}.
+
+\bibitem{AutoSpec}
+Cheng Wen, Jialun Cao, Jie Su, Zhiwu Xu, Shengchao Qin, Mengda He, Haokun Li, Shing{-}Chi Cheung, and Cong Tian.
+\newblock Enchanting program specification synthesis by large language models using static analysis and program verification.
+\newblock In Arie Gurfinkel and Vijay Ganesh, editors, {\em Computer Aided Verification - 36th International Conference, {CAV} 2024, Montreal, QC, Canada, July 24-27, 2024, Proceedings, Part {II}}, volume 14682 of {\em Lecture Notes in Computer Science}, pages 302--328. Springer, 2024,  \href{https://doi.org/10.1007/978-3-031-65630-9\_16}{{\ttfamily doi:10.1007/978-3-031-65630-9\_16}}.
+
+\bibitem{Sleuth}
+Cong Wu, Jing Chen, Ziwei Wang, Ruichao Liang, and Ruiying Du.
+\newblock Semantic {Sleuth}: Identifying {Ponzi} contracts via large language models.
+\newblock In Vladimir Filkov, Baishakhi Ray, and Minghui Zhou, editors, {\em Proceedings of the 39th {IEEE/ACM} International Conference on Automated Software Engineering, {ASE} 2024, Sacramento, CA, USA, October 27 - November 1, 2024}, pages 582--593. {ACM}, 2024,  \href{https://doi.org/10.1145/3691620.3695055}{{\ttfamily doi:10.1145/3691620.3695055}}.
+
+\bibitem{Lam4Inv}
+Guangyuan Wu, Weining Cao, Yuan Yao, Hengfeng Wei, Taolue Chen, and Xiaoxing Ma.
+\newblock {LLM} meets bounded model checking: Neuro-symbolic loop invariant inference.
+\newblock In Vladimir Filkov, Baishakhi Ray, and Minghui Zhou, editors, {\em Proceedings of the 39th {IEEE/ACM} International Conference on Automated Software Engineering, {ASE} 2024, Sacramento, CA, USA, October 27 - November 1, 2024}, pages 406--417. {ACM}, 2024,  \href{https://doi.org/10.1145/3691620.3695014}{{\ttfamily doi:10.1145/3691620.3695014}}.
+
+\bibitem{Lemur}
+Haoze Wu, Clark Barrett, and Nina Narodytska.
+\newblock Lemur: Integrating large language models in automated program verification.
+\newblock In {\em The Twelfth International Conference on Learning Representations, {ICLR} 2024, Vienna, Austria, May 7-11 2024}. OpenReview.net, 2024.
+
+\bibitem{mrDetector}
+Shengnan Wu, Yongxiang Hu, Yingchuan Wang, Jiazhen Gu, Jin Meng, Liujie Fan, Zhongshi Luan, Xin Wang, and Yangfan Zhou.
+\newblock Combating missed recalls in e-commerce search: {A} {CoT}-prompting testing approach.
+\newblock In Marcelo d'Amorim, editor, {\em Companion Proceedings of the 32nd {ACM} International Conference on the Foundations of Software Engineering, {FSE} 2024, Porto de Galinhas, Brazil, July 15-19, 2024}, pages 220--231. {ACM}, 2024,  \href{https://doi.org/10.1145/3663529.3663842}{{\ttfamily doi:10.1145/3663529.3663842}}.
+
+\bibitem{AdvSCanner}
+Yin Wu, Xiaofei Xie, Chenyang Peng, Dijun Liu, Hao Wu, Ming Fan, Ting Liu, and Haijun Wang.
+\newblock {AdvSCanner}: Generating adversarial smart contracts to exploit reentrancy vulnerabilities using {LLM} and static analysis.
+\newblock In {\em Proceedings of the 39th {IEEE/ACM} International Conference on Automated Software Engineering, {ASE} 2024, Sacramento, CA, USA, October 27 - November 1, 2024}, pages 1019--1031. {ACM}, 2024,  \href{https://doi.org/10.1145/3691620.3695482}{{\ttfamily doi:10.1145/3691620.3695482}}.
+
+\bibitem{ChatGPT-4(Log)}
+Yonghao Wu, Zheng Li, Jie~M. Zhang, Mike Papadakis, Mark Harman, and Yong Liu.
+\newblock Large language models in fault localisation, 2023,  \href{http://arxiv.org/abs/2308.15276}{{\ttfamily arXiv:2308.15276}}.
+
+\bibitem{VFFinder}
+Yulun Wu, Ming Wen, Zeliang Yu, Xiaochen Guo, and Hai Jin.
+\newblock Effective vulnerable function identification based on {CVE} description empowered by large language models.
+\newblock In Vladimir Filkov, Baishakhi Ray, and Minghui Zhou, editors, {\em Proceedings of the 39th {IEEE/ACM} International Conference on Automated Software Engineering, {ASE} 2024, Sacramento, CA, USA, October 27 - November 1, 2024}, pages 393--405. {ACM}, 2024,  \href{https://doi.org/10.1145/3691620.3695013}{{\ttfamily doi:10.1145/3691620.3695013}}.
+
+\bibitem{Fuzz4All}
+Chunqiu~Steven Xia, Matteo Paltenghi, Jia~Le Tian, Michael Pradel, and Lingming Zhang.
+\newblock {Fuzz4All}: Universal fuzzing with large language models.
+\newblock In {\em 46th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2024, Lisbon, Portugal, April 14-20, 2024}, pages 126:1--126:13. {ACM}, 2024,  \href{https://doi.org/10.1145/3597503.3639121}{{\ttfamily doi:10.1145/3597503.3639121}}.
+
+\bibitem{TELPA}
+Chen Yang, Junjie Chen, Bin Lin, Jianyi Zhou, and Ziqi Wang.
+\newblock Enhancing {LLM}-based test generation for hard-to-cover branches via program analysis, 2024,  \href{http://arxiv.org/abs/2404.04966}{{\ttfamily arXiv:2404.04966}}.
+
+\bibitem{SemSlicer}
+Chenyang Yang, Yining Hong, Grace~A. Lewis, Tongshuang Wu, and Christian K{\"{a}}stner.
+\newblock What is wrong with my model? identifying systematic problems with semantic data slicing.
+\newblock In Vladimir Filkov, Baishakhi Ray, and Minghui Zhou, editors, {\em Proceedings of the 39th {IEEE/ACM} International Conference on Automated Software Engineering, {ASE} 2024, Sacramento, CA, USA, October 27 - November 1, 2024}, pages 306--318. {ACM}, 2024,  \href{https://doi.org/10.1145/3691620.3695033}{{\ttfamily doi:10.1145/3691620.3695033}}.
+
+\bibitem{WhiteFox}
+Chenyuan Yang, Yinlin Deng, Runyu Lu, Jiayi Yao, Jiawei Liu, Reyhaneh Jabbarvand, and Lingming Zhang.
+\newblock {WhiteFox}: White-box compiler fuzzing empowered by large language models.
+\newblock {\em Proc. {ACM} Program. Lang.}, 8({OOPSLA2}):709--735, 2024,  \href{https://doi.org/10.1145/3689736}{{\ttfamily doi:10.1145/3689736}}.
+
+\bibitem{KernelGPT}
+Chenyuan Yang, Zijie Zhao, and Lingming Zhang.
+\newblock {KernelGPT}: Enhanced kernel fuzzing via large language models.
+\newblock In Lieven Eeckhout, Georgios Smaragdakis, Katai Liang, Adrian Sampson, Martha~A. Kim, and Christopher~J. Rossbach, editors, {\em Proceedings of the 30th {ACM} International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2, {ASPLOS} 2025, Rotterdam, Netherlands, 30 March 2025 - 3 April 2025}, pages 560--573. {ACM}, 2025,  \href{https://doi.org/10.1145/3676641.3716022}{{\ttfamily doi:10.1145/3676641.3716022}}.
+
+\bibitem{LLM-UTG}
+Lin Yang, Chen Yang, Shutao Gao, Weijing Wang, Bo~Wang, Qihao Zhu, Xiao Chu, Jianyi Zhou, Guangtai Liang, Qianxiang Wang, and Junjie Chen.
+\newblock On the evaluation of large language models in unit test generation.
+\newblock In {\em Proceedings of the 39th {IEEE/ACM} International Conference on Automated Software Engineering, {ASE} 2024, Sacramento, CA, USA, October 27 - November 1, 2024}, pages 1607--1619. {ACM}, 2024,  \href{https://doi.org/10.1145/3691620.3695529}{{\ttfamily doi:10.1145/3691620.3695529}}.
+
+\bibitem{DLAP}
+Yanjing Yang, Xin Zhou, Runfeng Mao, Jinwei Xu, Lanxin Yang, Yu~Zhang, Haifeng Shen, and He~Zhang.
+\newblock {DLAP:} {A} deep learning augmented large language model prompting framework for software vulnerability detection.
+\newblock {\em J. Syst. Softw.}, 219:112234, 2025,  \href{https://doi.org/10.1016/J.JSS.2024.112234}{{\ttfamily doi:10.1016/J.JSS.2024.112234}}.
+
+\bibitem{RustProof}
+Jianan Yao, Ziqiao Zhou, Weiteng Chen, and Weidong Cui.
+\newblock Leveraging large language models for automated proof synthesis in {Rust}, 2023,  \href{http://arxiv.org/abs/2311.03739}{{\ttfamily arXiv:2311.03739}}.
+
+\bibitem{MultiTask}
+Xin Yin, Chao Ni, and Shaohua Wang.
+\newblock Multitask-based evaluation of open-source {LLM} on software vulnerability.
+\newblock {\em {IEEE} Trans. Software Eng.}, 50(11):3071--3087, 2024,  \href{https://doi.org/10.1109/TSE.2024.3470333}{{\ttfamily doi:10.1109/TSE.2024.3470333}}.
+
+\bibitem{ChatTester}
+Zhiqiang Yuan, Yiling Lou, Mingwei Liu, Shiji Ding, Kaixin Wang, Yixuan Chen, and Xin Peng.
+\newblock Evaluating and improving {ChatGPT} for unit test generation.
+\newblock {\em Proc. {ACM} Softw. Eng.}, 1({FSE}):1703--1726, 2024,  \href{https://doi.org/10.1145/3660783}{{\ttfamily doi:10.1145/3660783}}.
+
+\bibitem{UGCTX}
+Cen Zhang, Yaowen Zheng, Mingqiang Bai, Yeting Li, Wei Ma, Xiaofei Xie, Yuekang Li, Limin Sun, and Yang Liu.
+\newblock How effective are they? exploring large language model based fuzz driver generation.
+\newblock In Maria Christakis and Michael Pradel, editors, {\em Proceedings of the 33rd {ACM} {SIGSOFT} International Symposium on Software Testing and Analysis, {ISSTA} 2024, Vienna, Austria, September 16-20, 2024}, pages 1223--1235. {ACM}, 2024,  \href{https://doi.org/10.1145/3650212.3680355}{{\ttfamily doi:10.1145/3650212.3680355}}.
+
+\bibitem{PromptEnhanced}
+Chenyuan Zhang, Hao Liu, Jiutian Zeng, Kejing Yang, Yuhong Li, and Hui Li.
+\newblock Prompt-enhanced software vulnerability detection using {ChatGPT}.
+\newblock In {\em 46th {IEEE/ACM} International Conference on Software Engineering: Companion Proceedings, {ICSE} Companion 2024, Lisbon, Portugal, April 14-20, 2024}, pages 276--277. {ACM}, 2024,  \href{https://doi.org/10.1145/3639478.3643065}{{\ttfamily doi:10.1145/3639478.3643065}}.
+
+\bibitem{LM-PACE}
+Dylan Zhang, Xuchao Zhang, Chetan Bansal, Pedro Henrique~B. Las{-}Casas, Rodrigo Fonseca, and Saravan Rajmohan.
+\newblock {LM-PACE:} confidence estimation by large language models for effective root causing of cloud incidents.
+\newblock In Marcelo d'Amorim, editor, {\em Companion Proceedings of the 32nd {ACM} International Conference on the Foundations of Software Engineering, {FSE} 2024, Porto de Galinhas, Brazil, July 15-19, 2024}, pages 388--398. {ACM}, 2024,  \href{https://doi.org/10.1145/3663529.3663858}{{\ttfamily doi:10.1145/3663529.3663858}}.
+
+\bibitem{VulAdvisor}
+Jian Zhang, Chong Wang, Anran Li, Wenhan Wang, Tianlin Li, and Yang Liu.
+\newblock {VulAdvisor}: Natural language suggestion generation for software vulnerability repair.
+\newblock In Vladimir Filkov, Baishakhi Ray, and Minghui Zhou, editors, {\em Proceedings of the 39th {IEEE/ACM} International Conference on Automated Software Engineering, {ASE} 2024, Sacramento, CA, USA, October 27 - November 1, 2024}, pages 1932--1944. {ACM}, 2024,  \href{https://doi.org/10.1145/3691620.3695555}{{\ttfamily doi:10.1145/3691620.3695555}}.
+
+\bibitem{ALGO}
+Kexun Zhang, Danqing Wang, Jingtao Xia, William~Yang Wang, and Lei Li.
+\newblock {ALGO:} synthesizing algorithmic programs with generated oracle verifiers.
+\newblock In Alice Oh, Tristan Naumann, Amir Globerson, Kate Saenko, Moritz Hardt, and Sergey Levine, editors, {\em Advances in Neural Information Processing Systems 36: Annual Conference on Neural Information Processing Systems 2023, NeurIPS 2023, New Orleans, LA, USA, December 10 - 16, 2023}, 2023.
+
+\bibitem{Cupid}
+Ting Zhang, Ivana~Clairine Irsan, Ferdian Thung, and David Lo.
+\newblock Cupid: Leveraging {ChatGPT} for more accurate duplicate bug report detection, 2023,  \href{http://arxiv.org/abs/2308.10022}{{\ttfamily arXiv:2308.10022}}.
+
+\bibitem{inContextRCA}
+Xuchao Zhang, Supriyo Ghosh, Chetan Bansal, Rujia Wang, Minghua Ma, Yu~Kang, and Saravan Rajmohan.
+\newblock Automated root causing of cloud incidents using in-context learning with {GPT-4}.
+\newblock In Marcelo d'Amorim, editor, {\em Companion Proceedings of the 32nd {ACM} International Conference on the Foundations of Software Engineering, {FSE} 2024, Porto de Galinhas, Brazil, July 15-19, 2024}, pages 266--277. {ACM}, 2024,  \href{https://doi.org/10.1145/3663529.3663846}{{\ttfamily doi:10.1145/3663529.3663846}}.
+
+\bibitem{RustC4}
+Yichi Zhang, Zixi Liu, Yang Feng, and Baowen Xu.
+\newblock Leveraging large language model to assist detecting {Rust} code comment inconsistency.
+\newblock In Vladimir Filkov, Baishakhi Ray, and Minghui Zhou, editors, {\em Proceedings of the 39th {IEEE/ACM} International Conference on Automated Software Engineering, {ASE} 2024, Sacramento, CA, USA, October 27 - November 1, 2024}, pages 356--366. {ACM}, 2024,  \href{https://doi.org/10.1145/3691620.3695010}{{\ttfamily doi:10.1145/3691620.3695010}}.
+
+\bibitem{secTests}
+Ying Zhang, Wenjia Song, Zhengjie Ji, Danfeng Yao, and Na~Meng.
+\newblock How well does {LLM} generate security tests?, 2023,  \href{http://arxiv.org/abs/2310.00710}{{\ttfamily arXiv:2310.00710}}.
+
+\bibitem{ChatGPT(Plus)}
+Xin Zhou, Ting Zhang, and David Lo.
+\newblock Large language model for vulnerability detection: Emerging results and future directions.
+\newblock In {\em Proceedings of the 2024 {ACM/IEEE} 44th International Conference on Software Engineering: New Ideas and Emerging Results, NIER@ICSE 2024, Lisbon, Portugal, April 14-20, 2024}, pages 47--51. {ACM}, 2024,  \href{https://doi.org/10.1145/3639476.3639762}{{\ttfamily doi:10.1145/3639476.3639762}}.
+
+\bibitem{Magneto}
+Zhuotong Zhou, Yongzhuo Yang, Susheng Wu, Yiheng Huang, Bihuan Chen, and Xin Peng.
+\newblock Magneto: A step-wise approach to exploit vulnerabilities in dependent libraries via {LLM}-empowered directed fuzzing.
+\newblock In {\em Proceedings of the 39th {IEEE/ACM} International Conference on Automated Software Engineering, {ASE} 2024, Sacramento, CA, USA, October 27 - November 1, 2024}, pages 1633--1644. {ACM}, 2024,  \href{https://doi.org/10.1145/3691620.3695531}{{\ttfamily doi:10.1145/3691620.3695531}}.
+
+\end{thebibliography}

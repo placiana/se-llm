@@ -92,6 +92,67 @@
 
 </main>
 
+
+
+<script>
+ // read data/bib_parsed.json
+  const bib_data = {};
+  async function readBibData(filename) {
+    const response = await fetch(filename);
+    const data = await response.json();
+    Object.assign(bib_data, data);      
+  }
+  readBibData('data/bib_parsed.json');
+
+
+  function addTooltipListeners() {
+    // on mouse over a li.value span, show tooltip with references from bib_data
+    // Get all span elements within li elements that have the class "value"
+    const valueSpans = document.querySelectorAll('li.value span');
+    valueSpans.forEach(span => {
+      span.addEventListener('mouseover', function(event) {
+        // read data-key
+        const key = event.target.getAttribute('data-key');
+
+        if (key && bib_data.hasOwnProperty(key)) {
+          const bibEntry = bib_data[key];
+          // Create tooltip element
+          const tooltip = document.createElement('div');
+          tooltip.className = 'tooltip';
+          tooltip.style.position = 'absolute';
+          tooltip.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+          tooltip.style.color = 'white';
+          tooltip.style.padding = '8px';
+          tooltip.style.borderRadius = '4px';
+          tooltip.style.zIndex = '1000';
+          tooltip.style.maxWidth = '300px';
+          tooltip.style.fontSize = '0.9em';
+          tooltip.style.pointerEvents = 'none'; // So it doesn't interfere with mouse events
+
+          // Fill tooltip content RAW (bibEntry is a dict)
+          let content = '';
+          if (bibEntry.title) {
+            content += `<strong>Title:</strong> ${bibEntry.title}<br>`;
+          }
+          if (bibEntry.authors) {
+            content += `<strong>Authors:</strong> ${bibEntry.authors}<br>`;
+          }
+
+          // Position the tooltip
+          tooltip.style.left = event.pageX + 'px';
+          tooltip.style.top = event.pageY + 'px';
+          tooltip.innerHTML = content;
+
+          // show tooltip
+          document.body.appendChild(tooltip);
+        }
+      });
+    });
+  }
+
+</script>
+
+
 <script>
 
 
@@ -213,6 +274,7 @@ function cTree(data, category="") {
     renderTree('data/taxonomy.json', 'categories-container');
     //renderHTMLTaskTable('data/tasks_from_html.json', 'task-table');
 
+
     const tasks = {};
     async function readTaskData(filename) {
       const response = await fetch(filename);
@@ -286,8 +348,8 @@ function cTree(data, category="") {
           //html += '<pre>' + JSON.stringify(texData, null, 2) + '</pre>';
           html += texDataToHtml(texData);
           taskTable.innerHTML = html;
-          
 
+          addTooltipListeners();
 
         });
       });
@@ -308,9 +370,9 @@ function cTree(data, category="") {
         value.forEach(item => {
           if (Array.isArray(item)) {
             if (item.length >= 3) {
-              html += `<li class="value ${item[0]}"><span>` + item[1]  + `<sub>${item[2]}</sub></span></li>`;
+              html += `<li class="value ${item[0]}"><span data-key="${item[1]}" >` + item[1]  + `<sub>${item[2]}</sub></span></li>`;
             } else if (item.length === 2) {
-              html += `<li class="value ${item[0]}"><span>` + item[1] + `</span></li>`;
+              html += `<li class="value ${item[0]}"><span data-key="${item[1]}">` + item[1] + `</span></li>`;
             } else {
               // join item and display in single li
               html += `<li class="value ">!!` + item.join(' ') + `</li>`;
@@ -340,6 +402,7 @@ function cTree(data, category="") {
 
   }
 </script>
+
 
 </body>
 

@@ -278,12 +278,20 @@ def parse_bibliography(text):
         m_arxiv = re.search(r'arXiv[:\s]?([0-9\.]+)', content, re.IGNORECASE)
         arxiv = m_arxiv.group(1) if m_arxiv else None
 
+        # \href{url}{text} - extrae URL y texto
+        m_href = re.search(r'\\href\{([^}]+)\}\{([^}]+)\}', content)
+        href_url = m_href.group(1) if m_href else None
+        href_text = m_href.group(2) if m_href else None
+
+
         parsed[key] = ({
             "key": key,
             "authors": authors,
             "title": title,
             "doi": doi,
             "arxiv": arxiv,
+            "href_url": href_url,
+            "href_text": href_text,
             "raw": content
         })
     return parsed

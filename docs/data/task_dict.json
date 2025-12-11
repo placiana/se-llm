@@ -1,0 +1,620 @@
+{
+  "TestGen-LLM": {
+    "se_task": "Testing",
+    "se_problem": "Unit-Test Generation",
+    "html": "existing unit test class (UTC) + tested class id \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8CoverageAugmenting-Test-Extension\u27e9</span> \u2192 extended UTC.",
+    "architectural_notes": "Generated tests are further processed in a pipeline of filtering-analysis (e.g., buildability, non-flakiness, coverage improvement) that is part of the Assured LLM-Based Software Engineering [5] framework."
+  },
+  "FSML": {
+    "se_task": "Testing",
+    "se_problem": "Oracle Problem",
+    "html": "sig + meth-intent \u2192 <span style=\"background-color: #ecb4cb;\">\u27e8MetamorphicAssertion-Characterization</span> <span style=\"background-color: #ecb4cb;\">\u27e9</span> \u2192 term-equiv assertions [Few-Shot, CoT: <span style=\"background-color: #ecb4cb;\">code intent</span> + analysis].",
+    "architectural_notes": "Study on potential proficiency.<br>Study on potential proficiency.<br>Study on potential profi ciency."
+  },
+  "ChatGPTTests": {
+    "se_task": "Testing",
+    "se_problem": "Unit-Test Generation",
+    "html": "prgm \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8Test-Generation\u27e9</span> \u2192 test cases (basic); prgm + unit test cases (UTC) + cvrg report \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8CoverageAugmenting-Test-Extension\u27e9</span> \u2192 extended UTC.",
+    "architectural_notes": "Study. Two alternatives: (basic) and a version that tries to improve coverage."
+  },
+  "CodeT": {
+    "se_task": "Testing",
+    "se_problem": "Unit-Test Generation",
+    "html": "intent + sig \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8IntentCorresponding-Test-Generation\u27e9</span> \u2192 in/out pairs.",
+    "architectural_notes": "It is part of a code generation approach that includes ulterior dual execution agreement to choose the best solution."
+  },
+  "ChatUniTest": {
+    "se_task": "Testing",
+    "se_problem": "Unit-Test Generation",
+    "html": "focal-class sig + focal meth src-code + required depend + sig meth \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8Test-Generation\u27e9</span> \u2192 (test) 1...5 [Adaptive focal ctxt]; test + error + focal meth + focal-class name + focal meth src-code \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8ErrorAware-Test-Correction\u27e9</span> \u2192 (test) 1...5 .",
+    "architectural_notes": "Prompt is adaptive to token limit and further context of dependent classes could be added based on dependency graph. CoT is mentioned but not detailed. Repair phase may also leverage an LLM."
+  },
+  "CodeCoT": {
+    "se_task": "Testing",
+    "se_problem": "Unit-Test Generation",
+    "html": "funct def of unit + doc \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8Basic&Edge-TestCase-Generation\u27e9</span> \u2192 test cases.",
+    "architectural_notes": "Testing is part of a larger code generation solution."
+  },
+  "AgentCoder": {
+    "se_task": "Testing",
+    "se_problem": "Unit-Test Generation",
+    "html": "funct def of unit + doc \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8Basic&Edge-TestCase-Generation\u27e9</span> \u2192 test cases.",
+    "architectural_notes": "Testing is part of a larger code generation solution."
+  },
+  "CodaMOSA": {
+    "se_task": "Testing",
+    "se_problem": "Unit-Test Generation",
+    "html": "(portion) src-code under test + callable def + callable name \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8Targeted-Test-Generation\u27e9</span> \u2192 test cases.",
+    "architectural_notes": "Use of LLMs in the context of Search-Based Software Testing. LLMs outputs require significant post-processing to be integrated into the SBST framework."
+  },
+  "TestChain": {
+    "se_task": "Testing",
+    "se_problem": "Unit-Test Generation",
+    "html": "func def of unit + doc \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8Basic&Edge-TestInput-Generation\u27e9</span> \u2192 inputs [One-Shot]; func def + doc + input \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8IntentionCorresponding-Result-Generation\u27e9</span> \u2192 (requested computation) \u2217 + asserted value) [CoT, ReAct: request to compute the adequate output].",
+    "architectural_notes": "Designer agent and Calculator agents reported. Calculator uses Python Interpreter."
+  },
+  "CoverUp": {
+    "se_task": "Testing",
+    "se_problem": "Unit-Test Generation",
+    "html": "code excerpt + uncovered lines \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8CoverageAugmenting-Test-Generation\u27e9</span> \u2192 tests; code excerpt + test + uncovered lines + (errors) \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8CoverageAugmenting-Test-Correction\u27e9</span> \u2192 test.",
+    "architectural_notes": "Uses testing framework including coverage tool."
+  },
+  "TestPilot": {
+    "se_task": "Testing",
+    "se_problem": "Unit-Test Generation",
+    "html": "meth under test sig + (doc) 0...1 + (usage examp) 0...1 + (src-code) 0...1 + (fail test + error) 0...1 \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8BuildablePassable-Test-Generation\u27e9</span> \u2192 (test) 0...5 .",
+    "architectural_notes": "Refiner applies strategies to include or not certain info in prompts. Adaptive nature means that LLM is (re)invoked with failing test and error message if validation fails."
+  },
+  "EASEeval": {
+    "se_task": "Testing",
+    "se_problem": "Unit-Test Generation",
+    "html": "meth under test name + class code + import statements \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8Test-Generation\u27e9</span> \u2192 unit tests."
+  },
+  "TELPA": {
+    "se_task": "Testing",
+    "se_problem": "Unit-Test Generation",
+    "html": "MUT code + method-invocation seq + examp following m-i seq + branch-relevant meth \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8CoverageAugmenting-Test-Generation\u27e9</span> \u2192 test.",
+    "architectural_notes": "Static preprocessing is done to identify relevant method-invocation sequences and methods relevant for branch outcomes."
+  },
+  "ChatTESTER": {
+    "se_task": "Testing",
+    "se_problem": "Unit-Test Generation",
+    "html": "focal meth code \u2192 <span style=\"background-color: #ecb4cb;\">\u27e8CodeCorresponding-Intent-Verbalization\u27e9</span> \u2192 intent; focal meth sig + intent \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8IntentCorresponding-Test-Generation\u27e9</span> \u2192 unit tests; unit test + error msgs \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8ErrorAware-Test-Correction\u27e9</span> \u2192 unit test.",
+    "architectural_notes": "The iterative test refiner iteratively fixes the compilation errors in the tests generated by the initial test generation. This is done with parsing and analysis of components that build prompts.",
+    "diagram": "images/ChatTESTER.png"
+  },
+  "DiffPrompt": {
+    "se_task": "Testing",
+    "se_problem": "Failure-Inducing Test Generation",
+    "html": "snip \u2192 <span style=\"background-color: #ecb4cb;\">\u27e8CodeCorresponding-Intent-Verbalization\u27e9</span> \u2192 intent; intent \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8IntentCorresponding-Code-Generation\u27e9</span> \u2192 prgms; prgm \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8Test-Generation\u27e9</span> \u2192 test cases.",
+    "architectural_notes": "Single interaction for intent and program generation. Multiple interactions for obtaining test cases that have same result for all generated versions."
+  },
+  "AID": {
+    "se_task": "Testing",
+    "se_problem": "Failure-Inducing Test Generation",
+    "html": "problem description + code \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8IntentCorresponding-Code-Correction\u27e9</span> \u2192 code; problem description \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8ConstraintSatisfying-InputGenerator-Generation\u27e9</span> \u2192 code.",
+    "architectural_notes": "The approach includes differential testing to detect bugs."
+  },
+  "secTests": {
+    "se_task": "Testing",
+    "se_problem": "Failure-Inducing Test Generation",
+    "html": "funct name + client code + vul-id + vul API ids + reference test code \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8Mimicking-Test-Generation\u27e9</span> \u2192 test code on client code.",
+    "architectural_notes": "Study on mimicking generic vulnerability-exploiting test given on client code."
+  },
+  "SymPrompt": {
+    "se_task": "Testing",
+    "se_problem": "Regression Testing",
+    "html": "focal meth sig + type and dependency ctxt + path constr \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8ConstraintSatisfying-Input-Generation\u27e9</span> \u2192 test.",
+    "architectural_notes": "Preprocessing through static analysis techniques to get paths and context."
+  },
+  "RESTGPT": {
+    "se_task": "Testing",
+    "se_problem": "Input Generation",
+    "html": "OpenAPI spec \u2192 <span style=\"background-color: #ecb4cb;\">\u27e8DescriptionCorresponding-Liberal-Constraint-Characterization\u27e9</span> \u2192 struct with constrs, types, format for params [Few-Shot]; OpenAPI spec + prev conv \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8ConstraintSatisfying-Input-Generation\u27e9</span> \u2192 examp for param [Few-Shot].",
+    "architectural_notes": "Improves the treatment of OpenAPI spec, particularly human-readable part. Both tasks are actually performed in a single prompt."
+  },
+  "InputBlaster": {
+    "se_task": "Testing",
+    "se_problem": "Input Generation",
+    "html": "local&global ctxt + NL candidate constrs + (dynamic hint) \u2192 <span style=\"background-color: #ecb4cb;\">\u27e8GUIInputCorresponding-ValidityConstraint-Characterization\u27e9</span> \u2192 inferred constr [Few-Shot]; prev conv + inf constr \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8Valid-GUIInput-Generation\u27e9</span> \u2192 valid input + inferred constr [Few-Shot]; valid input + inferred constr + retrv examp of unusual bug-trigg inputs + (test-exec fdbk on mutant) \u2192 <span style=\"background-color: #ecb4cb;\">\u27e8Effective&Diversified-MutationRule-Characterization\u27e9</span> \u2192 mutation rule [Few-Shot]; mutation rule + (test-exec fdbk on prev generator) \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8InputGenerator-Generation\u27e9</span> \u2192 test-input generator [Few-Shot].",
+    "architectural_notes": "Valid Input Generator (task 1 and 2) is iterated until it makes the APP transfer (elicited as a single prompt). Task 3 and 4 (also elicited in a single prompt) is also iterated and intermediate results are part of the feedback for effectiveness and diversity. DB is built with buggy examples from GitHUB recorded to match the style used in prompt. Also, unusual inputs that triggered crashes during execution of  on the APP. Similarly, it is used to select examples for in-Ctxt Learning."
+  },
+  "PBT-GPT": {
+    "se_task": "Testing",
+    "se_problem": "Input Generation",
+    "html": "API doc + focus meth name \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8Postcondition-Assertion-Generation\u27e9</span> \u2192 prop assertions; API doc + focus meth name \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8InputGenerator-Generation\u27e9</span> \u2192 gen funct; API doc + focus meth name + gen funct conv \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8ParametrizedTest-Generation\u27e9</span> \u2192 prop-based test; API doc + focus meth name \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8PropertyBasedTest-Generation\u27e9</span> \u2192 prop-based test.",
+    "architectural_notes": "Three prompting strategies to generate property-based tests: independently (gen. funct. / property assertion), consecutively (continue conversation after gen. funct.), and together (single big-bang prompt)."
+  },
+  "mrDetector": {
+    "se_task": "Testing",
+    "se_problem": "Input Generation",
+    "html": "shop name + shop type \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8LikelyRecalling-Data-Generation\u27e9</span> \u2192 searching keywords [Few-Shot, CoT]; shop name + shop type + potential recalling sentence \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Answer-Quality(Reasonability)-Judgment\u27e9</span> \u2192 yes/no [Few-Shot]."
+  },
+  "MuTAP": {
+    "se_task": "Testing",
+    "se_problem": "Data Set/ Mutant Generation",
+    "html": "prgm under test \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8Test-Generation\u27e9</span> \u2192 initial unit test (incl assert) [Zero-Shot/Few-Shot]; initial unit test + synt errors \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8ErrorAware-Test-Correction\u27e9</span> \u2192 unit test [Zero-Shot/Few-Shot]; prev conv + mutated code \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8AssertionObservable-Differential-Test-Generation\u27e9</span> \u2192 unit test.",
+    "architectural_notes": "LLMs are invoked in a mutant-based test generation approach."
+  },
+  "BugFarm": {
+    "se_task": "Testing",
+    "se_problem": "Data Set/ Mutant Generation",
+    "html": "method signature + method body + statements to transform \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8BugInjecting-Code-Mutation\u27e9</span> \u2192 transformed code.",
+    "architectural_notes": "LLM is used in the last of the 3 stages that includes method extraction, an a model\u2019s attention to different parts of code to identify where to inject bugs."
+  },
+  "\u00b5BERT": {
+    "se_task": "Testing",
+    "se_problem": "Data Set/ Mutant Generation",
+    "html": "masked-code \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8Code-Completion\u27e9</span> \u2192 code 1...5 [InFiller].",
+    "architectural_notes": "Invoked to predict masked token. Stochasticity used to get 5 completions."
+  },
+  "CHEMFUZZ": {
+    "se_task": "Testing",
+    "se_problem": "Data Set/ Mutant Generation",
+    "html": "prev conv + masked-code \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8Valid&Diversified-Code-Completion\u27e9</span> \u2192 code; exec output \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Behavior-Anomaly-Detection\u27e9</span> \u2192 eval report.",
+    "architectural_notes": "LLM integrated into a fuzzing scheme."
+  },
+  "FormAI": {
+    "se_task": "Testing",
+    "se_problem": "Data Set/ Mutant Generation",
+    "html": "type of prgm + style \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8IntentCorresponding-Code-Generation\u27e9</span> \u2192 prgm.",
+    "architectural_notes": "Generation is the first phase for the construction of a labelled data set for vulnerability analysis."
+  },
+  "LLMorpheus": {
+    "se_task": "Testing",
+    "se_problem": "Data Set/ Mutant Generation",
+    "html": "source code fragment with placeholder + masked orig code \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8DifferentBehavior-Mutation-Generation\u27e9</span> \u2192 (replacement + brief explanation) + ."
+  },
+  "OSS-Fuzz": {
+    "se_task": "Testing",
+    "se_problem": "General Fuzzing",
+    "html": "funct to tgt + project specific info \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8DriverCode-Generation\u27e9</span> \u2192 fuzz driver; funct to tgt + project specific info + compilation errors \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8ErrorAware-Driver-Code-Correction\u27e9</span> \u2192 fuzz driver.",
+    "architectural_notes": "Part of a large project that includes introspection components and fuzzing ones. The description is a best effort from the on-line documentation."
+  },
+  "ChatFuzz": {
+    "se_task": "Testing",
+    "se_problem": "General Fuzzing",
+    "html": "(sample input) 0...1 + (format name) 0...1 \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8File-Variation-Generation\u27e9</span> \u2192 file [(InFiller)].",
+    "architectural_notes": "Use stochasticity to generate seeds in grey-box fuzzing workflow."
+  },
+  "Fuzz4All": {
+    "se_task": "Testing",
+    "se_problem": "General Fuzzing",
+    "html": "doc + (examp) \u2217 + (specs) \u2217 \u2192 <span style=\"background-color: #ecb4cb;\">\u27e8Usage-Summarization</span> <span style=\"background-color: #ecb4cb;\">\u27e9</span> \u2192 distilled usage/funct; usage/funct \u2192 \u27e8UsageSastifying-Input-Generation<span style=\"background-color: #ecb4cb;\">\u27e9</span> \u2192 fuzz inputs; usage/funct + input \u2192 \u27e8SpecificationAware-Input-Mutation<span style=\"background-color: #ecb4cb;\">\u27e9</span> \u2192 mutated input; usage/funct + fuzz input \u2192 \u27e8Input-Variation-Generation<span style=\"background-color: #ecb4cb;\">\u27e9</span> \u2192 fuzz input.",
+    "architectural_notes": "Autoprompting distill user provided inputs. LLM-powered fuzzing loops which resort to generation, mutation and semantically equiv. variant generation. UGCTX [105] : Study of strategies. The two most sophisticated are reported."
+  },
+  "UGCTX": {
+    "se_task": "Testing",
+    "se_problem": "General Fuzzing",
+    "html": "header file + API usage examp + funct name \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8DriverCode-Generation\u27e9</span> \u2192 fuzz driver (); fuzz driver code + errors (compilation, link, run-time) + root cause API usage info \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8ErrorAware-DriverCode-Correction\u27e9</span> \u2192 fuzz driver (EX-ITER)."
+  },
+  "KernelGPT": {
+    "se_task": "Testing",
+    "se_problem": "Kernel Fuzzing",
+    "html": "operation handler code + usage op handl code \u2192 <span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #f3d2b7;\">\u27e8</span></span></span></span> <span style=\"background-color: #f3d2b7;\">CodeElements-Identification\u27e9</span> \u2192 device name + initialization op [Few-Shot] (Driver Detection); ioctl handl funct + assoc helper funct code + (fetched funct & types + prev inferred usage info) \u2192 <span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #f3d2b7;\">\u27e8</span></span></span></span> InfoRequesting-<span style=\"background-color: #f3d2b7;\">CodeElements-Identification\u27e9</span> \u2192 (command values) \u2217 + (further required [functs,types] + usageInfo) [Few-Shot, Iterative Prompting: functs, types] (Command Value); argument to type + prev detected relevant funct code + argument\u2019s usage + (fetched funct code) \u2192 <span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #f3d2b7;\">\u27e8</span></span></span></span> <span style=\"background-color: #f3d2b7;\">InfoRequesting-Type-Identification\u27e9</span> \u2192 argument type + further required (functs) [Few-Shot, Iterative Prompting: functs, types] (Argument Type); type to describe + src-code structs + (fetched snip) \u2192 <span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #f3d2b7;\">\u27e8</span></span></span></span> <span style=\"background-color: #f3d2b7;\">InfoRequesting-Definition-Extraction\u27e9</span> \u2192 type def + further required (nested type) [Iterative Prompting: nested types] (Type Definition); spec -made up identified elements- + errors \u2192 <span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #f3d2b7;\">\u27e8</span></span></span></span>ErrorAware-Specification-Correction\u27e9 \u2192 spec [Few-Shot] (Specification Validation and Repair).",
+    "architectural_notes": "Syscall specification generation for enhancing fuzzing. A kernel code extractor feeds the LLM with the appropriate code snippets when requested. Refine and repair with feedback provided by external specification validation tool."
+  },
+  "SearchGEM5": {
+    "se_task": "Testing",
+    "se_problem": "Compiler/ Simulator Fuzzing",
+    "html": "code \u2192 <span style=\"background-color: #9fd2ec;\"><span style=\"background-color: #ecb4cb;\">\u27e8</span>ParameterizedVersion-Code-Generation<span style=\"background-color: #ecb4cb;\">\u27e9</span></span> \u2192 param version + type of params [Few-Shot]; parameterized version + types \u2192 <span style=\"background-color: #9fd2ec;\"><span style=\"background-color: #ecb4cb;\">\u27e8</span>Valid-Input-Generation<span style=\"background-color: #ecb4cb;\">\u27e9</span></span> \u2192 input sample [Few-Shot]. WhiteFox [99] : expect input format + optimization name + src-code \u2192 <span style=\"background-color: #ecb4cb;\">\u27e8</span> <span style=\"background-color: #ecb4cb;\">CodeReachability-Input-Characterization</span> <span style=\"background-color: #ecb4cb;\">\u27e9</span> \u2192 summ trigger input pattern [Few-Shot]; expected input format + input pattern \u2192 <span style=\"background-color: #ecb4cb;\">\u27e8</span>ConstraintSatisfying-Input-Generation<span style=\"background-color: #ecb4cb;\">\u27e9</span> \u2192 summ trigger input pattern [Few-Shot with feedback loop].",
+    "architectural_notes": "Generates binary inputs for testing an HW-SW architecture simulator. That is, the tool also includes compilation, fuzzing and differential testing. LLM-tasks are elicited by in-chained prompts and a last prompt that requests the parameterized version, sample input and type."
+  },
+  "FuzzingParsers": {
+    "se_task": "Testing",
+    "se_problem": "Protocol/Parser Fuzzing",
+    "html": "name object \u2192 <span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\">\u27e8</span></span></span> <span style=\"background-color: #cae6e4;\">StructureOfObject-Recall</span> <span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\">\u27e9</span></span></span> \u2192 well-formed tree structure; terminal name + (prev examples) \u2192 <span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\">\u27e8</span></span></span> <span style=\"background-color: #cae6e4;\">New-ExampleOfThing-Recall</span> <span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\">\u27e9</span></span></span> \u2192 example; name of parser \u2192 <span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\">\u27e8</span></span></span> <span style=\"background-color: #cae6e4;\">ParsingErrors-Recall</span> <span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\">\u27e9</span></span></span> \u2192 described parsing errors; string + error description \u2192 <span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\">\u27e8</span></span></span>ErrorTriggering-Data-Variation-Generation<span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\">\u27e9</span></span></span> \u2192 string; strings + type \u2192 <span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\">\u27e8</span></span></span>Fuse-Transformation-Data<span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\">\u27e9</span></span></span> \u2192 string.",
+    "architectural_notes": "These tasks belong to seed generation stage. Other stages include fuzzing and preprocessing. ChatAFL [63] : Multiple conversations with the LLM and majority vote for the final grammar. Interaction with editor to generate new seed. Interaction with completer to get message that would move protocol into a new state."
+  },
+  "ChatAFL": {
+    "se_task": "Testing",
+    "se_problem": "Protocol/Parser Fuzzing",
+    "html": "protocol name \u2192 <span style=\"background-color: #cae6e4;\">\u27e8</span> <span style=\"background-color: #cae6e4;\">ProtocolGrammar-Recall</span> <span style=\"background-color: #cae6e4;\">\u27e9</span> \u2192 msg grammar [Few-Shot: expected format]; msg seq + desired additions \u2192 <span style=\"background-color: #cae6e4;\">\u27e8</span>ModificationSpecified-MS-Edition<span style=\"background-color: #cae6e4;\">\u27e9</span> \u2192 msg seq; comm history \u2192 <span style=\"background-color: #cae6e4;\">\u27e8</span>Message-Completion<span style=\"background-color: #cae6e4;\">\u27e9</span> \u2192 msg."
+  },
+  "TitanFuzz": {
+    "se_task": "Testing",
+    "se_problem": "DL-Libraries Fuzzing",
+    "html": "lib name + DL-API + expec tasks/intent \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8</span> <span style=\"background-color: #9fd2ec;\">IntentCorresponding-Code-Generation\u27e9</span> \u2192 code;",
+    "architectural_notes": "Invoked in an evolutionary workflow to generate seeds and complete mutants."
+  },
+  "FuzzGPT": {
+    "se_task": "Testing",
+    "se_problem": "DL-Libraries Fuzzing",
+    "html": "code snip \u2192 <span style=\"background-color: #d6df8c;\">\u27e8APIUsed-Code-MultiClass-Classification\u27e9</span> \u2192 API label [Few-Shot]; name API to be used + code snip \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8ModificationSpecified-Code-Edition\u27e9</span> \u2192 code snip using API; API name \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8BugTriggering-Code-Generation\u27e9</span> \u2192 code [Few-Shot: classif snips, CoT: bug descrip]; API name + prtl code snip \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8BugRevealing-Code-Completion\u27e9</span> \u2192 code.",
+    "architectural_notes": "Data Set (DS) preparation uses Classifier role. Then, random pick from DS and use alternative roles/strategies."
+  },
+  "QTypist": {
+    "se_task": "Testing",
+    "se_problem": "GUI Testing",
+    "html": "input widget type + local ctxt + global ctxt \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8Input-Completion\u27e9</span> \u2192 generated input; masked input + local ctxt + global ctxt \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8Input-InFilling\u27e9</span> \u2192 generated input.",
+    "architectural_notes": "Prompts are generated by a set of rules on context information. Prompt-tuning is also in place. GPTDroid [58] : Tool builds prompts following linguistic patterns instantiated with extracted APP context information. Interaction follows question and answer style, which means in this case that when function being tested and status is yielded by the LLM, another question instructs LLM to yield next action. AXNav [82] : LLM-based UI navigation system to translate from natural language test instructions into a set of concrete steps, execute steps in the plan by calling APIs that interact with a device, and feedback results to the planner when needed."
+  },
+  "GPTDroid": {
+    "se_task": "Testing",
+    "se_problem": "GUI Testing",
+    "html": "prev conv + GUI ctxt + prev action fdbk + functionality-aware memory \u2192 <span style=\"background-color: #d3bfd7;\">\u27e8FunctionCoverageOriented-NextAction-Selection\u27e9</span> \u2192 funct being tested + status + next action [Few-Shot: to define output format]; action + new GUI ctxt + testing memory \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Testing-Status-Analysis\u27e9</span> \u2192 testing status summary."
+  },
+  "AXNav": {
+    "se_task": "Testing",
+    "se_problem": "GUI Testing",
+    "html": "accessibility test instruct + name of app under test + formatted UI element \u2192 <span style=\"background-color: #d3bfd7;\">\u27e8TestGoalCorresponding-Plan-Generation\u27e9</span> \u2192 tentative plan = (task, action descr, justification, eval criteria, status) \u2217 [CoT: justification] (planner); UI rep + test instruct \u2192 <span style=\"background-color: #d3bfd7;\">\u27e8Plan-Refinement\u27e9</span> \u2192 concrete action [CoT: though, relevant UI ids, UI relevant elements] (mapper); test goal + tentative plan + concrete action + assoc thought + UI detections before + UI detections after + eval hints \u2192 <span style=\"background-color: #d6df8c;\">\u27e8PlannedAction-Successfullness-Assessment\u27e9</span> \u2192 eval criteria + result + explanation [CoT: eval criteria] (evaluator); test goal + tentative plan + current step + (field including a stop cond or eval error) \u2192 <span style=\"background-color: #d3bfd7;\">\u27e8StepOutcomeCorresponding-Plan-Correction\u27e9</span> \u2192 updated tentative plan (replanner)."
+  },
+  "TARGET": {
+    "se_task": "Testing",
+    "se_problem": "Functional Testing",
+    "html": "traffic rule \u2192 <span style=\"background-color: #d3bfd7;\">\u27e8DSLValid&TryToUseGivenElements-RuleConsistent-Scenario-Generation\u27e9</span> \u2192 draft scenario-rep [Few-Shot] (Know.Extract.); draft scenario-rep + rules \u2192 <span style=\"background-color: #d3bfd7;\">\u27e8RuleInconsistencies-Scenario-Correction\u27e9</span> \u2192 scenario (Know.Val.); subcomponent scenario-rep + list of elements \u2192 <span style=\"background-color: #d3bfd7;\">\u27e8InListCloseMeaning-Elements-Replacement\u27e9</span> \u2192 scenario (Syntax Alignm.).",
+    "architectural_notes": "Takes three phases to parse a traffic rule description to an executable driving scenario in a simulator. LLM addresses first processing phase. ScenarioNL [22] : ScenarioNL allows users to specify a model and prompting technique. Scenic database is used to store and retrieve semantically similar examples. SysKG-UTF [78] : LLMs play different roles in the construction and post-processing of a knowledge graph for exploratory testing."
+  },
+  "ScenarioNL": {
+    "se_task": "Testing",
+    "se_problem": "Functional Testing",
+    "html": "crash incident report \u2192 <span style=\"background-color: #ecb4cb;\">\u27e8Focused-Summarization\u27e9</span> \u2192 relevant dynamics + static objects [ToT: experts debate]; crash incident report + relevant objects \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Ambiguity-Analysis\u27e9</span> \u2192 questions to disambiguate; crash incident report + question to disambiguate \u2192 <span style=\"background-color: #d6df8c;\">\u27e8ExpertSolvedUncertainty-TextDependent-QuestionAnswering\u27e9</span> \u2192 answers [ToT: experts debate]; relevant objects + properties \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8ProbabilisticProgram-Generation\u27e9</span> \u2192 Program (part) [Few-Shot + RAG or HyDE, Function Calling: GPL2DSL].",
+    "architectural_notes": "allows users to specify a model and prompting technique. Scenic database is used to store and retrieve semantically similar examples."
+  },
+  "LLMeDiff": {
+    "se_task": "Testing",
+    "se_problem": "Functional Testing",
+    "html": "rule \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8Pass+Fail+N/A-Test-Generation\u27e9</span> \u2192 test + confidence."
+  },
+  "SysKG-UTF": {
+    "se_task": "Testing",
+    "se_problem": "Functional Testing",
+    "html": "bug reports \u2192 <span style=\"background-color: #f3d2b7;\">\u27e8</span> <span style=\"background-color: #f3d2b7;\">StructureCompliant-Information-Extraction</span> <span style=\"background-color: #f3d2b7;\">\u27e9</span> \u2192 preconds + steps to reprod (S2R) + obs behav + expect behav [Few-Shot]; S2R \u2192 <span style=\"background-color: #f3d2b7;\">\u27e8</span>StepsToReproduce-Refinement<span style=\"background-color: #f3d2b7;\">\u27e9</span> \u2192 (finer grained) S2R [Few-Shot]; bug scenario pair (incl S2R) \u2192 <span style=\"background-color: #f3d2b7;\">\u27e8</span>FeasibilityRedundancyAware-StepsToReproduce-Fusing(edition)<span style=\"background-color: #f3d2b7;\">\u27e9</span> \u2192 S2R [Few-Shot, CoT: pseudo-code guided interm assess]; bug scenario pair + potential (fused) S2R \u2192 <span style=\"background-color: #f3d2b7;\">\u27e8</span>FeasibilityAware-StepsToReproduce-Refinement<span style=\"background-color: #f3d2b7;\">\u27e9</span> \u2192 S2R [Few-Shot, CoT: assess].",
+    "architectural_notes": "LLMs play different roles in the construction and post-processing of a knowledge graph for exploratory testing."
+  },
+  "PentestGPT": {
+    "se_task": "Testing",
+    "se_problem": "Penetration Testing",
+    "html": "user-intents \u2192 <span style=\"background-color: #d3bfd7;\">\u27e8IntentCorresponding-Plan-Generation</span> <span style=\"background-color: #d3bfd7;\">\u27e9</span> \u2192 penetration task tree (ptt) (1); testing results + ptt \u2192 \u27e8Elements-Update<span style=\"background-color: #d3bfd7;\">\u27e9</span> \u2192 ptt (2); ptt + updated ptt \u2192 \u27e8Validity-Transition-Analysis<span style=\"background-color: #d3bfd7;\">\u27e9</span> \u2192 result (3); ptt \u2192 \u27e8RulesSatisfying-Information-Extraction<span style=\"background-color: #d3bfd7;\">\u27e9</span> \u2192 (potential next task) + (4); ptt + tasks \u2192 \u27e8MostPromising-NextTask-Selection<span style=\"background-color: #d3bfd7;\">\u27e9</span> \u2192 sugg next task (5); sub-task + avail tools \u2192 \u27e8ToolsConstrained-Plan-Generation<span style=\"background-color: #d3bfd7;\">\u27e9</span> \u2192 seq of steps [CoT] (6); step \u2192 \u27e8Plan-Refinement<span style=\"background-color: #d3bfd7;\">\u27e9</span> \u2192 cmd [CoT] (7);",
+    "architectural_notes": "It incorporates three core modules: the Reasoning Module (1\u20135), the Generation Module (6,7), and the Parsing Module (8) (each reserving an LLM session). Active user feedback is possible."
+  },
+  "pwn\u2019d": {
+    "se_task": "Testing",
+    "se_problem": "Penetration Testing",
+    "html": "scenario \u2192 <span style=\"background-color: #d3bfd7;\">\u27e8ScenarioCorresponding-Plan-<span style=\"background-color: #d3bfd7;\">Generation\u27e9</span></span> \u2192 pen-test plan [Agent GPT]; goal + prev conv + last cmd output \u2192 <span style=\"background-color: #d3bfd7;\">\u27e8ReachabilityOriented-NextAction-</span> <span style=\"background-color: #d3bfd7;\">Generation\u27e9</span> \u2192 cmd; cmd + output \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Rationalized-VulnerabilityProneness-CommandExecution-Mul-</span> <span style=\"background-color: #d6df8c;\">tiLabel-Classification\u27e9</span> \u2192 potential vul.",
+    "architectural_notes": "High-level task planning uses mechanisms to integrate LLMs as agents (AutoGPT). Low-level vector attack works as a step by step reactive execution of plan."
+  },
+  "SELF-DEBUGGING": {
+    "se_task": "Debugging",
+    "se_problem": "Fault Localization",
+    "html": "code snippet + code snippet + input + feedback \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Differences-RootCause-Analysis\u27e9</span> \u2192 execution-based analysis [Few-Shot, CoT: <span style=\"background-color: #d3bfd7;\">trace execution</span> ] (C++-TO-PYTHON).",
+    "architectural_notes": "For the Generation step, given the problem description, the model predicts candidate programs (not shown in this report). Explanation step, the model is prompted to process the predictions in a \u201csemantically useful way\u201d, such as explaining the prediction (and reference NL query for SQL query generation, source program for translation program) in natural language. Correctness is then predicted by different tasks depending on the code generation/translation problem. Here we show how this can be determined by asking the model itself to work as oracle of correctness. Generation, explanation, evaluation and repair are chained in demonstrations.<br>For the Generation step, given the problem description, the model predicts candidate programs (not shown in this report). The fault detection is performed by creating an execution trace of the predicted code for a sample input."
+  },
+  "nl2postcondition": {
+    "se_task": "Testing",
+    "se_problem": "Oracle Problem",
+    "html": "intent + (refer impl) 0...1 \u2192 <span style=\"background-color: #ecb4cb;\">\u27e8PostCondition-</span> <span style=\"background-color: #ecb4cb;\">Formalization\u27e9</span> \u2192 assertions."
+  },
+  "TOGLL": {
+    "se_task": "Testing",
+    "se_problem": "Oracle Problem",
+    "html": "test prefix + MUT code + MUT doc \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8Assertion-Generation\u27e9</span> \u2192 assertion.",
+    "architectural_notes": "Six different prompts are studied. We report one with the richest context (P6)."
+  },
+  "Eywa": {
+    "se_task": "Testing",
+    "se_problem": "Oracle Problem",
+    "html": "funct defs + arguments + result + validity constraints \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8ProtocolModelImplementation-Generation\u27e9</span> \u2192 model code.",
+    "architectural_notes": "LLM is used to generate protocol model code. Symbolic execution is further used to generate test cases.-"
+  },
+  "PropertyGPT": {
+    "se_task": "Testing",
+    "se_problem": "Oracle Problem",
+    "html": "base rule code + funct code under test + contract src-code \u2192 <span style=\"background-color: #9fd2ec;\"><span style=\"background-color: #9fd2ec;\"><span style=\"background-color: #9fd2ec;\">\u27e8</span>Similar-Assertion-Generation\u27e9</span></span> \u2192 rule code [RAG: base rule code]; base pre/post + funct under test \u2192 <span style=\"background-color: #9fd2ec;\"><span style=\"background-color: #9fd2ec;\"><span style=\"background-color: #9fd2ec;\">\u27e8</span>Similar-Assertion-Generation\u27e9</span></span> \u2192 funct- level pre/post [RAG: base pre/post]; rule code + contract src-code + error info + funct under test name \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8</span> <span style=\"background-color: #9fd2ec;\">ErrorAware-Assertion-Correction\u27e9</span> \u2192 rule code; rule code + contract src-code + base rule code + missing funct under test name \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8</span>MissingFunction-Assertion-Correction\u27e9 \u2192 rule code.",
+    "architectural_notes": "Uses Retrieval augmented generation by providing relevant specifications to be based on."
+  },
+  "ClarifyGPT": {
+    "se_task": "Testing",
+    "se_problem": "Oracle Problem",
+    "html": "MUT sig + doc \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8IntentCorresponding-Code-Generation\u27e9</span> \u2192 (code) \u2217 ; MUT sig + doc \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8Basic&Edge-TestInput-Generation\u27e9</span> \u2192 (test) + [Few-Shot]; req + (code of alt sol) + \u2192 <span style=\"background-color: #ecb4cb;\">\u27e8CodeDifferences-Verbalization\u27e9</span> \u2192 descr and diffs [Few-Shot]; req + alt sol descr and diffs \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Ambiguity-Analysis\u27e9</span> \u2192 clarifying questions [Few-Shot].",
+    "architectural_notes": "Intention clarification is part of this code generation approach. Generated inputs (and mutations) are used to cluster solutions. Differences analysis and clarifying questions are actually performed by a single prompt."
+  },
+  "CEDAR": {
+    "se_task": "Testing",
+    "se_problem": "Oracle Problem",
+    "html": "focal meth + unit-test snip \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8Assertion-Generation\u27e9</span> \u2192 assert [Few-Shot + RAG: retrv demo (U-Test snip)].",
+    "architectural_notes": "General demonstration retrieval method illustrated in assertion generation. Neural and frequency-based techniques for retrieval."
+  },
+  "PROSPER": {
+    "se_task": "Testing",
+    "se_problem": "Oracle Problem",
+    "html": "RFC doc. \u2192 <span style=\"background-color: #f3d2b7;\">\u27e8</span> <span style=\"background-color: #f3d2b7;\">FSM-Elements-Extraction\u27e9</span> \u2192 FSM-elements [Few-Shot]."
+  },
+  "EMR": {
+    "se_task": "Testing",
+    "se_problem": "Oracle Problem",
+    "html": "req doc \u2192 <span style=\"background-color: #f3d2b7;\">\u27e8</span> <span style=\"background-color: #f3d2b7;\">IORelated-Sentences-Identification\u27e9</span> \u2192 I/O sentences; I/O sentences \u2192 <span style=\"background-color: #f3d2b7;\">\u27e8</span>SentenceDerivable-MethamorpicRelation-Characterization\u27e9 \u2192 metamorphic relation (MR); MR + SUT API + SUT docum \u2192 <span style=\"background-color: #f3d2b7;\">\u27e8</span>RequirementsDerivable-ExecutionMethamor- <span style=\"background-color: #9fd2ec;\">picRelations-Generation\u27e9</span> \u2192 executable metamorphic relations [Few-Shot: DSL].",
+    "architectural_notes": "Initial study on generating metamorphic relations from documentation and executable metamorphic relations. Some details on prompt engineering are not provided and are conjectural."
+  },
+  "GameBugDescriptions": {
+    "se_task": "Testing",
+    "se_problem": "Oracle Problem",
+    "html": "video game name + scenario + perspective (e.g. game designer, player, real-world) \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Scenario-AccordingToPerspective-</span> <span style=\"background-color: #d6df8c;\">Anomaly-Detection<span style=\"background-color: #ecb4cb;\">\u27e9</span></span> \u2192 thought; prev conv \u2192 <span style=\"background-color: #ecb4cb;\">\u27e8Answer-FailureOriented-Summarization</span> <span style=\"background-color: #ecb4cb;\">\u27e9</span> \u2192 buggy event (Answer Extraction)."
+  },
+  "MetaMorph": {
+    "se_task": "Testing",
+    "se_problem": "Oracle Problem",
+    "html": "doc snip \u2192 <span style=\"background-color: #f3d2b7;\">\u27e8</span> <span style=\"background-color: #f3d2b7;\">VariableNames-Identification\u27e9</span> \u2192 vars [Few- Shot]."
+  },
+  "ALGO": {
+    "se_task": "Testing",
+    "se_problem": "Oracle Problem",
+    "html": "prob formul + in/out examp \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8BruteForce-IntentCorrespond-</span> <span style=\"background-color: #9fd2ec;\">ing-Code-Generation\u27e9</span> \u2192 implem.",
+    "architectural_notes": "This (oracle synthesis) is part of a program generation framework. Program generation may use implicit or explicit search (e.g., algorithmic ideas)."
+  },
+  "AdbGPT": {
+    "se_task": "Debugging",
+    "se_problem": "Bug Reproduction",
+    "html": "bug report \u2192 <span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #d3bfd7;\">\u27e8</span></span> <span style=\"background-color: #f3d2b7;\">StepsToReproduce-Extraction\u27e9</span> \u2192 steps to reprod [Few-Shot, CoT]; view hierarchy of the GUI + step \u2192 <span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #d3bfd7;\">\u27e8</span></span>Plan-Refinement\u27e9 \u2192 component to operate [Few-Shot, CoT]. CrashTranslator [37] : manifested page names + curr page + crash page \u2192 <span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #d3bfd7;\">\u27e8</span></span> <span style=\"background-color: #d3bfd7;\">ReachabilityOriented-NextNode-Selection\u27e9</span> \u2192 next page [Zero-Shot, LLM fine-tuned with APPs transition relations]; manifested page names + current page + crash page + next page + interactible widgets \u2192 <span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #d3bfd7;\">\u27e8</span></span>ReachabilityOrientedWithSuggestedNextNode-NextAction-Selection\u27e9 \u2192 widget [Zero-Shot, LLM fine-tuned with targeted GUI page and transfer widget]."
+  },
+  "LIBRO": {
+    "se_task": "Debugging",
+    "se_problem": "Bug Reproduction",
+    "html": "bug report + (stack trace) 0...1 \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8BugReproducing-Test-</span> <span style=\"background-color: #9fd2ec;\">Generation\u27e9</span> \u2192 test meth [Few-Shot].",
+    "architectural_notes": "LLM works as first component of tool chain. A set of test candidates are generated by querying the LLM multiple times."
+  },
+  "Cupid": {
+    "se_task": "Debugging",
+    "se_problem": "Bug Report Analysis",
+    "html": "bug report \u2192 <span style=\"background-color: #f3d2b7;\">\u27e8</span> <span style=\"background-color: #f3d2b7;\">AimedAtDuplicateDetection-Keywords-Extraction</span> <span style=\"background-color: #f3d2b7;\">\u27e9</span> \u2192 keywords.",
+    "architectural_notes": "LLM plays a punctual role into a traditional solution for duplicate bug report."
+  },
+  "AutoFL": {
+    "se_task": "Debugging",
+    "se_problem": "Fault Localization",
+    "html": "failing test info \u2192 <span style=\"background-color: #d6df8c;\">\u27e8RootCause-Analysis\u27e9</span> \u2192 root cause [ReAct: funct calls for debugging]; prev conv \u2192 <span style=\"background-color: #ecb4cb;\">\u27e8Answer-FaultOriented-Summarization\u27e9</span> \u2192 culprit.",
+    "architectural_notes": "Two stages: root cause explanation and bug location. LLM uses function calling."
+  },
+  "AutoSD": {
+    "se_task": "Debugging",
+    "se_problem": "Fault Localization",
+    "html": "funct meth + tests + err msg + (reports) 0...1 \u2192 <span style=\"background-color: #d6df8c;\">\u27e8RootCause-</span> <span style=\"background-color: #d6df8c;\">Analysis\u27e9</span> \u2192 hypoth + prediction + experiment; hypoth + predict + experiment + exp observation \u2192 <span style=\"background-color: #d6df8c;\">\u27e8EvidenceSupport-</span> <span style=\"background-color: #d6df8c;\">Judgment\u27e9</span> \u2192 conclusion; prev conv \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8DebuggingAware-Code-Generation\u27e9</span> \u2192 fixed code.",
+    "architectural_notes": "Chained interaction of LLMs with executing engines."
+  },
+  "LLM4CBI": {
+    "se_task": "Debugging",
+    "se_problem": "Fault Localization",
+    "html": "prgm + mutation instr + validity fdbk \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8MutationSpecified-</span> <span style=\"background-color: #9fd2ec;\">Code-Mutation\u27e9</span> \u2192 prgm.",
+    "architectural_notes": "Generation of prompts uses ad-hoc static analysis. Then they are selected, executed and modified in a RL workflow that includes some classic localization techniques."
+  },
+  "ChatGPT-4(Log)": {
+    "se_task": "Debugging",
+    "se_problem": "Fault Localization",
+    "html": "focal source faulty code \u2192 <span style=\"background-color: #d6df8c;\">\u27e8FaultProneness-Code-</span> <span style=\"background-color: #d6df8c;\">Lines-Ranking\u27e9</span> \u2192 ordered list of lines and reason [CoT: <span style=\"background-color: #ecb4cb;\">funct intent</span> , reason per line]; prev conv + test case + error \u2192 <span style=\"background-color: #d6df8c;\">\u27e8TestResultAware-FaultProneness-CodeLines-</span> <span style=\"background-color: #d6df8c;\">ReRanking\u27e9</span> \u2192 intent + ordered list of lines and reason.",
+    "architectural_notes": "Empirical study of LLMs proficiency. Code context is modified in the controlled experiment to assess impact."
+  },
+  "RCACopilot": {
+    "se_task": "Debugging",
+    "se_problem": "Root Cause Analysis",
+    "html": "diagnostic info \u2192 <span style=\"background-color: #ecb4cb;\"><span style=\"background-color: #f3d2b7;\">\u27e8</span>RootCauseOriented-Summarization</span> <span style=\"background-color: #ecb4cb;\">\u27e9</span> \u2192 summ diag (incident summarization); incident summ + list close categorized historic incidents \u2192 <span style=\"background-color: #f3d2b7;\">\u27e8</span> <span style=\"background-color: #f3d2b7;\">Common-Root-</span> Cause-Selection<span style=\"background-color: #ecb4cb;\">\u27e9</span> \u2192 root cause + category [CoT: explanation].",
+    "architectural_notes": "Diagnostic information collection stage is performed before prediction. Tasks are core part of larger solution."
+  },
+  "x-lifecycle": {
+    "se_task": "Debugging",
+    "se_problem": "Root Cause Analysis",
+    "html": "service descr \u2192 <span style=\"background-color: #ecb4cb;\">\u27e8RootCauseOriented-Summarization</span> <span style=\"background-color: #ecb4cb;\">\u27e9</span> \u2192 summ svc descr;",
+    "architectural_notes": "Vector data base is used for Retrieval Augmented Generation."
+  },
+  "RCAAgents": {
+    "se_task": "Debugging",
+    "se_problem": "Root Cause Analysis",
+    "html": "initial incident info \u2192 <span style=\"background-color: #d6df8c;\">\u27e8RootCause-Analysis\u27e9</span> \u2192 root cause [ReAct: rqst for details, rqst for historical inc, query on retrieved inc]; retrv text + query \u2192 <span style=\"background-color: #d6df8c;\">\u27e8TextDependent-QuestionAnswering\u27e9</span> \u2192 answer.",
+    "architectural_notes": "Vector data base to search for historical incidents."
+  },
+  "LM-PACE": {
+    "se_task": "Debugging",
+    "se_problem": "Root Cause Analysis",
+    "html": "(incident, root cause) + + curr incident + (guessed root cause) \u2192 <span style=\"background-color: #d6df8c;\">\u27e8SufficiencyToInferAnswer-Assessment\u27e9</span> \u2192 analysis; prev conv \u2192 <span style=\"background-color: #ecb4cb;\">\u27e8Assessment-Yes/No-Summarization\u27e9</span> \u2192 yes/no (1); relevant-incids with root causes + curr incid + answ root cause \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Answer-</span> <span style=\"background-color: #d6df8c;\">Qlty(Truth, Ground, Informative)-Assessment\u27e9</span> \u2192 analysis;",
+    "architectural_notes": "Focus on confidence estimation and calibration. Root cause generation is a black box that can be addressed by LLMs as well. Relevant incidents came from historical-DB (semantic similarity-based retriever). Confidence of Evaluation (COE-score) and Root-Cause-Evaluation (RCE-score) are obtained from (1) and (2) resp. multiple sampling on LLMs. COE and RCE scores are the input of an optimization procedure to build a model to predict calibrated confidence score. In deployment phase, predicted root cause and calibrated confidence score is yield to on-call engineers. inContextRCA [110] : Vector data base is populated with summarized incidents and root causes."
+  },
+  "inContextRCA": {
+    "se_task": "Debugging",
+    "se_problem": "Root Cause Analysis",
+    "html": "report \u2192 <span style=\"background-color: #ecb4cb;\">\u27e8RootCauseOriented-Summarization\u27e9</span> \u2192 incident + root cause; incident report \u2192 <span style=\"background-color: #d6df8c;\">\u27e8RootCause-Analysis\u27e9</span> \u2192 root cause [Few-Shot: similar examples]."
+  },
+  "ChatGPT4vul": {
+    "se_task": "Vulnerability/Misuse/Malware/Fault Detection",
+    "se_problem": "Vulnerability Detection",
+    "html": "src-code \u2192 <span style=\"background-color: #d6df8c;\">\u27e8VulnerabilityProneness-Code-OneClass-</span> <span style=\"background-color: #d6df8c;\">Classification\u27e9</span> \u2192 yes/no; prev conv \u2192 <span style=\"background-color: #d6df8c;\">\u27e8VulnerabilityProneness-CodeLines-Ranking\u27e9</span> \u2192 list; src-code + (tgt CWD-ID) + \u2192 <span style=\"background-color: #d6df8c;\">\u27e8ListTargeted-CWEVulnerabilityProneness-Code-</span> MultiLabel-<span style=\"background-color: #d6df8c;\">Classification\u27e9</span> \u2192 CWD-ID; src-code \u2192 <span style=\"background-color: #d6df8c;\">\u27e8CVSS-Scoring\u27e9</span> \u2192 score.",
+    "architectural_notes": "Study of profi- ciency. It includes repair prompts (not reported here)."
+  },
+  "VulBench": {
+    "se_task": "Vulnerability/Misuse/Malware/Fault Detection",
+    "se_problem": "Vulnerability Detection",
+    "html": "snip + (vul classes) 0...1 \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Rationalized-ListTargeted-CWE-</span> <span style=\"background-color: #d6df8c;\">VulnerabilityProneness-Code-MultiLabel-Classification\u27e9</span> \u2192 vul verdict + (vul class) 0...1 + step by step explanation [Few-Shot: \u2208 project \u2014 \u2208\u0338 project, CoT].",
+    "architectural_notes": "Study including alter- native prompting strategies."
+  },
+  "NLBSE24": {
+    "se_task": "Vulnerability/Misuse/Malware/Fault Detection",
+    "se_problem": "Vulnerability Detection",
+    "html": "code snippet \u2192 <span style=\"background-color: #d6df8c;\">\u27e8VulnerabilityProneness-Code-OneClass-</span> <span style=\"background-color: #d6df8c;\">Classification\u27e9</span> \u2192 yes/no; code snippet + intended functionality \u2192 <span style=\"background-color: #d6df8c;\">\u27e8GivenIntentionCorrespondence-Code-</span> OneClass-<span style=\"background-color: #d6df8c;\">Classification\u27e9</span> \u2192 yes/no.",
+    "architectural_notes": "This evaluation also in- cludes tasks versions that take previous labels as inputs."
+  },
+  "VulDetect": {
+    "se_task": "Vulnerability/Misuse/Malware/Fault Detection",
+    "se_problem": "Vulnerability Detection",
+    "html": "tgt code snippet \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Rationalized-CWEVulnerabilityProne-</span> <span style=\"background-color: #d6df8c;\"><span style=\"background-color: #d6df8c;\">ness-Code-MultiLabel-Classification\u27e9</span></span> \u2192 yes/no + vul type + vul name + explanation; tgt code snip + tgt CWE \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Rationalized-ListTargeted-CWEVulnerabilityProne-</span> <span style=\"background-color: #d6df8c;\"><span style=\"background-color: #d6df8c;\">ness-Code-MultiLabel-Classification\u27e9</span></span> \u2192 yes/no + vul type + vul name + explanation;  tgt code snip + CWE-DF \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Rationalized-DataFlowTargeted-CWEVulnerabil</span> i- tyProne<span style=\"background-color: #d6df8c;\"><span style=\"background-color: #d6df8c;\">ness-Code-MultiLabel-Classification\u27e9</span></span> \u2192 yes/no + vul type + vul name + data-flow explanation; query + data-flow-analysis \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Answer-Quality-Assessment\u27e9</span> \u2192 yes/no + ex- planation + final verdict.",
+    "architectural_notes": "Study including al ternative prompting strategies. Self-reflection is one option."
+  },
+  "GRACE": {
+    "se_task": "Vulnerability/Misuse/Malware/Fault Detection",
+    "se_problem": "Vulnerability Detection",
+    "html": "code snippet + code property graph \u2192 <span style=\"background-color: #d6df8c;\">\u27e8CPGEnhanced-Vulner-</span> <span style=\"background-color: #d6df8c;\">abilityProneness-Code-OneClass-Classification\u27e9</span> \u2192 yes/no [Few-Shot: retrieved demonstration].",
+    "architectural_notes": "We report the enhanced vulnerability detection module. The approach also consist in a demonstration selection module and a graph structure information generation module."
+  },
+  "VSP": {
+    "se_task": "Vulnerability/Misuse/Malware/Fault Detection",
+    "se_problem": "Vulnerability Detection",
+    "html": "src-code \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Rationalized-CWEVulnerabilityProneness-Code-MultiL-</span> <span style=\"background-color: #d6df8c;\">abel-Classification\u27e9</span> \u2192 list CWEs [Few-Shot, CoT]; src-code + CWE id \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Rationalized-IdTargeted-CWEVulnerabilityProneness-</span> <span style=\"background-color: #d6df8c;\">Code-OneClass-Classification\u27e9</span> \u2192 yes/no + reason [Few-Shot, CoT]. AIagent [75]: (vul type name + caveat) + + src-code \u2192 <span style=\"background-color: #d6df8c;\">\u27e8ListTargeted-CWE-</span> <span style=\"background-color: #d6df8c;\">VulnerabilityProneness-CodeLine-MultiClass-Classification\u27e9</span> \u2192 result (category"
+  },
+  "DLAP": {
+    "se_task": "Vulnerability/Misuse/Malware/Fault Detection",
+    "se_problem": "Vulnerability Detection",
+    "html": "code-snippet + (snippet + label + probability) + \u2192 <span style=\"background-color: #d6df8c;\">\u27e8</span> <span style=\"background-color: #d6df8c;\">GivenExamples-VulnerabilityProneness-Code-MultiLabel-Soft-Classification</span> <span style=\"background-color: #d6df8c;\">\u27e9</span> \u2192 label + prediction (Super ICL); guidance steps + code to review + potential vulnerability \u2192 <span style=\"background-color: #d6df8c;\">\u27e8</span>Plan-Refinement<span style=\"background-color: #d6df8c;\">\u27e9</span> \u2192 specific review-steps (Bespoke CoT Guidance); code + prob prediction + specific review-steps \u2192 <span style=\"background-color: #d6df8c;\">\u27e8</span>Rationalized-Re- <span style=\"background-color: #d6df8c;\">viewStepsEnhanced-IdTargeted-CWEVulnerabilityProneness-Code-OneClass-</span> Soft-Classification<span style=\"background-color: #d6df8c;\">\u27e9</span> \u2192 vulnerability+prob+reason [CoT: reason] (Final Prompt).",
+    "architectural_notes": "DL models are used to generate a prediction probability that serve as reference input for LLM assessment. LHS is used to find similar code. Static analysis results are key to query to obtain customized CoT generation guidance templates."
+  },
+  "MultiTask": {
+    "se_task": "Vulnerability/Misuse/Malware/Fault Detection",
+    "se_problem": "Vulnerability Detection",
+    "html": "code snippet \u2192 <span style=\"background-color: #d6df8c;\">\u27e8VulnerabilityProneness-Code-OneClass-</span> <span style=\"background-color: #d6df8c;\">Classification<span style=\"background-color: #d6df8c;\"><span style=\"background-color: #d6df8c;\">\u27e9</span></span></span> \u2192 yes/no (Detection); code snippet \u2192 <span style=\"background-color: #d6df8c;\">\u27e8CVSS-Scoring<span style=\"background-color: #d6df8c;\"><span style=\"background-color: #d6df8c;\">\u27e9</span></span></span> \u2192 score (Assessment); code snippet \u2192 <span style=\"background-color: #d6df8c;\">\u27e8VulnerabilityProneness-CodeLine-OneClass-Classification</span> <span style=\"background-color: #d6df8c;\"><span style=\"background-color: #d6df8c;\">\u27e9</span></span> \u2192 lines (Location); code snippet \u2192 <span style=\"background-color: #d6df8c;\">\u27e8CWE-VulnerabilityProneness-Code-MultiLabel-Classification</span> <span style=\"background-color: #d6df8c;\"><span style=\"background-color: #d6df8c;\">\u27e9</span></span> \u2192 (CWE + description) \u2217 (Description)."
+  },
+  "PromptEnhanced": {
+    "se_task": "Vulnerability/Misuse/Malware/Fault Detection",
+    "se_problem": "Vulnerability Detection",
+    "html": "src-code \u2192 <span style=\"background-color: #ecb4cb;\"><span style=\"background-color: #d6df8c;\">\u27e8</span>CodeCorresponding-Intent-</span> <span style=\"background-color: #ecb4cb;\">Verbalization\u27e9</span> \u2192 intent; src-code + intent + (API call seq) + (data-flow descr) \u2192 <span style=\"background-color: #d6df8c;\">\u27e8</span> <span style=\"background-color: #d6df8c;\">(APICalls)/(DataFlow)Enhanced-VulnerabilityProneness-Code-OneClass-</span> <span style=\"background-color: #d6df8c;\">Classification\u27e9</span> \u2192 yes/no.",
+    "architectural_notes": "Study on different prompting strategies. It actually tries unsuccessfully to generate data-flow and API calls by using LLM too (property characterization, in our terms)."
+  },
+  "ChatGPT(Plus)": {
+    "se_task": "Vulnerability/Misuse/Malware/Fault Detection",
+    "se_problem": "Vulnerability Detection",
+    "html": "project info + ext src knowl (top CWE) + src-code to analyze \u2192 <span style=\"background-color: #d6df8c;\">\u27e8(CWE+GivenVulnDescr)VulnerabilityPronenes</span> s <span style=\"background-color: #d6df8c;\">-Code-OneClass-</span> <span style=\"background-color: #d6df8c;\">Classification\u27e9</span> \u2192 yes/no [Few-Shot: K-examp either (random)/Few-Shot + AG: simil code to analyze].",
+    "architectural_notes": "Study of profi- ciency of GPTs vs fine-tuned version."
+  },
+  "FLAG": {
+    "se_task": "Vulnerability/Misuse/Malware/Fault Detection",
+    "se_problem": "Line-Level/Edit-Time Fault/API Misuse Prediction",
+    "html": "prefix snippet + (suffix snippet) + (prefix of line to be guessed) \u2192 <span style=\"background-color: #9fd2ec;\"><span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\">\u27e8</span></span>ContextConsistent-Line-Completion<span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\"><span style=\"background-color: #d6df8c;\"><span style=\"background-color: #d6df8c;\">\u27e9</span></span></span></span></span> \u2192 code line. EditTime [8]: \u2192 <span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\">\u27e8</span></span> <span style=\"background-color: #cae6e4;\">Definition-Recall</span> <span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\"><span style=\"background-color: #d6df8c;\"><span style=\"background-color: #d6df8c;\">\u27e9</span></span></span></span> \u2192 vul task descrip; code language + vul type \u2192 <span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\">\u27e8</span></span> <span style=\"background-color: #cae6e4;\">Example-Recall</span> <span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\"><span style=\"background-color: #d6df8c;\"><span style=\"background-color: #d6df8c;\">\u27e9</span></span></span></span> \u2192 examp; code snip \u2192 <span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\">\u27e8</span></span>Rationalized-VulnerabilityProneness-Code-OneClass-Classification <span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\"><span style=\"background-color: #d6df8c;\"><span style=\"background-color: #d6df8c;\">\u27e9</span></span></span></span> \u2192 yes/no + explan; code snip \u2192 <span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\">\u27e8</span></span>Rationalized-VulnerabilityProneness-Code-OneClass-Classification <span style=\"background-color: #cae6e4;\"><span style=\"background-color: #cae6e4;\"><span style=\"background-color: #d6df8c;\"><span style=\"background-color: #d6df8c;\">\u27e9</span></span></span></span> \u2192 yes/no + explan [Few-Shot: recalled examp].",
+    "architectural_notes": "LLM is used as line genera- tor (preprocessor). A bounded number of attempts with hints is tried to get non empty line. Feature extraction based on edit distances and Bleu. Logprobs of tokens are used when available. Classification is done based on such features."
+  },
+  "WitheredLeaf": {
+    "se_task": "Vulnerability/Misuse/Malware/Fault Detection",
+    "se_problem": "Line-Level/Edit-Time Fault/API Misuse Prediction",
+    "html": "code \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Rationalized-SemanticBugPresence-CodeLine-</span> <span style=\"background-color: #d6df8c;\"><span style=\"background-color: #d6df8c;\">OneClass-Classi<span style=\"background-color: #9fd2ec;\">fi</span>catio</span>n\u27e9</span> \u2192 yes/no + (line + reason) + ;  (code line + reason) + \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Warnings-Irrelevance-Filtering\u27e9</span> \u2192 (line + reason) + ;  code line + reason \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Rationalized-BugFixabilityByNameChange-CodeLine-</span> <span style=\"background-color: #d6df8c;\">OneClass-Classi<span style=\"background-color: #9fd2ec;\">fi</span>catio</span> n\u27e9 \u2192 yes/no + <span style=\"background-color: #9fd2ec;\">fi</span>xed-line [CoT: <span style=\"background-color: #9fd2ec;\">fi</span> x];  prev conv + code line + reason \u2192 <span style=\"background-color: #d6df8c;\">\u27e8ListSemiTargeted-BugCategory-BugExpla-</span> nation-MultiClass-Classi<span style=\"background-color: #9fd2ec;\">fi</span>cation\u27e9 \u2192 category.",
+    "architectural_notes": "Lightweight, open- source models (e.g., infilling ones) are used to identify suspicious program entities as a preprocessing step. Last tasks are implemented by same prompt."
+  },
+  "LLMAPIDet": {
+    "se_task": "Vulnerability/Misuse/Malware/Fault Detection",
+    "se_problem": "Line-Level/Edit-Time Fault/API Misuse Prediction",
+    "html": "code before + code after \u2192 <span style=\"background-color: #ecb4cb;\"><span style=\"background-color: #d6df8c;\">\u27e8</span>RootCauseOriented-Change-</span> <span style=\"background-color: #ecb4cb;\">Action-Verbalization\u27e9</span> \u2192 rule [Few-Shot]; code snip (incl. API usage) \u2192 <span style=\"background-color: #ecb4cb;\"><span style=\"background-color: #d6df8c;\">\u27e8</span>CodeCorresponding-Intent-Generation\u27e9</span> \u2192 NL description; code snip + API usage + (potential misuses rules) \u2192 <span style=\"background-color: #d6df8c;\">\u27e8</span> <span style=\"background-color: #d6df8c;\">GivenAPIMisuseRulesCompliance-Code-OneClass-Classification\u27e9</span> \u2192 yes/no [RAG].",
+    "architectural_notes": "Study on DL API Misuse Root Causes that feed LLM-based solution. Misuse rules populates a DB and examples for misuses detection. Potential misuse rule list by cosine similarity between the code explanation obtained in step 2 and each misuse rule in DB. Patching step is not shown in this report."
+  },
+  "ChatGPTSCV": {
+    "se_task": "Vulnerability/Misuse/Malware/Fault Detection",
+    "se_problem": "Vulnerability Detection for Smart Contracts",
+    "html": "src smrt contrct + tgt vuls \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Rationalized-ListTar-</span> <span style=\"background-color: #d6df8c;\">geted-CWEVulnerabilityProneness-Code-MultiLabel-Classification\u27e9</span> \u2192 assessment [CoT]; vul classes + assess \u2192 <span style=\"background-color: #ecb4cb;\">\u27e8AssessmentBased-Vulnerability-MultiClass-</span> <span style=\"background-color: #ecb4cb;\">Summarization\u27e9</span> \u2192 list (vul class, DerivedBinaryVerdict) [CoT].",
+    "architectural_notes": "Empirical study."
+  },
+  "SmartAudit": {
+    "se_task": "Vulnerability/Misuse/Malware/Fault Detection",
+    "se_problem": "Vulnerability Detection for Smart Contracts",
+    "html": "contract src-code + vul type + vul descr \u2192 <span style=\"background-color: #d6df8c;\">\u27e8ListTargeted-</span> <span style=\"background-color: #d6df8c;\">CWEVulnerabilityProneness-Code-OneClass-<span style=\"background-color: #d6df8c;\">Classification\u27e9</span></span> \u2192 yes/no; contract src-code \u2192 <span style=\"background-color: #d6df8c;\"><span style=\"background-color: #d6df8c;\">\u27e8Rationalized-Vulner</span>abilityProneness-Code-MultiLabel-</span> <span style=\"background-color: #d6df8c;\">Classification\u27e9</span> \u2192 vuls descr; contract src-code + prev conv + (focal funct name) \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Rationalized-Vulner</span> abilityProneness-Code-MultiLabel-<span style=\"background-color: #d6df8c;\">Classification\u27e9</span> \u2192 vuls descr + (fix recom) [CoT: <span style=\"background-color: #ecb4cb;\">intent</span> + thoughts].",
+    "architectural_notes": "Potentiality study of LLMs to find smart contract vulnerabilities. Binary, non-binary, CoT prompts are presented. CoT version is performed by iteratively asking LLM to audit each function name, revisiting audit or linking functions to find vulnerabilities."
+  },
+  "GPTLens": {
+    "se_task": "Vulnerability/Misuse/Malware/Fault Detection",
+    "se_problem": "Vulnerability Detection for Smart Contracts",
+    "html": "src-code \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Rationalized-VulnerabilityProneness-Code-MultiL</span> <span style=\"background-color: #d6df8c;\">abel-Classification\u27e9</span> \u2192 (vul + funct name + reason) \u2217 (auditor); src-code + vul + funct name + reason \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Audits-Qlty(Correctness, Severity,</span> <span style=\"background-color: #d6df8c;\">Profitability)-Assessment\u27e9</span> \u2192 score + explan (critic).",
+    "architectural_notes": "Several auditors solv- ing detection task generate potential vulnerabilities. A critic assess them."
+  },
+  "LLM4Vuln": {
+    "se_task": "Vulnerability/Misuse/Malware/Fault Detection",
+    "se_problem": "Vulnerability Detection for Smart Contracts",
+    "html": "vul report + tgt code \u2192 <span style=\"background-color: #ecb4cb;\">\u27e8CodeCorresponding-Intent-</span> <span style=\"background-color: #ecb4cb;\">Verbalization<span style=\"background-color: #ecb4cb;\"><span style=\"background-color: #d6df8c;\">\u27e9</span></span></span> \u2192 operational summary (funct.summ.); vul report \u2192 <span style=\"background-color: #ecb4cb;\">\u27e8Vulnerability-MechanismExplanation-Summarization</span> <span style=\"background-color: #ecb4cb;\"><span style=\"background-color: #d6df8c;\">\u27e9</span></span> \u2192 abstract vul (abs.gen.); tgt code + (DB.MatchVulReport(TC)) (Alt1) + (DB.MatchAbsVulKnow(funct.summ.(TC)) (Alt2) \u2192 <span style=\"background-color: #d6df8c;\">\u27e8InfoRequesting-</span> <span style=\"background-color: #d6df8c;\">Rationalized-GivenVulnDescrProneness-Code-MultiLabel-Classification</span> <span style=\"background-color: #ecb4cb;\"><span style=\"background-color: #d6df8c;\">\u27e9</span></span> \u2192 yes/no + (type of vul), (reason) [Pre-CoT: <span style=\"background-color: #ecb4cb;\">functional summary</span> + explicit errors \u2014 Post-CoT: <span style=\"background-color: #9fd2ec;\">patch</span> or <span style=\"background-color: #d3bfd7;\">Proof of Concept exploit</span> , ReAct: getFunc- tionDefinition, getClassInheritance, getVariableDefinition, RAG: Alt1,",
+    "architectural_notes": "Evaluation framework that includes LLM-based Result Annotation and Analysis (not reported here). Vector DB are populated using abstract-generation and functionalsummary to match in analysis time relevant summarized vulnerability knowledge (Alt2). aw version is based on a DB matching reports to vulnerable code (Alt1). LLM seeks extra context through LLM\u2019s function calling mechanism."
+  },
+  "GPTScan": {
+    "se_task": "Vulnerability/Misuse/Malware/Fault Detection",
+    "se_problem": "Vulnerability Detection for Smart Contracts",
+    "html": "(scenario) \u2217 + contract src-code \u2192 <span style=\"background-color: #d6df8c;\"><span style=\"background-color: #f3d2b7;\">\u27e8</span></span> <span style=\"background-color: #d6df8c;\">GivenCharacteristicsCorrespondenc</span> e <span style=\"background-color: #d6df8c;\">-Code-OneClass-Classificatio</span> n <span style=\"background-color: #d6df8c;\">\u27e9</span> \u2192 yes/no [CoT: mimic in the background] (1); scenario + prop + contract src-code \u2192 <span style=\"background-color: #d6df8c;\"><span style=\"background-color: #f3d2b7;\">\u27e8</span></span>GivenBehaviorCorrespondence-Code- OneClass-Classification<span style=\"background-color: #d6df8c;\">\u27e9</span> \u2192 yes/no [CoT: mimic in the background]; src-code \u2192 <span style=\"background-color: #d6df8c;\"><span style=\"background-color: #f3d2b7;\">\u27e8</span></span> RoleBased-CodeElements-Identification<span style=\"background-color: #d6df8c;\">\u27e9</span> \u2192 vars/statements [CoT: mimic in the background].",
+    "architectural_notes": "Authors break down common logic vulnerability types into scenarios and properties. LLMs scenario and property matches and identified variables are validated by static confirmation. Saving on GPT costs by first filtering in a single prompt (1)."
+  },
+  "CFG-Chain": {
+    "se_task": "Static Analysis",
+    "se_problem": "Call-Graph/CFG Construction",
+    "html": "code \u2192 <span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #f3d2b7;\">\u27e8</span></span> <span style=\"background-color: #f3d2b7;\">CodeBlocks-Extraction\u27e9</span> \u2192 nested code-blocks [Few-Shot]; code + nstd code-blocks \u2192 <span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #f3d2b7;\">\u27e8</span></span> <span style=\"background-color: #f3d2b7;\">BlockCorresponding-Code-Extraction\u27e9</span> \u2192 basic code-blocks [Few-Shot]; code-block \u2192 <span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #f3d2b7;\">\u27e8</span></span>ControlFlow-Identification\u27e9 \u2192 CFG [Few-Shot]; CFGs \u2192 <span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #f3d2b7;\">\u27e8</span></span>CFG-Fusion\u27e9 \u2192 CFG [Few-Shot].",
+    "architectural_notes": "LLMs are invoked in a chain of subtasks: structure hierarchy extraction (translation), nested block extraction (completer), Basic code CFG (translation) and graph fusion."
+  },
+  "LLift": {
+    "se_task": "Static Analysis",
+    "se_problem": "Use Before Initialize",
+    "html": "use site + (retrv code snip) \u2192 <span style=\"background-color: #f3d2b7;\">\u27e8</span> <span style=\"background-color: #f3d2b7;\">InfoRequesting-Initializator-</span> <span style=\"background-color: #f3d2b7;\">Identification\u27e9</span> \u2192 (retrv rqst) + initializer [ReAct: funct to retrv]; use site + init sig \u2192 <span style=\"background-color: #f3d2b7;\">\u27e8</span>PostConstraint-<span style=\"background-color: #f3d2b7;\">Identification\u27e9</span> \u2192 post-constr on init results [ <span style=\"background-color: #d6df8c;\"><span style=\"background-color: #d6df8c;\">Self-Validation</span></span> ]; init invoc + post-constr + var focus \u2192 <span style=\"background-color: #f3d2b7;\">\u27e8</span>InfoRequesting-QualifiedPostCondi- <span style=\"background-color: #ecb4cb;\">tion-Characterization\u27e9</span> \u2192 (retrv rqst) + may-must init-post [Few-Shot, CoT, ReAct, <span style=\"background-color: #d6df8c;\"><span style=\"background-color: #d6df8c;\">Self-Validation</span></span> ].",
+    "architectural_notes": "Post-constraint guided path analysis to verify the path feasibility of the \u201cuse\u201d of an initialized variable. Static analyzer upstream; two conversations ((1) init detect./post-constraint generation (2) summarization): multiple iterations each. Majority voting."
+  },
+  "SkipAnalyzer": {
+    "se_task": "Static Analysis",
+    "se_problem": "Resource Leak",
+    "html": "code snip \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Rationalized-NullDerreferencePresence-Code-</span> <span style=\"background-color: #d6df8c;\">OneClass-Classification<span style=\"background-color: #d6df8c;\">\u27e9</span></span> \u2192 yes/no + vul descr [CoT, One-Shot, Few-Shot]; code snip \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Rationalized-ResourceLeakPresence-Code-OneClass-Classification</span> <span style=\"background-color: #d6df8c;\">\u27e9</span> \u2192 yes/no + vul descr [CoT, One-Shot, Few-Shot]; code snip + warning \u2192 \u27e8Warning-FalsePositiveProneness-Assessment<span style=\"background-color: #d6df8c;\">\u27e9</span> \u2192 verdict [CoT, One-Shot, Few-Shot].",
+    "architectural_notes": "The pipeline analyzes snippets by using LLMs and static analysis tools like Infer. LLM is also used to filter false-positive warnings. LLMs are used to fix code as well (out of scope)."
+  },
+  "InferROI": {
+    "se_task": "Static Analysis",
+    "se_problem": "Resource Leak",
+    "html": "snip \u2192 <span style=\"background-color: #f3d2b7;\">\u27e8</span> <span style=\"background-color: #f3d2b7;\">ResourceLeakRelated-CodeElements-Identification</span> <span style=\"background-color: #f3d2b7;\">\u27e9</span> \u2192 leakable resources + acquisition/releasing calls + closed if-conds.",
+    "architectural_notes": "LLM is used to get intentions in code, then a static resource leak detection engine is feed with this information."
+  },
+  "LLMDFA": {
+    "se_task": "Static Analysis",
+    "se_problem": "Data-Flow Analysis",
+    "html": "AST-traversal skel + (suggested identif rules) \u2192 <span style=\"background-color: #9fd2ec;\"><span style=\"background-color: #9fd2ec;\">\u27e8</span>Source/Sink-</span> <span style=\"background-color: #9fd2ec;\">ElementIdentificationCode-<span style=\"background-color: #9fd2ec;\">Completion\u27e9</span></span> \u2192 source/sink extractor [Few-Shot: E spec ]; AST-traversal skel + suggested identif rules + E spec + prev candidate extractor script + (error msg on E spec ) + (false pos on E spec ) + (false neg on E spec ) \u2192 <span style=\"background-color: #9fd2ec;\"><span style=\"background-color: #9fd2ec;\">\u27e8</span>Source/Sink-</span>ElementIdentificationCode-Correction\u27e9 \u2192 candidate extractor; code snip + \u00a1var, line\u00bf + \u00a1var, line\u00bf \u2192 <span style=\"background-color: #ecb4cb;\"><span style=\"background-color: #9fd2ec;\">\u27e8</span>VariablesSameValue-Identification\u27e9</span> \u2192 yes/no [CoT, Few-Shot: incl though]; script skeleton + path information \u2192 <span style=\"background-color: #9fd2ec;\"><span style=\"background-color: #9fd2ec;\">\u27e8</span>PathConditionEncoding-Code-</span> <span style=\"background-color: #9fd2ec;\">Completion\u27e9</span> \u2192 candidate script; script skeleton + path information + prev candidate script + error msgs \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8</span> <span style=\"background-color: #9fd2ec;\">PathConditionEncoding-Code-Correction\u27e9</span> \u2192 candidate script.",
+    "architectural_notes": "LLMs are used together with solvers, parser and ad-hoc code."
+  },
+  "E&V": {
+    "se_task": "Static Analysis",
+    "se_problem": "Taint Analysis",
+    "html": "task input + static-analysis pseudo-code + relevant src-code + prev results + verif fdbk \u2192 <span style=\"background-color: #d3bfd7;\"><span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #f3d2b7;\">\u27e8</span></span>Step-Computation<span style=\"background-color: #ecb4cb;\">\u27e9</span></span> \u2192 round output + (retrv-rqst) 0...1 ; exec specs + relev src-code + pesudo-code + round output \u2192 <span style=\"background-color: #d6df8c;\"><span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #f3d2b7;\">\u27e8</span></span>Behavior-Cor-</span> <span style=\"background-color: #d6df8c;\">rectness-Assessment<span style=\"background-color: #ecb4cb;\">\u27e9</span></span> \u2192 verif fdbk. LATTE [55]: name + (code) 0...1 \u2192 <span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #f3d2b7;\">\u27e8</span></span> <span style=\"background-color: #f3d2b7;\">Sink-Identification<span style=\"background-color: #ecb4cb;\">\u27e9</span></span> \u2192 sink; name + (code) 0...1 \u2192 <span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #f3d2b7;\">\u27e8</span></span> <span style=\"background-color: #f3d2b7;\">ExternalInputSource-Identification<span style=\"background-color: #ecb4cb;\">\u27e9</span></span> \u2192 external input source; (prev conv) + code snip + taint srcs + taint info \u2192 <span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #f3d2b7;\">\u27e8</span></span>TaintFlow-Identification <span style=\"background-color: #ecb4cb;\">\u27e9</span> \u2192 deduced data flow [incr prompt seq]; prompt seq results \u2192 <span style=\"background-color: #f3d2b7;\"><span style=\"background-color: #f3d2b7;\">\u27e8</span></span>Rationalized-TaintFlowAnalysisEnhanced-CWEVulnerabil- ityProneness-Code-MultiLabel-Classification<span style=\"background-color: #ecb4cb;\">\u27e9</span> \u2192 (vul) + .",
+    "architectural_notes": "General framework for conducting static analysis from pseudo-code by means of LLMs. Agent-based architecture, but hard-coded planning strategies. Augment temperature if re-analysis required."
+  },
+  "SimulinkSlicer": {
+    "se_task": "Static Analysis",
+    "se_problem": "Static Slicing",
+    "html": "model + requirement \u2192 <span style=\"background-color: #f3d2b7;\">\u27e8</span> <span style=\"background-color: #f3d2b7;\">Model-Slicing\u27e9</span> \u2192 model components [Few-Shot, CoT: dependence chain elicitation by demonstration]."
+  },
+  "CORE": {
+    "se_task": "Static Analysis",
+    "se_problem": "Fix Acceptance Check",
+    "html": "diff \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Patch-Qlty(Fixes, LeastImpact)-Assessment\u27e9</span> \u2192 score + reason.",
+    "architectural_notes": "Proposer LLM generates potential code revisions (not shown here). Static analysis is run on those revisions. Reviewer ranks solutions for specific fix warnings."
+  },
+  "AlloyRepair": {
+    "se_task": "Program Verification",
+    "se_problem": "Program Verification",
+    "html": "faulty spec + (generic-feedback) 0...1 \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8FeedbackGuided-</span> <span style=\"background-color: #9fd2ec;\">Specification-Correction\u27e9</span> \u2192 fixed spec (repair agent); faulty spec + suggestion \u2192 \u27e8SuggestionGuided-<span style=\"background-color: #9fd2ec;\">Specification-Correction\u27e9</span> \u2192 fixed spec (repair agent); report feedback + faulty spec \u2192 <span style=\"background-color: #d3bfd7;\">\u27e8Suggestion-Generation\u27e9</span> \u2192 suggestion (prompt agent).",
+    "architectural_notes": "Alloy analyzer is used to validate an generate a report that is either used as input for correction or processed by an LLM to generate a efined suggestion."
+  },
+  "ChatInv": {
+    "se_task": "Program Verification",
+    "se_problem": "Program Verification",
+    "html": "code + loc + masked assert \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8Assertion-Completion\u27e9</span> \u2192 assert [InFiller]."
+  },
+  "Loopy": {
+    "se_task": "Program Verification",
+    "se_problem": "Program Verification",
+    "html": "annot prgm with prop to be verif \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8</span> <span style=\"background-color: #9fd2ec;\">Inductive&SufficientLoopInv<span style=\"background-color: #9fd2ec;\">ar</span>iant<span style=\"background-color: #9fd2ec;\">-Assertion-</span>Generation\u27e9</span> \u2192 prgm an- not with set of loop assert; annot prgm + verif fdbk \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8</span>SyntaxInductivenessSufficiency Aw <span style=\"background-color: #9fd2ec;\">ar</span> e <span style=\"background-color: #9fd2ec;\">-Assertion-</span> <span style=\"background-color: #9fd2ec;\">Correction\u27e9</span> \u2192 annot prgm.",
+    "architectural_notes": "Invariants are checked by using symbolic tools. Assertions collected trough several LLM invocations. Then it checks (in linear time) if there exists a subset that is inductive and sufficient. Repair takes into account categorized feedback and dependence relation between assertions."
+  },
+  "SpecGen": {
+    "se_task": "Program Verification",
+    "se_problem": "Program Verification",
+    "html": "prgm \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8CodeCorresponding-Specification-Generation\u27e9</span> \u2192 prgm with specs [Few-Shot]; prev conv + curated verif fdbk \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8ErrorAware-Specification-Correction\u27e9</span> \u2192 prgm with specs [Few-Shot].",
+    "architectural_notes": "Tasks models first phase of the approach: a conversation-driven specification generation leveraging LLMs."
+  },
+  "Dafny-Synth": {
+    "se_task": "Program Verification",
+    "se_problem": "Program Verification",
+    "html": "intent \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8IntentCorresponding-Annotated<span style=\"background-color: #9fd2ec;\">Code-Generation\u27e9</span></span> \u2192 annot code (contextless); intent + sig + tests \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8Intent&TestsCorresponding-Annotated<span style=\"background-color: #9fd2ec;\">Code-Generation\u27e9</span></span> \u2192 annot code (signature); intent \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8IntentCorresponding-Signature-Generation\u27e9</span> \u2192 sig (dynamic); intent + sig \u2192 <span style=\"background-color: #ecb4cb;\">\u27e8NL-Specification-Distillation\u27e9</span> \u2192 <span style=\"background-color: #ecb4cb;\">pre/post</span> spec (dynamic); intent + sig + spec \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8Intent&SignatureCorresponding-Provable-Annotated-</span> <span style=\"background-color: #9fd2ec;\">Code-Generation\u27e9</span> \u2192 anno code [RAG + Few-Shot: retrieved simil] (dynamic)."
+  },
+  "Clover": {
+    "se_task": "Program Verification",
+    "se_problem": "Program Verification",
+    "html": "annot code skel + verifier fdbk \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8VerifierAware-AnnotationCor-</span> <span style=\"background-color: #9fd2ec;\">responding-<span style=\"background-color: #9fd2ec;\">Code-<span style=\"background-color: #9fd2ec;\">InFilling\u27e9</span></span></span> \u2192 code (anno2code); annot code skel + compiler fdbk \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8CompilerAware-AnnotationCorresponding-</span> <span style=\"background-color: #9fd2ec;\">Code-<span style=\"background-color: #9fd2ec;\">InFilling\u27e9</span></span> \u2192 code (anno-complete); intent + annot code skel + compiler fdbk \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8IntentCorresponding-Code-</span> <span style=\"background-color: #9fd2ec;\">InFilling\u27e9</span> \u2192 code (doc2code); annot code \u2192 <span style=\"background-color: #ecb4cb;\">\u27e8CodeCorresponding-Intent-Verbalization\u27e9</span> \u2192 docstrings (code2doc); code \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8HoareValid-Annotation-Completion\u27e9</span> \u2192 pre/postcond (code2anno); funct sig with docstring + comp fdbk \u2192 <span style=\"background-color: #ecb4cb;\">\u27e8IntentCorresponding-PrePost-</span> <span style=\"background-color: #ecb4cb;\">Formalization\u27e9</span> \u2192 annot code with pre and post (doc2anno); annotation \u2192 <span style=\"background-color: #ecb4cb;\">\u27e8AnnotationCorresponding-Intent-Verbalization\u27e9</span> \u2192 docstrings (anno2doc); docstring + docstring \u2192 <span style=\"background-color: #d6df8c;\">\u27e8Docstrings-Equivalence-Checking\u27e9</span> \u2192 yes/no (doc- string equiv check).",
+    "architectural_notes": "Consistency checks to know (i) the code is functionally correct with respect to its annotation; (ii) the annotation captures the full functionality of the code; and (iii) the DocString also accurately reflects the functionality of the code. Deductive checker and tests are used to prove annotated programs and equivalence between reconstructed artifacts."
+  },
+  "AutoSpec": {
+    "se_task": "Program Verification",
+    "se_problem": "Program Verification",
+    "html": "masked annotated-code \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8Annotation-Generation\u27e9</span> \u2192 (pre/post/inv) annotated-code [Few-Shot].",
+    "architectural_notes": "Call graph is used to identify locations and order for specification generation."
+  },
+  "Lemur": {
+    "se_task": "Program Verification",
+    "se_problem": "Program Verification",
+    "html": "code under analysis + place holder \u2192 <span style=\"background-color: #9fd2ec;\"><span style=\"background-color: #9fd2ec;\">\u27e8Invariant-Lemma-</span></span> <span style=\"background-color: #9fd2ec;\">Generation\u27e9</span> \u2192 assert; code under analysis + place holder + assert + issue \u2192 <span style=\"background-color: #9fd2ec;\"><span style=\"background-color: #9fd2ec;\">\u27e8Invariant-Lemma-</span></span> <span style=\"background-color: #9fd2ec;\">Correction\u27e9</span> \u2192 assert.",
+    "architectural_notes": "Integrated with verifiers, it follows a set of proof rules that invokes LLMs to act as suggesters of auxiliary assertions and repairer of those suggestions."
+  },
+  "RustProof": {
+    "se_task": "Program Verification",
+    "se_problem": "Program Verification",
+    "html": "annot code (with precond) \u2192 <span style=\"background-color: #ecb4cb;\">\u27e8PostCondition-Generation</span> <span style=\"background-color: #ecb4cb;\">\u27e9</span> \u2192 annot code (with pre/post) [CoT: <span style=\"background-color: #ecb4cb;\">code intent + precond explan</span> ]; annot src-code sgmnt \u2192 \u27e8Invariant-Lemma-Generation<span style=\"background-color: #ecb4cb;\">\u27e9</span> \u2192 sgmnt-with-proof [Few-Shot, CoT: <span style=\"background-color: #ecb4cb;\">precond explan + postcond explan</span> + inv explan + proof explan]; annot src-code sgmnt + last answer + model checker error \u2192 <span style=\"background-color: #9fd2ec;\">\u27e8ErrorAware-</span> Lemma-Correction<span style=\"background-color: #ecb4cb;\">\u27e9</span> \u2192 sgmnt-with-proof [CoT].",
+    "architectural_notes": "Proof helper in- tegrated with smart contract model checker. Human and static analysis tools can be integrated to improve generation."
+  }
+}

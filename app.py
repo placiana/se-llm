@@ -209,7 +209,7 @@ def parse_html():
                             current_task = {
                                 'task': sbold_spans[0].get_text(" ", strip=True),
                                 'text': sbold_spans[0].get_text(" ", strip=True),
-                                'color': []
+                                'color': [],
                             }
                             # add the rest of the p text
                             rest_text = p.get_text(" ", strip=True).replace(sbold_spans[0].get_text(" ", strip=True), "").strip()
@@ -231,10 +231,8 @@ def parse_html():
                                 except:
                                     print("Error parsing style:", bg, current_task)
 
-
                     if current_task:
                         tasks.append(current_task)
-
 
                 # Use column name as key
                 if i < len(column_names):
@@ -244,6 +242,56 @@ def parse_html():
             if result:
                 table_data['rows'].append(result)
         data.append(table_data)
+
+
+    tasks = {}
+    for entry in data:
+        se_task = entry['description'].split(':')[-1].strip()[:-1]  # remove trailing period
+        for row in entry['rows']:
+            se_problem = row['SE Problem']
+            for i, task in enumerate(row['LLM Downstream Tasks']):
+                try:
+                    task_name =  task['task'] if 'task' in task else task['text'].split(' ')[0] 
+                    new_task = {'se_task': se_task, 
+                                'se_problem': se_problem, 
+           
+                    }
+
+                    new_task['html'] = task['text']
+                    new_task['html'] = new_task['html'].split(':', 1)[-1].strip()  # remove leading "TaskName:"
+                    for color in task['color']:
+                        bg_color, text = color
+                        span_tag = f'<span style="background-color: {bg_color}">{text}</span>'
+                        new_task['html'] = new_task['html'].replace(text, span_tag)
+                    tasks[task_name] = new_task
+
+                except Exception as e:
+                    print("Error processing task:", task, e)
+
+
+    for entry in data:
+        se_task = entry['description'].split(':')[-1].strip()[:-1]  # remove trailing period
+        for row in entry['rows']:
+            se_problem = row['SE Problem']
+            for i, task in enumerate(row['Architectural Notes']):
+                task_name =  task['task'] if 'task' in task else task['text'].split(' ')[0] 
+                if task_name in tasks:
+                    # append architectural notes
+                    html_notes = task['text']
+                    html_notes = html_notes.split(':', 1)[-1].strip()  # remove leading "TaskName:"
+                    for color in task['color']:
+                        bg_color, text = color
+                        span_tag = f'<span style="background-color: {bg_color}">{text}</span>'
+                        html_notes = html_notes.replace(text, span_tag)
+                    if 'architectural_notes' in tasks[task_name]:
+                        tasks[task_name]['architectural_notes'] += "<br>" + html_notes
+                    else:
+                        tasks[task_name]['architectural_notes'] = html_notes
+
+                
+    with open('docs/data/task_dict.json', 'w') as file:
+        json.dump(tasks, file, indent=2)
+                
 
     with open('docs/data/tasks_from_html.json', 'w') as file:
         json.dump(data, file, indent=2)

@@ -42,6 +42,8 @@
 
     <!-- tooltip flotante -->
     <div id="tooltip" class="tooltip"></div>
+    <div id="tooltip-container" style="position: fixed; pointer-events: none; z-index: 1000;"></div>
+
     <div id="biblio">
       <!-- Se llena con JS -->
     </div>
@@ -51,34 +53,114 @@
   <script>
 
     function setEventHandlers() {
-      const tooltip = document.getElementById("tooltip");
+      const tooltipContainer = document.getElementById('tooltip-container');
       const descriptionDiv = document.getElementById("description-container");
 
       document.querySelectorAll("li.tooltipable").forEach(li => {
-        li.addEventListener("mouseenter", e => {
-          const id = li.getAttribute("data-tooltip");
-          const contentDiv = document.getElementById(id);
-          if (!contentDiv) return;
+        li.addEventListener('mouseenter', function(event) {
+          const key = event.target.getAttribute('data-tooltip').replace('nick-', '');
+          
 
-          tooltip.innerHTML = contentDiv.innerHTML;
-          tooltip.classList.add("show");
+          if (key && bib_data.hasOwnProperty(key)) {
+            const bibEntry = bib_data[key];
+            
+            // Clear previous tooltips
+            tooltipContainer.innerHTML = '';
+            
+            // Create tooltip element
+            const tooltip = document.createElement('div');
+            //tooltip.className = 'tooltip';
+            tooltip.style.position = 'fixed';
+            tooltip.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+            tooltip.style.color = 'white';
+            tooltip.style.padding = '8px';
+            tooltip.style.borderRadius = '4px';
+            tooltip.style.maxWidth = '600px';
+            tooltip.style.fontSize = '0.9em';
+            tooltip.style.whiteSpace = 'normal';
+            tooltip.style.wordWrap = 'break-word';
+            
+
+            // Fill tooltip content
+            let content = '';
+            if (bibEntry.title) {
+              // remove curly braces from title
+              const title = bibEntry.title.replace(/[{}]/g, '');
+              content += `<strong>Title:</strong> ${title}<br>`;
+            }
+            if (bibEntry.authors) {
+              content += `<strong>Authors:</strong> ${bibEntry.authors}<br>`;
+            }
+
+            // Position the tooltip
+            tooltip.style.left = (event.clientX + 10) + 'px';
+            tooltip.style.top = (event.clientY + 10) + 'px';
+            tooltip.innerHTML = content;
+
+            //document.getElementById('details-container').innerHTML = content;
+
+
+            tooltipContainer.appendChild(tooltip);
+          }
         });
 
-        li.addEventListener("mousemove", e => {
-          tooltip.style.left = e.pageX + 10 + "px";
-          tooltip.style.top = e.pageY + 10 + "px";
+        
+        li.addEventListener('mouseout', function() {
+          tooltipContainer.innerHTML = '';
         });
-
-        li.addEventListener("mouseleave", e => {
-          tooltip.classList.remove("show");
-        });
+        
 
         li.addEventListener("click", e => {
           descriptionDiv.innerHTML = "";
-          const id = li.getAttribute("data-tooltip");
+          var id = li.getAttribute("data-tooltip");
+
           const contentDiv = document.getElementById(id);
           if (!contentDiv) return;
-          descriptionDiv.innerHTML = descriptionDict[id.replace('nick-', '')];
+          id = id.replace('nick-', '')
+          //descriptionDiv.innerHTML = descriptionDict[id];
+
+
+          taskData = globalTasks['data'][id];
+          if (taskData) {
+            taskHtml = `<h2>Tool: ${id} </h2><ul>`;
+            taskHtml += `<li><strong>LLM Downstream task</strong>: ${taskData.html}</li>`;
+            if (taskData.architectural_notes) {
+              taskHtml += `<li><strong>Architectural notes:</strong> ${taskData.architectural_notes}</li>`;
+            }
+            if (taskData.diagram) {
+              taskHtml += `<li><strong>Diagram:</strong> <br><img src="data/${taskData.diagram}" alt="Diagram for ${id}" style="max-width:100%; height:auto;"></li>`;
+            }
+            
+
+            taskHtml += '</ul>';
+            descriptionDiv.innerHTML += taskHtml;
+          }
+
+        key = id;
+        if (key && bib_data.hasOwnProperty(key)) {
+          const bibEntry = bib_data[key];
+
+          // Fill tooltip content
+          let content = '<h3>Bibliographic Info</h3> <strong>Tool:</strong> ' + key + '<br>';
+          if (bibEntry.title) {
+            const title = bibEntry.title.replace(/[{}]/g, '');
+            content += `<strong>Title:</strong> ${title}<br>`;
+
+          }
+          if (bibEntry.authors) {
+            content += `<strong>Authors:</strong> ${bibEntry.authors}<br>`;
+          }
+          if (bibEntry.href_url) {
+            content += `<strong>Link:</strong> <a href="${bibEntry.href_url}" target="_blank">${bibEntry.href_url}</a><br>`;
+          }
+
+          descriptionDiv.innerHTML += content;
+        }          
+
+
+
+
+
         });
 
       });
@@ -87,6 +169,7 @@
   <script>
     //global const
     const descriptionDict = {};
+    const globalTasks = {};
     function sort_str(string_arr) {
       return string_arr.sort((a, b) => {
         if (typeof a === 'object' || typeof b === 'object') return 0; // no ordenar objetos
@@ -100,7 +183,7 @@
 
       const container = document.getElementById(container_id);
 
-      tasks = sort_str(Object.keys(treeData));
+      let tasks = sort_str(Object.keys(treeData));
 
       function createTree(data) {
         if (data === null || data === undefined) {
@@ -189,7 +272,24 @@
 
     }
 
+  // read data/bib_parsed.json
+    const bib_data = {};
+    async function readBibData(filename) {
+      const response = await fetch(filename);
+      const data = await response.json();
+      Object.assign(bib_data, data);      
+    }
+    readBibData('data/bib_parsed.json');
+
+    async function renderTasks(file_url = 'bib.json') {
+      var res = await fetch(file_url);
+      taskData = await res.json();
+
+      globalTasks['data'] = taskData;
+    }
+
     renderBib('data/bib.json', 'biblio');
+    renderTasks('data/task_dict.json');
 
   </script>
 

@@ -552,7 +552,7 @@
   "TestChain": {
     "key": "TestChain",
     "authors": "Kefan Li and Yuan Yuan",
-    "title": "Large language models as test case generators: Performance evaluation and enhancement, 2024,  \\href{http://arxiv",
+    "title": "Large language models as test case generators: Performance evaluation and enhancement",
     "doi": null,
     "arxiv": ".",
     "href_url": "http://arxiv.org/abs/2404.13340",
@@ -1162,7 +1162,7 @@
   "RustProof": {
     "key": "RustProof",
     "authors": "Jianan Yao, Ziqiao Zhou, Weiteng Chen, and Weidong Cui",
-    "title": "Leveraging large language models for automated proof synthesis in {Rust}, 2023,  \\href{http://arxiv",
+    "title": "Leveraging large language models for automated proof synthesis in {Rust}",
     "doi": null,
     "arxiv": ".",
     "href_url": "http://arxiv.org/abs/2311.03739",
@@ -1179,7 +1179,7 @@
     "href_text": "{\\ttfamily doi:10.1109/TSE.2024.3470333",
     "raw": "Xin Yin, Chao Ni, and Shaohua Wang.\n\\newblock Multitask-based evaluation of open-source {LLM} on software vulnerability.\n\\newblock {\\em {IEEE} Trans. Software Eng.}, 50(11):3071--3087, 2024,  \\href{https://doi.org/10.1109/TSE.2024.3470333}{{\\ttfamily doi:10.1109/TSE.2024.3470333}}."
   },
-  "ChatTester": {
+  "ChatTESTER": {
     "key": "ChatTester",
     "authors": "Zhiqiang Yuan, Yiling Lou, Mingwei Liu, Shiji Ding, Kaixin Wang, Yixuan Chen, and Xin Peng",
     "title": "Evaluating and improving {ChatGPT} for unit test generation",
@@ -1242,7 +1242,7 @@
   "Cupid": {
     "key": "Cupid",
     "authors": "Ting Zhang, Ivana~Clairine Irsan, Ferdian Thung, and David Lo",
-    "title": "Cupid: Leveraging {ChatGPT} for more accurate duplicate bug report detection, 2023,  \\href{http://arxiv",
+    "title": "Cupid: Leveraging {ChatGPT} for more accurate duplicate bug report detection",
     "doi": null,
     "arxiv": ".",
     "href_url": "http://arxiv.org/abs/2308.10022",
@@ -1272,7 +1272,7 @@
   "secTests": {
     "key": "secTests",
     "authors": "Ying Zhang, Wenjia Song, Zhengjie Ji, Danfeng Yao, and Na~Meng",
-    "title": "How well does {LLM} generate security tests?, 2023,  \\href{http://arxiv",
+    "title": "How well does {LLM} generate security tests?",
     "doi": null,
     "arxiv": ".",
     "href_url": "http://arxiv.org/abs/2310.00710",

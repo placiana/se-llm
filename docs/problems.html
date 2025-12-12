@@ -105,18 +105,16 @@
         });
 
         
-        li.addEventListener('mouseout', function() {
-          tooltipContainer.innerHTML = '';
-        });
+        li.addEventListener('mouseout', e => { tooltipContainer.innerHTML = ''; });
         
 
         li.addEventListener("click", e => {
           descriptionDiv.innerHTML = "";
           var id = li.getAttribute("data-tooltip");
 
-          const contentDiv = document.getElementById(id);
-          if (!contentDiv) return;
-          id = id.replace('nick-', '')
+          //const contentDiv = document.getElementById(id);
+          //if (!contentDiv) return;
+          id = id.replace('nick-', '').trim();
 
           taskData = globalTasks['data'][id];
           if (taskData) {

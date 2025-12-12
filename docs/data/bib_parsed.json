@@ -12,7 +12,7 @@
   "FLAG": {
     "key": "FLAG",
     "authors": "Baleegh Ahmad, Benjamin Tan, Ramesh Karri, and Hammond Pearce",
-    "title": "{FLAG}: Finding line anomalies (in code) with generative {AI}, 2023,  \\href{http://arxiv",
+    "title": "{FLAG}: Finding line anomalies (in code) with generative {AI}",
     "doi": null,
     "arxiv": ".",
     "href_url": "http://arxiv.org/abs/2306.12643",
@@ -41,7 +41,7 @@
   },
   "FAIL": {
     "key": "FAIL",
-    "authors": "Dharun Anandayuvaraj, Matthew Campbell, Arav Tewari, and James~C",
+    "authors": "Dharun Anandayuvaraj, Matthew Campbell, Arav Tewari, and James C. Davis",
     "title": "{FAIL:} analyzing software failures from the news using {LLMs}",
     "doi": ".",
     "arxiv": null,
@@ -52,7 +52,7 @@
   "FSML": {
     "key": "FSML",
     "authors": "Patrick Barei{\\ss}, Beatriz Souza, Marcelo {d'Amorim}, and Michael Pradel",
-    "title": "Code generation tools (almost) for free? {A} study of few-shot, pre-trained language models on code, 2022,  \\href{http://arxiv",
+    "title": "Code generation tools (almost) for free? {A} study of few-shot, pre-trained language models on code",
     "doi": null,
     "arxiv": ".",
     "href_url": "http://arxiv.org/abs/2206.01335",
@@ -72,7 +72,7 @@
   "EditTime": {
     "key": "EditTime",
     "authors": "Aaron Chan, Anant Kharkar, Roshanak~Zilouchian Moghaddam, Yevhen Mohylevskyy, Alec Helyar, Eslam Kamal, Mohamed Elkamhawy, and Neel Sundaresan",
-    "title": "Transformer-based vulnerability detection in code at {EditTime}: Zero-shot, few-shot, or fine-tuning?, 2023,  \\href{http://arxiv",
+    "title": "Transformer-based vulnerability detection in code at {EditTime}: Zero-shot, few-shot, or fine-tuning?",
     "doi": null,
     "arxiv": ".",
     "href_url": "http://arxiv.org/abs/2306.01754",
@@ -102,7 +102,7 @@
   "WitheredLeaf": {
     "key": "WitheredLeaf",
     "authors": "Hongbo Chen, Yifan Zhang, Xing Han, Huanyao Rong, Yuheng Zhang, Tianhao Mao, Hang Zhang, XiaoFeng Wang, Luyi Xing, and Xun Chen",
-    "title": "{WitheredLeaf}: Finding entity-inconsistency bugs with {LLM}s, 2024,  \\href{http://arxiv",
+    "title": "{WitheredLeaf}: Finding entity-inconsistency bugs with {LLM}s",
     "doi": null,
     "arxiv": ".",
     "href_url": "http://arxiv.org/abs/2405.01668",
@@ -162,7 +162,7 @@
   "SmartAudit": {
     "key": "SmartAudit",
     "authors": "Isaac David, Liyi Zhou, Kaihua Qin, Dawn Song, Lorenzo Cavallaro, and Arthur Gervais",
-    "title": "Do you still need a manual smart contract audit?, 2023,  \\href{http://arxiv",
+    "title": "Do you still need a manual smart contract audit?, 2023",
     "doi": null,
     "arxiv": ".",
     "href_url": "http://arxiv.org/abs/2306.12338",
@@ -222,7 +222,7 @@
   "nl2postcondition": {
     "key": "nl2postcondition",
     "authors": "Madeline Endres, Sarah Fakhoury, Saikat Chakraborty, and Shuvendu~K",
-    "title": "Can large language models transform natural language intent into formal method postconditions?\n\\newblock {\\em Proc",
+    "title": "Can large language models transform natural language intent into formal method postconditions?",
     "doi": ".",
     "arxiv": null,
     "href_url": "https://doi.org/10.1145/3660791",
@@ -242,7 +242,7 @@
   "ChatGPT4vul": {
     "key": "ChatGPT4vul",
     "authors": "Michael Fu, Chakkrit~Kla Tantithamthavorn, Van Nguyen, and Trung Le",
-    "title": "{ChatGPT} for vulnerability detection, classification, and repair: How far are we?\n\\newblock In {\\em 30th Asia-Pacific Software Engineering Conference, {APSEC} 2023, Seoul, Republic of Korea, December 4-7, 2023}, pages 632--636",
+    "title": "{ChatGPT} for vulnerability detection, classification, and repair: How far are we?",
     "doi": ".",
     "arxiv": null,
     "href_url": "https://doi.org/10.1109/APSEC60848.2023.00085",
@@ -252,7 +252,7 @@
   "VulBench": {
     "key": "VulBench",
     "authors": "Zeyu Gao, Hao Wang, Yuchen Zhou, Wenyu Zhu, and Chao Zhang",
-    "title": "How far have we gone in vulnerability detection using large language models, 2023,  \\href{http://arxiv",
+    "title": "How far have we gone in vulnerability detection using large language models",
     "doi": null,
     "arxiv": ".",
     "href_url": "http://arxiv.org/abs/2311.12420",
@@ -272,7 +272,7 @@
   "OSS-Fuzz": {
     "key": "OSS-Fuzz",
     "authors": "Google",
-    "title": "{AI}-powered fuzzing: Breaking the bug hunting barrier, 2023",
+    "title": "{AI}-powered fuzzing: Breaking the bug hunting barrier",
     "doi": null,
     "arxiv": null,
     "href_url": null,
@@ -301,8 +301,8 @@
   },
   "EV": {
     "key": "EV",
-    "authors": "Yu~Hao, Weiteng Chen, Ziqiao Zhou, and Weidong Cui",
-    "title": "{E{\\&}V}: Prompting large language models to perform static analysis by pseudo-code execution and verification, 2023,  \\href{http://arxiv",
+    "authors": "Yu Hao, Weiteng Chen, Ziqiao Zhou, and Weidong Cui",
+    "title": "{E&V}: Prompting large language models to perform static analysis by pseudo-code execution and verification",
     "doi": null,
     "arxiv": ".",
     "href_url": "http://arxiv.org/abs/2312.08477",
@@ -311,7 +311,7 @@
   },
   "pwnd": {
     "key": "pwnd",
-    "authors": "Andreas Happe and J{\\\"{u}}rgen Cito",
+    "authors": "Andreas Happe and Jürgen Cito",
     "title": "Getting pwn'd by {AI}: Penetration testing with large language models",
     "doi": ".",
     "arxiv": null,
@@ -321,7 +321,7 @@
   },
   "TOGLL": {
     "key": "TOGLL",
-    "authors": "Soneya~Binta Hossain and Matthew~B",
+    "authors": "Soneya~Binta Hossain and Matthew B. Dwyer",
     "title": "{TOGLL:} correct and strong test oracle generation with {LLMS}",
     "doi": ".",
     "arxiv": null,
@@ -332,7 +332,7 @@
   "ChatFuzz": {
     "key": "ChatFuzz",
     "authors": "Jie Hu, Qian Zhang, and Heng Yin",
-    "title": "Augmenting greybox fuzzing with generative {AI}, 2023,  \\href{http://arxiv",
+    "title": "Augmenting greybox fuzzing with generative {AI}",
     "doi": null,
     "arxiv": ".",
     "href_url": "http://arxiv.org/abs/2306.06782",
@@ -352,7 +352,7 @@
   "CodeCoT": {
     "key": "CodeCoT",
     "authors": "Dong Huang, Qingwen Bu, Yuhao Qing, and Heming Cui",
-    "title": "{CodeCoT}: Tackling code syntax errors in {CoT} reasoning for code generation, 2024,  \\href{http://arxiv",
+    "title": "{CodeCoT}: Tackling code syntax errors in {CoT} reasoning for code generation",
     "doi": null,
     "arxiv": ".",
     "href_url": "http://arxiv.org/abs/2308.08784",
@@ -361,8 +361,8 @@
   },
   "AgentCoder": {
     "key": "AgentCoder",
-    "authors": "Dong Huang, Qingwen Bu, Jie~M",
-    "title": "{AgentCoder}: Multi-agent-based code generation with iterative testing and optimisation, 2024,  \\href{http://arxiv",
+    "authors": "Dong Huang, Qingwen Bu, Jie M. Zhang, Michael Luck, and Heming Cui",
+    "title": "{AgentCoder}: Multi-agent-based code generation with iterative testing and optimisation",
     "doi": null,
     "arxiv": ".",
     "href_url": "http://arxiv.org/abs/2312.13010",
@@ -372,7 +372,7 @@
   "CFG-Chain": {
     "key": "CFG-Chain",
     "authors": "Qing Huang, Zhou Zou, Zhenchang Xing, Zhenkang Zuo, Xiwei Xu, and Qinghua Lu",
-    "title": "{AI} chain on large language model for unsupervised control flow graph generation for statically-typed partial code, 2023,  \\href{http://arxiv",
+    "title": "{AI} chain on large language model for unsupervised control flow graph generation for statically-typed partial code",
     "doi": null,
     "arxiv": ".",
     "href_url": "http://arxiv.org/abs/2306.00757",
@@ -402,7 +402,7 @@
   "BugFarm": {
     "key": "BugFarm",
     "authors": "Ali~Reza Ibrahimzada, Yang Chen, Ryan Rong, and Reyhaneh Jabbarvand",
-    "title": "Automated bug generation in the era of large language models, 2023,  \\href{http://arxiv",
+    "title": "Automated bug generation in the era of large language models",
     "doi": null,
     "arxiv": ".",
     "href_url": "http://arxiv.org/abs/2310.02407",
@@ -411,7 +411,7 @@
   },
   "LLMeDiff": {
     "key": "LLMeDiff",
-    "authors": "Erblin Isaku, Christoph Laaber, Hassan Sartaj, Shaukat Ali, Thomas Schwitalla, and Jan~F",
+    "authors": "Erblin Isaku, Christoph Laaber, Hassan Sartaj, Shaukat Ali, Thomas Schwitalla, and Jan F. Nygård",
     "title": "{LLM}s in the heart of differential testing: {A} case study on a medical rule engine",
     "doi": ".",
     "arxiv": null,
@@ -422,7 +422,7 @@
   "ChatInv": {
     "key": "ChatInv",
     "authors": "Christian Jan{\\ss}en, Cedric Richter, and Heike Wehrheim",
-    "title": "Can {ChatGPT} support software verification?\n\\newblock In Dirk Beyer and Ana Cavalcanti, editors, {\\em Fundamental Approaches to Software Engineering - 27th International Conference, {FASE} 2024, Held as Part of the European Joint Conferences on Theory and Practice of Software, {ETAPS} 2024, Luxembourg City, Luxembourg, April 6-11, 2024, Proceedings}, volume 14573 of {\\em Lecture Notes in Computer Science}, pages 266--279",
+    "title": "Can {ChatGPT} support software verification?",
     "doi": ".",
     "arxiv": null,
     "href_url": "https://doi.org/10.1007/978-3-031-57259-3\\_13",
@@ -451,8 +451,8 @@
   },
   "Eywa": {
     "key": "Eywa",
-    "authors": "Siva Kesava~Reddy Kakarla and Ryan Beckett",
-    "title": "Oracle-based protocol testing with {Eywa}, 2023,  \\href{http://arxiv",
+    "authors": "Siva Kesava Reddy Kakarla and Ryan Beckett",
+    "title": "Oracle-based protocol testing with {Eywa}",
     "doi": null,
     "arxiv": ".",
     "href_url": "http://arxiv.org/abs/2312.06875",
@@ -461,7 +461,7 @@
   },
   "Loopy": {
     "key": "Loopy",
-    "authors": "Adharsh Kamath, Nausheen Mohammed, Aditya Senthilnathan, Saikat Chakraborty, Pantazis Deligiannis, Shuvendu~K",
+    "authors": "Adharsh Kamath, Nausheen Mohammed, Aditya Senthilnathan, Saikat Chakraborty, Pantazis Deligiannis, Shuvendu K. Lahiri, Akash Lal, Aseem Rastogi, Subhajit Roy, and Rahul Sharma",
     "title": "Leveraging {LLMs} for program verification",
     "doi": ".",
     "arxiv": null,
@@ -502,7 +502,7 @@
   "MuBert": {
     "key": "MuBert",
     "authors": "Ahmed Khanfir, Renzo Degiovanni, Mike Papadakis, and Yves {Le Traon}",
-    "title": "Efficient mutation testing via pre-trained language models, 2023,  \\href{http://arxiv",
+    "title": "Efficient mutation testing via pre-trained language models",
     "doi": null,
     "arxiv": ".",
     "href_url": "http://arxiv.org/abs/2301.03543",
@@ -671,7 +671,7 @@
   },
   "ChatAFL": {
     "key": "ChatAFL",
-    "authors": "Ruijie Meng, Martin Mirchev, Marcel B{\\\"o}hme, and Abhik Roychoudhury",
+    "authors": "Ruijie Meng, Martin Mirchev, Marcel Böhme, and Abhik Roychoudhury",
     "title": "Large language model guided protocol fuzzing",
     "doi": ".",
     "arxiv": null,
@@ -681,7 +681,7 @@
   },
   "Dafny-Synth": {
     "key": "Dafny-Synth",
-    "authors": "Md~Rakib~Hossain Misu, Cristina~V",
+    "authors": "Md~Rakib~Hossain Misu, Cristina V. Lopes, Iris Ma, and James Noble",
     "title": "Towards {AI}-assisted synthesis of verified {Dafny} methods",
     "doi": ".",
     "arxiv": null,
@@ -722,7 +722,7 @@
   "VSP": {
     "key": "VSP",
     "authors": "Yu~Nong, Mohammed Aldeen, Long Cheng, Hongxin Hu, Feng Chen, and Haipeng Cai",
-    "title": "Chain-of-thought prompting of large language models for discovering and fixing software vulnerabilities, 2024,  \\href{http://arxiv",
+    "title": "Chain-of-thought prompting of large language models for discovering and fixing software vulnerabilities",
     "doi": null,
     "arxiv": ".",
     "href_url": "http://arxiv.org/abs/2402.17230",
@@ -731,7 +731,7 @@
   },
   "ESBMCibmc": {
     "key": "ESBMCibmc",
-    "authors": "Muhammad A",
+    "authors": "Muhammad A. A. Pirzada, Giles Reger, Ahmed Bhayat, and Lucas C. Cordeiro",
     "title": "{LLM}-generated invariants for bounded model checking without loop unrolling",
     "doi": ".",
     "arxiv": null,
@@ -741,7 +741,7 @@
   },
   "CoverUp": {
     "key": "CoverUp",
-    "authors": "Juan~Altmayer Pizzorno and Emery~D",
+    "authors": "Juan Altmayer Pizzorno and Emery D. Berger",
     "title": "{CoverUp}: Effective high coverage test generation for python",
     "doi": ".",
     "arxiv": null,
@@ -761,7 +761,7 @@
   },
   "RCAAgents": {
     "key": "RCAAgents",
-    "authors": "Devjeet Roy, Xuchao Zhang, Rashi Bhave, Chetan Bansal, Pedro Henrique~B",
+    "authors": "Devjeet Roy, Xuchao Zhang, Rashi Bhave, Chetan Bansal, Pedro Henrique B. Las-Casas, Rodrigo Fonseca, and Saravan Rajmohan",
     "title": "Exploring {LLM}-based agents for root cause analysis",
     "doi": ".",
     "arxiv": null,
@@ -781,7 +781,7 @@
   },
   "TestPilot": {
     "key": "TestPilot",
-    "authors": "Max Sch{\\\"a}fer, Sarah Nadi, Aryaz Eghbali, and Frank Tip",
+    "authors": "Max Schäfer, Sarah Nadi, Aryaz Eghbali, and Frank Tip",
     "title": "An empirical evaluation of using large language models for automated unit test generation",
     "doi": ".",
     "arxiv": null,
@@ -801,8 +801,8 @@
   },
   "AIagent": {
     "key": "AIagent",
-    "authors": "Kumar Shashwat, Francis Hahn, Xinming Ou, Dmitry Goldgof, Lawrence Hall, Jay Ligatti, S",
-    "title": "A preliminary study on using large language models in software pentesting, 2024,  \\href{http://arxiv",
+    "authors": "Kumar Shashwat, Francis Hahn, Xinming Ou, Dmitry Goldgof, Lawrence Hall, Jay Ligatti, S. Raj Rajgopalan, and Armin~Ziaie Tabari",
+    "title": "A preliminary study on using large language models in software pentesting",
     "doi": null,
     "arxiv": ".",
     "href_url": "http://arxiv.org/abs/2401.17459",
@@ -841,7 +841,7 @@
   },
   "Clover": {
     "key": "Clover",
-    "authors": "Chuyue Sun, Ying Sheng, Oded Padon, and Clark~W",
+    "authors": "Chuyue Sun, Ying Sheng, Oded Padon, and Clark W. Barrett",
     "title": "Clover: Closed-loop verifiable code generation",
     "doi": ".",
     "arxiv": null,
@@ -852,7 +852,7 @@
   "LLM4Vuln": {
     "key": "LLM4Vuln",
     "authors": "Yuqiang Sun, Daoyuan Wu, Yue Xue, Han Liu, Wei Ma, Lyuye Zhang, Miaolei Shi, and Yang Liu",
-    "title": "{LLM4Vuln}: A unified evaluation framework for decoupling and enhancing {LLMs}' vulnerability reasoning, 2024,  \\href{http://arxiv",
+    "title": "{LLM4Vuln}: A unified evaluation framework for decoupling and enhancing {LLMs}' vulnerability reasoning",
     "doi": null,
     "arxiv": ".",
     "href_url": "http://arxiv.org/abs/2401.16185",
@@ -882,7 +882,7 @@
   "GameBugDescriptions": {
     "key": "GameBugDescriptions",
     "authors": "Mohammad~Reza Taesiri, Finlay Macklon, Yihe Wang, Hengshuo Shen, and Cor-Paul Bezemer",
-    "title": "Large language models are pretty good zero-shot video game bug detectors, 2022,  \\href{http://arxiv",
+    "title": "Large language models are pretty good zero-shot video game bug detectors",
     "doi": null,
     "arxiv": ".",
     "href_url": "http://arxiv.org/abs/2210.02506",
@@ -901,7 +901,7 @@
   },
   "FormAI": {
     "key": "FormAI",
-    "authors": "Norbert Tihanyi, Tam{\\'{a}}s Bisztray, Ridhi Jain, Mohamed~Amine Ferrag, Lucas~C",
+    "authors": "Norbert Tihanyi, Tamas Bisztray, Ridhi Jain, Mohamed Amine Ferrag, Lucas C. Cordeiro, and Vasileios Mavroeidis",
     "title": "The {FormAI} dataset: Generative {AI} in software security through the lens of formal verification",
     "doi": ".",
     "arxiv": null,
@@ -911,7 +911,7 @@
   },
   "LLMorpheus": {
     "key": "LLMorpheus",
-    "authors": "Frank Tip, Jonathan Bell, and Max Sch{\\\"{a}}fer",
+    "authors": "Frank Tip, Jonathan Bell, and Max Schäfer",
     "title": "{LLMorpheus}: Mutation testing using large language models",
     "doi": ".",
     "arxiv": null,
@@ -921,8 +921,8 @@
   },
   "MetaMorph": {
     "key": "MetaMorph",
-    "authors": "Christos Tsigkanos, Pooja Rani, Sebastian M{\\\"{u}}ller, and Timo Kehrer",
-    "title": "Large language models: The next frontier for variable discovery within metamorphic testing?\n\\newblock In Tao Zhang, Xin Xia, and Nicole Novielli, editors, {\\em {IEEE} International Conference on Software Analysis, Evolution and Reengineering, {SANER} 2023, Taipa, Macao, March 21-24, 2023}, pages 678--682",
+    "authors": "Christos Tsigkanos, Pooja Rani, Sebastian Müller, and Timo Kehrer",
+    "title": "Large language models: The next frontier for variable discovery within metamorphic testing?",
     "doi": ".",
     "arxiv": null,
     "href_url": "https://doi.org/10.1109/SANER56733.2023.00070",

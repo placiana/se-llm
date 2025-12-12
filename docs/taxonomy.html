@@ -111,7 +111,8 @@
           // Fill tooltip content
           let content = '<h3>Bibliographic Info</h3> <strong>Tool:</strong> ' + key + '<br>';
           if (bibEntry.title) {
-            content += `<strong>Title:</strong> ${bibEntry.title}<br>`;
+            const title = bibEntry.title.replace(/[{}]/g, '');
+            content += `<strong>Title:</strong> ${title}<br>`;
           }
           if (bibEntry.authors) {
             content += `<strong>Authors:</strong> ${bibEntry.authors}<br>`;
@@ -158,7 +159,8 @@
           // Fill tooltip content
           let content = '';
           if (bibEntry.title) {
-            content += `<strong>Title:</strong> ${bibEntry.title}<br>`;
+            const title = bibEntry.title.replace(/[{}]/g, '');
+            content += `<strong>Title:</strong> ${title}<br>`;
           }
           if (bibEntry.authors) {
             content += `<strong>Authors:</strong> ${bibEntry.authors}<br>`;

@@ -117,8 +117,6 @@
           const contentDiv = document.getElementById(id);
           if (!contentDiv) return;
           id = id.replace('nick-', '')
-          //descriptionDiv.innerHTML = descriptionDict[id];
-
 
           taskData = globalTasks['data'][id];
           if (taskData) {
@@ -130,37 +128,29 @@
             if (taskData.diagram) {
               taskHtml += `<li><strong>Diagram:</strong> <br><img src="data/${taskData.diagram}" alt="Diagram for ${id}" style="max-width:100%; height:auto;"></li>`;
             }
-            
-
             taskHtml += '</ul>';
             descriptionDiv.innerHTML += taskHtml;
           }
 
-        key = id;
-        if (key && bib_data.hasOwnProperty(key)) {
-          const bibEntry = bib_data[key];
+          key = id;
+          if (key && bib_data.hasOwnProperty(key)) {
+            const bibEntry = bib_data[key];
 
-          // Fill tooltip content
-          let content = '<h3>Bibliographic Info</h3> <strong>Tool:</strong> ' + key + '<br>';
-          if (bibEntry.title) {
-            const title = bibEntry.title.replace(/[{}]/g, '');
-            content += `<strong>Title:</strong> ${title}<br>`;
+            // Fill tooltip content
+            let content = '<h3>Bibliographic Info</h3> <strong>Tool:</strong> ' + key + '<br>';
+            if (bibEntry.title) {
+              const title = bibEntry.title.replace(/[{}]/g, '');
+              content += `<strong>Title:</strong> ${title}<br>`;
+            }
+            if (bibEntry.authors) {
+              content += `<strong>Authors:</strong> ${bibEntry.authors}<br>`;
+            }
+            if (bibEntry.href_url) {
+              content += `<strong>Link:</strong> <a href="${bibEntry.href_url}" target="_blank">${bibEntry.href_url}</a><br>`;
+            }
 
-          }
-          if (bibEntry.authors) {
-            content += `<strong>Authors:</strong> ${bibEntry.authors}<br>`;
-          }
-          if (bibEntry.href_url) {
-            content += `<strong>Link:</strong> <a href="${bibEntry.href_url}" target="_blank">${bibEntry.href_url}</a><br>`;
-          }
-
-          descriptionDiv.innerHTML += content;
-        }          
-
-
-
-
-
+            descriptionDiv.innerHTML += content;
+          }          
         });
 
       });
@@ -230,56 +220,17 @@
         return html;
       }
 
-
       container.innerHTML = createTree(treeData);
-
       setEventHandlers();
     }
 
-    renderTree('data/problems.json', 'problems-container');
-
-    async function renderBib(file_url = 'bib.json', container_id = 'treeview') {
-
-      const container = document.getElementById(container_id);
-      var res = await fetch(file_url);
-      bibData = await res.json();
-
-      // load bibData (a list of objects)
-      let html = '<div class="hide" style="display:none">';
-      const sortedArray = [...bibData].sort((a, b) => {
-        if (typeof a === 'object' || typeof b === 'object') return 0; // no ordenar objetos
-        return String(a).localeCompare(String(b));
-      });
-      for (const entry of sortedArray) {
-        html += `<div id="nick-${entry.ID}">${entry.author} (${entry.year}). <i>${entry.title}</i>.
-          <br> ${entry.publisher}. <br> <a href="${entry.url}" target="_blank">[link]</a></div>`;
-
-
-        descriptionDict[entry.ID] = `<h3>${entry.title}</h3>
-        <p><strong>Authors:</strong> ${entry.author}</p>
-        <p><strong>Year:</strong> ${entry.year}</p>
-        <p><strong>Link:</strong> <a href="${entry.url}" target="_blank">${entry.url}</a></p>`;
-        // dinamically add every other entry fields
-        keys = Object.keys(entry).filter(k => !['ID', 'author', 'year', 'title', 'url'].includes(k));
-        for (const key of keys) {
-          descriptionDict[entry.ID] += `<p><strong>${key.charAt(0).toUpperCase() + key.slice(1)}:</strong> ${entry[key]}</p>`;
-        }
-
-      }
-      html += '</div>';
-      container.innerHTML = html;
-
-
-    }
-
-  // read data/bib_parsed.json
+    // read data/bib_parsed.json
     const bib_data = {};
     async function readBibData(filename) {
       const response = await fetch(filename);
       const data = await response.json();
       Object.assign(bib_data, data);      
     }
-    readBibData('data/bib_parsed.json');
 
     async function renderTasks(file_url = 'bib.json') {
       var res = await fetch(file_url);
@@ -288,7 +239,8 @@
       globalTasks['data'] = taskData;
     }
 
-    renderBib('data/bib.json', 'biblio');
+    renderTree('data/problems.json', 'problems-container');
+    readBibData('data/bib_parsed.json');
     renderTasks('data/task_dict.json');
 
   </script>

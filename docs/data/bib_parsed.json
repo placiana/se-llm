@@ -92,7 +92,7 @@
   "ChatGPTSCV": {
     "key": "ChatGPTSCV",
     "authors": "Chong Chen, Jianzhong Su, Jiachi Chen, Tingting Bi, Jianxing Yu, Yanlin Wang, Xingwei Lin, Ting Chen, and Zibin Zheng",
-    "title": "When {ChatGPT} meets smart contract vulnerability detection: How far are we?\n\\newblock {\\em {ACM} Trans",
+    "title": "When {ChatGPT} meets smart contract vulnerability detection: How far are we?",
     "doi": ".",
     "arxiv": null,
     "href_url": "https://doi.org/10.1145/3702973",
@@ -111,7 +111,7 @@
   },
   "SELF-DEBUGGING": {
     "key": "SELF-DEBUGGING",
-    "authors": "Xinyun Chen, Maxwell Lin, Nathanael Sch{\\\"{a}}rli, and Denny Zhou",
+    "authors": "Xinyun Chen, Maxwell Lin, Nathanael Schärli, and Denny Zhou",
     "title": "Teaching large language models to self-debug",
     "doi": null,
     "arxiv": null,
@@ -151,7 +151,7 @@
   },
   "MuTAP": {
     "key": "MuTAP",
-    "authors": "Arghavan~Moradi Dakhel, Amin Nikanjam, Vahid Majdinasab, Foutse Khomh, and Michel~C",
+    "authors": "Arghavan~Moradi Dakhel, Amin Nikanjam, Vahid Majdinasab, Foutse Khomh, and Michel C. Desmarais",
     "title": "Effective test generation using pre-trained large language models and mutation testing",
     "doi": ".",
     "arxiv": null,
@@ -171,7 +171,7 @@
   },
   "PentestGPT": {
     "key": "PentestGPT",
-    "authors": "Gelei Deng, Yi~Liu, V{\\'{\\i}}ctor~Mayoral Vilches, Peng Liu, Yuekang Li, Yuan Xu, Martin Pinzger, Stefan Rass, Tianwei Zhang, and Yang Liu",
+    "authors": "Gelei Deng, Yi~Liu, Victor~Mayoral Vilches, Peng Liu, Yuekang Li, Yuan Xu, Martin Pinzger, Stefan Rass, Tianwei Zhang, and Yang Liu",
     "title": "{PentestGPT}: Evaluating and harnessing large language models for automated penetration testing",
     "doi": null,
     "arxiv": null,
@@ -221,7 +221,7 @@
   },
   "nl2postcondition": {
     "key": "nl2postcondition",
-    "authors": "Madeline Endres, Sarah Fakhoury, Saikat Chakraborty, and Shuvendu~K",
+    "authors": "Madeline Endres, Sarah Fakhoury, Saikat Chakraborty, and Shuvendu K. Lahiri",
     "title": "Can large language models transform natural language intent into formal method postconditions?",
     "doi": ".",
     "arxiv": null,
@@ -281,7 +281,7 @@
   },
   "SoVAR": {
     "key": "SoVAR",
-    "authors": "An~Guo, Yuan Zhou, Haoxiang Tian, Chunrong Fang, Yunjian Sun, Weisong Sun, Xinyu Gao, Anh~Tuan Luu, Yang Liu, and Zhenyu Chen",
+    "authors": "An Guo, Yuan Zhou, Haoxiang Tian, Chunrong Fang, Yunjian Sun, Weisong Sun, Xinyu Gao, Anh~Tuan Luu, Yang Liu, and Zhenyu Chen",
     "title": "{SoVAR}: Build generalizable scenarios from accident reports for autonomous driving testing",
     "doi": ".",
     "arxiv": null,
@@ -571,7 +571,7 @@
   },
   "AID": {
     "key": "AID",
-    "authors": "Kaibo Liu, Zhenpeng Chen, Yiyang Liu, Jie~M",
+    "authors": "Kaibo Liu, Zhenpeng Chen, Yiyang Liu, Jie M. Zhang, Mark Harman, Yudong Han, Yun Ma, Yihong Dong, Ge Li, and Gang Huang",
     "title": "{LLM}-powered test case generation for detecting bugs in plausible programs",
     "doi": null,
     "arxiv": null,
@@ -692,7 +692,7 @@
   "SkipAnalyzer": {
     "key": "SkipAnalyzer",
     "authors": "Mohammad~Mahdi Mohajer, Reem Aleithan, Nima~Shiri Harzevili, Moshi Wei, Alvine~Boaye Belle, Hung~Viet Pham, and Song Wang",
-    "title": "Effectiveness of {ChatGPT} for static analysis: How far are we?\n\\newblock In Bram Adams, Thomas Zimmermann, Ipek Ozkaya, Dayi Lin, and Jie~M",
+    "title": "Effectiveness of {ChatGPT} for static analysis: How far are we?",
     "doi": ".",
     "arxiv": null,
     "href_url": "https://doi.org/10.1145/3664646.3664777",
@@ -801,7 +801,7 @@
   },
   "AIagent": {
     "key": "AIagent",
-    "authors": "Kumar Shashwat, Francis Hahn, Xinming Ou, Dmitry Goldgof, Lawrence Hall, Jay Ligatti, S. Raj Rajgopalan, and Armin~Ziaie Tabari",
+    "authors": "Kumar Shashwat, Francis Hahn, Xinming Ou, Dmitry Goldgof, Lawrence Hall, Jay Ligatti, S. Raj Rajgopalan, and Armin Ziaie Tabari",
     "title": "A preliminary study on using large language models in software pentesting",
     "doi": null,
     "arxiv": ".",
@@ -821,7 +821,7 @@
   },
   "EASEeval": {
     "key": "EASEeval",
-    "authors": "Mohammed~Latif Siddiq, Joanna~Cecilia da~Silva~Santos, Ridwanul~Hasan Tanvir, Noshin Ulfat, Fahmid~Al Rifat, and Vinicius~Carvalho Lopes",
+    "authors": "Mohammed~Latif Siddiq, Joanna Cecilia da Silva Santos, Ridwanul~Hasan Tanvir, Noshin Ulfat, Fahmid~Al Rifat, and Vinicius~Carvalho Lopes",
     "title": "Using large language models to generate {JUnit} tests: An empirical study",
     "doi": ".",
     "arxiv": null,
@@ -942,7 +942,7 @@
   "PBT-GPT": {
     "key": "PBT-GPT",
     "authors": "Vasudev Vikram, Caroline Lemieux, and Rohan Padhye",
-    "title": "Can large language models write good property-based tests?, 2023,  \\href{http://arxiv",
+    "title": "Can large language models write good property-based tests?",
     "doi": null,
     "arxiv": ".",
     "href_url": "http://arxiv.org/abs/2307.04346",
@@ -1071,8 +1071,8 @@
   },
   "ChatGPT-4(Log)": {
     "key": "ChatGPT-4(Log)",
-    "authors": "Yonghao Wu, Zheng Li, Jie~M",
-    "title": "Large language models in fault localisation, 2023,  \\href{http://arxiv",
+    "authors": "Yonghao Wu, Zheng Li, Jie~M. Zhang, Mike Papadakis, Mark Harman, and Yong Liu",
+    "title": "Large language models in fault localisation",
     "doi": null,
     "arxiv": ".",
     "href_url": "http://arxiv.org/abs/2308.15276",
@@ -1111,7 +1111,7 @@
   },
   "SemSlicer": {
     "key": "SemSlicer",
-    "authors": "Chenyang Yang, Yining Hong, Grace~A",
+    "authors": "Chenyang Yang, Yining Hong, Grace A. Lewis, Tongshuang Wu, and Christian Kästner",
     "title": "What is wrong with my model? identifying systematic problems with semantic data slicing",
     "doi": ".",
     "arxiv": null,

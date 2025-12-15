@@ -16,7 +16,7 @@
 
   <script src="static/include.js" defer></script>
   <style>
-
+  img.figure { border: 1px black solid; max-width:100%; height:auto; }
   </style>
 
 </head>
@@ -124,7 +124,7 @@
               taskHtml += `<li><strong>Architectural notes:</strong> ${taskData.architectural_notes}</li>`;
             }
             if (taskData.diagram) {
-              taskHtml += `<li><strong>Diagram:</strong> <br><img src="data/${taskData.diagram}" alt="Diagram for ${id}" style="max-width:100%; height:auto;"></li>`;
+              taskHtml += `<li><strong>Diagram:</strong> <br><img src="data/${taskData.diagram}" class="figure" alt="Diagram for ${id}"></li>`;
             }
             taskHtml += '</ul>';
             descriptionDiv.innerHTML += taskHtml;

@@ -355,7 +355,24 @@ def parse_bib_file(filepath):
     return parsed_entries
 
 
+def parse_patterns_file(filepath):
+    with open(filepath) as f:
+        text = f.read()
+    pattern_entries = re.split(r'\\texttt\{([^}]+)\}', text)[1:] 
+
+    patterns = {}
+    for i in range(0, len(pattern_entries), 2):
+        
+        key = pattern_entries[i].strip()
+        content = pattern_entries[i+1].strip()
+        print(content)
+        patterns[key] = content
+
+    with open('docs/data/patterns_parsed.json', 'w') as file:
+        json.dump(patterns, file, indent=2)
+    return patterns
 
 if __name__ == '__main__':
     #app.run(debug=True)
-    parse_html()
+    #parse_html()
+    parse_patterns_file('sources/table-patterns (1).tex')

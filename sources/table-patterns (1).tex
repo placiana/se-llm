@@ -1,0 +1,468 @@
+%\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.2\linewidth}>{\raggedright\arraybackslash}p{0.75\linewidth}@{}}
+%  \caption{Patterns by Topic with References and Observations} \\
+\begin{footnotesize}
+\begin{tblr}[long, theme = fancy, caption = {{Patterns by Topic with References and Observations}. Colors of the tools indicate the corresponding SE-problem in \autoref{fig:OverSEprobs}. }, 
+label = {tab:patterns}]{hlines,stretch=1.5,colspec = {p{0.2\linewidth}p{0.75\linewidth}}, width =\textwidth, rowhead = 1, rowfoot = 0, 
+rowsep  = 2pt,} 
+
+  \textbf{Pattern Name} & \textbf{Details (Description, Tools, Observations)} \\
+  \SetRow{gray!20}
+  \SetCell[c=2]{l}{{\small\cmss{\textbf{Dealing with the Compositional-Gap}}}} \\*
+   \SetRow{gray!20}
+\SetCell[c=2]{l}{LLMs are powerful yet subproblem decomposition might be required for improving performance.} \\*
+  \texttt{Enhance} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Straightforward use of LLM to solve some code analysis transformations is likely to struggle with inferring the right semantic facts on executions thus leading to hallucinations (e.g., see program state analysis task discussion~\cite{DBLP:journals/tmlr/SrivastavaRRSAF23}). Augmenting signature with structural or verbalized information of existing inputs to improve evaluative transformations. \\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\tvmf{GRACE}, \tvmf{PromptEnhanced}): Code control- and/or data-flow structure for evaluative transformation. 
+      \item (\tvmf{PromptEnhanced}, \tvmf{SmartAudit}): SWE verbalization for evaluative transformation.
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt} 
+       \\
+    
+\texttt{Enrich with Precisions} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Performance of generative transformations might benefit from adding more precise verbalized interpretations of NL descriptions (even if those interpretations and their likelihood are inferable from crystallized knowledge).  \\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\ttesting{ScenicNL}): Expert-persona text analysis to derive precise properties of intents before code generation. 
+      \item (\ttesting{ClarifyGPT}): Guided user disambiguation to enrich given intent before code generation.
+    \end{itemize}
+    \end{minipage} \vspace{0.4pt} \\
+   
+\texttt{Use Verbalized SWE} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Leveraging software entities verbalizations (instead of actual SW-entities) as a input of other generative stages might the right way to break up a transformative problem.\\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\ttesting{Fuzz4All}): Usage summarization for data generation stage.
+      \item (\ttesting{ClarifyGPT}): Verbalizing differences for text analysis stage.
+      \item (\ttesting{ChatTester}): verbalizing intent for test generation stage.
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt} \\ 
+    
+  \texttt{Generate and Fix} &
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Use correctness feedback when available to fix initial generation. Related topic: {\cmss{Generating with Corrective Feedback}}. \\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\ttesting{PropertyGPT}, \ttesting{KernelGPT}, \tprogver{Clover}, \tprogver{SpecGen}, \tprogver{AutoSpec}, \tprogver{Lemur}, \tprogver{Loopy}): Annotation generation.
+      \item (\tprogver{Clover}, \tprogver{SpecGen},  \ttesting{OSS-Fuzz}, \ttesting{UGCTX}, \tstatic{LLMDFA}, \tprogver{AutoSpec}, \tprogver{Lemur}, \tprogver{Loopy}, \ttesting{InputBlaster}): Code generation.
+      \item (\ttesting{ChatUniTest}, \ttesting{TestPilot}, \ttesting{ChatTester}): Test generation.
+    \item (\tdebug{AutoSD}): Behavior analysis. 
+    \item (\ttesting{GPTDroid}, \ttesting{AXNav}, \tdebug{AdbGPT}, \ttesting{Pwn'd}): What-to-do-next, planning.
+    \end{itemize}
+  \end{minipage}   \vspace{0.4pt}    \\   
+   
+\texttt{Rationalize then Summarize} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Verbose but likely coherent analysis (e.g., rationalized evaluative transformation) is followed by focused summarization to yield the expected concise result.\\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\ttesting{GameBugDescriptions}, \tdebug{AutoFL}): Behavior analysis followed by focused-abstractive summarization. 
+      \item (\tvmf{ChatGPTSCV}): Rationalized code-classification postprocessed by focused summarization.
+      \item (\tdebug{LM-PACE}): Task-solution analysis (quality assessment) followed by abstractive summarization. Also, text analysis followed by focused-abstractive summarization to yield verdict.
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt} \\    
+   
+\texttt{Verbalize Execution} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Executive SWE transformation might help to expose subtle semantic aspects to improve later analysis stage.\\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\tdebugD{SELF-DEBUGGING}{FeedbackLoop}): SWE execution uttered to serve a difference analysis stage.
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}      \\
+   
+  \texttt{Tour d'horizon} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Elicits overview evaluative transformations. The uttered verbalized result conditions later and more detailed stages. \\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\tvmf{ChatGPT4vul}): Binary classification preceding code ranking.
+    \end{itemize}
+  \end{minipage}  \vspace{-0.3cm}    \\   
+   
+\texttt{Elicit Hidden Variable}  & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Eliciting assumed internal mechanisms for conditioning later verbalized answer. \\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\tvmf{GPTScan}): Hidden thoughts for binary classifications. 
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}      \\ 
+    
+  \texttt{Build Model}  & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Straightforward use of LLM to solve some code analysis transformations is likely to struggle with inferring the right semantic facts on executions thus leading to hallucinations (e.g., see program state analysis task discussion~\cite{DBLP:journals/tmlr/SrivastavaRRSAF23}). Extracting some useful properties of a SWE-artifact or analyzable models as an initial transformations might be a way to deal with this challenge. \\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\ttesting{EMR}, \ttesting{InputBlaster}): Property identification for domain-specific-code generation.
+      \item (\ttesting{WhiteFox}, \ttesting{SymPrompt}, \ttesting{InputBlaster}, \ttesting{RESTGPT}): Constraint-based description of input is uttered for data generation stage.
+    \end{itemize}
+  \end{minipage}   \vspace{-0.05cm}    \\
+    
+  \texttt{Transform to Fit}  & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Transforming input into a more standard problem statement where LLMs might perform better.\\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\ttesting{SearchGEM5}): Parameterized snippet generation and then a data generation stage.
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}      \\
+   
+  \texttt{Divide, Generate and Merge} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Modular generation of components of the expected result are later fused and corrected. \\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\ttesting{SysKG-UTF}): Plan generation by refinement of subplans and fusion.
+      \item (\ttesting{PBT-GPT}): Deterministic (not LLM-based) fusion of independent generative transformations.
+      \item (\ttesting{FuzzingParsers}): LLM-based fusing of generated elements.
+    \end{itemize}
+   \end{minipage} \vspace{0.4pt}      \\  
+   
+  \texttt{Extract and Merge} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Generation sometimes can be achieved by extracting and building the expected SWE. \\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\ttesting{KernelGPT}): SWE-extraction and then algorithmic construction of result. 
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}      \\
+      
+    \texttt{Extract to Focus} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Using LLM-powered extraction  transformations to concentrate the expected transformation on relevant elements of the input SWE. Related topic: {\cmss{Reactive Consumption of Objects}}. \\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\ttesting{SysKG-UTF}): Extractive tasks for planning input.
+      \item (\ttesting{EMR}): Text extraction for property identification.
+      \item (\tprogver{Dafny-Synth}): Intent to structured NL before formalization.
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}      \\
+   
+ {\texttt{Compute Sequence of \\ Transformations}} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Required transformation trajectories can be computed (symbolically or LLM-based) in advance to guide inference steps. \\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\tstatic{LATTE}): Behavior analysis guided by externally fed data-flow steps (symbolically computed).
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}      \\
+   
+    \texttt{Orchestrate Transformations and Tools} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} It might be not trivial to statically or algorithmically determine when and how to adequately invoke and use transformations and tool results. Let LLM orchestrate and instantiate a subset of available transformations (or tools) to achieve some higher-level transformative goal. That could be done reactively according to results. Related topics: {\cmss{Reactive Consumption of Objects}}, {\cmss{Operating on an Environment}}, {CoT}. \\
+    \textbf{Tools/Observations: Only found for the special case \texttt{Reactively Consume Input}.}
+    %\begin{itemize}
+    %  \item (KernelGPT, \tstatic{LLift}): Reactive trajectory for SWE extraction.
+    %  \item (\tdebug{AutoFL}, \tdebug{RCAAgents}): Reactive trajectory for Behavior Analysis.
+    %  \item (\tstatic{LLift}): Reactive trajectory for SWE property characterization
+    %\end{itemize}
+  \end{minipage} \vspace{0.4pt} \\
+   
+  {\texttt{Reactively Consume \\ Input}} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Large and complex objects (e.g., repositories, models, etc.)  are inputs of analysis, generation, or retrieval transformations. Bulk treatment might nor work. LLM can guide the exploration and analysis and react to retrieved/queried information. Related topic: {\cmss{Reactive Consumption of Objects}}. \\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\tstatic{LLift}, \ttesting{KernelGPT}): SWE-property identification and SWE-extraction trajectories.
+      \item (\tdebug{AutoFL}, \tdebug{RCAAgents}): Behavior analysis from information and code.
+      \item (\ttesting{ChatUniTest}): Test generation.
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}      \\  
+   
+  {\texttt{Wrapping Input for \\ Reactive Consumption}} &
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} An LLM-based transformation might help input consumption by translating requests into lower level operations and/or concrete answers. Related topic:  {\cmss{Reactive Consumption of Objects}}. \\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+          \item (\tdebug{RCAAgents}, \ttesting{ScenicNL}): Text-analysis transformation to answer open queries on textual feedback or summarized text. 
+    \end{itemize}
+  \end{minipage} \vspace{-0.2cm}    \\
+    \SetRow{gray!20}
+  \SetCell[c=2]{l}{{\small\cmss{\textbf{Reactive Consumption of  Objects}}}} \\*
+    \SetRow{gray!20}
+  \SetCell[c=2]{l}{\begin{minipage}[t]{\linewidth}
+  Analysis or retrieval of  relevant information may require dealing with large and complex objects and bulk treatment may not work for several reasons.
+  \end{minipage}} \vspace{0.1pt} \\*
+ 
+  \texttt{Extract Incrementally} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Reactive information extraction for a next stage of LLM- or algorithmic-based processing. \\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\tstatic{LLift}, \ttesting{KernelGPT}): Code-elements identification \& extraction trajectories.
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}      \\
+  
+ {\texttt{Extract \& Perform} \\ \texttt{Incrementally}} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Knowing what to extract might require simultaneous incremental analysis. \\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\tdebug{AutoFL}): Code-fetching for behavior analysis.
+      \item (\tdebug{RCAAgents}): Information requests (together with question generation) for behavior analysis.
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}      \\  
+  \SetRow{gray!20}
+  \SetCell[c=2]{l}{{\small\cmss{\textbf{Generating Set of Elements}}}} \\*
+    \SetRow{gray!20}
+  \SetCell[c=2]{l}{\begin{minipage}[t]{\linewidth} Objects to be generated sometimes are compound of individual SWE (e.g., a test suite). Also, multiple intermediate variations of artifacts may be useful. 
+  \end{minipage}} \vspace{0.1pt} \\*
+ 
+  \texttt{Sequence Elements} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Generating compound SW entities and set of variants  simply as a trajectory of SWE elements.\\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+\item (\ttesting{DiffPrompt}, \ttesting{TestGen-LLM},  \ttesting{ChatGPTTests}, \ttesting{CodeT}, \ttesting{ChatUniTest}, \ttesting{CodaMOSA}, \ttesting{TestPilot}, \ttesting{EASEeval}, \ttesting{ChatTester}): Test-generation for test suite construction. 
+      \item (\ttesting{Fuzz4All}): Data-generation variations from input.
+      \item (\ttesting{$\mu$Bert}): In-filling code-generation.  
+      \item (\ttesting{DiffPrompt}, \ttesting{ClarifyGPT}): Intent-corresponding code-generation variations. 
+      \item (\ttesting{FuzzingParsers}): Error-triggering variations.
+          \end{itemize}
+  \end{minipage} \vspace{0.4pt}     \\
+   
+  {\texttt{Sequence Elements and \\ Guiding Utterances}} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Guided variants generation. \\ 
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\ttesting{LLMorpheus}, \ttesting{CHEMFUZZ}): Rationalized code variants.
+      \item (\ttestingD{FuzzGPT}{FewShot}): Diverse code-generation with knowledge distillation transformation to utter hints intermediate. 
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}    \\
+   
+  {\texttt{Generate Element and \\ Mutate It}} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Exemplar-based generation as the first stage of variants generation. \\  
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\ttesting{TitanFuzz}, \ttesting{ChatAFL}): Exemplar code-generated and then code-generation of variants by masking and in-filling/completion. 
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}    \\
+    
+  {\texttt{Reactively Sequence \\ Elements}} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Feedback-driven solution variation. \\  
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\tdebug{LLM4CBI}): Mutation code-generation solutions leveraged by compilation feedback.
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}    \\
+    \SetRow{gray!20}
+  \SetCell[c=2]{l}{{\small\cmss{\textbf{Generating with Corrective Feedback}}}} \\*
+   \SetRow{gray!20}
+   \SetCell[c=2]{l}{LLMs hallucinate and err; validation signals can feed into corrective generative trajectories.} \\*
+    
+  \texttt{Fix with Sanity Check Signal} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Using sanity check provided by external tool to guide correction trajectory. \\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\ttesting{PropertyGPT}, \ttesting{KernelGPT}, \tprogver{Clover}, \tprogver{SpecGen}): Error-aware correction for annotation generation.  
+      \item (\ttesting{ChatUniTest}, \ttesting{ChatTester}, \ttesting{TestPilot}, \ttesting{CoverUp}): Test-generation with compiler feedback.
+      \item (\tprogver{Clover}, \tprogver{SpecGen}, \ttesting{OSS-Fuzz}, \ttesting{UGCTX}, \tstatic{LLMDFA}): Compiler-checked code generation.
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt} \\
+   
+  \texttt{Fix with Goal Satisfaction Signal} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Incorporating verification outcomes into generation/correction trajectory. \\  
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+    \item (\ttesting{CoverUp}): Coverage Information.
+    \item (\ttesting{ChatUniTest},  \ttesting{TestPilot}): Assertion failure.
+      \item (\tprogver{AutoSpec}, \tprogver{Lemur}, \tprogver{Loopy}): Verified annotation generation.
+      \item (\tprogver{Lemur}, \tprogver{AutoSpec}, \tprogver{Loopy}, \ttesting{InputBlaster}): Verified code generation. Effectiveness feedback for the case of InputBlaster (DS-code generation).
+      \item (\tdebug{AutoSD}): Reactive trajectory behavior analysis generating hypothesis which are tested.
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}   \\
+  \SetRow{gray!20}
+  \SetCell[c=2]{l}{{\small\cmss{\textbf{RAG-Support}}}} \\*
+  \SetRow{gray!20}
+  \SetCell[c=2]{l}{Populating DBs for similarity-based information retrieval may leverage LLM-based transformations.} \\*
+   
+  {\texttt{NL Abstractions for \\ Embeddings}} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Improving retrievability through abstraction. \\ 
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\tvmf{LLMAPIDet}, \tdebug{x-lifecycle}): Abstractive summarization/verbalization for storing into vectorial DB, later fetched by similarity with verbalized/abstractive summarization of input (\tvmf{LLMAPIDet}, \tdebug{RCACopilot}).
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}     \\
+     
+  {\texttt{Classifications for \\ Embeddings}} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Code classification for retrieval enhancement. \\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\ttestingD{FuzzGPT}{FewShot}): Code classification for ulterior demonstration retrieval.
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}    \\
+    \SetRow{gray!20}
+  \SetCell[c=2]{l}{{\small\cmss{\textbf{Validation}}}} \\*
+  \SetRow{gray!20}
+  \SetCell[c=2]{l}{Ultimately, results are unreliable.} \\*
+ 
+  \texttt{Vote} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Using multiple LLM samples to establish consensus through voting mechanisms. \\ 
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\tstatic{LLift}): Majority-vote over task solution. 
+      \item (\tdebug{LM-PACE}): Multiple answer sampling for distribution analysis.
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}   \\
+   
+  \texttt{Judge} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Using LLM-based task evaluation processes to validate outputs. \\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\ttesting{mrDetector}): Data generation with task solution analysis as judgment.
+      \item (\tstatic{SkipAnalyzer}, \tvmf{GPTLens}, \tvmf{VulDetect}): Rationalized classifications with task analysis.
+       \item (\tstatic{LLift}): SWE-property identification \& characterization  with task-solution analysis.
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}   \\
+   
+  \texttt{Test Symbolically} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Employing symbolic methods to verify LLM outputs. \\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\tvmf{GPTScan}): Role-based software identification with symbolic validation.
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}   \\
+   
+  \texttt{Cross Check Consistency} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Ensuring consistency across multiple representations or modalities. \\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\tprogver{Clover}): Functional equivalence analysis of verbalized software entities.
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}   \\
+ 
+  \texttt{Constrain Generation} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Ensuring adherence to formal rules by constraining next-token generation (e.g.~\cite{koo2024automatabasedconstraintslanguagemodel}). \\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\ttesting{ScenicNL}): DS-code generation.
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}   \\
+  \SetRow{gray!20}
+  \SetCell[c=2]{l}{{\small\cmss{\textbf{Operating on an Environment: Approach}}}} \\*
+  \SetRow{gray!20}
+  \SetCell[c=2]{l}{\begin{minipage}[t]{\linewidth} Problem-domain may require interacting by means of actions with complex environments. Agentic systems are typical exemplars. Related topics: {\cmss{Feedback Processing}}, {\cmss{Interaction Memory}}. \end{minipage}} \vspace{0.1pt} \\*
+ 
+  \texttt{Decide Action as You Go} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Reactive action decision-making based on status and trajectory. \\  
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\ttesting{Pwn'd}): Reachability-oriented what-to-do-next trajectory.
+      \item (\ttesting{GPTDroid}, \tdebug{CrashTranslator}): Goal-oriented what-to-do-next reactive trajectories.
+      \item (\tdebug{CrashTranslator}): Chained what-to-do-next generation for refining each trajectory step.
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}   \\
+   
+%  Decide and Refine Action as You Go & 
+%  \begin{minipage}[t]{\linewidth}
+%    \textbf{Description:} Progressive action refinement \\
+%    \textbf{Tools/Observations:}
+%    \begin{itemize}
+%      \item (\tdebug{CrashTranslator}): Chained what-to-do-next generation
+%    \end{itemize}
+%  \end{minipage} \vspace{0.4pt} \\
+%   
+  \texttt{Plan, Refine, Act, Update} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Iterative planning with execution feedback. \\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\ttesting{AXNav}): Plan generation, refinement, one step execution, and update based on feedback.  
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}   \\
+   
+  \texttt{Use Given Plan and Refine It} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Plan refinement at execution-time.\\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\tdebug{AdbGPT}): Dynamic plan-refinement.
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}  \\
+    \SetRow{gray!20}
+  \SetCell[c=2]{l}{{\small\cmss{\textbf{Feedback Processing in Reactive Trajectories}}}} \\* 
+   
+  \texttt{Do Bulk Processing} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Analyzing feedback with a single staged transformation. \\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\tdebug{AutoSD}): Text-analysis-based judgment on feedback.
+      \item (\ttesting{GPTDroid}): Behavior analysis for concluding environment state. 
+      \item (\ttesting{AXNav}): Behavior analysis (anomaly detection). 
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}   \\
+     
+  \texttt{Process Feedback Reactively} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Feedback is further treated as a large and complex feedback. Related topic: {\cmss{Reactive Consumption of Objects}}. Related patterns: \texttt{Reactively Consume Input}, \texttt{Wrapping Input for Reactive Consumption}. \\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\tdebug{RCAAgents}): Behavior analysis to generate questions and text analysis to generate answers.
+    \end{itemize}
+  \end{minipage} \vspace{-0.05cm} \\  
+  
+    \SetRow{gray!20}
+  \SetCell[c=2]{l}{{\small\cmss{\textbf{Operating on an Environment: Interaction Memory}}}} \\*
+  \SetRow{gray!20}
+  \SetCell[c=2]{l}{Exploration may require memory.} \\*
+ 
+  \texttt{Trajectory in Context} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Simply maintaining context across interactions acts as history. \\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\tdebug{RCAAgents}, \tdebug{CrashTranslator}, \tdebug{AdbGPT})
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}  \\
+   
+  \texttt{Update ScratchPad} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Context required is not necessarily small or attention mechanism degrades. Scratchpads are manipulated by an LLM. \\
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\ttesting{AXNav}): Plan updates based on context.
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}   \\
+   
+  {\texttt{Algorithmically \\ Updated ScratchPad}} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:}  Memory/Scratchpad is updated by an algorithmic mechanism. \\ 
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\ttesting{GPTDroid}): Symbolic context updates.
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}  \\
+    \SetRow{gray!20}
+  \SetCell[c=2]{l}{{\small\cmss{\textbf{Economics}}}} \\*
+  \SetRow{gray!20}
+  \SetCell[c=2]{l}{Invoking many times a cutting-edge LLM might be too expensive.} \\*
+ 
+  \texttt{Filter before Expensive Call} & 
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Description:} Filtering with a cheaper and less capable LLM to get a short list. \\   
+    \textbf{Tools/Observations:}
+    \begin{itemize}
+      \item (\tvmf{GPTScan}): Simpler behavior analysis before a more sophisticated one.
+    \end{itemize}
+  \end{minipage} \vspace{0.4pt}   \\
+\end{tblr}
+\end{footnotesize}

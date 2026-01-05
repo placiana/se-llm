@@ -1,5 +1,5 @@
 from pylatexenc.latexwalker import LatexWalker, LatexEnvironmentNode, LatexMacroNode, LatexCharsNode, LatexGroupNode
-
+import json
 
 
 
@@ -228,7 +228,108 @@ class CategoriesWalker():
 
 
 # main
+class PatternWaker():
+    current_pattern = ''
+    patterns = {}
+    description_section = False
+    tools_section = False
+
+    def walk_nodes(self, nodes, indent=0):
+        """Recorrer nodos recursivamente y mostrarlos con sangría."""
+        output = []
+        
+        if indent == 2:
+            print(indent, "Nodes:", nodes)
+        for node in nodes:
+            
+            if isinstance(node, LatexMacroNode):
+                print(indent, 'macro:', node.macroname)
+                if node.macroname == 'SetCell':
+                    self.tools_section = False
+
+
+                # Si la macro tiene argumentos, recorremos
+                res = []
+
+                if node.nodeargd is not None:
+                    for arg in node.nodeargd.argnlist:
+                        if arg is not None:
+                            if hasattr(arg, 'nodelist'):
+                                res = self.walk_nodes(arg.nodelist, indent+1)
+                            #print(indent, node.macroname, res)
+                            output += res
+                if node.macroname not in []:#['phantom']:
+                    output.append(f'\\{node.macroname}')
+
+                if node.macroname == 'texttt':
+                    print("================================================", res)
+                    
+                    self.current_pattern = ''.join(res)
+                    self.patterns[self.current_pattern] = {}
+
+                if node.macroname == 'textbf' and res[0].startswith('Description'):
+                    #print("Description found:", res)
+                    self.description_section = True
+                if node.macroname == 'textbf' and res[0].startswith('Tools'):
+                    self.tools_section = True
+
+
+            elif isinstance(node, LatexEnvironmentNode):
+                self.walk_nodes(node.nodelist, indent+1)
+
+            elif isinstance(node, LatexCharsNode):
+                print(indent, "Chars node:", node.chars)
+                if node.chars in ['\\\\']:
+                    continue
+
+                if indent == 3 and self.description_section and self.current_pattern:
+                    self.patterns[self.current_pattern]['description'] = node.chars
+                    print("Pattern description:", node.chars)
+                    self.description_section = False
+
+                if indent >= 4:
+                    output.append(node.chars)
+                elif indent == 3:
+                    output.append(node.chars)
+
+            elif isinstance(node, LatexGroupNode):
+                res = self.walk_nodes(node.nodelist, indent+1)
+                if indent == 4:
+                    # tools?
+                    if self.current_pattern and self.tools_section:
+                        if 'tools' in self.patterns[self.current_pattern]:
+                            self.patterns[self.current_pattern]['tools'].append(res[0])
+                        else:
+                            self.patterns[self.current_pattern]['tools'] = [res[0]]
+
+                        tools = res
+                        print('Tools', tools)
+                print(indent, 'GroupNode', res)
+                
+                output += res
+
+        print(indent, 'Output', output)
+        return output
+        #return categories
+
 if __name__ == "__main__":
+    filename = 'sources/table-patterns (1).tex'
+    with open(filename, "r", encoding="utf-8") as f:
+        latex_code = f.read()
+
+    # Creamos el "walker" que genera el árbol de nodos
+    walker = LatexWalker(latex_code)
+    nodelist, pos, len_ = walker.get_latex_nodes()
+    nodelist, pos, len_ = walker.get_latex_nodes()
+
+    pw = PatternWaker() 
+    pw.walk_nodes(nodelist)
+    import pprint
+    pprint.pprint(pw.patterns)
+    with open('docs/data/patterns.json', 'w') as file:
+        json.dump(pw.patterns, file, indent=2)
+
+if __name__ == "__main__vak":
     # walk over .tex files in sources/ recursively and extract categories
     import glob
 
@@ -248,8 +349,6 @@ if __name__ == "__main__":
         if '-' in topic:
             # keep string after first '-'
             topic = topic.split('-', 1)[1]
-
-            
 
         #extract filename without extension
         filename = os.path.splitext(os.path.basename(tex_file))[0]
